@@ -1,0 +1,659 @@
+# -*- coding: utf-8 -*-
+# pylint: disable=logging-fstring-interpolation
+
+# information
+__author__ = "Genki Prayogo, and Kosuke Nakano"
+__copyright__ = "Copyright (c) 2021-, The SHRY Project"
+__credits__ = ["Genki Prayogo", "Kosuke Nakano"]
+
+__license__ = "MIT"
+__version__ = "1.0.0"
+__maintainer__ = "Genki Prayogo"
+__email__ = "g.prayogo@icloud.com"
+__date__ = "2. Nov. 2021"
+__status__ = "Production"
+
+"""
+Main task abstraction
+"""
+
+import ast
+import collections
+import configparser
+import datetime
+import io
+import itertools
+import logging
+import math
+import operator
+import os
+import re
+import shutil
+import signal
+import sys
+from fnmatch import fnmatch
+
+import numpy as np
+import tqdm
+from pymatgen import Composition, PeriodicSite, Species, Structure
+from pymatgen.core.composition import CompositionError
+from pymatgen.core.lattice import Lattice
+from pymatgen.io.cif import CifParser, str2float
+from pymatgen.io.vasp.inputs import Poscar
+from pymatgen.symmetry.analyzer import SpacegroupAnalyzer, SpacegroupOperations
+from pymatgen.util.coord import (
+    lattice_points_in_supercell,
+    find_in_coord_list_pbc,
+    in_coord_list_pbc,
+    in_coord_list,
+)
+
+from . import const
+from .core import Substitutor
+
+# Runtime patches to pymatgen's Composition and Poscar.
+# We want some extra functions like separating different oxidation states, etc.
+
+
+def from_string(composition_string) -> Composition:
+    """
+    Workaround when working with strings including oxication states
+    """
+
+    def composition_builder():
+        components = re.findall(r"[A-z][a-z]*[0-9.\+\-]*[0-9.]*", composition_string)
+        amount = re.compile(r"(?<=[\+\-A-Za-z])[0-9.]+(?![\+\-])")
+        amount_part = [amount.findall(x) for x in components]
+        amount_part = [x[0] if x else "1" for x in amount_part]
+        species_part = [x.strip(amount) for x, amount in zip(components, amount_part)]
+        species_part = [
+            x + "0" if not re.search(r"[0-9\+\-]+", x) else x for x in species_part
+        ]
+        amount_part = [float(x) for x in amount_part]
+
+        return Composition(
+            {
+                Species.from_string(species): amount
+                for species, amount in zip(species_part, amount_part)
+            }
+        )
+
+    try:
+        return Composition(composition_string)
+    except (CompositionError, ValueError, IndexError):
+        # - CompositionError: get_sym_dict() error
+        #   when "+" oxidation is used.
+        # - ValueError: Wrong parse by get_sym_dict()
+        #   if the oxidation negative.
+        # - IndexError: Sometimes appear when the string gets more complex
+        return composition_builder()
+
+
+@property
+def site_symbols(self):
+    """
+    On Poscar: sometimes we would like to use a separate pseudopotential
+    for each oxidation states.
+
+    Write oxidation states, if, and only if, for the given element,
+    there are more than 1 state.
+    """
+    return [a[0] for a in itertools.groupby(self.syms)]
+
+
+@property
+def syms(self):
+    """
+    Replaced self.syms in some functions of Poscar
+    """
+    e_oxstates = collections.defaultdict(set)
+    s_symbols = collections.defaultdict(list)
+
+    for site in self.structure:
+        e_oxstates[site.specie.symbol].add(str(site.specie))
+    for e, oes in e_oxstates.items():
+        if len(oes) == 1:
+            s_symbols[list(oes)[0]] = e
+        else:
+            for oe in oes:
+                s_symbols[oe] = oe
+
+    return [s_symbols[str(site.specie)] for site in self.structure]
+
+
+@property
+def natoms(self):
+    """
+    Sequence of number of sites of each type associated with the Poscar.
+    Similar to 7th line in vasp 5+ POSCAR or the 6th line in vasp 4 POSCAR.
+    """
+    return [len(tuple(a[1])) for a in itertools.groupby(self.syms)]
+
+
+@staticmethod
+def parse_oxi_states(data):
+    """
+    Parse oxidation states from data dictionary
+    """
+    ox_state_regex = re.compile(r"\d?[\+,\-]?$")
+
+    try:
+        oxi_states = {
+            data["_atom_type_symbol"][i]: str2float(
+                data["_atom_type_oxidation_number"][i]
+            )
+            for i in range(len(data["_atom_type_symbol"]))
+        }
+        # attempt to strip oxidation state from _atom_type_symbol
+        # in case the label does not contain an oxidation state
+        for i, symbol in enumerate(data["_atom_type_symbol"]):
+            oxi_states[ox_state_regex.sub("", symbol)] = str2float(
+                data["_atom_type_oxidation_number"][i]
+            )
+    except (ValueError, KeyError):
+        # Some CIF (including pymatgen's output) are like this.
+        try:
+            oxi_states = dict()
+            for i, symbol in enumerate(data["_atom_site_type_symbol"]):
+                _symbol = ox_state_regex.sub("", symbol)
+
+                parsed_oxi_state = ox_state_regex.search(symbol).group(0)
+                if not parsed_oxi_state:
+                    oxi_states[_symbol] = None
+                    continue
+
+                sign = re.search(r"[-+]", parsed_oxi_state)
+                if sign is None:
+                    sign = ""
+                else:
+                    sign = sign.group(0)
+                parsed_oxi_state = parsed_oxi_state.replace("+", "").replace("-", "")
+                parsed_oxi_state = str2float(sign + parsed_oxi_state)
+                oxi_states[ox_state_regex.sub("", symbol)] = parsed_oxi_state
+        except (ValueError, KeyError):
+            oxi_states = None
+    return oxi_states
+
+
+Composition.from_string = from_string
+Poscar.site_symbols = site_symbols
+Poscar.natoms = natoms
+Poscar.syms = syms
+CifParser.parse_oxi_states = parse_oxi_states
+
+
+class ScriptHelper:
+    """
+    Combine configurations into typical workflow in single methods
+    """
+
+    def __init__(
+        self,
+        structure_file,
+        from_species=const.DEFAULT_FROM_SPECIES,
+        to_species=const.DEFAULT_TO_SPECIES,
+        scaling_matrix=const.DEFAULT_SCALING_MATRIX,
+        symmetrize=const.DEFAULT_SYMMETRIZE,
+        sample=const.DEFAULT_SAMPLE,
+        symprec=const.DEFAULT_SYMPREC,
+        angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
+        dir_size=const.DEFAULT_DIR_SIZE,
+        write_symm=const.DEFAULT_WRITE_SYMM,
+        no_write=const.DEFAULT_NO_WRITE,
+        no_dmat=const.DEFAULT_NO_DMAT,
+    ):
+        self._timestamp = datetime.datetime.now().timestamp()
+        self.no_write = no_write
+        self.no_dmat = no_dmat
+        self.structure_file = structure_file
+
+        if len(from_species) != len(to_species):
+            raise RuntimeError(
+                "Must supply equal number of target_sites and compositions"
+            )
+        self.from_species = from_species
+        self.to_species = to_species
+        self.scaling_matrix = np.array(scaling_matrix)
+        self.symmetrize = symmetrize
+
+        if isinstance(sample, str):
+            if sample == "all":
+                sample = None
+            else:
+                sample = int(self._math_eval(sample))
+        self.sample = sample
+        self.symprec = symprec
+        self.angle_tolerance = angle_tolerance
+        self.dir_size = dir_size
+        self.write_symm = write_symm
+
+        logging.info("\nRun configurations:")
+        logging.info(const.HLINE)
+        logging.info(self)
+        logging.info(const.HLINE)
+
+        self.structure = LabeledStructure.from_file(
+            self.structure_file,
+            symmetrize=symmetrize,
+        )
+        self.modified_structure = self.structure.copy()
+        self.modified_structure.replace_species(
+            dict(zip(self.from_species, self.to_species))
+        )
+        self.modified_structure *= self.scaling_matrix
+        self.substitutor = Substitutor(
+            self.modified_structure,
+            symprec=self.symprec,
+            angle_tolerance=self.angle_tolerance,
+            sample=self.sample,
+            no_dmat=self.no_dmat,
+        )
+
+    def __str__(self):
+        string = ""
+        print_format = "  * {} = {}\n"
+        string += print_format.format("structure_file", self.structure_file)
+        string += print_format.format(
+            "from_species", ", ".join(map(str, self.from_species))
+        )
+        string += print_format.format(
+            "to_species", ", ".join(map(str, self.to_species))
+        )
+        string += print_format.format("scaling_matrix", self.scaling_matrix)
+        string += print_format.format("symmetrize", self.symmetrize)
+        string += print_format.format("sample", self.sample)
+        string += print_format.format("symprec", self.symprec)
+        string += print_format.format("angle_tolerance", self.angle_tolerance)
+        string += print_format.format("dir_size", self.dir_size)
+        string += print_format.format("write_symm", self.write_symm)
+        return string
+
+    @staticmethod
+    def _math_eval(expr):
+        """
+        Like eval() but limit to +-/*^** expressions for security
+        """
+        operators = {
+            ast.Add: operator.add,
+            ast.Sub: operator.sub,
+            ast.Mult: operator.mul,
+            ast.Div: operator.truediv,
+            ast.Pow: operator.pow,
+            ast.BitXor: operator.xor,
+            ast.USub: operator.neg,
+        }
+
+        def _tracer(node):
+            if isinstance(node, ast.Num):
+                return node.n
+            elif isinstance(node, ast.BinOp):
+                return operators[type(node.op)](_tracer(node.left), _tracer(node.right))
+            elif isinstance(node, ast.UnaryOp):
+                return operators[type(node.op)](_tracer(node.operand))
+            else:
+                raise TypeError("Invalid characters on math expression")
+
+        return _tracer(ast.parse(expr, mode="eval").body)
+
+    @classmethod
+    def from_file(cls, input_file):
+        """
+        Reads *.ini file containing command line arguments
+        """
+        parser = configparser.ConfigParser(
+            empty_lines_in_values=False, allow_no_value=False
+        )
+        with open(input_file, "r") as f:
+            parser.read_file(f)
+
+        structure_file = parser.get("DEFAULT", "structure_file")
+        from_species = parser.get(
+            "DEFAULT", "from_species", fallback=const.DEFAULT_FROM_SPECIES
+        )
+        to_species = parser.get(
+            "DEFAULT", "to_species", fallback=const.DEFAULT_TO_SPECIES
+        )
+        scaling_matrix = parser.get(
+            "DEFAULT", "scaling_matrix", fallback=const.DEFAULT_SCALING_MATRIX_STR
+        )
+        # Allow ",", ";", and whiteline as separator (';' not allowed by *.ini)
+        from_species = const.FLEXIBLE_SEPARATOR.split(from_species)
+        to_species = const.FLEXIBLE_SEPARATOR.split(to_species)
+        scaling_matrix = [
+            int(x) for x in const.FLEXIBLE_SEPARATOR.split(scaling_matrix)
+        ]
+        symmetrize = parser.getboolean(
+            "DEFAULT", "symmetrize", fallback=const.DEFAULT_SYMMETRIZE
+        )
+        sample = parser.getint("DEFAULT", "sample", fallback=const.DEFAULT_SAMPLE)
+        symprec = parser.getfloat("DEFAULT", "symprec", fallback=const.DEFAULT_SYMPREC)
+        angle_tolerance = parser.getfloat("DEFAULT", "angle_tolerance", fallback=const.DEFAULT_ANGLE_TOLERANCE)
+        dir_size = parser.getint("DEFAULT", "dir_size", fallback=const.DEFAULT_DIR_SIZE)
+        write_symm = parser.getboolean(
+            "DEFAULT", "write_symm", fallback=const.DEFAULT_WRITE_SYMM
+        )
+
+        return cls(
+            structure_file=structure_file,
+            from_species=from_species,
+            to_species=to_species,
+            scaling_matrix=scaling_matrix,
+            symmetrize=symmetrize,
+            sample=sample,
+            symprec=symprec,
+            angle_tolerance=angle_tolerance,
+            dir_size=dir_size,
+            write_symm=write_symm,
+        )
+
+    @property
+    def _outdir(self):
+        """
+        Output directory name based on input structure filename and timestamp.
+
+        Returns:
+            str: Output directory name.
+        """
+        structure_file_basename = os.path.basename(self.structure_file).split(".")[0]
+        return f"shry-{structure_file_basename}-{self._timestamp}"
+
+    def save_modified_structure(self):
+        """
+        Save adjusted structure
+        """
+        if self.no_write:
+            return
+        os.makedirs(self._outdir, exist_ok=True)
+        structure_file_basename = os.path.basename(self.structure_file).split(".")[0]
+        scaling_matrix_string = "-".join(self.scaling_matrix.flatten().astype(str))
+        filename = os.path.join(
+            self._outdir, structure_file_basename + "-" + scaling_matrix_string + ".cif"
+        )
+        self.modified_structure.to(filename=filename, symprec=self.symprec)
+
+    def write(self):
+        """
+        Save the irreducible structures
+        """
+        self.substitutor.make_patterns()
+        if self.no_write:
+            return
+
+        npatterns = self.substitutor.sampled_indices.size
+        if not npatterns:
+            logging.warning("No expected patterns.")
+            return
+        letters = self.substitutor.configurations()
+        weights = self.substitutor.weights()
+        assert len(weights) == npatterns
+
+        # Log file stream
+        logio = io.StringIO()
+
+        def dump_log():
+            """
+            Dump log
+            """
+            logfile = os.path.join(self._outdir, "sub.log")
+            with open(logfile, "w") as f:
+                logio.seek(0)
+                shutil.copyfileobj(logio, f)
+
+        def signal_handler(sig, frame):
+            """
+            Write log when interrupted
+            """
+            del sig, frame
+            dump_log()
+            now = datetime.datetime.now()
+            tz = now.astimezone().tzname()
+            time_string = now.strftime("%c ") + tz
+            logging.info(const.HLINE)
+            logging.info("Aborted %s", time_string)
+            logging.info(const.HLINE)
+            sys.exit(0)
+
+        signal.signal(signal.SIGINT, signal_handler)
+
+        # Filenames
+        # Formatting.
+        def outdir(i):
+            return os.path.join(self._outdir, f"slice{i // self.dir_size}")
+
+        formula = "".join(self.modified_structure.formula.split())
+        ndigits = int(math.log10(npatterns)) + 1
+        index_f = "_{:0" + str(ndigits) + "d}"
+        filenames = [
+            os.path.join(outdir(i), formula + index_f.format(i) + f"_{weights[i]}.cif")
+            for i in range(npatterns)
+        ]
+
+        # Make directories
+        ndirs = npatterns // self.dir_size + 1
+        for i in range(ndirs):
+            os.makedirs(os.path.join(self._outdir, f"slice{i}"), exist_ok=True)
+
+        # Save the structures
+        pbar = tqdm.tqdm(
+            total=npatterns,
+            desc=f"Writing {npatterns} order structures",
+            **const.TQDM_CONF,
+            disable=const.DISABLE_PROGRESSBAR,
+        )
+        os.makedirs(os.path.join(self._outdir, "slice0"), exist_ok=True)
+        if self.write_symm:
+            print("N Weight Configuration GroupName", file=logio)
+            for i, cifwriter in enumerate(self.substitutor.cifwriters(self.symprec)):
+                space_group = list(cifwriter.ciffile.data.values())[0][
+                    "_symmetry_space_group_name_H-M"
+                ]
+                letter = letters[i]
+                line = " ".join([str(i), str(weights[i]), letter, space_group])
+                print(line, file=logio)
+
+                cifwriter.write_file(filename=filenames[i])
+                pbar.update()
+        else:
+            print("N Weight Configuration", file=logio)
+            for i, cifwriter in enumerate(self.substitutor.cifwriters()):
+                letter = letters[i]
+                line = " ".join([str(i), str(weights[i]), letter])
+                print(line, file=logio)
+
+                cifwriter.write_file(filename=filenames[i])
+                pbar.update()
+        pbar.close()
+        dump_log()
+
+    def count(self) -> None:
+        """
+        Count the number of unique substituted structures
+        """
+        count = self.substitutor.count()
+        logging.info(const.HLINE)
+        logging.info(f"Expected total of {count} unique patterns.")
+        logging.info(const.HLINE)
+
+
+class LabeledStructure(Structure):
+    """
+    Structure + CIF's _atom_site_label
+    """
+
+    def __str__(self):
+        return "LabeledStructure\n" + super().__str__()
+
+    def __mul__(self, scaling_matrix):
+        """
+        The parent method returns Structure instance!
+        Overwrite the offending line.
+        """
+        scale_matrix = np.array(scaling_matrix, np.int16)
+        if scale_matrix.shape != (3, 3):
+            scale_matrix = np.array(scale_matrix * np.eye(3), np.int16)
+        new_lattice = Lattice(np.dot(scale_matrix, self._lattice.matrix))
+
+        f_lat = lattice_points_in_supercell(scale_matrix)
+        c_lat = new_lattice.get_cartesian_coords(f_lat)
+
+        new_sites = []
+        for site in self:
+            for v in c_lat:
+                s = PeriodicSite(
+                    site.species,
+                    site.coords + v,
+                    new_lattice,
+                    properties=site.properties,
+                    coords_are_cartesian=True,
+                    to_unit_cell=False,
+                    skip_checks=True,
+                )
+                new_sites.append(s)
+
+        new_charge = (
+            self._charge * np.linalg.det(scale_matrix) if self._charge else None
+        )
+        # This line.
+        return self.__class__.from_sites(new_sites, charge=new_charge)
+
+    @classmethod
+    def from_file(  # pylint: disable=arguments-differ
+        cls,
+        filename,
+        primitive=False,
+        sort=False,
+        merge_tol=0.0,
+        symmetrize=False,
+    ):
+        fname = os.path.basename(filename)
+        if not fnmatch(fname.lower(), "*.cif*") and not fnmatch(
+            fname.lower(), "*.mcif*"
+        ):
+            raise ValueError("LabeledStructure only accepts CIFs.")
+        instance = super().from_file(
+            filename, primitive=primitive, sort=sort, merge_tol=merge_tol
+        )
+
+        instance.read_label(filename, symmetrize=symmetrize)
+        return instance
+
+    def replace_species(self, species_mapping):
+        """
+        Replace sites from species to another species,
+        or labels from _atom_site_label.
+
+        Args:
+            species_mapping (dict): from-to map of the species to be replaced.
+                (string) to (string).
+
+        Raises:
+            RuntimeError: If no sites matches at least one of the from_species
+                specification.
+        """
+        for from_species, to_species in species_mapping.items():
+            replace = False
+            to_composition = Composition.from_string(to_species)
+            for site in self:
+                # Find matching Element
+                if any(e.symbol == from_species for e in site.species.elements):
+                    replace = True
+                    # Update the site label.
+                    site.properties["_atom_site_label"] = tuple(sorted({to_species}))
+                    try:
+                        site.species = to_composition
+                    except ValueError:
+                        site.species = to_composition.fractional_composition
+                # If failed, try to find matching CIF labels
+                elif from_species in site.properties["_atom_site_label"]:
+                    replace = True
+                    site.properties["_atom_site_label"] = tuple(sorted({to_species}))
+                    try:
+                        site.species = to_composition
+                    except ValueError:
+                        site.species = to_composition.fractional_composition
+
+            if not replace:
+                raise RuntimeError(f"Can't find the specified site ({from_species}).")
+
+    def read_label(self, cif_filename, symprec=1e-2, symmetrize=False):
+        """
+        Add _atom_site_label as site_properties.
+        This is useful for enforcing a certain concentration over
+        a group of sites, which may not necessarily consists
+        of a single orbit after enlargement to a supercell.
+
+        Args:
+            cif_filename (str): Source CIF file.
+            symprec (float): Precision for the symmetry operations.
+
+        Raises:
+            RuntimeError: If any sites couldn't be matched
+                to one any sites defined within the CIF.
+        """
+        logging.info(f"Reading _atom_site_label from {cif_filename}")
+
+        def ufloat(string):
+            """Remove uncertainties notion from floats (if any)."""
+            try:
+                return float(string)
+            except ValueError:
+                return float(string.split("(")[0])
+
+        with open(cif_filename) as f:
+            parser = CifParser.from_string(f.read())
+
+        # Since Structure only takes the first structure inside a CIF, do the same.
+        cif_dict = list(parser.as_dict().values())[0]
+        labels = cif_dict["_atom_site_label"]
+        x_list = map(ufloat, cif_dict["_atom_site_fract_x"])
+        y_list = map(ufloat, cif_dict["_atom_site_fract_y"])
+        z_list = map(ufloat, cif_dict["_atom_site_fract_z"])
+        coords = [(x, y, z) for x, y, z in zip(x_list, y_list, z_list)]
+
+        # Merge labels to allow multiple references.
+        cif_sites = []
+        for coord, zipgroup in itertools.groupby(
+            zip(coords, labels), key=lambda x: x[0]
+        ):
+            labels = tuple(sorted({x[1] for x in zipgroup}))
+            cif_sites.append(
+                PeriodicSite(
+                    "X",
+                    coord,
+                    self.lattice,
+                    properties={"_atom_site_label": labels},
+                )
+            )
+
+        # Find equivalent sites.
+        if symmetrize:
+            symm_ops = SpacegroupAnalyzer(self).get_space_group_operations()
+        else:
+            # A bit of trick.
+            parser.data = cif_dict
+            # Spacegroup symbol and number are not important here.
+            symm_ops = SpacegroupOperations(0, 0, parser.get_symops(parser))
+
+        coords = [x.frac_coords for x in self.sites]
+        cif_coords = [x.frac_coords for x in cif_sites]
+
+        # List of coordinates that are equivalent to this site
+        o_cif_coords = [symmop.operate_multi(cif_coords) for symmop in symm_ops]
+        o_cif_coords = np.swapaxes(np.stack(o_cif_coords), 0, 1)
+        o_cif_coords = [np.unique(np.mod(x, 1), axis=0) for x in o_cif_coords]
+
+        for site in tqdm.tqdm(
+            self.sites,
+            desc="Matching CIF labels",
+            **const.TQDM_CONF,
+            disable=const.DISABLE_PROGRESSBAR,
+        ):
+            equivalent = [in_coord_list_pbc(o, site.frac_coords) for o in o_cif_coords]
+
+            try:
+                equivalent_site = cif_sites[equivalent.index(True)]
+                site.properties["_atom_site_label"] = equivalent_site.properties[
+                    "_atom_site_label"
+                ]
+            except ValueError as exc:
+                raise RuntimeError("CIF-Structure mismatch.") from exc

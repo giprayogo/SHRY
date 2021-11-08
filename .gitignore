@@ -1,0 +1,22 @@
+# swap and cache files
+*.pyc
+*.swp
+*~
+__pycache__
+*temp*
+*.egg-info*
+*.DS_Store
+
+# generated structure from tests
+tests/*/structures*
+examples/structures*
+
+# self-testing files
+*rubbish*
+
+# catch-all for all hidden files
+.
+
+# IDE-related files
+.vscode
+.env
