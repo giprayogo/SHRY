@@ -1374,8 +1374,6 @@ class PatternMaker:
             for row_sum, pattern, aut in zip(sums, patterns, auts):
                 stack.append((row_sum, pattern, aut))
 
-        # while True:
-        #     for row_sums, pattern, aut in in_stack:
         while stack:
             row_sums, pattern, aut = stack.pop()
             if pattern.size == stop:
@@ -1393,7 +1391,6 @@ class PatternMaker:
             new_rows_sums = new_rows.sum(axis=1, keepdims=True)
             # Subset sum of the potential child.
             delta_sums = row_sums + new_rows - new_rows_sums
-            # print(delta_sums)
             # If any row sum is lesser than present, that row will be the canonical,
             # with no relationship to the current node. Thus it is not canonical.
             possible_mask = ~(delta_sums < 0).any(axis=1)

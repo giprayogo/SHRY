@@ -35,7 +35,7 @@ from fnmatch import fnmatch
 
 import numpy as np
 import tqdm
-from pymatgen import Composition, PeriodicSite, Species, Structure
+from pymatgen.core import Composition, PeriodicSite, Species, Structure
 from pymatgen.core.composition import CompositionError
 from pymatgen.core.lattice import Lattice
 from pymatgen.io.cif import CifParser, str2float
