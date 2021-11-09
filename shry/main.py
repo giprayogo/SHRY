@@ -7,7 +7,7 @@ __copyright__ = "Copyright (c) 2021-, The SHRY Project"
 __credits__ = ["Genki Prayogo", "Kosuke Nakano"]
 
 __license__ = "MIT"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __maintainer__ = "Genki Prayogo"
 __email__ = "g.prayogo@icloud.com"
 __date__ = "2. Nov. 2021"
@@ -35,7 +35,7 @@ from fnmatch import fnmatch
 
 import numpy as np
 import tqdm
-from pymatgen import Composition, PeriodicSite, Species, Structure
+from pymatgen.core import Composition, PeriodicSite, Species, Structure
 from pymatgen.core.composition import CompositionError
 from pymatgen.core.lattice import Lattice
 from pymatgen.io.cif import CifParser, str2float
