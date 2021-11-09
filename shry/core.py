@@ -1288,39 +1288,42 @@ class PatternMaker:
             if pattern.size == stop:
                 pbar.update()
                 continue
-            # (Potential) Children nodes are created by adding unadded sites.
-            child_mask = np.ones(self._nix, dtype="bool")
-            child_mask[pattern] = False
-            child_array = np.where(child_mask)[0]
+            # Tree is expanded by adding un-added sites
+            leaf_mask = np.ones(self._nix, dtype="bool")
+            leaf_mask[pattern] = False
+            leaf_array = np.flatnonzero(leaf_mask)
 
-            # Among the remaining candidates, choose unique representations.
-            if child_mask.sum() != 1:
-                leaf = self._perms[np.ix_(aut, child_array)].min(axis=0)
-                leaf_indices = np.searchsorted(child_array, leaf)
-                uniq_mask = np.zeros(child_array.shape, dtype="bool")
+            # Discard symmetry duplicates from the remaining leaves
+            if aut.size > 1 and leaf_mask.sum() > 1:
+                leaf_reps = self._perms[np.ix_(aut, leaf_array)].min(axis=0)
+                leaf_indices = np.searchsorted(leaf_array, leaf_reps)
+                uniq_mask = np.zeros(leaf_array.shape, dtype="bool")
                 uniq_mask[leaf_indices] = True
             else:
-                uniq_mask = np.array([True])
+                uniq_mask = np.ones(leaf_array.shape, dtype="bool")
 
-            check_indices = child_array[uniq_mask]
-            for x in check_indices:
-                # Construct new pattern and aut.
-                j = pattern.searchsorted(x)
+            # Insertion location
+            loci = pattern.searchsorted(leaf_array)
+
+            for i in np.flatnonzero(uniq_mask):
+                x = leaf_array[i]
+                j = loci[i]
+
                 _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
                 _aut = self.automorphisms(_pattern)
 
                 # Compute canonical parent.
-                can = self.lexsort(_pattern)
-                can_pattern = self._perms[can, _pattern]
-                discard_at = np.where(can_pattern == can_pattern.max())[0]
+                m = self.lexsort(_pattern)
+                can_pattern = self._perms[m, _pattern]
+                discard_i = np.where(can_pattern == can_pattern.max())[0]
 
                 # If the new site is discarded then tree parent == canonical parent.
-                if j == discard_at:
+                if j == discard_i:
                     self._patterns[_pattern.size].append(_pattern)
                     self._auts[_pattern.size].append(_aut)
                     stack.append((_pattern, _aut))
                 # Check if tree parent is related to canonical parent.
-                elif _pattern[discard_at] in self._perms[_aut, x]:
+                elif _pattern[discard_i] in self._perms[_aut, x]:
                     self._patterns[_pattern.size].append(_pattern)
                     self._auts[_pattern.size].append(_aut)
                     stack.append((_pattern, _aut))
@@ -1342,12 +1345,10 @@ class PatternMaker:
         new_rows_sums = new_rows.sum(axis=1, keepdims=True)
         part_new_row_sums = subobj_ts + new_rows
 
-        return np.hstack((part_new_row_sums, new_rows_sums))
+        return np.concatenate((part_new_row_sums, new_rows_sums), axis=1)
 
-    def _get_det_subobj_ts():
+    def _get_det_subobj_ts(self, pattern, leaf_array, subobj_ts):
         ...
-
-    # choice in consructor by _suboject_t
 
     def _invar_search(self, start=0, stop=None):
         """
@@ -1429,19 +1430,14 @@ class PatternMaker:
             loci = pattern.searchsorted(leaf_array)
 
             accept_mask = (delta_t > 0).all(axis=1)
-            accept_mask = accept_mask & uniq_mask
+            accept_mask &= uniq_mask
             for i in np.flatnonzero(accept_mask):
                 x = leaf_array[i]
                 j = loci[i]
 
-                # TODO: better slice possible
-                _subobj_ts = np.concatenate(
-                    (
-                        leaf_subobj_ts[i, :j],
-                        [leaf_subobj_ts[i, -1]],
-                        leaf_subobj_ts[i, j:-1],
-                    )
-                )
+                _subobj_ts = leaf_subobj_ts[i]
+                _subobj_ts[j:] = np.concatenate((_subobj_ts[-1:], _subobj_ts[j:-1]))
+
                 _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
                 _aut = self.automorphisms(_pattern)
 
@@ -1458,36 +1454,27 @@ class PatternMaker:
                 x = leaf_array[i]
                 j = loci[i]
 
-                _subobj_ts = np.concatenate(
-                    (
-                        leaf_subobj_ts[i, :j],
-                        [leaf_subobj_ts[i, -1]],
-                        leaf_subobj_ts[i, j:-1],
-                    )
-                )
+                _subobj_ts = leaf_subobj_ts[i]
+                _subobj_ts[j:] = np.concatenate((_subobj_ts[-1:], _subobj_ts[j:-1]))
+
                 _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
+                _aut = self.automorphisms(_pattern)
 
                 # Compute canonical parent.
-                # Which part of canonical parent discarded is arbitrary,
-                # as long as it is consistent.
-                max_rows = np.flatnonzero(_subobj_ts == _subobj_ts.min())
-                can = self.lexsort(_pattern)
-                _sub = _pattern[max_rows]
-                can_pattern = self._perms[can, _sub]
-                largest_in_can = can_pattern.max()
-                discard_at = max_rows[can_pattern == largest_in_can]
+                ts_min_i = np.flatnonzero(_subobj_ts == _subobj_ts.min())
+                _sub = _pattern[ts_min_i]
+                m = self.lexsort(_pattern)
+                can_pattern = self._perms[m, _sub]
+                discard_i = ts_min_i[can_pattern == can_pattern.max()]
 
                 # If the new site is discarded then tree parent == canonical parent.
-                if j == discard_at:
-                    _aut = self.automorphisms(_pattern)
+                if j == discard_i:
                     self._subobj_ts[_pattern.size].append(_subobj_ts)
                     self._patterns[_pattern.size].append(_pattern)
                     self._auts[_pattern.size].append(_aut)
                     stack.append((_subobj_ts, _pattern, _aut))
-                    continue
                 # Check if tree parent is related to canonical parent.
-                _aut = self.automorphisms(_pattern)
-                if _pattern[discard_at] in self._perms[_aut, x]:
+                elif _pattern[discard_i] in self._perms[_aut, x]:
                     self._subobj_ts[_pattern.size].append(_subobj_ts)
                     self._patterns[_pattern.size].append(_pattern)
                     self._auts[_pattern.size].append(_aut)
