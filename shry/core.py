@@ -429,7 +429,11 @@ class Substitutor:
         logging.info(f"{structure}")
         self._structure = structure.copy()
 
-        sga = PatchedSpacegroupAnalyzer(self._structure, symprec=self._symprec, angle_tolerance=self._angle_tolerance)
+        sga = PatchedSpacegroupAnalyzer(
+            self._structure,
+            symprec=self._symprec,
+            angle_tolerance=self._angle_tolerance,
+        )
         self._symmops = sga.get_symmetry_operations()
 
         logging.info(f"Space group: {sga.get_hall()} ({sga.get_space_group_number()})")
@@ -933,7 +937,9 @@ class Substitutor:
                             zs[gi] = z
 
                 space_group_data = spglib.get_symmetry_dataset(
-                    (latt, positions, zs), symprec=self._symprec, angle_tolerance=self._angle_tolerance
+                    (latt, positions, zs),
+                    symprec=self._symprec,
+                    angle_tolerance=self._angle_tolerance,
                 )
 
                 ops = [
@@ -1030,7 +1036,7 @@ class PatternMaker:
         "_sieve",
     )
 
-    def __init__(self, perm_list, invar=None, enumerator_collection=None):
+    def __init__(self, perm_list, invar=None, enumerator_collection=None, t_kind="sum"):
         if invar is None:
             self.search = self._invarless_search
         else:
@@ -1066,7 +1072,7 @@ class PatternMaker:
         self._bits = [2 ** i for i in range(self._nix)]
         # Convert to list to avoid overflow
         # Will change type to object for very large integer
-        # Careful: each are still numpy object type... 
+        # Careful: each are still numpy object type...
         try:
             self._bit_perm = np.array(
                 [[2 ** int(i) for i in row] for row in indexed_perm_list], dtype=int
@@ -1288,11 +1294,7 @@ class PatternMaker:
             else:
                 uniq_mask = np.array([True])
 
-            # print("==========================")
-            # print(child_array)
             check_indices = child_array[uniq_mask]
-            # print(uniq_mask)
-            # print(check_indices)
             for x in check_indices:
                 # Construct new pattern and aut.
                 j = pattern.searchsorted(x)
@@ -1382,15 +1384,22 @@ class PatternMaker:
             # (Potential) children nodes are created by adding unadded sites.
             child_mask = np.ones(self._nix, dtype="bool")
             child_mask[pattern] = False
-            child_array = np.where(child_mask)[0]
+            child_array = np.flatnonzero(child_mask)
 
             # Row-based invariants
             # The selected canonical parent is the lexicographic maximum
             # among those that maximimizes the distance matrix sum.
+            # TODO: from below made into function
             new_rows = self.invar[np.ix_(child_array, pattern)]
+
+            # TODO: Three below are used later
             new_rows_sums = new_rows.sum(axis=1, keepdims=True)
             # Subset sum of the potential child.
-            delta_sums = row_sums + new_rows - new_rows_sums
+            part_new_row_sums = row_sums + new_rows
+            # delta_sums = row_sums + new_rows - new_rows_sums
+            # t_delta
+            delta_sums = part_new_row_sums - new_rows_sums
+
             # If any row sum is lesser than present, that row will be the canonical,
             # with no relationship to the current node. Thus it is not canonical.
             possible_mask = ~(delta_sums < 0).any(axis=1)
@@ -1408,24 +1417,26 @@ class PatternMaker:
             else:
                 uniq_mask = possible_mask
 
-            # On the other hand, if all other rows are larger, the chosen row
-            # will be of the newly added, thus current node _is_ the canonical parent.
-            definite_mask = (delta_sums > 0).all(axis=1)
-            # Select among symmetrically unique.
-            definite_mask = definite_mask & uniq_mask
-            definite_indices = child_array[definite_mask]
-            part_new_row_sums = row_sums + new_rows
-            definite_part_new_row_sums = part_new_row_sums[definite_mask]
-            for i, x in enumerate(definite_indices):
-                # Construct new invar sum, pattern, and aut.
-                j = pattern.searchsorted(x)
-                k = np.where(child_array == x)[0]
-                _part_new_row_sums = definite_part_new_row_sums[i]
+            loci = pattern.searchsorted(child_array)
 
+            # TODO: How to separate sum?
+            # On the other hand, if all other rows are larger,
+            # the chosen row will be of the newly added,
+            # thus current node _is_ the canonical parent.
+            definite_mask = (delta_sums > 0).all(axis=1)
+            definite_mask = definite_mask & uniq_mask
+            for i in np.flatnonzero(definite_mask):
+                # Construct new invar sum, pattern, and aut.
+                x = child_array[i]
+                j = loci[i]
+                # TODO: Separate below
+                _part_new_row_sums = part_new_row_sums[i]
+
+                # TODO: connection between them
                 _row_sums = np.concatenate(
                     (
                         _part_new_row_sums[:j],
-                        new_rows_sums[k].ravel(),
+                        new_rows_sums[i],
                         _part_new_row_sums[j:],
                     )
                 )
@@ -1441,17 +1452,16 @@ class PatternMaker:
             check_mask = ~definite_mask & uniq_mask
             if not check_mask.any():
                 continue
-            check_indices = child_array[check_mask]
-            check_part_new_row_sums = part_new_row_sums[check_mask]
-            for i, x in enumerate(check_indices):
+            for i in np.flatnonzero(check_mask):
                 # Construct the new invar sum, pattern, and aut.
-                j = pattern.searchsorted(x)
-                k = np.where(child_array == x)
-                _part_new_row_sums = check_part_new_row_sums[i]
+                x = child_array[i]
+                j = loci[i]
+                _part_new_row_sums = part_new_row_sums[i]
+
                 _row_sums = np.concatenate(
                     (
                         _part_new_row_sums[:j],
-                        new_rows_sums[k].ravel(),
+                        new_rows_sums[i],
                         _part_new_row_sums[j:],
                     )
                 )
@@ -1460,11 +1470,16 @@ class PatternMaker:
                 # Compute canonical parent.
                 # Which part of canonical parent discarded is arbitrary,
                 # as long as it is consistent.
-                max_rows = np.argwhere(_row_sums == _row_sums.min())
+                max_rows = np.flatnonzero(_row_sums == _row_sums.min())
                 can = self.lexsort(_pattern)
-                can_pattern = self._indexed_perm_list[can, _pattern]
-                largest_in_can = can_pattern[max_rows].max()
-                discard_at = np.where(can_pattern == largest_in_can)[0]
+                # Can be made compact I think
+                # can_pattern = self._indexed_perm_list[can, _pattern]
+                # largest_in_can = can_pattern[max_rows].max()
+                # discard_at = (can_pattern == largest_in_can).nonzero()
+                _sub = _pattern[max_rows]
+                can_pattern = self._indexed_perm_list[can, _sub]
+                largest_in_can = can_pattern.max()
+                discard_at = max_rows[can_pattern == largest_in_can]
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_at:
@@ -1473,7 +1488,6 @@ class PatternMaker:
                     self._patterns[_pattern.size].append(_pattern)
                     self._auts[_pattern.size].append(_aut)
                     stack.append((_row_sums, _pattern, _aut))
-                    # print("YES", max_rows.size)
                     continue
                 # Check if tree parent is related to canonical parent.
                 _aut = self.automorphisms(_pattern)
@@ -1651,7 +1665,7 @@ class Polya:
             disable=const.DISABLE_PROGRESSBAR,
         ):
             indexed_symbols = [x for x in expr.free_symbols if isinstance(x, Indexed)]
-            
+
             replacements = []
             for indexed_symbol in indexed_symbols:
                 label = indexed_symbol.base.label
