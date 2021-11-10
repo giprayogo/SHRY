@@ -8,7 +8,7 @@ __copyright__ = "Copyright (c) 2021-, The SHRY Project"
 __credits__ = ["Genki Prayogo", "Kosuke Nakano"]
 
 __license__ = "MIT"
-__version__ = "1.0.0"
+__version__ = "1.0.2"
 __maintainer__ = "Genki Prayogo"
 __email__ = "g.prayogo@icloud.com"
 __date__ = "2. Nov. 2021"
@@ -181,6 +181,12 @@ def main():  # pylint: disable=missing-function-docstring
         action="store_true",
         help="(devel) Alternative algorithm without distance matrix",
     )
+    group.add_argument(
+        "--t-kind",
+        default="sum",
+        choices=("sum", "plsum", "det"),
+        help="Type of T function (sum, determinant)"
+    )
     args = parser.parse_args()
     const.DISABLE_PROGRESSBAR = args.disable_progressbar
 
@@ -216,6 +222,7 @@ def main():  # pylint: disable=missing-function-docstring
             write_symm=args.write_symm,
             no_write=args.no_write,
             no_dmat=args.no_dmat,
+            t_kind=args.t_kind,
         )
     helper.count()
     helper.save_modified_structure()

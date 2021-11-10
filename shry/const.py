@@ -32,6 +32,7 @@ DEFAULT_DIR_SIZE = 10000
 DEFAULT_WRITE_SYMM = False
 DEFAULT_NO_WRITE = False
 DEFAULT_NO_DMAT = False
+DEFAULT_T_KIND = "sum"
 
 # Symmetry list building parameters
 FIND_COORDS_LIST_ATOL_INIT = 1e-8
