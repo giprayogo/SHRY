@@ -201,10 +201,12 @@ class ScriptHelper:
         write_symm=const.DEFAULT_WRITE_SYMM,
         no_write=const.DEFAULT_NO_WRITE,
         no_dmat=const.DEFAULT_NO_DMAT,
+        t_kind=const.DEFAULT_T_KIND,
     ):
         self._timestamp = datetime.datetime.now().timestamp()
         self.no_write = no_write
         self.no_dmat = no_dmat
+        self.t_kind = t_kind
         self.structure_file = structure_file
 
         if len(from_species) != len(to_species):
@@ -247,6 +249,7 @@ class ScriptHelper:
             angle_tolerance=self.angle_tolerance,
             sample=self.sample,
             no_dmat=self.no_dmat,
+            t_kind=self.t_kind,
         )
 
     def __str__(self):
@@ -333,6 +336,10 @@ class ScriptHelper:
             "DEFAULT", "write_symm", fallback=const.DEFAULT_WRITE_SYMM
         )
 
+        no_write = parser.getboolean("DEFAULT", "no_write", fallback=const.DEFAULT_NO_WRITE)
+        no_dmat = parser.getboolean("DEFAULT", "no_dmat", fallback=const.DEFAULT_NO_DMAT)
+        t_kind = parser.getboolean("DEFAULT", "t_kind", fallback=const.DEFAULT_T_KIND)
+
         return cls(
             structure_file=structure_file,
             from_species=from_species,
@@ -344,6 +351,9 @@ class ScriptHelper:
             angle_tolerance=angle_tolerance,
             dir_size=dir_size,
             write_symm=write_symm,
+            no_write=no_write,
+            no_dmat=no_dmat,
+            t_kind=t_kind,
         )
 
     @property

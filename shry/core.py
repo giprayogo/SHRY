@@ -338,6 +338,7 @@ class Substitutor:
         "_structure",
         "_sample",
         "_no_dmat",
+        "_t_kind",
         "_made_patterns",
     )
 
@@ -349,10 +350,12 @@ class Substitutor:
         groupby=None,
         sample=None,
         no_dmat=const.DEFAULT_NO_DMAT,
+        t_kind=const.DEFAULT_T_KIND,
     ):
         self._symprec = symprec
         self._angle_tolerance = angle_tolerance
         self._no_dmat = no_dmat
+        self._t_kind = t_kind
         if groupby is None:
             self._groupby = lambda x: x.properties["_atom_site_label"]
 
@@ -722,6 +725,7 @@ class Substitutor:
                             subperm,
                             invar=dmat,
                             enumerator_collection=self._enumerator_collection,
+                            t_kind=self._t_kind,
                         )
                         self._pattern_makers[label] = maker
                     patterns = maker.patterns(amount)
@@ -1035,9 +1039,18 @@ class PatternMaker:
         "_rep_bitsums",
         "label",
         "_sieve",
+        "_get_not_reject_mask",
+        "_get_accept_mask",
+        "_get_mins",
     )
 
-    def __init__(self, perm_list, invar=None, enumerator_collection=None, t_kind="sum"):
+    def __init__(
+        self,
+        perm_list,
+        invar=None,
+        enumerator_collection=None,
+        t_kind=const.DEFAULT_T_KIND,
+    ):
         # Algo select bits
         if invar is None:
             self.search = self._invarless_search
@@ -1046,8 +1059,19 @@ class PatternMaker:
 
         if t_kind == "sum":
             self._get_subobj_ts = self._get_sum_subobj_ts
+            self._get_not_reject_mask = self._get_not_reject_mask_int
+            self._get_accept_mask = self._get_accept_mask_int
+            self._get_mins = self._get_mins_int
+        elif t_kind == "sumfl":
+            self._get_subobj_ts = self._get_sumfl_subobj_ts
+            self._get_not_reject_mask = self._get_not_reject_mask_float
+            self._get_accept_mask = self._get_accept_mask_float
+            self._get_mins = self._get_mins_float
         else:
             self._get_subobj_ts = self._get_det_subobj_ts
+            self._get_not_reject_mask = self._get_not_reject_mask_float
+            self._get_accept_mask = self._get_accept_mask_float
+            self._get_mins = self._get_mins_float
 
         if enumerator_collection is None:
             self._enumerator_collection = PolyaCollection()
@@ -1347,8 +1371,57 @@ class PatternMaker:
 
         return np.concatenate((part_new_row_sums, new_rows_sums), axis=1)
 
+    def _get_sumfl_subobj_ts(self, pattern, leaf_array, subobj_ts):
+        new_rows = np.log(self.invar[np.ix_(leaf_array, pattern)])
+        # new_rows = self.invar[np.ix_(leaf_array, pattern)].astype(float)
+        new_rows_sums = new_rows.sum(axis=1, keepdims=True)
+        part_new_row_sums = subobj_ts + new_rows
+
+        return np.concatenate((part_new_row_sums, new_rows_sums), axis=1)
+
+    @functools.lru_cache(None)
+    def _get_det(self, pattern):
+        pattern_invar = self.invar[np.ix_(pattern, pattern)]
+        return np.abs(np.linalg.det(np.atleast_2d(pattern_invar)))
+
     def _get_det_subobj_ts(self, pattern, leaf_array, subobj_ts):
-        ...
+        tiled_pattern = np.tile(pattern, (leaf_array.size, 1))
+        leaves = np.column_stack((tiled_pattern, leaf_array))
+
+        subobj_ts = []
+        for leaf in leaves:
+            # NOTE: Be careful with the order of these combinations...
+            leaf_subobjs = list(itertools.combinations(leaf, leaf.size - 1))
+            leaf_subobjs_ts = [self._get_det(x) for x in leaf_subobjs[::-1]]
+            subobj_ts.append(leaf_subobjs_ts)
+
+        return np.array(subobj_ts)
+
+    @staticmethod
+    def _get_not_reject_mask_int(delta_t):
+        return ~(delta_t < 0).any(axis=1)
+
+    @staticmethod
+    def _get_not_reject_mask_float(delta_t):
+        return ~(delta_t < 0.0).any(axis=1) | np.isclose(delta_t, 0.0).any(axis=1)
+
+    @staticmethod
+    def _get_accept_mask_int(delta_t):
+        return (delta_t > 0).all(axis=1)
+
+    @staticmethod
+    def _get_accept_mask_float(delta_t):
+        # TODO: Temporarily disabled; some numerical issues
+        # return (delta_t > 0).all(axis=1) & (~np.isclose(delta_t, 0.0)).any(axis=1)
+        return np.zeros(delta_t.shape[0], dtype=bool)
+
+    @staticmethod
+    def _get_mins_int(subobj_ts):
+        return np.flatnonzero(subobj_ts == subobj_ts.min())
+
+    @staticmethod
+    def _get_mins_float(subobj_ts):
+        return np.flatnonzero(np.isclose(subobj_ts, subobj_ts.min()))
 
     def _invar_search(self, start=0, stop=None):
         """
@@ -1412,7 +1485,11 @@ class PatternMaker:
 
             # Reject all leaves where any T is smaller than the new row's T
             delta_t = leaf_subobj_ts[:, :-1] - leaf_subobj_ts[:, -1:]
-            not_reject_mask = ~(delta_t < 0).any(axis=1)
+            # print("................")
+            # print(delta_t)
+            not_reject_mask = self._get_not_reject_mask(delta_t)
+            # print("xxxxxxxxxxxxxxxxxx")
+            # print(not_reject_mask)
             if not not_reject_mask.any():
                 continue
 
@@ -1429,7 +1506,7 @@ class PatternMaker:
             # Insertion location
             loci = pattern.searchsorted(leaf_array)
 
-            accept_mask = (delta_t > 0).all(axis=1)
+            accept_mask = self._get_accept_mask(delta_t)
             accept_mask &= uniq_mask
             for i in np.flatnonzero(accept_mask):
                 x = leaf_array[i]
@@ -1461,7 +1538,8 @@ class PatternMaker:
                 _aut = self.automorphisms(_pattern)
 
                 # Compute canonical parent.
-                ts_min_i = np.flatnonzero(_subobj_ts == _subobj_ts.min())
+                # ts_min_i = np.flatnonzero(_subobj_ts == _subobj_ts.min())
+                ts_min_i = self._get_mins(_subobj_ts)
                 _sub = _pattern[ts_min_i]
                 m = self.lexsort(_pattern)
                 can_pattern = self._perms[m, _sub]
