@@ -7,7 +7,7 @@ __copyright__ = "Copyright (c) 2021-, The SHRY Project"
 __credits__ = ["Genki Prayogo", "Kosuke Nakano"]
 
 __license__ = "MIT"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __maintainer__ = "Genki Prayogo"
 __email__ = "g.prayogo@icloud.com"
 __date__ = "2. Nov. 2021"
@@ -269,6 +269,7 @@ class ScriptHelper:
         string += print_format.format("angle_tolerance", self.angle_tolerance)
         string += print_format.format("dir_size", self.dir_size)
         string += print_format.format("write_symm", self.write_symm)
+        string += print_format.format("t-kind", self.t_kind)
         return string
 
     @staticmethod
