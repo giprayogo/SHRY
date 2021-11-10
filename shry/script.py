@@ -184,7 +184,7 @@ def main():  # pylint: disable=missing-function-docstring
     group.add_argument(
         "--t-kind",
         default="sum",
-        choices=("sum", "sumfl", "det"),
+        choices=("sum", "plsum", "det"),
         help="Type of T function (sum, determinant)"
     )
     args = parser.parse_args()

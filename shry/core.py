@@ -1062,16 +1062,28 @@ class PatternMaker:
             self._get_not_reject_mask = self._get_not_reject_mask_int
             self._get_accept_mask = self._get_accept_mask_int
             self._get_mins = self._get_mins_int
-        elif t_kind == "sumfl":
-            self._get_subobj_ts = self._get_sumfl_subobj_ts
+        elif t_kind == "plsum":
+            self._get_subobj_ts = self._get_sum_subobj_ts
             self._get_not_reject_mask = self._get_not_reject_mask_float
             self._get_accept_mask = self._get_accept_mask_float
             self._get_mins = self._get_mins_float
-        else:
+
+            # Modify invar
+            self._sieve = [[3, 3]]
+            self._fill_sieve(invar.max() + 1)
+            invar = self._logprime(invar)
+        elif t_kind == "det":
             self._get_subobj_ts = self._get_det_subobj_ts
             self._get_not_reject_mask = self._get_not_reject_mask_float
             self._get_accept_mask = self._get_accept_mask_float
             self._get_mins = self._get_mins_float
+
+            # Modify invar
+            # self._sieve = [[3, 3]]
+            # self._fill_sieve(invar.max() + 1)
+            # invar = self._logprime(invar)
+        else:
+            raise RuntimeError(f'Unrecognized T kind "{t_kind}"')
 
         if enumerator_collection is None:
             self._enumerator_collection = PolyaCollection()
@@ -1201,7 +1213,6 @@ class PatternMaker:
         _, _, _, relabeled_perm_list = PatternMaker.reindex(perm_list)
         return relabeled_perm_list.tobytes()
 
-    # THIS. when updting, I should clear the pattern cache too!
     @functools.lru_cache(None)
     def patterns(self, n):
         """
@@ -1264,6 +1275,34 @@ class PatternMaker:
             self._rep_bitsums[bitsum] = o_bitsums
         auts = np.flatnonzero(o_bitsums == bitsum)
         return auts
+
+    def _fill_sieve(self, n):
+        """
+        Incremental sieve of eratosthenes to make first n prime numbers
+        """
+        i = self._sieve[-1][0]
+        while len(self._sieve) < (n - 1):
+            i += 2  # no even primes except 2
+            stop = int(math.sqrt(i))
+            for tup in self._sieve:
+                prime, mult = tup
+                if prime > stop:
+                    self._sieve.append([i, i])
+                    break
+                while mult < i:
+                    mult += prime
+                if mult == i:
+                    break
+            else:
+                self._sieve.append([i, i])
+
+    @functools.lru_cache()
+    def _primes_list(self):
+        return [2] + [x[0] for x in self._sieve]
+
+    def _logprime(self, array):
+        primed = [self._primes_list()[x] for x in array.flatten()]
+        return np.log(np.array(primed).reshape(array.shape))
 
     def _invarless_search(self, start=0, stop=None):
         """
@@ -1371,15 +1410,6 @@ class PatternMaker:
 
         return np.concatenate((part_new_row_sums, new_rows_sums), axis=1)
 
-    def _get_sumfl_subobj_ts(self, pattern, leaf_array, subobj_ts):
-        # new_rows = self.invar[np.ix_(leaf_array, pattern)]
-        new_rows = np.log(self.invar[np.ix_(leaf_array, pattern)])
-        # new_rows = self.invar[np.ix_(leaf_array, pattern)].astype(float)
-        new_rows_sums = new_rows.sum(axis=1, keepdims=True)
-        part_new_row_sums = subobj_ts + new_rows
-
-        return np.concatenate((part_new_row_sums, new_rows_sums), axis=1)
-
     @functools.lru_cache(None)
     def _get_det(self, pattern):
         pattern_invar = self.invar[np.ix_(pattern, pattern)]
@@ -1404,14 +1434,16 @@ class PatternMaker:
         return ~(delta_t < 0).any(axis=1)
 
     def _get_not_reject_mask_float(self, delta_t):
-        return ~(delta_t < 0.0).any(axis=1) | np.isclose(delta_t, 0.0).any(axis=1)
+        # return np.ones(delta_t.shape[0], dtype=bool)
+        return ~((delta_t < 0.) & ~np.isclose(delta_t, 0.)).any(axis=1)
 
     @staticmethod
     def _get_accept_mask_int(delta_t):
         return (delta_t > 0).all(axis=1)
 
     def _get_accept_mask_float(self, delta_t):
-        return (delta_t > 0).all(axis=1) & ~(np.isclose(delta_t, 0.0).any(axis=1))
+        # return np.zeros(delta_t.shape[0], dtype=bool)
+        return ((delta_t > 0.) & ~np.isclose(delta_t, 0.)).all(axis=1)
 
     @staticmethod
     def _get_mins_int(subobj_ts):
@@ -1455,19 +1487,19 @@ class PatternMaker:
             for _pattern in noniso_orbits:
                 pattern = np.array([_pattern])
                 aut = self.automorphisms(pattern)
-                # TODO: Different initializers
-                row_sum = np.array([0])
+                subobj_ts = np.array([0])
                 self._patterns[pattern.size].append(pattern)
                 self._auts[pattern.size].append(aut)
-                self._subobj_ts[pattern.size].append(row_sum)
-                stack.append((row_sum, pattern, aut))
+                self._subobj_ts[pattern.size].append(subobj_ts)
+                stack.append((subobj_ts, pattern, aut))
         else:
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
             sums = self._subobj_ts[start].copy()
-            for row_sum, pattern, aut in zip(sums, patterns, auts):
-                stack.append((row_sum, pattern, aut))
+            for subobj_ts, pattern, aut in zip(sums, patterns, auts):
+                stack.append((subobj_ts, pattern, aut))
 
+        # break_count = 0
         while stack:
             subobj_ts, pattern, aut = stack.pop()
             if pattern.size == stop:
@@ -1522,6 +1554,7 @@ class PatternMaker:
             if not check_mask.any():
                 continue
             for i in np.flatnonzero(check_mask):
+                # break_count += 1
                 x = leaf_array[i]
                 j = loci[i]
 
@@ -1550,6 +1583,8 @@ class PatternMaker:
                     self._patterns[_pattern.size].append(_pattern)
                     self._auts[_pattern.size].append(_aut)
                     stack.append((_subobj_ts, _pattern, _aut))
+
+        # print(break_count)
         pbar.close()
 
         # Check if generation matches predicted.
