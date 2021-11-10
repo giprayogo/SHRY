@@ -1372,6 +1372,7 @@ class PatternMaker:
         return np.concatenate((part_new_row_sums, new_rows_sums), axis=1)
 
     def _get_sumfl_subobj_ts(self, pattern, leaf_array, subobj_ts):
+        # new_rows = self.invar[np.ix_(leaf_array, pattern)]
         new_rows = np.log(self.invar[np.ix_(leaf_array, pattern)])
         # new_rows = self.invar[np.ix_(leaf_array, pattern)].astype(float)
         new_rows_sums = new_rows.sum(axis=1, keepdims=True)
@@ -1383,6 +1384,7 @@ class PatternMaker:
     def _get_det(self, pattern):
         pattern_invar = self.invar[np.ix_(pattern, pattern)]
         return np.abs(np.linalg.det(np.atleast_2d(pattern_invar)))
+        # return np.linalg.det(np.atleast_2d(pattern_invar))
 
     def _get_det_subobj_ts(self, pattern, leaf_array, subobj_ts):
         tiled_pattern = np.tile(pattern, (leaf_array.size, 1))
@@ -1401,19 +1403,15 @@ class PatternMaker:
     def _get_not_reject_mask_int(delta_t):
         return ~(delta_t < 0).any(axis=1)
 
-    @staticmethod
-    def _get_not_reject_mask_float(delta_t):
+    def _get_not_reject_mask_float(self, delta_t):
         return ~(delta_t < 0.0).any(axis=1) | np.isclose(delta_t, 0.0).any(axis=1)
 
     @staticmethod
     def _get_accept_mask_int(delta_t):
         return (delta_t > 0).all(axis=1)
 
-    @staticmethod
-    def _get_accept_mask_float(delta_t):
-        # TODO: Temporarily disabled; some numerical issues
-        # return (delta_t > 0).all(axis=1) & (~np.isclose(delta_t, 0.0)).any(axis=1)
-        return np.zeros(delta_t.shape[0], dtype=bool)
+    def _get_accept_mask_float(self, delta_t):
+        return (delta_t > 0).all(axis=1) & ~(np.isclose(delta_t, 0.0).any(axis=1))
 
     @staticmethod
     def _get_mins_int(subobj_ts):
@@ -1485,11 +1483,7 @@ class PatternMaker:
 
             # Reject all leaves where any T is smaller than the new row's T
             delta_t = leaf_subobj_ts[:, :-1] - leaf_subobj_ts[:, -1:]
-            # print("................")
-            # print(delta_t)
             not_reject_mask = self._get_not_reject_mask(delta_t)
-            # print("xxxxxxxxxxxxxxxxxx")
-            # print(not_reject_mask)
             if not not_reject_mask.any():
                 continue
 
@@ -1538,7 +1532,6 @@ class PatternMaker:
                 _aut = self.automorphisms(_pattern)
 
                 # Compute canonical parent.
-                # ts_min_i = np.flatnonzero(_subobj_ts == _subobj_ts.min())
                 ts_min_i = self._get_mins(_subobj_ts)
                 _sub = _pattern[ts_min_i]
                 m = self.lexsort(_pattern)
