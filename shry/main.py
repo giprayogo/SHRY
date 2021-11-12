@@ -331,14 +331,20 @@ class ScriptHelper:
         )
         sample = parser.getint("DEFAULT", "sample", fallback=const.DEFAULT_SAMPLE)
         symprec = parser.getfloat("DEFAULT", "symprec", fallback=const.DEFAULT_SYMPREC)
-        angle_tolerance = parser.getfloat("DEFAULT", "angle_tolerance", fallback=const.DEFAULT_ANGLE_TOLERANCE)
+        angle_tolerance = parser.getfloat(
+            "DEFAULT", "angle_tolerance", fallback=const.DEFAULT_ANGLE_TOLERANCE
+        )
         dir_size = parser.getint("DEFAULT", "dir_size", fallback=const.DEFAULT_DIR_SIZE)
         write_symm = parser.getboolean(
             "DEFAULT", "write_symm", fallback=const.DEFAULT_WRITE_SYMM
         )
 
-        no_write = parser.getboolean("DEFAULT", "no_write", fallback=const.DEFAULT_NO_WRITE)
-        no_dmat = parser.getboolean("DEFAULT", "no_dmat", fallback=const.DEFAULT_NO_DMAT)
+        no_write = parser.getboolean(
+            "DEFAULT", "no_write", fallback=const.DEFAULT_NO_WRITE
+        )
+        no_dmat = parser.getboolean(
+            "DEFAULT", "no_dmat", fallback=const.DEFAULT_NO_DMAT
+        )
         t_kind = parser.getboolean("DEFAULT", "t_kind", fallback=const.DEFAULT_T_KIND)
 
         return cls(

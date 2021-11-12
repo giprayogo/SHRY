@@ -19,11 +19,13 @@ import argparse
 import datetime
 import fnmatch
 import logging
-# import sys
 
 import tqdm
 
 from . import const
+
+# import sys
+
 
 # Disable detailed stack trace.
 # sys.excepthook = lambda t, e, _: print(f"{t.__name__}: {e}")
@@ -81,26 +83,31 @@ def print_footer():
 
 
 def main():  # pylint: disable=missing-function-docstring
-    parser = argparse.ArgumentParser()
-    group = parser.add_argument_group("Input")
-    group.add_argument(
+    parser = argparse.ArgumentParser(
+        description="Quick use: `shry STRUCTURE_CIF`. See `shry -h` for more options.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    # group = parser.add_argument_group("Input")
+    parser.add_argument(
         "input",
         type=str,
-        help="Input or structure file containing run configuration"
-        " (*.ini, see ./examples/.)",
+        help=(
+            "A CIF, or an `*.ini` containing command line options as keys.\n"
+            "If using `*.ini`, write all keys under `DEFAULT` section "
+            "(See `$SHRY_INSTALLDIR/examples`)"
+        ),
     )
 
-    group = parser.add_argument_group("Modify structure")
+    group = parser.add_argument_group("structure modification")
     group.add_argument(
         "--from-species",
         "-f",
         nargs="*",
         type=str,
         help=(
-            "Replace species/label, if found within the input"
-            "structure, into species defined by `--to`."
-            "Matches either `_atom_site_label` or `_atom_site_type_symbol` "
-            "defined within the CIF."
+            "Replace FROM_SPECIES from the CIF file into TO_SPECIES. "
+            "Matches either `_atom_site_label` or `atom_site_type_symbol`. "
+            "Use comma or space (preferred) for multiple substitutions."
         ),
         default=const.DEFAULT_FROM_SPECIES,
     )
@@ -110,10 +117,10 @@ def main():  # pylint: disable=missing-function-docstring
         nargs="*",
         type=str,
         help=(
-            "Final chemical formula of the `--from` sites"
-            "after substitution. Accepts various formats such as "
-            "SmFe12, Sm0.5Fe0.5, Sm3+Sm2+2Fe3, etc. "
-            "Different oxidation states are treated as distinct sites."
+            "Final chemical formula of the replaced FROM_SPECIES. "
+            "Accepts various formats for the concentration and oxidation states "
+            "such as SmFe12, Sm0.5Fe0.5, Sm3+Sm2+2Fe3, etc. "
+            "The number of entry must be the same as FROM_SPECIES."
         ),
         default=const.DEFAULT_TO_SPECIES,
     )
@@ -122,76 +129,98 @@ def main():  # pylint: disable=missing-function-docstring
         "-s",
         nargs="*",
         type=str,  # To allow flexible separator
-        help="Scales the unit cell. Comma-or-space-separated 3-or-9-digit values. "
-        "Nine digit case is for the more general scaling matrix, "
-        "whilst 3 is diagonal-only.",
+        help=(
+            "Three or nine (for non-diagonal supercell) integers specifying "
+            "the scaling matrix for constructing a supercell."
+        ),
         default=const.DEFAULT_SCALING_MATRIX_STR,
     )
 
-    group = parser.add_argument_group("Run option")
+    group = parser.add_argument_group("input and output")
     group.add_argument(
-        "--symmetrize", action="store_true", help="Symmetrize input CIF."
+        "--count-only",
+        action="store_true",
+        help=(
+            "Enumerate the total number of ordered configurations "
+            "from the given CIF and quit."
+        ),
     )
     group.add_argument(
-        "--sample",
-        default=const.DEFAULT_SAMPLE,
-        help="From all generated order structure, sample N of them (no replacement).",
+        "--mod-only",
+        action="store_true",
+        help="Write a modified CIF without generating the ordered structures.",
     )
     group.add_argument(
-        "--symprec",
-        type=float,
-        default=const.DEFAULT_SYMPREC,
-        help="Precision used in symmetry search.",
-    )
-    group.add_argument(
-        "--angle-tolerance",
-        type=float,
-        default=const.DEFAULT_ANGLE_TOLERANCE,
-        help="Angle tolerance for symmetry search.",
+        "--no-write",
+        action="store_true",
+        help="Generate ordered structures, but do not store them into disk.",
     )
     group.add_argument(
         "--dir-size",
         type=int,
         default=const.DEFAULT_DIR_SIZE,
-        help="Divides output order structures in directories of DIR_SIZE files each.",
+        help="Number of output CIFs written to each output directories.",
     )
     group.add_argument(
-        "--count-only",
-        action="store_true",
-        help="Skip order structures generation, instead only"
-        " prints the final number of structure.",
+        "--sample",
+        default=const.DEFAULT_SAMPLE,
+        help="Write only SAMPLE CIFs from all ordered structures (random sampling).",
     )
     group.add_argument(
         "--write-symm",
         action="store_true",
-        help="Write symmetries for the order structures (slower).",
+        help="Write symmetries for all output CIFs (slower).",
+    )
+    group.add_argument(
+        "--symmetrize",
+        action="store_true",
+        help=(
+            "Use Wyckoff labels from a symmetry search to label the input CIF's sites. "
+            "By default, the label given within the CIF is used."
+        ),
+    )
+
+    group = parser.add_argument_group("run configuration")
+    group.add_argument(
+        "--symprec",
+        type=float,
+        default=const.DEFAULT_SYMPREC,
+        help="Symmetry search precision (simulation cell fraction).",
+    )
+    group.add_argument(
+        "--angle-tolerance",
+        type=float,
+        default=const.DEFAULT_ANGLE_TOLERANCE,
+        help="Symmetry search angle tolerance (degrees).",
     )
     group.add_argument(
         "--disable-progressbar",
         action="store_true",
-        help="Disable progressbar",
-    )
-    group.add_argument(
-        "--no-write",
-        action="store_true",
-        help="Do not write final structure",
+        help="Disable progress bar. May stabilize longer runs.",
     )
     group.add_argument(
         "--no-dmat",
         action="store_true",
-        help="(devel) Alternative algorithm without distance matrix",
+        help="(devel/algo) Alternative algorithm without distance matrix (slower).",
     )
     group.add_argument(
         "--t-kind",
         default="sum",
         choices=("sum", "plsum", "det"),
-        help="Type of T function (sum, determinant)"
+        help=(
+            "(devel/algo) Type of T function applied to "
+            "distance matrix (sum, plsum, det)."
+        ),
     )
     args = parser.parse_args()
     const.DISABLE_PROGRESSBAR = args.disable_progressbar
 
     # Print header first for faster perceived response
     print_header()
+
+    # Late patch for count/mod/nowrite
+    if args.count_only:
+        args.no_write = True
 
     from .main import ScriptHelper  # pylint:disable=import-outside-toplevel
 
@@ -226,6 +255,6 @@ def main():  # pylint: disable=missing-function-docstring
         )
     helper.count()
     helper.save_modified_structure()
-    if not args.count_only:
+    if not args.count_only and not args.mod_only:
         helper.write()
     print_footer()
