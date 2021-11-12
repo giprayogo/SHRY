@@ -567,23 +567,28 @@ class LabeledStructure(Structure):
             RuntimeError: If no sites matches at least one of the from_species
                 specification.
         """
-        for from_species, to_species in species_mapping.items():
+        for map_num, mapping in enumerate(species_mapping.items()):
+            from_species, to_species = mapping
             replace = False
             to_composition = Composition.from_string(to_species)
             for site in self:
-                # Find matching Element
-                if any(e.symbol == from_species for e in site.species.elements):
+                # Find matching site label
+                if from_species in site.properties["_atom_site_label"]:
                     replace = True
-                    # Update the site label.
-                    site.properties["_atom_site_label"] = tuple(sorted({to_species}))
+                    # If match by label, don't change the label!
+                    # site.properties["_atom_site_label"] = tuple(sorted({to_species}))
                     try:
                         site.species = to_composition
                     except ValueError:
                         site.species = to_composition.fractional_composition
-                # If failed, try to find matching CIF labels
-                elif from_species in site.properties["_atom_site_label"]:
+                # If failed, try to find matching Element
+                elif any(e.symbol == from_species for e in site.species.elements):
                     replace = True
-                    site.properties["_atom_site_label"] = tuple(sorted({to_species}))
+                    # Since all sites are replaced, merge them under one label.
+                    # But give a distinct ID in case two or more sites are
+                    # replaced into the same species.
+                    new_label = tuple(sorted({to_species}) + [map_num])
+                    site.properties["_atom_site_label"] = new_label
                     try:
                         site.species = to_composition
                     except ValueError:

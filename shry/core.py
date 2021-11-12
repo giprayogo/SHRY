@@ -1664,10 +1664,10 @@ class Polya:
             try:
                 index_map = {s: i for i, s in enumerate(permutations[0])}
             except IndexError as e:
-                print("========================================")
-                print(self._perm_list)
-                print(permutations)
-                print("========================================")
+                logging.error("========================================")
+                logging.error(self._perm_list)
+                logging.error(permutations)
+                logging.error("========================================")
                 raise e
             # Iterate by row.
             for i, permutation in enumerate(permutations):
@@ -1684,11 +1684,11 @@ class Polya:
                         try:
                             head = permutation[index_map[head]]
                         except (KeyError, IndexError) as exc:
-                            print("=============================")
-                            print(f"HEAD: {head}")
-                            print(f"IMAP: {index_map}")
-                            print(f"P: {permutation}")
-                            print(f"BP: {permutations}")
+                            logging.error("=============================")
+                            logging.error(f"HEAD: {head}")
+                            logging.error(f"IMAP: {index_map}")
+                            logging.error(f"P: {permutation}")
+                            logging.error(f"BP: {permutations}")
                             raise RuntimeError("Check permutation list.") from exc
                     cycles.append(cycle)
 
