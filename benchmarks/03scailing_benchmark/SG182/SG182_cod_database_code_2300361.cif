@@ -1,0 +1,251 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-21 11:56:54 +0200 (Sun, 21 Feb 2016) $
+#$Revision: 176809 $
+#$URL: svn://www.crystallography.net/cod/cif/2/30/03/2300361.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2300361
+loop_
+_publ_author_name
+'Macchi, Piero'
+'B\"urgi, Hans-Beat'
+'Chimpri, Abita S.'
+'Hauser, J\"urg'
+'G\'al, Zolt\'an'
+_publ_section_title
+;
+ Low-energy contamination of Mo microsource X-ray radiation: analysis
+ and solution of the problem
+;
+_journal_coeditor_code           HE5530
+_journal_issue                   4
+_journal_name_full               'Journal of Applied Crystallography'
+_journal_page_first              763
+_journal_page_last               771
+_journal_paper_doi               10.1107/S0021889811016232
+_journal_volume                  44
+_journal_year                    2011
+_chemical_absolute_configuration unk
+_chemical_formula_sum            'C6 H24 N8 Ni O6'
+_chemical_formula_weight         363.04
+_chemical_name_systematic
+;
+ ?
+;
+_space_group_IT_number           182
+_symmetry_space_group_name_Hall  'P 6c 2c'
+_symmetry_space_group_name_H-M   'P 63 2 2'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_conform_dict_location     ftp://ftp.iucr.org/pub/cif_core.dic
+_audit_conform_dict_name         cif_core.dic
+_audit_conform_dict_version      2.4
+_audit_creation_date             2011-03-11T14:50:09-00:00
+_audit_creation_method           'WinGX routine CIF_UPDATE'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            2
+_cell_length_a                   8.8647(3)
+_cell_length_b                   8.8647(3)
+_cell_length_c                   11.3595(4)
+_cell_measurement_temperature    293(2)
+_cell_volume                     773.07(5)
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_measured_fraction_theta_full 0.992
+_diffrn_measured_fraction_theta_max 0.992
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0687
+_diffrn_reflns_av_unetI/netI     0.0272
+_diffrn_reflns_limit_h_max       13
+_diffrn_reflns_limit_h_min       -13
+_diffrn_reflns_limit_k_max       13
+_diffrn_reflns_limit_k_min       -13
+_diffrn_reflns_limit_l_max       16
+_diffrn_reflns_limit_l_min       -17
+_diffrn_reflns_number            16710
+_diffrn_reflns_theta_full        32.54
+_diffrn_reflns_theta_max         32.54
+_diffrn_reflns_theta_min         2.65
+_exptl_absorpt_coefficient_mu    1.295
+_exptl_absorpt_correction_T_max  1.00000
+_exptl_absorpt_correction_T_min  0.83105
+_exptl_absorpt_correction_type   multi-scan
+_exptl_crystal_density_diffrn    1.56
+_exptl_crystal_density_method    multi-scan
+_exptl_crystal_F_000             384
+_exptl_crystal_size_max          0.181
+_exptl_crystal_size_mid          0.125
+_exptl_crystal_size_min          0.052
+_refine_diff_density_max         0.613
+_refine_diff_density_min         -0.448
+_refine_diff_density_rms         0.062
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   -0.05(4)
+_refine_ls_extinction_coef       0.0338(19)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   2.262
+_refine_ls_hydrogen_treatment    constr
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     34
+_refine_ls_number_reflns         940
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      2.262
+_refine_ls_R_factor_all          0.0627
+_refine_ls_R_factor_gt           0.0439
+_refine_ls_shift/su_max          0
+_refine_ls_shift/su_mean         0
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0000P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.054
+_refine_ls_wR_factor_ref         0.0566
+_reflns_number_gt                738
+_reflns_number_total             940
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            he5530.cif
+_cod_data_source_block           IE
+_cod_database_code               2300361
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y, z+1/2'
+'-y, -x, -z+1/2'
+'y, x, -z'
+'x-y, -y, -z'
+'-x+y, y, -z+1/2'
+'x, x-y, -z+1/2'
+'-x, -x+y, -z'
+'-y, x-y, z'
+'y, -x+y, z+1/2'
+'x-y, x, z+1/2'
+'-x+y, -x, z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Ni1 Ni 0.3333 0.6667 0.75 0.03467(19) Uani 1 6 d S
+N1 N 0.5431(2) 0.8599(2) 0.64814(16) 0.0453(5) Uani 1 1 d .
+H1A H 0.5242 0.8334 0.5711 0.054 Uiso 1 1 calc R
+H1B H 0.5523 0.9646 0.6594 0.054 Uiso 1 1 calc R
+C1 C 0.7038(2) 0.8644(4) 0.68596(18) 0.0580(6) Uani 1 1 d .
+H1C H 0.7141 0.7734 0.6458 0.07 Uiso 1 1 calc R
+H1D H 0.8035 0.9756 0.6645 0.07 Uiso 1 1 calc R
+N2 N 0.3333 0.6667 0.3894(2) 0.0480(7) Uani 1 3 d S
+O1 O 0.4835(2) 0.6923(2) 0.39163(16) 0.0788(6) Uani 1 1 d .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Ni1 0.0251(2) 0.0251(2) 0.0538(4) 0 0 0.01254(11)
+N1 0.0354(11) 0.0349(11) 0.0619(11) 0.0040(9) 0.0007(9) 0.0148(9)
+C1 0.0300(11) 0.0475(17) 0.0913(16) 0.0139(17) 0.0114(10) 0.0154(15)
+N2 0.0493(11) 0.0493(11) 0.0454(16) 0 0 0.0246(5)
+O1 0.0473(11) 0.0826(14) 0.1115(15) -0.0057(11) 0.0007(10) 0.0362(10)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0 0 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N N 0.0061 0.0033 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.006 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ni Ni 0.3393 1.1124 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+N1 Ni1 N1 81.87(10) 6_556 9_665
+N1 Ni1 N1 93.34(7) 6_556 3_666
+N1 Ni1 N1 91.84(10) 9_665 3_666
+N1 Ni1 N1 91.84(10) 6_556 .
+N1 Ni1 N1 93.34(7) 9_665 .
+N1 Ni1 N1 173.14(10) 3_666 .
+N1 Ni1 N1 93.34(7) 6_556 7_566
+N1 Ni1 N1 173.14(10) 9_665 7_566
+N1 Ni1 N1 93.34(7) 3_666 7_566
+N1 Ni1 N1 81.87(10) . 7_566
+N1 Ni1 N1 173.14(10) 6_556 12_565
+N1 Ni1 N1 93.34(7) 9_665 12_565
+N1 Ni1 N1 81.87(10) 3_666 12_565
+N1 Ni1 N1 93.34(7) . 12_565
+N1 Ni1 N1 91.84(10) 7_566 12_565
+C1 N1 Ni1 107.92(13) . .
+C1 N1 H1A 110.1 . .
+Ni1 N1 H1A 110.1 . .
+C1 N1 H1B 110.1 . .
+Ni1 N1 H1B 110.1 . .
+H1A N1 H1B 108.4 . .
+C1 C1 N1 110.99(16) 7_566 .
+C1 C1 H1C 109.4 7_566 .
+N1 C1 H1C 109.4 . .
+C1 C1 H1D 109.4 7_566 .
+N1 C1 H1D 109.4 . .
+H1C C1 H1D 108 . .
+O1 N2 O1 119.957(13) 9_665 12_565
+O1 N2 O1 119.957(13) 9_665 .
+O1 N2 O1 119.957(12) 12_565 .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Ni1 N1 2.1321(16) 6_556
+Ni1 N1 2.1321(16) 9_665
+Ni1 N1 2.1321(16) 3_666
+Ni1 N1 2.1321(16) .
+Ni1 N1 2.1321(16) 7_566
+Ni1 N1 2.1321(16) 12_565
+N1 C1 1.468(2) .
+N1 H1A 0.9 .
+N1 H1B 0.9 .
+C1 C1 1.472(4) 7_566
+C1 H1C 0.97 .
+C1 H1D 0.97 .
+N2 O1 1.2333(15) 9_665
+N2 O1 1.2333(15) 12_565
+N2 O1 1.2333(15) .
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_site_symmetry_1
+_geom_torsion_site_symmetry_4
+N1 Ni1 N1 C1 106.17(17) 6_556 .
+N1 Ni1 N1 C1 -171.87(15) 9_665 .
+N1 Ni1 N1 C1 13.06(13) 7_566 .
+N1 Ni1 N1 C1 -78.33(19) 12_565 .
+Ni1 N1 C1 C1 -37.8(3) . 7_566

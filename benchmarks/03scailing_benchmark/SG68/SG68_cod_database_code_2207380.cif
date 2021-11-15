@@ -1,0 +1,144 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-06-09 18:24:20 +0300 (Sat, 09 Jun 2018) $
+#$Revision: 208235 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/2/20/73/2207380.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2207380
+loop_
+_publ_author_name
+'Smolentsev, Anton I.'
+'Naumov, Dmitry Yu.'
+_publ_section_title
+;
+ Strontium chlorite, Sr(ClO~2~)~2~, from X-ray powder diffraction data
+;
+_journal_coeditor_code           WM6101
+_journal_issue                   11
+_journal_name_full               'Acta Crystallographica Section E'
+_journal_page_first              i249
+_journal_page_last               i250
+_journal_paper_doi               10.1107/S1600536805034161
+_journal_volume                  61
+_journal_year                    2005
+_chemical_formula_iupac          'Sr (Cl O2)2'
+_chemical_formula_structural     'Sr (Cl O2)2'
+_chemical_formula_sum            'Cl2 O4 Sr'
+_chemical_formula_weight         222.52
+_chemical_name_common            'strontium chlorite'
+_chemical_name_systematic        'strontium chlorate(III)'
+_space_group_crystal_system      orthorhombic
+_space_group_IT_number           68
+_space_group_name_Hall           '-C 2a 2ac'
+_space_group_name_H-M_alt        'C c c a :2'
+_cell_angle_alpha                90.0
+_cell_angle_beta                 90.0
+_cell_angle_gamma                90.0
+_cell_formula_units_Z            4
+_cell_length_a                   5.9799(12)
+_cell_length_b                   12.7519(16)
+_cell_length_c                   5.9787(12)
+_cell_measurement_temperature    293(2)
+_cell_volume                     455.91(14)
+_computing_cell_refinement       'FULLPROF2k (Rodriguez-Carvajal, 2004)'
+_computing_data_collection       'APD1700 Software (Philips, 1989)'
+_computing_publication_material
+'WINPLOTR (Roisnel & Rodriguez-Carvajal, 2005)'
+_computing_structure_refinement  FULLPROF2k
+_diffrn_ambient_temperature      293(2)
+_diffrn_measurement_device_type  'Philips PW1700 powder diffractometer'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_wavelength     1.54178
+_exptl_crystal_density_diffrn    3.242
+_exptl_crystal_density_method    'not measured'
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_all   3.03
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     28
+_refine_ls_number_restraints     1
+_refine_ls_shift/su_max          0.01
+_refine_ls_weighting_details     'w = 1/[\s^2^(Y~i~)]'
+_refine_ls_weighting_scheme      sigma
+_cod_data_source_file            wm6101.cif
+_cod_data_source_block           II
+_cod_depositor_comments
+;
+ Updating space group information.
+
+ Antanas Vaitkus,
+ 2018-06-10
+;
+_cod_original_cell_volume        455.92(11)
+_cod_original_sg_symbol_Hall     '-C 2b 2bc'
+_cod_original_sg_symbol_H-M      'C c c a (C c c e)'
+_cod_database_code               2207380
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 x+1/2,-y,-z+1/2
+3 -x,y,-z+1/2
+4 -x+1/2,-y,z
+5 -x,-y,-z
+6 -x+1/2,y,z+1/2
+7 x,-y,z+1/2
+8 x+1/2,y,-z
+9 x+1/2,y+1/2,z
+10 x,-y+1/2,-z+1/2
+11 -x+1/2,y+1/2,-z+1/2
+12 -x,-y+1/2,z
+13 -x+1/2,-y+1/2,-z
+14 -x,y+1/2,z+1/2
+15 x+1/2,-y+1/2,z+1/2
+16 x,y+1/2,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_type_symbol
+Sr 0.00000 0.25000 0.25000 0.0105(4) Uiso 1.00000 Sr
+Cl 0.50000 0.07460(16) 0.25000 0.0215(7) Uiso 1.00000 Cl
+O 0.3443(10) 0.1447(4) 0.1005(10) 0.050(2) Uiso 1.00000 O
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Sr -0.46500 1.82000
+'International Tables Vol. C (1991) Tables 6.1.1.4 and 6.1.1.5'
+Cl 0.34800 0.70200
+'International Tables Vol. C (1991) Tables 6.1.1.4 and 6.1.1.5'
+O 0.04700 0.03200
+'International Tables Vol. C (1991) Tables 6.1.1.4 and 6.1.1.5'
+loop_
+_diffrn_radiation_type
+CuK\a
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+O Cl O 3_655 110.6(6) yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Sr O . 2.615(6) yes
+Sr O 6_555 2.657(6) yes
+Cl O . 1.570(6) yes

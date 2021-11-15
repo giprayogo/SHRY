@@ -1,0 +1,168 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/36/9003646.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9003646
+loop_
+_publ_author_name
+'Lager, G. A.'
+'Marshall, W. G.'
+'Liu, Z.'
+'Downs, R. T.'
+_publ_section_title
+;
+ Re-examination of the hydrogarnet structure at high pressure
+ using neutron powder diffraction and infrared spectroscopy
+ Sample: P = 4.05 GPa
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              639
+_journal_page_last               644
+_journal_paper_doi               10.2138/am.2005.1631
+_journal_volume                  90
+_journal_year                    2005
+_chemical_formula_sum            'Al2 Ca3 D12 O12'
+_chemical_name_mineral           'Katoite (deuterated)'
+_space_group_IT_number           230
+_symmetry_space_group_name_Hall  '-I 4bd 2c 3'
+_symmetry_space_group_name_H-M   'I a -3 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   12.3165
+_cell_length_b                   12.3165
+_cell_length_c                   12.3165
+_cell_volume                     1868.366
+_diffrn_ambient_pressure         4.05e+06
+_exptl_crystal_density_diffrn    2.775
+_cod_original_sg_symbol_H-M      'I a 3 d'
+_cod_original_formula_sum        'Ca3 Al2 O12 D12'
+_cod_database_code               9003646
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+x,1/2+y,1/2+z
+z,1/2-x,1/2+y
+1/2+z,-x,+y
+-y,1/2+z,1/2-x
+1/2-y,+z,-x
+x,1/2-y,1/2+z
+1/2+x,-y,+z
+-z,1/2+x,1/2-y
+1/2-z,+x,-y
+y,1/2-z,1/2+x
+1/2+y,-z,+x
+-x,1/2+y,1/2-z
+1/2-x,+y,-z
+3/4+x,1/4-z,3/4-y
+1/4+x,3/4-z,1/4-y
+3/4-z,1/4+y,3/4+x
+1/4-z,3/4+y,1/4+x
+3/4+y,1/4-x,3/4-z
+1/4+y,3/4-x,1/4-z
+3/4-x,1/4+z,3/4+y
+1/4-x,3/4+z,1/4+y
+3/4+z,1/4-y,3/4-x
+1/4+z,3/4-y,1/4-x
+3/4-y,1/4+x,3/4+z
+1/4-y,3/4+x,1/4+z
+1/4+x,1/4+z,1/4+y
+3/4+x,3/4+z,3/4+y
+1/4-z,1/4-y,1/4-x
+3/4-z,3/4-y,3/4-x
+1/4+y,1/4+x,1/4+z
+3/4+y,3/4+x,3/4+z
+1/4-x,1/4-z,1/4-y
+3/4-x,3/4-z,3/4-y
+1/4+z,1/4+y,1/4+x
+3/4+z,3/4+y,3/4+x
+1/4-y,1/4-x,1/4-z
+3/4-y,3/4-x,3/4-z
+1/2+z,x,1/2-y
++z,1/2+x,-y
+1/2-y,-z,1/2+x
+-y,1/2-z,+x
+1/2+x,y,1/2-z
++x,1/2+y,-z
+1/2-z,-x,1/2+y
+-z,1/2-x,+y
+1/2+y,z,1/2-x
++y,1/2+z,-x
+1/2-x,-y,1/2+z
+-x,1/2-y,+z
+1/2-z,1/2+x,y
+-z,+x,1/2+y
+1/2+y,1/2-z,-x
++y,-z,1/2-x
+1/2-x,1/2+y,z
+-x,+y,1/2+z
+1/2+z,1/2-x,-y
++z,-x,1/2-y
+1/2-y,1/2+z,x
+-y,+z,1/2+x
+1/2+x,1/2-y,-z
++x,-y,1/2-z
+3/4-x,3/4+z,1/4-y
+1/4-x,1/4+z,3/4-y
+3/4+z,3/4-y,1/4+x
+1/4+z,1/4-y,3/4+x
+3/4-y,3/4+x,1/4-z
+1/4-y,1/4+x,3/4-z
+3/4+x,3/4-z,1/4+y
+1/4+x,1/4-z,3/4+y
+3/4-z,3/4+y,1/4-x
+1/4-z,1/4+y,3/4-x
+3/4+y,3/4-x,1/4+z
+1/4+y,1/4-x,3/4+z
+1/4-x,3/4-z,3/4+y
+3/4-x,1/4-z,1/4+y
+1/4+z,3/4+y,3/4-x
+3/4+z,1/4+y,1/4-x
+1/4-y,3/4-x,3/4+z
+3/4-y,1/4-x,1/4+z
+1/4+x,3/4+z,3/4-y
+3/4+x,1/4+z,1/4-y
+1/4-z,3/4-y,3/4+x
+3/4-z,1/4-y,1/4+x
+1/4+y,3/4+x,3/4-z
+3/4+y,1/4+x,1/4-z
+-z,-x,-y
+1/2-z,1/2-x,1/2-y
+y,z,x
+1/2+y,1/2+z,1/2+x
+-x,-y,-z
+1/2-x,1/2-y,1/2-z
+z,x,y
+1/2+z,1/2+x,1/2+y
+-y,-z,-x
+1/2-y,1/2-z,1/2-x
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+D 0.03400 0.06800 0.12200 -0.02300 -0.02200 0.03100
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Ca 0.12500 0.00000 0.25000 0.02700
+Al 0.00000 0.00000 0.50000 0.01400
+O 0.02990 0.05210 0.64260 0.01810
+D 0.15250 0.08760 0.80120 0.07500

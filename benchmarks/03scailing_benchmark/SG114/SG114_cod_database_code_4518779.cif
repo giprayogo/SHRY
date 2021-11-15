@@ -1,0 +1,137 @@
+#------------------------------------------------------------------------------
+#$Date: 2021-07-04 04:22:21 +0300 (Sun, 04 Jul 2021) $
+#$Revision: 266946 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/4/51/87/4518779.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4518779
+loop_
+_publ_author_name
+'Gamo, Hirotada'
+'Phuc, Nguyen Huu Huy'
+'Muto, Hiroyuki'
+'Matsuda, Atsunori'
+_publ_section_title
+;
+ Effects of Substituting S with Cl on the Structural and Electrochemical
+ Characteristics of Na3SbS4 Solid Electrolytes
+;
+_journal_issue                   6
+_journal_name_full               'ACS Applied Energy Materials'
+_journal_page_first              6125
+_journal_page_last               6134
+_journal_paper_doi               10.1021/acsaem.1c00927
+_journal_volume                  4
+_journal_year                    2021
+_chemical_formula_sum            'Na3 S4 Sb'
+_chemical_formula_weight         318.989
+_chemical_name_common            'Na3SbS4 tetragonal'
+_space_group_crystal_system      tetragonal
+_space_group_IT_number           114
+_space_group_name_Hall           'P -4 2n'
+_space_group_name_H-M_alt        'P -4 21 c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   7.1653(1)
+_cell_length_b                   7.1653(1)
+_cell_length_c                   7.2896(2)
+_cell_volume                     374.259(13)
+_computing_cell_refinement       'RIETAN-FP (Izumi and Momma, 2007)'
+_computing_molecular_graphics    'VESTA (Momma and Izumi, 2008)'
+_computing_structure_refinement  'RIETAN-FP (Izumi and Momma, 2007)'
+_diffrn_source                   'Sealed X-ray tube'
+_diffrn_source_target            Cu
+_exptl_crystal_density_diffrn    2.8306
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_F_000             296.00
+_pd_calc_method                  'Rietveld Refinement'
+_pd_instr_location               ' ?'
+_pd_meas_2theta_range_inc        0.0200
+_pd_meas_2theta_range_max        120.0000
+_pd_meas_2theta_range_min        10.0000
+_pd_meas_number_of_points        5501
+_pd_meas_scan_method             step
+_pd_proc_2theta_range_inc        0.0200
+_pd_proc_2theta_range_max        120.0000
+_pd_proc_2theta_range_min        10.0000
+_pd_proc_ls_background_function  'Legendre polynomials'
+_pd_proc_ls_pref_orient_corr     ' ?'
+_pd_proc_ls_profile_function     'split pseudo-Voigt function'
+_pd_proc_ls_prof_R_factor        0.06032
+_pd_proc_ls_prof_wR_expected     0.05326
+_pd_proc_ls_prof_wR_factor       0.08075
+_pd_spec_mounting                ' ?'
+_pd_spec_mount_mode              reflection
+_pd_spec_shape                   flat_sheet
+_refine_diff_density_max         0.0
+_refine_diff_density_min         0.0
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_all   1.5160
+_refine_ls_matrix_type           full
+_refine_ls_number_constraints    0
+_refine_ls_number_parameters     45
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          0.02236
+_refine_ls_R_Fsqd_factor         0.02309
+_refine_ls_R_I_factor            0.03194
+_refine_ls_shift/su_max          0.0
+_refine_ls_weighting_details     1/<i>y</i>~i~
+_refine_ls_weighting_scheme      sigma
+_cod_data_source_file            ae1c00927_si_002.cif
+_cod_data_source_block           single_phase
+_cod_depositor_comments
+'Adding full bibliography for 4518778--4518779.cif.'
+_cod_original_cell_volume        374.26(1)
+_cod_database_code               4518779
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -x,-y,z
+3 y,-x,-z
+4 -y,x,-z
+5 -x+1/2,y+1/2,-z+1/2
+6 x+1/2,-y+1/2,-z+1/2
+7 -y+1/2,-x+1/2,z+1/2
+8 y+1/2,x+1/2,z+1/2
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_adp_type
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+Na1@1 0 0.5 0.0601(6) 1 4 d Uiso 0.039(2) Na
+Na2@1 0 0 0.5 1 2 b Uiso 0.036(2) Na
+S@1 0.2056(3) 0.1724(3) 0.1829(3) 1 8 e Uiso 0.0130(7) S
+Sb@1 0 0 0 1 2 a Uiso 0.0081(5) Sb
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Na Na 0.1353 0.1239 'International Tables for Crystallography, Vol. C'
+Sb Sb5+ -0.0562 5.8946 'International Tables for Crystallography, Vol. C'
+Sb Sb3+ -0.0562 5.8946 'International Tables for Crystallography, Vol. C'
+S S 0.3331 0.5567 'International Tables for Crystallography, Vol. C'
+Cl Cl 0.3639 0.7018 'International Tables for Crystallography, Vol. C'
+Na Na+ 0.1353 0.1239 'International Tables for Crystallography, Vol. C'
+loop_
+_diffrn_radiation_type
+_diffrn_radiation_wavelength
+_diffrn_radiation_wavelength_wt
+'Cu K\a~1~' 1.540593 0.666667
+'Cu K\a~2~' 1.544427 0.333333

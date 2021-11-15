@@ -1,0 +1,43 @@
+# generated using pymatgen
+data_K1.5Rb0.5Ra1Na0.5Sr0.5Be1.5H3.5O6
+_symmetry_space_group_name_H-M   P-3
+_cell_length_a   4.58040000
+_cell_length_b   4.58040000
+_cell_length_c   4.84350000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   147
+_chemical_formula_structural   K1.5Rb0.5Ra1Na0.5Sr0.5Be1.5H3.5O6
+_chemical_formula_sum   'K1.5 Rb0.5 Ra1 Na0.5 Sr0.5 Be1.5 H3.5 O6'
+_cell_volume   88.00285215
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ra+  Ra0  1  0.00000000  0.00000000  0.00000000  0.5
+  Be+  Be1  1  0.00000000  0.00000000  0.00000000  0.5
+  Be+  Be2  2  0.33333333  0.66666667  0.01510000  0.5
+  Ra+  Ra3  2  0.33333333  0.66666667  0.01510000  0.25
+  Sr+  Sr4  2  0.33333333  0.66666667  0.01510000  0.25
+  H+  H5  6  0.16310000  0.78540000  0.48110000  0.5833333333333334
+  K+  K6  6  0.16310000  0.78540000  0.48110000  0.25
+  Na+  Na7  6  0.16310000  0.78540000  0.48110000
+  0.08333333333333333
+  Rb+  Rb8  6  0.16310000  0.78540000  0.48110000
+  0.08333333333333333
+  O  O9  6  0.00680000  0.66930000  0.27460000  1

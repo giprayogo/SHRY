@@ -1,0 +1,276 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-23 00:15:29 +0200 (Wed, 23 Mar 2016) $
+#$Revision: 179101 $
+#$URL: svn://www.crystallography.net/cod/cif/4/30/63/4306371.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4306371
+loop_
+_publ_author_name
+'Alejandro Guijarro'
+'\'Oscar Castillo'
+'Arrigo Calzolari'
+'Pablo J. Sanz Miguel'
+'Carlos J. G\'omez-Garc\'ia'
+'Rosa di Felice'
+'F\'elix Zamora'
+_publ_contact_author
+;
+ F\'elix Zamora, Departamento de Qu\'imica Inorg\'anica. 
+ Universidad Aut\'onoma de Madrid, E-28049 Madrid, Spain
+;
+_publ_contact_author_email       felix.zamora@uam.es
+_publ_contact_author_fax         '34 91 4974833'
+_publ_contact_author_phone       '34 91 4973962'
+_publ_section_title
+;
+Electrical Conductivity in Platinum-Dimer Columns
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              9736
+_journal_page_last               9738
+_journal_paper_doi               10.1021/ic801211m
+_journal_volume                  47
+_journal_year                    2008
+_chemical_formula_iupac          '[Pt2(mu-C2H3S2)4]'
+_chemical_formula_moiety         'C8 H12 Pt2 S8'
+_chemical_formula_sum            'C8 H12 Pt2 S8'
+_chemical_formula_weight         754.84
+_chemical_name_systematic
+;
+tetrakis(mu-dithioacetato)diplatinum
+;
+_space_group_IT_number           130
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  '-P 4a 2ac'
+_symmetry_space_group_name_H-M   'P 4/n c c :2'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   12.7130(6)
+_cell_length_b                   12.7130(6)
+_cell_length_c                   11.8180(10)
+_cell_measurement_reflns_used    13505
+_cell_measurement_temperature    293(2)
+_cell_measurement_theta_max      28.09
+_cell_measurement_theta_min      3.20
+_cell_volume                     1910.0(2)
+_computing_cell_refinement       'CrysAlis CCD (Oxford Diffraction, 2003)'
+_computing_data_collection       'CrysAlis CCD (Oxford Diffraction, 2003)'
+_computing_data_reduction        'CrysAlis RED (Oxford Diffraction, 2003)'
+_computing_molecular_graphics    'Ortep-3 (Farrugia, 1997)'
+_computing_publication_material  'WinGX (Farrugia, 1999)'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'Sir92 (Altamore et al., 1993)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_measured_fraction_theta_full 0.999
+_diffrn_measured_fraction_theta_max 0.999
+_diffrn_measurement_device_type  Xcalibur
+_diffrn_measurement_method       \w
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0821
+_diffrn_reflns_av_sigmaI/netI    0.1242
+_diffrn_reflns_limit_h_max       16
+_diffrn_reflns_limit_h_min       -11
+_diffrn_reflns_limit_k_max       16
+_diffrn_reflns_limit_k_min       -16
+_diffrn_reflns_limit_l_max       15
+_diffrn_reflns_limit_l_min       -15
+_diffrn_reflns_number            13505
+_diffrn_reflns_theta_full        28.09
+_diffrn_reflns_theta_max         28.09
+_diffrn_reflns_theta_min         3.20
+_diffrn_standards_decay_%        0
+_diffrn_standards_interval_count 0
+_diffrn_standards_interval_time  0
+_diffrn_standards_number         0
+_exptl_absorpt_coefficient_mu    15.488
+_exptl_absorpt_correction_T_max  0.887
+_exptl_absorpt_correction_T_min  0.541
+_exptl_absorpt_correction_type   numerical
+_exptl_absorpt_process_details   'CrysAlis RED (Oxford Diffraction, 2003)'
+_exptl_crystal_colour            violet
+_exptl_crystal_density_diffrn    2.625
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       plate
+_exptl_crystal_F_000             1376
+_exptl_crystal_size_max          0.10
+_exptl_crystal_size_mid          0.04
+_exptl_crystal_size_min          0.01
+_refine_diff_density_max         2.101
+_refine_diff_density_min         -1.302
+_refine_diff_density_rms         0.295
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   0.836
+_refine_ls_hydrogen_treatment    constr
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     44
+_refine_ls_number_reflns         1167
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      0.836
+_refine_ls_R_factor_all          0.1559
+_refine_ls_R_factor_gt           0.0480
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details     'calc w=1/[\s^2^(Fo^2^)+(0.0547P)^2^]'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.1134
+_refine_ls_wR_factor_ref         0.1408
+_reflns_number_gt                429
+_reflns_number_total             1167
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            ic801211m_si_002_1.cif
+_cod_data_source_block           compound1
+_cod_original_sg_symbol_H-M      'P 4/n c c'
+_cod_database_code               4306371
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y+1/2, z'
+'x+1/2, -y, -z+1/2'
+'-x, y+1/2, -z+1/2'
+'-y, -x, -z+1/2'
+'y+1/2, x+1/2, -z+1/2'
+'y, -x+1/2, z'
+'-y+1/2, x, z'
+'-x, -y, -z'
+'x-1/2, y-1/2, -z'
+'-x-1/2, y, z-1/2'
+'x, -y-1/2, z-1/2'
+'y, x, z-1/2'
+'-y-1/2, -x-1/2, z-1/2'
+'-y, x-1/2, -z'
+'y-1/2, -x, -z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Pt1 Pt 0.2500 0.2500 0.94732(11) 0.0283(4) Uani 1 4 d S . .
+Pt2 Pt 0.2500 0.2500 1.18183(12) 0.0319(4) Uani 1 4 d S . .
+S1 S 0.0717(4) 0.2127(4) 0.9398(4) 0.0395(11) Uani 1 1 d . . .
+C1 C 0.0380(15) 0.1605(14) 1.0639(16) 0.052(5) Uani 1 1 d . . .
+S2 S 0.0991(4) 0.1477(4) 1.1861(4) 0.0503(13) Uani 1 1 d . . .
+C2 C -0.0758(16) 0.1158(14) 1.0679(15) 0.061(6) Uani 1 1 d . . .
+H2A H -0.0767 0.0527 1.1125 0.091 Uiso 1 1 calc R . .
+H2B H -0.0990 0.1002 0.9925 0.091 Uiso 1 1 calc R . .
+H2C H -0.1219 0.1670 1.1013 0.091 Uiso 1 1 calc R . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Pt1 0.0291(5) 0.0291(5) 0.0266(6) 0.000 0.000 0.000
+Pt2 0.0335(5) 0.0335(5) 0.0287(5) 0.000 0.000 0.000
+S1 0.031(2) 0.046(3) 0.041(2) 0.003(3) -0.003(2) -0.001(2)
+C1 0.058(13) 0.044(12) 0.053(10) 0.009(12) 0.003(12) -0.007(10)
+S2 0.051(3) 0.068(3) 0.031(2) -0.004(3) 0.004(3) -0.023(3)
+C2 0.087(17) 0.047(12) 0.049(12) -0.009(11) -0.005(13) 0.009(12)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+S S 0.1246 0.1234 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Pt Pt -1.7033 8.3905 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+S1 Pt1 S1 175.6(2) 2 . ?
+S1 Pt1 S1 89.915(10) 2 8 ?
+S1 Pt1 S1 89.915(11) . 8 ?
+S1 Pt1 S1 89.915(11) 2 7 ?
+S1 Pt1 S1 89.915(10) . 7 ?
+S1 Pt1 S1 175.6(2) 8 7 ?
+S1 Pt1 Pt2 92.21(12) 2 . ?
+S1 Pt1 Pt2 92.21(12) . . ?
+S1 Pt1 Pt2 92.21(12) 8 . ?
+S1 Pt1 Pt2 92.21(12) 7 . ?
+S1 Pt1 Pt2 87.79(12) 2 11_655 ?
+S1 Pt1 Pt2 87.79(12) . 11_655 ?
+S1 Pt1 Pt2 87.79(12) 8 11_655 ?
+S1 Pt1 Pt2 87.79(12) 7 11_655 ?
+Pt2 Pt1 Pt2 180.0 . 11_655 ?
+S2 Pt2 S2 89.973(5) . 8 ?
+S2 Pt2 S2 177.5(2) . 2 ?
+S2 Pt2 S2 89.974(6) 8 2 ?
+S2 Pt2 S2 89.974(5) . 7 ?
+S2 Pt2 S2 177.5(2) 8 7 ?
+S2 Pt2 S2 89.973(5) 2 7 ?
+S2 Pt2 Pt1 91.23(11) . . ?
+S2 Pt2 Pt1 91.23(11) 8 . ?
+S2 Pt2 Pt1 91.23(11) 2 . ?
+S2 Pt2 Pt1 91.23(11) 7 . ?
+S2 Pt2 Pt1 88.77(11) . 11_656 ?
+S2 Pt2 Pt1 88.77(11) 8 11_656 ?
+S2 Pt2 Pt1 88.77(11) 2 11_656 ?
+S2 Pt2 Pt1 88.77(11) 7 11_656 ?
+Pt1 Pt2 Pt1 180.0 . 11_656 ?
+C1 S1 Pt1 107.4(7) . . ?
+C2 C1 S2 112.1(13) . . ?
+C2 C1 S1 114.3(14) . . ?
+S2 C1 S1 133.6(12) . . ?
+C1 S2 Pt2 108.4(6) . . ?
+C1 C2 H2A 109.5 . . ?
+C1 C2 H2B 109.5 . . ?
+H2A C2 H2B 109.5 . . ?
+C1 C2 H2C 109.5 . . ?
+H2A C2 H2C 109.5 . . ?
+H2B C2 H2C 109.5 . . ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Pt1 S1 2.318(5) 2 ?
+Pt1 S1 2.318(5) . ?
+Pt1 S1 2.318(5) 8 ?
+Pt1 S1 2.318(5) 7 ?
+Pt1 Pt2 2.7715(13) . ?
+Pt1 Pt2 3.1375(14) 11_655 ?
+Pt2 S2 2.318(5) . ?
+Pt2 S2 2.318(5) 8 ?
+Pt2 S2 2.318(5) 2 ?
+Pt2 S2 2.318(5) 7 ?
+S1 C1 1.666(18) . ?
+C1 C2 1.55(2) . ?
+C1 S2 1.647(19) . ?
+C2 H2A 0.9600 . ?
+C2 H2B 0.9600 . ?
+C2 H2C 0.9600 . ?

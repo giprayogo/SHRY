@@ -1,0 +1,194 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-05-28 04:26:52 +0300 (Sat, 28 May 2016) $
+#$Revision: 183115 $
+#$URL: svn://www.crystallography.net/cod/cif/2/10/75/2107524.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2107524
+loop_
+_publ_author_name
+'Yoshiasa, Akira'
+'Nakatani, Tomotaka'
+'Nakatsuka, Akihiko'
+'Okube, Maki'
+'Sugiyama, Kazumasa'
+'Mashimo, Tsutomu'
+_publ_section_title
+;
+ High-temperature single-crystal X-ray diffraction study of tetragonal and
+ cubic perovskite-type PbTiO~3~ phases
+;
+_journal_issue                   3
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              381
+_journal_page_last               388
+_journal_paper_doi               10.1107/S2052520616005114
+_journal_volume                  72
+_journal_year                    2016
+_chemical_formula_sum            'O3 Pb Ti'
+_chemical_formula_weight         303.0552
+_space_group_IT_number           99
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  'P 4 -2'
+_symmetry_space_group_name_H-M   'P 4 m m'
+_cell_angle_alpha                90.0000
+_cell_angle_beta                 90.0000
+_cell_angle_gamma                90.0000
+_cell_formula_units_Z            1
+_cell_length_a                   3.9211(5)
+_cell_length_b                   3.9211(5)
+_cell_length_c                   4.1025(7)
+_cell_measurement_reflns_used    25
+_cell_measurement_temperature    573.0
+_cell_measurement_theta_max      49.3
+_cell_measurement_theta_min      45.1
+_cell_volume                     63.076(16)
+_computing_cell_refinement
+'WinAFC Version 1.03 (Rigaku Corporation, 1999)'
+_computing_data_collection
+'WinAFC Version 1.03 (Rigaku Corporation, 1999)'
+_computing_data_reduction        'RADY (Sasaki, 1987)'
+_computing_molecular_graphics    'ATOMS for Windows (Dowty, 2000)'
+_computing_structure_refinement  'RADY (Sasaki, 1987)'
+_diffrn_ambient_temperature      573.0
+_diffrn_measured_fraction_theta_full 1.0000
+_diffrn_measured_fraction_theta_max 1.0000
+_diffrn_measurement_device_type  'Rigaku AFC7R'
+_diffrn_measurement_method       \w-2\q
+_diffrn_radiation_type           'Mo K\a'
+_diffrn_radiation_wavelength     0.71069
+_diffrn_reflns_av_R_equivalents  0.0762
+_diffrn_reflns_limit_h_max       9
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       9
+_diffrn_reflns_limit_k_min       0
+_diffrn_reflns_limit_l_max       9
+_diffrn_reflns_limit_l_min       -9
+_diffrn_reflns_number            1165
+_diffrn_reflns_theta_full        60.00
+_diffrn_reflns_theta_max         60.00
+_diffrn_standards_decay_%        none
+_diffrn_standards_interval_count 100
+_diffrn_standards_number         3
+_exptl_absorpt_coefficient_mu    69.670
+_exptl_absorpt_correction_T_max  0.05379
+_exptl_absorpt_correction_T_min  0.00966
+_exptl_absorpt_correction_type   psi-scan
+_exptl_absorpt_process_details   '(North, Phillips & Mathews, 1968)'
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    7.981
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       sphere
+_exptl_crystal_F_000             128
+_exptl_crystal_size_rad          0.14
+_refine_ls_extinction_coef       0.055(7)\\times10^4^
+_refine_ls_extinction_method
+'isotropic Type I (Becker & Coppens, 1974a and 1974b)'
+_refine_ls_goodness_of_fit_ref   1.759
+_refine_ls_number_parameters     14
+_refine_ls_number_reflns         526
+_refine_ls_R_factor_gt           0.0436
+_refine_ls_shift/su_max          0.0000016
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_details     'w = 1/\s^2^(F)'
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_ref         0.0465
+_reflns_number_gt                526
+_reflns_number_total             614
+_reflns_threshold_expression     F_>_3.0_\s(F)
+_cod_data_source_file            bp5087sup1.cif
+_cod_data_source_block           PbTiO3_573K
+_cod_original_cell_volume        63.08(2)
+_cod_database_code               2107524
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+-y,x,z
+y,-x,z
+x,-y,z
+-x,y,z
+-y,-x,z
+y,x,z
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_occupancy
+Pb Pb 0.0000 0.0000 0.0000 0.0180(2) Uani d 1.00
+Ti Ti 0.5000 0.5000 0.5325(5) 0.0081(5) Uani d 1.00
+O O1 0.5000 0.5000 0.096(3) 0.014(2) Uani d 1.00
+O O2 0.5000 0.0000 0.596(2) 0.013(3) Uani d 1.00
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Pb 0.019102(4) 0.019102 0.0157(2) 0.0 0.0 0.0
+Ti 0.008804(9) 0.008804 0.00663(2) 0.0 0.0 0.0
+O1 0.01602(6) 0.01602 0.00952(5) 0.0 0.0 0.0
+O2 0.01767(7) 0.00164(4) 0.01843(5) 0.0 0.0 0.0
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Pb Pb2+ -3.3944 10.1111
+;International Tables for Crystallography
+(1992, Vol. C, Tables 4.2.6.8 and 6.1.1.3)
+;
+Ti Ti4+ 0.2776 0.4457
+;International Tables for Crystallography
+(1992, Vol. C, Tables 4.2.6.8 and 6.1.1.3)
+;
+O O2- 0.0106 0.0060
+;Tokonami (1965) (Acta Cryst. 19, 486),
+International Tables for Crystallography (1992, Vol. C, Table 4.2.6.8)
+;
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+O1 Pb O2 1_555 1_555 1_555 56.78(14) no
+O1 Pb O2 1_555 1_555 1_554 63.67(14) no
+O1 Ti O2 1_555 1_555 1_555 97.5(3) no
+O1 Ti O2 1_556 1_555 1_555 82.5(3) no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Pb O1 1_555 1_555 2.8005(16) no
+Pb O2 1_555 1_555 3.133(7) no
+Pb O2 1_555 1_554 2.568(6) no
+Ti O1 1_555 1_555 1.791(12) no
+Ti O1 1_555 1_556 2.312(12) no
+Ti O2 1_555 1_555 1.9775(12) no
+O1 O2 1_556 1_555 2.836(11) no
+O1 O2 1_555 1_555 2.839(11) no
+
+_cod_database_fobs_code 2107524

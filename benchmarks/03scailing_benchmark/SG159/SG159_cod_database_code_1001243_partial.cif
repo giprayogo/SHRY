@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Si7.33333333Pb4.66666667N16
+_symmetry_space_group_name_H-M   P31c
+_cell_length_a   7.79100000
+_cell_length_b   7.79100000
+_cell_length_c   5.64920000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   159
+_chemical_formula_structural   Si7.33333333Pb4.66666667N16
+_chemical_formula_sum   'Si7.33333333 Pb4.66666667 N16'
+_cell_volume   296.96412750
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'y, x, z+1/2'
+  5  'x-y, -y, z+1/2'
+  6  '-x, -x+y, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Si4+  4.0
+  Pb4+  4.0
+  N3-  -3.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Si4+  Si0  6  0.08010000  0.50500000  0.67990000  1.0
+  Si4+  Si1  6  0.08540000  0.85040000  0.95840000
+  0.2222222222222222
+  Pb4+  Pb2  6  0.08540000  0.85040000  0.95840000
+  0.7777777777777778
+  N3-  N3  6  0.00820000  0.69160000  0.22700000  1.0
+  N3-  N4  6  0.04330000  0.38830000  0.95520000  1.0
+  N3-  N5  2  0.00000000  0.00000000  0.00000000  1.0
+  N3-  N6  2  0.33333333  0.66666667  0.63460000  1.0

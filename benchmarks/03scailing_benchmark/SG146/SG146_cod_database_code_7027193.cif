@@ -1,0 +1,231 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-25 16:34:36 +0200 (Fri, 25 Mar 2016) $
+#$Revision: 179977 $
+#$URL: svn://www.crystallography.net/cod/cif/7/02/71/7027193.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the Crystal Eye server at
+# http://wwmm.ch.cam.ac.uk/crystaleye/, created by Nick Day at the
+# Peter Murray-Rust laboratory.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_7027193
+loop_
+_publ_author_name
+'Walsdorff, Christian'
+'Park, Sunyoung'
+'Kim, Jeongho'
+'Heo, Jungseok'
+'Park, Ki-Min'
+'Oh, Jinho'
+'Kim, Kimoon'
+_publ_section_title
+;
+ Co-ordination chemistry of CuI with
+ 1,3,5-tris[bis(pyridin-2-ylmethyl)aminomethyl]-2,4,6-triethylbenzene, a
+ conformationally constrained trinucleating ligand
+;
+_journal_issue                   6
+_journal_name_full
+'Journal of the Chemical Society, Dalton Transactions'
+_journal_page_first              923
+_journal_paper_doi               10.1039/a809179j
+_journal_year                    1999
+_chemical_formula_sum            'C15 H21 Br3'
+_chemical_formula_weight         441.05
+_chemical_name_common            TriBr
+_chemical_name_systematic
+;
+ 1,3,5-Tris(bromomethyl)-2,4,6-triethylbenzene
+;
+_space_group_IT_number           146
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'R 3'
+_symmetry_space_group_name_H-M   'R 3 :H'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            3
+_cell_length_a                   16.5648(11)
+_cell_length_b                   16.5648(11)
+_cell_length_c                   5.3351(4)
+_cell_measurement_reflns_used    2671
+_cell_measurement_temperature    296(2)
+_cell_measurement_theta_max      28.34
+_cell_measurement_theta_min      4.08
+_cell_volume                     1267.78(15)
+_computing_cell_refinement       'Bruker SMART'
+_computing_data_collection       'Bruker SMART'
+_computing_data_reduction        'Bruker SHELXTL'
+_computing_molecular_graphics    'Bruker SHELXTL'
+_computing_publication_material  'Bruker SHELXTL'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      296(2)
+_diffrn_measured_fraction_theta_full 0.996
+_diffrn_measured_fraction_theta_max 0.996
+_diffrn_measurement_device_type  'CCD area detector'
+_diffrn_measurement_method       'phi and omega scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0528
+_diffrn_reflns_av_sigmaI/netI    0.0403
+_diffrn_reflns_limit_h_max       20
+_diffrn_reflns_limit_h_min       -21
+_diffrn_reflns_limit_k_max       19
+_diffrn_reflns_limit_k_min       -21
+_diffrn_reflns_limit_l_max       7
+_diffrn_reflns_limit_l_min       -7
+_diffrn_reflns_number            2671
+_diffrn_reflns_theta_full        28.34
+_diffrn_reflns_theta_max         28.34
+_diffrn_reflns_theta_min         4.08
+_exptl_absorpt_coefficient_mu    7.143
+_exptl_absorpt_correction_type   'Semi-empirical from psi-scans (SADABS)'
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    1.733
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       'hexagonal p'
+_exptl_crystal_F_000             648
+_exptl_crystal_size_max          0.5
+_exptl_crystal_size_mid          0.2
+_exptl_crystal_size_min          0.2
+_refine_diff_density_max         0.491
+_refine_diff_density_min         -0.350
+_refine_diff_density_rms         0.074
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   0.394(19)
+_refine_ls_extinction_coef       0.0064(6)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.056
+_refine_ls_hydrogen_treatment    mixed
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     57
+_refine_ls_number_reflns         1341
+_refine_ls_number_restraints     1
+_refine_ls_restrained_S_all      1.055
+_refine_ls_R_factor_all          0.0290
+_refine_ls_R_factor_gt           0.0282
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0309P)^2^+1.7604P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0678
+_refine_ls_wR_factor_ref         0.0689
+_reflns_number_gt                1317
+_reflns_number_total             1341
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            809179jsup1.cif
+_cod_data_source_block           6
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_symmetry_cell_setting' value 'Trigonal' changed to 'trigonal'
+according to /home/saulius/struct/CIF-dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 from 2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 1891 2012-01-12 08:04:46Z andrius 
+;
+_cod_original_sg_symbol_H-M      'R 3'
+_cod_database_code               7027193
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'x+2/3, y+1/3, z+1/3'
+'-y+2/3, x-y+1/3, z+1/3'
+'-x+y+2/3, -x+1/3, z+1/3'
+'x+1/3, y+2/3, z+2/3'
+'-y+1/3, x-y+2/3, z+2/3'
+'-x+y+1/3, -x+2/3, z+2/3'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Br1 Br 0.95915(3) 0.20067(3) 0.9880 0.05023(15) Uani 1 1 d .
+C1 C 0.7701(3) -0.0372(3) 0.4062(11) 0.0581(11) Uani 1 1 d .
+H1A H 0.7078 -0.0476 0.4202 0.070 Uiso 1 1 calc R
+H1B H 0.7691 -0.0874 0.3140 0.070 Uiso 1 1 calc R
+H1C H 0.8085 0.0205 0.3199 0.070 Uiso 1 1 calc R
+C2 C 0.8092(2) -0.0325(2) 0.6644(7) 0.0401(7) Uani 1 1 d .
+H2A H 0.7696 -0.0899 0.7507 0.048 Uiso 1 1 calc R
+H2B H 0.8085 0.0169 0.7566 0.048 Uiso 1 1 calc R
+C3 C 0.90811(19) -0.01608(19) 0.6615(6) 0.0324(6) Uani 1 1 d .
+C4 C 0.9844(2) 0.07561(19) 0.6585(6) 0.0338(6) Uani 1 1 d .
+C5 C 0.9675(2) 0.1563(2) 0.6483(6) 0.0363(6) Uani 1 1 d .
+H5A H 0.9105 0.1379 0.5594 0.044 Uiso 1 1 calc R
+H5B H 1.0173 0.2065 0.5573 0.044 Uiso 1 1 calc R
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Br1 0.0581(2) 0.0511(2) 0.0512(2) -0.00297(14) 0.00637(16) 0.03456(19)
+C1 0.0428(19) 0.059(3) 0.068(3) 0.001(2) -0.013(2) 0.0223(18)
+C2 0.0263(13) 0.0367(14) 0.056(2) 0.0026(13) 0.0014(12) 0.0149(11)
+C3 0.0260(12) 0.0300(14) 0.0414(16) 0.0005(11) 0.0003(10) 0.0141(11)
+C4 0.0337(14) 0.0279(13) 0.0425(17) 0.0006(11) 0.0004(11) 0.0175(11)
+C5 0.0363(14) 0.0310(13) 0.0439(17) 0.0011(11) 0.0000(12) 0.0187(11)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Br Br -0.2901 2.4595 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+C1 C2 C3 113.4(3) .
+C4 C3 C4 119.4(3) 2_645
+C4 C3 C2 120.7(3) 2_645
+C4 C3 C2 119.9(3) .
+C3 C4 C3 120.6(3) 3_765
+C3 C4 C5 119.7(3) 3_765
+C3 C4 C5 119.7(3) .
+C4 C5 Br1 112.1(2) .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Br1 C5 1.987(3) .
+C1 C2 1.508(6) .
+C2 C3 1.521(4) .
+C3 C4 1.399(4) 2_645
+C3 C4 1.409(4) .
+C4 C3 1.399(4) 3_765
+C4 C5 1.497(4) .

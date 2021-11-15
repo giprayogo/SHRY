@@ -1,0 +1,172 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-01-27 21:58:39 +0200 (Tue, 27 Jan 2015) $
+#$Revision: 130149 $
+#$URL: svn://www.crystallography.net/cod/cif/1/00/02/1000212.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1000212
+loop_
+_publ_author_name
+'de Pape, R'
+'Portier, J'
+'Gauthier, G'
+'Hagenmuller, P'
+_publ_section_title
+;
+Les grenats fluores des elements de transition Na~3~ Li~3~ M~2~ F~12~
+;
+_journal_coden_ASTM              CHDCAQ
+_journal_name_full
+;
+Comptes Rendus Hebdomadaires des Seances de l'Academie des Sciences,
+Serie C, Sciences Chimiques (1966-)
+;
+_journal_page_first              1244
+_journal_page_last               1246
+_journal_volume                  265
+_journal_year                    1967
+_chemical_formula_structural     'Na3 Li3 Fe2 F12'
+_chemical_formula_sum            'F12 Fe2 Li3 Na3'
+_chemical_name_systematic        'Trisodium trilithium diiron dodecafluoride'
+_space_group_IT_number           230
+_symmetry_cell_setting           cubic
+_symmetry_Int_Tables_number      230
+_symmetry_space_group_name_Hall  '-I 4bd 2c 3'
+_symmetry_space_group_name_H-M   'I a -3 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            8
+_cell_length_a                   12.393(2)
+_cell_length_b                   12.393(2)
+_cell_length_c                   12.393(2)
+_cell_volume                     1903.4
+_exptl_crystal_density_meas      2.99
+_refine_ls_R_factor_all          0.096
+_cod_database_code               1000212
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+x,1/2-y,-z
+-x,1/2+y,1/2-z
+1/2-x,-y,1/2+z
+y,z,x
+1/2-y,-z,1/2+x
+1/2+y,1/2-z,-x
+-y,1/2+z,1/2-x
+z,x,y
+-z,1/2+x,1/2-y
+1/2-z,-x,1/2+y
+1/2+z,1/2-x,-y
+-x,-y,-z
+1/2-x,1/2+y,z
+x,1/2-y,1/2+z
+1/2+x,y,1/2-z
+-y,-z,-x
+1/2+y,z,1/2-x
+1/2-y,1/2+z,x
+y,1/2-z,1/2+x
+-z,-x,-y
+z,1/2-x,1/2+y
+1/2+z,x,1/2-y
+1/2-z,1/2+x,y
+1/4+x,1/4+z,1/4+y
+3/4+x,1/4-z,3/4-y
+1/4-x,3/4-z,3/4+y
+3/4-x,3/4+z,1/4-y
+1/4+y,1/4+x,1/4+z
+3/4-y,3/4+x,1/4-z
+3/4+y,1/4-x,3/4-z
+1/4-y,3/4-x,3/4+z
+1/4+z,1/4+y,1/4+x
+1/4-z,3/4-y,3/4+x
+3/4-z,3/4+y,1/4-x
+3/4+z,1/4-y,3/4-x
+1/4-x,1/4-z,1/4-y
+3/4-x,1/4+z,3/4+y
+1/4+x,3/4+z,3/4-y
+3/4+x,3/4-z,1/4+y
+1/4-y,1/4-x,1/4-z
+3/4+y,3/4-x,1/4+z
+3/4-y,1/4+x,3/4+z
+1/4+y,3/4+x,3/4-z
+1/4-z,1/4-y,1/4-x
+1/4+z,3/4+y,3/4-x
+3/4+z,3/4-y,1/4+x
+3/4-z,1/4+y,3/4+x
+1/2+x,1/2+y,1/2+z
+x,-y,1/2-z
+1/2-x,y,-z
+-x,1/2-y,z
+1/2+y,1/2+z,1/2+x
+-y,1/2-z,x
+y,-z,1/2-x
+1/2-y,z,-x
+1/2+z,1/2+x,1/2+y
+1/2-z,x,-y
+-z,1/2-x,y
+z,-x,1/2-y
+1/2-x,1/2-y,1/2-z
+-x,y,1/2+z
+1/2+x,-y,z
+x,1/2+y,-z
+1/2-y,1/2-z,1/2-x
+y,1/2+z,-x
+-y,z,1/2+x
+1/2+y,-z,x
+1/2-z,1/2-x,1/2-y
+1/2+z,-x,y
+z,1/2+x,-y
+-z,x,1/2+y
+3/4+x,3/4+z,3/4+y
+1/4+x,3/4-z,1/4-y
+3/4-x,1/4-z,1/4+y
+1/4-x,1/4+z,3/4-y
+3/4+y,3/4+x,3/4+z
+1/4-y,1/4+x,3/4-z
+1/4+y,3/4-x,1/4-z
+3/4-y,1/4-x,1/4+z
+3/4+z,3/4+y,3/4+x
+3/4-z,1/4-y,1/4+x
+1/4-z,1/4+y,3/4-x
+1/4+z,3/4-y,1/4-x
+3/4-x,3/4-z,3/4-y
+1/4-x,3/4+z,1/4+y
+3/4+x,1/4+z,1/4-y
+1/4+x,1/4-z,3/4+y
+3/4-y,3/4-x,3/4-z
+1/4+y,1/4-x,3/4+z
+1/4-y,3/4+x,1/4+z
+3/4+y,1/4+x,1/4-z
+3/4-z,3/4-y,3/4-x
+3/4+z,1/4+y,1/4-x
+1/4+z,1/4-y,3/4+x
+1/4-z,3/4+y,1/4+x
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Fe1 Fe3+ 16 a 0. 0. 0. 1. 0 d
+Na1 Na1+ 24 c 0.25 0.125 0. 1. 0 d
+Li1 Li1+ 24 d 0.25 0.375 0. 1. 0 d
+F1 F1- 96 f -0.035(5) 0.050(5) 0.140(5) 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Fe3+ 3.000
+Na1+ 1.000
+Li1+ 1.000
+F1- -1.000

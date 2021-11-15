@@ -1,0 +1,236 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/2/10/39/2103918.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2103918
+loop_
+_publ_author_name
+'Arakcheeva, Alla'
+'Chapuis, Gervais'
+'Birkedal, Henrik'
+'Pattison, Phil'
+'Grinevitch, Vladimir'
+_publ_section_title
+;
+ The commensurate composite \s-structure of \b-tantalum
+;
+_journal_issue                   3
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              324
+_journal_page_last               336
+_journal_paper_doi               10.1107/S0108768103009005
+_journal_volume                  59
+_journal_year                    2003
+_chemical_formula_moiety         30.0Ta
+_chemical_formula_sum            Ta
+_chemical_formula_weight         5428.4
+_chemical_name_systematic        ' Metal'
+_space_group_IT_number           81
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  'P -4'
+_symmetry_space_group_name_H-M   'P -4'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            30
+_cell_length_a                   10.1815(5)
+_cell_length_b                   10.1815(5)
+_cell_length_c                   5.29500(10)
+_cell_measurement_reflns_used    8379
+_cell_measurement_temperature    120(2)
+_cell_measurement_theta_max      30.52
+_cell_measurement_theta_min      3.79
+_cell_volume                     548.90(4)
+_computing_publication_material  '(Jana2000; Petricek and Dusek, 2000)'
+_computing_structure_refinement  '(Jana2000; Petricek and Dusek, 2000)'
+_diffrn_ambient_temperature      120(2)
+_diffrn_detector_area_resol_mean 6.667
+_diffrn_measurement_device_type  MAR345
+_diffrn_measurement_method       \f-scans
+_diffrn_radiation_monochromator
+; Si(111) double crystal monochromator with bent second crystal for
+sagital focusing
+;
+_diffrn_radiation_source         'bending magnet 1 at ESRF'
+_diffrn_radiation_type           synchrotron
+_diffrn_radiation_wavelength     0.70013
+_diffrn_reflns_av_R_equivalents  0.0816
+_diffrn_reflns_av_sigmaI/netI    0.0612
+_diffrn_reflns_limit_h_max       14
+_diffrn_reflns_limit_h_min       -14
+_diffrn_reflns_limit_k_max       14
+_diffrn_reflns_limit_k_min       -14
+_diffrn_reflns_limit_l_max       7
+_diffrn_reflns_limit_l_min       -7
+_diffrn_reflns_number            8379
+_diffrn_reflns_theta_max         30.52
+_diffrn_reflns_theta_min         3.79
+_exptl_absorpt_coefficient_mu    148.66
+_exptl_absorpt_correction_T_max  0.0493
+_exptl_absorpt_correction_T_min  0.0241
+_exptl_absorpt_correction_type   sphere
+_exptl_crystal_colour            silver
+_exptl_crystal_density_diffrn    16.4170(12)
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       'isometric irregular'
+_exptl_crystal_F_000             2190
+_exptl_crystal_size_max          0.022
+_exptl_crystal_size_mid          0.02
+_exptl_crystal_size_min          0.018
+_exptl_crystal_size_rad          0.02
+_refine_diff_density_max         11.04
+_refine_diff_density_min         -9.89
+_refine_ls_extinction_coef       0.0009(3)
+_refine_ls_extinction_method
+'B-C type 1 Gaussian isotropic (Becker & Coppens, 1974)'
+_refine_ls_goodness_of_fit_ref   1.74
+_refine_ls_number_parameters     72
+_refine_ls_number_reflns         1530
+_refine_ls_R_factor_all          0.0363
+_refine_ls_R_factor_gt           0.0363
+_refine_ls_shift/su_max          0.0007
+_refine_ls_shift/su_mean         0.0002
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_details     w=1/(\s^2^(F)+0.0001F^2^)
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_gt          0.0501
+_refine_ls_wR_factor_ref         0.0501
+_reflns_number_gt                1530
+_reflns_number_total             1708
+_reflns_threshold_expression     I>3\s(I)
+_cod_data_source_file            sn0032.cif
+_cod_data_source_block           II
+_cod_original_sg_symbol_H-M      P-4
+_cod_original_formula_sum        Ta30.0
+_cod_database_code               2103918
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 y,-x,-z
+3 -x,-y,z
+4 -y,x,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_occupancy
+_atom_site_type_symbol
+Ta1 0.5 0 0.2548(5) 0.0054(3) Uani d 1 Ta
+Ta2a 0.75963(10) 0.06646(7) 0.2493(4) 0.0055(3) Uani d 1 Ta
+Ta2b 0.43251(8) -0.26252(9) 0.2521(5) 0.0056(3) Uani d 1 Ta
+Ta3a 0.03408(9) 0.12735(10) 0.2519(5) 0.0054(3) Uani d 1 Ta
+Ta3b 0.37007(9) -0.53527(9) 0.2488(5) 0.0057(3) Uani d 1 Ta
+Ta4 0.10620(9) -0.60509(9) 0.2513(4) 0.0056(3) Uani d 1 Ta
+Ta5 0.81809(3) 0.31809(3) 0 0.00567(15) Uani d 1 Ta
+Ta6 0.81809(3) 0.3181 0.5 0.00567(15) Uani d 1 Ta
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+_atom_site_aniso_type_symbol
+Ta1 0.0035(7) 0.0071(7) 0.0056(3) -0.0009(2) 0 0 Ta
+Ta2a 0.0066(5) 0.0057(6) 0.0040(6) -0.0048(3) 0.0013(9) -0.0010(9) Ta
+Ta2b 0.0054(5) 0.0039(5) 0.0075(6) 0.0040(3) 0.0012(9) 0.0006(8) Ta
+Ta3a 0.0064(4) 0.0062(5) 0.0036(5) -0.0008(3) -0.0010(8) -0.0010(9) Ta
+Ta3b 0.0035(5) 0.0052(4) 0.0083(7) 0.0006(3) -0.0036(8) 0.0006(9) Ta
+Ta4 0.0068(5) 0.0041(5) 0.0059(3) -0.00047(16) -0.0002(10) 0.0009(10) Ta
+Ta5 0.0056(3) 0.0062(3) 0.0052(3) 0.00029(9) 0 0 Ta
+Ta6 0.0056(3) 0.0062(3) 0.0052(3) 0.00029(9) 0 0 Ta
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Ta -0.705 6.523 'International Tables Vol C Tables  4.2.6.8 and 6.1.1.1'
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Ta1 Ta2a . 2.7289(10) yes
+Ta1 Ta2a 3_655 2.7289(10) yes
+Ta1 Ta2b . 2.7598(9) yes
+Ta1 Ta2b 3_655 2.7598(9) yes
+Ta1 Ta4 2_655 3.081(3) yes
+Ta1 Ta4 2_656 3.026(3) yes
+Ta1 Ta4 4_555 3.081(3) yes
+Ta1 Ta4 4_556 3.026(3) yes
+Ta1 Ta5 2_565 2.9462(12) yes
+Ta1 Ta5 4_645 2.9462(12) yes
+Ta1 Ta6 2_566 2.9235(11) yes
+Ta1 Ta6 4_646 2.9235(11) yes
+Ta2a Ta2b 3_655 2.7950(12) yes
+Ta2a Ta3a 1_655 2.8622(14) yes
+Ta2a Ta3a 3_655 2.8819(13) yes
+Ta2a Ta3a 4_655 2.911(3) yes
+Ta2a Ta3a 4_656 2.900(3) yes
+Ta2a Ta4 4_555 3.109(3) yes
+Ta2a Ta4 4_556 3.103(3) yes
+Ta2a Ta5 . 2.9430(12) yes
+Ta2a Ta5 4_645 2.9604(12) yes
+Ta2a Ta6 . 2.9461(12) yes
+Ta2a Ta6 4_646 2.9635(12) yes
+Ta2b Ta3b . 2.8489(13) yes
+Ta2b Ta3b 2_655 2.888(3) yes
+Ta2b Ta3b 2_656 2.879(3) yes
+Ta2b Ta3b 3_645 2.8773(13) yes
+Ta2b Ta4 2_655 3.128(3) yes
+Ta2b Ta4 2_656 3.097(3) yes
+Ta2b Ta5 3_655 2.9347(13) yes
+Ta2b Ta5 4_645 2.9839(13) yes
+Ta2b Ta6 3_655 2.9245(13) yes
+Ta2b Ta6 4_646 2.9739(13) yes
+Ta3a Ta3a 2_555 3.274(3) yes
+Ta3a Ta3a 2_556 3.242(3) yes
+Ta3a Ta3a 3_555 2.6844(14) yes
+Ta3a Ta3a 4_555 3.274(3) yes
+Ta3a Ta3a 4_556 3.242(3) yes
+Ta3a Ta4 1_565 2.8214(14) yes
+Ta3a Ta5 1_455 3.2227(13) yes
+Ta3a Ta5 2_565 3.2325(13) yes
+Ta3a Ta6 1_455 3.2146(13) yes
+Ta3a Ta6 2_566 3.2244(13) yes
+Ta3b Ta3b 2_655 3.271(3) yes
+Ta3b Ta3b 2_656 3.291(3) yes
+Ta3b Ta3b 3_645 2.7414(13) yes
+Ta3b Ta3b 4_545 3.271(3) yes
+Ta3b Ta3b 4_546 3.291(3) yes
+Ta3b Ta4 . 2.7791(13) yes
+Ta3b Ta5 2_555 3.2106(14) yes
+Ta3b Ta5 3_655 3.2087(14) yes
+Ta3b Ta6 2_556 3.2157(14) yes
+Ta3b Ta6 3_655 3.2138(14) yes
+Ta4 Ta4 3_545 3.0424(13) yes
+Ta4 Ta5 1_445 3.3146(12) yes
+Ta4 Ta5 2_555 3.3358(12) yes
+Ta4 Ta5 3_655 3.3019(12) yes
+Ta4 Ta6 1_445 3.3092(12) yes
+Ta4 Ta6 2_556 3.3304(12) yes
+Ta4 Ta6 3_655 3.2965(12) yes
+Ta5 Ta6 1_554 2.6475 yes
+Ta5 Ta6 . 2.6475 yes
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 ChemSpider 22395

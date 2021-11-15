@@ -1,0 +1,76 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-14 16:26:36 +0200 (Sun, 14 Feb 2016) $
+#$Revision: 176435 $
+#$URL: svn://www.crystallography.net/cod/cif/1/51/03/1510373.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1510373
+loop_
+_publ_author_name
+'Bialowons, H.'
+'Mueller, B.G.'
+_publ_section_title
+;
+ Synthese und Struktur von M(II) (Au F4)2 (M(II) = Cd, Hg)
+;
+_journal_name_full
+'Zeitschrift fuer Anorganische und Allgemeine Chemie'
+_journal_page_first              1719
+_journal_page_last               1722
+_journal_paper_doi               10.1002/zaac.19976231108
+_journal_volume                  623
+_journal_year                    1997
+_chemical_formula_sum            'Au2 Cd F8'
+_chemical_name_systematic        'Cd (Au F4)2'
+_space_group_IT_number           124
+_symmetry_space_group_name_Hall  '-P 4 2c'
+_symmetry_space_group_name_H-M   'P 4/m c c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   5.75
+_cell_length_b                   5.75
+_cell_length_c                   10.348
+_cell_volume                     342.131
+_citation_journal_id_ASTM        ZAACAB
+_cod_data_source_file            gold_455.cif
+_cod_data_source_block           Au2Cd1F8
+_cod_original_cell_volume        342.1307
+_cod_original_formula_sum        'Au2 Cd1 F8'
+_cod_database_code               1510373
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x,z
+-x,-y,z
+y,-x,z
+x,-y,-z+1/2
+y,x,-z+1/2
+-x,y,-z+1/2
+-y,-x,-z+1/2
+-x,-y,-z
+y,-x,-z
+x,y,-z
+-y,x,-z
+-x,y,z-1/2
+-y,-x,z-1/2
+x,-y,z-1/2
+y,x,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Au1 Au+3 0 0.5 0 1 0.0
+F1 F-1 0.8555 0.6922 0.1285 1 0.0
+Cd1 Cd+2 0 0 0.25 1 0.0

@@ -1,0 +1,183 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-14 16:26:36 +0200 (Sun, 14 Feb 2016) $
+#$Revision: 176435 $
+#$URL: svn://www.crystallography.net/cod/cif/2/00/43/2004310.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2004310
+loop_
+_publ_author_name
+'Ladjeroud, Z.'
+'Balegroune, F.'
+'Guehria, A.'
+'Benziada, L.'
+'Triki, S.'
+_publ_section_title
+;
+ K~3~Nb~3~Ti~2~O~11~F~4~
+;
+_journal_issue                   12
+_journal_name_full               'Acta Crystallographica Section C'
+_journal_page_first              2459
+_journal_page_last               2461
+_journal_paper_doi               10.1107/S0108270195007980
+_journal_volume                  51
+_journal_year                    1995
+_chemical_formula_sum            'F4 K3 Nb3 O11 Ti2'
+_chemical_formula_weight         743.8
+_space_group_IT_number           127
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  '-P 4 2ab'
+_symmetry_space_group_name_H-M   'P 4/m b m'
+_atom_type_scat_source           IntTabIV
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   12.582(2)
+_cell_length_b                   12.582(2)
+_cell_length_c                   3.937(2)
+_cell_measurement_reflns_used    25
+_cell_measurement_temperature    293
+_cell_measurement_theta_max      13.5
+_cell_measurement_theta_min      7
+_cell_volume                     623.3(3)
+_diffrn_measurement_device       'Enraf-Nonius CAD-4'
+_diffrn_measurement_method       '   \q-2\q'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.031
+_diffrn_reflns_limit_h_max       5
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       17
+_diffrn_reflns_limit_k_min       0
+_diffrn_reflns_limit_l_max       17
+_diffrn_reflns_limit_l_min       0
+_diffrn_reflns_number            1016
+_diffrn_reflns_theta_max         30
+_diffrn_standards_decay_%        0.2
+_diffrn_standards_interval_time  60
+_diffrn_standards_number         3
+_exptl_absorpt_coefficient_mu    4.89
+_exptl_absorpt_correction_T_max  0.51
+_exptl_absorpt_correction_T_min  0.22
+_exptl_absorpt_correction_type   'empirique (Walker & Stuart, 1983)'
+_exptl_crystal_colour            incolore
+_exptl_crystal_density_diffrn    3.964
+_exptl_crystal_density_meas      3.94(2)
+_exptl_crystal_description       prismatique
+_exptl_crystal_size_max          0.32
+_exptl_crystal_size_mid          0.25
+_exptl_crystal_size_min          0.12
+_refine_diff_density_max         1.983
+_refine_diff_density_min         -2.884
+_refine_ls_extinction_coef       2.519E-7
+_refine_ls_extinction_method     'Stout & Jensen (1968)'
+_refine_ls_goodness_of_fit_obs   2.136
+_refine_ls_number_parameters     42
+_refine_ls_number_reflns         343
+_refine_ls_R_factor_obs          0.047
+_refine_ls_shift/esd_max         0.02
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_details     'w = 4F~o~^2^/[\s(I)^2^+(0.06F~o~^2^)^2^]'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_obs         0.072
+_reflns_number_observed          406
+_reflns_number_total             544
+_reflns_observed_criterion       I>6\s(I)
+_cod_data_source_file            pa1178.cif
+_cod_data_source_block           pa1178a
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_refine_ls_weighting_scheme' value 'w =
+4F~o~^2^/[\s(I)^2^+(0.06F~o~^2^)^2^]' was changed to 'calc'. New tag
+'_refine_ls_weighting_details' was created. The value of the new tag
+was set to 'w = 4F~o~^2^/[\s(I)^2^+(0.06F~o~^2^)^2^]'.
+
+Automatic conversion script
+Id: cif_fix_values 3143 2015-03-26 13:38:13Z robertas 
+;
+_cod_original_cell_volume        623.0(10)
+_cod_original_formula_sum        'K3 Nb3 Ti2 F4 O11'
+_cod_database_code               2004310
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x,y,-z
+y,-x,-z
+-y,x,-z
+1/2+x,1/2-y,z
+1/2-x,1/2+y,z
+1/2-y,1/2-x,z
+1/2+y,1/2+x,z
+-x,-y,-z
+-x,-y,z
+-y,x,z
+y,-x,z
+1/2-x,1/2+y,-z
+1/2+x,1/2-y,-z
+1/2+y,1/2+x,-z
+1/2-y,1/2-x,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_B_iso_or_equiv
+ST1 0.07269(8) 0.21451(8) 0.500 2.15(2)
+ST2 0.000 0.500 0.500 1.78(2)
+K1 0.000 0.000 0.000 2.84(5)
+K2 0.1731(2) 0.6731(2) 0.000 3.25(3)
+F 0.000 0.500 0.000 2.8(1)
+OF1 0.1410(4) 0.0701(3) 0.500 1.34(9)
+OF2 0.3450(4) 0.0019(4) 0.500 1.75(9)
+OF3 0.0770(4) 0.2071(4) 0.000 1.51(9)
+O 0.2862(4) 0.7862(4) 0.500 1.11(8)
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+OF1 ST1 OF1 . 11 88.0(2) yes
+OF1 ST1 OF2 . 11 175.6(2) yes
+OF1 ST1 OF3 . . 86.9(2) yes
+OF1 ST1 O . 11_655 91.6(2) yes
+OF1 ST1 OF2 11 11 87.5(2) yes
+OF1 ST1 OF3 11 . 90.10(10) yes
+OF1 ST1 O 11 11_655 179.7(6) yes
+OF2 ST1 OF3 11 . 93.1(2) yes
+OF2 ST1 O 11 11_655 92.8(2) yes
+OF3 ST1 OF3 . 1_556 173.7(2) yes
+OF3 ST1 O . 11_655 89.80(10) yes
+F ST2 F . 1_556 180.0 yes
+F ST2 OF2 . 11 90.0 yes
+OF2 ST2 OF2 11 3_566 180.0 yes
+OF2 ST2 OF2 3_566 13_556 88.6(2) yes
+OF2 ST2 OF2 11 13_556 91.4(2) yes
+ST1 OF2 ST2 3_556 11_655 149.5(3) yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+ST1 OF1 . 2.010(5) yes
+ST1 OF1 11 2.021(5) yes
+ST1 OF2 11 1.892(5) yes
+ST1 OF3 . 1.9715(10) yes
+ST1 O 11_655 1.991(3) yes
+ST2 F . 1.9680(10) yes
+ST2 OF2 11 1.950(5) yes

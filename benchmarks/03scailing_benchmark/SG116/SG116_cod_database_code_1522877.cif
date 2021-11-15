@@ -1,0 +1,67 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/28/1522877.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1522877
+loop_
+_publ_author_name
+'Schwomma, O.'
+'Nowotny, H.'
+'Wittmann, A.'
+_publ_section_title
+;
+ Untersuchungen im System: Ru-Sn
+;
+_journal_name_full               'Monatshefte fuer Chemie (-108,1977)'
+_journal_page_first              1538
+_journal_page_last               1543
+_journal_volume                  95
+_journal_year                    1964
+_chemical_formula_sum            'Ru2 Sn3'
+_space_group_IT_number           116
+_symmetry_space_group_name_Hall  'P -4 -2c'
+_symmetry_space_group_name_H-M   'P -4 c 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   6.172
+_cell_length_b                   6.172
+_cell_length_c                   9.915
+_cell_volume                     377.698
+_citation_journal_id_ASTM        MOCHAP
+_cod_data_source_file            Schwomma_MOCHAP_1964_1995.cif
+_cod_data_source_block           Ru2Sn3
+_cod_original_cell_volume        377.6979
+_cod_database_code               1522877
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,-x,-z
+-x,-y,z
+-y,x,-z
+-x,y,z+1/2
+y,x,-z+1/2
+x,-y,z+1/2
+-y,-x,-z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Sn1 Sn 0.177 0.177 0.75 1 0.0
+Sn2 Sn 0.216 0.345 0.083 1 0.0
+Ru3 Ru 0 0.5 0.375 1 0.0
+Ru2 Ru 0 0 0 1 0.0
+Ru1 Ru 0.5 0.5 0.25 1 0.0

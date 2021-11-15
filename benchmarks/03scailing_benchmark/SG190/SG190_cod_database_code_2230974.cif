@@ -1,0 +1,262 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-21 02:03:34 +0200 (Sun, 21 Feb 2016) $
+#$Revision: 176798 $
+#$URL: svn://www.crystallography.net/cod/cif/2/23/09/2230974.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2230974
+loop_
+_publ_author_name
+'Barkley, Madison C.'
+'Yang, Hexiong'
+'Evans, Stanley H.'
+'Downs, Robert T.'
+'Origlieri, Marcus J.'
+_publ_section_title
+;
+ Redetermination of despujolsite, Ca~3~Mn^4+^(SO~4~)~2~(OH)~6~.3H~2~O
+;
+_journal_coeditor_code           WM2518
+_journal_issue                   9
+_journal_name_full               'Acta Crystallographica, Section E'
+_journal_page_first              i47
+_journal_page_last               i48
+_journal_paper_doi               10.1107/S1600536811030911
+_journal_volume                  67
+_journal_year                    2011
+_chemical_formula_iupac          'Ca3 Mn (S O4)2 (O H)6, 3H2 O'
+_chemical_formula_moiety         'Ca3 H6 Mn O14 S2, 3(H2 O)'
+_chemical_formula_sum            'Ca3 H12 Mn O17 S2'
+_chemical_formula_weight         523.40
+_chemical_name_systematic
+;
+tricalcium manganese bis(sulfate) hexahydroxide trihydrate
+;
+_space_group_IT_number           190
+_symmetry_cell_setting           hexagonal
+_symmetry_space_group_name_Hall  'P -6c -2c'
+_symmetry_space_group_name_H-M   'P -6 2 c'
+_atom_sites_solution_hydrogens   difmap
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            2
+_cell_length_a                   8.5405(5)
+_cell_length_b                   8.5405(5)
+_cell_length_c                   10.8094(9)
+_cell_measurement_reflns_used    1145
+_cell_measurement_temperature    293(2)
+_cell_measurement_theta_max      31.95
+_cell_measurement_theta_min      2.75
+_cell_volume                     682.81(8)
+_computing_cell_refinement       'SAINT (Bruker, 2005)'
+_computing_data_collection       'APEX2 (Bruker, 2003)'
+_computing_data_reduction        'SAINT (Bruker, 2005)'
+_computing_molecular_graphics    'XtalDraw (Downs & Hall-Wallace, 2003)'
+_computing_publication_material  'SHELXTL (Sheldrick, 2008b)'
+_computing_structure_refinement  'SHELXL97 (Sheldrick, 2008b)'
+_computing_structure_solution    'SHELXS97 (Sheldrick, 2008b)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_measured_fraction_theta_full 0.988
+_diffrn_measured_fraction_theta_max 0.988
+_diffrn_measurement_device_type  'Bruker APEXII CCD area-detector'
+_diffrn_measurement_method       '\f and \w'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0506
+_diffrn_reflns_av_sigmaI/netI    0.0287
+_diffrn_reflns_limit_h_max       11
+_diffrn_reflns_limit_h_min       -12
+_diffrn_reflns_limit_k_max       12
+_diffrn_reflns_limit_k_min       -12
+_diffrn_reflns_limit_l_max       15
+_diffrn_reflns_limit_l_min       -16
+_diffrn_reflns_number            6018
+_diffrn_reflns_theta_full        32.63
+_diffrn_reflns_theta_max         32.63
+_diffrn_reflns_theta_min         2.75
+_diffrn_standards_number         0
+_exptl_absorpt_coefficient_mu    2.494
+_exptl_absorpt_correction_T_max  0.9068
+_exptl_absorpt_correction_T_min  0.8448
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details   '(SADABS; Sheldrick, 2008a)'
+_exptl_crystal_colour            yellow
+_exptl_crystal_density_diffrn    2.546
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       euhedral
+_exptl_crystal_F_000             530
+_exptl_crystal_size_max          0.07
+_exptl_crystal_size_mid          0.06
+_exptl_crystal_size_min          0.04
+_refine_diff_density_max         0.452
+_refine_diff_density_min         -0.301
+_refine_ls_abs_structure_details 'Flack (1983), 305 Friedel pairs'
+_refine_ls_abs_structure_Flack   0.0(9)
+_refine_ls_extinction_coef       0.0142(11)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     'SHELXL97 (Sheldrick, 2008)'
+_refine_ls_goodness_of_fit_ref   1.060
+_refine_ls_hydrogen_treatment    refall
+_refine_ls_matrix_type           full
+_refine_ls_number_constraints    0
+_refine_ls_number_parameters     49
+_refine_ls_number_reflns         871
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.060
+_refine_ls_R_factor_all          0.0312
+_refine_ls_R_factor_gt           0.0235
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0113P)^2^+0.2266P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0459
+_refine_ls_wR_factor_ref         0.0480
+_reflns_number_gt                758
+_reflns_number_total             871
+_reflns_threshold_expression     I>2sigma(I)
+_cod_data_source_file            wm2518.cif
+_cod_data_source_block           I
+_cod_database_code               2230974
+_cod_database_fobs_code          2230974
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'x, y, -z+1/2'
+'-y, x-y, -z+1/2'
+'-x+y, -x, -z+1/2'
+'y, x, -z'
+'x-y, -y, -z'
+'-x, -x+y, -z'
+'y, x, z+1/2'
+'x-y, -y, z+1/2'
+'-x, -x+y, z+1/2'
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_occupancy
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Mn Mn 0.0000 0.0000 0.0000 0.00846(12) Uani d S 1 . .
+Ca Ca 0.1521(3) 0.30348(5) 0.2500 0.01085(10) Uani d S 1 . .
+S S 0.3333 0.6667 0.02544(5) 0.00936(12) Uani d S 1 . .
+O O1 0.3333 0.6667 -0.11153(15) 0.0167(4) Uani d S 1 . .
+O O2 0.2419(10) 0.47842(15) 0.06891(10) 0.0188(3) Uani d . 1 . .
+O OH3 0.8945(8) 0.0966(8) 0.11070(10) 0.0109(3) Uani d . 1 . .
+O OW4 0.5006(12) 0.4853(12) 0.2500 0.0171(5) Uani d S 1 . .
+H H1 0.836(6) 0.125(6) 0.076(2) 0.026(8) Uiso d . 1 . .
+H H2 0.521(9) 0.445(9) 0.193(2) 0.046(10) Uiso d . 1 . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Mn 0.00919(15) 0.00919(15) 0.0070(2) 0.00460(8) 0.000 0.000
+Ca 0.0137(10) 0.00918(19) 0.00980(16) 0.0058(10) 0.000 0.000
+S 0.01001(16) 0.01001(16) 0.0081(2) 0.00501(8) 0.000 0.000
+O1 0.0213(6) 0.0213(6) 0.0075(7) 0.0107(3) 0.000 0.000
+O2 0.027(3) 0.0106(5) 0.0170(5) 0.008(2) 0.004(3) 0.0033(4)
+OH3 0.0084(15) 0.0148(19) 0.0107(4) 0.0067(6) -0.0006(16) -0.0004(16)
+OW4 0.019(2) 0.023(2) 0.0136(6) 0.0138(12) 0.000 0.000
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+S S 0.1246 0.1234 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ca Ca 0.2262 0.3064 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Mn Mn 0.3368 0.7283 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+OH3 Mn OH3 3_665 8_455 177.7(4) ?
+OH3 Mn OH3 3_665 1_455 85.08(5) ?
+OH3 Mn OH3 8_455 1_455 93.4(3) ?
+OH3 Mn OH3 3_665 2_545 85.08(5) ?
+OH3 Mn OH3 8_455 2_545 96.5(3) ?
+OH3 Mn OH3 1_455 2_545 85.08(5) ?
+OH3 Mn OH3 3_665 7_545 96.5(3) ?
+OH3 Mn OH3 8_455 7_545 85.08(5) ?
+OH3 Mn OH3 1_455 7_545 177.7(4) ?
+OH3 Mn OH3 2_545 7_545 93.4(3) ?
+OH3 Mn OH3 3_665 9_665 93.4(3) ?
+OH3 Mn OH3 8_455 9_665 85.08(5) ?
+OH3 Mn OH3 1_455 9_665 96.5(3) ?
+OH3 Mn OH3 2_545 9_665 177.7(4) ?
+OH3 Mn OH3 7_545 9_665 85.08(5) ?
+O2 S O2 3_565 2_665 110.28(5) ?
+O2 S O2 3_565 . 110.28(5) ?
+O2 S O2 2_665 . 110.28(5) ?
+O2 S O1 3_565 . 108.65(5) ?
+O2 S O1 2_665 . 108.65(5) ?
+O2 S O1 . . 108.65(5) ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Mn OH3 3_665 1.9149(11) y
+Mn OH3 8_455 1.9149(11) ?
+Mn OH3 1_455 1.9149(11) ?
+Mn OH3 2_545 1.9149(11) ?
+Mn OH3 7_545 1.9149(11) ?
+Mn OH3 9_665 1.9149(11) ?
+Ca O2 4 2.3465(11) y
+Ca O2 . 2.3465(11) ?
+Ca OH3 3_665 2.456(5) y
+Ca OH3 6_665 2.456(5) ?
+Ca OH3 1_455 2.518(5) ?
+Ca OH3 4_455 2.518(5) y
+Ca OW4 . 2.578(9) y
+Ca OW4 3_565 2.690(9) y
+S O2 3_565 1.4697(11) ?
+S O2 2_665 1.4697(11) ?
+S O2 . 1.4697(11) y
+S O1 . 1.4806(18) y
+loop_
+_geom_hbond_atom_site_label_D
+_geom_hbond_atom_site_label_H
+_geom_hbond_atom_site_label_A
+_geom_hbond_site_symmetry_A
+_geom_hbond_distance_DH
+_geom_hbond_distance_HA
+_geom_hbond_distance_DA
+_geom_hbond_angle_DHA
+OH3 H1 O2 9_655 0.75(2) 2.11(2) 2.8193(16) 158(3)
+OW4 H2 O1 7 0.77(2) 2.10(2) 2.7892(18) 150(3)

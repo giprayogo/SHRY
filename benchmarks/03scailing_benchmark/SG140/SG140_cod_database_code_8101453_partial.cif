@@ -1,0 +1,63 @@
+# generated using pymatgen
+data_Ra0.5Sr4Mg2Be13.5Si12
+_symmetry_space_group_name_H-M   I4/mcm
+_cell_length_a   8.08900000
+_cell_length_b   8.08900000
+_cell_length_c   15.73300000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   140
+_chemical_formula_structural   Ra0.5Sr4Mg2Be13.5Si12
+_chemical_formula_sum   'Ra0.5 Sr4 Mg2 Be13.5 Si12'
+_cell_volume   1029.44041309
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x+1/2, -y+1/2, -z'
+  10  '-x+1/2, y+1/2, z'
+  11  '-y+1/2, -x+1/2, -z'
+  12  'y+1/2, x+1/2, z'
+  13  '-x+1/2, y+1/2, -z'
+  14  'x+1/2, -y+1/2, z'
+  15  'y+1/2, x+1/2, -z'
+  16  '-y+1/2, -x+1/2, z'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-x+1/2, -y+1/2, -z+1/2'
+  19  '-y+1/2, x+1/2, z+1/2'
+  20  'y+1/2, -x+1/2, -z+1/2'
+  21  '-x+1/2, -y+1/2, z+1/2'
+  22  'x+1/2, y+1/2, -z+1/2'
+  23  'y+1/2, -x+1/2, z+1/2'
+  24  '-y+1/2, x+1/2, -z+1/2'
+  25  'x, -y, -z+1/2'
+  26  '-x, y, z+1/2'
+  27  '-y, -x, -z+1/2'
+  28  'y, x, z+1/2'
+  29  '-x, y, -z+1/2'
+  30  'x, -y, z+1/2'
+  31  'y, x, -z+1/2'
+  32  '-y, -x, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  4  0.00000000  0.00000000  0.00000000  1.0
+  Be+  Be1  16  0.17815000  0.32185000  0.35838000  0.84375
+  Ra+  Ra2  16  0.17815000  0.32185000  0.35838000  0.03125
+  Mg+  Mg3  16  0.17815000  0.32185000  0.35838000  0.125
+  Si  Si4  8  0.10812000  0.39188000  0.00000000  1.0
+  Si  Si5  4  0.00000000  0.00000000  0.25000000  1.0

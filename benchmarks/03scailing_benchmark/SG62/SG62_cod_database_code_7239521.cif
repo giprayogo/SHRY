@@ -1,0 +1,223 @@
+#------------------------------------------------------------------------------
+#$Date: 2019-11-28 21:59:44 +0200 (Thu, 28 Nov 2019) $
+#$Revision: 244743 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/7/23/95/7239521.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7239521
+loop_
+_publ_author_name
+'Baikie, Tom'
+'Fang, Yanan'
+'Kadro, Jeannette M.'
+'Schreyer, Martin'
+'Wei, Fengxia'
+'Mhaisalkar, Subodh G.'
+'Graetzel, Michael'
+'White, Tim J.'
+_publ_section_title
+;
+ Synthesis and crystal chemistry of the hybrid perovskite (CH3NH3)PbI3 for
+ solid-state sensitised solar cell applications
+;
+_journal_issue                   18
+_journal_name_full               'Journal of Materials Chemistry A'
+_journal_page_first              5628
+_journal_paper_doi               10.1039/c3ta10518k
+_journal_volume                  1
+_journal_year                    2013
+_chemical_formula_sum            'C H0 I3 N Pb'
+_chemical_formula_weight         613.9
+_space_group_IT_number           62
+_space_group_name_Hall           '-P 2ac 2n'
+_space_group_name_H-M_alt        'P n m a'
+_symmetry_cell_setting           orthorhombic
+_symmetry_Int_Tables_number      62
+_symmetry_space_group_name_Hall  '-P 2ac 2n'
+_symmetry_space_group_name_H-M   'P n m a'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   8.8362(11)
+_cell_length_b                   12.5804(15)
+_cell_length_c                   8.5551(10)
+_cell_measurement_reflns_used    1731
+_cell_measurement_temperature    100
+_cell_measurement_theta_max      32.08
+_cell_measurement_theta_min      2.88
+_cell_volume                     951.0(2)
+_diffrn_ambient_temperature      100
+_diffrn_detector                 CCD
+_diffrn_measured_fraction_theta_full 0.99
+_diffrn_measured_fraction_theta_max 0.99
+_diffrn_radiation_monochromator  'three cycle diffractomter'
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_source         'X-ray tube'
+_diffrn_radiation_wavelength     0.71069
+_diffrn_reflns_av_R_equivalents  0.0864
+_diffrn_reflns_av_sigmaI/netI    0.0465
+_diffrn_reflns_limit_h_max       13
+_diffrn_reflns_limit_h_min       -13
+_diffrn_reflns_limit_k_max       18
+_diffrn_reflns_limit_k_min       -17
+_diffrn_reflns_limit_l_max       10
+_diffrn_reflns_limit_l_min       -12
+_diffrn_reflns_number            17319
+_diffrn_reflns_theta_full        32.08
+_diffrn_reflns_theta_max         32.08
+_diffrn_reflns_theta_min         2.88
+_exptl_absorpt_coefficient_mu    27.39
+_exptl_absorpt_correction_T_max  0.004
+_exptl_absorpt_correction_T_min  0.00
+_exptl_absorpt_correction_type   multi-scan
+_exptl_crystal_colour            black
+_exptl_crystal_density_diffrn    4.2864
+_exptl_crystal_F_000             1016
+_exptl_crystal_size_max          1
+_exptl_crystal_size_mid          0.5
+_exptl_crystal_size_min          0.2
+_refine_diff_density_max         7.82
+_refine_diff_density_min         -9.44
+_refine_ls_extinction_coef       570(70)
+_refine_ls_extinction_method
+'B-C type 1 Gaussian isotropic (Becker & Coppens, 1974)'
+_refine_ls_goodness_of_fit_all   2.22
+_refine_ls_goodness_of_fit_gt    2.48
+_refine_ls_hydrogen_treatment    constr
+_refine_ls_number_constraints    0
+_refine_ls_number_parameters     35
+_refine_ls_number_reflns         1731
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          0.0657
+_refine_ls_R_factor_gt           0.0523
+_refine_ls_shift/su_max          0.0042
+_refine_ls_shift/su_mean         0.0008
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details     w=1/(\s^2^(I)+0.0004I^2^)
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_all         0.1322
+_refine_ls_wR_factor_gt          0.1299
+_reflns_number_gt                1344
+_reflns_number_total             1731
+_reflns_threshold_expression     I>3\s(I)
+_cod_data_source_file            c3ta10518k.txt
+_cod_data_source_block           I
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+data item '_diffrn_radiation_probe' value 'X-ray' was changed to
+'x-ray' in accordance with the
+/home/saulius/struct/COD-crude-data/automatic-downloads/DataCite-retrospective/RSC/depositions/lib/dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 last updated on
+2011-04-26.
+
+data item '_exptl_absorpt_correction_type' value 'multi scan' was
+changed to 'multi-scan' in accordance with the
+/home/saulius/struct/COD-crude-data/automatic-downloads/DataCite-retrospective/RSC/depositions/lib/dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 last updated on
+2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 6909 2019-04-08 15:41:33Z antanas 
+;
+_cod_original_cell_volume        951.0101
+_cod_original_sg_symbol_Hall     '-P -2xabc;-2yb;-2zac'
+_cod_original_formula_sum        'C1 H0 I3 N1 Pb1'
+_cod_database_code               7239521
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x+1/2,-y,z+1/2
+3 -x,y+1/2,-z
+4 x+1/2,-y+1/2,-z+1/2
+5 -x,-y,-z
+6 x+1/2,y,-z+1/2
+7 x,-y+1/2,z
+8 -x+1/2,y+1/2,z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_U_iso_or_equiv
+_atom_site_symmetry_multiplicity
+_atom_site_occupancy
+_atom_site_calc_flag
+Pb1 Pb 0.5 0 0 Uani 0.00608(16) 4 1 d
+I1 I 0.48572(11) 0.25 -0.05291(14) Uani 0.0130(3) 4 1 d
+I2 I 0.19020(9) 0.01719(6) 0.18615(10) Uani 0.0168(2) 8 1 d
+N N 0.932(2) 0.75 0.029(2) Uani 0.030(5) 4 1 d
+C C 0.913(2) 0.25 0.061(2) Uani 0.019(5) 4 1 d
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_type_symbol
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Pb1 Pb 0.0068(3) 0.0028(3) 0.0086(3) 0.00005(16) 0.00011(18) 0.00028(18)
+I1 I 0.0187(5) 0.0021(4) 0.0183(6) 0 0.0021(4) 0
+I2 I 0.0157(4) 0.0206(4) 0.0143(4) 0.0013(3) 0.0092(3) 0.0009(3)
+N N 0.035(10) 0.023(9) 0.033(10) 0 0.020(8) 0
+C C 0.019(8) 0.011(8) 0.027(10) 0 -0.002(8) 0
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C 0.0033 0.0016 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+H 0.0000 0.0000 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+I -0.4742 1.8119 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+N 0.0061 0.0033 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+Pb -3.3944 10.1111 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+loop_
+_cell_formula_units_Z
+4
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+I1 Pb1 I1 . 3_645 180.0(5)
+I1 Pb1 I2 . . 88.27(2)
+I1 Pb1 I2 . 2_554 85.75(3)
+I1 Pb1 I2 . 5_655 91.73(2)
+I1 Pb1 I2 . 6_555 94.25(3)
+I1 Pb1 I2 3_645 . 91.73(2)
+I1 Pb1 I2 3_645 2_554 94.25(3)
+I1 Pb1 I2 3_645 5_655 88.27(2)
+I1 Pb1 I2 3_645 6_555 85.75(3)
+I2 Pb1 I2 . 2_554 88.42(2)
+I2 Pb1 I2 . 5_655 180.0(5)
+I2 Pb1 I2 . 6_555 91.58(2)
+I2 Pb1 I2 2_554 5_655 91.58(2)
+I2 Pb1 I2 2_554 6_555 180.0(5)
+I2 Pb1 I2 5_655 6_555 88.42(2)
+Pb1 I1 Pb1 . 3_655 163.00(4)
+Pb1 I2 Pb1 . 2_555 151.18(3)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+Pb1 I1 . 3.18001(18)
+Pb1 I1 3_645 3.18001(18)
+Pb1 I2 . 3.1744(8)
+Pb1 I2 2_554 3.1750(8)
+Pb1 I2 5_655 3.1744(8)
+Pb1 I2 6_555 3.1750(8)
+N C 3_755 1.57(3)

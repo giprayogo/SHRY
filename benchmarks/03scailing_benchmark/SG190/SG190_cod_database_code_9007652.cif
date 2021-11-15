@@ -1,0 +1,72 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-11-13 17:22:27 +0200 (Sun, 13 Nov 2016) $
+#$Revision: 188410 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/9/00/76/9007652.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9007652
+loop_
+_publ_author_name
+'King, Jr, H. E.'
+'Prewitt, C. T.'
+_publ_section_title
+;
+ High-pressure and high-temperature polymorphism of iron sulfides (FeS)
+ Sample: T = 294 K, P = 3.33 GPa
+;
+_journal_issue                   7
+_journal_name_full               'Acta Crystallographica, Section B'
+_journal_page_first              1877
+_journal_page_last               1887
+_journal_paper_doi               10.1107/S0567740882007523
+_journal_volume                  38
+_journal_year                    1982
+_chemical_formula_sum            'Fe S'
+_chemical_name_mineral           Troilite
+_space_group_IT_number           190
+_symmetry_space_group_name_Hall  'P -6c -2c'
+_symmetry_space_group_name_H-M   'P -6 2 c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   5.861
+_cell_length_b                   5.861
+_cell_length_c                   11.577
+_cell_volume                     344.406
+_diffrn_ambient_pressure         3.33e+06
+_diffrn_ambient_temperature      294
+_exptl_crystal_density_diffrn    5.086
+_cod_database_code               9007652
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-x+y,1/2+z
+-x+y,-x,1/2-z
+y,x,-z
+-y,x-y,z
+x-y,-y,1/2+z
+x,y,1/2-z
+-x,-x+y,-z
+-x+y,-x,z
+y,x,1/2+z
+-y,x-y,1/2-z
+x-y,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Fe 0.37790 0.05560 0.12280 0.01381
+S1 0.00000 0.00000 0.00000 0.01013
+S2 0.33333 0.66667 0.02270 0.01077
+S3 0.66500 -0.00560 0.25000 0.00861

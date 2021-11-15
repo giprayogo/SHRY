@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Ba1.5Ra0.5Sr1Be1H8Fl0.5Sn1.5Ge5.5C0.5O16
+_symmetry_space_group_name_H-M   P4_12_12
+_cell_length_a   7.09951000
+_cell_length_b   7.09951000
+_cell_length_c   10.04048000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   92
+_chemical_formula_structural
+Ba1.5Ra0.5Sr1Be1H8Fl0.5Sn1.5Ge5.5C0.5O16
+_chemical_formula_sum
+'Ba1.5 Ra0.5 Sr1 Be1 H8 Fl0.5 Sn1.5 Ge5.5 C0.5 O16'
+_cell_volume   506.07073755
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z+1/4'
+  3  '-x, -y, z+1/2'
+  4  'y+1/2, -x+1/2, z+3/4'
+  5  'x+1/2, -y+1/2, -z+3/4'
+  6  '-y, -x, -z+1/2'
+  7  '-x+1/2, y+1/2, -z+1/4'
+  8  'y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Be+  Be0  4  0.23646000  0.76354000  0.75000000  0.25
+  Ba+  Ba1  4  0.23646000  0.76354000  0.75000000  0.375
+  Sr+  Sr2  4  0.23646000  0.76354000  0.75000000  0.25
+  Ra+  Ra3  4  0.23646000  0.76354000  0.75000000  0.125
+  H  H4  8  0.12770000  0.80470000  0.38330000  1.0
+  Fl+  Fl5  8  0.21230000  0.77680000  0.05630000  0.0625
+  Ge+  Ge6  8  0.21230000  0.77680000  0.05630000  0.6875
+  Sn+  Sn7  8  0.21230000  0.77680000  0.05630000  0.1875
+  C+  C8  8  0.21230000  0.77680000  0.05630000  0.0625
+  O  O9  8  0.08660000  0.70700000  0.99160000  1.0
+  O  O10  8  0.12180000  0.20070000  0.22600000  1.0

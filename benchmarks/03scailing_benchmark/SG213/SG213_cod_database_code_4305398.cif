@@ -1,0 +1,1137 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 22:30:59 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176467 $
+#$URL: svn://www.crystallography.net/cod/cif/4/30/53/4305398.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4305398
+loop_
+_publ_author_name
+'Rainer P\"ottgen'
+'Viktor Hlukhyy'
+'Aleksey Baranov'
+'Yuri Grin'
+_publ_contact_author
+;
+       Prof. Dr. Rainer P\"ottgen
+       Institut f\"ur Anorganische und Analytische Chemie
+       Westf\"alische Wilhelms-Universit\"at M\"unster
+       Corrensstrasse 30
+       48149 M\"unster
+       Bundesrepublik Deutschland
+;
+_publ_contact_author_email       pottgen@uni-muenster.de
+_publ_contact_author_fax         '0049 251 83-36002'
+_publ_contact_author_phone       '0049 251 83-36001'
+_publ_section_title
+;
+Crystal Structure and Chemical Bonding of Mg3Ru2
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              6051
+_journal_page_last               6055
+_journal_paper_doi               10.1021/ic800387a
+_journal_volume                  47
+_journal_year                    2008
+_chemical_formula_sum            'Mg3 Ru2'
+_chemical_formula_weight         275.07
+_chemical_name_systematic
+; 
+ ? 
+;
+_space_group_IT_number           213
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_Hall  'P 4bd 2ab 3'
+_symmetry_space_group_name_H-M   'P 41 3 2'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   6.9352(6)
+_cell_length_b                   6.9352(6)
+_cell_length_c                   6.9352(6)
+_cell_measurement_temperature    293(2)
+_cell_volume                     333.56(5)
+_computing_cell_refinement       'ENRAF-NONIUS EXPRESS'
+_computing_data_collection       'ENRAF-NONIUS EXPRESS'
+_computing_data_reduction        'ENRAF-NONIUS MOLEN'
+_computing_molecular_graphics    'DIAMOND (Brandenburg, 1996)'
+_computing_publication_material  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_measured_fraction_theta_full 1.000
+_diffrn_measured_fraction_theta_max 1.000
+_diffrn_measurement_device_type  'Enraf-Nonius CAD4'
+_diffrn_measurement_method       Omega-2Theta-Scans
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0741
+_diffrn_reflns_av_sigmaI/netI    0.0185
+_diffrn_reflns_limit_h_max       9
+_diffrn_reflns_limit_h_min       -9
+_diffrn_reflns_limit_k_max       9
+_diffrn_reflns_limit_k_min       -9
+_diffrn_reflns_limit_l_max       9
+_diffrn_reflns_limit_l_min       -9
+_diffrn_reflns_number            3844
+_diffrn_reflns_theta_full        29.79
+_diffrn_reflns_theta_max         29.79
+_diffrn_reflns_theta_min         4.16
+_diffrn_standards_interval_time  7200s
+_exptl_absorpt_coefficient_mu    9.3
+_exptl_absorpt_correction_T_max  0.574
+_exptl_absorpt_correction_T_min  0.543
+_exptl_absorpt_correction_type   'semiempirical-psi scans'
+_exptl_crystal_colour            silvery
+_exptl_crystal_density_diffrn    5.48
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       irregular
+_exptl_crystal_F_000             496
+_refine_diff_density_max         0.381
+_refine_diff_density_min         -0.385
+_refine_diff_density_rms         0.107
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   -0.16(13)
+_refine_ls_extinction_coef       0.0070(9)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.132
+_refine_ls_hydrogen_treatment    mixed
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     10
+_refine_ls_number_reflns         168
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.132
+_refine_ls_R_factor_all          0.0190
+_refine_ls_R_factor_gt           0.0134
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0079P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0228
+_refine_ls_wR_factor_ref         0.0235
+_reflns_number_gt                153
+_reflns_number_total             168
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            ic800387a-file001.cif
+_cod_data_source_block           ru2mg3
+_cod_original_formula_sum        Mg3Ru2
+_cod_database_code               4305398
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y, z+1/2'
+'-x, y+1/2, -z+1/2'
+'x+1/2, -y+1/2, -z'
+'z, x, y'
+'z+1/2, -x+1/2, -y'
+'-z+1/2, -x, y+1/2'
+'-z, x+1/2, -y+1/2'
+'y, z, x'
+'-y, z+1/2, -x+1/2'
+'y+1/2, -z+1/2, -x'
+'-y+1/2, -z, x+1/2'
+'y+3/4, x+1/4, -z+1/4'
+'-y+3/4, -x+3/4, -z+3/4'
+'y+1/4, -x+1/4, z+3/4'
+'-y+1/4, x+3/4, z+1/4'
+'x+3/4, z+1/4, -y+1/4'
+'-x+1/4, z+3/4, y+1/4'
+'-x+3/4, -z+3/4, -y+3/4'
+'x+1/4, -z+1/4, y+3/4'
+'z+3/4, y+1/4, -x+1/4'
+'z+1/4, -y+1/4, x+3/4'
+'-z+1/4, y+3/4, x+1/4'
+'-z+3/4, -y+3/4, -x+3/4'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Ru Ru 0.07378(3) 0.07378(3) 0.07378(3) 0.00535(13) Uani 1 3 d S . .
+Mg Mg 0.1250 0.20512(14) 0.45512(14) 0.0079(3) Uani 1 2 d S . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Ru 0.00535(13) 0.00535(13) 0.00535(13) -0.00002(9) -0.00002(9) -0.00002(9)
+Mg 0.0091(7) 0.0073(4) 0.0073(4) -0.0014(6) -0.0006(3) 0.0006(3)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Mg Mg 0.0486 0.0363 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ru Ru -1.2594 0.8363 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+Ru Ru Ru 117.469(3) 16_545 15_554 ?
+Ru Ru Ru 117.469(3) 16_545 13_455 ?
+Ru Ru Ru 117.469(3) 15_554 13_455 ?
+Ru Ru Mg 63.084(13) 16_545 . ?
+Ru Ru Mg 117.487(11) 15_554 . ?
+Ru Ru Mg 66.741(13) 13_455 . ?
+Ru Ru Mg 117.487(11) 16_545 9 ?
+Ru Ru Mg 66.741(13) 15_554 9 ?
+Ru Ru Mg 63.084(13) 13_455 9 ?
+Mg Ru Mg 62.491(11) . 9 ?
+Ru Ru Mg 66.741(13) 16_545 5 ?
+Ru Ru Mg 63.084(13) 15_554 5 ?
+Ru Ru Mg 117.487(11) 13_455 5 ?
+Mg Ru Mg 62.491(11) . 5 ?
+Mg Ru Mg 62.491(11) 9 5 ?
+Ru Ru Mg 121.279(16) 16_545 11_455 ?
+Ru Ru Mg 107.096(3) 15_554 11_455 ?
+Ru Ru Mg 65.30(2) 13_455 11_455 ?
+Mg Ru Mg 125.238(11) . 11_455 ?
+Mg Ru Mg 114.07(3) 9 11_455 ?
+Mg Ru Mg 170.152(11) 5 11_455 ?
+Ru Ru Mg 107.096(3) 16_545 7_554 ?
+Ru Ru Mg 65.30(2) 15_554 7_554 ?
+Ru Ru Mg 121.279(16) 13_455 7_554 ?
+Mg Ru Mg 170.151(11) . 7_554 ?
+Mg Ru Mg 125.238(11) 9 7_554 ?
+Mg Ru Mg 114.07(3) 5 7_554 ?
+Mg Ru Mg 59.42(4) 11_455 7_554 ?
+Ru Ru Mg 65.30(2) 16_545 3_545 ?
+Ru Ru Mg 121.279(16) 15_554 3_545 ?
+Ru Ru Mg 107.096(3) 13_455 3_545 ?
+Mg Ru Mg 114.07(3) . 3_545 ?
+Mg Ru Mg 170.152(11) 9 3_545 ?
+Mg Ru Mg 125.238(11) 5 3_545 ?
+Mg Ru Mg 59.42(4) 11_455 3_545 ?
+Mg Ru Mg 59.42(4) 7_554 3_545 ?
+Ru Ru Mg 60.94(3) 16_545 10_545 ?
+Ru Ru Mg 177.883(15) 15_554 10_545 ?
+Ru Ru Mg 63.20(3) 13_455 10_545 ?
+Mg Ru Mg 60.709(5) . 10_545 ?
+Mg Ru Mg 112.488(10) 9 10_545 ?
+Mg Ru Mg 114.799(8) 5 10_545 ?
+Mg Ru Mg 75.020(12) 11_455 10_545 ?
+Mg Ru Mg 116.27(2) 7_554 10_545 ?
+Mg Ru Mg 59.71(3) 3_545 10_545 ?
+Ru Ru Mg 177.883(15) 16_545 6_455 ?
+Ru Ru Mg 63.20(3) 15_554 6_455 ?
+Ru Ru Mg 60.94(3) 13_455 6_455 ?
+Mg Ru Mg 114.799(8) . 6_455 ?
+Mg Ru Mg 60.709(5) 9 6_455 ?
+Mg Ru Mg 112.488(10) 5 6_455 ?
+Mg Ru Mg 59.71(3) 11_455 6_455 ?
+Mg Ru Mg 75.020(12) 7_554 6_455 ?
+Mg Ru Mg 116.27(2) 3_545 6_455 ?
+Mg Ru Mg 118.333(3) 10_545 6_455 ?
+Ru Ru Mg 63.20(3) 16_545 2_554 ?
+Ru Ru Mg 60.94(3) 15_554 2_554 ?
+Ru Ru Mg 177.883(15) 13_455 2_554 ?
+Mg Ru Mg 112.487(10) . 2_554 ?
+Mg Ru Mg 114.799(8) 9 2_554 ?
+Mg Ru Mg 60.709(5) 5 2_554 ?
+Mg Ru Mg 116.27(2) 11_455 2_554 ?
+Mg Ru Mg 59.71(3) 7_554 2_554 ?
+Mg Ru Mg 75.020(12) 3_545 2_554 ?
+Mg Ru Mg 118.333(3) 10_545 2_554 ?
+Mg Ru Mg 118.333(3) 6_455 2_554 ?
+Ru Ru Ru 108.572(10) 16_545 4 ?
+Ru Ru Ru 31.265(2) 15_554 4 ?
+Ru Ru Ru 102.974(5) 13_455 4 ?
+Mg Ru Ru 86.496(14) . 4 ?
+Mg Ru Ru 41.194(15) 9 4 ?
+Mg Ru Ru 42.262(11) 5 4 ?
+Mg Ru Ru 128.701(7) 11_455 4 ?
+Mg Ru Ru 96.54(2) 7_554 4 ?
+Mg Ru Ru 148.417(9) 3_545 4 ?
+Mg Ru Ru 147.077(16) 10_545 4 ?
+Mg Ru Ru 70.899(19) 6_455 4 ?
+Mg Ru Ru 74.950(17) 2_554 4 ?
+Ru Ru Ru 102.974(5) 16_545 3 ?
+Ru Ru Ru 108.572(10) 15_554 3 ?
+Ru Ru Ru 31.265(2) 13_455 3 ?
+Mg Ru Ru 41.194(15) . 3 ?
+Mg Ru Ru 42.262(11) 9 3 ?
+Mg Ru Ru 86.496(14) 5 3 ?
+Mg Ru Ru 96.54(2) 11_455 3 ?
+Mg Ru Ru 148.417(9) 7_554 3 ?
+Mg Ru Ru 128.701(7) 3_545 3 ?
+Mg Ru Ru 70.899(19) 10_545 3 ?
+Mg Ru Ru 74.950(17) 6_455 3 ?
+Mg Ru Ru 147.077(16) 2_554 3 ?
+Ru Ru Ru 82.682(11) 4 3 ?
+Ru Ru Ru 31.265(2) 16_545 2 ?
+Ru Ru Ru 102.974(5) 15_554 2 ?
+Ru Ru Ru 108.572(10) 13_455 2 ?
+Mg Ru Ru 42.262(11) . 2 ?
+Mg Ru Ru 86.496(14) 9 2 ?
+Mg Ru Ru 41.194(15) 5 2 ?
+Mg Ru Ru 148.417(9) 11_455 2 ?
+Mg Ru Ru 128.701(7) 7_554 2 ?
+Mg Ru Ru 96.54(2) 3_545 2 ?
+Mg Ru Ru 74.950(18) 10_545 2 ?
+Mg Ru Ru 147.077(16) 6_455 2 ?
+Mg Ru Ru 70.899(19) 2_554 2 ?
+Ru Ru Ru 82.682(11) 4 2 ?
+Ru Ru Ru 82.682(11) 3 2 ?
+Ru Ru Ru 139.533(7) 16_545 4_455 ?
+Ru Ru Ru 102.974(5) 15_554 4_455 ?
+Ru Ru Ru 31.265(1) 13_455 4_455 ?
+Mg Ru Ru 97.996(12) . 4_455 ?
+Mg Ru Ru 76.167(11) 9 4_455 ?
+Mg Ru Ru 138.629(11) 5 4_455 ?
+Mg Ru Ru 39.63(2) 11_455 4_455 ?
+Mg Ru Ru 90.263(15) 7_554 4_455 ?
+Mg Ru Ru 95.709(16) 3_545 4_455 ?
+Mg Ru Ru 78.59(2) 10_545 4_455 ?
+Mg Ru Ru 39.78(3) 6_455 4_455 ?
+Mg Ru Ru 149.38(2) 2_554 4_455 ?
+Ru Ru Ru 105.228(5) 4 4_455 ?
+Ru Ru Ru 60.0 3 4_455 ?
+Ru Ru Ru 139.699(8) 2 4_455 ?
+Ru Ru Ru 31.265(2) 16_545 3_545 ?
+Ru Ru Ru 139.533(7) 15_554 3_545 ?
+Ru Ru Ru 102.974(5) 13_455 3_545 ?
+Mg Ru Ru 76.167(11) . 3_545 ?
+Mg Ru Ru 138.629(11) 9 3_545 ?
+Mg Ru Ru 97.996(12) 5 3_545 ?
+Mg Ru Ru 90.263(15) 11_455 3_545 ?
+Mg Ru Ru 95.709(16) 7_554 3_545 ?
+Mg Ru Ru 39.63(2) 3_545 3_545 ?
+Mg Ru Ru 39.78(3) 10_545 3_545 ?
+Mg Ru Ru 149.38(2) 6_455 3_545 ?
+Mg Ru Ru 78.59(2) 2_554 3_545 ?
+Ru Ru Ru 139.699(8) 4 3_545 ?
+Ru Ru Ru 105.228(5) 3 3_545 ?
+Ru Ru Ru 60.0 2 3_545 ?
+Ru Ru Ru 112.957(7) 4_455 3_545 ?
+Ru Ru Ru 102.974(5) 16_545 2_554 ?
+Ru Ru Ru 31.265(2) 15_554 2_554 ?
+Ru Ru Ru 139.533(7) 13_455 2_554 ?
+Mg Ru Ru 138.629(11) . 2_554 ?
+Mg Ru Ru 97.996(12) 9 2_554 ?
+Mg Ru Ru 76.167(11) 5 2_554 ?
+Mg Ru Ru 95.709(16) 11_455 2_554 ?
+Mg Ru Ru 39.63(2) 7_554 2_554 ?
+Mg Ru Ru 90.263(15) 3_545 2_554 ?
+Mg Ru Ru 149.38(2) 10_545 2_554 ?
+Mg Ru Ru 78.59(2) 6_455 2_554 ?
+Mg Ru Ru 39.78(3) 2_554 2_554 ?
+Ru Ru Ru 60.0 4 2_554 ?
+Ru Ru Ru 139.699(8) 3 2_554 ?
+Ru Ru Ru 105.228(5) 2 2_554 ?
+Ru Ru Ru 112.957(7) 4_455 2_554 ?
+Ru Ru Ru 112.957(7) 3_545 2_554 ?
+Ru Ru Mg 39.228(6) 16_545 9_545 ?
+Ru Ru Mg 100.696(14) 15_554 9_545 ?
+Ru Ru Mg 141.289(13) 13_455 9_545 ?
+Mg Ru Mg 102.309(9) . 9_545 ?
+Mg Ru Mg 146.87(3) 9 9_545 ?
+Mg Ru Mg 84.410(18) 5 9_545 ?
+Mg Ru Mg 98.794(11) 11_455 9_545 ?
+Mg Ru Mg 67.883(5) 7_554 9_545 ?
+Mg Ru Mg 41.18(3) 3_545 9_545 ?
+Mg Ru Mg 78.90(3) 10_545 9_545 ?
+Mg Ru Mg 142.889(14) 6_455 9_545 ?
+Mg Ru Mg 40.55(3) 2_554 9_545 ?
+Ru Ru Mg 113.612(15) 4 9_545 ?
+Ru Ru Mg 141.080(8) 3 9_545 ?
+Ru Ru Mg 65.877(9) 2 9_545 ?
+Ru Ru Mg 136.844(18) 4_455 9_545 ?
+Ru Ru Mg 39.522(9) 3_545 9_545 ?
+Ru Ru Mg 73.715(9) 2_554 9_545 ?
+Ru Ru Mg 100.696(14) 16_545 5_455 ?
+Ru Ru Mg 141.289(13) 15_554 5_455 ?
+Ru Ru Mg 39.228(5) 13_455 5_455 ?
+Mg Ru Mg 84.411(18) . 5_455 ?
+Mg Ru Mg 102.309(9) 9 5_455 ?
+Mg Ru Mg 146.87(3) 5 5_455 ?
+Mg Ru Mg 41.18(3) 11_455 5_455 ?
+Mg Ru Mg 98.794(11) 7_554 5_455 ?
+Mg Ru Mg 67.883(5) 3_545 5_455 ?
+Mg Ru Mg 40.55(3) 10_545 5_455 ?
+Mg Ru Mg 78.90(3) 6_455 5_455 ?
+Mg Ru Mg 142.889(14) 2_554 5_455 ?
+Ru Ru Mg 141.080(8) 4 5_455 ?
+Ru Ru Mg 65.877(9) 3 5_455 ?
+Ru Ru Mg 113.612(15) 2 5_455 ?
+Ru Ru Mg 39.522(9) 4_455 5_455 ?
+Ru Ru Mg 73.715(9) 3_545 5_455 ?
+Ru Ru Mg 136.844(18) 2_554 5_455 ?
+Mg Ru Mg 105.297(15) 9_545 5_455 ?
+Ru Ru Mg 141.289(13) 16_545 1_554 ?
+Ru Ru Mg 39.228(5) 15_554 1_554 ?
+Ru Ru Mg 100.696(14) 13_455 1_554 ?
+Mg Ru Mg 146.87(3) . 1_554 ?
+Mg Ru Mg 84.410(18) 9 1_554 ?
+Mg Ru Mg 102.309(9) 5 1_554 ?
+Mg Ru Mg 67.883(5) 11_455 1_554 ?
+Mg Ru Mg 41.18(3) 7_554 1_554 ?
+Mg Ru Mg 98.794(11) 3_545 1_554 ?
+Mg Ru Mg 142.889(14) 10_545 1_554 ?
+Mg Ru Mg 40.55(3) 6_455 1_554 ?
+Mg Ru Mg 78.90(3) 2_554 1_554 ?
+Ru Ru Mg 65.877(9) 4 1_554 ?
+Ru Ru Mg 113.612(15) 3 1_554 ?
+Ru Ru Mg 141.080(8) 2 1_554 ?
+Ru Ru Mg 73.715(9) 4_455 1_554 ?
+Ru Ru Mg 136.844(18) 3_545 1_554 ?
+Ru Ru Mg 39.522(9) 2_554 1_554 ?
+Mg Ru Mg 105.297(15) 9_545 1_554 ?
+Mg Ru Mg 105.297(15) 5_455 1_554 ?
+Ru Ru Mg 84.775(15) 16_545 11 ?
+Ru Ru Mg 32.983(12) 15_554 11 ?
+Ru Ru Mg 139.493(11) 13_455 11 ?
+Mg Ru Mg 100.104(9) . 11 ?
+Mg Ru Mg 76.754(6) 9 11 ?
+Mg Ru Mg 37.685(11) 5 11 ?
+Mg Ru Mg 133.767(11) 11_455 11 ?
+Mg Ru Mg 77.378(19) 7_554 11 ?
+Mg Ru Mg 113.094(10) 3_545 11 ?
+Mg Ru Mg 145.219(14) 10_545 11 ?
+Mg Ru Mg 95.712(14) 6_455 11 ?
+Mg Ru Mg 38.416(6) 2_554 11 ?
+Ru Ru Mg 36.575(12) 4 11 ?
+Ru Ru Mg 115.223(13) 3 11 ?
+Ru Ru Mg 72.208(10) 2 11 ?
+Ru Ru Mg 135.336(11) 4_455 11 ?
+Ru Ru Mg 110.905(13) 3_545 11 ?
+Ru Ru Mg 38.525(2) 2_554 11 ?
+Mg Ru Mg 77.55(3) 9_545 11 ?
+Mg Ru Mg 174.12(2) 5_455 11 ?
+Mg Ru Mg 68.874(7) 1_554 11 ?
+Ru Ru Mg 32.983(12) 16_545 7 ?
+Ru Ru Mg 139.493(11) 15_554 7 ?
+Ru Ru Mg 84.775(15) 13_455 7 ?
+Mg Ru Mg 37.685(11) . 7 ?
+Mg Ru Mg 100.104(9) 9 7 ?
+Mg Ru Mg 76.754(6) 5 7 ?
+Mg Ru Mg 113.094(10) 11_455 7 ?
+Mg Ru Mg 133.767(11) 7_554 7 ?
+Mg Ru Mg 77.378(19) 3_545 7 ?
+Mg Ru Mg 38.416(6) 10_545 7 ?
+Mg Ru Mg 145.219(14) 6_455 7 ?
+Mg Ru Mg 95.712(14) 2_554 7 ?
+Ru Ru Mg 115.223(12) 4 7 ?
+Ru Ru Mg 72.208(10) 3 7 ?
+Ru Ru Mg 36.575(12) 2 7 ?
+Ru Ru Mg 110.905(13) 4_455 7 ?
+Ru Ru Mg 38.525(2) 3_545 7 ?
+Ru Ru Mg 135.336(11) 2_554 7 ?
+Mg Ru Mg 68.874(7) 9_545 7 ?
+Mg Ru Mg 77.55(3) 5_455 7 ?
+Mg Ru Mg 174.12(2) 1_554 7 ?
+Mg Ru Mg 108.324(7) 11 7 ?
+Ru Ru Mg 139.493(11) 16_545 3 ?
+Ru Ru Mg 84.775(15) 15_554 3 ?
+Ru Ru Mg 32.983(12) 13_455 3 ?
+Mg Ru Mg 76.754(6) . 3 ?
+Mg Ru Mg 37.685(11) 9 3 ?
+Mg Ru Mg 100.104(9) 5 3 ?
+Mg Ru Mg 77.378(19) 11_455 3 ?
+Mg Ru Mg 113.094(10) 7_554 3 ?
+Mg Ru Mg 133.767(11) 3_545 3 ?
+Mg Ru Mg 95.712(14) 10_545 3 ?
+Mg Ru Mg 38.416(6) 6_455 3 ?
+Mg Ru Mg 145.219(14) 2_554 3 ?
+Ru Ru Mg 72.208(10) 4 3 ?
+Ru Ru Mg 36.575(12) 3 3 ?
+Ru Ru Mg 115.223(13) 2 3 ?
+Ru Ru Mg 38.525(2) 4_455 3 ?
+Ru Ru Mg 135.336(11) 3_545 3 ?
+Ru Ru Mg 110.905(13) 2_554 3 ?
+Mg Ru Mg 174.12(2) 9_545 3 ?
+Mg Ru Mg 68.874(7) 5_455 3 ?
+Mg Ru Mg 77.55(3) 1_554 3 ?
+Mg Ru Mg 108.324(7) 11 3 ?
+Mg Ru Mg 108.324(7) 7 3 ?
+Ru Ru Mg 145.045(15) 16_545 12_564 ?
+Ru Ru Mg 31.475(9) 15_554 12_564 ?
+Ru Ru Mg 86.254(6) 13_455 12_564 ?
+Mg Ru Mg 110.520(9) . 12_564 ?
+Mg Ru Mg 48.342(5) 9 12_564 ?
+Mg Ru Mg 79.79(2) 5 12_564 ?
+Mg Ru Mg 91.175(4) 11_455 12_564 ?
+Mg Ru Mg 76.896(6) 7_554 12_564 ?
+Mg Ru Mg 135.18(3) 3_545 12_564 ?
+Mg Ru Mg 149.40(3) 10_545 12_564 ?
+Mg Ru Mg 34.90(3) 6_455 12_564 ?
+Mg Ru Mg 92.25(3) 2_554 12_564 ?
+Ru Ru Mg 37.557(11) 4 12_564 ?
+Ru Ru Mg 84.059(5) 3 12_564 ?
+Ru Ru Mg 119.963(17) 2 12_564 ?
+Ru Ru Mg 73.653(7) 4_455 12_564 ?
+Ru Ru Mg 170.376(3) 3_545 12_564 ?
+Ru Ru Mg 57.428(5) 2_554 12_564 ?
+Mg Ru Mg 130.884(10) 9_545 12_564 ?
+Mg Ru Mg 113.176(3) 5_455 12_564 ?
+Mg Ru Mg 36.43(2) 1_554 12_564 ?
+Mg Ru Mg 61.794(17) 11 12_564 ?
+Mg Ru Mg 147.357(17) 7 12_564 ?
+Mg Ru Mg 54.180(11) 3 12_564 ?
+Ru Ru Mg 31.475(9) 16_545 8_645 ?
+Ru Ru Mg 86.254(6) 15_554 8_645 ?
+Ru Ru Mg 145.045(15) 13_455 8_645 ?
+Mg Ru Mg 79.79(2) . 8_645 ?
+Mg Ru Mg 110.520(9) 9 8_645 ?
+Mg Ru Mg 48.342(5) 5 8_645 ?
+Mg Ru Mg 135.18(3) 11_455 8_645 ?
+Mg Ru Mg 91.175(4) 7_554 8_645 ?
+Mg Ru Mg 76.896(6) 3_545 8_645 ?
+Mg Ru Mg 92.25(3) 10_545 8_645 ?
+Mg Ru Mg 149.40(3) 6_455 8_645 ?
+Mg Ru Mg 34.90(3) 2_554 8_645 ?
+Ru Ru Mg 84.059(5) 4 8_645 ?
+Ru Ru Mg 119.963(17) 3 8_645 ?
+Ru Ru Mg 37.557(11) 2 8_645 ?
+Ru Ru Mg 170.376(3) 4_455 8_645 ?
+Ru Ru Mg 57.428(5) 3_545 8_645 ?
+Ru Ru Mg 73.653(7) 2_554 8_645 ?
+Mg Ru Mg 36.43(2) 9_545 8_645 ?
+Mg Ru Mg 130.884(10) 5_455 8_645 ?
+Mg Ru Mg 113.176(3) 1_554 8_645 ?
+Mg Ru Mg 54.180(11) 11 8_645 ?
+Mg Ru Mg 61.794(17) 7 8_645 ?
+Mg Ru Mg 147.357(17) 3 8_645 ?
+Mg Ru Mg 115.929(8) 12_564 8_645 ?
+Ru Ru Mg 86.254(6) 16_545 4_456 ?
+Ru Ru Mg 145.045(15) 15_554 4_456 ?
+Ru Ru Mg 31.475(9) 13_455 4_456 ?
+Mg Ru Mg 48.342(5) . 4_456 ?
+Mg Ru Mg 79.79(2) 9 4_456 ?
+Mg Ru Mg 110.520(9) 5 4_456 ?
+Mg Ru Mg 76.896(7) 11_455 4_456 ?
+Mg Ru Mg 135.18(3) 7_554 4_456 ?
+Mg Ru Mg 91.175(4) 3_545 4_456 ?
+Mg Ru Mg 34.90(3) 10_545 4_456 ?
+Mg Ru Mg 92.25(3) 6_455 4_456 ?
+Mg Ru Mg 149.40(3) 2_554 4_456 ?
+Ru Ru Mg 119.963(17) 4 4_456 ?
+Ru Ru Mg 37.557(11) 3 4_456 ?
+Ru Ru Mg 84.059(5) 2 4_456 ?
+Ru Ru Mg 57.428(5) 4_455 4_456 ?
+Ru Ru Mg 73.653(7) 3_545 4_456 ?
+Ru Ru Mg 170.376(3) 2_554 4_456 ?
+Mg Ru Mg 113.176(3) 9_545 4_456 ?
+Mg Ru Mg 36.43(2) 5_455 4_456 ?
+Mg Ru Mg 130.884(10) 1_554 4_456 ?
+Mg Ru Mg 147.357(17) 11 4_456 ?
+Mg Ru Mg 54.180(11) 7 4_456 ?
+Mg Ru Mg 61.794(17) 3 4_456 ?
+Mg Ru Mg 115.929(8) 12_564 4_456 ?
+Mg Ru Mg 115.929(8) 8_645 4_456 ?
+Ru Ru Ru 99.247(6) 16_545 14_444 ?
+Ru Ru Ru 99.247(6) 15_554 14_444 ?
+Ru Ru Ru 99.247(6) 13_455 14_444 ?
+Mg Ru Ru 143.205(7) . 14_444 ?
+Mg Ru Ru 143.205(7) 9 14_444 ?
+Mg Ru Ru 143.205(7) 5 14_444 ?
+Mg Ru Ru 34.91(2) 11_455 14_444 ?
+Mg Ru Ru 34.91(2) 7_554 14_444 ?
+Mg Ru Ru 34.91(2) 3_545 14_444 ?
+Mg Ru Ru 82.522(8) 10_545 14_444 ?
+Mg Ru Ru 82.522(8) 6_455 14_444 ?
+Mg Ru Ru 82.522(8) 2_554 14_444 ?
+Ru Ru Ru 130.295(8) 4 14_444 ?
+Ru Ru Ru 130.295(8) 3 14_444 ?
+Ru Ru Ru 130.295(8) 2 14_444 ?
+Ru Ru Ru 74.291(8) 4_455 14_444 ?
+Ru Ru Ru 74.291(8) 3_545 14_444 ?
+Ru Ru Ru 74.291(8) 2_554 14_444 ?
+Mg Ru Ru 66.622(13) 9_545 14_444 ?
+Mg Ru Ru 66.622(13) 5_455 14_444 ?
+Mg Ru Ru 66.622(13) 1_554 14_444 ?
+Mg Ru Ru 110.596(6) 11 14_444 ?
+Mg Ru Ru 110.596(6) 7 14_444 ?
+Mg Ru Ru 110.596(6) 3 14_444 ?
+Mg Ru Ru 101.801(12) 12_564 14_444 ?
+Mg Ru Ru 101.801(12) 8_645 14_444 ?
+Mg Ru Ru 101.801(12) 4_456 14_444 ?
+Ru Ru Mg 80.835(6) 16_545 12_554 ?
+Ru Ru Mg 64.993(16) 15_554 12_554 ?
+Ru Ru Mg 150.602(14) 13_455 12_554 ?
+Mg Ru Mg 140.770(14) . 12_554 ?
+Mg Ru Mg 131.373(4) 9 12_554 ?
+Mg Ru Mg 90.333(18) 5 12_554 ?
+Mg Ru Mg 85.69(3) 11_455 12_554 ?
+Mg Ru Mg 30.190(5) 7_554 12_554 ?
+Mg Ru Mg 57.55(2) 3_545 12_554 ?
+Mg Ru Mg 115.533(9) 10_545 12_554 ?
+Mg Ru Mg 101.193(16) 6_455 12_554 ?
+Mg Ru Mg 30.750(17) 2_554 12_554 ?
+Ru Ru Mg 91.206(16) 4 12_554 ?
+Ru Ru Mg 173.565(14) 3 12_554 ?
+Ru Ru Mg 98.589(3) 2 12_554 ?
+Ru Ru Mg 120.242(13) 4_455 12_554 ?
+Ru Ru Mg 80.748(11) 3_545 12_554 ?
+Ru Ru Mg 33.877(15) 2_554 12_554 ?
+Mg Ru Mg 43.827(10) 9_545 12_554 ?
+Mg Ru Mg 118.840(9) 5_455 12_554 ?
+Mg Ru Mg 61.63(2) 1_554 12_554 ?
+Mg Ru Mg 59.600(7) 11 12_554 ?
+Mg Ru Mg 112.501(2) 7 12_554 ?
+Mg Ru Mg 139.158(7) 3 12_554 ?
+Mg Ru Mg 89.872(7) 12_564 12_554 ?
+Mg Ru Mg 61.033(8) 8_645 12_554 ?
+Mg Ru Mg 148.72(3) 4_456 12_554 ?
+Ru Ru Mg 53.131(13) 14_444 12_554 ?
+Ru Ru Mg 64.993(16) 16_545 8_545 ?
+Ru Ru Mg 150.602(14) 15_554 8_545 ?
+Ru Ru Mg 80.835(6) 13_455 8_545 ?
+Mg Ru Mg 90.333(18) . 8_545 ?
+Mg Ru Mg 140.771(14) 9 8_545 ?
+Mg Ru Mg 131.373(4) 5 8_545 ?
+Mg Ru Mg 57.55(2) 11_455 8_545 ?
+Mg Ru Mg 85.69(3) 7_554 8_545 ?
+Mg Ru Mg 30.190(5) 3_545 8_545 ?
+Mg Ru Mg 30.750(17) 10_545 8_545 ?
+Mg Ru Mg 115.533(9) 6_455 8_545 ?
+Mg Ru Mg 101.193(16) 2_554 8_545 ?
+Ru Ru Mg 173.565(14) 4 8_545 ?
+Ru Ru Mg 98.589(3) 3 8_545 ?
+Ru Ru Mg 91.206(16) 2 8_545 ?
+Ru Ru Mg 80.748(11) 4_455 8_545 ?
+Ru Ru Mg 33.877(15) 3_545 8_545 ?
+Ru Ru Mg 120.242(13) 2_554 8_545 ?
+Mg Ru Mg 61.63(2) 9_545 8_545 ?
+Mg Ru Mg 43.827(10) 5_455 8_545 ?
+Mg Ru Mg 118.840(9) 1_554 8_545 ?
+Mg Ru Mg 139.158(7) 11 8_545 ?
+Mg Ru Mg 59.600(7) 7 8_545 ?
+Mg Ru Mg 112.501(2) 3 8_545 ?
+Mg Ru Mg 148.72(3) 12_564 8_545 ?
+Mg Ru Mg 89.872(7) 8_645 8_545 ?
+Mg Ru Mg 61.033(8) 4_456 8_545 ?
+Ru Ru Mg 53.131(13) 14_444 8_545 ?
+Mg Ru Mg 87.708(19) 12_554 8_545 ?
+Ru Mg Ru 53.83(3) 16_545 . ?
+Ru Mg Mg 147.811(7) 16_545 12_565 ?
+Ru Mg Mg 134.277(11) . 12_565 ?
+Ru Mg Mg 134.277(11) 16_545 6_456 ?
+Ru Mg Mg 147.810(7) . 6_456 ?
+Mg Mg Mg 60.0 12_565 6_456 ?
+Ru Mg Ru 99.176(11) 16_545 15 ?
+Ru Mg Ru 149.43(3) . 15 ?
+Mg Mg Ru 60.292(19) 12_565 15 ?
+Mg Mg Ru 60.292(18) 6_456 15 ?
+Ru Mg Ru 149.43(3) 16_545 3 ?
+Ru Mg Ru 99.176(11) . 3 ?
+Mg Mg Ru 60.292(19) 12_565 3 ?
+Mg Mg Ru 60.292(18) 6_456 3 ?
+Ru Mg Ru 110.19(5) 15 3 ?
+Ru Mg Mg 62.078(18) 16_545 5 ?
+Ru Mg Mg 58.755(6) . 5 ?
+Mg Mg Mg 94.448(6) 12_565 5 ?
+Mg Mg Mg 151.767(2) 6_456 5 ?
+Ru Mg Mg 97.86(3) 15 5 ?
+Ru Mg Mg 119.775(11) 3 5 ?
+Ru Mg Mg 58.755(6) 16_545 10_545 ?
+Ru Mg Mg 62.078(18) . 10_545 ?
+Mg Mg Mg 151.767(2) 12_565 10_545 ?
+Mg Mg Mg 94.448(6) 6_456 10_545 ?
+Ru Mg Mg 119.775(11) 15 10_545 ?
+Ru Mg Mg 97.86(3) 3 10_545 ?
+Mg Mg Mg 112.794(8) 5 10_545 ?
+Ru Mg Mg 106.21(3) 16_545 9 ?
+Ru Mg Mg 58.755(6) . 9 ?
+Mg Mg Mg 75.997(5) 12_565 9 ?
+Mg Mg Mg 118.335(17) 6_456 9 ?
+Ru Mg Mg 129.653(3) 15 9 ?
+Ru Mg Mg 61.026(7) 3 9 ?
+Mg Mg Mg 60.000(1) 5 9 ?
+Mg Mg Mg 110.568(14) 10_545 9 ?
+Ru Mg Mg 58.755(6) 16_545 7 ?
+Ru Mg Mg 106.21(3) . 7 ?
+Mg Mg Mg 118.335(17) 12_565 7 ?
+Mg Mg Mg 75.997(5) 6_456 7 ?
+Ru Mg Mg 61.026(7) 15 7 ?
+Ru Mg Mg 129.653(3) 3 7 ?
+Mg Mg Mg 110.568(14) 5 7 ?
+Mg Mg Mg 60.0 10_545 7 ?
+Mg Mg Mg 164.56(2) 9 7 ?
+Ru Mg Ru 52.317(15) 16_545 2 ?
+Ru Mg Ru 97.96(4) . 2 ?
+Mg Mg Ru 97.57(2) 12_565 2 ?
+Mg Mg Ru 109.12(2) 6_456 2 ?
+Ru Mg Ru 51.500(7) 15 2 ?
+Ru Mg Ru 157.82(4) 3 2 ?
+Mg Mg Ru 59.26(3) 5 2 ?
+Mg Mg Ru 102.570(6) 10_545 2 ?
+Mg Mg Ru 118.05(3) 9 2 ?
+Mg Mg Ru 57.214(16) 7 2 ?
+Ru Mg Ru 97.96(4) 16_545 13_455 ?
+Ru Mg Ru 52.317(15) . 13_455 ?
+Mg Mg Ru 109.12(2) 12_565 13_455 ?
+Mg Mg Ru 97.57(2) 6_456 13_455 ?
+Ru Mg Ru 157.82(4) 15 13_455 ?
+Ru Mg Ru 51.500(7) 3 13_455 ?
+Mg Mg Ru 102.570(6) 5 13_455 ?
+Mg Mg Ru 59.26(3) 10_545 13_455 ?
+Mg Mg Ru 57.213(16) 9 13_455 ?
+Mg Mg Ru 118.05(3) 7 13_455 ?
+Ru Mg Ru 149.25(5) 2 13_455 ?
+Ru Mg Mg 95.58(3) 16_545 4_556 ?
+Ru Mg Mg 109.97(4) . 4_556 ?
+Mg Mg Mg 52.50(4) 12_565 4_556 ?
+Mg Mg Mg 100.52(4) 6_456 4_556 ?
+Ru Mg Mg 53.15(2) 15 4_556 ?
+Ru Mg Mg 108.55(4) 3 4_556 ?
+Mg Mg Mg 51.51(4) 5 4_556 ?
+Mg Mg Mg 153.48(2) 10_545 4_556 ?
+Mg Mg Mg 81.31(2) 9 4_556 ?
+Mg Mg Mg 102.543(15) 7 4_556 ?
+Ru Mg Mg 51.830(12) 2 4_556 ?
+Ru Mg Mg 138.460(8) 13_455 4_556 ?
+Ru Mg Mg 109.97(4) 16_545 4_456 ?
+Ru Mg Mg 95.58(3) . 4_456 ?
+Mg Mg Mg 100.52(4) 12_565 4_456 ?
+Mg Mg Mg 52.50(4) 6_456 4_456 ?
+Ru Mg Mg 108.55(4) 15 4_456 ?
+Ru Mg Mg 53.15(2) 3 4_456 ?
+Mg Mg Mg 153.48(2) 5 4_456 ?
+Mg Mg Mg 51.50(4) 10_545 4_456 ?
+Mg Mg Mg 102.543(15) 9 4_456 ?
+Mg Mg Mg 81.31(2) 7 4_456 ?
+Ru Mg Mg 138.460(8) 2 4_456 ?
+Ru Mg Mg 51.830(12) 13_455 4_456 ?
+Mg Mg Mg 151.51(9) 4_556 4_456 ?
+Ru Mg Mg 118.04(2) 16_545 8_655 ?
+Ru Mg Mg 93.56(2) . 8_655 ?
+Mg Mg Mg 43.14(3) 12_565 8_655 ?
+Mg Mg Mg 102.28(2) 6_456 8_655 ?
+Ru Mg Mg 87.28(4) 15 8_655 ?
+Ru Mg Mg 72.892(4) 3 8_655 ?
+Mg Mg Mg 56.008(4) 5 8_655 ?
+Mg Mg Mg 152.81(5) 10_545 8_655 ?
+Mg Mg Mg 42.42(3) 9 8_655 ?
+Mg Mg Mg 144.93(4) 7 8_655 ?
+Ru Mg Mg 92.102(18) 2 8_655 ?
+Ru Mg Mg 96.986(16) 13_455 8_655 ?
+Mg Mg Mg 42.68(2) 4_556 8_655 ?
+Mg Mg Mg 126.03(3) 4_456 8_655 ?
+Ru Mg Mg 93.56(2) 16_545 11_456 ?
+Ru Mg Mg 118.04(2) . 11_456 ?
+Mg Mg Mg 102.28(2) 12_565 11_456 ?
+Mg Mg Mg 43.13(3) 6_456 11_456 ?
+Ru Mg Mg 72.892(4) 15 11_456 ?
+Ru Mg Mg 87.28(4) 3 11_456 ?
+Mg Mg Mg 152.81(5) 5 11_456 ?
+Mg Mg Mg 56.008(4) 10_545 11_456 ?
+Mg Mg Mg 144.93(4) 9 11_456 ?
+Mg Mg Mg 42.42(3) 7 11_456 ?
+Ru Mg Mg 96.986(16) 2 11_456 ?
+Ru Mg Mg 92.102(18) 13_455 11_456 ?
+Mg Mg Mg 126.03(3) 4_556 11_456 ?
+Mg Mg Mg 42.68(2) 4_456 11_456 ?
+Mg Mg Mg 145.27(5) 8_655 11_456 ?
+Ru Mg Ru 146.87(3) 16_545 16 ?
+Ru Mg Ru 97.527(3) . 16 ?
+Mg Mg Ru 41.881(13) 12_565 16 ?
+Mg Mg Ru 78.693(15) 6_456 16 ?
+Ru Mg Ru 102.16(3) 15 16 ?
+Ru Mg Ru 33.676(8) 3 16 ?
+Mg Mg Ru 89.962(8) 5 16 ?
+Mg Mg Ru 127.00(2) 10_545 16 ?
+Mg Mg Ru 40.952(5) 9 16 ?
+Mg Mg Ru 154.31(2) 7 16 ?
+Ru Mg Ru 129.564(17) 2 16 ?
+Ru Mg Ru 69.578(11) 13_455 16 ?
+Mg Mg Ru 77.77(2) 4_556 16 ?
+Mg Mg Ru 86.83(3) 4_456 16 ?
+Mg Mg Ru 39.225(5) 8_655 16 ?
+Mg Mg Ru 116.77(4) 11_456 16 ?
+Ru Mg Ru 97.527(3) 16_545 1_556 ?
+Ru Mg Ru 146.87(3) . 1_556 ?
+Mg Mg Ru 78.693(15) 12_565 1_556 ?
+Mg Mg Ru 41.881(13) 6_456 1_556 ?
+Ru Mg Ru 33.676(8) 15 1_556 ?
+Ru Mg Ru 102.16(3) 3 1_556 ?
+Mg Mg Ru 127.00(2) 5 1_556 ?
+Mg Mg Ru 89.962(8) 10_545 1_556 ?
+Mg Mg Ru 154.31(2) 9 1_556 ?
+Mg Mg Ru 40.952(5) 7 1_556 ?
+Ru Mg Ru 69.578(11) 2 1_556 ?
+Ru Mg Ru 129.563(17) 13_455 1_556 ?
+Mg Mg Ru 86.83(3) 4_556 1_556 ?
+Mg Mg Ru 77.77(2) 4_456 1_556 ?
+Mg Mg Ru 116.77(4) 8_655 1_556 ?
+Mg Mg Ru 39.225(5) 11_456 1_556 ?
+Ru Mg Ru 114.22(3) 16 1_556 ?
+Ru Mg Ru 67.26(2) 16_545 15_554 ?
+Ru Mg Ru 29.530(7) . 15_554 ?
+Mg Mg Ru 107.588(12) 12_565 15_554 ?
+Mg Mg Ru 156.687(10) 6_456 15_554 ?
+Ru Mg Ru 133.767(11) 15 15_554 ?
+Ru Mg Ru 96.590(9) 3 15_554 ?
+Mg Mg Ru 36.105(16) 5 15_554 ?
+Mg Mg Ru 91.60(2) 10_545 15_554 ?
+Mg Mg Ru 39.015(5) 9 15_554 ?
+Mg Mg Ru 125.993(19) 7 15_554 ?
+Ru Mg Ru 91.41(2) 2 15_554 ?
+Ru Mg Ru 66.525(17) 13_455 15_554 ?
+Mg Mg Ru 83.26(3) 4_556 15_554 ?
+Mg Mg Ru 117.66(3) 4_456 15_554 ?
+Mg Mg Ru 64.955(18) 8_655 15_554 ?
+Mg Mg Ru 147.57(2) 11_456 15_554 ?
+Ru Mg Ru 79.691(8) 16 15_554 ?
+Ru Mg Ru 160.788(17) 1_556 15_554 ?
+Ru Mg Ru 29.530(7) 16_545 3_545 ?
+Ru Mg Ru 67.26(2) . 3_545 ?
+Mg Mg Ru 156.687(10) 12_565 3_545 ?
+Mg Mg Ru 107.588(12) 6_456 3_545 ?
+Ru Mg Ru 96.590(9) 15 3_545 ?
+Ru Mg Ru 133.767(11) 3 3_545 ?
+Mg Mg Ru 91.60(2) 5 3_545 ?
+Mg Mg Ru 36.105(16) 10_545 3_545 ?
+Mg Mg Ru 125.993(19) 9 3_545 ?
+Mg Mg Ru 39.015(5) 7 3_545 ?
+Ru Mg Ru 66.525(17) 2 3_545 ?
+Ru Mg Ru 91.41(2) 13_455 3_545 ?
+Mg Mg Ru 117.66(3) 4_556 3_545 ?
+Mg Mg Ru 83.26(3) 4_456 3_545 ?
+Mg Mg Ru 147.57(2) 8_655 3_545 ?
+Mg Mg Ru 64.955(18) 11_456 3_545 ?
+Ru Mg Ru 160.788(17) 16 3_545 ?
+Ru Mg Ru 79.691(8) 1_556 3_545 ?
+Ru Mg Ru 90.39(2) 15_554 3_545 ?
+Ru Mg Ru 116.167(3) 16_545 4_556 ?
+Ru Mg Ru 146.021(13) . 4_556 ?
+Mg Mg Ru 35.983(9) 12_565 4_556 ?
+Mg Mg Ru 64.881(11) 6_456 4_556 ?
+Ru Mg Ru 27.245(10) 15 4_556 ?
+Ru Mg Ru 94.24(3) 3 4_556 ?
+Mg Mg Ru 87.496(16) 5 4_556 ?
+Mg Mg Ru 146.31(2) 10_545 4_556 ?
+Mg Mg Ru 102.815(3) 9 4_556 ?
+Mg Mg Ru 88.255(17) 7 4_556 ?
+Ru Mg Ru 63.850(14) 2 4_556 ?
+Ru Mg Ru 144.93(3) 13_455 4_556 ?
+Mg Mg Ru 36.08(3) 4_556 4_556 ?
+Mg Mg Ru 117.24(5) 4_456 4_556 ?
+Mg Mg Ru 60.86(3) 8_655 4_556 ?
+Mg Mg Ru 93.535(15) 11_456 4_556 ?
+Ru Mg Ru 77.026(17) 16 4_556 ?
+Ru Mg Ru 56.695(12) 1_556 4_556 ?
+Ru Mg Ru 118.124(6) 15_554 4_556 ?
+Ru Mg Ru 122.171(3) 3_545 4_556 ?
+Ru Mg Ru 146.021(13) 16_545 14_455 ?
+Ru Mg Ru 116.166(3) . 14_455 ?
+Mg Mg Ru 64.881(11) 12_565 14_455 ?
+Mg Mg Ru 35.982(9) 6_456 14_455 ?
+Ru Mg Ru 94.24(3) 15 14_455 ?
+Ru Mg Ru 27.245(10) 3 14_455 ?
+Mg Mg Ru 146.313(19) 5 14_455 ?
+Mg Mg Ru 87.496(16) 10_545 14_455 ?
+Mg Mg Ru 88.255(17) 9 14_455 ?
+Mg Mg Ru 102.815(3) 7 14_455 ?
+Ru Mg Ru 144.93(3) 2 14_455 ?
+Ru Mg Ru 63.850(14) 13_455 14_455 ?
+Mg Mg Ru 117.24(5) 4_556 14_455 ?
+Mg Mg Ru 36.08(3) 4_456 14_455 ?
+Mg Mg Ru 93.535(16) 8_655 14_455 ?
+Mg Mg Ru 60.86(3) 11_456 14_455 ?
+Ru Mg Ru 56.695(12) 16 14_455 ?
+Ru Mg Ru 77.026(17) 1_556 14_455 ?
+Ru Mg Ru 122.171(3) 15_554 14_455 ?
+Ru Mg Ru 118.124(6) 3_545 14_455 ?
+Ru Mg Ru 89.16(2) 4_556 14_455 ?
+Ru Mg Mg 34.709(3) 16_545 3_545 ?
+Ru Mg Mg 33.56(3) . 3_545 ?
+Mg Mg Mg 167.821(19) 12_565 3_545 ?
+Mg Mg Mg 129.070(13) 6_456 3_545 ?
+Ru Mg Mg 129.837(6) 15 3_545 ?
+Ru Mg Mg 114.95(3) 3 3_545 ?
+Mg Mg Mg 78.143(14) 5 3_545 ?
+Mg Mg Mg 34.716(7) 10_545 3_545 ?
+Mg Mg Mg 91.88(2) 9 3_545 ?
+Mg Mg Mg 73.609(2) 7 3_545 ?
+Ru Mg Mg 87.008(17) 2 3_545 ?
+Ru Mg Mg 63.89(3) 13_455 3_545 ?
+Mg Mg Mg 125.30(5) 4_556 3_545 ?
+Mg Mg Mg 83.05(4) 4_456 3_545 ?
+Mg Mg Mg 125.75(5) 8_655 3_545 ?
+Mg Mg Mg 88.275(6) 11_456 3_545 ?
+Ru Mg Mg 127.57(3) 16 3_545 ?
+Ru Mg Mg 113.483(7) 1_556 3_545 ?
+Ru Mg Mg 60.85(3) 15_554 3_545 ?
+Ru Mg Mg 34.802(9) 3_545 3_545 ?
+Ru Mg Mg 150.818(4) 4_556 3_545 ?
+Ru Mg Mg 116.695(11) 14_455 3_545 ?
+Ru Mg Mg 33.56(3) 16_545 2_554 ?
+Ru Mg Mg 34.709(3) . 2_554 ?
+Mg Mg Mg 129.070(13) 12_565 2_554 ?
+Mg Mg Mg 167.821(19) 6_456 2_554 ?
+Ru Mg Mg 114.95(3) 15 2_554 ?
+Ru Mg Mg 129.837(6) 3 2_554 ?
+Mg Mg Mg 34.716(7) 5 2_554 ?
+Mg Mg Mg 78.143(14) 10_545 2_554 ?
+Mg Mg Mg 73.609(2) 9 2_554 ?
+Mg Mg Mg 91.88(2) 7 2_554 ?
+Ru Mg Mg 63.89(3) 2 2_554 ?
+Ru Mg Mg 87.008(17) 13_455 2_554 ?
+Mg Mg Mg 83.05(4) 4_556 2_554 ?
+Mg Mg Mg 125.30(5) 4_456 2_554 ?
+Mg Mg Mg 88.275(6) 8_655 2_554 ?
+Mg Mg Mg 125.75(5) 11_456 2_554 ?
+Ru Mg Mg 113.484(7) 16 2_554 ?
+Ru Mg Mg 127.57(3) 1_556 2_554 ?
+Ru Mg Mg 34.802(8) 15_554 2_554 ?
+Ru Mg Mg 60.85(3) 3_545 2_554 ?
+Ru Mg Mg 116.695(11) 4_556 2_554 ?
+Ru Mg Mg 150.818(4) 14_455 2_554 ?
+Mg Mg Mg 43.68(2) 3_545 2_554 ?
+Ru Mg Mg 68.444(6) 16_545 2 ?
+Ru Mg Mg 122.05(3) . 2 ?
+Mg Mg Mg 92.379(18) 12_565 2 ?
+Mg Mg Mg 78.461(13) 6_456 2 ?
+Ru Mg Mg 32.368(4) 15 2 ?
+Ru Mg Mg 137.72(4) 3 2 ?
+Mg Mg Mg 91.88(2) 5 2 ?
+Mg Mg Mg 93.927(5) 10_545 2 ?
+Mg Mg Mg 147.841(12) 9 2 ?
+Mg Mg Mg 34.716(7) 7 2 ?
+Ru Mg Mg 32.804(11) 2 2 ?
+Ru Mg Mg 152.76(2) 13_455 2 ?
+Mg Mg Mg 68.162(10) 4_556 2 ?
+Mg Mg Mg 109.083(7) 4_456 2 ?
+Mg Mg Mg 110.22(3) 8_655 2 ?
+Mg Mg Mg 66.404(17) 11_456 2 ?
+Ru Mg Mg 134.19(3) 16 2 ?
+Ru Mg Mg 37.2 1_556 2 ?
+Ru Mg Mg 123.585(17) 15_554 2 ?
+Ru Mg Mg 64.902(12) 3_545 2 ?
+Ru Mg Mg 57.355(12) 4_556 2 ?
+Ru Mg Mg 114.145(18) 14_455 2 ?
+Mg Mg Mg 97.469(4) 3_545 2 ?
+Mg Mg Mg 92.29(3) 2_554 2 ?
+Ru Mg Mg 122.05(3) 16_545 3 ?
+Ru Mg Mg 68.444(5) . 3 ?
+Mg Mg Mg 78.461(13) 12_565 3 ?
+Mg Mg Mg 92.379(18) 6_456 3 ?
+Ru Mg Mg 137.72(4) 15 3 ?
+Ru Mg Mg 32.368(4) 3 3 ?
+Mg Mg Mg 93.927(5) 5 3 ?
+Mg Mg Mg 91.88(2) 10_545 3 ?
+Mg Mg Mg 34.716(7) 9 3 ?
+Mg Mg Mg 147.841(12) 7 3 ?
+Ru Mg Mg 152.76(2) 2 3 ?
+Ru Mg Mg 32.804(11) 13_455 3 ?
+Mg Mg Mg 109.083(7) 4_556 3 ?
+Mg Mg Mg 68.162(10) 4_456 3 ?
+Mg Mg Mg 66.404(17) 8_655 3 ?
+Mg Mg Mg 110.22(3) 11_456 3 ?
+Ru Mg Mg 37.2 16 3 ?
+Ru Mg Mg 134.19(3) 1_556 3 ?
+Ru Mg Mg 64.902(12) 15_554 3 ?
+Ru Mg Mg 123.585(17) 3_545 3 ?
+Ru Mg Mg 114.145(18) 4_556 3 ?
+Ru Mg Mg 57.354(12) 14_455 3 ?
+Mg Mg Mg 92.29(3) 3_545 3 ?
+Mg Mg Mg 97.469(4) 2_554 3 ?
+Mg Mg Mg 169.50(4) 2 3 ?
+Ru Mg Mg 33.512(6) 16_545 12 ?
+Ru Mg Mg 87.34(3) . 12 ?
+Mg Mg Mg 124.74(2) 12_565 12 ?
+Mg Mg Mg 106.555(10) 6_456 12 ?
+Ru Mg Mg 66.953(4) 15 12 ?
+Ru Mg Mg 163.000(1) 3 12 ?
+Mg Mg Mg 77.030(17) 5 12 ?
+Mg Mg Mg 71.227(5) 10_545 12 ?
+Mg Mg Mg 134.45(2) 9 12 ?
+Mg Mg Mg 33.604(4) 7 12 ?
+Ru Mg Mg 31.689(9) 2 12 ?
+Ru Mg Mg 126.10(5) 13_455 12 ?
+Mg Mg Mg 83.517(4) 4_556 12 ?
+Mg Mg Mg 110.84(3) 4_456 12 ?
+Mg Mg Mg 122.648(18) 8_655 12 ?
+Mg Mg Mg 75.83(3) 11_456 12 ?
+Ru Mg Mg 161.221(19) 16 12 ?
+Ru Mg Mg 65.748(3) 1_556 12 ?
+Ru Mg Mg 96.71(2) 15_554 12 ?
+Ru Mg Mg 35.67(2) 3_545 12 ?
+Ru Mg Mg 88.779(15) 4_556 12 ?
+Ru Mg Mg 136.414(1) 14_455 12 ?
+Mg Mg Mg 63.423(10) 3_545 12 ?
+Mg Mg Mg 62.04(3) 2_554 12 ?
+Mg Mg Mg 35.164(2) 2 12 ?
+Mg Mg Mg 155.21(4) 3 12 ?
+Ru Mg Mg 87.34(3) 16_545 6_455 ?
+Ru Mg Mg 33.512(6) . 6_455 ?
+Mg Mg Mg 106.555(10) 12_565 6_455 ?
+Mg Mg Mg 124.74(2) 6_456 6_455 ?
+Ru Mg Mg 163.000(1) 15 6_455 ?
+Ru Mg Mg 66.953(4) 3 6_455 ?
+Mg Mg Mg 71.227(5) 5 6_455 ?
+Mg Mg Mg 77.030(17) 10_545 6_455 ?
+Mg Mg Mg 33.604(4) 9 6_455 ?
+Mg Mg Mg 134.45(2) 7 6_455 ?
+Ru Mg Mg 126.10(5) 2 6_455 ?
+Ru Mg Mg 31.689(9) 13_455 6_455 ?
+Mg Mg Mg 110.84(3) 4_556 6_455 ?
+Mg Mg Mg 83.516(4) 4_456 6_455 ?
+Mg Mg Mg 75.83(3) 8_655 6_455 ?
+Mg Mg Mg 122.648(18) 11_456 6_455 ?
+Ru Mg Mg 65.748(3) 16 6_455 ?
+Ru Mg Mg 161.221(19) 1_556 6_455 ?
+Ru Mg Mg 35.67(2) 15_554 6_455 ?
+Ru Mg Mg 96.71(2) 3_545 6_455 ?
+Ru Mg Mg 136.414(1) 4_556 6_455 ?
+Ru Mg Mg 88.779(15) 14_455 6_455 ?
+Mg Mg Mg 62.04(3) 3_545 6_455 ?
+Mg Mg Mg 63.423(10) 2_554 6_455 ?
+Mg Mg Mg 155.21(4) 2 6_455 ?
+Mg Mg Mg 35.164(2) 3 6_455 ?
+Mg Mg Mg 120.86(4) 12 6_455 ?
+Ru Mg Mg 61.367(6) 16_545 10_645 ?
+Ru Mg Mg 84.30(2) . 10_645 ?
+Mg Mg Mg 87.081(9) 12_565 10_645 ?
+Mg Mg Mg 127.798(13) 6_456 10_645 ?
+Ru Mg Mg 68.472(4) 15 10_645 ?
+Ru Mg Mg 137.586(5) 3 10_645 ?
+Mg Mg Mg 30.60(3) 5 10_645 ?
+Mg Mg Mg 120.1 10_545 10_645 ?
+Mg Mg Mg 86.67(3) 9 10_645 ?
+Mg Mg Mg 88.333(16) 7 10_645 ?
+Ru Mg Mg 31.550(8) 2 10_645 ?
+Ru Mg Mg 132.85(3) 13_455 10_645 ?
+Mg Mg Mg 34.65(3) 4_556 10_645 ?
+Mg Mg Mg 169.192(19) 4_456 10_645 ?
+Mg Mg Mg 64.696(1) 8_655 10_645 ?
+Mg Mg Mg 128.397(13) 11_456 10_645 ?
+Ru Mg Mg 103.920(5) 16 10_645 ?
+Ru Mg Mg 96.420(7) 1_556 10_645 ?
+Ru Mg Mg 66.383(14) 15_554 10_645 ?
+Ru Mg Mg 86.753(10) 3_545 10_645 ?
+Ru Mg Mg 65.172(5) 4_556 10_645 ?
+Ru Mg Mg 151.89(2) 14_455 10_645 ?
+Mg Mg Mg 91.103(13) 3_545 10_645 ?
+Mg Mg Mg 51.569(12) 2_554 10_645 ?
+Mg Mg Mg 62.551(7) 2 10_645 ?
+Mg Mg Mg 121.356(18) 3 10_645 ?
+Mg Mg Mg 58.351(12) 12 10_645 ?
+Mg Mg Mg 101.80(3) 6_455 10_645 ?
+Ru Mg Mg 84.30(2) 16_545 5_455 ?
+Ru Mg Mg 61.367(6) . 5_455 ?
+Mg Mg Mg 127.798(13) 12_565 5_455 ?
+Mg Mg Mg 87.081(9) 6_456 5_455 ?
+Ru Mg Mg 137.585(5) 15 5_455 ?
+Ru Mg Mg 68.472(4) 3 5_455 ?
+Mg Mg Mg 120.1 5 5_455 ?
+Mg Mg Mg 30.60(3) 10_545 5_455 ?
+Mg Mg Mg 88.333(16) 9 5_455 ?
+Mg Mg Mg 86.67(3) 7 5_455 ?
+Ru Mg Mg 132.85(3) 2 5_455 ?
+Ru Mg Mg 31.550(8) 13_455 5_455 ?
+Mg Mg Mg 169.192(19) 4_556 5_455 ?
+Mg Mg Mg 34.65(3) 4_456 5_455 ?
+Mg Mg Mg 128.397(13) 8_655 5_455 ?
+Mg Mg Mg 64.696(1) 11_456 5_455 ?
+Ru Mg Mg 96.420(7) 16 5_455 ?
+Ru Mg Mg 103.920(5) 1_556 5_455 ?
+Ru Mg Mg 86.753(10) 15_554 5_455 ?
+Ru Mg Mg 66.383(13) 3_545 5_455 ?
+Ru Mg Mg 151.89(2) 4_556 5_455 ?
+Ru Mg Mg 65.172(5) 14_455 5_455 ?
+Mg Mg Mg 51.569(12) 3_545 5_455 ?
+Mg Mg Mg 91.103(13) 2_554 5_455 ?
+Mg Mg Mg 121.356(18) 2 5_455 ?
+Mg Mg Mg 62.551(7) 3 5_455 ?
+Mg Mg Mg 101.80(3) 12 5_455 ?
+Mg Mg Mg 58.351(12) 6_455 5_455 ?
+Mg Mg Mg 142.14(2) 10_645 5_455 ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Ru Ru 2.5528(3) 16_545 ?
+Ru Ru 2.5528(3) 15_554 ?
+Ru Ru 2.5528(3) 13_455 ?
+Ru Mg 2.8197(13) . ?
+Ru Mg 2.8197(13) 9 ?
+Ru Mg 2.8197(13) 5 ?
+Ru Mg 2.9116(9) 11_455 ?
+Ru Mg 2.9116(9) 7_554 ?
+Ru Mg 2.9116(9) 3_545 ?
+Ru Mg 2.9635(4) 10_545 ?
+Ru Mg 2.9635(5) 6_455 ?
+Ru Mg 2.9635(5) 2_554 ?
+Ru Ru 4.3642(4) 4 ?
+Ru Ru 4.3642(4) 3 ?
+Ru Ru 4.3642(4) 2 ?
+Ru Ru 4.3642(4) 4_455 ?
+Ru Ru 4.3642(4) 3_545 ?
+Ru Ru 4.3642(4) 2_554 ?
+Ru Mg 4.4005(9) 9_545 ?
+Ru Mg 4.4005(9) 5_455 ?
+Ru Mg 4.4005(9) 1_554 ?
+Ru Mg 4.5948(11) 11 ?
+Ru Mg 4.5948(11) 7 ?
+Ru Mg 4.5948(11) 3 ?
+Ru Mg 4.7658(11) 12_564 ?
+Ru Mg 4.7658(11) 8_645 ?
+Ru Mg 4.7658(11) 4_456 ?
+Ru Ru 4.7754(9) 14_444 ?
+Ru Mg 5.0490(6) 12_554 ?
+Ru Mg 5.0490(6) 8_545 ?
+Mg Ru 2.8197(13) 16_545 ?
+Mg Mg 2.886(2) 12_565 ?
+Mg Mg 2.886(2) 6_456 ?
+Mg Ru 2.9116(9) 15 ?
+Mg Ru 2.9116(9) 3 ?
+Mg Mg 2.9251(10) 5 ?
+Mg Mg 2.9252(10) 10_545 ?
+Mg Mg 2.9252(10) 9 ?
+Mg Mg 2.9252(10) 7 ?
+Mg Ru 2.9635(5) 2 ?
+Mg Ru 2.9635(5) 13_455 ?
+Mg Mg 3.5776(8) 4_556 ?
+Mg Mg 3.5776(8) 4_456 ?
+Mg Mg 4.2654(9) 8_655 ?
+Mg Mg 4.2654(9) 11_456 ?
+Mg Ru 4.4005(9) 16 ?
+Mg Ru 4.4005(9) 1_556 ?
+Mg Ru 4.5948(11) 15_554 ?
+Mg Ru 4.5948(11) 3_545 ?
+Mg Ru 4.7658(11) 4_556 ?
+Mg Ru 4.7658(11) 14_455 ?
+Mg Mg 4.8089(12) 3_545 ?
+Mg Mg 4.8089(12) 2_554 ?
+Mg Mg 4.8089(12) 2 ?
+Mg Mg 4.8089(12) 3 ?
+Mg Mg 4.8726(14) 12 ?
+Mg Mg 4.8726(14) 6_455 ?
+Mg Mg 4.9897(9) 10_645 ?
+Mg Mg 4.9897(9) 5_455 ?

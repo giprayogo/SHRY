@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_Mn0.75Tc1.125Bh0.125B4H16
+_symmetry_space_group_name_H-M   P-4n2
+_cell_length_a   5.55260000
+_cell_length_b   5.55260000
+_cell_length_c   6.07271000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   118
+_chemical_formula_structural   Mn0.75Tc1.125Bh0.125B4H16
+_chemical_formula_sum   'Mn0.75 Tc1.125 Bh0.125 B4 H16'
+_cell_volume   187.22994924
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x+1/2, y+1/2, z+1/2'
+  6  '-y+1/2, -x+1/2, -z+1/2'
+  7  'x+1/2, -y+1/2, z+1/2'
+  8  'y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tc+  Tc0  2  0.00000000  0.00000000  0.50000000  0.5625
+  Mn+  Mn1  2  0.00000000  0.00000000  0.50000000  0.375
+  Bh+  Bh2  2  0.00000000  0.00000000  0.50000000  0.0625
+  B  B3  4  0.24800000  0.74800000  0.75000000  1.0
+  H  H4  8  0.03800000  0.77800000  0.78800000  1.0
+  H  H5  8  0.14000000  0.32500000  0.41406000  1.0

@@ -1,0 +1,103 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-01-27 21:58:39 +0200 (Tue, 27 Jan 2015) $
+#$Revision: 130149 $
+#$URL: svn://www.crystallography.net/cod/cif/1/00/86/1008693.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1008693
+loop_
+_publ_author_name
+'Bronger, W'
+'Miessen, H J'
+'Muller, P'
+'Neugroschel, R'
+_publ_section_title
+;
+Darstellung und Kristallstruktur von Li4 Re6 S11
+;
+_journal_coden_ASTM              JCOMAH
+_journal_name_full               'Journal of the Less-Common Metals'
+_journal_page_first              303
+_journal_page_last               310
+_journal_paper_doi               10.1016/0022-5088(85)90417-5
+_journal_volume                  105
+_journal_year                    1985
+_chemical_formula_structural     'Li4 Re6 S11'
+_chemical_formula_sum            'Li4 Re6 S11'
+_chemical_name_systematic        'Lithium rhenium sulfide (4/6/11)'
+_space_group_IT_number           56
+_symmetry_cell_setting           orthorhombic
+_symmetry_Int_Tables_number      56
+_symmetry_space_group_name_Hall  '-P 2ab 2ac'
+_symmetry_space_group_name_H-M   'P c c n'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   9.571(3)
+_cell_length_b                   14.006(4)
+_cell_length_c                   11.678(3)
+_cell_volume                     1565.5
+_refine_ls_R_factor_all          0.05
+_cod_database_code               1008693
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2-x,1/2-y,z
+1/2+x,-y,1/2-z
+-x,1/2+y,1/2-z
+-x,-y,-z
+1/2+x,1/2+y,-z
+1/2-x,y,1/2+z
+x,1/2-y,1/2+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_22
+_atom_site_aniso_U_23
+_atom_site_aniso_U_33
+Re1 0.0128(5) -0.0003(6) 0.0001(5) 0.0060(4) -0.0004(6) 0.0023(4)
+Re2 0.0115(5) 0.0005(5) -0.0004(5) 0.0064(4) 0.0003(6) 0.0010(4)
+Re3 0.0135(5) 0.0009(6) 0.0006(5) 0.0067(5) -0.0006(5) 0.0016(4)
+S1 0.015(4) 0.001(3) -0.002(3) 0.006(3) 0.001(3) 0.010(3)
+S2 0.020(4) -0.004(4) -0.004(3) 0.012(4) 0.004(3) 0.001(3)
+S3 0.021(4) 0.002(4) 0.003(3) 0.011(3) -0.002(4) 0.009(3)
+S4 0.018(4) 0.002(4) 0.003(3) 0.010(3) -0.001(4) 0.008(3)
+S5 0.018(4) -0.001(3) 0.001(3) 0.012(4) -0.004(3) 0.002(3)
+S6 0.027 -0.008(6) 0. 0.011(5) 0. 0.021(7)
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Re1 Re3+ 8 e 0.1056(2) 0.1078(1) 0.9756(1) 1. 0 d
+Re2 Re3+ 8 e 0.1470(1) 0.9463(1) 0.0824(1) 1. 0 d
+Re3 Re3+ 8 e 0.9296(2) 0.0516(1) 0.1339(1) 1. 0 d
+S1 S2- 8 e 0.166(1) 0.0987(6) 0.1747(8) 1. 0 d
+S2 S2- 8 e 0.0240(1) 0.1016(7) 0.7789(7) 1. 0 d
+S3 S2- 8 e 0.8970(1) 0.1978(6) 0.0241(9) 1. 0 d
+S4 S2- 8 e 0.2980(1) 0.9998(7) 0.9308(8) 1. 0 d
+S5 S2- 8 e 0.8440(1) 0.1248(7) 0.3130(7) 1. 0 d
+S6 S2- 4 c 0.25 0.25 0.9255(15) 1. 0 d
+Li1 Li1+ 8 e 0.5 0.75 0.62 1. 0 d
+Li2 Li1+ 8 e 0.82 0.16 0.62 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Re3+ 3.000
+S2- -2.000
+Li1+ 1.000

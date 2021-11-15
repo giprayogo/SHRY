@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Cs4.5Na7.5Ni2H36C12N16O12
+_symmetry_space_group_name_H-M   P6_322
+_cell_length_a   8.86470000
+_cell_length_b   8.86470000
+_cell_length_c   11.35950000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   182
+_chemical_formula_structural   Cs4.5Na7.5Ni2H36C12N16O12
+_chemical_formula_sum   'Cs4.5 Na7.5 Ni2 H36 C12 N16 O12'
+_cell_volume   773.06842082
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z+1/2'
+  3  '-y, x-y, z'
+  4  '-x, -y, z+1/2'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z+1/2'
+  7  '-y, -x, -z+1/2'
+  8  '-x, -x+y, -z'
+  9  '-x+y, y, -z+1/2'
+  10  'y, x, -z'
+  11  'x, x-y, -z+1/2'
+  12  'x-y, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na+  Na0  12  0.02440000  0.19650000  0.83550000  0.625
+  Cs+  Cs1  12  0.02440000  0.19650000  0.83550000  0.375
+  Ni  Ni2  2  0.33333333  0.66666667  0.75000000  1.0
+  H  H3  12  0.03540000  0.44770000  0.84060000  1.0
+  H  H4  12  0.05930000  0.28590000  0.64580000  1.0
+  H  H5  12  0.16660000  0.47580000  0.92890000  1.0
+  C  C6  12  0.13560000  0.29620000  0.81404000  1.0
+  N  N7  12  0.14010000  0.45690000  0.85186000  1.0
+  N  N8  4  0.33333333  0.66666667  0.38940000  1.0
+  O  O9  12  0.20880000  0.51650000  0.39163000  1.0

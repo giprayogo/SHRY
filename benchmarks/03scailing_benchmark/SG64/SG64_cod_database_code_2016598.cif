@@ -1,0 +1,894 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-14 06:40:26 +0200 (Sun, 14 Feb 2016) $
+#$Revision: 176432 $
+#$URL: svn://www.crystallography.net/cod/cif/2/01/65/2016598.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2016598
+loop_
+_publ_author_name
+'Romaka, V.'
+'Gladyshevskii, R.'
+'Marciniak, B.'
+'Pavlyuk, V.'
+_publ_section_title
+;
+ Dy~2~Ni~7~Sn~3~: a new member of the CaCu~5~ family of intermetallics
+;
+_journal_coeditor_code           IZ3047
+_journal_issue                   5
+_journal_name_full               'Acta Crystallographica Section C'
+_journal_page_first              i45
+_journal_page_last               i46
+_journal_paper_doi               10.1107/S0108270108009657
+_journal_volume                  64
+_journal_year                    2008
+_chemical_formula_iupac          'Dy2 Ni7 Sn3'
+_chemical_formula_moiety         'Dy2 Ni7 Sn3'
+_chemical_formula_sum            'Dy2 Ni7 Sn3'
+_chemical_formula_weight         1092.04
+_chemical_name_systematic
+;
+didysprosium heptanickel tritin
+;
+_space_group_IT_number           64
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  '-C 2ac 2'
+_symmetry_space_group_name_H-M   'C m c a'
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            8
+_cell_length_a                   8.5964(2)
+_cell_length_b                   23.6415(6)
+_cell_length_c                   7.5383(2)
+_cell_measurement_reflns_used    1232
+_cell_measurement_temperature    298(2)
+_cell_measurement_theta_max      30.51
+_cell_measurement_theta_min      3.21
+_cell_volume                     1532.02(7)
+_computing_cell_refinement       'CrysAlis RED (Oxford Diffraction, 2005)'
+_computing_data_collection       'CrysAlis CCD (Oxford Diffraction, 2005)'
+_computing_data_reduction        'CrysAlis RED (Oxford Diffraction, 2005)'
+_computing_molecular_graphics    'DIAMOND (Brandenburg, 1999)'
+_computing_publication_material  'SHELXL97 (Sheldrick, 2008)'
+_computing_structure_refinement  'SHELXL97 (Sheldrick, 2008)'
+_computing_structure_solution    'SHELXS97 (Sheldrick, 2008)'
+_diffrn_ambient_temperature      298(2)
+_diffrn_measured_fraction_theta_full 0.994
+_diffrn_measured_fraction_theta_max 0.994
+_diffrn_measurement_device_type
+'Xcalibur Oxford Diffraction with a CCD detector'
+_diffrn_measurement_method       \w
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0338
+_diffrn_reflns_av_sigmaI/netI    0.0231
+_diffrn_reflns_limit_h_max       12
+_diffrn_reflns_limit_h_min       -10
+_diffrn_reflns_limit_k_max       27
+_diffrn_reflns_limit_k_min       -33
+_diffrn_reflns_limit_l_max       9
+_diffrn_reflns_limit_l_min       -10
+_diffrn_reflns_number            6228
+_diffrn_reflns_theta_full        30.51
+_diffrn_reflns_theta_max         30.51
+_diffrn_reflns_theta_min         3.21
+_diffrn_standards_decay_%        0
+_exptl_absorpt_coefficient_mu    45.493
+_exptl_absorpt_correction_T_max  0.1429
+_exptl_absorpt_correction_T_min  0.0397
+_exptl_absorpt_correction_type   analytical
+_exptl_absorpt_process_details   '(de Meulenaer & Tompa, 1965)'
+_exptl_crystal_colour            silver
+_exptl_crystal_density_diffrn    9.469
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       prism
+_exptl_crystal_F_000             3824
+_exptl_crystal_size_max          0.30
+_exptl_crystal_size_mid          0.20
+_exptl_crystal_size_min          0.17
+_refine_diff_density_max         2.635
+_refine_diff_density_min         -3.037
+_refine_ls_extinction_coef       0.000240(16)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     'SHELXL97 (Sheldrick, 2008)'
+_refine_ls_goodness_of_fit_ref   1.240
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     65
+_refine_ls_number_reflns         1232
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.240
+_refine_ls_R_factor_all          0.0408
+_refine_ls_R_factor_gt           0.0281
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0184P)^2^+100.8928P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0584
+_refine_ls_wR_factor_ref         0.0666
+_reflns_number_gt                1033
+_reflns_number_total             1232
+_reflns_threshold_expression     I>2\s(I)
+_cod_data_source_file            iz3047.cif
+_cod_data_source_block           I
+_cod_original_sg_symbol_Hall     '-C 2bc 2'
+_cod_database_code               2016598
+_cod_database_fobs_code          2016598
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y+1/2, z+1/2'
+'-x, y+1/2, -z+1/2'
+'x, -y, -z'
+'x+1/2, y+1/2, z'
+'-x+1/2, -y+1, z+1/2'
+'-x+1/2, y+1, -z+1/2'
+'x+1/2, -y+1/2, -z'
+'-x, -y, -z'
+'x, y-1/2, -z-1/2'
+'x, -y-1/2, z-1/2'
+'-x, y, z'
+'-x+1/2, -y+1/2, -z'
+'x+1/2, y, -z-1/2'
+'x+1/2, -y, z-1/2'
+'-x+1/2, y+1/2, z'
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_occupancy
+Ni Ni1 0.15159(14) 0.19856(5) 0.07809(16) 0.0110(2) Uani d . 1
+Ni Ni2 0.23855(14) 0.38402(5) 0.09232(15) 0.0100(2) Uani d . 1
+Ni Ni3 0.0000 0.04715(8) 0.3546(2) 0.0132(3) Uani d S 1
+Ni Ni4 0.0000 0.10151(7) 0.0567(2) 0.0103(3) Uani d S 1
+Dy Dy1 0.0000 0.19380(3) 0.42638(8) 0.00883(14) Uani d S 1
+Ni Ni5 0.0000 0.33455(7) 0.3102(2) 0.0113(3) Uani d S 1
+Sn Sn1 0.0000 0.43821(4) 0.20612(12) 0.00949(18) Uani d S 1
+Sn Sn2 0.2500 0.10649(3) 0.2500 0.00723(17) Uani d S 1
+Sn Sn3 0.2500 0.28218(4) 0.2500 0.00952(18) Uani d S 1
+Dy Dy2 0.20681(6) 0.0000 0.0000 0.00830(14) Uani d S 1
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Ni1 0.0111(5) 0.0111(5) 0.0107(5) 0.0010(4) 0.0003(4) -0.0010(4)
+Ni2 0.0104(5) 0.0098(5) 0.0099(5) 0.0023(4) 0.0021(4) 0.0007(4)
+Ni3 0.0101(7) 0.0122(8) 0.0173(8) 0.000 0.000 0.0043(6)
+Ni4 0.0073(7) 0.0123(8) 0.0112(8) 0.000 0.000 0.0010(6)
+Dy1 0.0065(2) 0.0099(3) 0.0100(3) 0.000 0.000 -0.0003(2)
+Ni5 0.0087(7) 0.0120(8) 0.0134(8) 0.000 0.000 0.0001(6)
+Sn1 0.0075(4) 0.0090(4) 0.0119(4) 0.000 0.000 0.0000(3)
+Sn2 0.0073(3) 0.0068(4) 0.0076(4) 0.000 -0.0007(3) 0.000
+Sn3 0.0101(4) 0.0071(4) 0.0114(4) 0.000 0.0004(3) 0.000
+Dy2 0.0074(2) 0.0062(2) 0.0114(3) 0.000 0.000 -0.0005(2)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Ni Ni 0.3393 1.1124 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Sn Sn -0.6537 1.4246 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Dy Dy -0.1892 4.4098 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+Sn3 Ni1 Ni2 . 13 138.30(6) no
+Sn3 Ni1 Ni5 . 2_554 146.09(7) no
+Ni2 Ni1 Ni5 13 2_554 63.01(5) no
+Sn3 Ni1 Ni1 . 12 109.69(3) no
+Ni2 Ni1 Ni1 13 12 112.00(4) no
+Ni5 Ni1 Ni1 2_554 12 58.97(3) no
+Sn3 Ni1 Ni4 . . 151.76(6) no
+Ni2 Ni1 Ni4 13 . 58.76(4) no
+Ni5 Ni1 Ni4 2_554 . 55.14(6) no
+Ni1 Ni1 Ni4 12 . 60.47(3) no
+Sn3 Ni1 Sn3 . 13 103.80(4) no
+Ni2 Ni1 Sn3 13 13 62.51(4) no
+Ni5 Ni1 Sn3 2_554 13 58.18(4) no
+Ni1 Ni1 Sn3 12 13 108.59(3) no
+Ni4 Ni1 Sn3 . 13 104.44(6) no
+Sn3 Ni1 Sn2 . . 106.53(5) no
+Ni2 Ni1 Sn2 13 . 59.83(4) no
+Ni5 Ni1 Sn2 2_554 . 107.38(6) no
+Ni1 Ni1 Sn2 12 . 108.47(3) no
+Ni4 Ni1 Sn2 . . 58.56(4) no
+Sn3 Ni1 Sn2 13 . 119.41(5) no
+Sn3 Ni1 Dy1 . . 73.61(3) no
+Ni2 Ni1 Dy1 13 . 126.37(5) no
+Ni5 Ni1 Dy1 2_554 . 118.31(5) no
+Ni1 Ni1 Dy1 12 . 63.62(2) no
+Ni4 Ni1 Dy1 . . 78.59(5) no
+Sn3 Ni1 Dy1 13 . 169.29(5) no
+Sn2 Ni1 Dy1 . . 71.04(3) no
+Sn3 Ni1 Dy1 . 14_556 72.46(3) no
+Ni2 Ni1 Dy1 13 14_556 65.85(4) no
+Ni5 Ni1 Dy1 2_554 14_556 119.64(5) no
+Ni1 Ni1 Dy1 12 14_556 177.76(3) no
+Ni4 Ni1 Dy1 . 14_556 117.34(5) no
+Sn3 Ni1 Dy1 13 14_556 71.18(3) no
+Sn2 Ni1 Dy1 . 14_556 70.02(3) no
+Dy1 Ni1 Dy1 . 14_556 116.91(4) no
+Sn3 Ni1 Dy1 . 2_554 71.55(3) no
+Ni2 Ni1 Dy1 13 2_554 127.54(5) no
+Ni5 Ni1 Dy1 2_554 2_554 74.99(5) no
+Ni1 Ni1 Dy1 12 2_554 64.96(2) no
+Ni4 Ni1 Dy1 . 2_554 119.08(5) no
+Sn3 Ni1 Dy1 13 2_554 69.32(3) no
+Sn2 Ni1 Dy1 . 2_554 171.04(5) no
+Dy1 Ni1 Dy1 . 2_554 100.14(4) no
+Dy1 Ni1 Dy1 14_556 2_554 116.72(4) no
+Ni2 Ni2 Ni1 7_545 13 118.49(5) no
+Ni2 Ni2 Ni4 7_545 13 111.62(8) no
+Ni1 Ni2 Ni4 13 13 63.04(5) no
+Ni2 Ni2 Sn1 7_545 . 74.50(5) no
+Ni1 Ni2 Sn1 13 . 148.94(6) no
+Ni4 Ni2 Sn1 13 . 142.11(7) no
+Ni2 Ni2 Sn2 7_545 13 171.49(7) no
+Ni1 Ni2 Sn2 13 13 62.96(4) no
+Ni4 Ni2 Sn2 13 13 60.89(4) no
+Sn1 Ni2 Sn2 . 13 108.66(5) no
+Ni2 Ni2 Ni5 7_545 14_556 69.64(6) no
+Ni1 Ni2 Ni5 13 14_556 58.63(5) no
+Ni4 Ni2 Ni5 13 14_556 55.12(5) no
+Sn1 Ni2 Ni5 . 14_556 144.02(6) no
+Sn2 Ni2 Ni5 13 14_556 106.46(6) no
+Ni2 Ni2 Sn3 7_545 . 63.65(3) no
+Ni1 Ni2 Sn3 13 . 61.16(4) no
+Ni4 Ni2 Sn3 13 . 106.52(6) no
+Sn1 Ni2 Sn3 . . 109.20(5) no
+Sn2 Ni2 Sn3 13 . 121.10(5) no
+Ni5 Ni2 Sn3 14_556 . 56.51(4) no
+Ni2 Ni2 Dy2 7_545 13 103.20(3) no
+Ni1 Ni2 Dy2 13 13 123.75(5) no
+Ni4 Ni2 Dy2 13 13 67.56(5) no
+Sn1 Ni2 Dy2 . 13 74.61(4) no
+Sn2 Ni2 Dy2 13 13 70.70(3) no
+Ni5 Ni2 Dy2 14_556 13 110.61(5) no
+Sn3 Ni2 Dy2 . 13 163.37(5) no
+Ni2 Ni2 Ni5 7_545 . 59.32(5) no
+Ni1 Ni2 Ni5 13 . 104.07(6) no
+Ni4 Ni2 Ni5 13 . 160.03(7) no
+Sn1 Ni2 Ni5 . . 56.10(4) no
+Sn2 Ni2 Ni5 13 . 129.11(6) no
+Ni5 Ni2 Ni5 14_556 . 105.55(6) no
+Sn3 Ni2 Ni5 . . 53.77(4) no
+Dy2 Ni2 Ni5 13 . 130.11(5) no
+Ni2 Ni2 Sn1 7_545 14_556 55.49(5) no
+Ni1 Ni2 Sn1 13 14_556 107.95(5) no
+Ni4 Ni2 Sn1 13 14_556 60.19(5) no
+Sn1 Ni2 Sn1 . 14_556 102.49(4) no
+Sn2 Ni2 Sn1 13 14_556 116.03(5) no
+Ni5 Ni2 Sn1 14_556 14_556 53.84(4) no
+Sn3 Ni2 Sn1 . 14_556 97.54(4) no
+Dy2 Ni2 Sn1 13 14_556 65.92(3) no
+Ni5 Ni2 Sn1 . 14_556 114.75(5) no
+Ni2 Ni2 Dy1 7_545 2_554 117.90(5) no
+Ni1 Ni2 Dy1 13 2_554 64.68(4) no
+Ni4 Ni2 Dy1 13 2_554 119.97(6) no
+Sn1 Ni2 Dy1 . 2_554 84.27(4) no
+Sn2 Ni2 Dy1 13 2_554 70.53(3) no
+Ni5 Ni2 Dy1 14_556 2_554 115.02(5) no
+Sn3 Ni2 Dy1 . 2_554 70.30(3) no
+Dy2 Ni2 Dy1 13 2_554 126.31(4) no
+Ni5 Ni2 Dy1 . 2_554 60.36(4) no
+Sn1 Ni2 Dy1 14_556 2_554 167.62(5) no
+Ni4 Ni3 Sn1 . 10_556 109.70(8) no
+Ni4 Ni3 Sn1 . 2 142.78(9) no
+Sn1 Ni3 Sn1 10_556 2 107.52(7) no
+Ni4 Ni3 Sn2 . . 59.04(4) no
+Sn1 Ni3 Sn2 10_556 . 117.58(5) no
+Sn1 Ni3 Sn2 2 . 102.92(5) no
+Ni4 Ni3 Sn2 . 14_456 59.04(4) no
+Sn1 Ni3 Sn2 10_556 14_456 117.58(5) no
+Sn1 Ni3 Sn2 2 14_456 102.92(5) no
+Sn2 Ni3 Sn2 . 14_456 106.34(6) no
+Ni4 Ni3 Dy2 . 14_456 120.49(3) no
+Sn1 Ni3 Dy2 10_556 14_456 72.22(4) no
+Sn1 Ni3 Dy2 2 14_456 71.48(4) no
+Sn2 Ni3 Dy2 . 14_456 170.12(7) no
+Sn2 Ni3 Dy2 14_456 14_456 67.959(13) no
+Ni4 Ni3 Dy2 . 6_545 120.49(3) no
+Sn1 Ni3 Dy2 10_556 6_545 72.22(4) no
+Sn1 Ni3 Dy2 2 6_545 71.48(4) no
+Sn2 Ni3 Dy2 . 6_545 67.959(13) no
+Sn2 Ni3 Dy2 14_456 6_545 170.12(7) no
+Dy2 Ni3 Dy2 14_456 6_545 116.39(6) no
+Ni4 Ni3 Dy2 . 9 58.68(5) no
+Sn1 Ni3 Dy2 10_556 9 62.57(4) no
+Sn1 Ni3 Dy2 2 9 145.33(3) no
+Sn2 Ni3 Dy2 . 9 111.04(6) no
+Sn2 Ni3 Dy2 14_456 9 61.42(3) no
+Dy2 Ni3 Dy2 14_456 9 73.91(2) no
+Dy2 Ni3 Dy2 6_545 9 127.73(6) no
+Ni4 Ni3 Dy2 . . 58.68(5) no
+Sn1 Ni3 Dy2 10_556 . 62.57(4) no
+Sn1 Ni3 Dy2 2 . 145.33(3) no
+Sn2 Ni3 Dy2 . . 61.42(3) no
+Sn2 Ni3 Dy2 14_456 . 111.04(6) no
+Dy2 Ni3 Dy2 14_456 . 127.73(6) no
+Dy2 Ni3 Dy2 6_545 . 73.91(2) no
+Dy2 Ni3 Dy2 9 . 63.08(4) no
+Ni5 Ni4 Ni2 2_554 8_455 64.60(4) no
+Ni5 Ni4 Ni2 2_554 13 64.60(4) no
+Ni2 Ni4 Ni2 8_455 13 124.82(9) no
+Ni5 Ni4 Ni3 2_554 . 170.66(10) no
+Ni2 Ni4 Ni3 8_455 . 116.84(4) no
+Ni2 Ni4 Ni3 13 . 116.84(4) no
+Ni5 Ni4 Sn2 2_554 . 113.97(5) no
+Ni2 Ni4 Sn2 8_455 . 167.19(8) no
+Ni2 Ni4 Sn2 13 . 60.62(3) no
+Ni3 Ni4 Sn2 . . 62.35(4) no
+Ni5 Ni4 Sn2 2_554 14_456 113.97(5) no
+Ni2 Ni4 Sn2 8_455 14_456 60.62(3) no
+Ni2 Ni4 Sn2 13 14_456 167.19(8) no
+Ni3 Ni4 Sn2 . 14_456 62.35(4) no
+Sn2 Ni4 Sn2 . 14_456 111.56(6) no
+Ni5 Ni4 Ni1 2_554 . 59.97(6) no
+Ni2 Ni4 Ni1 8_455 . 110.29(7) no
+Ni2 Ni4 Ni1 13 . 58.20(4) no
+Ni3 Ni4 Ni1 . . 112.22(7) no
+Sn2 Ni4 Ni1 . . 61.24(4) no
+Sn2 Ni4 Ni1 14_456 . 109.52(7) no
+Ni5 Ni4 Ni1 2_554 12 59.97(6) no
+Ni2 Ni4 Ni1 8_455 12 58.20(4) no
+Ni2 Ni4 Ni1 13 12 110.29(7) no
+Ni3 Ni4 Ni1 . 12 112.22(7) no
+Sn2 Ni4 Ni1 . 12 109.52(7) no
+Sn2 Ni4 Ni1 14_456 12 61.24(4) no
+Ni1 Ni4 Ni1 . 12 59.07(6) no
+Ni5 Ni4 Sn1 2_554 2_554 58.68(6) no
+Ni2 Ni4 Sn1 8_455 2_554 68.14(5) no
+Ni2 Ni4 Sn1 13 2_554 68.14(5) no
+Ni3 Ni4 Sn1 . 2_554 130.66(8) no
+Sn2 Ni4 Sn1 . 2_554 122.91(3) no
+Sn2 Ni4 Sn1 14_456 2_554 122.91(3) no
+Ni1 Ni4 Sn1 . 2_554 110.36(6) no
+Ni1 Ni4 Sn1 12 2_554 110.36(6) no
+Ni5 Ni4 Dy2 2_554 9 113.07(6) no
+Ni2 Ni4 Dy2 8_455 9 61.46(3) no
+Ni2 Ni4 Dy2 13 9 124.52(7) no
+Ni3 Ni4 Dy2 . 9 74.21(5) no
+Sn2 Ni4 Dy2 . 9 127.07(6) no
+Sn2 Ni4 Dy2 14_456 9 68.18(3) no
+Ni1 Ni4 Dy2 . 9 171.68(6) no
+Ni1 Ni4 Dy2 12 9 114.11(3) no
+Sn1 Ni4 Dy2 2_554 9 66.43(4) no
+Ni5 Ni4 Dy2 2_554 . 113.07(6) no
+Ni2 Ni4 Dy2 8_455 . 124.52(7) no
+Ni2 Ni4 Dy2 13 . 61.46(3) no
+Ni3 Ni4 Dy2 . . 74.21(5) no
+Sn2 Ni4 Dy2 . . 68.18(3) no
+Sn2 Ni4 Dy2 14_456 . 127.07(6) no
+Ni1 Ni4 Dy2 . . 114.11(3) no
+Ni1 Ni4 Dy2 12 . 171.68(6) no
+Sn1 Ni4 Dy2 2_554 . 66.43(4) no
+Dy2 Ni4 Dy2 9 . 72.21(4) no
+Ni1 Dy1 Ni1 12 . 52.75(5) no
+Ni1 Dy1 Ni5 12 2 151.72(3) no
+Ni1 Dy1 Ni5 . 2 151.72(3) no
+Ni1 Dy1 Ni1 12 14_456 62.91(4) no
+Ni1 Dy1 Ni1 . 14_456 115.62(3) no
+Ni5 Dy1 Ni1 2 14_456 91.11(3) no
+Ni1 Dy1 Ni1 12 7_545 115.62(3) no
+Ni1 Dy1 Ni1 . 7_545 62.91(4) no
+Ni5 Dy1 Ni1 2 7_545 91.11(3) no
+Ni1 Dy1 Ni1 14_456 7_545 175.51(5) no
+Ni1 Dy1 Ni2 12 2 95.30(3) no
+Ni1 Dy1 Ni2 . 2 133.98(4) no
+Ni5 Dy1 Ni2 2 2 57.32(3) no
+Ni1 Dy1 Ni2 14_456 2 49.48(3) no
+Ni1 Dy1 Ni2 7_545 2 134.80(4) no
+Ni1 Dy1 Ni2 12 11_566 133.98(4) no
+Ni1 Dy1 Ni2 . 11_566 95.30(3) no
+Ni5 Dy1 Ni2 2 11_566 57.32(3) no
+Ni1 Dy1 Ni2 14_456 11_566 134.80(4) no
+Ni1 Dy1 Ni2 7_545 11_566 49.48(3) no
+Ni2 Dy1 Ni2 2 11_566 85.33(5) no
+Ni1 Dy1 Ni1 12 11_566 119.26(3) no
+Ni1 Dy1 Ni1 . 11_566 96.47(3) no
+Ni5 Dy1 Ni1 2 11_566 79.90(4) no
+Ni1 Dy1 Ni1 14_456 11_566 113.33(3) no
+Ni1 Dy1 Ni1 7_545 11_566 63.28(4) no
+Ni2 Dy1 Ni1 2 11_566 129.48(4) no
+Ni2 Dy1 Ni1 11_566 11_566 93.56(3) no
+Ni1 Dy1 Ni1 12 2 96.47(3) no
+Ni1 Dy1 Ni1 . 2 119.26(3) no
+Ni5 Dy1 Ni1 2 2 79.90(4) no
+Ni1 Dy1 Ni1 14_456 2 63.28(4) no
+Ni1 Dy1 Ni1 7_545 2 113.33(3) no
+Ni2 Dy1 Ni1 2 2 93.56(3) no
+Ni2 Dy1 Ni1 11_566 2 129.48(4) no
+Ni1 Dy1 Ni1 11_566 2 50.07(5) no
+Ni1 Dy1 Sn2 12 14_456 50.72(3) no
+Ni1 Dy1 Sn2 . 14_456 87.26(3) no
+Ni5 Dy1 Sn2 2 14_456 104.73(3) no
+Ni1 Dy1 Sn2 14_456 14_456 50.28(3) no
+Ni1 Dy1 Sn2 7_545 14_456 132.63(3) no
+Ni2 Dy1 Sn2 2 14_456 48.50(2) no
+Ni2 Dy1 Sn2 11_566 14_456 103.31(3) no
+Ni1 Dy1 Sn2 11_566 14_456 162.34(3) no
+Ni1 Dy1 Sn2 2 14_456 113.29(2) no
+Ni1 Dy1 Sn2 12 . 87.26(3) no
+Ni1 Dy1 Sn2 . . 50.72(3) no
+Ni5 Dy1 Sn2 2 . 104.73(3) no
+Ni1 Dy1 Sn2 14_456 . 132.63(3) no
+Ni1 Dy1 Sn2 7_545 . 50.28(3) no
+Ni2 Dy1 Sn2 2 . 103.31(3) no
+Ni2 Dy1 Sn2 11_566 . 48.50(2) no
+Ni1 Dy1 Sn2 11_566 . 113.29(2) no
+Ni1 Dy1 Sn2 2 . 162.34(3) no
+Sn2 Dy1 Sn2 14_456 . 82.39(2) no
+Ni1 Dy1 Sn3 12 . 84.48(3) no
+Ni1 Dy1 Sn3 . . 47.27(3) no
+Ni5 Dy1 Sn3 2 . 122.60(3) no
+Ni1 Dy1 Sn3 14_456 . 128.79(3) no
+Ni1 Dy1 Sn3 7_545 . 46.89(2) no
+Ni2 Dy1 Sn3 2 . 177.85(3) no
+Ni2 Dy1 Sn3 11_566 . 96.37(2) no
+Ni1 Dy1 Sn3 11_566 . 49.20(3) no
+Ni1 Dy1 Sn3 2 . 84.34(3) no
+Sn2 Dy1 Sn3 14_456 . 132.03(2) no
+Sn2 Dy1 Sn3 . . 78.826(17) no
+Ni4 Ni5 Sn3 2 14_456 116.70(4) no
+Ni4 Ni5 Sn3 2 . 116.70(4) no
+Sn3 Ni5 Sn3 14_456 . 116.95(7) no
+Ni4 Ni5 Ni1 2 11_566 64.88(6) no
+Sn3 Ni5 Ni1 14_456 11_566 115.54(7) no
+Sn3 Ni5 Ni1 . 11_566 63.40(4) no
+Ni4 Ni5 Ni1 2 2 64.88(6) no
+Sn3 Ni5 Ni1 14_456 2 63.40(4) no
+Sn3 Ni5 Ni1 . 2 115.54(7) no
+Ni1 Ni5 Ni1 11_566 2 62.06(7) no
+Ni4 Ni5 Sn1 2 . 68.63(6) no
+Sn3 Ni5 Sn1 14_456 . 114.38(4) no
+Sn3 Ni5 Sn1 . . 114.38(4) no
+Ni1 Ni5 Sn1 11_566 . 122.58(7) no
+Ni1 Ni5 Sn1 2 . 122.58(7) no
+Ni4 Ni5 Ni2 2 7_545 60.27(4) no
+Sn3 Ni5 Ni2 14_456 7_545 173.72(8) no
+Sn3 Ni5 Ni2 . 7_545 62.72(3) no
+Ni1 Ni5 Ni2 11_566 7_545 58.37(4) no
+Ni1 Ni5 Ni2 2 7_545 110.72(7) no
+Sn1 Ni5 Ni2 . 7_545 70.29(5) no
+Ni4 Ni5 Ni2 2 14_456 60.27(4) no
+Sn3 Ni5 Ni2 14_456 14_456 62.72(3) no
+Sn3 Ni5 Ni2 . 14_456 173.72(8) no
+Ni1 Ni5 Ni2 11_566 14_456 110.72(7) no
+Ni1 Ni5 Ni2 2 14_456 58.37(4) no
+Sn1 Ni5 Ni2 . 14_456 70.29(5) no
+Ni2 Ni5 Ni2 7_545 14_456 116.85(8) no
+Ni4 Ni5 Ni2 2 12 100.74(6) no
+Sn3 Ni5 Ni2 14_456 12 59.28(3) no
+Sn3 Ni5 Ni2 . 12 134.81(7) no
+Ni1 Ni5 Ni2 11_566 12 161.77(7) no
+Ni1 Ni5 Ni2 2 12 102.39(4) no
+Sn1 Ni5 Ni2 . 12 55.84(4) no
+Ni2 Ni5 Ni2 7_545 12 125.89(8) no
+Ni2 Ni5 Ni2 14_456 12 51.04(5) no
+Ni4 Ni5 Ni2 2 . 100.74(6) no
+Sn3 Ni5 Ni2 14_456 . 134.81(7) no
+Sn3 Ni5 Ni2 . . 59.28(3) no
+Ni1 Ni5 Ni2 11_566 . 102.39(4) no
+Ni1 Ni5 Ni2 2 . 161.77(7) no
+Sn1 Ni5 Ni2 . . 55.84(4) no
+Ni2 Ni5 Ni2 7_545 . 51.04(5) no
+Ni2 Ni5 Ni2 14_456 . 125.89(8) no
+Ni2 Ni5 Ni2 12 . 90.97(7) no
+Ni4 Ni5 Dy1 2 2_554 153.92(8) no
+Sn3 Ni5 Dy1 14_456 2_554 73.38(4) no
+Sn3 Ni5 Dy1 . 2_554 73.38(4) no
+Ni1 Ni5 Dy1 11_566 2_554 135.11(6) no
+Ni1 Ni5 Dy1 2 2_554 135.11(6) no
+Sn1 Ni5 Dy1 . 2_554 85.29(5) no
+Ni2 Ni5 Dy1 7_545 2_554 111.81(5) no
+Ni2 Ni5 Dy1 14_456 2_554 111.81(5) no
+Ni2 Ni5 Dy1 12 2_554 62.32(4) no
+Ni2 Ni5 Dy1 . 2_554 62.32(4) no
+Ni4 Ni5 Dy1 2 . 114.37(7) no
+Sn3 Ni5 Dy1 14_456 . 64.60(4) no
+Sn3 Ni5 Dy1 . . 64.60(4) no
+Ni1 Ni5 Dy1 11_566 . 59.81(4) no
+Ni1 Ni5 Dy1 2 . 59.81(4) no
+Sn1 Ni5 Dy1 . . 177.00(7) no
+Ni2 Ni5 Dy1 7_545 . 110.97(5) no
+Ni2 Ni5 Dy1 14_456 . 110.97(5) no
+Ni2 Ni5 Dy1 12 . 122.60(5) no
+Ni2 Ni5 Dy1 . . 122.60(5) no
+Dy1 Ni5 Dy1 2_554 . 91.71(5) no
+Ni2 Sn1 Ni2 12 . 106.13(6) no
+Ni2 Sn1 Ni5 12 . 68.06(4) no
+Ni2 Sn1 Ni5 . . 68.06(4) no
+Ni2 Sn1 Ni3 12 10_566 115.66(4) no
+Ni2 Sn1 Ni3 . 10_566 115.66(4) no
+Ni5 Sn1 Ni3 . 10_566 172.34(7) no
+Ni2 Sn1 Ni3 12 2_554 74.52(4) no
+Ni2 Sn1 Ni3 . 2_554 74.52(4) no
+Ni5 Sn1 Ni3 . 2_554 115.19(6) no
+Ni3 Sn1 Ni3 10_566 2_554 72.48(7) no
+Ni2 Sn1 Ni4 12 2 98.50(4) no
+Ni2 Sn1 Ni4 . 2 98.50(4) no
+Ni5 Sn1 Ni4 . 2 52.69(6) no
+Ni3 Sn1 Ni4 10_566 2 119.64(6) no
+Ni3 Sn1 Ni4 2_554 2 167.88(6) no
+Ni2 Sn1 Ni2 12 7_545 123.70(5) no
+Ni2 Sn1 Ni2 . 7_545 50.01(4) no
+Ni5 Sn1 Ni2 . 7_545 55.87(3) no
+Ni3 Sn1 Ni2 10_566 7_545 120.60(4) no
+Ni3 Sn1 Ni2 2_554 7_545 123.88(3) no
+Ni4 Sn1 Ni2 2 7_545 51.67(3) no
+Ni2 Sn1 Ni2 12 14_456 50.01(4) no
+Ni2 Sn1 Ni2 . 14_456 123.70(5) no
+Ni5 Sn1 Ni2 . 14_456 55.87(3) no
+Ni3 Sn1 Ni2 10_566 14_456 120.60(4) no
+Ni3 Sn1 Ni2 2_554 14_456 123.88(3) no
+Ni4 Sn1 Ni2 2 14_456 51.67(3) no
+Ni2 Sn1 Ni2 7_545 14_456 97.03(5) no
+Ni2 Sn1 Dy2 12 10_566 154.84(4) no
+Ni2 Sn1 Dy2 . 10_566 90.88(3) no
+Ni5 Sn1 Dy2 . 10_566 102.95(4) no
+Ni3 Sn1 Dy2 10_566 10_566 70.80(4) no
+Ni3 Sn1 Dy2 2_554 10_566 128.94(4) no
+Ni4 Sn1 Dy2 2 10_566 59.97(3) no
+Ni2 Sn1 Dy2 7_545 10_566 55.05(3) no
+Ni2 Sn1 Dy2 14_456 10_566 105.13(3) no
+Ni2 Sn1 Dy2 12 2 90.88(3) no
+Ni2 Sn1 Dy2 . 2 154.84(4) no
+Ni5 Sn1 Dy2 . 2 102.95(4) no
+Ni3 Sn1 Dy2 10_566 2 70.80(4) no
+Ni3 Sn1 Dy2 2_554 2 128.94(4) no
+Ni4 Sn1 Dy2 2 2 59.97(3) no
+Ni2 Sn1 Dy2 7_545 2 105.13(3) no
+Ni2 Sn1 Dy2 14_456 2 55.05(3) no
+Dy2 Sn1 Dy2 10_566 2 67.64(2) no
+Ni2 Sn1 Dy2 12 5_455 56.87(3) no
+Ni2 Sn1 Dy2 . 5_455 132.36(4) no
+Ni5 Sn1 Dy2 . 5_455 124.39(2) no
+Ni3 Sn1 Dy2 10_566 5_455 58.80(2) no
+Ni3 Sn1 Dy2 2_554 5_455 58.40(2) no
+Ni4 Sn1 Dy2 2 5_455 126.27(2) no
+Ni2 Sn1 Dy2 7_545 5_455 177.62(4) no
+Ni2 Sn1 Dy2 14_456 5_455 81.69(2) no
+Dy2 Sn1 Dy2 10_566 5_455 123.30(3) no
+Dy2 Sn1 Dy2 2 5_455 72.492(11) no
+Ni2 Sn1 Dy2 12 13 132.36(4) no
+Ni2 Sn1 Dy2 . 13 56.87(3) no
+Ni5 Sn1 Dy2 . 13 124.39(2) no
+Ni3 Sn1 Dy2 10_566 13 58.80(2) no
+Ni3 Sn1 Dy2 2_554 13 58.40(2) no
+Ni4 Sn1 Dy2 2 13 126.27(2) no
+Ni2 Sn1 Dy2 7_545 13 81.69(2) no
+Ni2 Sn1 Dy2 14_456 13 177.62(4) no
+Dy2 Sn1 Dy2 10_566 13 72.492(11) no
+Dy2 Sn1 Dy2 2 13 123.29(3) no
+Dy2 Sn1 Dy2 5_455 13 99.53(3) no
+Ni2 Sn2 Ni2 11_566 13 170.07(6) no
+Ni2 Sn2 Ni4 11_566 . 122.04(4) no
+Ni2 Sn2 Ni4 13 . 58.49(4) no
+Ni2 Sn2 Ni4 11_566 14_556 58.49(4) no
+Ni2 Sn2 Ni4 13 14_556 122.04(4) no
+Ni4 Sn2 Ni4 . 14_556 174.81(8) no
+Ni2 Sn2 Ni1 11_566 7_545 57.21(4) no
+Ni2 Sn2 Ni1 13 7_545 113.61(4) no
+Ni4 Sn2 Ni1 . 7_545 124.81(5) no
+Ni4 Sn2 Ni1 14_556 7_545 60.20(5) no
+Ni2 Sn2 Ni1 11_566 . 113.61(4) no
+Ni2 Sn2 Ni1 13 . 57.21(4) no
+Ni4 Sn2 Ni1 . . 60.20(5) no
+Ni4 Sn2 Ni1 14_556 . 124.81(5) no
+Ni1 Sn2 Ni1 7_545 . 70.83(6) no
+Ni2 Sn2 Ni3 11_566 . 73.88(5) no
+Ni2 Sn2 Ni3 13 . 111.60(5) no
+Ni4 Sn2 Ni3 . . 58.61(5) no
+Ni4 Sn2 Ni3 14_556 . 118.26(5) no
+Ni1 Sn2 Ni3 7_545 . 122.47(5) no
+Ni1 Sn2 Ni3 . . 108.35(4) no
+Ni2 Sn2 Ni3 11_566 14_556 111.60(5) no
+Ni2 Sn2 Ni3 13 14_556 73.88(5) no
+Ni4 Sn2 Ni3 . 14_556 118.26(5) no
+Ni4 Sn2 Ni3 14_556 14_556 58.61(5) no
+Ni1 Sn2 Ni3 7_545 14_556 108.35(4) no
+Ni1 Sn2 Ni3 . 14_556 122.47(5) no
+Ni3 Sn2 Ni3 . 14_556 117.00(7) no
+Ni2 Sn2 Dy2 11_566 . 131.06(4) no
+Ni2 Sn2 Dy2 13 . 58.72(3) no
+Ni4 Sn2 Dy2 . . 62.19(4) no
+Ni4 Sn2 Dy2 14_556 . 113.24(4) no
+Ni1 Sn2 Dy2 7_545 . 166.87(3) no
+Ni1 Sn2 Dy2 . . 108.79(3) no
+Ni3 Sn2 Dy2 . . 70.46(4) no
+Ni3 Sn2 Dy2 14_556 . 60.24(3) no
+Ni2 Sn2 Dy2 11_566 6_545 58.72(3) no
+Ni2 Sn2 Dy2 13 6_545 131.06(4) no
+Ni4 Sn2 Dy2 . 6_545 113.24(4) no
+Ni4 Sn2 Dy2 14_556 6_545 62.19(4) no
+Ni1 Sn2 Dy2 7_545 6_545 108.79(3) no
+Ni1 Sn2 Dy2 . 6_545 166.87(3) no
+Ni3 Sn2 Dy2 . 6_545 60.24(3) no
+Ni3 Sn2 Dy2 14_556 6_545 70.46(4) no
+Dy2 Sn2 Dy2 . 6_545 74.683(18) no
+Ni2 Sn2 Dy1 11_566 14_556 112.08(3) no
+Ni2 Sn2 Dy1 13 14_556 60.96(3) no
+Ni4 Sn2 Dy1 . 14_556 110.17(4) no
+Ni4 Sn2 Dy1 14_556 14_556 73.29(4) no
+Ni1 Sn2 Dy1 7_545 14_556 58.23(3) no
+Ni1 Sn2 Dy1 . 14_556 59.69(3) no
+Ni3 Sn2 Dy1 . 14_556 167.80(4) no
+Ni3 Sn2 Dy1 14_556 14_556 71.56(4) no
+Dy2 Sn2 Dy1 . 14_556 109.734(13) no
+Dy2 Sn2 Dy1 6_545 14_556 131.930(13) no
+Ni2 Sn2 Dy1 11_566 . 60.96(3) no
+Ni2 Sn2 Dy1 13 . 112.08(3) no
+Ni4 Sn2 Dy1 . . 73.29(4) no
+Ni4 Sn2 Dy1 14_556 . 110.17(4) no
+Ni1 Sn2 Dy1 7_545 . 59.69(3) no
+Ni1 Sn2 Dy1 . . 58.23(3) no
+Ni3 Sn2 Dy1 . . 71.56(4) no
+Ni3 Sn2 Dy1 14_556 . 167.80(4) no
+Dy2 Sn2 Dy1 . . 131.930(13) no
+Dy2 Sn2 Dy1 6_545 . 109.734(13) no
+Dy1 Sn2 Dy1 14_556 . 101.52(3) no
+Ni1 Sn3 Ni1 . 7_545 76.11(6) no
+Ni1 Sn3 Ni5 . 14_556 125.52(5) no
+Ni1 Sn3 Ni5 7_545 14_556 101.08(4) no
+Ni1 Sn3 Ni5 . . 101.08(4) no
+Ni1 Sn3 Ni5 7_545 . 125.52(5) no
+Ni5 Sn3 Ni5 14_556 . 121.19(8) no
+Ni1 Sn3 Ni1 . 11_566 120.58(4) no
+Ni1 Sn3 Ni1 7_545 11_566 76.20(4) no
+Ni5 Sn3 Ni1 14_556 11_566 110.81(5) no
+Ni5 Sn3 Ni1 . 11_566 58.42(5) no
+Ni1 Sn3 Ni1 . 13 76.20(4) no
+Ni1 Sn3 Ni1 7_545 13 120.58(4) no
+Ni5 Sn3 Ni1 14_556 13 58.42(5) no
+Ni5 Sn3 Ni1 . 13 110.81(5) no
+Ni1 Sn3 Ni1 11_566 13 160.24(6) no
+Ni1 Sn3 Ni2 . 7_545 161.13(4) no
+Ni1 Sn3 Ni2 7_545 7_545 117.70(4) no
+Ni5 Sn3 Ni2 14_556 7_545 66.95(5) no
+Ni5 Sn3 Ni2 . 7_545 60.77(5) no
+Ni1 Sn3 Ni2 11_566 7_545 56.33(4) no
+Ni1 Sn3 Ni2 13 7_545 104.30(4) no
+Ni1 Sn3 Ni2 . . 117.70(4) no
+Ni1 Sn3 Ni2 7_545 . 161.13(4) no
+Ni5 Sn3 Ni2 14_556 . 60.77(5) no
+Ni5 Sn3 Ni2 . . 66.95(5) no
+Ni1 Sn3 Ni2 11_566 . 104.30(4) no
+Ni1 Sn3 Ni2 13 . 56.33(4) no
+Ni2 Sn3 Ni2 7_545 . 52.71(5) no
+Ni1 Sn3 Dy1 . . 59.11(3) no
+Ni1 Sn3 Dy1 7_545 . 60.65(3) no
+Ni5 Sn3 Dy1 14_556 . 160.82(4) no
+Ni5 Sn3 Dy1 . . 71.41(4) no
+Ni1 Sn3 Dy1 11_566 . 61.47(3) no
+Ni1 Sn3 Dy1 13 . 134.13(3) no
+Ni2 Sn3 Dy1 7_545 . 114.56(3) no
+Ni2 Sn3 Dy1 . . 136.58(3) no
+Ni1 Sn3 Dy1 . 14_556 60.65(3) no
+Ni1 Sn3 Dy1 7_545 14_556 59.11(3) no
+Ni5 Sn3 Dy1 14_556 14_556 71.41(4) no
+Ni5 Sn3 Dy1 . 14_556 160.82(4) no
+Ni1 Sn3 Dy1 11_566 14_556 134.13(3) no
+Ni1 Sn3 Dy1 13 14_556 61.47(3) no
+Ni2 Sn3 Dy1 7_545 14_556 136.58(3) no
+Ni2 Sn3 Dy1 . 14_556 114.56(3) no
+Dy1 Sn3 Dy1 . 14_556 100.83(3) no
+Ni1 Sn3 Dy1 . 13_556 137.42(4) no
+Ni1 Sn3 Dy1 7_545 13_556 62.26(3) no
+Ni5 Sn3 Dy1 14_556 13_556 59.57(4) no
+Ni5 Sn3 Dy1 . 13_556 109.73(4) no
+Ni1 Sn3 Dy1 11_566 13_556 59.28(3) no
+Ni1 Sn3 Dy1 13 13_556 116.86(3) no
+Ni2 Sn3 Dy1 7_545 13_556 59.67(3) no
+Ni2 Sn3 Dy1 . 13_556 101.35(3) no
+Dy1 Sn3 Dy1 . 13_556 103.690(11) no
+Dy1 Sn3 Dy1 14_556 13_556 89.000(12) no
+Ni1 Sn3 Dy1 . 2_554 62.26(3) no
+Ni1 Sn3 Dy1 7_545 2_554 137.42(4) no
+Ni5 Sn3 Dy1 14_556 2_554 109.73(4) no
+Ni5 Sn3 Dy1 . 2_554 59.57(4) no
+Ni1 Sn3 Dy1 11_566 2_554 116.86(3) no
+Ni1 Sn3 Dy1 13 2_554 59.28(3) no
+Ni2 Sn3 Dy1 7_545 2_554 101.35(3) no
+Ni2 Sn3 Dy1 . 2_554 59.67(3) no
+Dy1 Sn3 Dy1 . 2_554 89.000(12) no
+Dy1 Sn3 Dy1 14_556 2_554 103.690(11) no
+Dy1 Sn3 Dy1 13_556 2_554 160.19(4) no
+Ni2 Dy2 Ni2 13 16_545 161.15(5) no
+Ni2 Dy2 Ni3 13 14_556 65.86(4) no
+Ni2 Dy2 Ni3 16_545 14_556 97.50(4) no
+Ni2 Dy2 Ni3 13 6_544 97.50(4) no
+Ni2 Dy2 Ni3 16_545 6_544 65.86(4) no
+Ni3 Dy2 Ni3 14_556 6_544 63.61(6) no
+Ni2 Dy2 Ni4 13 9 145.35(4) no
+Ni2 Dy2 Ni4 16_545 9 50.98(3) no
+Ni3 Dy2 Ni4 14_556 9 148.44(4) no
+Ni3 Dy2 Ni4 6_544 9 98.59(4) no
+Ni2 Dy2 Ni4 13 . 50.98(3) no
+Ni2 Dy2 Ni4 16_545 . 145.35(4) no
+Ni3 Dy2 Ni4 14_556 . 98.59(4) no
+Ni3 Dy2 Ni4 6_544 . 148.44(4) no
+Ni4 Dy2 Ni4 9 . 107.79(4) no
+Ni2 Dy2 Sn2 13 . 50.58(2) no
+Ni2 Dy2 Sn2 16_545 . 126.62(3) no
+Ni3 Dy2 Sn2 14_556 . 51.80(3) no
+Ni3 Dy2 Sn2 6_544 . 114.78(3) no
+Ni4 Dy2 Sn2 9 . 141.80(3) no
+Ni4 Dy2 Sn2 . . 49.63(3) no
+Ni2 Dy2 Sn2 13 6_544 126.62(3) no
+Ni2 Dy2 Sn2 16_545 6_544 50.58(2) no
+Ni3 Dy2 Sn2 14_556 6_544 114.78(3) no
+Ni3 Dy2 Sn2 6_544 6_544 51.80(3) no
+Ni4 Dy2 Sn2 9 6_544 49.63(3) no
+Ni4 Dy2 Sn2 . 6_544 141.80(3) no
+Sn2 Dy2 Sn2 . 6_544 166.53(2) no
+Ni2 Dy2 Sn1 13 2_554 59.04(3) no
+Ni2 Dy2 Sn1 16_545 2_554 134.17(3) no
+Ni3 Dy2 Sn1 14_556 2_554 123.87(4) no
+Ni3 Dy2 Sn1 6_544 2_554 112.87(4) no
+Ni4 Dy2 Sn1 9 2_554 86.42(3) no
+Ni4 Dy2 Sn1 . 2_554 53.60(3) no
+Sn2 Dy2 Sn1 . 2_554 96.570(18) no
+Sn2 Dy2 Sn1 6_544 2_554 90.922(17) no
+Ni2 Dy2 Sn1 13 10_556 134.17(3) no
+Ni2 Dy2 Sn1 16_545 10_556 59.04(3) no
+Ni3 Dy2 Sn1 14_556 10_556 112.87(4) no
+Ni3 Dy2 Sn1 6_544 10_556 123.87(4) no
+Ni4 Dy2 Sn1 9 10_556 53.60(3) no
+Ni4 Dy2 Sn1 . 10_556 86.42(3) no
+Sn2 Dy2 Sn1 . 10_556 90.922(17) no
+Sn2 Dy2 Sn1 6_544 10_556 96.570(18) no
+Sn1 Dy2 Sn1 2_554 10_556 112.36(2) no
+Ni2 Dy2 Sn1 13 5_545 114.35(3) no
+Ni2 Dy2 Sn1 16_545 5_545 48.52(3) no
+Ni3 Dy2 Sn1 14_556 5_545 48.98(4) no
+Ni3 Dy2 Sn1 6_544 5_545 50.12(4) no
+Ni4 Dy2 Sn1 9 5_545 99.47(3) no
+Ni4 Dy2 Sn1 . 5_545 137.31(3) no
+Sn2 Dy2 Sn1 . 5_545 88.980(19) no
+Sn2 Dy2 Sn1 6_544 5_545 80.724(18) no
+Sn1 Dy2 Sn1 2_554 5_545 162.49(3) no
+Sn1 Dy2 Sn1 10_556 5_545 84.038(13) no
+Ni2 Dy2 Sn1 13 13 48.52(3) no
+Ni2 Dy2 Sn1 16_545 13 114.35(3) no
+Ni3 Dy2 Sn1 14_556 13 50.12(4) no
+Ni3 Dy2 Sn1 6_544 13 48.98(4) no
+Ni4 Dy2 Sn1 9 13 137.31(3) no
+Ni4 Dy2 Sn1 . 13 99.47(3) no
+Sn2 Dy2 Sn1 . 13 80.724(18) no
+Sn2 Dy2 Sn1 6_544 13 88.980(19) no
+Sn1 Dy2 Sn1 2_554 13 84.038(13) no
+Sn1 Dy2 Sn1 10_556 13 162.49(3) no
+Sn1 Dy2 Sn1 5_545 13 80.47(3) no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Ni1 Sn3 . 2.5107(14) yes
+Ni1 Ni2 13 2.5207(17) yes
+Ni1 Ni5 2_554 2.5277(19) yes
+Ni1 Ni1 12 2.606(2) yes
+Ni1 Ni4 . 2.6435(19) yes
+Ni1 Sn3 13 2.6533(12) yes
+Ni1 Sn2 . 2.6707(14) yes
+Ni1 Dy1 . 2.9332(13) yes
+Ni1 Dy1 14_556 2.9974(12) yes
+Ni1 Dy1 2_554 3.0792(13) yes
+Ni2 Ni2 7_545 2.385(2) yes
+Ni2 Ni1 13 2.5207(17) no
+Ni2 Ni4 13 2.5360(14) yes
+Ni2 Sn1 . 2.5656(13) yes
+Ni2 Sn2 13 2.5921(12) yes
+Ni2 Ni5 14_556 2.6381(15) yes
+Ni2 Sn3 . 2.6868(13) yes
+Ni2 Dy2 13 2.8676(12) yes
+Ni2 Ni5 . 2.8758(17) yes
+Ni2 Sn1 14_556 3.0002(13) yes
+Ni2 Dy1 2_554 3.0258(13) yes
+Ni3 Ni4 . 2.587(2) yes
+Ni3 Sn1 10_556 2.616(2) yes
+Ni3 Sn1 2 2.672(2) yes
+Ni3 Sn2 . 2.6849(11) yes
+Ni3 Sn2 14_456 2.6849(11) no
+Ni3 Dy2 14_456 2.9657(10) no
+Ni3 Dy2 6_545 2.9657(10) yes
+Ni3 Dy2 9 3.3986(16) no
+Ni3 Dy2 . 3.3986(16) yes
+Ni4 Ni5 2_554 2.396(2) yes
+Ni4 Ni2 8_455 2.5360(14) no
+Ni4 Ni2 13 2.5360(14) no
+Ni4 Sn2 . 2.5990(10) yes
+Ni4 Sn2 14_456 2.5990(10) no
+Ni4 Ni1 12 2.6435(19) no
+Ni4 Sn1 2_554 2.8050(19) yes
+Ni4 Dy2 9 3.0171(14) no
+Ni4 Dy2 . 3.0171(14) yes
+Dy1 Ni1 12 2.9332(13) no
+Dy1 Ni5 2 2.9698(19) yes
+Dy1 Ni1 14_456 2.9974(12) no
+Dy1 Ni1 7_545 2.9974(12) no
+Dy1 Ni2 2 3.0258(13) no
+Dy1 Ni2 11_566 3.0258(13) no
+Dy1 Ni1 11_566 3.0792(13) no
+Dy1 Ni1 2 3.0792(13) no
+Dy1 Sn2 14_456 3.2630(7) no
+Dy1 Sn2 . 3.2630(7) yes
+Dy1 Sn3 . 3.2791(7) yes
+Ni5 Ni4 2 2.396(2) no
+Ni5 Sn3 14_456 2.5213(10) no
+Ni5 Sn3 . 2.5213(10) yes
+Ni5 Ni1 11_566 2.5277(19) no
+Ni5 Ni1 2 2.5277(19) no
+Ni5 Sn1 . 2.5733(19) yes
+Ni5 Ni2 7_545 2.6381(15) no
+Ni5 Ni2 14_456 2.6381(15) no
+Ni5 Ni2 12 2.8758(17) no
+Ni5 Dy1 2_554 2.9698(19) no
+Sn1 Ni2 12 2.5656(13) no
+Sn1 Ni3 10_566 2.616(2) no
+Sn1 Ni3 2_554 2.672(2) no
+Sn1 Ni4 2 2.8050(19) no
+Sn1 Ni2 7_545 3.0002(14) no
+Sn1 Ni2 14_456 3.0002(14) no
+Sn1 Dy2 10_566 3.1942(8) no
+Sn1 Dy2 2 3.1942(8) yes
+Sn1 Dy2 5_455 3.3016(7) no
+Sn1 Dy2 13 3.3016(7) yes
+Sn2 Ni2 11_566 2.5921(12) no
+Sn2 Ni2 13 2.5921(12) no
+Sn2 Ni4 14_556 2.5990(10) no
+Sn2 Ni1 7_545 2.6707(14) no
+Sn2 Ni3 14_556 2.6849(11) no
+Sn2 Dy2 . 3.1667(6) yes
+Sn2 Dy2 6_545 3.1667(6) no
+Sn2 Dy1 14_556 3.2630(7) no
+Sn3 Ni1 7_545 2.5107(14) no
+Sn3 Ni5 14_556 2.5213(10) no
+Sn3 Ni1 11_566 2.6533(12) no
+Sn3 Ni1 13 2.6533(12) no
+Sn3 Ni2 7_545 2.6868(13) no
+Sn3 Dy1 14_556 3.2791(7) no
+Sn3 Dy1 13_556 3.3004(5) no
+Sn3 Dy1 2_554 3.3004(5) no
+Dy2 Ni2 13 2.8676(12) no
+Dy2 Ni2 16_545 2.8676(12) no
+Dy2 Ni3 14_556 2.9657(10) no
+Dy2 Ni3 6_544 2.9657(10) no
+Dy2 Ni4 9 3.0171(14) no
+Dy2 Sn2 6_544 3.1667(6) no
+Dy2 Sn1 2_554 3.1942(8) no
+Dy2 Sn1 10_556 3.1942(8) no
+Dy2 Sn1 5_545 3.3016(7) no
+Dy2 Sn1 13 3.3016(7) no

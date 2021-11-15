@@ -1,0 +1,63 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/63/9006306.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9006306
+loop_
+_publ_author_name
+'Boisen, M. B.'
+'Gibbs, G. V.'
+'Bukowinski, M. S. T.'
+_publ_section_title
+;
+ Framework silica structures generated using simulated annealing
+ with a potential energy function based on an H6Si2O7 molecule
+ Sample: 23
+;
+_journal_name_full               'Physics and Chemistry of Minerals'
+_journal_page_first              269
+_journal_page_last               284
+_journal_volume                  21
+_journal_year                    1994
+_chemical_formula_structural     SiO2
+_chemical_formula_sum            'O2 Si'
+_space_group_IT_number           3
+_symmetry_space_group_name_Hall  'P 2y'
+_symmetry_space_group_name_H-M   'P 1 2 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 101.3752
+_cell_angle_gamma                90
+_cell_length_a                   4.1605
+_cell_length_b                   4.1294
+_cell_length_c                   7.4211
+_cell_volume                     124.993
+_exptl_crystal_density_diffrn    3.193
+_cod_original_formula_sum        'Si O2'
+_cod_database_code               9006306
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Si1 0.18244 0.00000 0.69651
+Si2 0.38098 0.58564 0.17797
+O1 0.02399 0.75200 0.18927
+O2 0.50000 0.73859 0.00000
+O3 0.38562 0.71473 0.64074
+O4 0.00000 0.15907 0.50000
+O5 0.48963 0.20196 0.18802

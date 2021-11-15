@@ -1,0 +1,75 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-06 19:24:22 +0300 (Fri, 06 Oct 2017) $
+#$Revision: 201816 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/9/01/64/9016465.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9016465
+loop_
+_publ_author_name
+'Henning, P. A.'
+'Adolfsson, E.'
+'Grins, J.'
+_publ_section_title
+;
+ The chalcogenide phosphate apatites Ca10(PO4)6S, Sr10(PO4)6S, Ba10(PO4)6S and Ca10(PO4)6Se
+;
+_journal_name_full               'Zeitschrift fur Kristallographie'
+_journal_page_first              226
+_journal_page_last               230
+_journal_volume                  215
+_journal_year                    2000
+_chemical_compound_source        Synthetic
+_chemical_formula_sum            'Ba10 O24 P6 S'
+_space_group_IT_number           147
+_symmetry_space_group_name_Hall  '-P 3'
+_symmetry_space_group_name_H-M   'P -3'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   10.252
+_cell_length_b                   10.252
+_cell_length_c                   7.659
+_cell_volume                     697.140
+_database_code_amcsd             0019726
+_exptl_crystal_density_diffrn    4.705
+_cod_original_formula_sum        'Ba10 P6 O24 S'
+_cod_database_code               9016465
+_amcsd_formula_title             Ba10(PO4)6S
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+y,-x+y,-z
+-x+y,-x,z
+-x,-y,-z
+-y,x-y,z
+x-y,x,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Ba11 0.33333 0.66667 0.01420 0.01230
+Ba12 0.33333 0.66667 0.51060 0.01230
+Ba2 0.24505 0.98244 0.26060 0.01230
+P 0.40100 0.37220 0.23040 0.00740
+O1 0.35360 0.48370 0.30200 0.03800
+O2 0.57250 0.44510 0.19900 0.03800
+O31 0.34400 0.24520 0.09400 0.03800
+O32 0.33700 0.28810 0.40320 0.03800
+S 0.00000 0.00000 0.50000 0.00600
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0019726

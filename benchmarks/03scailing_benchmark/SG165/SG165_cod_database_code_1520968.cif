@@ -1,0 +1,71 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/09/1520968.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1520968
+loop_
+_publ_author_name
+'Ellner, M.'
+'Mittemeijer, E.J.'
+'Reule, H.'
+_publ_section_title
+;
+ The structure of the trihydride Gd H3
+;
+_journal_name_full               'Journal of Alloys Compd.'
+_journal_page_first              127
+_journal_page_last               131
+_journal_volume                  309
+_journal_year                    2000
+_chemical_formula_sum            'Gd H3'
+_space_group_IT_number           165
+_symmetry_space_group_name_Hall  '-P 3 2"c'
+_symmetry_space_group_name_H-M   'P -3 c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            6
+_cell_length_a                   6.4662
+_cell_length_b                   6.4662
+_cell_length_c                   6.717
+_cell_volume                     243.223
+_citation_journal_id_ASTM        JALCEU
+_cod_data_source_file            Ellner_JALCEU_2000_1414.cif
+_cod_data_source_block           H3Gd1
+_cod_original_cell_volume        243.2228
+_cod_original_formula_sum        'H3 Gd1'
+_cod_database_code               1520968
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+y,x,-z+1/2
+-x,-x+y,-z+1/2
+x-y,-y,-z+1/2
+-x,-y,-z
+y,-x+y,-z
+x-y,x,-z
+-y,-x,z-1/2
+x,x-y,z-1/2
+-x+y,y,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Gd1 Gd+3 0.3333 0 0.25 1 0.0
+H2 H-1 0.3333 0.6667 0.167 1 0.0
+H3 H-1 0.356 0.328 0.096 1 0.0
+H1 H-1 0 0 0.25 1 0.0

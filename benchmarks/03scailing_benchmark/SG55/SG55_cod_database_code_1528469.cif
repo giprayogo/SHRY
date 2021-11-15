@@ -1,0 +1,76 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-07-13 21:42:22 +0300 (Mon, 13 Jul 2015) $
+#$Revision: 150745 $
+#$URL: svn://www.crystallography.net/cod/cif/1/52/84/1528469.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1528469
+loop_
+_publ_author_name
+'Falius, H.'
+'Krause, W.'
+'Sheldrick, W.S.'
+_publ_section_title
+;
+ (N H4)4 (P4 S8) (H2 O)2, das Salz einer 'quadratischen'
+ Thiophosphorsaeure
+;
+_journal_name_full               'Angewandte Chemie (German Edition)'
+_journal_page_first              121
+_journal_page_last               122
+_journal_volume                  93
+_journal_year                    1981
+_chemical_formula_sum            'H20 N4 O2 P4 S8'
+_chemical_name_systematic        '(N H4)4 (P4 S8) (H2 O)2'
+_space_group_IT_number           55
+_symmetry_space_group_name_Hall  '-P 2 2ab'
+_symmetry_space_group_name_H-M   'P b a m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   8.079
+_cell_length_b                   14.337
+_cell_length_c                   8.681
+_cell_volume                     1005.508
+_citation_journal_id_ASTM        ANCEAD
+_cod_data_source_file            Falius_ANCEAD_1981_75.cif
+_cod_data_source_block           H20N4O2P4S8
+_cod_database_code               1528469
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+x+1/2,-y+1/2,-z
+-x+1/2,y+1/2,-z
+-x,-y,-z
+x,y,-z
+-x-1/2,y-1/2,z
+x-1/2,-y-1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+S2 S-2 0.6975 0.0396 0.7876 1 0.0
+H6 H+1 0.335 0.0922 0 1 0.0
+H7 H+1 0.3496 0.208 0 1 0.0
+S1 S-2 0.0448 0.1738 0.7839 1 0.0
+N1 N-3 0.7183 0.1917 0.5 1 0.0
+H3 H+1 0.7453 0.2572 0.5 1 0.0
+H1 H+1 0.8425 0.4026 0.4112 1 0.0
+P1 P+3 0.9218 0.0662 0.8683 1 0.0
+O1 O-2 0.8608 0.3759 0.5 1 0.0
+N2 N-3 0.4003 0.1496 0 1 0.0
+H2 H+1 0.7672 0.1635 0.4071 1 0.0
+H4 H+1 0.6071 0.1615 0.5 1 0.0
+H5 H+1 0.4704 0.143 -0.0879 1 0.0

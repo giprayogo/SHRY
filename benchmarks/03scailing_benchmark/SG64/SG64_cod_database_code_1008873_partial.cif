@@ -1,0 +1,66 @@
+# generated using pymatgen
+data_Fr5K16Rb3Na16Si2Ge5Sb4As18CMc2
+_symmetry_space_group_name_H-M   Cmce
+_cell_length_a   20.43500000
+_cell_length_b   6.82000000
+_cell_length_c   15.35100000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   64
+_chemical_formula_structural   Fr5K16Rb3Na16Si2Ge5Sb4As18CMc2
+_chemical_formula_sum   'Fr5 Rb3 K16 Na16 Si2 Ge5 Sb4 As18 C1 Mc2'
+_cell_volume   2139.41821170
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y+1/2, z+1/2'
+  4  'x, y+1/2, -z+1/2'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y+1/2, -z+1/2'
+  8  'x, -y+1/2, z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x+1/2, -y, z+1/2'
+  12  'x+1/2, y, -z+1/2'
+  13  'x+1/2, -y+1/2, -z'
+  14  '-x+1/2, y+1/2, z'
+  15  '-x+1/2, y, -z+1/2'
+  16  'x+1/2, -y, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Fr+  1.0
+  K+  1.0
+  Rb+  1.0
+  Na+  1.0
+  Si4+  4.0
+  Ge4+  4.0
+  Sb3-  -3.0
+  As3-  -3.0
+  C4+  4.0
+  Mc3-  -3.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb+  Rb0  8  0.00000000  0.23960000  0.82030000  0.375
+  Fr+  Fr1  8  0.00000000  0.23960000  0.82030000  0.625
+  K+  K2  16  0.16600000  0.23070000  0.17580000  1.0
+  Na+  Na3  8  0.08080000  0.00000000  0.00000000  1.0
+  Na+  Na4  8  0.24460000  0.00000000  0.00000000  1.0
+  Ge4+  Ge5  8  0.08830000  0.00000000  0.50000000  0.625
+  C4+  C6  8  0.08830000  0.00000000  0.50000000  0.125
+  Si4+  Si7  8  0.08830000  0.00000000  0.50000000  0.25
+  Sb3-  Sb8  8  0.00000000  0.20360000  0.59490000  0.5
+  As3-  As9  8  0.00000000  0.20360000  0.59490000  0.25
+  Mc3-  Mc10  8  0.00000000  0.20360000  0.59490000  0.25
+  As3-  As11  16  0.15810000  0.22140000  0.39430000  1.0

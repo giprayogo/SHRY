@@ -1,0 +1,41 @@
+# generated using pymatgen
+data_Pu0.5No0.75Es3.25Md3.5U22
+_symmetry_space_group_name_H-M   P4_2nm
+_cell_length_a   10.75900000
+_cell_length_b   10.75900000
+_cell_length_c   5.65600000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   102
+_chemical_formula_structural   Pu0.5No0.75Es3.25Md3.5U22
+_chemical_formula_sum   'Pu0.5 No0.75 Es3.25 Md3.5 U22'
+_cell_volume   654.71639414
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z+1/2'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z+1/2'
+  5  '-x+1/2, y+1/2, z+1/2'
+  6  'y, x, z'
+  7  'x+1/2, -y+1/2, z+1/2'
+  8  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Md+  Md0  4  0.19700000  0.80300000  0.26900000  0.875
+  Pu+  Pu1  4  0.19700000  0.80300000  0.26900000  0.125
+  No+  No2  4  0.10700000  0.10700000  0.98600000  0.1875
+  Es+  Es3  4  0.10700000  0.10700000  0.98600000  0.8125
+  U  U4  8  0.04500000  0.37200000  0.97700000  1.0
+  U  U5  8  0.05800000  0.27500000  0.55200000  1.0
+  U  U6  4  0.17900000  0.82100000  0.79400000  1.0
+  U  U7  2  0.00000000  0.00000000  0.50000000  1.0

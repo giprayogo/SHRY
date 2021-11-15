@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Na0.5Li0.5Po2.0Te2.0H1S2.0I2
+_symmetry_space_group_name_H-M   P6_3
+_cell_length_a   5.47800000
+_cell_length_b   5.47800000
+_cell_length_c   5.17000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   173
+_chemical_formula_structural   Na0.5Li0.5Po2.0Te2.0H1S2.0I2
+_chemical_formula_sum   'Na0.5 Li0.5 Po2.0 Te2.0 H1 S2.0 I2'
+_cell_volume   134.35852598
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z+1/2'
+  3  '-y, x-y, z'
+  4  '-x, -y, z+1/2'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Na0+  0.0
+  Li0+  0.0
+  Po0+  0.0
+  Te0+  0.0
+  H0+  0.0
+  S0+  0.0
+  I0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  H0+  H0  2  0.00000000  0.00000000  0.16100000  0.5
+  Na0+  Na1  2  0.00000000  0.00000000  0.16100000  0.25
+  Li0+  Li2  2  0.00000000  0.00000000  0.16100000  0.25
+  Po0+  Po3  6  0.09400000  0.75150000  0.41520000
+  0.3333333333333333
+  S0+  S4  6  0.09400000  0.75150000  0.41520000  0.3333333333333333
+  Te0+  Te5  6  0.09400000  0.75150000  0.41520000
+  0.3333333333333333
+  I0+  I6  2  0.33333333  0.66666667  0.25000000  1.0

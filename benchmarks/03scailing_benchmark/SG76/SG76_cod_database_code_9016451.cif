@@ -1,0 +1,86 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-06 19:24:22 +0300 (Fri, 06 Oct 2017) $
+#$Revision: 201816 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/9/01/64/9016451.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9016451
+loop_
+_publ_author_name
+'Averbuch-Pouchot M'
+'Durif, A.'
+_publ_section_title
+;
+ Contribution to the crystal chemistry of tetrametaphosphates (I).
+ _cod_database_code 1007174
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              119
+_journal_page_last               132
+_journal_paper_doi               10.1016/0022-4596(85)90275-0
+_journal_volume                  58
+_journal_year                    1985
+_chemical_formula_sum            'K Na O7 P2'
+_space_group_IT_number           76
+_symmetry_space_group_name_Hall  'P 4w'
+_symmetry_space_group_name_H-M   'P 41'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   7.928
+_cell_length_b                   7.928
+_cell_length_c                   21.66
+_cell_volume                     1361.400
+_database_code_amcsd             0013550
+_exptl_crystal_density_diffrn    2.303
+_cod_duplicate_entry             1007174
+_cod_original_formula_sum        'K P2 Na O7'
+_cod_database_code               9016451
+_amcsd_formula_title             'H4 K2 Na2 O14 P4'
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+-y,x,1/4+z
+-x,-y,1/2+z
+y,-x,3/4+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+K1 0.34860 0.15460 0.57318
+K2 -0.01600 0.37230 0.13493
+P1 0.07190 0.08760 0.00000
+P2 0.14420 0.27560 0.70911
+P3 0.78310 0.49390 0.99844
+P4 0.13030 0.43340 0.95992
+Na1 0.79450 0.06640 0.64390
+Na2 0.43300 0.29000 0.06560
+O1 0.15070 0.13050 0.06030
+O2 0.07480 0.11370 0.21920
+O3 0.10530 0.12970 0.76000
+O4 0.76440 0.06540 0.89870
+O5 0.56090 0.10620 0.99040
+O6 0.74560 0.34490 0.94870
+O7 0.65700 0.24550 0.71650
+O8 0.45620 0.30040 0.80820
+O9 0.01540 0.53000 0.50980
+O10 0.70620 0.53240 0.49100
+O11 0.48670 0.09150 0.14960
+O12 0.76810 0.11070 0.19920
+O13 0.68260 0.23300 0.56050
+O14 0.31850 0.45310 0.15050
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0013550

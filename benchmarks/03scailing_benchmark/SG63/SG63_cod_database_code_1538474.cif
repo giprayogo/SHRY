@@ -1,0 +1,79 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-10-13 12:11:22 +0300 (Tue, 13 Oct 2015) $
+#$Revision: 167045 $
+#$URL: svn://www.crystallography.net/cod/cif/1/53/84/1538474.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1538474
+loop_
+_publ_author_name
+'Philippot, E.'
+'Ribes, M.'
+'Lindqvist, O.'
+_publ_section_title
+;
+ Structure cristalline de Na4 Ge4 S10
+;
+_journal_name_full               'Revue de Chimie Minerale'
+_journal_page_first              477
+_journal_page_last               489
+_journal_volume                  8
+_journal_year                    1971
+_chemical_formula_sum            'Ge4 Na4 S10'
+_chemical_name_systematic        'Na4 (Ge4 S10)'
+_space_group_IT_number           63
+_symmetry_space_group_name_Hall  '-C 2c 2'
+_symmetry_space_group_name_H-M   'C m c m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   12.847
+_cell_length_b                   12.901
+_cell_length_c                   10.476
+_cell_volume                     1736.283
+_citation_journal_id_ASTM        RVCMA8
+_cod_data_source_file            Philippot_RVCMA8_1971_724.cif
+_cod_data_source_block           Ge4Na4S10
+_cod_database_code               1538474
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z+1/2
+x,-y,-z
+-x,y,-z+1/2
+-x,-y,-z
+x,y,-z-1/2
+-x,y,z
+x,-y,z-1/2
+x+1/2,y+1/2,z
+-x+1/2,-y+1/2,z+1/2
+x+1/2,-y+1/2,-z
+-x+1/2,y+1/2,-z+1/2
+-x+1/2,-y+1/2,-z
+x+1/2,y+1/2,-z-1/2
+-x+1/2,y+1/2,z
+x+1/2,-y+1/2,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Na1 Na+1 0.1489 0 0 1 0.0
+S2 S-2 0.1443 0.353 0.077 1 0.0
+Na2 Na+1 0.3358 0.2472 0.25 1 0.0
+S5 S-2 0.2745 0.5486 0.25 1 0.0
+S3 S-2 0 0.1549 0.25 1 0.0
+S4 S-2 0 0.1571 -0.0827 1 0.0
+Ge1 Ge+4 0 0.2556 0.0818 1 0.0
+S1 S-2 0 0.5565 0.25 1 0.0
+Ge2 Ge+4 0.1378 0.4543 0.25 1 0.0

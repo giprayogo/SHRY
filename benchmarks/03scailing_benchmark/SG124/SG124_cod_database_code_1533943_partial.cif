@@ -1,0 +1,66 @@
+# generated using pymatgen
+data_Ta2.5Nb0.5V4.5Db0.5Mt0.5Sb0.5P0.5Rh1.5N0.5Mc0.5
+_symmetry_space_group_name_H-M   P4/mcc
+_cell_length_a   6.11800000
+_cell_length_b   6.11800000
+_cell_length_c   4.99600000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   124
+_chemical_formula_structural
+Ta2.5Nb0.5V4.5Db0.5Mt0.5Sb0.5P0.5Rh1.5N0.5Mc0.5
+_chemical_formula_sum
+'Ta2.5 Nb0.5 V4.5 Db0.5 Mt0.5 Sb0.5 P0.5 Rh1.5 N0.5 Mc0.5'
+_cell_volume   186.99990030
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z+1/2'
+  10  '-x, y, z+1/2'
+  11  '-y, -x, -z+1/2'
+  12  'y, x, z+1/2'
+  13  '-x, y, -z+1/2'
+  14  'x, -y, z+1/2'
+  15  'y, x, -z+1/2'
+  16  '-y, -x, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Ta+  1.0
+  Nb+  1.0
+  V+  1.0
+  Sb+  1.0
+  P+  1.0
+  Rh+  1.0
+  N+  1.0
+  Db+  1.0
+  Mc+  1.0
+  Mt+  1.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ta+  Ta0  8  0.16200000  0.33800000  0.50000000  0.3125
+  V+  V1  8  0.16200000  0.33800000  0.50000000  0.5625
+  Nb+  Nb2  8  0.16200000  0.33800000  0.50000000  0.0625
+  Db+  Db3  8  0.16200000  0.33800000  0.50000000  0.0625
+  Mt+  Mt4  2  0.00000000  0.00000000  0.25000000  0.25
+  Rh+  Rh5  2  0.00000000  0.00000000  0.25000000  0.75
+  N+  N6  2  0.50000000  0.50000000  0.25000000  0.25
+  Mc+  Mc7  2  0.50000000  0.50000000  0.25000000  0.25
+  Sb+  Sb8  2  0.50000000  0.50000000  0.25000000  0.25
+  P+  P9  2  0.50000000  0.50000000  0.25000000  0.25

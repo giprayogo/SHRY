@@ -1,0 +1,521 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-20 05:06:23 +0200 (Sat, 20 Feb 2016) $
+#$Revision: 176774 $
+#$URL: svn://www.crystallography.net/cod/cif/2/20/49/2204979.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2204979
+loop_
+_publ_author_name
+'Tkachuk, Andriy V.'
+'Mar, Arthur'
+_publ_section_title
+;
+ Lanthanum iron trigermanide, LaFeGe~3~
+;
+_journal_issue                   1
+_journal_name_full               'Acta Crystallographica Section E'
+_journal_page_first              i1
+_journal_page_last               i2
+_journal_paper_doi               10.1107/S1600536804031253
+_journal_volume                  61
+_journal_year                    2005
+_chemical_formula_iupac          'La Fe Ge3'
+_chemical_formula_structural     'La Fe Ge3'
+_chemical_formula_sum            'Fe Ge3 La'
+_chemical_formula_weight         412.53
+_chemical_name_common            'lanthanum iron trigermanide'
+_chemical_name_systematic        'lanthanum iron trigermanide'
+_space_group_IT_number           107
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  'I 4 -2'
+_symmetry_space_group_name_H-M   'I 4 m m'
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            2
+_cell_length_a                   4.3660(5)
+_cell_length_b                   4.3660(5)
+_cell_length_c                   9.9726(10)
+_cell_measurement_reflns_used    889
+_cell_measurement_temperature    295(2)
+_cell_measurement_theta_max      32.90
+_cell_measurement_theta_min      5.10
+_cell_volume                     190.10(4)
+_computing_cell_refinement       'SAINT (Bruker, 2004)'
+_computing_data_collection       'SMART (Bruker, 1999)'
+_computing_data_reduction        SAINT
+_computing_molecular_graphics    'ATOMS (Dowty, 1999)'
+_computing_publication_material  SHELXTL
+_computing_structure_refinement  SHELXTL
+_computing_structure_solution    'SHELXTL (Sheldrick, 2001)'
+_diffrn_ambient_temperature      295(2)
+_diffrn_measured_fraction_theta_full 1.000
+_diffrn_measured_fraction_theta_max 1.000
+_diffrn_measurement_device_type  'Bruker Platform/SMART 1000 CCD'
+_diffrn_measurement_method       '\w scans (0.2\%)'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0462
+_diffrn_reflns_av_sigmaI/netI    0.0367
+_diffrn_reflns_limit_h_max       6
+_diffrn_reflns_limit_h_min       -6
+_diffrn_reflns_limit_k_max       6
+_diffrn_reflns_limit_k_min       -6
+_diffrn_reflns_limit_l_max       15
+_diffrn_reflns_limit_l_min       -15
+_diffrn_reflns_number            1248
+_diffrn_reflns_theta_full        32.90
+_diffrn_reflns_theta_max         32.90
+_diffrn_reflns_theta_min         4.09
+_exptl_absorpt_coefficient_mu    37.907
+_exptl_absorpt_correction_T_max  0.650
+_exptl_absorpt_correction_T_min  0.084
+_exptl_absorpt_correction_type   numerical
+_exptl_absorpt_process_details   '(SHELXTL; Sheldrick, 2001)'
+_exptl_crystal_colour            silver
+_exptl_crystal_density_diffrn    7.207
+_exptl_crystal_density_meas      ?
+_exptl_crystal_density_method    .
+_exptl_crystal_description       plate
+_exptl_crystal_F_000             358
+_exptl_crystal_size_max          0.10
+_exptl_crystal_size_mid          0.08
+_exptl_crystal_size_min          0.01
+_refine_diff_density_max         1.953
+_refine_diff_density_min         -1.984
+_refine_ls_abs_structure_details 'Flack (1983), 117 Friedel pairs'
+_refine_ls_abs_structure_Flack   0.58(6)
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.075
+_refine_ls_hydrogen_treatment    none
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     15
+_refine_ls_number_reflns         248
+_refine_ls_number_restraints     1
+_refine_ls_restrained_S_all      1.072
+_refine_ls_R_factor_all          0.0313
+_refine_ls_R_factor_gt           0.0307
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'w=1/[\s^2^(Fo^2^)+(0.0523P)^2^] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0749
+_refine_ls_wR_factor_ref         0.0752
+_reflns_number_gt                244
+_reflns_number_total             248
+_reflns_threshold_expression     I>2\s(I)
+_cod_data_source_file            wm6044.cif
+_cod_data_source_block           I
+_cod_database_code               2204979
+_cod_database_fobs_code          2204979
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y, z'
+'-y, x, z'
+'y, -x, z'
+'x, -y, z'
+'-x, y, z'
+'-y, -x, z'
+'y, x, z'
+'x+1/2, y+1/2, z+1/2'
+'-x+1/2, -y+1/2, z+1/2'
+'-y+1/2, x+1/2, z+1/2'
+'y+1/2, -x+1/2, z+1/2'
+'x+1/2, -y+1/2, z+1/2'
+'-x+1/2, y+1/2, z+1/2'
+'-y+1/2, -x+1/2, z+1/2'
+'y+1/2, x+1/2, z+1/2'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_occupancy
+_atom_site_type_symbol
+La 0.0000 0.0000 0.00000(8) 0.0068(2) Uani d S 1 La
+Fe 0.0000 0.0000 0.6636(2) 0.0048(5) Uani d S 1 Fe
+Ge1 0.0000 0.0000 0.43307(17) 0.0082(4) Uani d S 1 Ge
+Ge2 0.0000 0.5000 0.25686(14) 0.0090(3) Uani d S 1 Ge
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+La 0.0055(3) 0.0055(3) 0.0093(3) 0.000 0.000 0.000
+Fe 0.0027(7) 0.0027(7) 0.0090(9) 0.000 0.000 0.000
+Ge1 0.0069(4) 0.0069(4) 0.0107(9) 0.000 0.000 0.000
+Ge2 0.0048(7) 0.0116(8) 0.0107(5) 0.000 0.000 0.000
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Fe Fe 0.3463 0.8444 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ge Ge 0.1547 1.8001 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+La La -0.2871 2.4523 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+Ge1 La Ge1 9_444 9_554 155.60(6) no
+Ge1 La Ge1 9_444 9_454 87.440(13) no
+Ge1 La Ge1 9_554 9_454 87.440(13) no
+Ge1 La Ge1 9_444 9_544 87.440(13) no
+Ge1 La Ge1 9_554 9_544 87.440(13) no
+Ge1 La Ge1 9_454 9_544 155.60(6) no
+Ge1 La Ge2 9_444 11_544 51.72(3) no
+Ge1 La Ge2 9_554 11_544 107.78(3) no
+Ge1 La Ge2 9_454 11_544 107.78(3) no
+Ge1 La Ge2 9_544 11_544 51.72(3) no
+Ge1 La Ge2 9_444 9_444 51.72(3) no
+Ge1 La Ge2 9_554 9_444 107.78(3) no
+Ge1 La Ge2 9_454 9_444 51.72(3) no
+Ge1 La Ge2 9_544 9_444 107.78(3) no
+Ge2 La Ge2 11_544 9_444 56.47(2) no
+Ge1 La Ge2 9_444 11_554 107.78(3) no
+Ge1 La Ge2 9_554 11_554 51.72(3) no
+Ge1 La Ge2 9_454 11_554 51.72(3) no
+Ge1 La Ge2 9_544 11_554 107.78(3) no
+Ge2 La Ge2 11_544 11_554 83.99(4) no
+Ge2 La Ge2 9_444 11_554 56.47(2) no
+Ge1 La Ge2 9_444 9_544 107.78(3) no
+Ge1 La Ge2 9_554 9_544 51.72(3) no
+Ge1 La Ge2 9_454 9_544 107.78(3) no
+Ge1 La Ge2 9_544 9_544 51.72(3) no
+Ge2 La Ge2 11_544 9_544 56.47(2) no
+Ge2 La Ge2 9_444 9_544 83.99(4) no
+Ge2 La Ge2 11_554 9_544 56.47(2) no
+Ge1 La Fe 9_444 1_554 77.80(3) no
+Ge1 La Fe 9_554 1_554 77.80(3) no
+Ge1 La Fe 9_454 1_554 77.80(3) no
+Ge1 La Fe 9_544 1_554 77.80(3) no
+Ge2 La Fe 11_544 1_554 42.00(2) no
+Ge2 La Fe 9_444 1_554 42.00(2) no
+Ge2 La Fe 11_554 1_554 42.00(2) no
+Ge2 La Fe 9_544 1_554 42.00(2) no
+Ge1 La Ge2 9_444 . 127.53(3) no
+Ge1 La Ge2 9_554 . 73.29(3) no
+Ge1 La Ge2 9_454 . 73.29(3) no
+Ge1 La Ge2 9_544 . 127.53(3) no
+Ge2 La Ge2 11_544 . 178.44(4) no
+Ge2 La Ge2 9_444 . 124.447(5) no
+Ge2 La Ge2 11_554 . 97.565(9) no
+Ge2 La Ge2 9_544 . 124.447(5) no
+Fe La Ge2 1_554 . 139.562(19) no
+Ge1 La Ge2 9_444 3_655 127.53(3) no
+Ge1 La Ge2 9_554 3_655 73.29(3) no
+Ge1 La Ge2 9_454 3_655 127.53(3) no
+Ge1 La Ge2 9_544 3_655 73.29(3) no
+Ge2 La Ge2 11_544 3_655 124.447(5) no
+Ge2 La Ge2 9_444 3_655 178.44(4) no
+Ge2 La Ge2 11_554 3_655 124.447(5) no
+Ge2 La Ge2 9_544 3_655 97.565(9) no
+Fe La Ge2 1_554 3_655 139.562(19) no
+Ge2 La Ge2 . 3_655 54.60(2) no
+Ge1 La Ge2 9_444 1_545 73.29(3) no
+Ge1 La Ge2 9_554 1_545 127.53(3) no
+Ge1 La Ge2 9_454 1_545 127.53(3) no
+Ge1 La Ge2 9_544 1_545 73.29(3) no
+Ge2 La Ge2 11_544 1_545 97.565(9) no
+Ge2 La Ge2 9_444 1_545 124.447(5) no
+Ge2 La Ge2 11_554 1_545 178.44(4) no
+Ge2 La Ge2 9_544 1_545 124.447(5) no
+Fe La Ge2 1_554 1_545 139.562(19) no
+Ge2 La Ge2 . 1_545 80.88(4) no
+Ge2 La Ge2 3_655 1_545 54.60(2) no
+Ge1 La Ge2 9_444 3 73.29(3) no
+Ge1 La Ge2 9_554 3 127.53(3) no
+Ge1 La Ge2 9_454 3 73.29(3) no
+Ge1 La Ge2 9_544 3 127.53(3) no
+Ge2 La Ge2 11_544 3 124.447(5) no
+Ge2 La Ge2 9_444 3 97.565(9) no
+Ge2 La Ge2 11_554 3 124.447(5) no
+Ge2 La Ge2 9_544 3 178.44(4) no
+Fe La Ge2 1_554 3 139.562(19) no
+Ge2 La Ge2 . 3 54.60(2) no
+Ge2 La Ge2 3_655 3 80.88(4) no
+Ge2 La Ge2 1_545 3 54.60(2) no
+Ge1 La Fe 9_444 9_554 164.34(5) no
+Ge1 La Fe 9_554 9_554 40.06(4) no
+Ge1 La Fe 9_454 9_554 95.667(15) no
+Ge1 La Fe 9_544 9_554 95.667(15) no
+Ge2 La Fe 11_544 9_554 139.96(3) no
+Ge2 La Fe 9_444 9_554 139.96(3) no
+Ge2 La Fe 11_554 9_554 85.93(3) no
+Ge2 La Fe 9_544 9_554 85.93(3) no
+Fe La Fe 1_554 9_554 117.86(4) no
+Ge2 La Fe . 9_554 40.44(2) no
+Ge2 La Fe 3_655 9_554 40.44(2) no
+Ge2 La Fe 1_545 9_554 92.86(4) no
+Ge2 La Fe 3 9_554 92.86(4) no
+Ge1 La Fe 9_444 9_444 40.06(4) no
+Ge1 La Fe 9_554 9_444 164.34(5) no
+Ge1 La Fe 9_454 9_444 95.667(15) no
+Ge1 La Fe 9_544 9_444 95.667(15) no
+Ge2 La Fe 11_544 9_444 85.93(3) no
+Ge2 La Fe 9_444 9_444 85.93(3) no
+Ge2 La Fe 11_554 9_444 139.96(3) no
+Ge2 La Fe 9_544 9_444 139.96(3) no
+Fe La Fe 1_554 9_444 117.86(4) no
+Ge2 La Fe . 9_444 92.86(4) no
+Ge2 La Fe 3_655 9_444 92.86(4) no
+Ge2 La Fe 1_545 9_444 40.44(2) no
+Ge2 La Fe 3 9_444 40.44(2) no
+Fe La Fe 9_554 9_444 124.29(7) no
+Ge1 La Fe 9_444 9_544 95.667(15) no
+Ge1 La Fe 9_554 9_544 95.667(15) no
+Ge1 La Fe 9_454 9_544 164.34(5) no
+Ge1 La Fe 9_544 9_544 40.06(4) no
+Ge2 La Fe 11_544 9_544 85.93(3) no
+Ge2 La Fe 9_444 9_544 139.96(3) no
+Ge2 La Fe 11_554 9_544 139.96(3) no
+Ge2 La Fe 9_544 9_544 85.93(3) no
+Fe La Fe 1_554 9_544 117.86(4) no
+Ge2 La Fe . 9_544 92.86(4) no
+Ge2 La Fe 3_655 9_544 40.44(2) no
+Ge2 La Fe 1_545 9_544 40.44(2) no
+Ge2 La Fe 3 9_544 92.86(4) no
+Fe La Fe 9_554 9_544 77.39(3) no
+Fe La Fe 9_444 9_544 77.39(3) no
+Ge1 La Fe 9_444 9_454 95.667(15) no
+Ge1 La Fe 9_554 9_454 95.667(15) no
+Ge1 La Fe 9_454 9_454 40.06(4) no
+Ge1 La Fe 9_544 9_454 164.34(5) no
+Ge2 La Fe 11_544 9_454 139.96(3) no
+Ge2 La Fe 9_444 9_454 85.93(3) no
+Ge2 La Fe 11_554 9_454 85.93(3) no
+Ge2 La Fe 9_544 9_454 139.96(3) no
+Fe La Fe 1_554 9_454 117.86(4) no
+Ge2 La Fe . 9_454 40.44(2) no
+Ge2 La Fe 3_655 9_454 92.86(4) no
+Ge2 La Fe 1_545 9_454 92.86(4) no
+Ge2 La Fe 3 9_454 40.44(2) no
+Fe La Fe 9_554 9_454 77.39(3) no
+Fe La Fe 9_444 9_454 77.39(3) no
+Fe La Fe 9_544 9_454 124.29(7) no
+Ge1 Fe Ge2 . 11 113.07(5) no
+Ge1 Fe Ge2 . 9_545 113.07(5) no
+Ge2 Fe Ge2 11 9_545 81.16(4) no
+Ge1 Fe Ge2 . 11_545 113.07(5) no
+Ge2 Fe Ge2 11 11_545 133.85(10) no
+Ge2 Fe Ge2 9_545 11_545 81.16(4) no
+Ge1 Fe Ge2 . 9_445 113.07(5) no
+Ge2 Fe Ge2 11 9_445 81.16(4) no
+Ge2 Fe Ge2 9_545 9_445 133.85(10) no
+Ge2 Fe Ge2 11_545 9_445 81.16(4) no
+Ge1 Fe La . 1_556 180.0 no
+Ge2 Fe La 11 1_556 66.93(5) no
+Ge2 Fe La 9_545 1_556 66.93(5) no
+Ge2 Fe La 11_545 1_556 66.93(5) no
+Ge2 Fe La 9_445 1_556 66.93(5) no
+Ge1 Fe La . 9_445 62.14(4) no
+Ge2 Fe La 11 9_445 139.313(13) no
+Ge2 Fe La 9_545 9_445 139.313(13) no
+Ge2 Fe La 11_545 9_445 66.92(3) no
+Ge2 Fe La 9_445 9_445 66.92(3) no
+La Fe La 1_556 9_445 117.86(4) no
+Ge1 Fe La . 9 62.14(4) no
+Ge2 Fe La 11 9 66.92(3) no
+Ge2 Fe La 9_545 9 66.92(3) no
+Ge2 Fe La 11_545 9 139.313(13) no
+Ge2 Fe La 9_445 9 139.313(13) no
+La Fe La 1_556 9 117.86(4) no
+La Fe La 9_445 9 124.29(7) no
+Ge1 Fe La . 9_455 62.14(4) no
+Ge2 Fe La 11 9_455 66.92(3) no
+Ge2 Fe La 9_545 9_455 139.313(13) no
+Ge2 Fe La 11_545 9_455 139.313(13) no
+Ge2 Fe La 9_445 9_455 66.92(3) no
+La Fe La 1_556 9_455 117.86(4) no
+La Fe La 9_445 9_455 77.39(3) no
+La Fe La 9 9_455 77.39(3) no
+Ge1 Fe La . 9_545 62.14(4) no
+Ge2 Fe La 11 9_545 139.313(13) no
+Ge2 Fe La 9_545 9_545 66.92(3) no
+Ge2 Fe La 11_545 9_545 66.92(3) no
+Ge2 Fe La 9_445 9_545 139.313(13) no
+La Fe La 1_556 9_545 117.86(4) no
+La Fe La 9_445 9_545 77.39(3) no
+La Fe La 9 9_545 77.39(3) no
+La Fe La 9_455 9_545 124.29(7) no
+Fe Ge1 Ge2 . 3 128.83(4) no
+Fe Ge1 Ge2 . 1_545 128.83(4) no
+Ge2 Ge1 Ge2 3 1_545 66.85(4) no
+Fe Ge1 Ge2 . 3_655 128.83(4) no
+Ge2 Ge1 Ge2 3 3_655 102.33(8) no
+Ge2 Ge1 Ge2 1_545 3_655 66.85(4) no
+Fe Ge1 Ge2 . . 128.83(4) no
+Ge2 Ge1 Ge2 3 . 66.85(4) no
+Ge2 Ge1 Ge2 1_545 . 102.33(8) no
+Ge2 Ge1 Ge2 3_655 . 66.85(4) no
+Fe Ge1 La . 9 77.80(3) no
+Ge2 Ge1 La 3 9 132.14(3) no
+Ge2 Ge1 La 1_545 9 132.14(3) no
+Ge2 Ge1 La 3_655 9 66.055(19) no
+Ge2 Ge1 La . 9 66.055(19) no
+Fe Ge1 La . 9_445 77.80(3) no
+Ge2 Ge1 La 3 9_445 66.055(19) no
+Ge2 Ge1 La 1_545 9_445 66.055(19) no
+Ge2 Ge1 La 3_655 9_445 132.14(3) no
+Ge2 Ge1 La . 9_445 132.14(3) no
+La Ge1 La 9 9_445 155.60(6) no
+Fe Ge1 La . 9_545 77.80(3) no
+Ge2 Ge1 La 3 9_545 132.14(3) no
+Ge2 Ge1 La 1_545 9_545 66.055(19) no
+Ge2 Ge1 La 3_655 9_545 66.055(19) no
+Ge2 Ge1 La . 9_545 132.14(3) no
+La Ge1 La 9 9_545 87.440(13) no
+La Ge1 La 9_445 9_545 87.440(13) no
+Fe Ge1 La . 9_455 77.80(3) no
+Ge2 Ge1 La 3 9_455 66.055(19) no
+Ge2 Ge1 La 1_545 9_455 132.14(3) no
+Ge2 Ge1 La 3_655 9_455 132.14(3) no
+Ge2 Ge1 La . 9_455 66.055(19) no
+La Ge1 La 9 9_455 87.440(13) no
+La Ge1 La 9_445 9_455 87.440(13) no
+La Ge1 La 9_545 9_455 155.60(6) no
+Fe Ge2 Fe 9_454 9_554 133.85(10) no
+Fe Ge2 Ge1 9_454 1_565 104.23(3) no
+Fe Ge2 Ge1 9_554 1_565 104.23(3) no
+Fe Ge2 Ge1 9_454 . 104.23(3) no
+Fe Ge2 Ge1 9_554 . 104.23(3) no
+Ge1 Ge2 Ge1 1_565 . 102.33(8) no
+Fe Ge2 Ge2 9_454 3_665 130.582(18) no
+Fe Ge2 Ge2 9_554 3_665 49.418(18) no
+Ge1 Ge2 Ge2 1_565 3_665 56.58(2) no
+Ge1 Ge2 Ge2 . 3_665 123.42(2) no
+Fe Ge2 Ge2 9_454 3 49.418(18) no
+Fe Ge2 Ge2 9_554 3 130.582(18) no
+Ge1 Ge2 Ge2 1_565 3 123.42(2) no
+Ge1 Ge2 Ge2 . 3 56.58(2) no
+Ge2 Ge2 Ge2 3_665 3 180.00(10) no
+Fe Ge2 Ge2 9_454 3_565 49.418(18) no
+Fe Ge2 Ge2 9_554 3_565 130.582(18) no
+Ge1 Ge2 Ge2 1_565 3_565 56.58(2) no
+Ge1 Ge2 Ge2 . 3_565 123.42(2) no
+Ge2 Ge2 Ge2 3_665 3_565 90.0 no
+Ge2 Ge2 Ge2 3 3_565 90.0 no
+Fe Ge2 Ge2 9_454 3_655 130.582(18) no
+Fe Ge2 Ge2 9_554 3_655 49.418(18) no
+Ge1 Ge2 Ge2 1_565 3_655 123.42(2) no
+Ge1 Ge2 Ge2 . 3_655 56.58(2) no
+Ge2 Ge2 Ge2 3_665 3_655 90.0 no
+Ge2 Ge2 Ge2 3 3_655 90.0 no
+Ge2 Ge2 Ge2 3_565 3_655 180.00(10) no
+Fe Ge2 La 9_454 9 155.07(6) no
+Fe Ge2 La 9_554 9 71.08(5) no
+Ge1 Ge2 La 1_565 9 62.22(3) no
+Ge1 Ge2 La . 9 62.22(3) no
+Ge2 Ge2 La 3_665 9 61.763(12) no
+Ge2 Ge2 La 3 9 118.237(12) no
+Ge2 Ge2 La 3_565 9 118.237(12) no
+Ge2 Ge2 La 3_655 9 61.763(12) no
+Fe Ge2 La 9_454 9_455 71.08(5) no
+Fe Ge2 La 9_554 9_455 155.07(6) no
+Ge1 Ge2 La 1_565 9_455 62.22(3) no
+Ge1 Ge2 La . 9_455 62.22(3) no
+Ge2 Ge2 La 3_665 9_455 118.237(12) no
+Ge2 Ge2 La 3 9_455 61.763(12) no
+Ge2 Ge2 La 3_565 9_455 61.763(12) no
+Ge2 Ge2 La 3_655 9_455 118.237(12) no
+La Ge2 La 9 9_455 83.99(4) no
+Fe Ge2 La 9_454 . 72.64(4) no
+Fe Ge2 La 9_554 . 72.64(4) no
+Ge1 Ge2 La 1_565 . 169.27(5) no
+Ge1 Ge2 La . . 88.39(3) no
+Ge2 Ge2 La 3_665 . 117.300(12) no
+Ge2 Ge2 La 3 . 62.700(12) no
+Ge2 Ge2 La 3_565 . 117.300(12) no
+Ge2 Ge2 La 3_655 . 62.700(12) no
+La Ge2 La 9 . 124.447(5) no
+La Ge2 La 9_455 . 124.447(5) no
+Fe Ge2 La 9_454 1_565 72.64(4) no
+Fe Ge2 La 9_554 1_565 72.64(4) no
+Ge1 Ge2 La 1_565 1_565 88.39(3) no
+Ge1 Ge2 La . 1_565 169.27(5) no
+Ge2 Ge2 La 3_665 1_565 62.700(12) no
+Ge2 Ge2 La 3 1_565 117.300(12) no
+Ge2 Ge2 La 3_565 1_565 62.700(12) no
+Ge2 Ge2 La 3_655 1_565 117.300(12) no
+La Ge2 La 9 1_565 124.447(5) no
+La Ge2 La 9_455 1_565 124.447(5) no
+La Ge2 La . 1_565 80.88(4) no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+La Ge1 9_444 3.1586(5) no
+La Ge1 9_554 3.1586(5) no
+La Ge1 9_454 3.1586(5) no
+La Ge1 9_544 3.1586(5) yes
+La Ge2 11_544 3.2627(13) no
+La Ge2 9_444 3.2627(13) no
+La Ge2 11_554 3.2627(13) no
+La Ge2 9_544 3.2627(13) yes
+La Fe 1_554 3.355(3) yes
+La Ge2 . 3.3656(13) yes
+La Ge2 3_655 3.3656(13) no
+La Ge2 1_545 3.3656(13) no
+La Ge2 3 3.3656(13) no
+La Fe 9_554 3.4918(12) no
+La Fe 9_444 3.4918(12) no
+La Fe 9_544 3.4918(12) yes
+La Fe 9_454 3.4918(12) no
+Fe Ge1 . 2.299(3) yes
+Fe Ge2 11 2.3728(9) no
+Fe Ge2 9_545 2.3728(9) yes
+Fe Ge2 11_545 2.3728(9) no
+Fe Ge2 9_445 2.3728(9) no
+Fe La 1_556 3.355(3) no
+Fe La 9_445 3.4918(12) no
+Fe La 9 3.4918(12) no
+Fe La 9_455 3.4918(12) no
+Fe La 9_545 3.4918(12) no
+Ge1 Ge2 3 2.8024(16) no
+Ge1 Ge2 1_545 2.8024(16) no
+Ge1 Ge2 3_655 2.8024(16) no
+Ge1 Ge2 . 2.8024(16) yes
+Ge1 La 9 3.1586(5) no
+Ge1 La 9_445 3.1586(5) no
+Ge1 La 9_545 3.1586(5) no
+Ge1 La 9_455 3.1586(5) no
+Ge2 Fe 9_454 2.3728(9) no
+Ge2 Fe 9_554 2.3728(9) no
+Ge2 Ge1 1_565 2.8024(16) no
+Ge2 Ge2 3_665 3.0872(4) no
+Ge2 Ge2 3 3.0872(4) yes
+Ge2 Ge2 3_565 3.0872(4) no
+Ge2 Ge2 3_655 3.0872(4) no
+Ge2 La 9 3.2627(13) no
+Ge2 La 9_455 3.2627(13) no
+Ge2 La 1_565 3.3656(13) no

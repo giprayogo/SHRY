@@ -1,0 +1,82 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/4/34/36/4343675.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4343675
+loop_
+_publ_author_name
+'Marynick, D.S.'
+'Lipscomb, W.N.'
+_publ_section_title
+;
+ Crystal structure of beryllium borohydride
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              820
+_journal_page_last               823
+_journal_volume                  11
+_journal_year                    1972
+_chemical_formula_sum            'B2 Be H8'
+_chemical_name_systematic        'Be (B H4)2'
+_space_group_IT_number           110
+_symmetry_space_group_name_Hall  'I 4bw -2c'
+_symmetry_space_group_name_H-M   'I 41 c d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            16
+_cell_length_a                   13.62
+_cell_length_b                   13.62
+_cell_length_c                   9.1
+_cell_volume                     1688.090
+_citation_journal_id_ASTM        INOCAJ
+_cod_data_source_file            Marynick_INOCAJ_1972_1650.cif
+_cod_data_source_block           H8B2Be1
+_cod_original_cell_volume        1688.09
+_cod_original_formula_sum        'H8 B2 Be1'
+_cod_database_code               4343675
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x+1/2,z+1/4
+-x+1/2,-y+1/2,z+1/2
+y+1/2,-x,z+3/4
+-x,y,z+1/2
+-y,-x+1/2,z+3/4
+x+1/2,-y+1/2,z
+y+1/2,x,z+1/4
+x+1/2,y+1/2,z+1/2
+-y+1/2,x+1,z+3/4
+-x+1,-y+1,z+1
+y+1,-x+1/2,z+5/4
+-x+1/2,y+1/2,z+1
+-y+1/2,-x+1,z+5/4
+x+1,-y+1,z+1/2
+y+1,x+1/2,z+3/4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+H5 H-1 0.1054 0.1564 0.0252 1 0.0
+H7 H-1 0.145 0.2714 0.1015 1 0.0
+H3 H-1 0.2069 -0.0033 0.0982 1 0.0
+H4 H-1 0.1413 0.0083 -0.0841 1 0.0
+B1 B+3 0.1638 -0.0491 0.009 1 0.0
+B2 B+3 0.1386 0.1935 0.1204 1 0.0
+H8 H-1 0.0899 0.185 0.2261 1 0.0
+Be1 Be+2 0.1998 0.0869 0 1 0.0
+H6 H-1 0.2122 0.1626 0.1404 1 0.0
+H1 H-1 0.0955 -0.0687 0.0598 1 0.0
+H2 H-1 0.2193 -0.1012 -0.0418 1 0.0

@@ -1,0 +1,60 @@
+# generated using pymatgen
+data_Fr0.5Rb6Na20Al4H25.5Se5.5O25Lv1.5
+_symmetry_space_group_name_H-M   P4_32_12
+_cell_length_a   9.35000000
+_cell_length_b   9.35000000
+_cell_length_c   9.61000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   96
+_chemical_formula_structural   Fr0.5Rb6Na20Al4H25.5Se5.5O25Lv1.5
+_chemical_formula_sum   'Fr0.5 Rb6 Na20 Al4 H25.5 Se5.5 O25 Lv1.5'
+_cell_volume   840.13022500
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z+3/4'
+  3  '-x, -y, z+1/2'
+  4  'y+1/2, -x+1/2, z+1/4'
+  5  'x+1/2, -y+1/2, -z+1/4'
+  6  '-y, -x, -z+1/2'
+  7  '-x+1/2, y+1/2, -z+3/4'
+  8  'y, x, -z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Fr0+  0.0
+  Rb0+  0.0
+  Na0+  0.0
+  Al0+  0.0
+  H0+  0.0
+  Se0+  0.0
+  O0+  0.0
+  Lv0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na0+  Na0  8  0.11276000  0.63025000  0.52723000  1.0
+  Na0+  Na1  8  0.12249000  0.36756000  0.26783000  1.0
+  Na0+  Na2  4  0.12479000  0.12479000  0.00000000  1.0
+  Rb0+  Rb3  8  0.12210000  0.71750000  0.78720000  0.75
+  H0+  H4  8  0.12210000  0.71750000  0.78720000  0.1875
+  Fr0+  Fr5  8  0.12210000  0.71750000  0.78720000  0.0625
+  Al0+  Al6  4  0.12756000  0.87244000  0.25000000  1.0
+  H0+  H7  8  0.05760000  0.85920000  0.02590000  1.0
+  H0+  H8  8  0.07290000  0.10790000  0.28480000  1.0
+  H0+  H9  8  0.14380000  0.30680000  0.54030000  1.0
+  O0+  O10  8  0.07892000  0.13353000  0.74610000  1.0
+  O0+  O11  8  0.12094000  0.63869000  0.77264000  1.0
+  O0+  O12  8  0.12763000  0.87102000  0.04807000  1.0
+  Se0+  Se13  8  0.12507000  0.66590000  0.26101000  0.6875
+  Lv0+  Lv14  8  0.12507000  0.66590000  0.26101000  0.1875
+  O0+  O15  8  0.12507000  0.66590000  0.26101000  0.125

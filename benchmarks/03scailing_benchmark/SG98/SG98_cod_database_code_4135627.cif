@@ -1,0 +1,226 @@
+#------------------------------------------------------------------------------
+#$Date: 2021-03-04 04:53:38 +0200 (Thu, 04 Mar 2021) $
+#$Revision: 262445 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/4/13/56/4135627.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4135627
+loop_
+_publ_author_name
+'Han, Xue'
+'Lu, Wanpeng'
+'Chen, Yinlin'
+'da Silva, Ivan'
+'Li, Jiangnan'
+'Lin, Longfei'
+'Li, Weiyao'
+'Sheveleva, Alena M.'
+'Godfrey, Harry G. W.'
+'Lu, Zhenzhong'
+'Tuna, Floriana'
+'McInnes, Eric J. L.'
+'Cheng, Yongqiang'
+'Daemen, Luke L.'
+'McPherson, Laura J McCormick'
+'Teat, Simon J.'
+'Frogley, Mark D.'
+'Rudi\'c, Svemir'
+'Manuel, Pascal'
+'Ramirez-Cuesta, Anibal J'
+'Yang, Sihai'
+'Schr\"oder, Martin'
+_publ_section_title
+;
+ High Ammonia Adsorption in MFM-300 Materials: Dynamics and Charge
+ Transfer in Host-Guest Binding.
+;
+_journal_issue                   8
+_journal_name_full               'Journal of the American Chemical Society'
+_journal_page_first              3153
+_journal_page_last               3161
+_journal_paper_doi               10.1021/jacs.0c11930
+_journal_volume                  143
+_journal_year                    2021
+_chemical_formula_moiety         'C8 H4 O5 V'
+_chemical_formula_sum            'C8 H4 O5 V'
+_chemical_formula_weight         231.05
+_chemical_name_mineral           MFM-300-V(III)_empty
+_space_group_IT_number           98
+_space_group_name_Hall           'I 4bw 2bw'
+_space_group_name_H-M_alt        'I 41 2 2'
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  'I 4bw 2bw'
+_symmetry_space_group_name_H-M   'I 41 2 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            8
+_cell_length_a                   15.1215(16)
+_cell_length_b                   15.1215(16)
+_cell_length_c                   12.0683(13)
+_cell_measurement_temperature    7
+_cell_volume                     2759.5(5)
+_diffrn_ambient_temperature      7
+_diffrn_measurement_device_type  'WISH Diffractometer @ ISIS Neutron Facility'
+_diffrn_radiation_type           neutron
+_diffrn_source                   'spallation source'
+_exptl_crystal_density_diffrn    1.11240
+_pd_meas_scan_method             continuous
+_pd_proc_ls_prof_R_factor        1.75241636
+_pd_proc_ls_prof_wR_expected     0.330342853
+_pd_proc_ls_prof_wR_factor       2.04174335
+_pd_spec_mounting                'vanadium can'
+_pd_spec_mount_mode              transmission
+_pd_spec_shape                   cylinder
+_refine_ls_goodness_of_fit_all   6.18067965
+_refine_ls_R_factor_all          0.801435905
+_refine_ls_shift/su_max          0.001
+_cod_data_source_file            MFM-300-V(III)_Empty.cif
+_cod_data_source_block           MFM-300-V(III)_empty
+_cod_depositor_comments
+'Adding full bibliography for 4135625--4135631.cif.'
+_cod_original_cell_volume        2759.5(7)
+_cod_original_sg_symbol_H-M      I4122
+_cod_database_code               4135627
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -y,1/2+x,1/4+z
+3 1/2-x,1/2-y,1/2+z
+4 1/2+y,-x,3/4+z
+5 x,1/2-y,1/4-z
+6 1/2+y,1/2+x,1/2-z
+7 1/2-x,y,3/4-z
+8 -y,-x,-z
+9 1/2+x,1/2+y,1/2+z
+10 1/2-y,x,3/4+z
+11 -x,-y,z
+12 y,1/2-x,1/4+z
+13 1/2+x,-y,3/4-z
+14 y,x,-z
+15 -x,1/2+y,1/4-z
+16 1/2-y,1/2-x,1/2-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_B_iso_or_equiv
+V V 8 0.683(4) 0.317(4) 0.5 1 0(2)
+O1 O 8 0.7508(4) 0.25 0.625 1 2.06(10)
+O2 O 16 0.6129(6) 0.3772(6) 0.6054(4) 1 2.06(10)
+O3 O 16 0.6054(6) 0.2914(4) 0.7487(6) 1 2.06(10)
+C1 C 16 0.5886(4) 0.3634(3) 0.7028(3) 1 1.46(6)
+C2 C 16 0.54075(15) 0.43136(12) 0.7627(3) 1 1.46(6)
+C3 C 8 0.5 0.5 0.7050(3) 1 1.46(6)
+C4 C 16 0.54075(15) 0.43136(12) 0.87821(18) 1 1.46(6)
+C5 C 8 0.5 0.5 0.93595(17) 1 1.46(6)
+H1 H 8 0.8152(8) 0.25 0.625 1 2.06(10)
+H3 H 8 0.5 0.5 0.6180(5) 1 1.46(6)
+H4 H 16 0.5714(3) 0.3797(3) 0.9217(3) 1 1.46(6)
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+O1 V O2 91.3(3) . . . no
+O1 V O1 93(2) . . 4_564 no
+O1 V O3 84(2) . . 4_564 no
+O1 V O3 83.4(19) . . 5_556 no
+O1 V O2 175(3) . . 8_666 no
+O1 V O2 175(3) 4_564 . . no
+O2 V O3 100(2) . . 4_564 no
+O2 V O3 93(2) . . 5_556 no
+O2 V O2 85(2) . . 8_666 no
+O1 V O3 83(2) 4_564 . 4_564 no
+O1 V O3 84(2) 4_564 . 5_556 no
+O1 V O2 91.3(2) 4_564 . 8_666 no
+O3 V O3 161(3) 4_564 . 5_556 no
+O2 V O3 93(2) 8_666 . 4_564 no
+O2 V O3 100(2) 8_666 . 5_556 no
+V O1 V 121(2) . . 2_645 no
+V O2 C1 135.9(15) . . . no
+V O3 C1 146.3(12) 2_645 . . no
+V O1 H1 119.4(15) . . . no
+V O1 H1 119.4(15) 2_645 . . no
+O2 C1 O3 120.2(7) . . . no
+O2 C1 C2 119.8(5) . . . no
+O3 C1 C2 119.9(5) . . . no
+C1 C2 C3 120.0(3) . . . no
+C3 C2 C4 120.0(2) . . . no
+C1 C2 C4 119.9(2) . . . no
+C2 C3 C2 120.0(3) . . 11_665 no
+C2 C4 C5 120.00(18) . . . no
+C4 C5 C5 120.00(11) 11_665 . 8_667 no
+C4 C5 C5 120.00(11) . . 8_667 no
+C4 C5 C4 120.01(19) . . 11_665 no
+C2 C3 H3 119.98(19) . . . no
+C2 C3 H3 119.98(19) 11_665 . . no
+C2 C4 H4 120.0(3) . . . no
+C5 C4 H4 120.0(3) . . . no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+V O1 2.09(4) . . no
+V O2 1.89(5) . . no
+V O1 2.09(4) . 4_564 no
+V O3 2.02(6) . 4_564 no
+V O3 2.02(6) . 5_556 no
+V O2 1.89(5) . 8_666 no
+O2 C1 1.249(7) . . no
+O3 C1 1.248(8) . . no
+O1 H1 0.974(14) . . no
+C1 C2 1.450(5) . . no
+C2 C3 1.394(3) . . no
+C2 C4 1.394(4) . . no
+C4 C5 1.394(2) . . no
+C5 C5 1.546(3) . 8_667 no
+C3 H3 1.050(7) . . no
+C4 H4 1.049(5) . . no
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_site_symmetry_1
+_geom_torsion_site_symmetry_2
+_geom_torsion_site_symmetry_3
+_geom_torsion_site_symmetry_4
+_geom_torsion_publ_flag
+O1 V O2 C1 -25(4) . . . . no
+O3 V O2 C1 -108(2) 4_564 . . . no
+O3 V O2 C1 59(3) 5_556 . . . no
+O2 V O2 C1 159.2(11) 8_666 . . . no
+V O2 C1 O3 -7(3) . . . . no
+V O2 C1 C2 174(3) . . . . no
+V O3 C1 O2 21(3) 2_645 . . . no
+V O3 C1 C2 -159(2) 2_645 . . . no
+O2 C1 C2 C3 18.4(7) . . . . no
+O2 C1 C2 C4 -157.2(6) . . . . no
+O3 C1 C2 C3 -161.7(6) . . . . no
+O3 C1 C2 C4 22.8(7) . . . . no
+C1 C2 C3 C2 -175.6(3) . . . 11_665 no
+C4 C2 C3 C2 0.0(2) . . . 11_665 no
+C1 C2 C4 C5 175.6(3) . . . . no
+C3 C2 C4 C5 0.0(3) . . . . no
+C2 C4 C5 C5 179.98(16) . . . 8_667 no
+C2 C4 C5 C4 0.0(2) . . . 11_665 no

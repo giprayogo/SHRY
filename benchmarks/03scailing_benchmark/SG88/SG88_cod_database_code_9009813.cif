@@ -1,0 +1,77 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/98/9009813.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009813
+loop_
+_publ_author_name
+'Chipaux, R.'
+'Andre, G.'
+'Cousson, A.'
+_publ_section_title
+;
+ Crystal structure of lead tungstate at 1.4 and 300 K
+ Sample: Yellow, T = 290 K
+ Locality: synthetic
+ Note: Scheelite structure
+;
+_journal_name_full               'Journal of Alloys and Compounds'
+_journal_page_first              91
+_journal_page_last               94
+_journal_paper_doi               10.1016/S0925-8388(01)01367-6
+_journal_volume                  325
+_journal_year                    2001
+_chemical_formula_sum            'O4 Pb W'
+_chemical_name_mineral           Stolzite
+_space_group_IT_number           88
+_symmetry_space_group_name_Hall  '-I 4ad'
+_symmetry_space_group_name_H-M   'I 41/a :2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   5.43241
+_cell_length_b                   5.43241
+_cell_length_c                   12.04817
+_cell_volume                     355.554
+_diffrn_ambient_temperature      290
+_exptl_crystal_density_diffrn    8.501
+_cod_original_sg_symbol_H-M      'I 41/a'
+_cod_original_formula_sum        'Pb W O4'
+_cod_database_code               9009813
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+x,1/2+y,1/2+z
+3/4+y,1/4-x,1/4-z
+1/4+y,3/4-x,3/4-z
+3/4-y,1/4+x,1/4+z
+1/4-y,3/4+x,3/4+z
+1/2+x,y,1/2-z
++x,1/2+y,-z
+1/2-x,-y,1/2+z
+-x,1/2-y,+z
+3/4-y,3/4+x,3/4-z
+1/4-y,1/4+x,1/4-z
+3/4+y,3/4-x,3/4+z
+1/4+y,1/4-x,1/4+z
+-x,-y,-z
+1/2-x,1/2-y,1/2-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Pb 0.00000 0.25000 0.62500
+W 0.00000 0.25000 0.12500
+O 0.23416 0.10844 0.04083

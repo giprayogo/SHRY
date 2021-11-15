@@ -1,0 +1,539 @@
+#------------------------------------------------------------------------------
+#$Date: 2019-10-07 09:55:39 +0300 (Mon, 07 Oct 2019) $
+#$Revision: 219116 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/7/23/43/7234399.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7234399
+loop_
+_publ_author_name
+'Alessia Provino'
+'Simon Steinberg'
+'Volodymyr Smetana'
+'Ruta Kulkarni'
+'Sudesh K. Dhar'
+'Pietro Manfrinetti'
+'Anja-Verena Mudring'
+_publ_section_title
+;
+ Gold-rich R3Au7Sn3: establishing the interdependence between electronic
+ features and physical properties
+;
+_journal_name_full               'Journal of Materials Chemistry C'
+_journal_page_first              8311
+_journal_page_last               8321
+_journal_paper_doi               10.1039/C5TC00884K
+_journal_volume                  3
+_journal_year                    2015
+_chemical_formula_sum            'Au7 Gd3 Sn3'
+_chemical_formula_weight         2206.59
+_space_group_crystal_system      hexagonal
+_space_group_IT_number           176
+_space_group_name_Hall           '-P 6c'
+_space_group_name_H-M_alt        'P 63/m'
+_atom_sites_solution_hydrogens   .
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            2
+_cell_length_a                   8.185(3)
+_cell_length_b                   8.185(3)
+_cell_length_c                   9.415(3)
+_cell_measurement_temperature    296(2)
+_cell_volume                     546.2(3)
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 2008)'
+_diffrn_ambient_temperature      296(2)
+_diffrn_measured_fraction_theta_full 0.991
+_diffrn_measured_fraction_theta_max 0.992
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0785
+_diffrn_reflns_av_unetI/netI     0.0399
+_diffrn_reflns_Laue_measured_fraction_full 0.991
+_diffrn_reflns_Laue_measured_fraction_max 0.992
+_diffrn_reflns_limit_h_max       10
+_diffrn_reflns_limit_h_min       -10
+_diffrn_reflns_limit_k_max       9
+_diffrn_reflns_limit_k_min       -10
+_diffrn_reflns_limit_l_max       11
+_diffrn_reflns_limit_l_min       -11
+_diffrn_reflns_number            2917
+_diffrn_reflns_point_group_measured_fraction_full 0.991
+_diffrn_reflns_point_group_measured_fraction_max 0.992
+_diffrn_reflns_theta_full        25.242
+_diffrn_reflns_theta_max         26.058
+_diffrn_reflns_theta_min         4.982
+_exptl_absorpt_coefficient_mu    118.165
+_exptl_absorpt_correction_T_max  0.31
+_exptl_absorpt_correction_T_min  0.22
+_exptl_absorpt_correction_type   empirical
+_exptl_crystal_density_diffrn    13.416
+_exptl_crystal_description       'irregular fragment'
+_exptl_crystal_F_000             1790
+_exptl_crystal_size_max          0.1
+_exptl_crystal_size_mid          0.08
+_exptl_crystal_size_min          0.06
+_refine_diff_density_max         3.000
+_refine_diff_density_min         -2.813
+_refine_diff_density_rms         0.559
+_refine_ls_extinction_coef       0.00028(4)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.096
+_refine_ls_hydrogen_treatment    undef
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     25
+_refine_ls_number_reflns         385
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.096
+_refine_ls_R_factor_all          0.0394
+_refine_ls_R_factor_gt           0.0295
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'w=1/[\s^2^(Fo^2^)+(0.0166P)^2^] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0593
+_refine_ls_wR_factor_ref         0.0622
+_reflns_Friedel_coverage         0.000
+_reflns_Friedel_fraction_full    .
+_reflns_Friedel_fraction_max     .
+_reflns_number_gt                329
+_reflns_number_total             385
+_reflns_threshold_expression     'I > 2\s(I)'
+_cod_data_source_file            J-Mater-Chem-C-2015-3-8311.cif
+_cod_data_source_block           Gd3Au7Sn3
+_cod_original_cell_volume        546.2(4)
+_cod_database_code               7234399
+_shelx_space_group_comment
+;
+The symmetry employed for this shelxl refinement is uniquely defined
+by the following loop, which should always be used as a source of
+symmetry information in preference to the above space-group names.
+They are only intended as comments.
+;
+loop_
+_space_group_symop_operation_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'-x, -y, z+1/2'
+'y, -x+y, z+1/2'
+'x-y, x, z+1/2'
+'-x, -y, -z'
+'y, -x+y, -z'
+'x-y, x, -z'
+'x, y, -z-1/2'
+'-y, x-y, -z-1/2'
+'-x+y, -x, -z-1/2'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_site_symmetry_order
+_atom_site_calc_flag
+_atom_site_refinement_flags_posn
+_atom_site_refinement_flags_adp
+_atom_site_refinement_flags_occupancy
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Au1 Au 0.6667 0.3333 0.2500 0.0078(4) Uani 1 6 d S T P . .
+Au2 Au 0.35205(11) 0.01780(11) 0.09569(7) 0.0085(3) Uani 1 1 d . . . . .
+Gd3 Gd 0.29928(19) 0.32040(19) 0.2500 0.0060(3) Uani 1 2 d S T P . .
+Sn4 Sn 0.3333 0.6667 0.0424(2) 0.0057(5) Uani 1 3 d S T P . .
+Sn5 Sn 0.0000 0.0000 0.0000 0.0058(7) Uani 1 6 d S T P . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Au1 0.0095(6) 0.0095(6) 0.0045(8) 0.000 0.000 0.0048(3)
+Au2 0.0099(4) 0.0079(4) 0.0057(4) -0.0001(3) 0.0013(3) 0.0029(3)
+Gd3 0.0090(8) 0.0085(7) 0.0026(5) 0.000 0.000 0.0061(6)
+Sn4 0.0061(7) 0.0061(7) 0.0048(10) 0.000 0.000 0.0031(4)
+Sn5 0.0059(10) 0.0059(10) 0.0055(14) 0.000 0.000 0.0029(5)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Sn Sn -0.6537 1.4246 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Gd Gd -0.1653 3.9035 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Au Au -2.0133 8.8022 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+Sn4 Au1 Sn4 180.0 4_665 7_665
+Sn4 Au1 Gd3 90.0 4_665 2_655
+Sn4 Au1 Gd3 90.0 7_665 2_655
+Sn4 Au1 Gd3 90.0 4_665 3_665
+Sn4 Au1 Gd3 90.0 7_665 3_665
+Gd3 Au1 Gd3 120.0 2_655 3_665
+Sn4 Au1 Gd3 90.0 4_665 .
+Sn4 Au1 Gd3 90.0 7_665 .
+Gd3 Au1 Gd3 120.0 2_655 .
+Gd3 Au1 Gd3 120.0 3_665 .
+Sn4 Au1 Au2 60.603(16) 4_665 11_656
+Sn4 Au1 Au2 119.399(17) 7_665 11_656
+Gd3 Au1 Au2 62.81(3) 2_655 11_656
+Gd3 Au1 Au2 65.55(3) 3_665 11_656
+Gd3 Au1 Au2 150.561(17) . 11_656
+Sn4 Au1 Au2 119.399(17) 4_665 2_655
+Sn4 Au1 Au2 60.603(16) 7_665 2_655
+Gd3 Au1 Au2 62.81(3) 2_655 2_655
+Gd3 Au1 Au2 65.55(3) 3_665 2_655
+Gd3 Au1 Au2 150.561(17) . 2_655
+Au2 Au1 Au2 58.80(3) 11_656 2_655
+Sn4 Au1 Au2 60.602(17) 4_665 10_556
+Sn4 Au1 Au2 119.398(17) 7_665 10_556
+Gd3 Au1 Au2 65.55(3) 2_655 10_556
+Gd3 Au1 Au2 150.561(17) 3_665 10_556
+Gd3 Au1 Au2 62.81(3) . 10_556
+Au2 Au1 Au2 97.96(2) 11_656 10_556
+Au2 Au1 Au2 128.351(9) 2_655 10_556
+Sn4 Au1 Au2 60.601(16) 4_665 12_666
+Sn4 Au1 Au2 119.397(16) 7_665 12_666
+Gd3 Au1 Au2 150.561(17) 2_655 12_666
+Gd3 Au1 Au2 62.81(3) 3_665 12_666
+Gd3 Au1 Au2 65.55(3) . 12_666
+Au2 Au1 Au2 97.96(2) 11_656 12_666
+Au2 Au1 Au2 128.351(9) 2_655 12_666
+Au2 Au1 Au2 97.96(2) 10_556 12_666
+Sn4 Au1 Au2 119.397(16) 4_665 3_665
+Sn4 Au1 Au2 60.601(16) 7_665 3_665
+Gd3 Au1 Au2 150.561(17) 2_655 3_665
+Gd3 Au1 Au2 62.81(3) 3_665 3_665
+Gd3 Au1 Au2 65.55(3) . 3_665
+Au2 Au1 Au2 128.351(9) 11_656 3_665
+Au2 Au1 Au2 97.96(2) 2_655 3_665
+Au2 Au1 Au2 128.351(9) 10_556 3_665
+Au2 Au1 Au2 58.80(3) 12_666 3_665
+Sn4 Au1 Au2 119.398(17) 4_665 .
+Sn4 Au1 Au2 60.602(16) 7_665 .
+Gd3 Au1 Au2 65.55(3) 2_655 .
+Gd3 Au1 Au2 150.561(17) 3_665 .
+Gd3 Au1 Au2 62.81(3) . .
+Au2 Au1 Au2 128.351(9) 11_656 .
+Au2 Au1 Au2 97.96(2) 2_655 .
+Au2 Au1 Au2 58.80(3) 10_556 .
+Au2 Au1 Au2 128.351(9) 12_666 .
+Au2 Au1 Au2 97.96(2) 3_665 .
+Sn4 Au2 Sn4 113.42(3) 1_545 7_665
+Sn4 Au2 Au2 100.16(4) 1_545 10_556
+Sn4 Au2 Au2 116.75(4) 7_665 10_556
+Sn4 Au2 Sn5 109.76(3) 1_545 .
+Sn4 Au2 Sn5 108.58(3) 7_665 .
+Au2 Au2 Sn5 107.768(15) 10_556 .
+Sn4 Au2 Au1 123.50(3) 1_545 .
+Sn4 Au2 Au1 56.15(4) 7_665 .
+Au2 Au2 Au1 60.601(16) 10_556 .
+Sn5 Au2 Au1 126.49(3) . .
+Sn4 Au2 Gd3 69.22(3) 1_545 3
+Sn4 Au2 Gd3 177.20(4) 7_665 3
+Au2 Au2 Gd3 61.30(2) 10_556 3
+Sn5 Au2 Gd3 70.80(3) . 3
+Au1 Au2 Gd3 121.86(3) . 3
+Sn4 Au2 Gd3 159.45(4) 1_545 .
+Sn4 Au2 Gd3 85.08(4) 7_665 .
+Au2 Au2 Gd3 61.88(2) 10_556 .
+Sn5 Au2 Gd3 70.01(3) . .
+Au1 Au2 Gd3 58.52(3) . .
+Gd3 Au2 Gd3 92.17(5) 3 .
+Sn4 Au2 Au2 57.36(3) 1_545 7_655
+Sn4 Au2 Au2 56.06(3) 7_665 7_655
+Au2 Au2 Au2 124.93(3) 10_556 7_655
+Sn5 Au2 Au2 126.73(4) . 7_655
+Au1 Au2 Au2 89.30(4) . 7_655
+Gd3 Au2 Au2 126.58(4) 3 7_655
+Gd3 Au2 Au2 140.16(5) . 7_655
+Sn4 Au2 Gd3 66.70(3) 1_545 2_655
+Sn4 Au2 Gd3 82.92(4) 7_665 2_655
+Au2 Au2 Gd3 63.02(2) 10_556 2_655
+Sn5 Au2 Gd3 168.12(3) . 2_655
+Au1 Au2 Gd3 57.16(3) . 2_655
+Gd3 Au2 Gd3 97.57(5) 3 2_655
+Gd3 Au2 Gd3 109.07(5) . 2_655
+Au2 Au2 Gd3 61.92(4) 7_655 2_655
+Sn4 Au2 Gd3 82.43(5) 1_545 8
+Sn4 Au2 Gd3 65.35(5) 7_665 8
+Au2 Au2 Gd3 175.19(3) 10_556 8
+Sn5 Au2 Gd3 67.47(3) . 8
+Au1 Au2 Gd3 121.33(3) . 8
+Gd3 Au2 Gd3 116.42(4) 3 8
+Gd3 Au2 Gd3 114.80(4) . 8
+Au2 Au2 Gd3 59.87(3) 7_655 8
+Gd3 Au2 Gd3 121.79(3) 2_655 8
+Sn4 Au2 Au2 54.97(3) 1_545 8
+Sn4 Au2 Au2 120.55(5) 7_665 8
+Au2 Au2 Au2 122.66(2) 10_556 8
+Sn5 Au2 Au2 55.560(7) . 8
+Au1 Au2 Au2 176.13(3) . 8
+Gd3 Au2 Au2 61.52(3) 3 8
+Gd3 Au2 Au2 124.35(3) . 8
+Au2 Au2 Au2 86.99(4) 7_655 8
+Gd3 Au2 Au2 121.63(3) 2_655 8
+Gd3 Au2 Au2 55.62(3) 8 8
+Sn4 Au2 Au2 136.89(5) 1_545 9
+Sn4 Au2 Au2 53.78(3) 7_665 9
+Au2 Au2 Au2 122.66(2) 10_556 9
+Sn5 Au2 Au2 55.560(7) . 9
+Au1 Au2 Au2 85.72(3) . 9
+Gd3 Au2 Au2 125.09(3) 3 9
+Gd3 Au2 Au2 60.99(3) . 9
+Au2 Au2 Au2 96.76(4) 7_655 9
+Gd3 Au2 Au2 135.07(3) 2_655 9
+Gd3 Au2 Au2 54.50(3) 8 9
+Au2 Au2 Au2 93.63(3) 8 9
+Au1 Gd3 Au2 151.06(2) . 2
+Au1 Gd3 Au2 151.06(2) . 11_556
+Au2 Gd3 Au2 57.40(4) 2 11_556
+Au1 Gd3 Au2 58.67(3) . 10_556
+Au2 Gd3 Au2 136.38(5) 2 10_556
+Au2 Gd3 Au2 105.74(4) 11_556 10_556
+Au1 Gd3 Au2 58.67(3) . .
+Au2 Gd3 Au2 105.74(4) 2 .
+Au2 Gd3 Au2 136.38(5) 11_556 .
+Au2 Gd3 Au2 56.25(4) 10_556 .
+Au1 Gd3 Au2 57.29(3) . 12_666
+Au2 Gd3 Au2 130.43(5) 2 12_666
+Au2 Gd3 Au2 102.28(4) 11_556 12_666
+Au2 Gd3 Au2 90.57(4) 10_556 12_666
+Au2 Gd3 Au2 115.95(5) . 12_666
+Au1 Gd3 Au2 57.29(3) . 3_665
+Au2 Gd3 Au2 102.28(4) 2 3_665
+Au2 Gd3 Au2 130.43(5) 11_556 3_665
+Au2 Gd3 Au2 115.95(5) 10_556 3_665
+Au2 Gd3 Au2 90.57(4) . 3_665
+Au2 Gd3 Au2 53.97(4) 12_666 3_665
+Au1 Gd3 Au2 87.13(3) . 6
+Au2 Gd3 Au2 121.22(4) 2 6
+Au2 Gd3 Au2 63.98(2) 11_556 6
+Au2 Gd3 Au2 63.39(2) 10_556 6
+Au2 Gd3 Au2 119.44(4) . 6
+Au2 Gd3 Au2 58.21(3) 12_666 6
+Au2 Gd3 Au2 112.18(4) 3_665 6
+Au1 Gd3 Au2 87.13(3) . 9
+Au2 Gd3 Au2 63.98(2) 2 9
+Au2 Gd3 Au2 121.22(4) 11_556 9
+Au2 Gd3 Au2 119.44(4) 10_556 9
+Au2 Gd3 Au2 63.39(2) . 9
+Au2 Gd3 Au2 112.18(4) 12_666 9
+Au2 Gd3 Au2 58.21(3) 3_665 9
+Au2 Gd3 Au2 170.39(5) 6 9
+Au1 Gd3 Sn4 108.54(3) . 10_556
+Au2 Gd3 Sn4 87.62(4) 2 10_556
+Au2 Gd3 Sn4 52.84(2) 11_556 10_556
+Au2 Gd3 Sn4 114.86(4) 10_556 10_556
+Au2 Gd3 Sn4 166.54(5) . 10_556
+Au2 Gd3 Sn4 51.52(2) 12_666 10_556
+Au2 Gd3 Sn4 84.79(4) 3_665 10_556
+Au2 Gd3 Sn4 51.85(3) 6 10_556
+Au2 Gd3 Sn4 123.33(5) 9 10_556
+Au1 Gd3 Sn4 108.55(3) . .
+Au2 Gd3 Sn4 52.84(2) 2 .
+Au2 Gd3 Sn4 87.62(4) 11_556 .
+Au2 Gd3 Sn4 166.54(5) 10_556 .
+Au2 Gd3 Sn4 114.86(4) . .
+Au2 Gd3 Sn4 84.79(4) 12_666 .
+Au2 Gd3 Sn4 51.52(2) 3_665 .
+Au2 Gd3 Sn4 123.33(5) 6 .
+Au2 Gd3 Sn4 51.85(3) 9 .
+Sn4 Gd3 Sn4 71.70(7) 10_556 .
+Au1 Gd3 Sn5 110.42(3) . .
+Au2 Gd3 Sn5 53.61(2) 2 .
+Au2 Gd3 Sn5 93.42(4) 11_556 .
+Au2 Gd3 Sn5 92.42(4) 10_556 .
+Au2 Gd3 Sn5 53.23(2) . .
+Au2 Gd3 Sn5 162.58(3) 12_666 .
+Au2 Gd3 Sn5 109.72(3) 3_665 .
+Au2 Gd3 Sn5 137.57(4) 6 .
+Au2 Gd3 Sn5 51.94(2) 9 .
+Sn4 Gd3 Sn5 140.19(5) 10_556 .
+Sn4 Gd3 Sn5 88.40(3) . .
+Au1 Sn4 Au2 100.16(4) 7_665 1_565
+Au1 Sn4 Au2 100.16(4) 7_665 2
+Au2 Sn4 Au2 116.96(2) 1_565 2
+Au1 Sn4 Au2 100.16(4) 7_665 3_665
+Au2 Sn4 Au2 116.96(2) 1_565 3_665
+Au2 Sn4 Au2 116.96(2) 2 3_665
+Au1 Sn4 Au2 63.25(4) 7_665 8_565
+Au2 Sn4 Au2 71.25(3) 1_565 8_565
+Au2 Sn4 Au2 66.58(3) 2 8_565
+Au2 Sn4 Au2 163.19(7) 3_665 8_565
+Au1 Sn4 Au2 63.25(4) 7_665 7_665
+Au2 Sn4 Au2 66.58(3) 1_565 7_665
+Au2 Sn4 Au2 163.19(7) 2 7_665
+Au2 Sn4 Au2 71.24(3) 3_665 7_665
+Au2 Sn4 Au2 101.31(5) 8_565 7_665
+Au1 Sn4 Au2 63.25(4) 7_665 9
+Au2 Sn4 Au2 163.19(7) 1_565 9
+Au2 Sn4 Au2 71.24(3) 2 9
+Au2 Sn4 Au2 66.58(3) 3_665 9
+Au2 Sn4 Au2 101.31(5) 8_565 9
+Au2 Sn4 Au2 101.31(5) 7_665 9
+Au1 Sn4 Gd3 125.85(3) 7_665 2_665
+Au2 Sn4 Gd3 61.78(3) 1_565 2_665
+Au2 Sn4 Gd3 133.93(7) 2 2_665
+Au2 Sn4 Gd3 57.94(3) 3_665 2_665
+Au2 Sn4 Gd3 132.96(3) 8_565 2_665
+Au2 Sn4 Gd3 62.80(3) 7_665 2_665
+Au2 Sn4 Gd3 124.51(3) 9 2_665
+Au1 Sn4 Gd3 125.85(3) 7_665 3_565
+Au2 Sn4 Gd3 57.94(3) 1_565 3_565
+Au2 Sn4 Gd3 61.78(3) 2 3_565
+Au2 Sn4 Gd3 133.93(7) 3_665 3_565
+Au2 Sn4 Gd3 62.80(3) 8_565 3_565
+Au2 Sn4 Gd3 124.51(3) 7_665 3_565
+Au2 Sn4 Gd3 132.96(3) 9 3_565
+Gd3 Sn4 Gd3 89.17(5) 2_665 3_565
+Au1 Sn4 Gd3 125.85(3) 7_665 .
+Au2 Sn4 Gd3 133.93(7) 1_565 .
+Au2 Sn4 Gd3 57.94(3) 2 .
+Au2 Sn4 Gd3 61.78(3) 3_665 .
+Au2 Sn4 Gd3 124.51(3) 8_565 .
+Au2 Sn4 Gd3 132.96(3) 7_665 .
+Au2 Sn4 Gd3 62.80(3) 9 .
+Gd3 Sn4 Gd3 89.17(5) 2_665 .
+Gd3 Sn4 Gd3 89.17(5) 3_565 .
+Au2 Sn5 Au2 68.881(14) . 9
+Au2 Sn5 Au2 111.119(14) . 3
+Au2 Sn5 Au2 180.00(3) 9 3
+Au2 Sn5 Au2 180.0 . 7
+Au2 Sn5 Au2 111.119(14) 9 7
+Au2 Sn5 Au2 68.881(14) 3 7
+Au2 Sn5 Au2 111.120(14) . 2
+Au2 Sn5 Au2 68.881(14) 9 2
+Au2 Sn5 Au2 111.119(14) 3 2
+Au2 Sn5 Au2 68.881(14) 7 2
+Au2 Sn5 Au2 68.880(14) . 8
+Au2 Sn5 Au2 111.119(14) 9 8
+Au2 Sn5 Au2 68.881(14) 3 8
+Au2 Sn5 Au2 111.119(14) 7 8
+Au2 Sn5 Au2 180.00(3) 2 8
+Au2 Sn5 Gd3 56.76(3) . .
+Au2 Sn5 Gd3 60.59(3) 9 .
+Au2 Sn5 Gd3 119.41(3) 3 .
+Au2 Sn5 Gd3 123.24(3) 7 .
+Au2 Sn5 Gd3 55.59(3) 2 .
+Au2 Sn5 Gd3 124.41(3) 8 .
+Au2 Sn5 Gd3 123.24(3) . 7
+Au2 Sn5 Gd3 119.41(3) 9 7
+Au2 Sn5 Gd3 60.59(3) 3 7
+Au2 Sn5 Gd3 56.76(3) 7 7
+Au2 Sn5 Gd3 124.41(3) 2 7
+Au2 Sn5 Gd3 55.59(3) 8 7
+Gd3 Sn5 Gd3 180.0 . 7
+Au2 Sn5 Gd3 124.41(3) . 9
+Au2 Sn5 Gd3 56.76(3) 9 9
+Au2 Sn5 Gd3 123.24(3) 3 9
+Au2 Sn5 Gd3 55.59(3) 7 9
+Au2 Sn5 Gd3 60.59(3) 2 9
+Au2 Sn5 Gd3 119.41(3) 8 9
+Gd3 Sn5 Gd3 101.12(3) . 9
+Gd3 Sn5 Gd3 78.88(3) 7 9
+Au2 Sn5 Gd3 119.41(3) . 2
+Au2 Sn5 Gd3 124.41(3) 9 2
+Au2 Sn5 Gd3 55.59(3) 3 2
+Au2 Sn5 Gd3 60.59(3) 7 2
+Au2 Sn5 Gd3 56.76(3) 2 2
+Au2 Sn5 Gd3 123.24(3) 8 2
+Gd3 Sn5 Gd3 78.88(3) . 2
+Gd3 Sn5 Gd3 101.12(3) 7 2
+Gd3 Sn5 Gd3 101.12(3) 9 2
+Au2 Sn5 Gd3 60.59(3) . 8
+Au2 Sn5 Gd3 55.59(3) 9 8
+Au2 Sn5 Gd3 124.41(3) 3 8
+Au2 Sn5 Gd3 119.41(3) 7 8
+Au2 Sn5 Gd3 123.24(3) 2 8
+Au2 Sn5 Gd3 56.76(3) 8 8
+Gd3 Sn5 Gd3 101.12(3) . 8
+Gd3 Sn5 Gd3 78.88(3) 7 8
+Gd3 Sn5 Gd3 78.88(3) 9 8
+Gd3 Sn5 Gd3 180.0 2 8
+Au2 Sn5 Gd3 55.59(3) . 3
+Au2 Sn5 Gd3 123.24(3) 9 3
+Au2 Sn5 Gd3 56.76(3) 3 3
+Au2 Sn5 Gd3 124.41(3) 7 3
+Au2 Sn5 Gd3 119.41(3) 2 3
+Au2 Sn5 Gd3 60.59(3) 8 3
+Gd3 Sn5 Gd3 78.88(3) . 3
+Gd3 Sn5 Gd3 101.12(3) 7 3
+Gd3 Sn5 Gd3 180.00(4) 9 3
+Gd3 Sn5 Gd3 78.88(3) 2 3
+Gd3 Sn5 Gd3 101.12(3) 8 3
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Au1 Sn4 2.753(2) 4_665
+Au1 Sn4 2.753(2) 7_665
+Au1 Gd3 2.9554(16) 2_655
+Au1 Gd3 2.9555(16) 3_665
+Au1 Gd3 2.9554(16) .
+Au1 Au2 2.9599(10) 11_656
+Au1 Au2 2.9599(10) 2_655
+Au1 Au2 2.9599(10) 10_556
+Au1 Au2 2.9599(10) 12_666
+Au1 Au2 2.9599(10) 3_665
+Au1 Au2 2.9599(10) .
+Au2 Sn4 2.8451(12) 1_545
+Au2 Sn4 2.8879(14) 7_665
+Au2 Au2 2.9059(16) 10_556
+Au2 Sn5 2.9523(12) .
+Au2 Gd3 3.0254(16) 3
+Au2 Gd3 3.0824(17) .
+Au2 Au2 3.1468(17) 7_655
+Au2 Gd3 3.2021(17) 2_655
+Au2 Gd3 3.2663(12) 8
+Au2 Au2 3.3393(13) 8
+Au2 Au2 3.3393(13) 9
+Gd3 Au2 3.0255(16) 2
+Gd3 Au2 3.0255(16) 11_556
+Gd3 Au2 3.0824(17) 10_556
+Gd3 Au2 3.2021(17) 12_666
+Gd3 Au2 3.2021(17) 3_665
+Gd3 Au2 3.2663(12) 6
+Gd3 Au2 3.2663(12) 9
+Gd3 Sn4 3.3378(17) 10_556
+Gd3 Sn4 3.3379(17) .
+Gd3 Sn5 3.4632(12) .
+Sn4 Au1 2.753(2) 7_665
+Sn4 Au2 2.8451(12) 1_565
+Sn4 Au2 2.8451(12) 2
+Sn4 Au2 2.8451(12) 3_665
+Sn4 Au2 2.8879(14) 8_565
+Sn4 Au2 2.8879(14) 7_665
+Sn4 Au2 2.8879(14) 9
+Sn4 Gd3 3.3379(17) 2_665
+Sn4 Gd3 3.3379(17) 3_565
+Sn5 Au2 2.9523(12) 9
+Sn5 Au2 2.9523(12) 3
+Sn5 Au2 2.9523(12) 7
+Sn5 Au2 2.9523(12) 2
+Sn5 Au2 2.9523(12) 8
+Sn5 Gd3 3.4632(12) 7
+Sn5 Gd3 3.4632(12) 9
+Sn5 Gd3 3.4632(12) 2
+Sn5 Gd3 3.4632(12) 8
+Sn5 Gd3 3.4632(12) 3

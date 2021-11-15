@@ -1,0 +1,264 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-22 12:43:07 +0200 (Tue, 22 Mar 2016) $
+#$Revision: 178960 $
+#$URL: svn://www.crystallography.net/cod/cif/4/11/89/4118949.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4118949
+loop_
+_publ_author_name
+'Sharath Kandambeth'
+'Arijit Mallick'
+'Binit Lukose'
+'Manoj V. Mane'
+'Thomas Heine'
+'Rahul Banerjee'
+_publ_section_title
+;
+ Construction of Crystalline 2D Covalent Organic Frameworks with
+ Remarkable Chemical (Acid/Base) Stability via a Combined Reversible and
+ Irreversible Route
+;
+_journal_name_full               'Journal of the American Chemical Society'
+_journal_page_first              19524
+_journal_page_last               19527
+_journal_paper_doi               10.1021/ja308278w
+_journal_volume                  134
+_journal_year                    2012
+_chemical_compound_source        'see text'
+_chemical_formula_moiety         'C7 H6 N O'
+_chemical_formula_sum            'C7 H6 N O'
+_chemical_formula_weight         120.13
+_chemical_name_systematic        ?
+_space_group_IT_number           175
+_symmetry_cell_setting           hexagonal
+_symmetry_Int_Tables_number      175
+_symmetry_space_group_name_Hall  '-P 6'
+_symmetry_space_group_name_H-M   'P 6/m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            6
+_cell_length_a                   22.50600
+_cell_length_b                   22.50600
+_cell_length_c                   3.50000
+_cell_volume                     1535.307
+_computing_publication_material  'PLATON (Spek, 2003)'
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_exptl_absorpt_coefficient_mu    0.053
+_exptl_crystal_density_diffrn    0.780
+_exptl_crystal_density_method    'Not Measured'
+_exptl_crystal_F_000             378
+_refine_ls_number_restraints     0
+_cod_data_source_file            ja308278w_si_003.cif
+_cod_data_source_block           block_1
+_cod_database_code               4118949
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 x-y,x,z
+3 -y,x-y,z
+4 -x,-y,z
+5 -x+y,-x,z
+6 y,-x+y,z
+7 -x,-y,-z
+8 -x+y,-x,-z
+9 y,-x+y,-z
+10 x,y,-z
+11 x-y,x,-z
+12 -y,x-y,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_thermal_displace_type
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O O Uiso 0.75767 0.28474 0.00000 1.000 0.0500
+N N Uiso 0.55288 0.14095 0.00000 1.000 0.0500
+C C Uiso 0.71612 0.30750 0.00000 1.000 0.0500
+C1 C Uiso 0.64138 0.25951 0.00000 1.000 0.0500
+C5 C Uiso 0.61889 0.18979 0.00000 1.000 0.0500
+C6 C Uiso 0.52653 0.07196 0.00000 1.000 0.0500
+C7 C Uiso 0.57020 0.04388 0.00000 1.000 0.0500
+C8 C Uiso 0.45438 0.02665 0.00000 1.000 0.0500
+C35 C Uiso 0.40464 0.05334 0.00000 1.000 0.0500
+H H Uiso 0.62629 0.07943 0.00000 1.000 0.0600
+H1 H Uiso 0.65699 0.17217 0.00000 1.000 0.0600
+H11 H Uiso 0.51897 0.16159 0.00000 1.000 0.0600
+H17 H Uiso 0.35038 0.00961 0.00000 1.000 0.0600
+H18 H Uiso 0.41048 0.08454 0.25720 1.000 0.0600
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N N 0.0061 0.0033 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+C5 N C6 127.72 . . yes
+C6 N H11 120.00 . . no
+C5 N H11 113.00 . . no
+C1 C C1 118.06 . 3_655 no
+O C C1 121.68 . 3_655 yes
+O C C1 120.26 . . yes
+C C1 C5 117.74 . . no
+C C1 C 121.94 . 5_665 no
+C C1 C5 120.32 5_665 . no
+N C5 C1 123.90 . . yes
+C7 C6 C8 118.74 . . no
+N C6 C7 120.61 . . yes
+N C6 C8 120.64 . . yes
+C6 C7 C8 122.77 . 4_655 no
+C7 C8 C35 120.05 4_655 . no
+C6 C8 C35 121.47 . . no
+C6 C8 C7 118.48 . 4_655 no
+N C5 H1 116.00 . . no
+C1 C5 H1 120.00 . . no
+C6 C7 H 118.00 . . no
+C8 C7 H 119.00 4_655 . no
+C8 C35 H17 110.00 . . no
+C8 C35 H18 112.00 . . no
+C8 C35 H18 112.00 . 10_555 no
+H17 C35 H18 107.00 . . no
+H17 C35 H18 107.00 . 10_555 no
+H18 C35 H18 109.00 . 10_555 no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+O C 1.2712 . yes
+N C5 1.3350 . yes
+N C6 1.3571 . yes
+N H11 1.0700 . no
+C C1 1.4779 3_655 no
+C C1 1.4762 . no
+C1 C5 1.3871 . no
+C6 C7 1.4094 . no
+C6 C8 1.4215 . no
+C7 C8 1.3956 4_655 no
+C8 C35 1.5121 . no
+C5 H1 1.1100 . no
+C7 H 1.1100 . no
+C35 H17 1.1200 . no
+C35 H18 1.1100 . no
+C35 H18 1.1100 10_555 no
+loop_
+_geom_contact_atom_site_label_1
+_geom_contact_atom_site_label_2
+_geom_contact_distance
+_geom_contact_site_symmetry_2
+_geom_contact_publ_flag
+O N 2.6208 3_655 no
+O N 2.6208 3_655 no
+O H11 1.7300 3_655 no
+O H1 2.4100 . no
+O H11 1.7300 3_655 no
+N O 2.6208 5_665 no
+N O 2.6208 5_665 no
+N H18 2.9400 . no
+N H18 2.9400 10_555 no
+C C 3.5000 1_554 no
+C C 3.5000 1_556 no
+C C 3.5000 10_554 no
+C C 3.5000 10_556 no
+C1 C1 3.5000 10_556 no
+C1 C1 3.5000 10_554 no
+C1 C1 3.5000 1_554 no
+C1 C1 3.5000 1_556 no
+C5 C5 3.5000 1_556 no
+C5 C5 3.5000 1_554 no
+C5 C5 3.5000 10_556 no
+C5 C5 3.5000 10_554 no
+C6 C6 3.5000 10_554 no
+C6 C6 3.5000 1_554 no
+C6 C6 3.5000 10_556 no
+C6 C6 3.5000 1_556 no
+C7 C7 3.5000 1_556 no
+C7 C7 3.5000 10_556 no
+C7 C7 3.5000 1_554 no
+C7 C7 3.5000 10_554 no
+C8 C8 3.5000 1_554 no
+C8 C8 3.5000 10_556 no
+C8 C8 3.5000 10_554 no
+C8 C8 3.5000 1_556 no
+C35 C35 3.5000 1_554 no
+C35 C35 3.5000 10_556 no
+C35 C35 3.5000 1_556 no
+C35 C35 3.5000 10_554 no
+C H11 2.4000 3_655 no
+C H11 2.4000 3_655 no
+C5 H 2.5700 . no
+C7 H1 2.5500 . no
+C35 H18 2.6800 1_554 no
+C35 H11 2.5100 . no
+C35 H18 2.6800 10_556 no
+H C5 2.5700 . no
+H H1 1.8400 . no
+H H17 2.3100 4_655 no
+H H17 2.3100 4_655 no
+H1 O 2.4100 . no
+H1 C7 2.5500 . no
+H1 H 1.8400 . no
+H11 C35 2.5100 . no
+H11 H18 2.3500 . no
+H11 O 1.7300 5_665 no
+H11 C 2.4000 5_665 no
+H11 O 1.7300 5_665 no
+H11 C 2.4000 5_665 no
+H11 H18 2.3500 10_555 no
+H17 H 2.3100 4_655 no
+H17 H 2.3100 4_655 no
+H18 N 2.9400 . no
+H18 C35 2.6800 1_556 no
+H18 H11 2.3500 . no
+H18 C35 2.6800 10_556 no
+H18 H18 1.7000 10_556 no
+loop_
+_geom_hbond_atom_site_label_D
+_geom_hbond_atom_site_label_H
+_geom_hbond_atom_site_label_A
+_geom_hbond_distance_DH
+_geom_hbond_distance_HA
+_geom_hbond_distance_DA
+_geom_hbond_angle_DHA
+_geom_hbond_site_symmetry_A
+_geom_hbond_publ_flag
+N H11 O 1.0700 1.7300 2.6208 137.00 5_665 yes
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_publ_flag
+C5 N C6 C7 0.00 no
+C5 N C6 C8 180.00 no
+C6 N C5 C1 180.00 no
+O C C1 C5 0.00 no
+C C1 C5 N 180.00 no
+N C6 C8 C35 0.00 no
+C7 C6 C8 C35 180.00 no

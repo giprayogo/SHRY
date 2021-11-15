@@ -1,0 +1,88 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-14 16:26:36 +0200 (Sun, 14 Feb 2016) $
+#$Revision: 176435 $
+#$URL: svn://www.crystallography.net/cod/cif/1/51/11/1511139.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1511139
+loop_
+_publ_author_name
+'Bocelli, G.'
+'Zhao Jiangao'
+'Ji Songquan'
+'Deriu, A.'
+'Sanchez Ll., J.L.'
+'Bolzoni, F.'
+'Calestani, G.'
+'Leccabue, F.'
+_publ_section_title
+;
+ Magnetic, Moessbauer and structural characterization of RE2 Fe14 B (RE=
+ Nd, Y, Tb, Gd) single crystals
+;
+_journal_name_full               'Journal of Magnetism and Magnetic Materials'
+_journal_page_first              174
+_journal_page_last               176
+_journal_paper_doi               10.1016/0304-8853(90)90475-6
+_journal_volume                  83
+_journal_year                    1990
+_chemical_formula_sum            'B Fe14 Gd2'
+_chemical_name_systematic        'Fe14 Gd2 B'
+_space_group_IT_number           136
+_symmetry_space_group_name_Hall  '-P 4n 2n'
+_symmetry_space_group_name_H-M   'P 42/m n m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   8.783
+_cell_length_b                   8.783
+_cell_length_c                   12.053
+_cell_volume                     929.782
+_citation_journal_id_ASTM        JMMMDC
+_cod_data_source_file            boron0-1_242.cif
+_cod_data_source_block           B1Fe14Gd2
+_cod_original_cell_volume        929.7816
+_cod_original_formula_sum        'B1 Fe14 Gd2'
+_cod_database_code               1511139
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y+1/2,x+1/2,z+1/2
+-x,-y,z
+y+1/2,-x+1/2,z+1/2
+x+1/2,-y+1/2,-z+1/2
+y,x,-z
+-x+1/2,y+1/2,-z+1/2
+-y,-x,-z
+-x,-y,-z
+y-1/2,-x-1/2,-z-1/2
+x,y,-z
+-y-1/2,x-1/2,-z-1/2
+-x-1/2,y-1/2,z-1/2
+-y,-x,z
+x-1/2,-y-1/2,z-1/2
+y,x,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Fe4 Fe 0.4021 0.4021 0.2986 1 0.0
+Fe2 Fe 0 0 0.385 1 0.0
+Fe6 Fe 0.4631 0.1403 0.3248 1 0.0
+Fe1 Fe 0 0.5 0 1 0.0
+Gd2 Gd 0.732 0.268 0 1 0.0
+Gd1 Gd 0.1431 0.1431 0 1 0.0
+Fe3 Fe 0.183 0.183 0.2544 1 0.0
+Fe5 Fe 0.7248 0.0667 0.3729 1 0.0
+B1 B 0.3748 0.3748 0 1 0.0

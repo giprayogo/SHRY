@@ -1,0 +1,43 @@
+# generated using pymatgen
+data_Lu4Si4Lv1.5Po0.5Te3Se0.5O8.5
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   6.76200000
+_cell_length_b   8.83500000
+_cell_length_c   4.71130000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   101.99000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Lu4Si4Lv1.5Po0.5Te3Se0.5O8.5
+_chemical_formula_sum   'Lu4 Si4 Lv1.5 Po0.5 Te3 Se0.5 O8.5'
+_cell_volume   275.32330767
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Lu  Lu0  4  0.00000000  0.30718000  0.00000000  1.0
+  Si  Si1  4  0.21960000  0.00000000  0.41210000  1.0
+  Lv+  Lv2  2  0.00000000  0.00000000  0.50000000  0.25
+  Po+  Po3  2  0.00000000  0.00000000  0.50000000  0.25
+  Te+  Te4  2  0.00000000  0.00000000  0.50000000  0.25
+  Se+  Se5  2  0.00000000  0.00000000  0.50000000  0.25
+  Lv+  Lv6  4  0.11680000  0.50000000  0.28440000  0.25
+  Te+  Te7  4  0.11680000  0.50000000  0.28440000  0.625
+  O+  O8  4  0.11680000  0.50000000  0.28440000  0.125
+  O  O9  8  0.23670000  0.15100000  0.22000000  1.0

@@ -1,0 +1,308 @@
+#------------------------------------------------------------------------------
+#$Date: 2021-07-07 01:27:06 +0300 (Wed, 07 Jul 2021) $
+#$Revision: 267304 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/4/00/39/4003990.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4003990
+loop_
+_publ_author_name
+'Routledge, Kieran'
+'Vir, Praveen'
+'Cook, Nicholas'
+'Murgatroyd, Philip A. E.'
+'Ahmed, Sheikh J.'
+'Savvin, Stanislav N.'
+'Claridge, John B.'
+'Alaria, Jonathan'
+_publ_section_title
+;
+ Mode Crystallography Analysis through the Structural Phase Transition and
+ Magnetic Critical Behavior of the Lacunar Spinel GaMo4Se8
+;
+_journal_name_full               'Chemistry of Materials'
+_journal_paper_doi               10.1021/acs.chemmater.1c01448
+_journal_year                    2021
+_chemical_formula_iupac          Mo3Ga
+_chemical_formula_moiety         'Mo3, Ga'
+_chemical_formula_structural     Mo3Ga
+_chemical_formula_sum            'Ga Mo3'
+_chemical_formula_weight         357.54
+_chemical_name_common            Mo3Ga
+_chemical_name_systematic        Mo3Ga
+_space_group_IT_number           223
+_space_group_name_Hall           '-P 4n 2 3'
+_space_group_name_H-M_alt        'P m -3 n'
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_Hall  '-P 4n 2 3'
+_symmetry_space_group_name_H-M   'P m -3 n'
+_cell_angle_alpha                90.0000
+_cell_angle_beta                 90.0000
+_cell_angle_gamma                90.0000
+_cell_formula_units_Z            2
+_cell_length_a                   4.94483(15)
+_cell_length_b                   4.94483(15)
+_cell_length_c                   4.94483(15)
+_cell_measurement_temperature    300
+_cell_volume                     120.908(6)
+_computing_structure_refinement  FULLPROF
+_computing_structure_solution    FULLPROF
+_diffrn_ambient_temperature      300
+_diffrn_detector                 '128 He-3 counting tubes'
+_diffrn_detector_type            N/A
+_diffrn_measurement_device_type  'Two-axis diffractometer'
+_diffrn_measurement_method       High-resolution
+_diffrn_radiation_monochromator  Germanium
+_diffrn_radiation_type           Neutron
+_diffrn_radiation_wavelength     1.59400
+_diffrn_source                   'nuclear reactor'
+_diffrn_source_type              'High-resolution 2-axis diffractometer (D2B)'
+_pd_char_colour                  Black
+_pd_char_particle_morphology     'Fine powder'
+_pd_instr_location               'Institut Laue-Langevin (ILL) Grenoble'
+_pd_meas_2theta_range_inc        0.050018
+_pd_meas_2theta_range_max        159.95000
+_pd_meas_2theta_range_min        0.05000
+_pd_meas_number_of_points        3199
+_pd_meas_scan_method             cont
+_pd_proc_2theta_range_inc        0.050018
+_pd_proc_2theta_range_max        159.8719
+_pd_proc_2theta_range_min        -0.0281
+_pd_proc_info_data_reduction     N/A
+_pd_proc_info_excluded_regions   '146 -160 deg'
+_pd_proc_ls_background_function
+'Linear intrapolation between a set of background points'
+_pd_proc_ls_pref_orient_corr     No
+_pd_proc_ls_profile_function
+'Thompson-Cox-Hastings pseudo-Voigt (Axial divergence asymmetry)'
+_pd_proc_ls_prof_R_factor        4.1950
+_pd_proc_ls_prof_wR_expected     2.9466
+_pd_proc_ls_prof_wR_factor       5.5922
+_pd_proc_wavelength              1.594000
+_pd_spec_mounting                Vanadium
+_pd_spec_mount_mode              reflection
+_pd_spec_shape                   cylinder
+_pd_spec_size_axial              6
+_pd_spec_size_equat              6
+_pd_spec_size_thick              5
+_refine_ls_goodness_of_fit_all   1.8978
+_refine_ls_number_constraints    0
+_refine_ls_number_parameters     18
+_refine_ls_number_reflns         79
+_refine_ls_number_restraints     0
+_refine_ls_R_I_factor            2.8214
+_cod_data_source_file            cm1c01448_si_008.cif
+_cod_data_source_block           Mo3Ga
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+data item '_symmetry_cell_setting' value 'Cubic' was changed to
+'cubic' in accordance with the
+/home/data/users/saulius/crontab/automatic-downloads/rss-feeds/ACS/lib/dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 last updated on
+2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 7556 2019-12-06 15:28:31Z antanas 
+;
+_cod_original_cell_volume        120.908(11)
+_cod_original_formula_sum        'Ga1 Mo3'
+_cod_database_code               4003990
+_pd_proc_ls_prof_cr_factor       9.3483
+_pd_proc_ls_prof_cwr_factor      9.4544
+_pd_proc_ls_prof_cwr_expected    4.9817
+_pd_proc_ls_prof_chi2            3.6018
+_pd_proc_ls_prof_echi2           3.7090
+_publcif_funding_html
+;
+;
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x,-y,-z
+-x,y,-z
+-x,-y,z
+y,z,x
+-y,-z,x
+y,-z,-x
+-y,z,-x
+z,x,y
+-z,x,-y
+-z,-x,y
+z,-x,-y
+y+1/2,x+1/2,z+1/2
+-y+1/2,x+1/2,-z+1/2
+y+1/2,-x+1/2,-z+1/2
+-y+1/2,-x+1/2,z+1/2
+z+1/2,y+1/2,x+1/2
+-z+1/2,-y+1/2,x+1/2
+-z+1/2,y+1/2,-x+1/2
+z+1/2,-y+1/2,-x+1/2
+x+1/2,z+1/2,y+1/2
+x+1/2,-z+1/2,-y+1/2
+-x+1/2,-z+1/2,y+1/2
+-x+1/2,z+1/2,-y+1/2
+-x,-y,-z
+-x,y,z
+x,-y,z
+x,y,-z
+-y,-z,-x
+y,z,-x
+-y,z,x
+y,-z,x
+-z,-x,-y
+z,-x,y
+z,x,-y
+-z,x,y
+-y+1/2,-x+1/2,-z+1/2
+y+1/2,-x+1/2,z+1/2
+-y+1/2,x+1/2,z+1/2
+y+1/2,x+1/2,-z+1/2
+-z+1/2,-y+1/2,-x+1/2
+z+1/2,y+1/2,-x+1/2
+z+1/2,-y+1/2,x+1/2
+-z+1/2,y+1/2,x+1/2
+-x+1/2,-z+1/2,-y+1/2
+-x+1/2,z+1/2,y+1/2
+x+1/2,z+1/2,-y+1/2
+x+1/2,-z+1/2,y+1/2
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_type_symbol
+Ga1 0.00000 0.00000 0.00000 0.01191 1.00000 Uiso Ga
+Mo1 0.25000 0.00000 0.50000 0.00415 1.00000 Uiso Mo
+loop_
+_atom_type_symbol
+_atom_type_scat_length_neutron
+_atom_type_scat_source
+Mo 0.67150 V.F._Sears_Neutron_News_3_26_(1992)
+Ga 0.72880 V.F._Sears_Neutron_News_3_26_(1992)
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+Mo1 Ga1 Mo1 126.870(6) 1_554 1_555 ?
+Mo1 Ga1 Mo1 53.130(2) 1_554 3_555 ?
+Mo1 Ga1 Mo1 180.000(6) 1_554 3_556 ?
+Mo1 Ga1 Mo1 113.578(4) 1_554 5_545 ?
+Mo1 Ga1 Mo1 113.578(4) 1_554 5_555 ?
+Mo1 Ga1 Mo1 66.422(3) 1_554 7_555 ?
+Mo1 Ga1 Mo1 66.422(3) 1_554 7_565 ?
+Mo1 Ga1 Mo1 113.578(4) 1_554 9_455 ?
+Mo1 Ga1 Mo1 66.422(3) 1_554 9_555 ?
+Mo1 Ga1 Mo1 113.578(4) 1_554 11_555 ?
+Mo1 Ga1 Mo1 66.422(3) 1_554 11_655 ?
+Mo1 Ga1 Mo1 180.000(6) 1_555 3_555 ?
+Mo1 Ga1 Mo1 53.130(2) 1_555 3_556 ?
+Mo1 Ga1 Mo1 66.422(3) 1_555 5_545 ?
+Mo1 Ga1 Mo1 66.422(3) 1_555 5_555 ?
+Mo1 Ga1 Mo1 113.578(4) 1_555 7_555 ?
+Mo1 Ga1 Mo1 113.578(4) 1_555 7_565 ?
+Mo1 Ga1 Mo1 113.578(4) 1_555 9_455 ?
+Mo1 Ga1 Mo1 66.422(3) 1_555 9_555 ?
+Mo1 Ga1 Mo1 113.578(4) 1_555 11_555 ?
+Mo1 Ga1 Mo1 66.422(3) 1_555 11_655 ?
+Mo1 Ga1 Mo1 126.870(6) 3_555 3_556 ?
+Mo1 Ga1 Mo1 113.578(4) 3_555 5_545 ?
+Mo1 Ga1 Mo1 113.578(4) 3_555 5_555 ?
+Mo1 Ga1 Mo1 66.422(3) 3_555 7_555 ?
+Mo1 Ga1 Mo1 66.422(3) 3_555 7_565 ?
+Mo1 Ga1 Mo1 66.422(3) 3_555 9_455 ?
+Mo1 Ga1 Mo1 113.578(4) 3_555 9_555 ?
+Mo1 Ga1 Mo1 66.422(3) 3_555 11_555 ?
+Mo1 Ga1 Mo1 113.578(4) 3_555 11_655 ?
+Mo1 Ga1 Mo1 66.422(3) 3_556 5_545 ?
+Mo1 Ga1 Mo1 66.422(3) 3_556 5_555 ?
+Mo1 Ga1 Mo1 113.578(4) 3_556 7_555 ?
+Mo1 Ga1 Mo1 113.578(4) 3_556 7_565 ?
+Mo1 Ga1 Mo1 66.422(3) 3_556 9_455 ?
+Mo1 Ga1 Mo1 113.578(4) 3_556 9_555 ?
+Mo1 Ga1 Mo1 66.422(3) 3_556 11_555 ?
+Mo1 Ga1 Mo1 113.578(4) 3_556 11_655 ?
+Mo1 Ga1 Mo1 126.870(6) 5_545 5_555 ?
+Mo1 Ga1 Mo1 53.130(2) 5_545 7_555 ?
+Mo1 Ga1 Mo1 180.000(6) 5_545 7_565 ?
+Mo1 Ga1 Mo1 113.578(4) 5_545 9_455 ?
+Mo1 Ga1 Mo1 113.578(4) 5_545 9_555 ?
+Mo1 Ga1 Mo1 66.422(3) 5_545 11_555 ?
+Mo1 Ga1 Mo1 66.422(3) 5_545 11_655 ?
+Mo1 Ga1 Mo1 180.000(6) 5_555 7_555 ?
+Mo1 Ga1 Mo1 53.130(2) 5_555 7_565 ?
+Mo1 Ga1 Mo1 66.422(3) 5_555 9_455 ?
+Mo1 Ga1 Mo1 66.422(3) 5_555 9_555 ?
+Mo1 Ga1 Mo1 113.578(4) 5_555 11_555 ?
+Mo1 Ga1 Mo1 113.578(4) 5_555 11_655 ?
+Mo1 Ga1 Mo1 126.870(6) 7_555 7_565 ?
+Mo1 Ga1 Mo1 113.578(4) 7_555 9_455 ?
+Mo1 Ga1 Mo1 113.578(4) 7_555 9_555 ?
+Mo1 Ga1 Mo1 66.422(3) 7_555 11_555 ?
+Mo1 Ga1 Mo1 66.422(3) 7_555 11_655 ?
+Mo1 Ga1 Mo1 66.422(3) 7_565 9_455 ?
+Mo1 Ga1 Mo1 66.422(3) 7_565 9_555 ?
+Mo1 Ga1 Mo1 113.578(4) 7_565 11_555 ?
+Mo1 Ga1 Mo1 113.578(4) 7_565 11_655 ?
+Mo1 Ga1 Mo1 126.870(6) 9_455 9_555 ?
+Mo1 Ga1 Mo1 53.130(2) 9_455 11_555 ?
+Mo1 Ga1 Mo1 180.000(6) 9_455 11_655 ?
+Mo1 Ga1 Mo1 180.000(6) 9_555 11_555 ?
+Mo1 Ga1 Mo1 53.130(2) 9_555 11_655 ?
+Mo1 Ga1 Mo1 126.870(6) 11_555 11_655 ?
+Ga1 Mo1 Ga1 126.870(6) 1_555 1_556 ?
+Ga1 Mo1 Ga1 101.537(3) 1_555 13_545 ?
+Ga1 Mo1 Ga1 101.537(3) 1_555 13_555 ?
+Ga1 Mo1 Mo1 63.435(3) 1_555 3_556 ?
+Ga1 Mo1 Mo1 116.565(4) 1_555 3_656 ?
+Ga1 Mo1 Ga1 101.537(3) 1_556 13_545 ?
+Ga1 Mo1 Ga1 101.537(3) 1_556 13_555 ?
+Ga1 Mo1 Mo1 63.435(3) 1_556 3_556 ?
+Ga1 Mo1 Mo1 116.565(4) 1_556 3_656 ?
+Ga1 Mo1 Ga1 126.870(6) 13_545 13_555 ?
+Ga1 Mo1 Mo1 116.565(4) 13_545 3_556 ?
+Ga1 Mo1 Mo1 63.435(3) 13_545 3_656 ?
+Ga1 Mo1 Mo1 116.565(4) 13_555 3_556 ?
+Ga1 Mo1 Mo1 63.435(3) 13_555 3_656 ?
+Mo1 Mo1 Mo1 180.000(7) 3_556 3_656 ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Ga1 Mo1 2.76424(7) 1_554 ?
+Ga1 Mo1 2.76424(7) 1_555 ?
+Ga1 Mo1 2.76424(7) 3_555 ?
+Ga1 Mo1 2.76424(7) 3_556 ?
+Ga1 Mo1 2.76424(7) 5_545 ?
+Ga1 Mo1 2.76424(7) 5_555 ?
+Ga1 Mo1 2.76424(7) 7_555 ?
+Ga1 Mo1 2.76424(7) 7_565 ?
+Ga1 Mo1 2.76424(7) 9_455 ?
+Ga1 Mo1 2.76424(7) 9_555 ?
+Ga1 Mo1 2.76424(7) 11_555 ?
+Ga1 Mo1 2.76424(7) 11_655 ?
+Mo1 Ga1 2.76424(7) 1_555 ?
+Mo1 Ga1 2.76424(7) 1_556 ?
+Mo1 Ga1 2.76424(7) 13_545 ?
+Mo1 Ga1 2.76424(7) 13_555 ?
+Mo1 Mo1 2.47242(8) 3_556 ?
+Mo1 Mo1 2.47242(8) 3_656 ?
+loop_
+_publcif_info_cif.paper_type
+?

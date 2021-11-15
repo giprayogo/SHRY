@@ -1,0 +1,73 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-06-05 19:05:45 +0300 (Tue, 05 Jun 2018) $
+#$Revision: 208147 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/54/95/1549523.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1549523
+loop_
+_publ_author_name
+'Seryotkin, Y.V.'
+'Bakakin, V.V.'
+_publ_section_title
+;
+ Structural evolution of hemimorphite at high pressure up to 4.2 GPa :
+ hemimorphite II @ 3.74 GPa, room temperature
+;
+_journal_name_full               'Physics and Chemistry of Minerals'
+_journal_page_first              679
+_journal_page_last               684
+_journal_volume                  38
+_journal_year                    2011
+_chemical_formula_sum            'H4 O10 Si2 Zn4'
+_chemical_name_common            'Zn4Si2O7(OH)2H2O at 3.74 GPa'
+_chemical_name_mineral           'hemimorphite II at 3.74 GPa'
+_space_group_IT_number           34
+_space_group_name_H-M_alt        'P n n 2'
+_symmetry_space_group_name_Hall  'P 2 -2n'
+_symmetry_space_group_name_H-M   'P n n 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   8.1034(6)
+_cell_length_b                   10.5561(10)
+_cell_length_c                   5.0324(2)
+_cell_volume                     430.47(5)
+_diffrn_ambient_pressure         3.74E+6
+_cod_data_source_file            hemimorphite-II-3.74GPa.cif
+_cod_data_source_block           hemimorphiteII-3.74GPa
+_cod_original_formula_sum        'Zn4.0 Si2.0 O10.0 H4.0'
+_cod_database_code               1549523
+loop_
+_space_group_symop_operation_xyz
+'x, y, z'
+'-x, -y, z'
+'x+1/2, -y+1/2, z+1/2'
+'-x+1/2, y+1/2, z+1/2'
+loop_
+_atom_site_label
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+Zn1 1.0 0.24701(7) 0.14167(5) 0.000000 Uiso 0.01030(16) Zn
+Zn10 1.0 0.32860(7) 0.32872(6) 0.4919(3) Uiso 0.01048(17) Zn
+Si1 1.0 0.03365(15) 0.14317(13) 0.5054(7) Uiso 0.0071(3) Si
+O1 1.0 0.2102(5) 0.1815(4) 0.6253(7) Uiso 0.0126(9) O
+O10 1.0 0.3876(5) 0.2723(4) 0.1363(7) Uiso 0.0129(9) O
+O2 1.0 0.0356(5) 0.1569(4) 0.1866(7) Uiso 0.0119(10) O
+O3 1.0 0.3177(7) -0.0310(4) 0.0344(14) Uiso 0.0203(15) O
+H3 1.0 0.363(12) -0.045(10) 0.134(16) Uiso 0.04(4) H
+O4 1.0 0.000000 0.000000 0.6059(11) Uiso 0.0142(13) O
+Ow5 1.0 0.500000 0.000000 0.499(3) Uiso 0.062(3) O
+H5 1.0 0.46(2) 0.07(2) 0.58(4) Uiso 0.23(10) H

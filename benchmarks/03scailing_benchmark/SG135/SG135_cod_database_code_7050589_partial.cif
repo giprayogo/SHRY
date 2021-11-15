@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Bi13SbTe3AsH32C24Se4S8NO17
+_symmetry_space_group_name_H-M   P4_2/mbc
+_cell_length_a   10.86300000
+_cell_length_b   10.86300000
+_cell_length_c   9.19470000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   135
+_chemical_formula_structural   Bi13SbTe3AsH32C24Se4S8NO17
+_chemical_formula_sum   'Bi13 Sb1 Te3 As1 H32 C24 Se4 S8 N1 O17'
+_cell_volume   1085.01844952
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z+1/2'
+  4  'y, -x, -z+1/2'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z+1/2'
+  8  '-y, x, -z+1/2'
+  9  'x+1/2, -y+1/2, -z'
+  10  '-x+1/2, y+1/2, z'
+  11  '-y+1/2, -x+1/2, -z+1/2'
+  12  'y+1/2, x+1/2, z+1/2'
+  13  '-x+1/2, y+1/2, -z'
+  14  'x+1/2, -y+1/2, z'
+  15  'y+1/2, x+1/2, -z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Bi+  Bi0  16  0.01838000  0.28213000  0.07314000  0.8125
+  As+  As1  16  0.01838000  0.28213000  0.07314000  0.0625
+  N+  N2  16  0.01838000  0.28213000  0.07314000  0.0625
+  Sb+  Sb3  16  0.01838000  0.28213000  0.07314000  0.0625
+  H  H4  16  0.02570000  0.67090000  0.87250000  1.0
+  H  H5  16  0.11450000  0.18020000  0.21660000  1.0
+  Te+  Te6  8  0.09011000  0.19419000  0.50000000  0.375
+  O+  O7  8  0.09011000  0.19419000  0.50000000  0.125
+  Se+  Se8  8  0.09011000  0.19419000  0.50000000  0.5
+  C  C9  16  0.09721000  0.19827000  0.11980000  1.0
+  C  C10  8  0.14220000  0.85060000  0.50000000  1.0
+  S  S11  8  0.02436000  0.73972000  0.50000000  1.0
+  O  O12  16  0.04506000  0.66815000  0.63114000  1.0

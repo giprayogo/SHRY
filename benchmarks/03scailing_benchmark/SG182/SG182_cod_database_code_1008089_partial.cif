@@ -1,0 +1,59 @@
+# generated using pymatgen
+data_Ba2Al4Te0.25Se1.41666667Lv0.16666667S0.16666667O6
+_symmetry_space_group_name_H-M   P6_322
+_cell_length_a   5.22700000
+_cell_length_b   5.22700000
+_cell_length_c   8.80200000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   182
+_chemical_formula_structural
+Ba2Al4Te0.25Se1.41666667Lv0.16666667S0.16666667O6
+_chemical_formula_sum
+'Ba2 Al4 Te0.25 Se1.41666667 Lv0.16666667 S0.16666667 O6'
+_cell_volume   208.26533830
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z+1/2'
+  3  '-y, x-y, z'
+  4  '-x, -y, z+1/2'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z+1/2'
+  7  '-y, -x, -z+1/2'
+  8  '-x, -x+y, -z'
+  9  '-x+y, y, -z+1/2'
+  10  'y, x, -z'
+  11  'x, x-y, -z+1/2'
+  12  'x-y, -y, -z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Ba2+  2.0
+  Al3+  3.0
+  Te2-  -2.0
+  Se2-  -2.0
+  S2-  -2.0
+  O2-  -2.0
+  Lv2-  -2.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba2+  Ba0  2  0.00000000  0.00000000  0.25000000  1.0
+  Al3+  Al1  4  0.33333333  0.66666667  0.05100000  1.0
+  Se2-  Se2  2  0.33333333  0.66666667  0.25000000
+  0.7083333333333334
+  Lv2-  Lv3  2  0.33333333  0.66666667  0.25000000
+  0.08333333333333333
+  S2-  S4  2  0.33333333  0.66666667  0.25000000
+  0.08333333333333333
+  Te2-  Te5  2  0.33333333  0.66666667  0.25000000  0.125
+  O2-  O6  6  0.00000000  0.34300000  0.00000000  1.0

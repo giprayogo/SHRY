@@ -1,0 +1,248 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-13 03:08:28 +0300 (Fri, 13 Oct 2017) $
+#$Revision: 201955 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/2/00/29/2002966.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2002966
+loop_
+_publ_author_name
+'Perpetuo, Genivaldo'
+'Buschmann, J\"urgen'
+'Luger, Peter'
+'Lentz, Dieter'
+'Dreissig, D.'
+_publ_section_title
+;
+ Low-temperature crystallization and structure determination of
+ <i>N</i>-(trifluoromethyl)formamide,
+ <i>N</i>-(2,2,2-trifluoroethyl)formamide and 2,2,2-trifluoroethyl
+ isocyanide
+;
+_journal_issue                   1
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              70
+_journal_page_last               77
+_journal_paper_doi               10.1107/S0108768198006570
+_journal_volume                  55
+_journal_year                    1999
+_chemical_formula_moiety         'C2 H2 F3 N O'
+_chemical_formula_sum            'C2 H2 F3 N O'
+_chemical_formula_weight         113.05
+_chemical_name_systematic
+;
+N-trifluoromethyl formamide
+;
+_space_group_IT_number           19
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  'P 2ac 2ab'
+_symmetry_space_group_name_H-M   'P 21 21 21'
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   4.547(2)
+_cell_length_b                   5.947(3)
+_cell_length_c                   14.731(9)
+_cell_measurement_temperature    143.0(10)
+_cell_volume                     398.3(4)
+_computing_cell_refinement
+;
+Siemens software
+;
+_computing_data_collection
+;
+Siemens software
+;
+_computing_data_reduction        'in-house program'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-86 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      143.0(10)
+_diffrn_measured_fraction_theta_full 1.000
+_diffrn_measured_fraction_theta_max 1.000
+_diffrn_measurement_device
+;
+Siemens four circle diffractometer, N2 gas stream cooled
+;
+_diffrn_measurement_method       \w/2\q
+_diffrn_radiation_monochromator  none
+_diffrn_radiation_source         'fine-focus x-ray tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71068
+_diffrn_reflns_av_R_equivalents  0.0498
+_diffrn_reflns_av_sigmaI/netI    0.0318
+_diffrn_reflns_limit_h_max       6
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       8
+_diffrn_reflns_limit_k_min       -8
+_diffrn_reflns_limit_l_max       20
+_diffrn_reflns_limit_l_min       -20
+_diffrn_reflns_number            2446
+_diffrn_reflns_theta_full        30.02
+_diffrn_reflns_theta_max         30.02
+_diffrn_reflns_theta_min         2.77
+_diffrn_standards_decay_%        4
+_diffrn_standards_interval_time  90
+_diffrn_standards_number         4
+_exptl_absorpt_coefficient_mu    0.232
+_exptl_absorpt_correction_type   none
+_exptl_crystal_density_diffrn    1.885
+_exptl_crystal_density_meas      ?
+_exptl_crystal_description
+;
+cylinder with diameter 0.5 mm
+;
+_exptl_crystal_F_000             224
+_refine_diff_density_max         0.403
+_refine_diff_density_min         -0.389
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   -2.88(2.96)
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_all   1.105
+_refine_ls_goodness_of_fit_obs   1.105
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     70
+_refine_ls_number_reflns         1170
+_refine_ls_number_restraints     2
+_refine_ls_restrained_S_all      1.167
+_refine_ls_restrained_S_obs      1.167
+_refine_ls_R_factor_all          0.1230
+_refine_ls_R_factor_obs          0.0696
+_refine_ls_shift/esd_max         0.086
+_refine_ls_shift/esd_mean        0.007
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_scheme
+;
+calc w=1/[\s^2^(Fo^2^) +
+ (0.0749P)^2^+0.5432P]
+ where P=(Fo^2^+2Fc^2^)/3
+;
+_refine_ls_wR_factor_all         0.2259
+_refine_ls_wR_factor_obs         0.1708
+_reflns_number_gt                779
+_reflns_number_total             1170
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            ca0001.cif
+_cod_data_source_block           I
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_exptl_absorpt_correction_type' tag value 'no' was replaced with
+'none' value.
+
+Automatic conversion script
+Id: cif_fix_values 1646 2011-03-28 12:23:43Z adriana 
+;
+_cod_original_sg_symbol_H-M      'P21 21 21'
+_cod_database_code               2002966
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y, z+1/2'
+'x+1/2, -y+1/2, -z'
+'-x, y+1/2, -z+1/2'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_occupancy
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+_atom_site_type_symbol
+O1 1.0942(7) 0.5366(6) 0.4321(3) 0.0290(10) Uani d . 1 . . O
+C1 0.8260(9) 0.5368(8) 0.4309(3) 0.0250(10) Uani d . 1 . . C
+H1 0.70(2) 0.660(10) 0.460(10) 0.030 Uiso d . 1 . . H
+N2 0.6592(8) 0.3786(6) 0.3883(3) 0.0260(10) Uani d . 1 . . N
+H2 0.45(2) 0.380(10) 0.390(10) 0.031 Uiso d . 1 . . H
+C3 0.7820(9) 0.1974(7) 0.3408(3) 0.0260(10) Uani d . 1 . . C
+F1 0.9606(7) 0.0725(4) 0.3916(2) 0.0340(10) Uani d . 1 . . F
+F2 0.9435(9) 0.2611(5) 0.2699(2) 0.0400(10) Uani d . 1 . . F
+F3 0.5689(7) 0.0657(6) 0.3109(3) 0.0600(10) Uani d . 1 . . F
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+O1 0.0183(14) 0.0292(14) 0.0395(16) 0.0008(12) -0.0028(13) -0.0073(13)
+C1 0.0213(18) 0.0233(18) 0.0311(19) 0.0034(15) -0.0004(18) -0.0024(16)
+N2 0.0141(13) 0.0290(16) 0.0350(19) 0.0019(13) -0.0002(15) -0.0073(15)
+C3 0.0179(18) 0.0278(19) 0.033(2) 0.0026(15) 0.0001(16) -0.0059(16)
+F1 0.0400(15) 0.0279(12) 0.0351(13) 0.0117(12) -0.0002(13) 0.0033(10)
+F2 0.055(2) 0.0333(13) 0.0308(13) 0.0089(14) 0.0168(14) 0.0006(11)
+F3 0.0249(14) 0.054(2) 0.099(3) -0.0030(15) -0.0078(19) -0.047(2)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+F F 0.0171 0.0103 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N N 0.0061 0.0033 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_publ_flag
+O1 C1 N2 124.0(5) no
+O1 C1 H1 124(4) no
+N2 C1 H1 112(4) no
+C1 N2 C3 122.6(4) no
+C1 N2 H2 125(3) no
+C3 N2 H2 112(3) no
+F3 C3 F1 107.7(4) no
+F3 C3 F2 108.2(4) no
+F1 C3 F2 105.3(4) no
+F3 C3 N2 109.2(4) no
+F1 C3 N2 113.0(4) no
+F2 C3 N2 113.2(4) no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_publ_flag
+O1 C1 1.219(5) no
+C1 N2 1.366(6) no
+C1 H1 1.01(6) no
+N2 C3 1.402(5) no
+N2 H2 .96(7) no
+C3 F3 1.320(5) no
+C3 F1 1.332(5) no
+C3 F2 1.330(5) no
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_publ_flag
+O1 C1 N2 C3 .3(8) no
+C1 N2 C3 F3 176.5(5) no
+C1 N2 C3 F1 56.6(6) no
+C1 N2 C3 F2 -62.9(6) no
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 ChemSpider 16060100

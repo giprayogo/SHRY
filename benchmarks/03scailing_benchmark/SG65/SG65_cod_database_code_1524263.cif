@@ -1,0 +1,76 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/42/1524263.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1524263
+loop_
+_publ_author_name
+'Doerrscheidt, W.'
+'Schaefer, H.'
+_publ_section_title
+;
+ Darstellung und Kristallstruktur von Ba Pd Sn3, Sr Pd Sn3 und La3 Co2 Sn7
+;
+_journal_name_full               'Journal of the Less-Common Metals'
+_journal_page_first              P1
+_journal_page_last               P10
+_journal_volume                  70
+_journal_year                    1980
+_chemical_formula_sum            'Co2 La3 Sn7'
+_space_group_IT_number           65
+_symmetry_space_group_name_Hall  '-C 2 2'
+_symmetry_space_group_name_H-M   'C m m m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   4.59
+_cell_length_b                   27.6
+_cell_length_c                   4.6
+_cell_volume                     582.746
+_citation_journal_id_ASTM        JCOMAH
+_cod_data_source_file            Doerrscheidt_JCOMAH_1980_1092.cif
+_cod_data_source_block           Co2La3Sn7
+_cod_original_cell_volume        582.7464
+_cod_database_code               1524263
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+x,-y,-z
+-x,y,-z
+-x,-y,-z
+x,y,-z
+-x,y,z
+x,-y,z
+x+1/2,y+1/2,z
+-x+1/2,-y+1/2,z
+x+1/2,-y+1/2,-z
+-x+1/2,y+1/2,-z
+-x+1/2,-y+1/2,-z
+x+1/2,y+1/2,-z
+-x+1/2,y+1/2,z
+x+1/2,-y+1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+La2 La 0 0.1845 0 1 0.0
+Sn3 Sn 0 0.0907 0.5 1 0.0
+La1 La 0.5 0 0.5 1 0.0
+Sn1 Sn 0 0 0 1 0.0
+Sn4 Sn 0 0.2822 0.5 1 0.0
+Sn2 Sn 0 0.4095 0 1 0.0
+Co1 Co 0 0.3717 0.5 1 0.0

@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Sr1.5Ca4.5Mg1Ds2.5Ni0.5Sn13Pd0.5Pt0.5
+_symmetry_space_group_name_H-M   P4/m
+_cell_length_a   11.20000000
+_cell_length_b   11.20000000
+_cell_length_c   4.59400000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   83
+_chemical_formula_structural   Sr1.5Ca4.5Mg1Ds2.5Ni0.5Sn13Pd0.5Pt0.5
+_chemical_formula_sum
+'Sr1.5 Ca4.5 Mg1 Ds2.5 Ni0.5 Sn13 Pd0.5 Pt0.5'
+_cell_volume   576.27136000
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  2  0.00000000  0.50000000  0.00000000  1.0
+  Ca  Ca1  1  0.50000000  0.50000000  0.50000000  1.0
+  Ca+  Ca2  4  0.16284000  0.17058000  0.00000000  0.375
+  Sr+  Sr3  4  0.16284000  0.17058000  0.00000000  0.375
+  Mg+  Mg4  4  0.16284000  0.17058000  0.00000000  0.25
+  Ds+  Ds5  4  0.22410000  0.61932000  0.50000000  0.625
+  Pd+  Pd6  4  0.22410000  0.61932000  0.50000000  0.125
+  Ni+  Ni7  4  0.22410000  0.61932000  0.50000000  0.125
+  Pt+  Pt8  4  0.22410000  0.61932000  0.50000000  0.125
+  Sn  Sn9  4  0.01751000  0.71467000  0.50000000  1.0
+  Sn  Sn10  4  0.21629000  0.38922000  0.50000000  1.0
+  Sn  Sn11  4  0.30952000  0.57522000  0.00000000  1.0
+  Sn  Sn12  1  0.00000000  0.00000000  0.50000000  1.0
