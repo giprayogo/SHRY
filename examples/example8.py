@@ -1,6 +1,6 @@
 import os
 
-from pymatgen import Structure
+from pymatgen.core import Structure
 from shry import Substitutor
 
 cif_file = 'SmFe7Ti.cif'
@@ -10,17 +10,20 @@ structure = Structure.from_file(cif_file)
 def groupby(site):
     return site.species
 
-# Equivalent to Fe1 -> Fe7Ti, Fe2 -> Fe7Ti, Fe3 -> Fe7Ti
 os.makedirs("output1", exist_ok=True)
 os.makedirs("output2", exist_ok=True)
 substitutor = Substitutor(structure)
+print(structure)
+substitutor.make_patterns()
 
-for i, _structure in enumerate(substitutor.order_structure()):
+# Equivalent to Fe1 -> Fe7Ti, Fe2 -> Fe7Ti, Fe3 -> Fe7Ti
+for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output1/{i}.cif"
-    _structure.to(filename=output_filename)
+    cifwriter.write_file(filename=output_filename)
 
 # Equivalent to Fe -> Fe7Ti
 substitutor.groupby = groupby
-for i, _structure in enumerate(substitutor.order_structure()):
+substitutor.make_patterns()
+for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output2/{i}.cif"
-    _structure.to(filename=output_filename)
+    cifwriter.write_file(filename=output_filename)

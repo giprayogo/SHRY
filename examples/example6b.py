@@ -13,12 +13,14 @@ substitutor = Substitutor(structure)
 
 # Load previous patterns
 with open('pg.pkl', 'rb') as f:
-    pattern_generators = pickle.load(f)
-substitutor.pattern_generators = pattern_generators
+    pattern_makers = pickle.load(f)
+substitutor.pattern_makers = pattern_makers
+
+# Refresh Substitutor state
+substitutor.make_patterns()
 
 # Substitute other structures
-for i, _structure in enumerate(substitutor.order_structure()):
+for i, cifwriter in enumerate(substitutor.cifwriters()):
     # Some naming logic.
     output_filename = f"output/{i}.cif"
-
-    _structure.to(filename=output_filename)
+    cifwriter.write_file(filename=output_filename)

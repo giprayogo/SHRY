@@ -7,10 +7,10 @@ __copyright__ = "Copyright (c) 2021-, The SHRY Project"
 __credits__ = ["Genki Prayogo", "Kosuke Nakano"]
 
 __license__ = "MIT"
-__version__ = "1.0.0"
+__version__ = "1.0.3"
 __maintainer__ = "Genki Prayogo"
 __email__ = "g.prayogo@icloud.com"
-__date__ = "2. Nov. 2021"
+__date__ = "15. Nov. 2021"
 __status__ = "Production"
 
 """
@@ -608,8 +608,8 @@ class Substitutor:
         return self._pattern_makers
 
     @pattern_makers.setter
-    def pattern_makers(self, pattern_generators):
-        self._pattern_makers = pattern_generators
+    def pattern_makers(self, pattern_makers):
+        self._pattern_makers = pattern_makers
 
     def _sorted_compositions(self):
         """
@@ -856,7 +856,10 @@ class Substitutor:
         """
         logging.info("\nCreating CifWriter instances.")
         template_structure = self._structure.copy()
-        template_pattern = self._patterns[self.sampled_indices[0]]
+        try:
+            template_pattern = self._patterns[self.sampled_indices[0]]
+        except IndexError:
+            raise RuntimeError("Patterns have not been generated.")
 
         # Build template CifWriter
         des = self._disorder_elements()
@@ -886,10 +889,6 @@ class Substitutor:
             template_label = block["_atom_site_label"]
 
             # These two blocks are always "1" in the final structure
-            # template_multiplicity = ["1" for _ in enumerate(template_label)]
-            # template_occupancy = ["1.0" for _ in enumerate(template_label)]
-            # block["_atom_site_symmetry_multiplicity"] = template_multiplicity
-            # block["_atom_site_occupancy"] = template_occupancy
             block["_atom_site_symmetry_multiplicity"] = ["1"] * len(template_label)
             block["_atom_site_occupancy"] = ["1.0"] * len(template_label)
 
