@@ -7,10 +7,10 @@ __copyright__ = "Copyright (c) 2021-, The SHRY Project"
 __credits__ = ["Genki Prayogo", "Kosuke Nakano"]
 
 __license__ = "MIT"
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __maintainer__ = "Genki Prayogo"
 __email__ = "g.prayogo@icloud.com"
-__date__ = "2. Nov. 2021"
+__date__ = "15. Nov. 2021"
 __status__ = "Production"
 
 """
@@ -331,14 +331,20 @@ class ScriptHelper:
         )
         sample = parser.getint("DEFAULT", "sample", fallback=const.DEFAULT_SAMPLE)
         symprec = parser.getfloat("DEFAULT", "symprec", fallback=const.DEFAULT_SYMPREC)
-        angle_tolerance = parser.getfloat("DEFAULT", "angle_tolerance", fallback=const.DEFAULT_ANGLE_TOLERANCE)
+        angle_tolerance = parser.getfloat(
+            "DEFAULT", "angle_tolerance", fallback=const.DEFAULT_ANGLE_TOLERANCE
+        )
         dir_size = parser.getint("DEFAULT", "dir_size", fallback=const.DEFAULT_DIR_SIZE)
         write_symm = parser.getboolean(
             "DEFAULT", "write_symm", fallback=const.DEFAULT_WRITE_SYMM
         )
 
-        no_write = parser.getboolean("DEFAULT", "no_write", fallback=const.DEFAULT_NO_WRITE)
-        no_dmat = parser.getboolean("DEFAULT", "no_dmat", fallback=const.DEFAULT_NO_DMAT)
+        no_write = parser.getboolean(
+            "DEFAULT", "no_write", fallback=const.DEFAULT_NO_WRITE
+        )
+        no_dmat = parser.getboolean(
+            "DEFAULT", "no_dmat", fallback=const.DEFAULT_NO_DMAT
+        )
         t_kind = parser.getboolean("DEFAULT", "t_kind", fallback=const.DEFAULT_T_KIND)
 
         return cls(
@@ -561,23 +567,28 @@ class LabeledStructure(Structure):
             RuntimeError: If no sites matches at least one of the from_species
                 specification.
         """
-        for from_species, to_species in species_mapping.items():
+        for map_num, mapping in enumerate(species_mapping.items()):
+            from_species, to_species = mapping
             replace = False
             to_composition = Composition.from_string(to_species)
             for site in self:
-                # Find matching Element
-                if any(e.symbol == from_species for e in site.species.elements):
+                # Find matching site label
+                if from_species in site.properties["_atom_site_label"]:
                     replace = True
-                    # Update the site label.
-                    site.properties["_atom_site_label"] = tuple(sorted({to_species}))
+                    # If match by label, don't change the label!
+                    # site.properties["_atom_site_label"] = tuple(sorted({to_species}))
                     try:
                         site.species = to_composition
                     except ValueError:
                         site.species = to_composition.fractional_composition
-                # If failed, try to find matching CIF labels
-                elif from_species in site.properties["_atom_site_label"]:
+                # If failed, try to find matching Element
+                elif any(e.symbol == from_species for e in site.species.elements):
                     replace = True
-                    site.properties["_atom_site_label"] = tuple(sorted({to_species}))
+                    # Since all sites are replaced, merge them under one label.
+                    # But give a distinct ID in case two or more sites are
+                    # replaced into the same species.
+                    new_label = tuple(sorted({to_species}) + [map_num])
+                    site.properties["_atom_site_label"] = new_label
                     try:
                         site.species = to_composition
                     except ValueError:
