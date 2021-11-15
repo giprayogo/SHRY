@@ -17,7 +17,7 @@ LS = ["ls"]
 REAL_TIME_COLUMN = 0
 USER_TIME_COLUMN = 1
 SYS_TIME_COLUMN =  2
-TIME_LOOP=1
+TIME_LOOP=2
 
 SUPERCELL_TOLERANCE="0.01" #angstrom
 SHRY_TOLERANCE="0.01"      #angstrom
@@ -34,6 +34,7 @@ def timed_process_run(args, desc=None, average=TIME_LOOP):
     
     for i in tqdm(range(average), desc=desc):
         try:
+            #print(args)
             p = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
             stdout_lines = p.stdout.decode().split("\n")
             stderr_lines = p.stderr.decode().split("\n")
@@ -66,8 +67,9 @@ def timed_process_run(args, desc=None, average=TIME_LOOP):
             r_list.append(r); u_list.append(u); s_list.append(s)
         
         except:
-            print(f"Subprocess error: time trial {i}/{len(range(average))}")
-    
+            print(f"Subprocess error: time trial {i}/{average}")
+            import traceback
+            print(traceback.format_exc())
     try:
         assert len(r_list) != 0
         assert len(u_list) != 0
