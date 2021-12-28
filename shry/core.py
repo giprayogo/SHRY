@@ -1122,7 +1122,7 @@ class PatternMaker:
             self._bit_perm = np.array(
                 [[2 ** int(i) for i in row] for row in indexed_perm_list], dtype=object
             )
-        
+
         self._gen_flag = collections.defaultdict(bool)
 
         # Containers for search results.
@@ -1188,17 +1188,6 @@ class PatternMaker:
         self.auts.cache_clear()
         self.patterns.cache_clear()
 
-    # @property
-    # def _genlevel(self):
-    #     """
-    #     Level at which patterns have been generated
-    #     """
-    #     # TODO: modify to return bool list
-    #     try:
-    #         return max(self._patterns)
-    #     except ValueError:
-    #         return 0
-
     @staticmethod
     def get_label(perm_list):
         """
@@ -1247,26 +1236,6 @@ class PatternMaker:
             self.search(start=start, stop=_n)
         # Map to original permutation; put identity on 0
         auts = [np.sort(self._row_index[aut]) for aut in self._auts[_n]]
-        return auts
-
-    def lexsort(self, pattern):
-        """
-        Lexicographical sorting on unordered array row.
-        """
-        o_bitsums = sum([self._bit_perm[:, i] for i in pattern])
-        can = np.argmin(o_bitsums)
-        return can
-
-    def automorphisms(self, pattern):
-        """
-        Find permutations that fixes the pattern
-        """
-        bitsum = sum([self._bits[i] for i in pattern])
-        # patch = np.zeros(self._nix, dtype=int)
-        # patch[pattern] = 1
-        # o_bitsums = np.matmul(self._bit_perm, patch)
-        o_bitsums = sum([self._bit_perm[:, i] for i in pattern])
-        auts = np.flatnonzero(o_bitsums == bitsum)
         return auts
 
     def _fill_sieve(self, n):
@@ -1329,9 +1298,13 @@ class PatternMaker:
         if not start:
             # Fill first stack
             noniso_orbits = np.unique(self._perms.min(axis=0))
-            for _pattern in noniso_orbits:
-                pattern = np.array([_pattern])
-                aut = self.automorphisms(pattern)
+            for _i in noniso_orbits:
+                pattern = np.array([_i])
+                bitsum = self._bits[_i]
+                patch = np.zeros(self._nix, dtype=int)
+                patch[_i] = 1
+                o_bitsums = self._bit_perm.dot(patch)
+                aut = np.flatnonzero(o_bitsums == bitsum)
                 stack.append((pattern, aut))
         else:
             patterns = self._patterns[start].copy()
@@ -1363,24 +1336,31 @@ class PatternMaker:
             # Insertion location
             loci = pattern.searchsorted(leaf_array)
 
-            for i in np.flatnonzero(uniq_mask):
+            pattern_mask = ~leaf_mask
+            bitbox = np.tile(pattern_mask, (uniq_mask.sum(), 1))
+            for i, x in enumerate(leaf_array[uniq_mask]):
+                bitbox[i, x] = True
+            sums = bitbox.dot(self._bit_perm.T)
+
+            for t, i in enumerate(np.flatnonzero(uniq_mask)):
                 x = leaf_array[i]
                 j = loci[i]
+                sumst = sums[t]
 
-                _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
-                _aut = self.automorphisms(_pattern)
+                _i = np.flatnonzero(bitbox[t])
+                _aut = np.flatnonzero(sumst == sumst[-1])
 
                 # Compute canonical parent.
-                m = self.lexsort(_pattern)
-                can_pattern = self._perms[m, _pattern]
+                m = np.argmin(sumst)
+                can_pattern = self._perms[m, _i]
                 discard_i = np.where(can_pattern == can_pattern.max())[0]
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_i:
-                    stack.append((_pattern, _aut))
+                    stack.append((_i, _aut))
                 # Check if tree parent is related to canonical parent.
-                elif _pattern[discard_i] in self._perms[_aut, x]:
-                    stack.append((_pattern, _aut))
+                elif _i[discard_i] in self._perms[_aut, x]:
+                    stack.append((_i, _aut))
         pbar.close()
 
         n_gen = len(self._patterns[stop])
@@ -1424,7 +1404,7 @@ class PatternMaker:
 
     def _get_not_reject_mask_float(self, delta_t):
         # return np.ones(delta_t.shape[0], dtype=bool)
-        return ~((delta_t < 0.) & ~np.isclose(delta_t, 0.)).any(axis=1)
+        return ~((delta_t < 0.0) & ~np.isclose(delta_t, 0.0)).any(axis=1)
 
     @staticmethod
     def _get_accept_mask_int(delta_t):
@@ -1432,7 +1412,7 @@ class PatternMaker:
 
     def _get_accept_mask_float(self, delta_t):
         # return np.zeros(delta_t.shape[0], dtype=bool)
-        return ((delta_t > 0.) & ~np.isclose(delta_t, 0.)).all(axis=1)
+        return ((delta_t > 0.0) & ~np.isclose(delta_t, 0.0)).all(axis=1)
 
     @staticmethod
     def _get_mins_int(subobj_ts):
@@ -1477,9 +1457,14 @@ class PatternMaker:
         if not start:
             # Populate the first layer.
             noniso_orbits = np.unique(self._perms.min(axis=0))
-            for _pattern in noniso_orbits:
-                pattern = np.array([_pattern])
-                aut = self.automorphisms(pattern)
+            for _i in noniso_orbits:
+                pattern = np.array([_i])
+                # TODO: refine
+                bitsum = self._bits[_i]
+                patch = np.zeros(self._nix, dtype=int)
+                patch[_i] = 1
+                o_bitsums = self._bit_perm.dot(patch)
+                aut = np.flatnonzero(o_bitsums == bitsum)
                 subobj_ts = np.array([0])
                 stack.append((subobj_ts, pattern, aut))
         else:
@@ -1524,48 +1509,47 @@ class PatternMaker:
             # Insertion location
             loci = pattern.searchsorted(leaf_array)
 
+            # TODO: Refine.
+            pattern_mask = (~leaf_mask).astype(int)
+            bitbox = np.tile(pattern_mask, (uniq_mask.sum(), 1))
+            for i, x in enumerate(leaf_array[uniq_mask]):
+                bitbox[i, x] = 1
+            sums = bitbox.dot(self._bit_perm.T)
+
             accept_mask = self._get_accept_mask(delta_t)
             accept_mask &= uniq_mask
-            for i in np.flatnonzero(accept_mask):
+            accepts = leaf_array[accept_mask]
+            for t, i in enumerate(np.flatnonzero(uniq_mask)):
                 x = leaf_array[i]
                 j = loci[i]
+                sumst = sums[t]
 
                 _subobj_ts = leaf_subobj_ts[i]
                 _subobj_ts[j:] = np.concatenate((_subobj_ts[-1:], _subobj_ts[j:-1]))
 
-                _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
-                _aut = self.automorphisms(_pattern)
+                _i = np.flatnonzero(bitbox[t])
+                # NOTE: just in case I fail to consistently sort perm
+                # bitsum = sum([self._bits[y] for y in _pattern])
+                # _aut = np.flatnonzero(sums[t] == bitsum)
+                _aut = np.flatnonzero(sumst == sumst[-1])
 
-                stack.append((_subobj_ts, _pattern, _aut))
-
-            # For the remaining, do full checks (more expensive).
-            check_mask = ~accept_mask & uniq_mask
-            if not check_mask.any():
-                continue
-            for i in np.flatnonzero(check_mask):
-                x = leaf_array[i]
-                j = loci[i]
-
-                _subobj_ts = leaf_subobj_ts[i]
-                _subobj_ts[j:] = np.concatenate((_subobj_ts[-1:], _subobj_ts[j:-1]))
-
-                _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
-                _aut = self.automorphisms(_pattern)
+                if x in accepts:
+                    stack.append((_subobj_ts, _i, _aut))
+                    continue
 
                 # Compute canonical parent.
                 ts_min_i = self._get_mins(_subobj_ts)
-                _sub = _pattern[ts_min_i]
-                m = self.lexsort(_pattern)
+                _sub = _i[ts_min_i]
+                m = np.argmin(sumst)
                 can_pattern = self._perms[m, _sub]
                 discard_i = ts_min_i[can_pattern == can_pattern.max()]
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_i:
-                    stack.append((_subobj_ts, _pattern, _aut))
-                    continue
+                    stack.append((_subobj_ts, _i, _aut))
                 # Check if tree parent is related to canonical parent.
-                if _pattern[discard_i] in self._perms[_aut, x]:
-                    stack.append((_subobj_ts, _pattern, _aut))
+                elif _i[discard_i] in self._perms[_aut, x]:
+                    stack.append((_subobj_ts, _i, _aut))
         pbar.close()
 
         n_gen = len(self._patterns[stop])
