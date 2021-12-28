@@ -30,6 +30,7 @@ import numpy as np
 import spglib
 import sympy
 import tqdm
+from memory_profiler import profile
 from monty.fractions import gcd_float
 from pymatgen.core.composition import Composition, reduce_formula
 from pymatgen.core.operations import SymmOp
@@ -1033,14 +1034,12 @@ class PatternMaker:
         "_row_index",
         "_bits",
         "_bit_perm",
-        "_automorphisms",
-        "_cans",
-        "_rep_bitsums",
         "label",
         "_sieve",
         "_get_not_reject_mask",
         "_get_accept_mask",
         "_get_mins",
+        "_gen_flag",
     )
 
     def __init__(
@@ -1101,7 +1100,6 @@ class PatternMaker:
         else:
             self.invar = invar
 
-        # Update values.
         self._nperm, self._nix = indexed_perm_list.shape
 
         # The confusing rotations;
@@ -1124,6 +1122,8 @@ class PatternMaker:
             self._bit_perm = np.array(
                 [[2 ** int(i) for i in row] for row in indexed_perm_list], dtype=object
             )
+        
+        self._gen_flag = collections.defaultdict(bool)
 
         # Containers for search results.
         self._patterns = collections.defaultdict(list)
@@ -1132,11 +1132,6 @@ class PatternMaker:
         self._auts[0] = np.ones((self._nperm,), dtype="bool")
         self._subobj_ts = collections.defaultdict(list)
         self._subobj_ts[0] = [np.array([0])]
-
-        # Memoizations.
-        self._automorphisms = dict()
-        self._cans = dict()
-        self._rep_bitsums = dict()
 
         self.label = self._perms.tobytes()
 
@@ -1193,15 +1188,16 @@ class PatternMaker:
         self.auts.cache_clear()
         self.patterns.cache_clear()
 
-    @property
-    def _genlevel(self):
-        """
-        Level at which patterns have been generated
-        """
-        try:
-            return max(self._patterns)
-        except ValueError:
-            return 0
+    # @property
+    # def _genlevel(self):
+    #     """
+    #     Level at which patterns have been generated
+    #     """
+    #     # TODO: modify to return bool list
+    #     try:
+    #         return max(self._patterns)
+    #     except ValueError:
+    #         return 0
 
     @staticmethod
     def get_label(perm_list):
@@ -1219,16 +1215,21 @@ class PatternMaker:
         """
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
-        if _n > self._genlevel:
-            self.search(start=self._genlevel, stop=n)
-        if _n == n:
-            return [self._relabel_index[pattern] for pattern in self._patterns[n]]
-        # For "mirrors"
-        whole = np.arange(self._nix)
-        return [
-            self._relabel_index[np.setdiff1d(whole, pattern)]
-            for pattern in self._patterns[_n]
-        ]
+        if not self._gen_flag[_n]:
+            lessthan = [i for i in self._gen_flag.keys() if i < _n]
+            if not lessthan:
+                start = 0
+            else:
+                start = max(lessthan)
+            self.search(start=start, stop=_n)
+        # "Mirror" patterns
+        if _n != n:
+            inverter = np.arange(self._nix)
+            return [
+                self._relabel_index[np.setdiff1d(inverter, pattern)]
+                for pattern in self._patterns[_n]
+            ]
+        return [self._relabel_index[pattern] for pattern in self._patterns[_n]]
 
     @functools.lru_cache(None)
     def auts(self, n):
@@ -1237,8 +1238,13 @@ class PatternMaker:
         """
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
-        if _n > self._genlevel:
-            self.search(start=self._genlevel, stop=n)
+        if not self._gen_flag[_n]:
+            lessthan = [i for i in self._gen_flag.keys() if i < _n]
+            if not lessthan:
+                start = 0
+            else:
+                start = max(lessthan)
+            self.search(start=start, stop=_n)
         # Map to original permutation; put identity on 0
         auts = [np.sort(self._row_index[aut]) for aut in self._auts[_n]]
         return auts
@@ -1247,17 +1253,8 @@ class PatternMaker:
         """
         Lexicographical sorting on unordered array row.
         """
-        bitsum = sum([self._bits[i] for i in pattern])
-        if bitsum in self._cans:
-            return self._cans[bitsum]
-        if bitsum in self._rep_bitsums:
-            o_bitsums = self._rep_bitsums[bitsum]
-        else:
-            o_bitsums = sum([self._bit_perm[:, i] for i in pattern])
-            self._rep_bitsums[bitsum] = o_bitsums
-
+        o_bitsums = sum([self._bit_perm[:, i] for i in pattern])
         can = np.argmin(o_bitsums)
-        self._cans[bitsum] = can
         return can
 
     def automorphisms(self, pattern):
@@ -1265,13 +1262,10 @@ class PatternMaker:
         Find permutations that fixes the pattern
         """
         bitsum = sum([self._bits[i] for i in pattern])
-        if bitsum in self._automorphisms:
-            return self._automorphisms[bitsum]
-        if bitsum in self._rep_bitsums:
-            o_bitsums = self._rep_bitsums[bitsum]
-        else:
-            o_bitsums = sum([self._bit_perm[:, i] for i in pattern])
-            self._rep_bitsums[bitsum] = o_bitsums
+        # patch = np.zeros(self._nix, dtype=int)
+        # patch[pattern] = 1
+        # o_bitsums = np.matmul(self._bit_perm, patch)
+        o_bitsums = sum([self._bit_perm[:, i] for i in pattern])
         auts = np.flatnonzero(o_bitsums == bitsum)
         return auts
 
@@ -1313,17 +1307,19 @@ class PatternMaker:
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        start = min(self._genlevel, start)
+        lessthan = [i for i in self._gen_flag.keys() if i < stop]
+        if not lessthan:
+            start = 0
+        else:
+            start = max(lessthan, start)
 
         # Cross-check with exact enumeration.
         enumerator = self._enumerator_collection.get([self._perms])
-        counts = dict()
-        for i in range(start, stop + 1):
-            counts[i] = enumerator.count(((i, self._nix - i),))
+        n_pred = enumerator.count(((stop, self._nix - stop),))
 
         # Progress bar.
         pbar = tqdm.tqdm(
-            total=counts[stop],
+            total=n_pred,
             desc=f"Making patterns ({stop}/{self._nix})",
             **const.TQDM_CONF,
             disable=const.DISABLE_PROGRESSBAR,
@@ -1331,13 +1327,11 @@ class PatternMaker:
 
         stack = []
         if not start:
-            # Populate the first layer.
+            # Fill first stack
             noniso_orbits = np.unique(self._perms.min(axis=0))
             for _pattern in noniso_orbits:
                 pattern = np.array([_pattern])
                 aut = self.automorphisms(pattern)
-                self._patterns[pattern.size].append(pattern)
-                self._auts[pattern.size].append(aut)
                 stack.append((pattern, aut))
         else:
             patterns = self._patterns[start].copy()
@@ -1348,6 +1342,8 @@ class PatternMaker:
         while stack:
             pattern, aut = stack.pop()
             if pattern.size == stop:
+                self._patterns[stop].append(pattern)
+                self._auts[stop].append(pattern)
                 pbar.update()
                 continue
             # Tree is expanded by adding un-added sites
@@ -1381,26 +1377,20 @@ class PatternMaker:
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_i:
-                    self._patterns[_pattern.size].append(_pattern)
-                    self._auts[_pattern.size].append(_aut)
                     stack.append((_pattern, _aut))
                 # Check if tree parent is related to canonical parent.
                 elif _pattern[discard_i] in self._perms[_aut, x]:
-                    self._patterns[_pattern.size].append(_pattern)
-                    self._auts[_pattern.size].append(_aut)
                     stack.append((_pattern, _aut))
         pbar.close()
 
-        # Check if generation matches predicted.
-        for size in range(start, stop + 1):
-            n_pred = counts[size]
-            n_gen = len(self._patterns[size])
-            if n_pred != n_gen:
-                raise RuntimeError(
-                    "Mismatch between predicted and generated number of structures.\n"
-                    f"(at {size}, {n_gen}/{n_pred} were generated)"
-                )
+        n_gen = len(self._patterns[stop])
+        if n_pred != n_gen:
+            raise RuntimeError(
+                "Mismatch between predicted and generated number of structures.\n"
+                f"(at {stop}, {n_gen}/{n_pred} were generated)"
+            )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
+        self._gen_flag[stop] = True
 
     def _get_sum_subobj_ts(self, pattern, leaf_array, subobj_ts):
         new_rows = self.invar[np.ix_(leaf_array, pattern)]
@@ -1452,6 +1442,7 @@ class PatternMaker:
     def _get_mins_float(subobj_ts):
         return np.flatnonzero(np.isclose(subobj_ts, subobj_ts.min()))
 
+    # @profile
     def _invar_search(self, start=0, stop=None):
         """
         Combines invar and lexmax to determine canonical parent.
@@ -1460,20 +1451,23 @@ class PatternMaker:
             start: Start seach at this depth.
             stop: Stop search at this depth.
         """
+        # TODO: stop and there
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        start = min(self._genlevel, start)
+        lessthan = [i for i in self._gen_flag.keys() if i < stop]
+        if not lessthan:
+            start = 0
+        else:
+            start = max(lessthan, start)
 
         # Cross-check with exact enumeration.
         enumerator = self._enumerator_collection.get([self._perms])
-        counts = dict()
-        for i in range(start, stop + 1):
-            counts[i] = enumerator.count(((i, self._nix - i),))
+        n_pred = enumerator.count(((stop, self._nix - stop),))
 
         # Progress bar.
         pbar = tqdm.tqdm(
-            total=counts[stop],
+            total=n_pred,
             desc=f"Making patterns ({stop}/{self._nix})",
             **const.TQDM_CONF,
             disable=const.DISABLE_PROGRESSBAR,
@@ -1487,9 +1481,6 @@ class PatternMaker:
                 pattern = np.array([_pattern])
                 aut = self.automorphisms(pattern)
                 subobj_ts = np.array([0])
-                self._patterns[pattern.size].append(pattern)
-                self._auts[pattern.size].append(aut)
-                self._subobj_ts[pattern.size].append(subobj_ts)
                 stack.append((subobj_ts, pattern, aut))
         else:
             patterns = self._patterns[start].copy()
@@ -1498,10 +1489,12 @@ class PatternMaker:
             for subobj_ts, pattern, aut in zip(sums, patterns, auts):
                 stack.append((subobj_ts, pattern, aut))
 
-        # break_count = 0
         while stack:
             subobj_ts, pattern, aut = stack.pop()
             if pattern.size == stop:
+                self._patterns[pattern.size].append(pattern)
+                self._auts[pattern.size].append(aut)
+                self._subobj_ts[pattern.size].append(subobj_ts)
                 pbar.update()
                 continue
             # Tree is expanded by adding un-added sites
@@ -1543,9 +1536,6 @@ class PatternMaker:
                 _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
                 _aut = self.automorphisms(_pattern)
 
-                self._subobj_ts[_pattern.size].append(_subobj_ts)
-                self._patterns[_pattern.size].append(_pattern)
-                self._auts[_pattern.size].append(_aut)
                 stack.append((_subobj_ts, _pattern, _aut))
 
             # For the remaining, do full checks (more expensive).
@@ -1553,7 +1543,6 @@ class PatternMaker:
             if not check_mask.any():
                 continue
             for i in np.flatnonzero(check_mask):
-                # break_count += 1
                 x = leaf_array[i]
                 j = loci[i]
 
@@ -1572,30 +1561,21 @@ class PatternMaker:
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_i:
-                    self._subobj_ts[_pattern.size].append(_subobj_ts)
-                    self._patterns[_pattern.size].append(_pattern)
-                    self._auts[_pattern.size].append(_aut)
                     stack.append((_subobj_ts, _pattern, _aut))
+                    continue
                 # Check if tree parent is related to canonical parent.
-                elif _pattern[discard_i] in self._perms[_aut, x]:
-                    self._subobj_ts[_pattern.size].append(_subobj_ts)
-                    self._patterns[_pattern.size].append(_pattern)
-                    self._auts[_pattern.size].append(_aut)
+                if _pattern[discard_i] in self._perms[_aut, x]:
                     stack.append((_subobj_ts, _pattern, _aut))
-
-        # print(break_count)
         pbar.close()
 
-        # Check if generation matches predicted.
-        for size in range(start, stop + 1):
-            n_pred = counts[size]
-            n_gen = len(self._patterns[size])
-            if n_pred != n_gen:
-                raise RuntimeError(
-                    "Mismatch between predicted and generated number of structures.\n"
-                    f"(at {size}, {n_gen}/{n_pred} were generated)"
-                )
+        n_gen = len(self._patterns[stop])
+        if n_pred != n_gen:
+            raise RuntimeError(
+                "Mismatch between predicted and generated number of structures.\n"
+                f"(at {stop}, {n_gen}/{n_pred} were generated)"
+            )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
+        self._gen_flag[stop] = True
 
 
 class Polya:
