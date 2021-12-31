@@ -1024,6 +1024,7 @@ class PatternMaker:
         "_patterns",
         "_auts",
         "_subobj_ts",
+        "_bs",
         "_get_subobj_ts",
         "_nix",
         "invar",
@@ -1132,6 +1133,8 @@ class PatternMaker:
         self._auts[0] = np.ones((self._nperm,), dtype="bool")
         self._subobj_ts = collections.defaultdict(list)
         self._subobj_ts[0] = [np.array([0])]
+        self._bs = collections.defaultdict(list) 
+        self._bs[0] = [np.zeros(self._nix)]
 
         self.label = self._perms.tobytes()
 
@@ -1303,20 +1306,23 @@ class PatternMaker:
                 bitsum = self._bits[_i]
                 patch = np.zeros(self._nix, dtype=int)
                 patch[_i] = 1
+                bs = self._bit_perm.dot(patch)
                 o_bitsums = self._bit_perm.dot(patch)
                 aut = np.flatnonzero(o_bitsums == bitsum)
-                stack.append((pattern, aut))
+                stack.append((pattern, aut, bs))
         else:
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
+            bs = self._bs[start].copy()
             for pattern, aut in zip(patterns, auts):
-                stack.append((pattern, aut))
+                stack.append((pattern, aut, bs))
 
         while stack:
-            pattern, aut = stack.pop()
+            pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
                 self._patterns[stop].append(pattern)
                 self._auts[stop].append(pattern)
+                self._bs[pattern.size].append(pbs)
                 pbar.update()
                 continue
             # Tree is expanded by adding un-added sites
@@ -1336,31 +1342,25 @@ class PatternMaker:
             # Insertion location
             loci = pattern.searchsorted(leaf_array)
 
-            pattern_mask = ~leaf_mask
-            bitbox = np.tile(pattern_mask, (uniq_mask.sum(), 1))
-            for i, x in enumerate(leaf_array[uniq_mask]):
-                bitbox[i, x] = True
-            sums = bitbox.dot(self._bit_perm.T)
-
-            for t, i in enumerate(np.flatnonzero(uniq_mask)):
+            for i in np.flatnonzero(uniq_mask):
                 x = leaf_array[i]
                 j = loci[i]
-                sumst = sums[t]
+                _pbs = self._bit_perm[:, x] + pbs
 
-                _i = np.flatnonzero(bitbox[t])
-                _aut = np.flatnonzero(sumst == sumst[-1])
+                _i = np.concatenate((pattern[:j], [x], pattern[j:]))
+                _aut = np.flatnonzero(_pbs == _pbs[-1])
 
                 # Compute canonical parent.
-                m = np.argmin(sumst)
+                m = np.argmin(_pbs)
                 can_pattern = self._perms[m, _i]
                 discard_i = np.where(can_pattern == can_pattern.max())[0]
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_i:
-                    stack.append((_i, _aut))
+                    stack.append((_i, _aut, _pbs))
                 # Check if tree parent is related to canonical parent.
                 elif _i[discard_i] in self._perms[_aut, x]:
-                    stack.append((_i, _aut))
+                    stack.append((_i, _aut, _pbs))
         pbar.close()
 
         n_gen = len(self._patterns[stop])
@@ -1463,23 +1463,26 @@ class PatternMaker:
                 bitsum = self._bits[_i]
                 patch = np.zeros(self._nix, dtype=int)
                 patch[_i] = 1
-                o_bitsums = self._bit_perm.dot(patch)
-                aut = np.flatnonzero(o_bitsums == bitsum)
+                bs = self._bit_perm.dot(patch)
+                aut = np.flatnonzero(bs == bitsum)
                 subobj_ts = np.array([0])
-                stack.append((subobj_ts, pattern, aut))
+                stack.append((subobj_ts, pattern, aut, bs))
         else:
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
             sums = self._subobj_ts[start].copy()
+            # TODO: create from scratch, instead of filling the memory.
+            bs = self._bs[start].copy()
             for subobj_ts, pattern, aut in zip(sums, patterns, auts):
-                stack.append((subobj_ts, pattern, aut))
+                stack.append((subobj_ts, pattern, aut, bs))
 
         while stack:
-            subobj_ts, pattern, aut = stack.pop()
+            subobj_ts, pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
                 self._patterns[pattern.size].append(pattern)
                 self._auts[pattern.size].append(aut)
                 self._subobj_ts[pattern.size].append(subobj_ts)
+                self._bs[pattern.size].append(pbs)
                 pbar.update()
                 continue
             # Tree is expanded by adding un-added sites
@@ -1506,50 +1509,43 @@ class PatternMaker:
             else:
                 uniq_mask = not_reject_mask
 
-            # Insertion location
+            # Insertion location TODO: without this possible?
             loci = pattern.searchsorted(leaf_array)
-
-            # TODO: Refine.
-            pattern_mask = (~leaf_mask).astype(int)
-            bitbox = np.tile(pattern_mask, (uniq_mask.sum(), 1))
-            for i, x in enumerate(leaf_array[uniq_mask]):
-                bitbox[i, x] = 1
-            sums = bitbox.dot(self._bit_perm.T)
 
             accept_mask = self._get_accept_mask(delta_t)
             accept_mask &= uniq_mask
             accepts = leaf_array[accept_mask]
-            for t, i in enumerate(np.flatnonzero(uniq_mask)):
+            for i in np.flatnonzero(uniq_mask):
                 x = leaf_array[i]
                 j = loci[i]
-                sumst = sums[t]
+                _pbs = self._bit_perm[:, x] + pbs
 
                 _subobj_ts = leaf_subobj_ts[i]
                 _subobj_ts[j:] = np.concatenate((_subobj_ts[-1:], _subobj_ts[j:-1]))
 
-                _i = np.flatnonzero(bitbox[t])
+                _i = np.concatenate((pattern[:j], [x], pattern[j:]))
                 # NOTE: just in case I fail to consistently sort perm
                 # bitsum = sum([self._bits[y] for y in _pattern])
-                # _aut = np.flatnonzero(sums[t] == bitsum)
-                _aut = np.flatnonzero(sumst == sumst[-1])
+                # _aut = np.flatnonzero(_pbs[t] == bitsum)
+                _aut = np.flatnonzero(_pbs == _pbs[-1])
 
                 if x in accepts:
-                    stack.append((_subobj_ts, _i, _aut))
+                    stack.append((_subobj_ts, _i, _aut, _pbs))
                     continue
 
                 # Compute canonical parent.
                 ts_min_i = self._get_mins(_subobj_ts)
                 _sub = _i[ts_min_i]
-                m = np.argmin(sumst)
+                m = np.argmin(_pbs)
                 can_pattern = self._perms[m, _sub]
                 discard_i = ts_min_i[can_pattern == can_pattern.max()]
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_i:
-                    stack.append((_subobj_ts, _i, _aut))
+                    stack.append((_subobj_ts, _i, _aut, _pbs))
                 # Check if tree parent is related to canonical parent.
                 elif _i[discard_i] in self._perms[_aut, x]:
-                    stack.append((_subobj_ts, _i, _aut))
+                    stack.append((_subobj_ts, _i, _aut, _pbs))
         pbar.close()
 
         n_gen = len(self._patterns[stop])
