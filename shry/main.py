@@ -255,6 +255,7 @@ class ScriptHelper:
     def __str__(self):
         string = ""
         print_format = "  * {} = {}\n"
+        string += print_format.format("SHRY version", __version__)
         string += print_format.format("structure_file", self.structure_file)
         string += print_format.format(
             "from_species", ", ".join(map(str, self.from_species))
