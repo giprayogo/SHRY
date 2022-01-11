@@ -7,7 +7,7 @@ __copyright__ = "Copyright (c) 2021-, The SHRY Project"
 __credits__ = ["Genki Prayogo", "Kosuke Nakano"]
 
 __license__ = "MIT"
-__version__ = "1.0.3"
+__version__ = "1.0.x_devel"
 __maintainer__ = "Genki Prayogo"
 __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
@@ -255,6 +255,7 @@ class ScriptHelper:
     def __str__(self):
         string = ""
         print_format = "  * {} = {}\n"
+        string += print_format.format("SHRY version", __version__)
         string += print_format.format("structure_file", self.structure_file)
         string += print_format.format(
             "from_species", ", ".join(map(str, self.from_species))

@@ -8,7 +8,6 @@ __copyright__ = "Copyright (c) 2021-, The SHRY Project"
 __credits__ = ["Genki Prayogo", "Kosuke Nakano"]
 
 __license__ = "MIT"
-__version__ = "1.0.3"
 __maintainer__ = "Genki Prayogo"
 __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
