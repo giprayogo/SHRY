@@ -710,19 +710,25 @@ class Substitutor:
                     # Operate on the _last_ subpattern, except for the first one
                     subpattern = pattern[-1]
                     subperm = group_perms[np.ix_(aut, subpattern)]
-                    # Do we need?
-                    # subperm, index = np.unique(subperm, axis=0, return_index=True)
+                    # NOTE: (*a) If inconsistent, please disable this part
+                    # reduced_subperm, inverse = np.unique(subperm, axis=0, return_inverse=True)
                     if not self._no_dmat:
                         dmat = group_dmat[np.ix_(subpattern, subpattern)]
                     else:
                         dmat = None
 
+                    # NOTE: (*b) and here
+                    # label = PatternMaker.get_label(reduced_subperm)
                     label = PatternMaker.get_label(subperm)
                     if label in self._pattern_makers:
                         maker = self._pattern_makers[label]
+                        # NOTE: (*c) and here
+                        # maker.update_index(reduced_subperm)
                         maker.update_index(subperm)
                     else:
                         maker = PatternMaker(
+                            # NOTE: (*d) and here
+                            # reduced_subperm,
                             subperm,
                             invar=dmat,
                             enumerator_collection=self._enumerator_collection,
@@ -734,7 +740,8 @@ class Substitutor:
                     for _aut, _subpattern in zip(auts, patterns):
 
                         _pattern = pattern + [_subpattern]
-                        # out_stack.append([index[_aut], _pattern])
+                        # NOTE: (*d) and here
+                        # out_stack.append([aut[np.isin(inverse, _aut)], _pattern])
                         out_stack.append([aut[_aut], _pattern])
                     pbar.update()
                 pbar.close()
@@ -1133,7 +1140,7 @@ class PatternMaker:
         self._auts[0] = np.ones((self._nperm,), dtype="bool")
         self._subobj_ts = collections.defaultdict(list)
         self._subobj_ts[0] = [np.array([0])]
-        self._bs = collections.defaultdict(list) 
+        self._bs = collections.defaultdict(list)
         self._bs[0] = [np.zeros(self._nix)]
 
         self.label = self._perms.tobytes()
@@ -1151,7 +1158,12 @@ class PatternMaker:
         # Relabel to match column position
         relabel_index = perm_list[0]
         relabel_element = np.vectorize({s: i for i, s in enumerate(relabel_index)}.get)
-        perm_list = relabel_element(perm_list)
+        try:
+            perm_list = relabel_element(perm_list)
+        except TypeError:
+            raise ValueError(
+                f"\n{perm_list}\n"
+                "Rows must have same elements.")
 
         # Row sort
         row_index = np.lexsort(perm_list.T)
@@ -1321,7 +1333,7 @@ class PatternMaker:
             pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
                 self._patterns[stop].append(pattern)
-                self._auts[stop].append(pattern)
+                self._auts[stop].append(aut)
                 self._bs[pattern.size].append(pbs)
                 pbar.update()
                 continue
@@ -1348,6 +1360,9 @@ class PatternMaker:
                 _pbs = self._bit_perm[:, x] + pbs
 
                 _i = np.concatenate((pattern[:j], [x], pattern[j:]))
+                # NOTE: just in case I fail to consistently sort perm
+                # bitsum = sum([self._bits[y] for y in _i])
+                # _aut = np.flatnonzero(_pbs == bitsum)
                 _aut = np.flatnonzero(_pbs == _pbs[-1])
 
                 # Compute canonical parent.
@@ -1470,22 +1485,32 @@ class PatternMaker:
         else:
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
-            sums = self._subobj_ts[start].copy()
-            # TODO: create from scratch, instead of filling the memory.
-            bs = self._bs[start].copy()
-            for subobj_ts, pattern, aut in zip(sums, patterns, auts):
+            # TODO: This one too! be careful and do benchmark though.
+            # Only affect "first new layer"
+            # sums = self._subobj_ts[start].copy()
+            # bs = self._bs[start].copy()
+            # for subobj_ts, pattern, aut in zip(sums, patterns, auts):
+            for subobj_ts, pattern, aut in zip(patterns, auts):
+                # TODO: Implementation pending
+                # here?
+                bs = self._bit_perm[:, pattern]
+                print(bs)
+                # sums = ...
+                sys.exit()
                 stack.append((subobj_ts, pattern, aut, bs))
 
         while stack:
             subobj_ts, pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
+                # TODO: Implement generic handler
                 self._patterns[pattern.size].append(pattern)
                 self._auts[pattern.size].append(aut)
-                self._subobj_ts[pattern.size].append(subobj_ts)
-                self._bs[pattern.size].append(pbs)
+                # TODO: work out alternative.
+                # self._subobj_ts[pattern.size].append(subobj_ts)
+                # self._bs[pattern.size].append(pbs)
                 pbar.update()
                 continue
-            # Tree is expanded by adding un-added sites
+            # Invert index
             leaf_mask = np.ones(self._nix, dtype="bool")
             leaf_mask[pattern] = False
             leaf_array = np.flatnonzero(leaf_mask)
@@ -1525,8 +1550,8 @@ class PatternMaker:
 
                 _i = np.concatenate((pattern[:j], [x], pattern[j:]))
                 # NOTE: just in case I fail to consistently sort perm
-                # bitsum = sum([self._bits[y] for y in _pattern])
-                # _aut = np.flatnonzero(_pbs[t] == bitsum)
+                # bitsum = sum([self._bits[y] for y in _i])
+                # _aut = np.flatnonzero(_pbs == bitsum)
                 _aut = np.flatnonzero(_pbs == _pbs[-1])
 
                 if x in accepts:
