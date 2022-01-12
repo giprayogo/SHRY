@@ -323,7 +323,7 @@ class Substitutor:
         "_groupby",
         "_symmops",
         "_patterns",
-        "_pattern_automorphisms",
+        "_auts",
         "_pattern_makers",
         "_enumerator_collection",
         "disorder_groups",
@@ -358,7 +358,7 @@ class Substitutor:
 
         self._symmops = None
         self._patterns = []
-        self._pattern_automorphisms = []
+        self._auts = []
         self._pattern_makers = dict()
         self._enumerator_collection = PolyaCollection()
 
@@ -709,7 +709,8 @@ class Substitutor:
                     disable=const.DISABLE_PROGRESSBAR,
                 )
 
-                for aut, pattern in in_stack:
+                while in_stack:
+                    aut, pattern = in_stack.pop()
                     # Operate on the _last_ subpattern, except for the first one
                     subpattern = pattern[-1]
                     subperm = group_perms[np.ix_(aut, subpattern)]
@@ -738,20 +739,18 @@ class Substitutor:
                             t_kind=self._t_kind,
                         )
                         self._pattern_makers[label] = maker
-                    patterns = maker.patterns(amount)
                     auts = maker.auts(amount)
+                    patterns = maker.patterns(amount)
                     for _aut, _subpattern in zip(auts, patterns):
-
                         _pattern = pattern + [_subpattern]
                         # NOTE: (*d) and here
                         # out_stack.append([aut[np.isin(inverse, _aut)], _pattern])
                         out_stack.append([aut[_aut], _pattern])
                     pbar.update()
                 pbar.close()
-                in_stack = out_stack
-                out_stack = []
+                in_stack, out_stack = out_stack, in_stack
         if ran:
-            self._pattern_automorphisms = [x[0] for x in in_stack]
+            self._auts = [x[0] for x in in_stack]
             self._patterns = [x[1] for x in in_stack]
             n_generated = len(in_stack)
             n_expected = self.count()
@@ -831,7 +830,7 @@ class Substitutor:
         space_group_size = len(self._symmops)
         weights = []
         for i in self.sampled_indices:
-            weights.append(space_group_size // self._pattern_automorphisms[i].size)
+            weights.append(space_group_size // self._auts[i].size)
         return weights
 
     @functools.lru_cache()
@@ -1200,10 +1199,6 @@ class PatternMaker:
         self._relabel_index = relabel_index
         self._row_index = row_index
 
-        # Clear caches.
-        self.auts.cache_clear()
-        self.patterns.cache_clear()
-
     @staticmethod
     def get_label(perm_list):
         """
@@ -1213,7 +1208,6 @@ class PatternMaker:
         _, _, _, relabeled_perm_list = PatternMaker.reindex(perm_list)
         return relabeled_perm_list.tobytes()
 
-    @functools.lru_cache(None)
     def patterns(self, n):
         """
         Get patterns for the specified replacement amount
@@ -1234,9 +1228,8 @@ class PatternMaker:
                 self._relabel_index[np.setdiff1d(inverter, pattern)]
                 for pattern in self._patterns[_n]
             ]
-        return [self._relabel_index[pattern] for pattern in self._patterns[_n]]
+        return (self._relabel_index[pattern] for pattern in self._patterns[_n])
 
-    @functools.lru_cache(None)
     def auts(self, n):
         """
         Get the automorphisms in terms of input permutation
@@ -1251,7 +1244,7 @@ class PatternMaker:
                 start = max(lessthan)
             self.search(start=start, stop=_n)
         # Map to original permutation; put identity on 0
-        auts = [np.sort(self._row_index[aut]) for aut in self._auts[_n]]
+        auts = (np.sort(self._row_index[aut]) for aut in self._auts[_n])
         return auts
 
     def _fill_sieve(self, n):
@@ -1434,7 +1427,6 @@ class PatternMaker:
     def _get_mins_float(subobj_ts):
         return np.flatnonzero(np.isclose(subobj_ts, subobj_ts.min()))
 
-    # @profile
     def _invar_search(self, start=0, stop=None):
         """
         Combines invar and lexmax to determine canonical parent.

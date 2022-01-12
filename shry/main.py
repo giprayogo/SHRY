@@ -32,6 +32,7 @@ import shutil
 import signal
 import sys
 from fnmatch import fnmatch
+from memory_profiler import profile
 
 import numpy as np
 import tqdm

@@ -18,6 +18,7 @@ import argparse
 import datetime
 import fnmatch
 import logging
+from memory_profiler import profile
 
 import tqdm
 
@@ -79,7 +80,6 @@ def print_footer():
     logging.info(const.HLINE)
     logging.info("Ends " + time_string)
     logging.info(const.HLINE)
-
 
 def main():  # pylint: disable=missing-function-docstring
     parser = argparse.ArgumentParser(
