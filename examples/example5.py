@@ -10,9 +10,9 @@ structure2 = structure.copy()
 structure3 = structure.copy()
 structure1.replace_species({'Fe1': 'Fe7Ti'})
 # Higher Ti concentraction
-structure2.replace_species({'Fe2': 'Fe3Ti'})
+structure2.replace_species({'Fe1': 'Fe3Ti'})
 # Reverse of above
-structure3.replace_species({'Fe2': 'FeTi3'})
+structure3.replace_species({'Fe1': 'FeTi3'})
 
 os.makedirs("output1", exist_ok=True)
 os.makedirs("output2", exist_ok=True)

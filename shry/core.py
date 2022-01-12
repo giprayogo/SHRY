@@ -145,10 +145,7 @@ class PatchedSymmetrizedStructure(SymmetrizedStructure):
                 row.append(site.properties[k])  # This line
             data.append(row)
         outs.append(
-            tabulate(
-                data,
-                headers=["#", "SP", "a", "b", "c", "Wyckoff"] + keys,
-            )
+            tabulate(data, headers=["#", "SP", "a", "b", "c", "Wyckoff"] + keys,)
         )
         return "\n".join(outs)
 
@@ -397,9 +394,7 @@ class Substitutor:
         self.structure = self.structure
 
     @property
-    def sampled_indices(
-        self,
-    ):
+    def sampled_indices(self,):
         """
         Used when sampling the patterns
         """
@@ -430,6 +425,18 @@ class Substitutor:
     def structure(self, structure, sample=None):
         logging.info("\nSetting Substitutor with Structure")
         logging.info(f"{structure}")
+
+        self._made_patterns = False
+        self.sampled_indices = sample
+
+        # TODO: somewhere the behaviour of these should be written
+        self.disorder_groups.clear()
+        self._group_indices.clear()
+        self._group_dmat.clear()
+        self._group_perms.clear()
+        self._group_bit_perm.clear()
+
+        # Read.
         self._structure = structure.copy()
 
         sga = PatchedSpacegroupAnalyzer(
@@ -561,13 +568,10 @@ class Substitutor:
                 )
             self._group_bit_perm[orbit] = bit_perm
 
-        # Clear previous caches.
+        # Clear previous caches. TODO: less-position-dependent implementation
         self.configurations.cache_clear()
         self.weights.cache_clear()
         self.count.cache_clear()
-
-        self._made_patterns = False
-        self.sampled_indices = sample
 
     @staticmethod
     def ordinalize(array, atol=1e-8):
@@ -1160,9 +1164,7 @@ class PatternMaker:
         try:
             perm_list = relabel_element(perm_list)
         except TypeError:
-            raise ValueError(
-                f"\n{perm_list}\n"
-                "Rows must have same elements.")
+            raise ValueError(f"\n{perm_list}\n" "Rows must have same elements.")
 
         # Row sort
         row_index = np.lexsort(perm_list.T)
@@ -1294,7 +1296,7 @@ class PatternMaker:
         if not lessthan:
             start = 0
         else:
-            start = max(lessthan, start)
+            start = max(lessthan[0], start)
 
         # Cross-check with exact enumeration.
         enumerator = self._enumerator_collection.get([self._perms])
@@ -1324,8 +1326,8 @@ class PatternMaker:
         else:
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
-            bs = self._bs[start].copy()
             for pattern, aut in zip(patterns, auts):
+                bs = self._bit_perm[:, pattern].sum(axis=1)
                 stack.append((pattern, aut, bs))
 
         while stack:
@@ -1333,7 +1335,6 @@ class PatternMaker:
             if pattern.size == stop:
                 self._patterns[stop].append(pattern)
                 self._auts[stop].append(aut)
-                self._bs[pattern.size].append(pbs)
                 pbar.update()
                 continue
             # Tree is expanded by adding un-added sites
@@ -1359,9 +1360,6 @@ class PatternMaker:
                 _pbs = self._bit_perm[:, x] + pbs
 
                 _i = np.concatenate((pattern[:j], [x], pattern[j:]))
-                # NOTE: just in case I fail to consistently sort perm
-                # bitsum = sum([self._bits[y] for y in _i])
-                # _aut = np.flatnonzero(_pbs == bitsum)
                 _aut = np.flatnonzero(_pbs == _pbs[-1])
 
                 # Compute canonical parent.
@@ -1453,7 +1451,7 @@ class PatternMaker:
         if not lessthan:
             start = 0
         else:
-            start = max(lessthan, start)
+            start = max(lessthan[0], start)
 
         # Cross-check with exact enumeration.
         enumerator = self._enumerator_collection.get([self._perms])
@@ -1484,18 +1482,9 @@ class PatternMaker:
         else:
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
-            # TODO: This one too! be careful and do benchmark though.
-            # Only affect "first new layer"
-            # sums = self._subobj_ts[start].copy()
-            # bs = self._bs[start].copy()
-            # for subobj_ts, pattern, aut in zip(sums, patterns, auts):
-            for subobj_ts, pattern, aut in zip(patterns, auts):
-                # TODO: Implementation pending
-                # here?
-                bs = self._bit_perm[:, pattern]
-                print(bs)
-                # sums = ...
-                sys.exit()
+            for pattern, aut in zip(patterns, auts):
+                bs = self._bit_perm[:, pattern].sum(axis=1)
+                subobj_ts = self.invar[np.ix_(pattern, pattern)].sum(axis=1)
                 stack.append((subobj_ts, pattern, aut, bs))
 
         while stack:
@@ -1504,9 +1493,6 @@ class PatternMaker:
                 # TODO: Implement generic handler
                 self._patterns[pattern.size].append(pattern)
                 self._auts[pattern.size].append(aut)
-                # TODO: work out alternative.
-                # self._subobj_ts[pattern.size].append(subobj_ts)
-                # self._bs[pattern.size].append(pbs)
                 pbar.update()
                 continue
             # Invert index
@@ -1601,9 +1587,7 @@ class Polya:
     """
 
     def __init__(
-        self,
-        perm_list,
-        group_size=None,
+        self, perm_list, group_size=None,
     ):
         # Used only for dividing the final weight
         if group_size is not None:
