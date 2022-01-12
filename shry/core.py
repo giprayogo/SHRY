@@ -426,9 +426,6 @@ class Substitutor:
         logging.info("\nSetting Substitutor with Structure")
         logging.info(f"{structure}")
 
-        self._made_patterns = False
-        self.sampled_indices = sample
-
         # TODO: somewhere the behaviour of these should be written
         self.disorder_groups.clear()
         self._group_indices.clear()
@@ -569,6 +566,9 @@ class Substitutor:
             self._group_bit_perm[orbit] = bit_perm
 
         # Clear previous caches. TODO: less-position-dependent implementation
+        self._made_patterns = False
+        self.sampled_indices = sample
+
         self.configurations.cache_clear()
         self.weights.cache_clear()
         self.count.cache_clear()
