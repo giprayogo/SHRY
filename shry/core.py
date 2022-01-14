@@ -38,7 +38,9 @@ from pymatgen.symmetry.analyzer import SpacegroupAnalyzer, SpacegroupOperations
 from pymatgen.symmetry.structure import SymmetrizedStructure
 from pymatgen.util.coord import find_in_coord_list_pbc
 from pymatgen.util.string import transformation_to_string
+from scipy.special import comb
 from sympy.tensor.indexed import Indexed
+from sympy.utilities.iterables import multiset_permutations
 from tabulate import tabulate
 
 from . import const
@@ -289,6 +291,106 @@ class TooBigError(Exception):
     """
 
     ...
+
+
+# Some numerical methods
+
+
+def aP(n, length):
+    """Generate partitions of n as ordered lists in ascending
+    lexicographical order.
+
+    This highly efficient routine is based on the delightful
+    work of Kelleher and O'Sullivan.
+
+    Genki: Modified to generate all permutations of the partition
+    at only a specific length. And return numpy arrays.
+
+    Examples
+    ========
+
+    >>> for i in aP(6): i
+    ...
+    [1, 1, 1, 1, 1, 1]
+    [1, 1, 1, 1, 2]
+    [1, 1, 1, 3]
+    [1, 1, 2, 2]
+    [1, 1, 4]
+    [1, 2, 3]
+    [1, 5]
+    [2, 2, 2]
+    [2, 4]
+    [3, 3]
+    [6]
+
+    >>> for i in aP(0): i
+    ...
+    []
+
+    References
+    ==========
+
+    .. [1] Generating Integer Partitions, [online],
+        Available: http://jeromekelleher.net/generating-integer-partitions.html
+    .. [2] Jerome Kelleher and Barry O'Sullivan, "Generating All
+        Partitions: A Comparison Of Two Encodings", [online],
+        Available: http://arxiv.org/pdf/0909.2331v2.pdf
+
+    """
+    # The list `a`'s leading elements contain the partition in which
+    # y is the biggest element and x is either the same as y or the
+    # 2nd largest element; v and w are adjacent element indices
+    # to which x and y are being assigned, respectively.
+    a = [1] * n
+    y = -1
+    v = n
+    while v > 0:
+        v -= 1
+        x = a[v] + 1
+        while y >= 2 * x:
+            a[v] = x
+            y -= x
+            v += 1
+        w = v + 1
+        # Cut
+        # if w + 1 < length:
+        #     break
+
+        while x <= y:
+            a[v] = x
+            a[w] = y
+            # Filter
+            if w + 1 <= length:
+                # Pad
+                b = a[: w + 1]
+                b += [0] * (length - w - 1)
+                # Permute
+                for z in multiset_permutations(b):
+                    yield np.array(z)
+            x += 1
+            y -= 1
+        a[v] = x + y
+        y = a[v] - 1
+        # Filter
+        if w <= length:
+            # Pad
+            b = a[:w]
+            b += [0] * (length - w)
+            # Permute
+            for z in multiset_permutations(b):
+                yield np.array(z)
+
+
+@functools.lru_cache(None)
+def aP_array(n, length):
+    return np.array(list(aP(n, length)))
+
+
+@functools.lru_cache(None)
+def multinomial_coeff(a):
+    return functools.reduce(
+        lambda a, b: a * b, [comb(cx, x, exact=True) for cx, x in zip(np.cumsum(a), a)]
+    )
 
 
 class Substitutor:
@@ -1564,7 +1666,7 @@ class Polya:
     """
     Perform operations related (weighed) Polya Enumeration Theorem.
 
-    Includes enumeration (count) and calcuation of cycle index
+    Includes enumeration (count) and calculation of cycle index
     and configuration generation function.
 
     Args:
@@ -1596,30 +1698,20 @@ class Polya:
 
     def label(self):
         """Use ci as label"""
-        return sum(self.ci().values()) / self.group_size
+        return sum(self.sym_ci().values()) / self.group_size
 
     @functools.lru_cache(None)
     def ci(self):
         """
-        Returns the cycle index.
-
-        The terms are separated by each permutation (rows)
-        to ease further processing.
-        Uses sympy.IndexedBase to represent subscript.
-
-        Conventionally, each term is in the form of (x_n**m),
-        with (n) denoting cycle length and (m) number of
-        cycles with such length for a permutation.
+        Returns the cycle index (as Counters of cycle lengths per permutation).
 
         Returns:
             dict: Dictionary of cycle index with integer index
-                and sympy equations as a key-value pair.
+                and Counters as a key-value pair.
         """
         # Use indexed base.
-        cycle_index = dict()
-        for j, permutations in enumerate(self._perm_list):
-            # TODO: What is the correct behaviour, if one permutation is empty?
-            symbol = sympy.IndexedBase(chr(97 + j))
+        cycle_index = collections.defaultdict(list)
+        for permutations in self._perm_list:
             try:
                 index_map = {s: i for i, s in enumerate(permutations[0])}
             except IndexError as e:
@@ -1650,94 +1742,32 @@ class Polya:
                             logging.error(f"BP: {permutations}")
                             raise RuntimeError("Check permutation list.") from exc
                     cycles.append(cycle)
-
-                # Cast to (sympy.Expr)
                 counter = collections.Counter(len(cycle) for cycle in cycles)
-                cycle_index.setdefault(i, sympy.Integer(1))
-                for length, n in counter.items():
-                    cycle_index[i] *= symbol[length] ** n
+                cycle_index[i].append(counter)
         return cycle_index
 
-    @functools.lru_cache(None)
-    def cgf(self, len_tuple):
+    def sym_ci(self):
         """
-        Returns the configuration generation function.
+        Returns the symbolic cycle index.
+        Uses sympy.IndexedBase to represent subscript.
 
-        Basically, each x_n**m terms of the cycle index
-        will be substituted by (a**m + b**m +...), with
-        the number of terms corresponds to the final
-        number of color / species.
-
-        Terms coming from different orbit will be given
-        a distinct letter, but grouped together within
-        the same dictionary key.
-
-        Args:
-            len_list (tuple): Number of distinct species in the final
-            structure, for each separated orbit.
+        Conventionally, each term is in the form of (x_n**m),
+        with (n) denoting cycle length and (m) number of
+        cycles with such length for a permutation.
 
         Returns:
-            tuple (dict, list): Combined results of:
-                dict: CGF in similar format to the cycle index.
-                list: List of letters used in the CGF.
-                    Useful for example in the counting where
-                    we want to find a specific term.
+            dict: Dictionary of cycle index with integer index
+                and sympy equations as a key-value pair.
         """
-        len_tuple_string = ", ".join(map(str, len_tuple))
-        logging.info(f"Building CGF for {len_tuple_string}.")
-
-        def divide(iterable, sizes):
-            i = 0
-            for j in sizes:
-                yield iterable[i : i + j]
-                i += j
-
-        # Sanity check.
-        if len(len_tuple) != len(self._perm_list):
-            raise ValueError("Invalid sequences length.")
-
-        # Avoid variable name collisions. Start from "a".
-        ci_letters = [chr(97 + i) for i in range(len(self._perm_list))]
-        sub_letters = [chr(ord(ci_letters[-1]) + 1 + i) for i in range(sum(len_tuple))]
-        sub_letters = list(divide(sub_letters, len_tuple))
-        replacement_map = {
-            sympy.Symbol(l): sum(sympy.Symbol(e) for e in r)
-            for l, r in zip(ci_letters, sub_letters)
-        }
-
-        cgf = dict()
-        for i, expr in tqdm.tqdm(
-            self.ci().items(),
-            desc="Substituting terms",
-            **const.TQDM_CONF,
-            disable=const.DISABLE_PROGRESSBAR,
-        ):
-            indexed_symbols = [x for x in expr.free_symbols if isinstance(x, Indexed)]
-
-            replacements = []
-            for indexed_symbol in indexed_symbols:
-                label = indexed_symbol.base.label
-                index = indexed_symbol.indices[0]
-                replacement = replacement_map[label]
-
-                raised = []
-                for symbol in replacement.free_symbols:
-                    raised.append(symbol ** index)
-
-                raised_rep = replacement.xreplace(
-                    dict(zip(replacement.free_symbols, raised))
-                )
-                replacements.append(raised_rep)
-            expr = expr.xreplace(dict(zip(indexed_symbols, replacements)))
-
-            # TODO: consider symbol symmetry? and shared cache
-            if expr in self._expand_cache:
-                expanded = self._expand_cache[expr]
-            else:
-                expanded = expr.expand() / self.group_size
-                self._expand_cache[expr] = expanded
-            cgf[i] = expanded
-        return cgf, sub_letters
+        cycle_index = self.ci()
+        sym_cycle_index = dict()
+        for j, permutations in enumerate(self._perm_list):
+            symbol = sympy.IndexedBase(chr(97 + j))
+            for i, _ in enumerate(permutations):
+                sym_cycle_index.setdefault(i, sympy.Integer(1))
+                for length, n in cycle_index[i][j].items():
+                    sym_cycle_index[i] *= symbol[length] ** n
+        return sym_cycle_index
 
     @functools.lru_cache(None)
     def count(self, amt_tuple):
@@ -1758,25 +1788,73 @@ class Polya:
         Returns:
             int: Number of unique patterns for the given amount.
         """
+
+        def combine(a, b):
+            assert len(a.shape) == 2 and len(b.shape) == 2
+            ra, ca = a.shape
+            rb, cb = b.shape
+            assert ca == cb
+            return (a[:, None] + b[None, :]).reshape(ra * rb, ca)
+
+        # Should be cached too somehow
+        # @functools.lru_cache(None)
+        def exmul(arrays):
+            """
+            Calculate exponent coefficients "multiplied".
+            """
+            return functools.reduce(combine, arrays)
+
         logging.info(f"Counting unique patterns for {amt_tuple}.")
-        _sequences = [len(x) for x in amt_tuple]
-        cgf, sub_letters = self.cgf(tuple(_sequences))
 
-        term = sympy.Integer(1)
-        for letters, nums in zip(sub_letters, amt_tuple):
-            for letter, num in zip(letters, nums):
-                term *= sympy.Symbol(letter) ** num
+        # Padding
+        joint_coeffs = np.array(sum(amt_tuple, ()))
+        coeff_sums = [len(x) for x in amt_tuple]
+        pads = [
+            (sum(coeff_sums[:i]), sum(coeff_sums[i + 1 :]))
+            for i in range(len(amt_tuple))
+        ]
 
-        count = int(sum(c.coeff(term) for c in cgf.values()))
-        logging.info(count)
-        return count
+        o_counts = []
+        for o_cycles in self.ci().values():
+            o_parts = [
+                [aP_array(cnum, len(color)) for cnum in cycles.values()]
+                for cycles, color in zip(o_cycles, amt_tuple)
+            ]
+
+            # Exponent values of each variables
+            exps = [
+                np.pad(clen * partition, [(0, 0), pad])
+                for cycles, pad, partitions in zip(o_cycles, pads, o_parts)
+                for clen, partition in zip(cycles, partitions)
+            ]
+            config_shape = [x.shape[0] for x in exps]
+
+            mul_exps = exmul(exps)
+            # Find matching coefficient; if none then 0
+            match = np.flatnonzero((mul_exps == joint_coeffs).all(axis=1))
+            # Within here should be summed!
+            match_i = np.array(np.unravel_index(match, config_shape)).T
+
+            # TODO: Basically flatten; can be better written
+            f_parts = [part for parts in o_parts for part in parts]
+            counts = [
+                functools.reduce(
+                    lambda x, y: x * y,
+                    [multinomial_coeff(tuple(p[j])) for p, j in zip(f_parts, i)],
+                )
+                for i in match_i
+            ]
+            if not counts:
+                counts = [0]
+            o_counts.append(sum(counts))
+        return int(sum(o_counts) / self.group_size)
 
 
-# TODO: shared expand cache
 class PolyaCollection:
     """
     Collection of Polya objects. This is useful because identical
     instances are often recreated, with heavy sympy.expand() operations.
+    TODO: No longer important so eventually remove.
     """
 
     def __init__(self):
