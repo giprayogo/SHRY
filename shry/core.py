@@ -783,7 +783,10 @@ class Substitutor:
         # Structure: auts, pattern (growing list)
         in_stack.append([aut, []])
         ran = False
-        for orbit, sites in self.disorder_groups.items():
+
+        #Wycoff positions
+        oo_end = len(self.disorder_groups.items()) - 1
+        for oo, (orbit, sites) in enumerate(self.disorder_groups.items()):
             ran = True
             logging.info(f"Making pattern for {orbit}")
 
@@ -801,7 +804,8 @@ class Substitutor:
             group_dmat = self._group_dmat[orbit]
 
             # Intra-orbit chaining.
-            for amount in chain:
+            aa_end = len(chain) - 1
+            for aa, amount in enumerate(chain):
                 logging.info(f"Making pattern for {amount}/{chain}")
                 # Progress bar.
                 pbar = tqdm.tqdm(
@@ -810,6 +814,11 @@ class Substitutor:
                     **const.TQDM_CONF,
                     disable=const.DISABLE_PROGRESSBAR,
                 )
+
+                # n_generated (the number of symmetry-inequivalent structures)
+                # used only a the final loop.
+                if oo == oo_end and aa == aa_end:
+                    n_generated = 0
 
                 while in_stack:
                     aut, pattern = in_stack.pop()
@@ -841,26 +850,56 @@ class Substitutor:
                             t_kind=self._t_kind,
                         )
                         self._pattern_makers[label] = maker
+
+                    # Note (K.N.) 19 Jan. 2022:
+                    # these auts and patterns are the sources of the large memory.
+                    # maker.auts() and maker.patterns() return generators, but, you see
+                    # "self._auts[_n]" and "self._patterns[_n]" in def auts(self, n) and def patterns(self, n).
+                    # are stored not as generators but as lists.
+                    # Indeed, they are not 'true' generators.
+                    # We can achieve O(1) memory consumption by doing this, however we should loose the speed instead.
+                    # There are pros and cons. To make this "Python" (because it is very slow intrinsically) package practical,
+                    # we should accept some amount of memory consumption.
+
                     auts = maker.auts(amount)
                     patterns = maker.patterns(amount)
-                    for _aut, _subpattern in zip(auts, patterns):
-                        _pattern = pattern + [_subpattern]
-                        # NOTE: (*d) and here
-                        # out_stack.append([aut[np.isin(inverse, _aut)], _pattern])
-                        out_stack.append([aut[_aut], _pattern])
+
+                    # we do not have to store all auts and patterns at the final loop
+                    if oo==oo_end and aa==aa_end:
+                        for _aut, _subpattern in zip(auts, patterns):
+                            n_generated+=1
+
+                            ### here write all the CIF files!!! ###
+
+                    # otherwise, we store the info.
+                    else:
+                        for _aut, _subpattern in zip(auts, patterns):
+                            _pattern = pattern + [_subpattern]
+                            # NOTE: (*d) and here
+                            # out_stack.append([aut[np.isin(inverse, _aut)], _pattern])
+                            out_stack.append([aut[_aut], _pattern])
+
                     pbar.update()
                 pbar.close()
-                in_stack, out_stack = out_stack, in_stack
+
+                #in_stack, out_stack = out_stack, in_stack
+                in_stack, out_stack = out_stack, []
+
+
+
         if ran:
-            self._auts = [x[0] for x in in_stack]
-            self._patterns = [x[1] for x in in_stack]
-            n_generated = len(in_stack)
+            #self._auts = [x[0] for x in in_stack]      # no longer used
+            #self._patterns = [x[1] for x in in_stack]  # no longer used
+            #n_generated = len(in_stack)  # no longer used
             n_expected = self.count()
             if n_generated != n_expected:
                 raise RuntimeError(
                     "Mismatch between generated and predicted "
                     f"number of structures ({n_generated}/{n_expected})"
                 )
+
+        logging.info("Stopping here. Not implemented yet.")
+        sys.exit()
 
     @functools.lru_cache()
     def configurations(self):
