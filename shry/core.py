@@ -458,6 +458,10 @@ class Substitutor:
         if groupby is None:
             self._groupby = lambda x: x.properties["_atom_site_label"]
 
+        # Genki: sampling implementation need a rehaul
+        if sample is not None:
+            raise NotImplementedError("Sampling is temporarily disabled.")
+
         self._symmops = None
         self._patterns = []
         self._auts = []
@@ -774,20 +778,49 @@ class Substitutor:
             for cum in cums[::-1]:
                 yield cum
 
-        in_stack = []
-        out_stack = []
+        def defer_maker(aut, pattern, amount):
+            """Delay evaluation of maker until required."""
+            print(f"AMOUNT = {amount}")
+            subpattern = pattern[-1]
+            subperm = group_perms[np.ix_(aut, subpattern)]
+            if not self._no_dmat:
+                dmat = group_dmat[np.ix_(subpattern, subpattern)]
+            else:
+                dmat = None
+
+            label = PatternMaker.get_label(subperm)
+            if label in self._pattern_makers:
+                maker = self._pattern_makers[label]
+                maker.update_index(subperm)
+            else:
+                maker = PatternMaker(
+                    subperm,
+                    invar=dmat,
+                    enumerator_collection=self._enumerator_collection,
+                    t_kind=self._t_kind,
+                )
+                self._pattern_makers[label] = maker
+
+            # TODO: when maker yields, these should be updated
+            for _aut, _subpattern in zip(maker.auts(amount), maker.patterns(amount)):
+                yield [aut[_aut], pattern + [_subpattern]]
+
+        # in_stack = []
+        # out_stack = []
 
         # Initial values
         aut = np.arange(len(self._symmops))
 
         # Structure: auts, pattern (growing list)
-        in_stack.append([aut, []])
-        ran = False
+        # in_stack.append([aut, []])
+        g_stack = (x for x in [[aut, []]])
+        # ran = False
 
-        #Wycoff positions
-        oo_end = len(self.disorder_groups.items()) - 1
-        for oo, (orbit, sites) in enumerate(self.disorder_groups.items()):
-            ran = True
+        # Wycoff positions
+        # oo_end = len(self.disorder_groups.items()) - 1
+        # for oo, (orbit, sites) in enumerate(self.disorder_groups.items()):
+        for orbit, sites in self.disorder_groups.items():
+            # ran = True
             logging.info(f"Making pattern for {orbit}")
 
             # Reverse to minimize sub. amount.
@@ -797,109 +830,157 @@ class Substitutor:
             # (But read the aut from patterns from the previous orbit)
             # x[1] is the pattern
             indices = np.arange(len(sites))
-            for x in in_stack:
-                x[1].append(indices)
+            # for x in in_stack:
+            #     x[1].append(indices)
+            g_stack = ([x[0], x[1] + [indices]] for x in g_stack)
 
             group_perms = self._group_perms[orbit]
             group_dmat = self._group_dmat[orbit]
 
             # Intra-orbit chaining.
-            aa_end = len(chain) - 1
-            for aa, amount in enumerate(chain):
-                logging.info(f"Making pattern for {amount}/{chain}")
-                # Progress bar.
-                pbar = tqdm.tqdm(
-                    total=len(in_stack),
-                    desc="Progress",
-                    **const.TQDM_CONF,
-                    disable=const.DISABLE_PROGRESSBAR,
+            # aa_end = len(chain) - 1
+            # for aa, amount in enumerate(chain):
+            # for amount in chain:
+            #     logging.info(f"Making pattern for {amount}/{chain}")
+            # NOTE: with generators, this progress bar won't be representative
+            # Progress bar.
+            # pbar = tqdm.tqdm(
+            #     total=len(in_stack),
+            #     desc="Progress",
+            #     **const.TQDM_CONF,
+            #     disable=const.DISABLE_PROGRESSBAR,
+            # )
+
+            # n_generated (the number of symmetry-inequivalent structures)
+            # used only a the final loop.
+            # if oo == oo_end and aa == aa_end:
+            #     n_generated = 0
+
+            # while in_stack:
+            # for aut, pattern in g_stack:
+            #     # aut, pattern = in_stack.pop()
+            #     # Operate on the _last_ subpattern, except for the first one
+            #     subpattern = pattern[-1]
+            #     subperm = group_perms[np.ix_(aut, subpattern)]
+            #     if not self._no_dmat:
+            #         dmat = group_dmat[np.ix_(subpattern, subpattern)]
+            #     else:
+            #         dmat = None
+
+            #     label = PatternMaker.get_label(subperm)
+            #     if label in self._pattern_makers:
+            #         maker = self._pattern_makers[label]
+            #         maker.update_index(subperm)
+            #     else:
+            #         maker = PatternMaker(
+            #             subperm,
+            #             invar=dmat,
+            #             enumerator_collection=self._enumerator_collection,
+            #             t_kind=self._t_kind,
+            #         )
+            #         self._pattern_makers[label] = maker
+
+            #     # Note (K.N.) 19 Jan. 2022:
+            #     # these auts and patterns are the sources of the large memory.
+            #     # maker.auts() and maker.patterns() return generators, but, you see
+            #     # "self._auts[_n]" and "self._patterns[_n]" in def auts(self, n) and def patterns(self, n).
+            #     # are stored not as generators but as lists.
+            #     # Indeed, they are not 'true' generators.
+            #     # We can achieve O(1) memory consumption by doing this, however we should loose the speed instead.
+            #     # There are pros and cons. To make this "Python" (because it is very slow intrinsically) package practical,
+            #     # we should accept some amount of memory consumption.
+
+            #     auts = maker.auts(amount)
+            #     patterns = maker.patterns(amount)
+
+            #     # # we do not have to store all auts and patterns at the final loop
+            #     # if oo==oo_end and aa==aa_end:
+            #     #     for _aut, _subpattern in zip(auts, patterns):
+            #     #         n_generated+=1
+
+            #     #         ### here write all the CIF files!!! ###
+            #     #         yield ...
+
+            #     # # otherwise, we store the info.
+            #     # else:
+            #     #     for _aut, _subpattern in zip(auts, patterns):
+            #     #         _pattern = pattern + [_subpattern]
+            #     #         out_stack.append([aut[_aut], _pattern])
+
+            # NOTE: alternative: long generator stack
+            for c in chain:
+                g_stack = (
+                    [_a, _p]
+                    for a, p in g_stack
+                    for _a, _p in defer_maker(a, p, c)
                 )
+            print(list(g_stack))
+            sys.exit()
 
-                # n_generated (the number of symmetry-inequivalent structures)
-                # used only a the final loop.
-                if oo == oo_end and aa == aa_end:
-                    n_generated = 0
+            # print(f"CHAIN = {chain}")
+            # g_stacks = []
+            # for i, amount in enumerate(chain):
+            #     print(f"first we do = {amount}")
+            #     # g_stack = (
+            #     #     [a, s]
+            #     #     for aut, pattern in g_stack
+            #     #     for a, s in defer_maker(aut, pattern, amount)
+            #     # )
+            #     # I get it: I lost reference to the original g_stack (should be kept)
+            #     # Somehow I need to keep the reference alive while making it iteration
+            #     if i == 0:
+            #         g_stacks.append((
+            #             [a, s]
+            #             for aut, pattern in g_stack
+            #             for a, s in defer_maker(aut, pattern, amount)
+            #         ))
+            #     else:
+            #         g_stacks.append((
+            #             [a, s]
+            #             for aut, pattern in g_stacks[i-1]
+            #             for a, s in defer_maker(aut, pattern, amount)
+            #         ))
+            #     # NO: I think what happened is some variable name gt overlap: find
+            #     # This is where C++ is so benri.
+            # cool_stack = g_stacks[-1]
 
-                while in_stack:
-                    aut, pattern = in_stack.pop()
-                    # Operate on the _last_ subpattern, except for the first one
-                    subpattern = pattern[-1]
-                    subperm = group_perms[np.ix_(aut, subpattern)]
-                    # NOTE: (*a) If inconsistent, please disable this part
-                    # reduced_subperm, inverse = np.unique(subperm, axis=0, return_inverse=True)
-                    if not self._no_dmat:
-                        dmat = group_dmat[np.ix_(subpattern, subpattern)]
-                    else:
-                        dmat = None
+            # g_stack = (
+            #     [aut[_aut], pattern + [_subpattern]]
+            #     for amount in chain
+            #     for aut, pattern in g_stack
+            #     for _aut, _subpattern in defer_maker(aut, pattern, amount)
+            # )
 
-                    # NOTE: (*b) and here
-                    # label = PatternMaker.get_label(reduced_subperm)
-                    label = PatternMaker.get_label(subperm)
-                    if label in self._pattern_makers:
-                        maker = self._pattern_makers[label]
-                        # NOTE: (*c) and here
-                        # maker.update_index(reduced_subperm)
-                        maker.update_index(subperm)
-                    else:
-                        maker = PatternMaker(
-                            # NOTE: (*d) and here
-                            # reduced_subperm,
-                            subperm,
-                            invar=dmat,
-                            enumerator_collection=self._enumerator_collection,
-                            t_kind=self._t_kind,
-                        )
-                        self._pattern_makers[label] = maker
+            # pbar.update()
+            # pbar.close()
+            # in_stack, out_stack = out_stack, in_stack
+            # in_stack, out_stack = out_stack, []
 
-                    # Note (K.N.) 19 Jan. 2022:
-                    # these auts and patterns are the sources of the large memory.
-                    # maker.auts() and maker.patterns() return generators, but, you see
-                    # "self._auts[_n]" and "self._patterns[_n]" in def auts(self, n) and def patterns(self, n).
-                    # are stored not as generators but as lists.
-                    # Indeed, they are not 'true' generators.
-                    # We can achieve O(1) memory consumption by doing this, however we should loose the speed instead.
-                    # There are pros and cons. To make this "Python" (because it is very slow intrinsically) package practical,
-                    # we should accept some amount of memory consumption.
+        # temp = [x for x in g_stack]
+        # # temp = [x for x in cool_stack]
+        # print(len(temp))
+        # print(temp[:3])
+        # sys.exit()
 
-                    auts = maker.auts(amount)
-                    patterns = maker.patterns(amount)
+        # NOTE: and yield here actually
+        for aut, pattern in g_stack:
+            yield (aut, pattern)
 
-                    # we do not have to store all auts and patterns at the final loop
-                    if oo==oo_end and aa==aa_end:
-                        for _aut, _subpattern in zip(auts, patterns):
-                            n_generated+=1
+        # Test whether it actu
+        # if ran:
+        #     # self._auts = [x[0] for x in in_stack]      # no longer used
+        #     # self._patterns = [x[1] for x in in_stack]  # no longer used
+        #     # n_generated = len(in_stack)  # no longer used
+        #     # This moved to cif writer.
+        #     n_expected = self.count()
+        #     if n_generated != n_expected:
+        #         raise RuntimeError(
+        #             "Mismatch between generated and predicted "
+        #             f"number of structures ({n_generated}/{n_expected})"
+        #         )
 
-                            ### here write all the CIF files!!! ###
-
-                    # otherwise, we store the info.
-                    else:
-                        for _aut, _subpattern in zip(auts, patterns):
-                            _pattern = pattern + [_subpattern]
-                            # NOTE: (*d) and here
-                            # out_stack.append([aut[np.isin(inverse, _aut)], _pattern])
-                            out_stack.append([aut[_aut], _pattern])
-
-                    pbar.update()
-                pbar.close()
-
-                #in_stack, out_stack = out_stack, in_stack
-                in_stack, out_stack = out_stack, []
-
-
-
-        if ran:
-            #self._auts = [x[0] for x in in_stack]      # no longer used
-            #self._patterns = [x[1] for x in in_stack]  # no longer used
-            #n_generated = len(in_stack)  # no longer used
-            n_expected = self.count()
-            if n_generated != n_expected:
-                raise RuntimeError(
-                    "Mismatch between generated and predicted "
-                    f"number of structures ({n_generated}/{n_expected})"
-                )
-
-        logging.info("Stopping here. Not implemented yet.")
-        sys.exit()
+        # logging.info("Stopping here. Not implemented yet.")
+        # sys.exit()
 
     @functools.lru_cache()
     def configurations(self):
@@ -912,6 +993,7 @@ class Substitutor:
 
                 Each row of the array is a pattern for the key orbit.
         """
+        raise NotImplementedError("Need rewrite")
         logging.info("\nBuilding configuration letters.")
 
         # Use **amount** so that I can initialize the letters
@@ -967,6 +1049,7 @@ class Substitutor:
         Return:
             list: List of weights of all patterns.
         """
+        raise NotImplementedError("Need rewrite")
         logging.info("\nObtaining pattern weights.")
         space_group_size = len(self._symmops)
         weights = []
@@ -1007,10 +1090,12 @@ class Substitutor:
         """
         logging.info("\nCreating CifWriter instances.")
         template_structure = self._structure.copy()
-        try:
-            template_pattern = self._patterns[self.sampled_indices[0]]
-        except IndexError:
-            raise RuntimeError("Patterns have not been generated.")
+        # try:
+        #     template_pattern = self._patterns[self.sampled_indices[0]]
+        # except IndexError:
+        #     raise RuntimeError("Patterns have not been generated.")
+        ap_generator = self.make_patterns()
+        _, template_pattern = next(ap_generator)
 
         # Build template CifWriter
         des = self._disorder_elements()
@@ -1043,11 +1128,14 @@ class Substitutor:
             block["_atom_site_symmetry_multiplicity"] = ["1"] * len(template_label)
             block["_atom_site_occupancy"] = ["1.0"] * len(template_label)
 
-            for i in self.sampled_indices:
+            # TODO: Reimplement sampling
+            # for i in self.sampled_indices:
+            for _, pattern in ap_generator:
                 type_symbol = template_type_symbol.copy()
                 label = template_label.copy()
 
-                pi = iter(self._patterns[i])
+                # pi = iter(self._patterns[i])
+                pi = iter(pattern)
                 for orbit in orbits:
                     indices = gis[orbit]
                     de = des[orbit]
@@ -1075,10 +1163,13 @@ class Substitutor:
             ]
             template_zs = [cell_specie.index(x.species) for x in template_structure]
 
-            for i in self.sampled_indices:
+            # TODO: reimplement sampling
+            # for i in self.sampled_indices:
+            for _, pattern in ap_generator:
                 zs = template_zs.copy()
 
-                pi = iter(self._patterns[i])
+                # pi = iter(self._patterns[i])
+                pi = iter(pattern)
                 zi = iter(z_map)
                 for orbit in orbits:
                     indices = gis[orbit]

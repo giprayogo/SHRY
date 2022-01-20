@@ -394,7 +394,7 @@ class ScriptHelper:
         """
         Save the irreducible structures
         """
-        self.substitutor.make_patterns()
+        # self.substitutor.make_patterns()
         if self.no_write:
             return
 
@@ -402,9 +402,10 @@ class ScriptHelper:
         if not npatterns:
             logging.warning("No expected patterns.")
             return
-        letters = self.substitutor.configurations()
-        weights = self.substitutor.weights()
-        assert len(weights) == npatterns
+        # TODO: reimplement
+        # letters = self.substitutor.configurations()
+        # weights = self.substitutor.weights()
+        # assert len(weights) == npatterns
 
         # Log file stream
         logio = io.StringIO()
@@ -443,7 +444,9 @@ class ScriptHelper:
         ndigits = int(math.log10(npatterns)) + 1
         index_f = "_{:0" + str(ndigits) + "d}"
         filenames = [
-            os.path.join(outdir(i), formula + index_f.format(i) + f"_{weights[i]}.cif")
+            # os.path.join(outdir(i), formula + index_f.format(i) + f"_{weights[i]}.cif")
+            # TODO: reimplement
+            os.path.join(outdir(i), formula + index_f.format(i) + f"_0.cif")
             for i in range(npatterns)
         ]
 
@@ -466,18 +469,20 @@ class ScriptHelper:
                 space_group = list(cifwriter.ciffile.data.values())[0][
                     "_symmetry_space_group_name_H-M"
                 ]
-                letter = letters[i]
-                line = " ".join([str(i), str(weights[i]), letter, space_group])
-                print(line, file=logio)
+                # TODO: reimplement
+                # letter = letters[i]
+                # line = " ".join([str(i), str(weights[i]), letter, space_group])
+                # print(line, file=logio)
 
                 cifwriter.write_file(filename=filenames[i])
                 pbar.update()
         else:
             print("N Weight Configuration", file=logio)
             for i, cifwriter in enumerate(self.substitutor.cifwriters()):
-                letter = letters[i]
-                line = " ".join([str(i), str(weights[i]), letter])
-                print(line, file=logio)
+                # TODO: reimplement
+                # letter = letters[i]
+                # line = " ".join([str(i), str(weights[i]), letter])
+                # print(line, file=logio)
 
                 cifwriter.write_file(filename=filenames[i])
                 pbar.update()
