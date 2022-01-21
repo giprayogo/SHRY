@@ -236,8 +236,7 @@ class ScriptHelper:
         logging.info(const.HLINE)
 
         self.structure = LabeledStructure.from_file(
-            self.structure_file,
-            symmetrize=symmetrize,
+            self.structure_file, symmetrize=symmetrize,
         )
         self.modified_structure = self.structure.copy()
         self.modified_structure.replace_species(
@@ -394,18 +393,21 @@ class ScriptHelper:
         """
         Save the irreducible structures
         """
-        # self.substitutor.make_patterns()
         if self.no_write:
+            # TODO: temporary implementation
+            # for _ in self.substitutor.cifwriters():
+            # for _ in self.substitutor.weights():
+            # for _ in self.substitutor.letters():
+            for _ in self.substitutor.make_patterns():
+                ...  # do nothing
             return
 
-        npatterns = self.substitutor.sampled_indices.size
+        # TODO reimplement sampling
+        # npatterns = self.substitutor.sampled_indices.size
+        npatterns = self.substitutor.count()
         if not npatterns:
             logging.warning("No expected patterns.")
             return
-        # TODO: reimplement
-        # letters = self.substitutor.configurations()
-        # weights = self.substitutor.weights()
-        # assert len(weights) == npatterns
 
         # Log file stream
         logio = io.StringIO()
@@ -444,11 +446,11 @@ class ScriptHelper:
         ndigits = int(math.log10(npatterns)) + 1
         index_f = "_{:0" + str(ndigits) + "d}"
         filenames = [
-            # os.path.join(outdir(i), formula + index_f.format(i) + f"_{weights[i]}.cif")
-            # TODO: reimplement
-            os.path.join(outdir(i), formula + index_f.format(i) + f"_0.cif")
+            os.path.join(outdir(i), formula + index_f.format(i))
             for i in range(npatterns)
         ]
+        # TODO: do away with these complications. Meanwhile temporary adapter.
+        fi = iter(filenames)
 
         # Make directories
         ndirs = npatterns // self.dir_size + 1
@@ -465,26 +467,26 @@ class ScriptHelper:
         os.makedirs(os.path.join(self._outdir, "slice0"), exist_ok=True)
         if self.write_symm:
             print("N Weight Configuration GroupName", file=logio)
-            for i, cifwriter in enumerate(self.substitutor.cifwriters(self.symprec)):
+            for cifwriter, weight, letter in self.substitutor.quantities(
+                ("cifwriter", "weight", "letter"), self.symprec
+            ):
                 space_group = list(cifwriter.ciffile.data.values())[0][
                     "_symmetry_space_group_name_H-M"
                 ]
-                # TODO: reimplement
-                # letter = letters[i]
-                # line = " ".join([str(i), str(weights[i]), letter, space_group])
-                # print(line, file=logio)
+                line = " ".join([str(i), str(weight), letter, space_group])
+                print(line, file=logio)
 
-                cifwriter.write_file(filename=filenames[i])
+                cifwriter.write_file(filename=next(fi) + f"_{weight}.cif")
                 pbar.update()
         else:
             print("N Weight Configuration", file=logio)
-            for i, cifwriter in enumerate(self.substitutor.cifwriters()):
-                # TODO: reimplement
-                # letter = letters[i]
-                # line = " ".join([str(i), str(weights[i]), letter])
-                # print(line, file=logio)
+            for cifwriter, weight, letter in self.substitutor.quantities(
+                ("cifwriter", "weight", "letter")
+            ):
+                line = " ".join([str(i), str(weight), letter])
+                print(line, file=logio)
 
-                cifwriter.write_file(filename=filenames[i])
+                cifwriter.write_file(filename=next(fi) + f"_{weight}.cif")
                 pbar.update()
         pbar.close()
         dump_log()
@@ -542,12 +544,7 @@ class LabeledStructure(Structure):
 
     @classmethod
     def from_file(  # pylint: disable=arguments-differ
-        cls,
-        filename,
-        primitive=False,
-        sort=False,
-        merge_tol=0.0,
-        symmetrize=False,
+        cls, filename, primitive=False, sort=False, merge_tol=0.0, symmetrize=False,
     ):
         fname = os.path.basename(filename)
         if not fnmatch(fname.lower(), "*.cif*") and not fnmatch(
@@ -647,10 +644,7 @@ class LabeledStructure(Structure):
             labels = tuple(sorted({x[1] for x in zipgroup}))
             cif_sites.append(
                 PeriodicSite(
-                    "X",
-                    coord,
-                    self.lattice,
-                    properties={"_atom_site_label": labels},
+                    "X", coord, self.lattice, properties={"_atom_site_label": labels},
                 )
             )
 

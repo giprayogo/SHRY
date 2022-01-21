@@ -13,7 +13,7 @@ structure.replace_species({'Fe': 'Fe2+7Ti3+'})
 structure.replace_species({'Sm': 'Sm+'})
 
 substitutor = Substitutor(structure, sample=50)
-substitutor.make_patterns()
+substitutor.get_ap()
 os.makedirs("output", exist_ok=True)
 
 logio = io.StringIO()

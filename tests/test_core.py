@@ -267,9 +267,9 @@ def test_edges(structure_file, supercell, substitute, to, answer):
         scaling_matrix=supercell,
     )
     # patterns = task.substitutor.patterns()
-    task.substitutor.make_patterns()
+    task.substitutor.get_ap()
     weights = task.substitutor.weights()
-    letters = task.substitutor.configurations()
+    letters = task.substitutor.letters()
     counts = task.substitutor.count()
 
     # They need to be in correct dimension
@@ -515,6 +515,6 @@ def test_no_disorder():
     structure = LabeledStructure.from_file("SmFe12.cif")
     substitutor = Substitutor(structure)
     assert substitutor.patterns() == dict()
-    assert substitutor.configurations() == dict()
+    assert substitutor.letters() == dict()
     assert substitutor.weights() == []
     assert substitutor.count() == 0

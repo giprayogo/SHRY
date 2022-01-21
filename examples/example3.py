@@ -8,7 +8,7 @@ structure = LabeledStructure.from_file(cif_file)
 structure.replace_species({'Fe': 'Fe3Ti'})
 
 substitutor = Substitutor(structure, sample=50)
-substitutor.make_patterns()
+substitutor.get_ap()
 os.makedirs("output", exist_ok=True)
 # A generator of Pymatgen's Cifwriters
 for i, cifwriter in enumerate(substitutor.cifwriters()):

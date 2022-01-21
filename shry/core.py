@@ -425,8 +425,6 @@ class Substitutor:
         "_angle_tolerance",
         "_groupby",
         "_symmops",
-        "_patterns",
-        "_auts",
         "_pattern_makers",
         "_enumerator_collection",
         "disorder_groups",
@@ -439,7 +437,9 @@ class Substitutor:
         "_sample",
         "_no_dmat",
         "_t_kind",
-        "_made_patterns",
+        "_segmenter",
+        "_charset",
+        "_template_cifwriter",
     )
 
     def __init__(
@@ -464,8 +464,6 @@ class Substitutor:
             raise NotImplementedError("Sampling is temporarily disabled.")
 
         self._symmops = None
-        self._patterns = []
-        self._auts = []
         self._pattern_makers = dict()
         self._enumerator_collection = PolyaCollection()
 
@@ -475,10 +473,9 @@ class Substitutor:
         self._group_indices = dict()
         self._group_bits = dict()
         self._group_bit_perm = dict()
+        self._template_cifwriter = None
 
         self.structure = structure
-        self.sampled_indices = sample
-        self._made_patterns = False
 
     @property
     def structure(self):
@@ -500,34 +497,6 @@ class Substitutor:
         # Reload division part
         self.structure = self.structure
 
-    @property
-    def sampled_indices(self,):
-        """
-        Used when sampling the patterns
-        """
-        return self._sample
-
-    @sampled_indices.setter
-    def sampled_indices(self, sample):
-        try:
-            indices = np.arange(self.count())
-        except ValueError as e:
-            raise TooBigError(f"({self.count()} irreducible structures)") from e
-        if sample is None:
-            self._sample = indices
-        else:
-            logging.info(f"Sampling {sample} of {self.count()} structures.")
-            try:
-                self._sample = np.random.choice(indices, size=sample, replace=False)
-            except ValueError:
-                logging.warning(
-                    "WARNING: Selected sample size exceeded the number of patterns. Using all."
-                )
-                self._sample = indices
-
-        self.configurations.cache_clear()
-        self.weights.cache_clear()
-
     @structure.setter
     def structure(self, structure, sample=None):
         logging.info("\nSetting Substitutor with Structure")
@@ -535,10 +504,12 @@ class Substitutor:
 
         # TODO: somewhere the behaviour of these should be written
         self.disorder_groups.clear()
-        self._group_indices.clear()
         self._group_dmat.clear()
         self._group_perms.clear()
+        self._group_indices.clear()
+        self._group_bits.clear()
         self._group_bit_perm.clear()
+        self._template_cifwriter = None
 
         # Read.
         self._structure = structure.copy()
@@ -672,13 +643,10 @@ class Substitutor:
                 )
             self._group_bit_perm[orbit] = bit_perm
 
-        # Clear previous caches. TODO: less-position-dependent implementation
-        self._made_patterns = False
-        self.sampled_indices = sample
-
-        self.configurations.cache_clear()
-        self.weights.cache_clear()
-        self.count.cache_clear()
+        # Letter-related functions
+        self._segmenter = self._disorder_amounts().values()
+        n_segments = sum(len(x) for x in self._segmenter)
+        self._charset = [chr(97 + i) for i in range(n_segments)]
 
     @staticmethod
     def ordinalize(array, atol=1e-8):
@@ -764,9 +732,6 @@ class Substitutor:
         Returns:
             list: list of list of sites with a distinct species.
         """
-        # if self._made_patterns is True:
-        #     return
-        # self._made_patterns = True
         logging.info("Making patterns.")
 
         def rscum(iterable):
@@ -784,6 +749,7 @@ class Substitutor:
             group_perms = self._group_perms[orbit]
             group_dmat = self._group_dmat[orbit]
 
+            # TODO: "plus" can be done in the end. This is a vestige of the explicit stack.
             subpattern = pattern[-1]
             subperm = group_perms[np.ix_(aut, subpattern)]
             if not self._no_dmat:
@@ -957,11 +923,6 @@ class Substitutor:
         #     # in_stack, out_stack = out_stack, in_stack
         #     # in_stack, out_stack = out_stack, []
 
-        # NOTE: and yield here actually
-        # for aut, pattern in g_stack:
-        #     yield (aut, pattern)
-        # test
-
         # Test whether it actu
         # if ran:
         #     # self._auts = [x[0] for x in in_stack]      # no longer used
@@ -978,87 +939,11 @@ class Substitutor:
         # logging.info("Stopping here. Not implemented yet.")
         # sys.exit()
 
-    @functools.lru_cache()
-    def configurations(self):
-        """
-        Return generic alphabetical letters for denoting the substitutions.
-
-        Return:
-            dict: (tuple -> np.array) pairs of all pattern letters,
-                separated by (specified) orbit.
-
-                Each row of the array is a pattern for the key orbit.
-        """
-        raise NotImplementedError("Need rewrite")
-        logging.info("\nBuilding configuration letters.")
-
-        # Use **amount** so that I can initialize the letters
-        # for each orbit
-        das = self._disorder_amounts().values()
-        n_segments = sum(len(x) for x in das)
-        letters = [chr(97 + i) for i in range(n_segments)]
-
-        configs = []
-        for i in self.sampled_indices:
-            sentence = self._ll2il(das, self._patterns[i], letters)
-            configs.append("".join(sentence))
-        return configs
-
-    @staticmethod
-    def _ll2il(segmenter, pattern, symbols_list):
-        """
-        (sub. data structure) turn list of list
-        into list of some generic symbols from symbols_list.
-        Used by `configurations()` and `cifwriter()`.
-        Probably not the best idea. Graphical explanation:
-
-        [[0, 1, 2], [0, 2], [0, 1], [1]]  # pattern
-        +
-        ((2, 1), (1, 1))  # segmenter
-        +
-        [a, b, c, d]  # symbols_list
-        =
-        [b, a, b, c, d]  # il
-        """
-        si = iter(symbols_list)
-        pi = iter(pattern)
-        il = []
-        for se in segmenter:
-            sei = iter(se)
-            word = [next(si)] * sum(se)
-            next(pi)
-            next(sei)
-            # Iterate disoder sites
-            for _ in sei:
-                letter = next(si)
-                # Iterate subpatterns
-                for j in next(pi):
-                    word[j] = letter
-            il.extend(word)
-        return il
-
-    @functools.lru_cache()
-    def weights(self):
-        """
-        Pattern weights.
-
-        Return:
-            list: List of weights of all patterns.
-        """
-        raise NotImplementedError("Need rewrite")
-        logging.info("\nObtaining pattern weights.")
-        space_group_size = len(self._symmops)
-        weights = []
-        for i in self.sampled_indices:
-            weights.append(space_group_size // self._auts[i].size)
-        return weights
-
-    @functools.lru_cache()
     def count(self):
         """
-        Final number of expected patterns
+        Final number of patterns.
         """
-        logging.info("\nCounting total unique patterns for Structure.")
+        logging.info(f"\nCounting unique patterns for {self.structure.formula}")
 
         if len(self._symmops):
             enumerator = self._enumerator_collection.get(
@@ -1075,179 +960,258 @@ class Substitutor:
             raise TooBigError(f"({count} irreducible expected)")
         return count
 
+    def quantities(self, q, symprec=None):
+        """
+        Mixed quantities generator.
+        Yield tuple of selected quantities.
+
+        Args:
+            q: (list) valid options: ("cifwriter", "weight", "letter")
+                will return in this order.
+        """
+        is_c = "cifwriter" in q
+        is_w = "weight" in q
+        is_l = "letter" in q
+
+        for a, p in self.make_patterns():
+            out = []
+            if is_c:
+                out.append(self._get_cifwriter(p, symprec))
+            if is_w:
+                out.append(self._get_weight(a))
+            if is_l:
+                out.append(self._get_letters(p))
+            yield out
+
+    def letters(self):
+        """
+        Substitution alphabet representation generator.
+
+        Return:
+            dict: (tuple -> np.array) pairs of all pattern letters,
+                separated by (specified) orbit.
+
+                Each row of the array is a pattern for the key orbit.
+        """
+        # TODO: optional caching; reimplement sampling
+        for _, p in self.make_patterns():
+            yield self._get_letters(p)
+
+    def weights(self):
+        """
+        Pattern weights generator.
+
+        Return:
+            list: List of weights of all patterns.
+        """
+        # TODO: optional caching; reimplement sampling
+        for a, _ in self.make_patterns():
+            yield self._get_weight(a)
+
     def cifwriters(self, symprec=None):
         """
-        Generator for pymatgen.CifWriter of the final output.
+        Pattern weights generator.
 
-        Returns:
-            generator: A generator of pymatgen.CifWriter. Each iteration
-                returned a symmetrically unique CifWriter for the given
-                input disorder.
+        Return:
+            list: List of weights of all patterns.
         """
-        logging.info("\nCreating CifWriter instances.")
-        template_structure = self._structure.copy()
-        # try:
-        #     template_pattern = self._patterns[self.sampled_indices[0]]
-        # except IndexError:
-        #     raise RuntimeError("Patterns have not been generated.")
-        ap_generator = self.make_patterns()
-        _, template_pattern = next(ap_generator)
+        # TODO: optional caching; reimplement sampling
+        for _, p in self.make_patterns():
+            yield self._get_cifwriter(p, symprec)
 
-        # Build template CifWriter
+    def _get_letters(self, p):
+        """
+        (sub. data structure) turn list of list
+        into list of some generic symbols from symbols_list.
+        Used by `configurations()` and `cifwriter()`.
+        Probably not the best idea. Graphical explanation:
+
+        [[0, 1, 2], [0, 2], [0, 1], [1]]  # pattern
+        +
+        ((2, 1), (1, 1))  # segmenter
+        +
+        [a, b, c, d]  # symbols_list
+        =
+        [b, a, b, c, d]  # il
+        """
+        si = iter(self._charset)
+        pi = iter(p)
+        il = []
+        for se in self._segmenter:
+            sei = iter(se)
+            word = [next(si)] * sum(se)
+            next(pi)
+            next(sei)
+            # Iterate disoder sites
+            for _ in sei:
+                letter = next(si)
+                # Iterate subpatterns
+                for j in next(pi):
+                    word[j] = letter
+            il.extend(word)
+        return "".join(il)
+
+    def _get_weight(self, a):
+        return len(self._symmops) // a.size
+
+    def _get_cifwriter(self, p, symprec=None):
+        """
+        Return cifwriter for the given pattern.
+
+        Args:
+            p: Substitution pattern.
+        """
+        # TODO: Simplify
         des = self._disorder_elements()
         orbits = des.keys()
         gis = self._group_indices
 
-        # TODO: This exact pattern has been copy+pasted twice...
-        pi = iter(template_pattern)
-        for orbit in orbits:
-            indices = gis[orbit]
-            de = des[orbit]
-            for e in de:
-                subpattern = next(pi)
-                for i in subpattern:
-                    template_structure.sites[indices[i]].species = e
+        # Build template CifWriter. First run only.
+        if self._template_cifwriter is None:
+            template_structure = self._structure.copy()
+            cifwriter = CifWriter(template_structure)
 
-        cifwriter = CifWriter(template_structure)
-        cfkey = cifwriter.ciffile.data.keys()
-        cfkey = list(cfkey)[0]
+            # TODO: Generalize.
+            pi = iter(p)
+            for orbit in orbits:
+                indices = gis[orbit]
+                de = des[orbit]
+                for e in de:
+                    subpattern = next(pi)
+                    for i in subpattern:
+                        template_structure.sites[indices[i]].species = e
 
-        # Use faster CifBlock implementation
-        block = AltCifBlock.from_string(str(cifwriter.ciffile.data[cfkey]))
-        cifwriter.ciffile.data[cfkey] = block
+            # Use faster CifBlock implementation
+            cfkey = cifwriter.ciffile.data.keys()
+            cfkey = list(cfkey)[0]
+            block = AltCifBlock.from_string(str(cifwriter.ciffile.data[cfkey]))
+            cifwriter.ciffile.data[cfkey] = block
+
+            self._template_cifwriter = cifwriter
+            del template_structure
+        else:
+            cifwriter = self._template_cifwriter
+            cfkey = cifwriter.ciffile.data.keys()
+            cfkey = list(cfkey)[0]
+            block = cifwriter.ciffile.data[cfkey]
 
         if symprec is None:
-            template_type_symbol = block["_atom_site_type_symbol"]
-            template_label = block["_atom_site_label"]
+            type_symbol = block["_atom_site_type_symbol"].copy()
+            label = block["_atom_site_label"].copy()
 
             # These two blocks are always "1" in the final structure
-            block["_atom_site_symmetry_multiplicity"] = ["1"] * len(template_label)
-            block["_atom_site_occupancy"] = ["1.0"] * len(template_label)
+            block["_atom_site_symmetry_multiplicity"] = ["1"] * len(label)
+            block["_atom_site_occupancy"] = ["1.0"] * len(label)
 
-            # TODO: Reimplement sampling
-            # for i in self.sampled_indices:
-            for _, pattern in ap_generator:
-                type_symbol = template_type_symbol.copy()
-                label = template_label.copy()
+            pi = iter(p)
+            for orbit in orbits:
+                indices = gis[orbit]
+                de = des[orbit]
+                for e in de:
+                    subpattern = next(pi)
+                    for s in subpattern:
+                        gi = indices[s]
+                        type_symbol[gi] = str(e)
+                        label[gi] = f"{e.symbol}{gi}"
 
-                # pi = iter(self._patterns[i])
-                pi = iter(pattern)
-                for orbit in orbits:
-                    indices = gis[orbit]
-                    de = des[orbit]
-                    for e in de:
-                        subpattern = next(pi)
-                        for s in subpattern:
-                            gi = indices[s]
-                            type_symbol[gi] = str(e)
-                            label[gi] = f"{e.symbol}{gi}"
-
-                block["_atom_site_type_symbol"] = type_symbol
-                block["_atom_site_label"] = label
-                yield cifwriter
+            block["_atom_site_type_symbol"] = type_symbol
+            block["_atom_site_label"] = label
         else:
+            raise NotImplementedError("Implementation broken.")
             format_str = "{:.%df}" % 8
-            latt = template_structure.lattice.matrix
-            positions = template_structure.frac_coords
+            latt = self._structure.lattice.matrix
+            positions = self._structure.frac_coords
 
-            cell_specie = list(set(x.species for x in template_structure))
+            cell_specie = list(set(x.species for x in self._structure))
             # Flattened list of species @ disorder sites
             specie = [y for x in des.values() for y in x]
             z_map = [
-                cell_specie.index(Composition({specie[j]: 1}))
-                for j in range(len(template_pattern))
+                cell_specie.index(Composition({specie[j]: 1})) for j in range(len(p))
             ]
-            template_zs = [cell_specie.index(x.species) for x in template_structure]
+            zs = [cell_specie.index(x.species) for x in self._structure]
 
-            # TODO: reimplement sampling
-            # for i in self.sampled_indices:
-            for _, pattern in ap_generator:
-                zs = template_zs.copy()
+            pi = iter(p)
+            zi = iter(z_map)
+            for orbit in orbits:
+                indices = gis[orbit]
+                de = des[orbit]
+                for e in de:
+                    subpattern = next(pi)
+                    z = next(zi)
+                    for s in subpattern:
+                        gi = indices[s]
+                        zs[gi] = z
 
-                # pi = iter(self._patterns[i])
-                pi = iter(pattern)
-                zi = iter(z_map)
-                for orbit in orbits:
-                    indices = gis[orbit]
-                    de = des[orbit]
-                    for e in de:
-                        subpattern = next(pi)
-                        z = next(zi)
-                        for s in subpattern:
-                            gi = indices[s]
-                            zs[gi] = z
+            space_group_data = spglib.get_symmetry_dataset(
+                (latt, positions, zs),
+                symprec=self._symprec,
+                angle_tolerance=self._angle_tolerance,
+            )
 
-                space_group_data = spglib.get_symmetry_dataset(
-                    (latt, positions, zs),
-                    symprec=self._symprec,
-                    angle_tolerance=self._angle_tolerance,
+            ops = [
+                transformation_to_string(rot, trans, delim=", ")
+                for rot, trans in zip(
+                    space_group_data["rotations"], space_group_data["translations"]
                 )
-
-                ops = [
-                    transformation_to_string(rot, trans, delim=", ")
-                    for rot, trans in zip(
-                        space_group_data["rotations"], space_group_data["translations"]
-                    )
-                ]
-                u, inv = np.unique(
-                    space_group_data["equivalent_atoms"], return_inverse=True
+            ]
+            u, inv = np.unique(
+                space_group_data["equivalent_atoms"], return_inverse=True
+            )
+            equivalent_indices = [[] for _ in range(len(u))]
+            for j, inv in enumerate(inv):
+                equivalent_indices[inv].append(j)
+            unique_indices = [
+                (
+                    sorted(
+                        j,
+                        key=lambda s: tuple(
+                            abs(x) for x in self._structure.sites[s].frac_coords
+                        ),
+                    )[0],
+                    len(j),
                 )
-                equivalent_indices = [[] for _ in range(len(u))]
-                for j, inv in enumerate(inv):
-                    equivalent_indices[inv].append(j)
-                unique_indices = [
-                    (
-                        sorted(
-                            j,
-                            key=lambda s: tuple(
-                                abs(x) for x in template_structure.sites[s].frac_coords
-                            ),
-                        )[0],
-                        len(j),
-                    )
-                    for j in equivalent_indices
-                ]
-                unique_indices = sorted(
-                    unique_indices,
-                    key=lambda t: (
-                        cell_specie[zs[t[0]]].average_electroneg,  # careful here
-                        -t[1],
-                        template_structure.sites[t[0]].a,
-                        template_structure.sites[t[0]].b,
-                        template_structure.sites[t[0]].c,
-                    ),
-                )
+                for j in equivalent_indices
+            ]
+            unique_indices = sorted(
+                unique_indices,
+                key=lambda t: (
+                    cell_specie[zs[t[0]]].average_electroneg,  # careful here
+                    -t[1],
+                    self._structure.sites[t[0]].a,
+                    self._structure.sites[t[0]].b,
+                    self._structure.sites[t[0]].c,
+                ),
+            )
 
-                block["_symmetry_space_group_name_H-M"] = space_group_data[
-                    "international"
-                ]
-                block["_symmetry_Int_Tables_number"] = space_group_data["number"]
-                block["_symmetry_equiv_pos_site_id"] = [
-                    str(i) for i in range(1, len(ops) + 1)
-                ]
-                block["_symmetry_equiv_pos_as_xyz"] = ops
+            block["_symmetry_space_group_name_H-M"] = space_group_data["international"]
+            block["_symmetry_Int_Tables_number"] = space_group_data["number"]
+            block["_symmetry_equiv_pos_site_id"] = [
+                str(i) for i in range(1, len(ops) + 1)
+            ]
+            block["_symmetry_equiv_pos_as_xyz"] = ops
 
-                block["_atom_site_type_symbol"] = []
-                block["_atom_site_label"] = []
-                block["_atom_site_symmetry_multiplicity"] = []
-                block["_atom_site_fract_x"] = []
-                block["_atom_site_fract_y"] = []
-                block["_atom_site_fract_z"] = []
-                block["_atom_site_occupancy"] = []
-                count = 0
-                for j, mult in unique_indices:
-                    # Careful: The structure species itself is not updated
-                    sp = cell_specie[zs[j]].elements[0]  # careful here
-                    site = template_structure.sites[j]
-                    block["_atom_site_type_symbol"].append(sp.__str__())
-                    block["_atom_site_label"].append("{}{}".format(sp.symbol, count))
-                    block["_atom_site_symmetry_multiplicity"].append(str(mult))
-                    block["_atom_site_fract_x"].append(format_str.format(site.a))
-                    block["_atom_site_fract_y"].append(format_str.format(site.b))
-                    block["_atom_site_fract_z"].append(format_str.format(site.c))
-                    block["_atom_site_occupancy"].append("1.0")
-                    count += 1
-                yield cifwriter
+            block["_atom_site_type_symbol"] = []
+            block["_atom_site_label"] = []
+            block["_atom_site_symmetry_multiplicity"] = []
+            block["_atom_site_fract_x"] = []
+            block["_atom_site_fract_y"] = []
+            block["_atom_site_fract_z"] = []
+            block["_atom_site_occupancy"] = []
+            count = 0
+            for j, mult in unique_indices:
+                # Careful: The structure species itself is not updated
+                sp = cell_specie[zs[j]].elements[0]  # careful here
+                site = self._structure.sites[j]
+                block["_atom_site_type_symbol"].append(sp.__str__())
+                block["_atom_site_label"].append("{}{}".format(sp.symbol, count))
+                block["_atom_site_symmetry_multiplicity"].append(str(mult))
+                block["_atom_site_fract_x"].append(format_str.format(site.a))
+                block["_atom_site_fract_y"].append(format_str.format(site.b))
+                block["_atom_site_fract_z"].append(format_str.format(site.c))
+                block["_atom_site_occupancy"].append("1.0")
+                count += 1
+
+        return cifwriter
 
 
 class PatternMaker:
@@ -1463,45 +1427,6 @@ class PatternMaker:
                 rp = self._relabel_index[p]
                 yield ra, rp
 
-    def patterns(self, n):
-        """
-        Get patterns for the specified replacement amount
-        """
-        # Patterns are symmetrical
-        _n = min(n, self._nix - n)
-        if not self._gen_flag[_n]:
-            lessthan = [i for i in self._gen_flag.keys() if i < _n]
-            if not lessthan:
-                start = 0
-            else:
-                start = max(lessthan)
-            self.search(start=start, stop=_n)
-        # "Mirror" patterns
-        if _n != n:
-            inverter = np.arange(self._nix)
-            return [
-                self._relabel_index[np.setdiff1d(inverter, pattern)]
-                for pattern in self._patterns[_n]
-            ]
-        return (self._relabel_index[pattern] for pattern in self._patterns[_n])
-
-    def auts(self, n):
-        """
-        Get the automorphisms in terms of input permutation
-        """
-        # Patterns are symmetrical
-        _n = min(n, self._nix - n)
-        if not self._gen_flag[_n]:
-            lessthan = [i for i in self._gen_flag.keys() if i < _n]
-            if not lessthan:
-                start = 0
-            else:
-                start = max(lessthan)
-            self.search(start=start, stop=_n)
-        # Map to original permutation; put identity on 0
-        auts = (np.sort(self._row_index[aut]) for aut in self._auts[_n])
-        return auts
-
     def _fill_sieve(self, n):
         """
         Incremental sieve of eratosthenes to make first n prime numbers
@@ -1574,6 +1499,7 @@ class PatternMaker:
                 aut = np.flatnonzero(o_bitsums == bitsum)
                 stack.append((pattern, aut, bs))
         else:
+            # TODO: cache or not.
             raise NotImplementedError("Please implement.")
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
