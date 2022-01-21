@@ -764,9 +764,9 @@ class Substitutor:
         Returns:
             list: list of list of sites with a distinct species.
         """
-        if self._made_patterns is True:
-            return
-        self._made_patterns = True
+        # if self._made_patterns is True:
+        #     return
+        # self._made_patterns = True
         logging.info("Making patterns.")
 
         def rscum(iterable):
