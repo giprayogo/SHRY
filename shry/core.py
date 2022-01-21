@@ -24,6 +24,7 @@ import math
 import sys
 from pprint import pprint
 from typing import OrderedDict, Tuple
+import copy
 
 import numpy as np
 import spglib
@@ -780,7 +781,6 @@ class Substitutor:
 
         def defer_maker(aut, pattern, amount):
             """Delay evaluation of maker until required."""
-            print(f"AMOUNT = {amount}")
             subpattern = pattern[-1]
             subperm = group_perms[np.ix_(aut, subpattern)]
             if not self._no_dmat:
@@ -804,6 +804,20 @@ class Substitutor:
             # TODO: when maker yields, these should be updated
             for _aut, _subpattern in zip(maker.auts(amount), maker.patterns(amount)):
                 yield [aut[_aut], pattern + [_subpattern]]
+        
+        def maker_recurse_level_2():
+            for orbit, sites in self.disorder_groups.items():
+                ...
+            ...
+
+        def maker_recurse(aut, pattern, chain):
+            if len(chain) > 0:
+                amount = chain.pop()
+                for aut, pattern in defer_maker(aut, pattern, amount):
+                    _chain = chain.copy()
+                    yield from maker_recurse(aut, pattern, _chain)
+            else:
+                yield aut, pattern
 
         # in_stack = []
         # out_stack = []
@@ -824,7 +838,8 @@ class Substitutor:
             logging.info(f"Making pattern for {orbit}")
 
             # Reverse to minimize sub. amount.
-            chain = list(rscum(self._disorder_amounts()[orbit][::-1]))
+            # chain = list(rscum(self._disorder_amounts()[orbit][::-1]))
+            chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[::-1]
 
             # Feed the new orbit into the stack.
             # (But read the aut from patterns from the previous orbit)
@@ -907,60 +922,19 @@ class Substitutor:
             #     #         _pattern = pattern + [_subpattern]
             #     #         out_stack.append([aut[_aut], _pattern])
 
-            # NOTE: alternative: long generator stack
-            for c in chain:
-                g_stack = (
-                    [_a, _p]
-                    for a, p in g_stack
-                    for _a, _p in defer_maker(a, p, c)
-                )
-            print(list(g_stack))
-            sys.exit()
-
-            # print(f"CHAIN = {chain}")
-            # g_stacks = []
-            # for i, amount in enumerate(chain):
-            #     print(f"first we do = {amount}")
-            #     # g_stack = (
-            #     #     [a, s]
-            #     #     for aut, pattern in g_stack
-            #     #     for a, s in defer_maker(aut, pattern, amount)
-            #     # )
-            #     # I get it: I lost reference to the original g_stack (should be kept)
-            #     # Somehow I need to keep the reference alive while making it iteration
-            #     if i == 0:
-            #         g_stacks.append((
-            #             [a, s]
-            #             for aut, pattern in g_stack
-            #             for a, s in defer_maker(aut, pattern, amount)
-            #         ))
-            #     else:
-            #         g_stacks.append((
-            #             [a, s]
-            #             for aut, pattern in g_stacks[i-1]
-            #             for a, s in defer_maker(aut, pattern, amount)
-            #         ))
-            #     # NO: I think what happened is some variable name gt overlap: find
-            #     # This is where C++ is so benri.
-            # cool_stack = g_stacks[-1]
-
-            # g_stack = (
-            #     [aut[_aut], pattern + [_subpattern]]
-            #     for amount in chain
-            #     for aut, pattern in g_stack
-            #     for _aut, _subpattern in defer_maker(aut, pattern, amount)
-            # )
+            # Better: recursion
+            # also: possible to recurse over orbit as well!
+            # (need different function though)
+            g_stack = (
+                [_a, _p]
+                for a, p in g_stack
+                for _a, _p in maker_recurse(a, p, chain)
+            )
 
             # pbar.update()
             # pbar.close()
             # in_stack, out_stack = out_stack, in_stack
             # in_stack, out_stack = out_stack, []
-
-        # temp = [x for x in g_stack]
-        # # temp = [x for x in cool_stack]
-        # print(len(temp))
-        # print(temp[:3])
-        # sys.exit()
 
         # NOTE: and yield here actually
         for aut, pattern in g_stack:
