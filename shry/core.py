@@ -780,7 +780,7 @@ class Substitutor:
                 yield cum
 
         def maker_recurse_unit(aut, pattern, orbit, amount):
-            """Delay evaluation of maker until required."""
+            """PatternMaker aut/pattern generation recursion unit."""
             group_perms = self._group_perms[orbit]
             group_dmat = self._group_dmat[orbit]
 
@@ -791,6 +791,8 @@ class Substitutor:
             else:
                 dmat = None
 
+            # TODO: Re-do cache implementation. Make it optional.
+            # esp. for many color.
             label = PatternMaker.get_label(subperm)
             if label in self._pattern_makers:
                 maker = self._pattern_makers[label]
@@ -804,36 +806,41 @@ class Substitutor:
                 )
                 self._pattern_makers[label] = maker
 
-            # TODO: when maker yields, these should be updated
-            for _aut, _subpattern in zip(maker.auts(amount), maker.patterns(amount)):
+            # for _aut, _subpattern in zip(maker.auts(amount), maker.patterns(amount)):
+            for _aut, _subpattern in maker.ap(amount):
                 yield [aut[_aut], pattern + [_subpattern]]
 
-        def maker_recurse_l1(aut, pattern, orbit, chain):
+        def maker_recurse_c(aut, pattern, orbit, chain):
             if len(chain) > 0:
                 amount = chain.pop()
                 for aut, pattern in maker_recurse_unit(aut, pattern, orbit, amount):
                     _chain = chain.copy()
-                    yield from maker_recurse_l1(aut, pattern, orbit, _chain)
+                    yield from maker_recurse_c(aut, pattern, orbit, _chain)
             else:
                 yield aut, pattern
 
         # TODO: This and below can be joined I think?
         # Also the structure is not optimal... but it work!
-        def maker_recurse_l2(aut, pattern, ochain):
+        def maker_recurse_o(aut, pattern, ochain):
             if len(ochain) > 0:
                 orbit, sites = ochain.pop()
 
                 chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[::-1]
                 indices = np.arange(len(sites))
 
-                for aut, pattern in maker_recurse_l1(
+                for aut, pattern in maker_recurse_c(
                     aut, pattern + [indices], orbit, chain
                 ):
                     # TODO: something cheaper?
                     _ochain = ochain.copy()
-                    yield from maker_recurse_l2(aut, pattern, _ochain)
+                    yield from maker_recurse_o(aut, pattern, _ochain)
             else:
                 yield aut, pattern
+
+        for aut, pattern in maker_recurse_o(
+            np.arange(len(self._symmops)), [], list(self.disorder_groups.items())
+        ):
+            yield (aut, pattern)
 
         # in_stack = []
         # out_stack = []
@@ -954,11 +961,6 @@ class Substitutor:
         # for aut, pattern in g_stack:
         #     yield (aut, pattern)
         # test
-
-        for aut, pattern in maker_recurse_l2(
-            np.arange(len(self._symmops)), [], list(self.disorder_groups.items())
-        ):
-            yield (aut, pattern)
 
         # Test whether it actu
         # if ran:
@@ -1434,6 +1436,33 @@ class PatternMaker:
         _, _, _, relabeled_perm_list = PatternMaker.reindex(perm_list)
         return relabeled_perm_list.tobytes()
 
+    def ap(self, n):
+        """
+        Get patterns and automorphisms for the specified replacement amount
+        """
+        # Patterns are symmetrical
+        _n = min(n, self._nix - n)
+        # TODO: Implement outside
+        # if not self._gen_flag[_n]:
+        # lessthan = [i for i in self._gen_flag.keys() if i < _n]
+        # if not lessthan:
+        #     start = 0
+        # else:
+        #     start = max(lessthan)
+        # "Mirror" patterns
+        if _n != n:
+            # TODO: inverter can be made into function for faster eval
+            inverter = np.arange(self._nix)
+            for a, p in self.search(stop=_n):
+                ra = np.sort(self._row_index[a])
+                rp = self._relabel_index[np.setdiff1d(inverter, p)]
+                yield ra, rp
+        else:
+            for a, p in self.search(stop=_n):
+                ra = np.sort(self._row_index[a])
+                rp = self._relabel_index[p]
+                yield ra, rp
+
     def patterns(self, n):
         """
         Get patterns for the specified replacement amount
@@ -1511,13 +1540,15 @@ class PatternMaker:
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        lessthan = [i for i in self._gen_flag.keys() if i < stop]
-        if not lessthan:
-            start = 0
-        else:
-            start = max(lessthan[0], start)
+        # TODO: implement outside
+        # lessthan = [i for i in self._gen_flag.keys() if i < stop]
+        # if not lessthan:
+        #     start = 0
+        # else:
+        #     start = max(lessthan[0], start)
 
         # Cross-check with exact enumeration.
+        # TODO: fix implementation
         enumerator = self._enumerator_collection.get([self._perms])
         n_pred = enumerator.count(((stop, self._nix - stop),))
 
@@ -1543,6 +1574,7 @@ class PatternMaker:
                 aut = np.flatnonzero(o_bitsums == bitsum)
                 stack.append((pattern, aut, bs))
         else:
+            raise NotImplementedError("Please implement.")
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
             for pattern, aut in zip(patterns, auts):
@@ -1552,8 +1584,9 @@ class PatternMaker:
         while stack:
             pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
-                self._patterns[stop].append(pattern)
-                self._auts[stop].append(aut)
+                # self._patterns[stop].append(pattern)
+                # self._auts[stop].append(aut)
+                yield aut, pattern
                 pbar.update()
                 continue
             # Tree is expanded by adding un-added sites
@@ -1594,14 +1627,15 @@ class PatternMaker:
                     stack.append((_i, _aut, _pbs))
         pbar.close()
 
-        n_gen = len(self._patterns[stop])
-        if n_pred != n_gen:
-            raise RuntimeError(
-                "Mismatch between predicted and generated number of structures.\n"
-                f"(at {stop}, {n_gen}/{n_pred} were generated)"
-            )
+        # TODO: implement outside
+        # n_gen = len(self._patterns[stop])
+        # if n_pred != n_gen:
+        #     raise RuntimeError(
+        #         "Mismatch between predicted and generated number of structures.\n"
+        #         f"(at {stop}, {n_gen}/{n_pred} were generated)"
+        #     )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
-        self._gen_flag[stop] = True
+        # self._gen_flag[stop] = True
 
     def _get_sum_subobj_ts(self, pattern, leaf_array, subobj_ts):
         new_rows = self.invar[np.ix_(leaf_array, pattern)]
@@ -1665,13 +1699,15 @@ class PatternMaker:
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        lessthan = [i for i in self._gen_flag.keys() if i < stop]
-        if not lessthan:
-            start = 0
-        else:
-            start = max(lessthan[0], start)
+        # TODO: implement outside
+        # lessthan = [i for i in self._gen_flag.keys() if i < stop]
+        # if not lessthan:
+        #     start = 0
+        # else:
+        #     start = max(lessthan[0], start)
 
         # Cross-check with exact enumeration.
+        # TODO: fix implementation
         enumerator = self._enumerator_collection.get([self._perms])
         n_pred = enumerator.count(((stop, self._nix - stop),))
 
@@ -1698,6 +1734,7 @@ class PatternMaker:
                 subobj_ts = np.array([0])
                 stack.append((subobj_ts, pattern, aut, bs))
         else:
+            raise NotImplementedError("Please implement.")
             patterns = self._patterns[start].copy()
             auts = self._auts[start].copy()
             for pattern, aut in zip(patterns, auts):
@@ -1708,9 +1745,9 @@ class PatternMaker:
         while stack:
             subobj_ts, pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
-                # TODO: Implement generic handler
-                self._patterns[pattern.size].append(pattern)
-                self._auts[pattern.size].append(aut)
+                # self._patterns[pattern.size].append(pattern)
+                # self._auts[pattern.size].append(aut)
+                yield aut, pattern
                 pbar.update()
                 continue
             # Invert index
@@ -1776,14 +1813,15 @@ class PatternMaker:
                     stack.append((_subobj_ts, _i, _aut, _pbs))
         pbar.close()
 
-        n_gen = len(self._patterns[stop])
-        if n_pred != n_gen:
-            raise RuntimeError(
-                "Mismatch between predicted and generated number of structures.\n"
-                f"(at {stop}, {n_gen}/{n_pred} were generated)"
-            )
+        # TODO: implement outside
+        # n_gen = len(self._patterns[stop])
+        # if n_pred != n_gen:
+        #     raise RuntimeError(
+        #         "Mismatch between predicted and generated number of structures.\n"
+        #         f"(at {stop}, {n_gen}/{n_pred} were generated)"
+        #     )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
-        self._gen_flag[stop] = True
+        # self._gen_flag[stop] = True
 
 
 class Polya:
