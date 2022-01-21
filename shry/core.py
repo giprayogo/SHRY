@@ -1096,6 +1096,7 @@ class Substitutor:
             block = cifwriter.ciffile.data[cfkey]
 
         if symprec is None:
+            raise NotImplementedError("Implementation broken.")
             type_symbol = block["_atom_site_type_symbol"].copy()
             label = block["_atom_site_label"].copy()
 
