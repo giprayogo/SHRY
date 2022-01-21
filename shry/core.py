@@ -779,8 +779,11 @@ class Substitutor:
             for cum in cums[::-1]:
                 yield cum
 
-        def defer_maker(aut, pattern, amount):
+        def maker_recurse_unit(aut, pattern, orbit, amount):
             """Delay evaluation of maker until required."""
+            group_perms = self._group_perms[orbit]
+            group_dmat = self._group_dmat[orbit]
+
             subpattern = pattern[-1]
             subperm = group_perms[np.ix_(aut, subpattern)]
             if not self._no_dmat:
@@ -804,18 +807,31 @@ class Substitutor:
             # TODO: when maker yields, these should be updated
             for _aut, _subpattern in zip(maker.auts(amount), maker.patterns(amount)):
                 yield [aut[_aut], pattern + [_subpattern]]
-        
-        def maker_recurse_level_2():
-            for orbit, sites in self.disorder_groups.items():
-                ...
-            ...
 
-        def maker_recurse(aut, pattern, chain):
+        def maker_recurse_l1(aut, pattern, orbit, chain):
             if len(chain) > 0:
                 amount = chain.pop()
-                for aut, pattern in defer_maker(aut, pattern, amount):
+                for aut, pattern in maker_recurse_unit(aut, pattern, orbit, amount):
                     _chain = chain.copy()
-                    yield from maker_recurse(aut, pattern, _chain)
+                    yield from maker_recurse_l1(aut, pattern, orbit, _chain)
+            else:
+                yield aut, pattern
+
+        # TODO: This and below can be joined I think?
+        # Also the structure is not optimal... but it work!
+        def maker_recurse_l2(aut, pattern, ochain):
+            if len(ochain) > 0:
+                orbit, sites = ochain.pop()
+
+                chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[::-1]
+                indices = np.arange(len(sites))
+
+                for aut, pattern in maker_recurse_l1(
+                    aut, pattern + [indices], orbit, chain
+                ):
+                    # TODO: something cheaper?
+                    _ochain = ochain.copy()
+                    yield from maker_recurse_l2(aut, pattern, _ochain)
             else:
                 yield aut, pattern
 
@@ -823,121 +839,125 @@ class Substitutor:
         # out_stack = []
 
         # Initial values
-        aut = np.arange(len(self._symmops))
+        # aut = np.arange(len(self._symmops))
 
-        # Structure: auts, pattern (growing list)
-        # in_stack.append([aut, []])
-        g_stack = (x for x in [[aut, []]])
-        # ran = False
+        # # Structure: auts, pattern (growing list)
+        # # in_stack.append([aut, []])
+        # g_stack = (x for x in [[aut, []]])
+        # # ran = False
 
-        # Wycoff positions
-        # oo_end = len(self.disorder_groups.items()) - 1
-        # for oo, (orbit, sites) in enumerate(self.disorder_groups.items()):
-        for orbit, sites in self.disorder_groups.items():
-            # ran = True
-            logging.info(f"Making pattern for {orbit}")
+        # # Wycoff positions
+        # # oo_end = len(self.disorder_groups.items()) - 1
+        # # for oo, (orbit, sites) in enumerate(self.disorder_groups.items()):
+        # for orbit, sites in self.disorder_groups.items():
+        #     # ran = True
+        #     logging.info(f"Making pattern for {orbit}")
 
-            # Reverse to minimize sub. amount.
-            # chain = list(rscum(self._disorder_amounts()[orbit][::-1]))
-            chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[::-1]
+        #     # Reverse to minimize sub. amount.
+        #     # chain = list(rscum(self._disorder_amounts()[orbit][::-1]))
+        #     chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[::-1]
 
-            # Feed the new orbit into the stack.
-            # (But read the aut from patterns from the previous orbit)
-            # x[1] is the pattern
-            indices = np.arange(len(sites))
-            # for x in in_stack:
-            #     x[1].append(indices)
-            g_stack = ([x[0], x[1] + [indices]] for x in g_stack)
+        #     # Feed the new orbit into the stack.
+        #     # (But read the aut from patterns from the previous orbit)
+        #     # x[1] is the pattern
+        #     indices = np.arange(len(sites))
+        #     # for x in in_stack:
+        #     #     x[1].append(indices)
+        #     g_stack = ([x[0], x[1] + [indices]] for x in g_stack)
 
-            group_perms = self._group_perms[orbit]
-            group_dmat = self._group_dmat[orbit]
+        #     group_perms = self._group_perms[orbit]
+        #     group_dmat = self._group_dmat[orbit]
 
-            # Intra-orbit chaining.
-            # aa_end = len(chain) - 1
-            # for aa, amount in enumerate(chain):
-            # for amount in chain:
-            #     logging.info(f"Making pattern for {amount}/{chain}")
-            # NOTE: with generators, this progress bar won't be representative
-            # Progress bar.
-            # pbar = tqdm.tqdm(
-            #     total=len(in_stack),
-            #     desc="Progress",
-            #     **const.TQDM_CONF,
-            #     disable=const.DISABLE_PROGRESSBAR,
-            # )
+        #     # Intra-orbit chaining.
+        #     # aa_end = len(chain) - 1
+        #     # for aa, amount in enumerate(chain):
+        #     # for amount in chain:
+        #     #     logging.info(f"Making pattern for {amount}/{chain}")
+        #     # NOTE: with generators, this progress bar won't be representative
+        #     # Progress bar.
+        #     # pbar = tqdm.tqdm(
+        #     #     total=len(in_stack),
+        #     #     desc="Progress",
+        #     #     **const.TQDM_CONF,
+        #     #     disable=const.DISABLE_PROGRESSBAR,
+        #     # )
 
-            # n_generated (the number of symmetry-inequivalent structures)
-            # used only a the final loop.
-            # if oo == oo_end and aa == aa_end:
-            #     n_generated = 0
+        #     # n_generated (the number of symmetry-inequivalent structures)
+        #     # used only a the final loop.
+        #     # if oo == oo_end and aa == aa_end:
+        #     #     n_generated = 0
 
-            # while in_stack:
-            # for aut, pattern in g_stack:
-            #     # aut, pattern = in_stack.pop()
-            #     # Operate on the _last_ subpattern, except for the first one
-            #     subpattern = pattern[-1]
-            #     subperm = group_perms[np.ix_(aut, subpattern)]
-            #     if not self._no_dmat:
-            #         dmat = group_dmat[np.ix_(subpattern, subpattern)]
-            #     else:
-            #         dmat = None
+        #     # while in_stack:
+        #     # for aut, pattern in g_stack:
+        #     #     # aut, pattern = in_stack.pop()
+        #     #     # Operate on the _last_ subpattern, except for the first one
+        #     #     subpattern = pattern[-1]
+        #     #     subperm = group_perms[np.ix_(aut, subpattern)]
+        #     #     if not self._no_dmat:
+        #     #         dmat = group_dmat[np.ix_(subpattern, subpattern)]
+        #     #     else:
+        #     #         dmat = None
 
-            #     label = PatternMaker.get_label(subperm)
-            #     if label in self._pattern_makers:
-            #         maker = self._pattern_makers[label]
-            #         maker.update_index(subperm)
-            #     else:
-            #         maker = PatternMaker(
-            #             subperm,
-            #             invar=dmat,
-            #             enumerator_collection=self._enumerator_collection,
-            #             t_kind=self._t_kind,
-            #         )
-            #         self._pattern_makers[label] = maker
+        #     #     label = PatternMaker.get_label(subperm)
+        #     #     if label in self._pattern_makers:
+        #     #         maker = self._pattern_makers[label]
+        #     #         maker.update_index(subperm)
+        #     #     else:
+        #     #         maker = PatternMaker(
+        #     #             subperm,
+        #     #             invar=dmat,
+        #     #             enumerator_collection=self._enumerator_collection,
+        #     #             t_kind=self._t_kind,
+        #     #         )
+        #     #         self._pattern_makers[label] = maker
 
-            #     # Note (K.N.) 19 Jan. 2022:
-            #     # these auts and patterns are the sources of the large memory.
-            #     # maker.auts() and maker.patterns() return generators, but, you see
-            #     # "self._auts[_n]" and "self._patterns[_n]" in def auts(self, n) and def patterns(self, n).
-            #     # are stored not as generators but as lists.
-            #     # Indeed, they are not 'true' generators.
-            #     # We can achieve O(1) memory consumption by doing this, however we should loose the speed instead.
-            #     # There are pros and cons. To make this "Python" (because it is very slow intrinsically) package practical,
-            #     # we should accept some amount of memory consumption.
+        #     #     # Note (K.N.) 19 Jan. 2022:
+        #     #     # these auts and patterns are the sources of the large memory.
+        #     #     # maker.auts() and maker.patterns() return generators, but, you see
+        #     #     # "self._auts[_n]" and "self._patterns[_n]" in def auts(self, n) and def patterns(self, n).
+        #     #     # are stored not as generators but as lists.
+        #     #     # Indeed, they are not 'true' generators.
+        #     #     # We can achieve O(1) memory consumption by doing this, however we should loose the speed instead.
+        #     #     # There are pros and cons. To make this "Python" (because it is very slow intrinsically) package practical,
+        #     #     # we should accept some amount of memory consumption.
 
-            #     auts = maker.auts(amount)
-            #     patterns = maker.patterns(amount)
+        #     #     auts = maker.auts(amount)
+        #     #     patterns = maker.patterns(amount)
 
-            #     # # we do not have to store all auts and patterns at the final loop
-            #     # if oo==oo_end and aa==aa_end:
-            #     #     for _aut, _subpattern in zip(auts, patterns):
-            #     #         n_generated+=1
+        #     #     # # we do not have to store all auts and patterns at the final loop
+        #     #     # if oo==oo_end and aa==aa_end:
+        #     #     #     for _aut, _subpattern in zip(auts, patterns):
+        #     #     #         n_generated+=1
 
-            #     #         ### here write all the CIF files!!! ###
-            #     #         yield ...
+        #     #     #         ### here write all the CIF files!!! ###
+        #     #     #         yield ...
 
-            #     # # otherwise, we store the info.
-            #     # else:
-            #     #     for _aut, _subpattern in zip(auts, patterns):
-            #     #         _pattern = pattern + [_subpattern]
-            #     #         out_stack.append([aut[_aut], _pattern])
+        #     #     # # otherwise, we store the info.
+        #     #     # else:
+        #     #     #     for _aut, _subpattern in zip(auts, patterns):
+        #     #     #         _pattern = pattern + [_subpattern]
+        #     #     #         out_stack.append([aut[_aut], _pattern])
 
-            # Better: recursion
-            # also: possible to recurse over orbit as well!
-            # (need different function though)
-            g_stack = (
-                [_a, _p]
-                for a, p in g_stack
-                for _a, _p in maker_recurse(a, p, chain)
-            )
+        #     # Better: recursion
+        #     # also: possible to recurse over orbit as well!
+        #     # (need different function though)
+        #     g_stack = (
+        #         [_a, _p] for a, p in g_stack for _a, _p in maker_recurse(a, p, chain)
+        #     )
 
-            # pbar.update()
-            # pbar.close()
-            # in_stack, out_stack = out_stack, in_stack
-            # in_stack, out_stack = out_stack, []
+        #     # pbar.update()
+        #     # pbar.close()
+        #     # in_stack, out_stack = out_stack, in_stack
+        #     # in_stack, out_stack = out_stack, []
 
         # NOTE: and yield here actually
-        for aut, pattern in g_stack:
+        # for aut, pattern in g_stack:
+        #     yield (aut, pattern)
+        # test
+
+        for aut, pattern in maker_recurse_l2(
+            np.arange(len(self._symmops)), [], list(self.disorder_groups.items())
+        ):
             yield (aut, pattern)
 
         # Test whether it actu
