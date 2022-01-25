@@ -1068,10 +1068,8 @@ class Substitutor:
 
         # Build template CifWriter. First run only.
         if self._template_cifwriter is None:
+            # In this template, all sites are ordered / single-occupied.
             template_structure = self._structure.copy()
-            cifwriter = CifWriter(template_structure)
-
-            # TODO: Generalize.
             pi = iter(p)
             for orbit in orbits:
                 indices = gis[orbit]
@@ -1080,6 +1078,7 @@ class Substitutor:
                     subpattern = next(pi)
                     for i in subpattern:
                         template_structure.sites[indices[i]].species = e
+            cifwriter = CifWriter(template_structure)
 
             # Use faster CifBlock implementation
             cfkey = cifwriter.ciffile.data.keys()
@@ -1096,7 +1095,7 @@ class Substitutor:
             block = cifwriter.ciffile.data[cfkey]
 
         if symprec is None:
-            raise NotImplementedError("Implementation broken.")
+            # raise NotImplementedError("Implementation broken.")
             type_symbol = block["_atom_site_type_symbol"].copy()
             label = block["_atom_site_label"].copy()
 
@@ -1921,7 +1920,6 @@ class Polya:
             mul_exps = exmul(exps)
             # Find matching coefficient; if none then 0
             match = np.flatnonzero((mul_exps == joint_coeffs).all(axis=1))
-            # Within here should be summed!
             match_i = np.array(np.unravel_index(match, config_shape)).T
 
             # TODO: Basically flatten; can be better written

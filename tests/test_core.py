@@ -11,13 +11,14 @@ import pickle
 import shutil
 import subprocess
 from pprint import pprint
+import filecmp
 
 import numpy as np
 import pandas as pd
 import pytest
-import sympy
-from pymatgen import Structure
+from pymatgen.core import Structure
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer
+from pymatgen.analysis.ewald import EwaldSummation
 from shry.core import PatternMaker, Polya, Substitutor
 from shry.main import LabeledStructure, ScriptHelper
 from sympy.tensor.indexed import IndexedBase
@@ -496,14 +497,6 @@ def test_ci(polya):
     }
 
 
-def test_cgf(polya):
-    """Test configuration generation function calculation."""
-    cgf = polya.cgf([2, 3])
-    with open("cgf.pkl", "rb") as f:
-        answer = pickle.load(f)
-    assert cgf == answer
-
-
 def test_count(polya):
     """Test counting of pattern. One should be enough representative."""
     assert polya.count([[3, 1], [2, 1]]) == 5
@@ -518,3 +511,29 @@ def test_no_disorder():
     assert substitutor.letters() == dict()
     assert substitutor.weights() == []
     assert substitutor.count() == 0
+
+@chdir("../examples")
+def test_cifwriter():
+    """Test cifwriter implementation."""
+    sh = ScriptHelper("SmFe7Ti.cif")
+    sh.write()
+    cifs = glob.glob("shry-SmFe*/slice*/*.cif")
+    ref_cifs = glob.glob("../tests/test_cifs/smfe7ti/slice*/*.cif")
+
+    def give_arbitrary_charge(filename):
+        structure = Structure.from_file(filename)
+        structure.add_oxidation_state_by_element({"Sm": 1, "Fe": 2, "Ti": 3})
+        return structure
+
+    try:
+        # for cif, ref in zip(cifs, ref_cifs):
+        #     assert filecmp.cmp(cif, ref)
+        esums = [EwaldSummation(give_arbitrary_charge(x)).total_energy for x in cifs]
+        esums_ref = [EwaldSummation(give_arbitrary_charge(x)).total_energy for x in ref_cifs]
+        assert len(set(esums)) == 16
+        assert set(esums) == set(esums_ref)
+    finally:
+        # Cleanup
+        shry_outdirs = glob.glob("shry-SmFe*")
+        for outdir in shry_outdirs:
+            shutil.rmtree(outdir)
