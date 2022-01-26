@@ -449,8 +449,6 @@ class ScriptHelper:
             os.path.join(outdir(i), formula + index_f.format(i))
             for i in range(npatterns)
         ]
-        # TODO: do away with these complications. Meanwhile temporary adapter.
-        fi = iter(filenames)
 
         # Make directories
         ndirs = npatterns // self.dir_size + 1
@@ -467,26 +465,26 @@ class ScriptHelper:
         os.makedirs(os.path.join(self._outdir, "slice0"), exist_ok=True)
         if self.write_symm:
             print("N Weight Configuration GroupName", file=logio)
-            for cifwriter, weight, letter in self.substitutor.quantities(
+            for i, (cifwriter, weight, letter) in enumerate(self.substitutor.quantities(
                 ("cifwriter", "weight", "letter"), self.symprec
-            ):
+            )):
                 space_group = list(cifwriter.ciffile.data.values())[0][
                     "_symmetry_space_group_name_H-M"
                 ]
                 line = " ".join([str(i), str(weight), letter, space_group])
                 print(line, file=logio)
 
-                cifwriter.write_file(filename=next(fi) + f"_{weight}.cif")
+                cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
                 pbar.update()
         else:
             print("N Weight Configuration", file=logio)
-            for cifwriter, weight, letter in self.substitutor.quantities(
+            for i, (cifwriter, weight, letter) in enumerate(self.substitutor.quantities(
                 ("cifwriter", "weight", "letter")
-            ):
+            )):
                 line = " ".join([str(i), str(weight), letter])
                 print(line, file=logio)
 
-                cifwriter.write_file(filename=next(fi) + f"_{weight}.cif")
+                cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
                 pbar.update()
         pbar.close()
         dump_log()

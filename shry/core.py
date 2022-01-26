@@ -546,7 +546,6 @@ class Substitutor:
                     raise RuntimeError("Please fill vacancy sites with pseudo atoms")
         if not disorder_sites:
             logging.warning("No disorder sites found within the Structure.")
-            return
 
         try:
             disorder_sites.sort(key=self._groupby)
@@ -650,6 +649,7 @@ class Substitutor:
         # Letter-related functions
         self._segmenter = self._disorder_amounts().values()
         n_segments = sum(len(x) for x in self._segmenter)
+        # TODO: can be zero; then crash letters
         self._charset = [chr(97 + i) for i in range(n_segments)]
 
     @staticmethod
@@ -1952,6 +1952,9 @@ class Polya:
             if not counts:
                 counts = [0]
             o_counts.append(sum(counts))
+        # Special case: no cycles means 1 unique object
+        if not o_counts:
+            return 1
         return int(sum(o_counts) / self.group_size)
 
 

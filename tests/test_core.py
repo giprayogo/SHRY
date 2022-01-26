@@ -418,7 +418,7 @@ def test_ci(polya):
     """Test cycle index calculation."""
     a = IndexedBase("a")
     b = IndexedBase("b")
-    assert polya.ci() == {
+    assert polya.sym_ci() == {
         0: a[1] ** 4 * b[1] ** 3,
         1: a[1] * a[3] * b[1] * b[2],
         2: a[1] * a[3] * b[1] ** 3,
@@ -427,18 +427,18 @@ def test_ci(polya):
 
 def test_count(polya):
     """Test counting of pattern. One should be enough representative."""
-    assert polya.count([[3, 1], [2, 1]]) == 5
+    assert polya.count(((3, 1), (2, 1))) == 5
 
 
 @chdir("../examples")
 def test_no_disorder():
-    """Test behaviour when the supplied Structure has no disorder sites."""
+    """No disorder sites should results in original structure."""
     structure = LabeledStructure.from_file("SmFe12.cif")
     substitutor = Substitutor(structure)
-    assert substitutor.patterns() == dict()
-    assert substitutor.letters() == dict()
-    assert substitutor.weights() == []
-    assert substitutor.count() == 0
+    assert substitutor.count() == 1
+    assert list(substitutor.letters()) == [""]
+    assert list(substitutor.weights()) == [1]
+    assert len(list(substitutor.cifwriters())) == 1
 
 
 @chdir("../examples")
