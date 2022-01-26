@@ -762,7 +762,9 @@ class Substitutor:
             label = PatternMaker.get_label(subperm)
             if label in self._pattern_makers:
                 maker = self._pattern_makers[label]
-                maker.update_index(subperm)
+                # TODO: HERE
+                # maker.update_index(subperm)
+                row_map, index_map = maker.update_index(subperm)
             else:
                 maker = PatternMaker(
                     subperm,
@@ -770,10 +772,18 @@ class Substitutor:
                     enumerator_collection=self._enumerator_collection,
                     t_kind=self._t_kind,
                 )
+                # TODO: Implement
+                row_map = maker.get_row_map()
+                index_map = maker.get_index_map()
                 self._pattern_makers[label] = maker
+            row_map = maker.get_row_map()
+            index_map = maker.get_index_map()
+            self._pattern_makers[label] = maker
 
-            # for _aut, _subpattern in zip(maker.auts(amount), maker.patterns(amount)):
             for _aut, _subpattern in maker.ap(amount):
+                # TODO: is sort necessary?
+                _aut = np.sort(row_map[_aut])
+                _subpattern = index_map[_subpattern]
                 yield [aut[_aut], pattern + [_subpattern]]
 
         def maker_recurse_c(aut, pattern, orbit, chain):
@@ -804,7 +814,10 @@ class Substitutor:
                 yield aut, pattern
 
         for aut, pattern in maker_recurse_o(
-            np.arange(len(self._symmops)), [], list(self.disorder_groups.items())
+            # TODO: Temporary fix.
+            np.arange(len(self._symmops)),
+            [],
+            list(self.disorder_groups.items())[::-1],
         ):
             yield (aut, pattern)
 
@@ -911,13 +924,6 @@ class Substitutor:
         #     #     #         _pattern = pattern + [_subpattern]
         #     #     #         out_stack.append([aut[_aut], _pattern])
 
-        #     # Better: recursion
-        #     # also: possible to recurse over orbit as well!
-        #     # (need different function though)
-        #     g_stack = (
-        #         [_a, _p] for a, p in g_stack for _a, _p in maker_recurse(a, p, chain)
-        #     )
-
         #     # pbar.update()
         #     # pbar.close()
         #     # in_stack, out_stack = out_stack, in_stack
@@ -925,9 +931,6 @@ class Substitutor:
 
         # Test whether it actu
         # if ran:
-        #     # self._auts = [x[0] for x in in_stack]      # no longer used
-        #     # self._patterns = [x[1] for x in in_stack]  # no longer used
-        #     # n_generated = len(in_stack)  # no longer used
         #     # This moved to cif writer.
         #     n_expected = self.count()
         #     if n_generated != n_expected:
@@ -935,9 +938,6 @@ class Substitutor:
         #             "Mismatch between generated and predicted "
         #             f"number of structures ({n_generated}/{n_expected})"
         #         )
-
-        # logging.info("Stopping here. Not implemented yet.")
-        # sys.exit()
 
     def count(self):
         """
@@ -1346,9 +1346,11 @@ class PatternMaker:
 
         # Column sort
         stab_map = perm_list == perm_list[0]
+        # TODO: column index is not much used...
         column_index = np.lexsort(stab_map)
         perm_list = perm_list[:, column_index]
 
+        # TODO: More intuitive if we do this first, then the previous one.
         # Relabel to match column position
         relabel_index = perm_list[0]
         relabel_element = np.vectorize({s: i for i, s in enumerate(relabel_index)}.get)
@@ -1390,6 +1392,7 @@ class PatternMaker:
         self._column_index = column_index
         self._relabel_index = relabel_index
         self._row_index = row_index
+        return row_index, relabel_index
 
     @staticmethod
     def get_label(perm_list):
@@ -1400,10 +1403,17 @@ class PatternMaker:
         _, _, _, relabeled_perm_list = PatternMaker.reindex(perm_list)
         return relabeled_perm_list.tobytes()
 
+    def get_row_map(self):
+        return self._row_index
+
+    def get_index_map(self):
+        return self._relabel_index
+
     def ap(self, n):
         """
         Get patterns and automorphisms for the specified replacement amount
         """
+        # TODO: Should return full generator?
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
         # TODO: Implement outside
@@ -1417,15 +1427,18 @@ class PatternMaker:
         if _n != n:
             # TODO: inverter can be made into function for faster eval
             inverter = np.arange(self._nix)
+            # return ((a, np.setdiff1d(inverter, p)) for a, p in self.search(stop=_n))
             for a, p in self.search(stop=_n):
-                ra = np.sort(self._row_index[a])
-                rp = self._relabel_index[np.setdiff1d(inverter, p)]
-                yield ra, rp
+                # ra = np.sort(self._row_index[a])
+                # rp = self._relabel_index[np.setdiff1d(inverter, p)]
+                rp = np.setdiff1d(inverter, p)
+                yield a, rp
         else:
+            # return ((a, p) for a, p in self.search(stop=_n))
             for a, p in self.search(stop=_n):
-                ra = np.sort(self._row_index[a])
-                rp = self._relabel_index[p]
-                yield ra, rp
+                # ra = np.sort(self._row_index[a])
+                # rp = self._relabel_index[p]
+                yield a, p
 
     def _fill_sieve(self, n):
         """
