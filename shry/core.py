@@ -440,6 +440,7 @@ class Substitutor:
         "_segmenter",
         "_charset",
         "_template_cifwriter",
+        "_template_structure",
     )
 
     def __init__(
@@ -473,7 +474,9 @@ class Substitutor:
         self._group_indices = dict()
         self._group_bits = dict()
         self._group_bit_perm = dict()
+        # TODO: Decouple.
         self._template_cifwriter = None
+        self._template_structure = None
 
         self.structure = structure
 
@@ -510,6 +513,7 @@ class Substitutor:
         self._group_bits.clear()
         self._group_bit_perm.clear()
         self._template_cifwriter = None
+        self._template_structure = None
 
         # Read.
         self._structure = structure.copy()
@@ -1087,9 +1091,10 @@ class Substitutor:
             cifwriter.ciffile.data[cfkey] = block
 
             self._template_cifwriter = cifwriter
-            del template_structure
+            self._template_structure = template_structure
         else:
             cifwriter = self._template_cifwriter
+            template_structure = self._template_structure
             cfkey = cifwriter.ciffile.data.keys()
             cfkey = list(cfkey)[0]
             block = cifwriter.ciffile.data[cfkey]
@@ -1117,18 +1122,18 @@ class Substitutor:
             block["_atom_site_type_symbol"] = type_symbol
             block["_atom_site_label"] = label
         else:
-            raise NotImplementedError("Implementation broken.")
             format_str = "{:.%df}" % 8
-            latt = self._structure.lattice.matrix
-            positions = self._structure.frac_coords
+            latt = template_structure.lattice.matrix
+            positions = template_structure.frac_coords
 
-            cell_specie = list(set(x.species for x in self._structure))
+            # this only actually
+            cell_specie = list(set(x.species for x in template_structure))
             # Flattened list of species @ disorder sites
             specie = [y for x in des.values() for y in x]
             z_map = [
                 cell_specie.index(Composition({specie[j]: 1})) for j in range(len(p))
             ]
-            zs = [cell_specie.index(x.species) for x in self._structure]
+            zs = [cell_specie.index(x.species) for x in template_structure]
 
             pi = iter(p)
             zi = iter(z_map)
@@ -1165,7 +1170,7 @@ class Substitutor:
                     sorted(
                         j,
                         key=lambda s: tuple(
-                            abs(x) for x in self._structure.sites[s].frac_coords
+                            abs(x) for x in template_structure.sites[s].frac_coords
                         ),
                     )[0],
                     len(j),
@@ -1177,9 +1182,9 @@ class Substitutor:
                 key=lambda t: (
                     cell_specie[zs[t[0]]].average_electroneg,  # careful here
                     -t[1],
-                    self._structure.sites[t[0]].a,
-                    self._structure.sites[t[0]].b,
-                    self._structure.sites[t[0]].c,
+                    template_structure.sites[t[0]].a,
+                    template_structure.sites[t[0]].b,
+                    template_structure.sites[t[0]].c,
                 ),
             )
 
@@ -1201,7 +1206,7 @@ class Substitutor:
             for j, mult in unique_indices:
                 # Careful: The structure species itself is not updated
                 sp = cell_specie[zs[j]].elements[0]  # careful here
-                site = self._structure.sites[j]
+                site = template_structure.sites[j]
                 block["_atom_site_type_symbol"].append(sp.__str__())
                 block["_atom_site_label"].append("{}{}".format(sp.symbol, count))
                 block["_atom_site_symmetry_multiplicity"].append(str(mult))

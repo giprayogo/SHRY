@@ -53,13 +53,7 @@ def pattern_generator(request):
 @pytest.fixture
 def generator():
     symbols = np.array([8, 9, "a", 11])
-    permutations = np.array(
-        [
-            [8, 9, "a", 11],
-            [9, "a", 8, 11],
-            ["a", 8, 9, 11],
-        ]
-    )
+    permutations = np.array([[8, 9, "a", 11], [9, "a", 8, 11], ["a", 8, 9, 11],])
     return PatternMaker(permutations, symbols)
 
 
@@ -70,54 +64,18 @@ def test_signature():
     p.s. turn out this is not trivial...
     """
     # Invariance with row swaps.
-    perm_a = np.array(
-        [
-            [8, 9, "a", 11],
-            [9, "a", 8, 11],
-            ["a", 8, 9, 11],
-        ]
-    )
-    perm_b = np.array(
-        [
-            [8, 9, "a", 11],
-            ["a", 8, 9, 11],
-            [9, "a", 8, 11],
-        ]
-    )
+    perm_a = np.array([[8, 9, "a", 11], [9, "a", 8, 11], ["a", 8, 9, 11],])
+    perm_b = np.array([[8, 9, "a", 11], ["a", 8, 9, 11], [9, "a", 8, 11],])
 
     # Invariance with symbol change
-    perm_c = np.array(
-        [
-            [9, 8, "a", 11],
-            [8, "a", 9, 11],
-            ["a", 9, 8, 11],
-        ]
-    )
-    perm_d = np.array(
-        [
-            [21, "x", "a", 0],
-            ["x", "a", 21, 0],
-            ["a", 21, "x", 0],
-        ]
-    )
+    perm_c = np.array([[9, 8, "a", 11], [8, "a", 9, 11], ["a", 9, 8, 11],])
+    perm_d = np.array([[21, "x", "a", 0], ["x", "a", 21, 0], ["a", 21, "x", 0],])
 
     # Technically the same permutation though at different site.
     # (map needs to be more flexible)
-    perm_e = np.array(
-        [
-            [11, 8, 9, "a"],
-            [11, 9, "a", 8],
-            [11, "a", 8, 9],
-        ]
-    )
+    perm_e = np.array([[11, 8, 9, "a"], [11, 9, "a", 8], [11, "a", 8, 9],])
     # Symbol change + row change
-    perm_f = np.array(
-        [
-            [8, "a", 9, 11],
-            [9, 8, "a", 11],
-            ["a", 9, 8, 11],
-        ]
-    )
+    perm_f = np.array([[8, "a", 9, 11], [9, 8, "a", 11], ["a", 9, 8, 11],])
 
     pgs = [PatternMaker(x) for x in (perm_a, perm_b, perm_c, perm_d, perm_e, perm_f)]
     assert all(pg.label == pgs[0].label for pg in pgs)
@@ -141,16 +99,7 @@ def test_symm_mat():
 
 def test_desymbolized_permutations(generator):
     norm_p = generator.desymbolized_permutations()
-    assert (
-        norm_p
-        == np.array(
-            [
-                [1, 2, 0, 3],
-                [2, 0, 1, 3],
-                [0, 1, 2, 3],
-            ]
-        )
-    ).all()
+    assert (norm_p == np.array([[1, 2, 0, 3], [2, 0, 1, 3], [0, 1, 2, 3],])).all()
     print(norm_p.min(axis=0))
     assert norm_p.dtype == "int64"
 
@@ -158,16 +107,7 @@ def test_desymbolized_permutations(generator):
 def test_exp_permutations(generator):
     exp_p = generator.exp_permutations()
     print(exp_p)
-    assert (
-        exp_p
-        == np.array(
-            [
-                [2, 4, 1, 8],
-                [4, 1, 2, 8],
-                [1, 2, 4, 8],
-            ]
-        )
-    ).all()
+    assert (exp_p == np.array([[2, 4, 1, 8], [4, 1, 2, 8], [1, 2, 4, 8],])).all()
     assert exp_p.dtype == "float64"
 
 
@@ -468,20 +408,8 @@ def test_order_structure(structure_file, supercell, substitute, to):
 @pytest.fixture
 def polya():
     """Fixture returning a Polya instance."""
-    perm_a = np.array(
-        [
-            [8, 9, 10, 11],
-            [9, 10, 8, 11],
-            [10, 8, 9, 11],
-        ]
-    )
-    perm_b = np.array(
-        [
-            [3, 4, 5],
-            [5, 4, 3],
-            [3, 4, 5],
-        ]
-    )
+    perm_a = np.array([[8, 9, 10, 11], [9, 10, 8, 11], [10, 8, 9, 11],])
+    perm_b = np.array([[3, 4, 5], [5, 4, 3], [3, 4, 5],])
     perms_list = [perm_a, perm_b]
     return Polya(perms_list)
 
@@ -512,6 +440,7 @@ def test_no_disorder():
     assert substitutor.weights() == []
     assert substitutor.count() == 0
 
+
 @chdir("../examples")
 def test_cifwriter():
     """Test cifwriter implementation."""
@@ -529,9 +458,25 @@ def test_cifwriter():
         # for cif, ref in zip(cifs, ref_cifs):
         #     assert filecmp.cmp(cif, ref)
         esums = [EwaldSummation(give_arbitrary_charge(x)).total_energy for x in cifs]
-        esums_ref = [EwaldSummation(give_arbitrary_charge(x)).total_energy for x in ref_cifs]
+        esums_ref = [
+            EwaldSummation(give_arbitrary_charge(x)).total_energy for x in ref_cifs
+        ]
         assert len(set(esums)) == 16
         assert set(esums) == set(esums_ref)
+    finally:
+        # Cleanup
+        shry_outdirs = glob.glob("shry-SmFe*")
+        for outdir in shry_outdirs:
+            shutil.rmtree(outdir)
+
+    sh = ScriptHelper("SmFeTi.cif", write_symm=True)
+    sh.write()
+    cifs = glob.glob("shry-SmFe*/slice*/*.cif")
+    ref_cifs = glob.glob("../tests/test_cifs/smfe7ti_sym/slice*/*.cif")
+
+    try:
+        for cif in cifs:
+            assert any(filecmp.cmp(cif, x) for x in ref_cifs)
     finally:
         # Cleanup
         shry_outdirs = glob.glob("shry-SmFe*")
