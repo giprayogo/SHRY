@@ -95,24 +95,29 @@ def test_search(pm):
 
 @pytest.mark.parametrize(
     "from_species, to_species",
-    [("Fe1", "Fe7Ti"), ("Fe1", "FeTi"), ("Fe", "FeTiSnAu"),],
+    [
+        (("Fe1",), ("Fe7Ti",)),
+        (("Fe1",), ("FeTi",)),
+        (("Fe1", "Fe2"), ("Fe7Ti", "Fe3Ti")),
+        (("Fe",), ("FeTiSnAu",)),
+    ],
 )
 @chdir("../examples")
 def test_all(from_species, to_species):
     """Integrated test with multi-color multi-orbit structure."""
-    if to_species == "FeTiSnAu":
+    if to_species == ("FeTiSnAu",):
         with pytest.raises(TooBigError):
             sh = ScriptHelper(
                 structure_file="SmFe12.cif",
-                from_species=[from_species],
-                to_species=[to_species],
+                from_species=from_species,
+                to_species=to_species,
             )
             assert len(list(sh.substitutor.make_patterns())) == sh.count()
     else:
         sh = ScriptHelper(
             structure_file="SmFe12.cif",
-            from_species=[from_species],
-            to_species=[to_species],
+            from_species=from_species,
+            to_species=to_species,
         )
         assert len(list(sh.substitutor.make_patterns())) == sh.count()
 

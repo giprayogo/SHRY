@@ -832,7 +832,8 @@ class Substitutor:
         """
         Total number of combinations.
         """
-        ...
+        ocount = (multinomial_coeff(x) for x in self._disorder_amounts().values())
+        return functools.reduce(lambda x,y: x*y, ocount, 1)
 
     def count(self):
         """

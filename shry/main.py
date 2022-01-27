@@ -491,8 +491,9 @@ class ScriptHelper:
         Count the number of unique substituted structures
         """
         count = self.substitutor.count()
+        total_count = self.substitutor.total_count()
         logging.info(const.HLINE)
-        logging.info(f"Expected total of {count} unique patterns.")
+        logging.info(f"Expected total of {count} unique patterns (from {total_count}).")
         logging.info(const.HLINE)
         return count
 
