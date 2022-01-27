@@ -149,6 +149,12 @@ def main():  # pylint: disable=missing-function-docstring
         help="Generate ordered structures, but do not store them into disk.",
     )
     group.add_argument(
+        "--no-cache",
+        action="store_true",
+        help="Force no cache even on multi-substitutions/orbits. "
+             "Saves memory but much slower.",
+    )
+    group.add_argument(
         "--dir-size",
         type=int,
         default=const.DEFAULT_DIR_SIZE,
@@ -244,6 +250,7 @@ def main():  # pylint: disable=missing-function-docstring
             write_symm=args.write_symm,
             no_write=args.no_write,
             no_dmat=args.no_dmat,
+            no_cache=args.no_cache,
             t_kind=args.t_kind,
         )
     helper.count()

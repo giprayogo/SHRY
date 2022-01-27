@@ -412,9 +412,9 @@ class Substitutor:
     from the same basic structure, among others.
 
     Args:
-        structure (pymatgen.Structure): Input structure containing disorder sites.
-            If all sites are ordered then the output structure is exactly the same.
-        symprec (float): Precision used for symmetry analysis.
+        structure (pymatgen.Structure): Input structure.
+        symprec (float): Symmetry precision.
+        angle_tolerance (float): Angle tolerance for symmetry search.
         groupby (function): Function to group disordered sites.
             Defaults to lambda x: x.properties["_atom_site_label"], with the x loops
             over all PeriodicSites within the Structure.
@@ -423,7 +423,14 @@ class Substitutor:
             a certain species or crystallographic orbit to be subsituted together?
 
             Fallback to crystallographic orbit when failed.
-        sample (int): Randomly choose some of the generated structures.
+        sample (int): Randomly sample the generated structures.
+        no_dmat (bool): Whether or not to use distance matrix as
+            permutation invariant (faster, default=True)
+        t_kind (): (to be written)
+        cache (bool or None): By default(=None), cache patterns when involving either
+            multiple orbits or multiple species, but otherwise don't.
+            Caching allows "reuse" of previously generated patterns, at the cost of memory.
+            Set to False if memory is limited, but note that pattern generation will be much slower.
     """
 
     __slots__ = (
@@ -431,7 +438,7 @@ class Substitutor:
         "_angle_tolerance",
         "_groupby",
         "_symmops",
-        "_pattern_makers",
+        "_pms",
         "_enumerator_collection",
         "disorder_groups",
         "_group_dmat",
@@ -441,6 +448,7 @@ class Substitutor:
         "_group_bit_perm",
         "_structure",
         "_sample",
+        "cache",
         "_no_dmat",
         "_t_kind",
         "_segmenter",
@@ -458,6 +466,7 @@ class Substitutor:
         sample=None,
         no_dmat=const.DEFAULT_NO_DMAT,
         t_kind=const.DEFAULT_T_KIND,
+        cache=None,  # "True", "False", "None" (default)
     ):
         self._symprec = symprec
         self._angle_tolerance = angle_tolerance
@@ -470,8 +479,9 @@ class Substitutor:
         if sample is not None:
             raise NotImplementedError("Sampling is temporarily disabled.")
 
+        self.cache = cache
         self._symmops = None
-        self._pattern_makers = dict()
+        self._pms = dict()
         self._enumerator_collection = PolyaCollection()
 
         self.disorder_groups = dict()
@@ -651,6 +661,15 @@ class Substitutor:
                 )
             self._group_bit_perm[orbit] = bit_perm
 
+        # If not explicitly set, turn on caching if there are multiple orbits/colors,
+        # and turn off otherwise
+        if self.cache is None:
+            da = list(self._disorder_amounts().values())
+            if len(da) > 1 or len(da[0]) > 2:
+                self.cache = True
+            else:
+                self.cache = False
+
         # Letter-related functions
         self._segmenter = self._disorder_amounts().values()
         n_segments = sum(len(x) for x in self._segmenter)
@@ -692,11 +711,11 @@ class Substitutor:
         """
         PatternMaker instances in key-value pairs with its label as key
         """
-        return self._pattern_makers
+        return self._pms
 
     @pattern_makers.setter
-    def pattern_makers(self, pattern_makers):
-        self._pattern_makers = pattern_makers
+    def pattern_makers(self, pms):
+        self._pms = pms
 
     def _sorted_compositions(self):
         """
@@ -750,6 +769,35 @@ class Substitutor:
             for cum in cums[::-1]:
                 yield cum
 
+        def nocache_get_pm(subperm, dmat):
+            pm = PatternMaker(
+                subperm,
+                invar=dmat,
+                enumerator_collection=self._enumerator_collection,
+                t_kind=self._t_kind,
+            )
+            row_map = pm.get_row_map()
+            index_map = pm.get_index_map()
+            return pm, row_map, index_map
+
+        def cached_get_pm(subperm, dmat):
+            label = PatternMaker.get_label(subperm)
+            if label in self._pms:
+                pm = self._pms[label]
+                row_map, index_map = pm.update_index(subperm)
+            else:
+                pm = PatternMaker(
+                    subperm,
+                    invar=dmat,
+                    enumerator_collection=self._enumerator_collection,
+                    t_kind=self._t_kind,
+                    cache=self.cache
+                )
+                row_map = pm.get_row_map()
+                index_map = pm.get_index_map()
+                self._pms[label] = pm
+            return pm, row_map, index_map
+
         def maker_recurse_unit(aut, pattern, orbit, amount):
             """PatternMaker aut/pattern generation recursion unit."""
             group_perms = self._group_perms[orbit]
@@ -763,28 +811,8 @@ class Substitutor:
             else:
                 dmat = None
 
-            # TODO: Re-do cache implementation. Make it optional.,
-            # esp. for many color.
-            label = PatternMaker.get_label(subperm)
-            if label in self._pattern_makers:
-                maker = self._pattern_makers[label]
-                row_map, index_map = maker.update_index(subperm)
-            else:
-                maker = PatternMaker(
-                    subperm,
-                    invar=dmat,
-                    enumerator_collection=self._enumerator_collection,
-                    t_kind=self._t_kind,
-                )
-                row_map = maker.get_row_map()
-                index_map = maker.get_index_map()
-                self._pattern_makers[label] = maker
-            row_map = maker.get_row_map()
-            index_map = maker.get_index_map()
-            self._pattern_makers[label] = maker
-
-            for _aut, _subpattern in maker.ap(amount):
-                # TODO: is sort necessary?
+            pm, row_map, index_map = get_pm(subperm, dmat)
+            for _aut, _subpattern in pm.ap(amount):
                 _aut = np.sort(row_map[_aut])
                 _subpattern = index_map[_subpattern]
                 yield [aut[_aut], pattern + [_subpattern]]
@@ -820,6 +848,12 @@ class Substitutor:
         if count > const.MAX_IRREDUCIBLE:
             raise TooBigError(f"({count} irreducible expected)")
 
+        # To make the branches shallow.
+        if self.cache:
+            get_pm = cached_get_pm
+        else:
+            get_pm = nocache_get_pm
+
         for aut, pattern in maker_recurse_o(
             np.arange(len(self._symmops)),
             [],
@@ -833,7 +867,7 @@ class Substitutor:
         Total number of combinations.
         """
         ocount = (multinomial_coeff(x) for x in self._disorder_amounts().values())
-        return functools.reduce(lambda x,y: x*y, ocount, 1)
+        return functools.reduce(lambda x, y: x * y, ocount, 1)
 
     def count(self):
         """
@@ -885,7 +919,6 @@ class Substitutor:
 
                 Each row of the array is a pattern for the key orbit.
         """
-        # TODO: optional caching; reimplement sampling
         for _, p in self.make_patterns():
             yield self._get_letters(p)
 
@@ -896,7 +929,6 @@ class Substitutor:
         Return:
             list: List of weights of all patterns.
         """
-        # TODO: optional caching; reimplement sampling
         for a, _ in self.make_patterns():
             yield self._get_weight(a)
 
@@ -907,7 +939,6 @@ class Substitutor:
         Return:
             list: List of weights of all patterns.
         """
-        # TODO: optional caching; reimplement sampling
         for _, p in self.make_patterns():
             yield self._get_cifwriter(p, symprec)
 
@@ -1113,7 +1144,8 @@ class PatternMaker:
     """
 
     __slots__ = (
-        "search",
+        "_search",
+        "ap",
         "_enumerator_collection",
         "_patterns",
         "_auts",
@@ -1130,11 +1162,11 @@ class PatternMaker:
         "_bits",
         "_bit_perm",
         "label",
+        "_cache",
         "_sieve",
         "_get_not_reject_mask",
         "_get_accept_mask",
         "_get_mins",
-        "_gen_flag",
     )
 
     def __init__(
@@ -1143,12 +1175,13 @@ class PatternMaker:
         invar=None,
         enumerator_collection=None,
         t_kind=const.DEFAULT_T_KIND,
+        cache=False,
     ):
         # Algo select bits
         if invar is None:
-            self.search = self._invarless_search
+            self._search = self._invarless_search
         else:
-            self.search = self._invar_search
+            self._search = self._invar_search
 
         if t_kind == "sum":
             self._get_subobj_ts = self._get_sum_subobj_ts
@@ -1177,6 +1210,12 @@ class PatternMaker:
             # invar = self._logprime(invar)
         else:
             raise RuntimeError(f'Unrecognized T kind "{t_kind}"')
+
+        self._cache = cache
+        if cache:
+            self.ap = self.cached_ap
+        else:
+            self.ap = self.nocache_ap
 
         if enumerator_collection is None:
             self._enumerator_collection = PolyaCollection()
@@ -1217,8 +1256,6 @@ class PatternMaker:
             self._bit_perm = np.array(
                 [[2 ** int(i) for i in row] for row in indexed_perm_list], dtype=object
             )
-
-        self._gen_flag = collections.defaultdict(bool)
 
         # Containers for search results.
         self._patterns = collections.defaultdict(list)
@@ -1310,27 +1347,47 @@ class PatternMaker:
         """
         return self._relabel_index
 
-    def ap(self, n):
+    def cached_ap(self, n):
+        """
+        Get patterns and automorphisms for the specified replacement amount (cached)
+        """
+        # Patterns are symmetrical
+        _n = min(n, self._nix - n)
+        if not _n in self._patterns:
+            starts = [i for i in self._patterns.keys() if i < _n]
+            if not starts:
+                start = 0
+            else:
+                start = max(starts)
+
+            # "Mirror" patterns
+            if _n != n:
+                inverter = np.arange(self._nix)
+                ap = [
+                    (a, np.setdiff1d(inverter, p))
+                    for a, p in self._search(start=start, stop=_n)
+                ]
+            else:
+                ap = [(a, p) for a, p in self._search(start=start, stop=_n)]
+
+            self._patterns[_n], self._auts[_n] = zip(*ap)
+
+        for a, p in zip(self._patterns[_n], self._auts[_n]):
+            yield a, p
+
+    def nocache_ap(self, n):
         """
         Get patterns and automorphisms for the specified replacement amount
         """
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
-        # TODO: "Start-from-middle" implementation when caching is enabled.
-        # if not self._gen_flag[_n]:
-        # lessthan = [i for i in self._gen_flag.keys() if i < _n]
-        # if not lessthan:
-        #     start = 0
-        # else:
-        #     start = max(lessthan)
-        # "Mirror" patterns
         if _n != n:
             inverter = np.arange(self._nix)
-            for a, p in self.search(stop=_n):
+            for a, p in self._search(stop=_n):
                 rp = np.setdiff1d(inverter, p)
                 yield a, rp
         else:
-            for a, p in self.search(stop=_n):
+            for a, p in self._search(stop=_n):
                 yield a, p
 
     def _fill_sieve(self, n):
@@ -1371,12 +1428,6 @@ class PatternMaker:
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        # TODO: "Start-from-middle" implementation when caching is enabled.
-        # lessthan = [i for i in self._gen_flag.keys() if i < stop]
-        # if not lessthan:
-        #     start = 0
-        # else:
-        #     start = max(lessthan[0], start)
 
         enumerator = self._enumerator_collection.get([self._perms])
         n_pred = enumerator.count(((stop, self._nix - stop),))
@@ -1403,19 +1454,15 @@ class PatternMaker:
                 aut = np.flatnonzero(o_bitsums == bitsum)
                 stack.append((pattern, aut, bs))
         else:
-            # TODO: "Start-from-middle" implementation when caching is enabled.
-            raise NotImplementedError("Please implement.")
-            # patterns = self._patterns[start].copy()
-            # auts = self._auts[start].copy()
-            # for pattern, aut in zip(patterns, auts):
-            #     bs = self._bit_perm[:, pattern].sum(axis=1)
-            #     stack.append((pattern, aut, bs))
+            patterns = self._patterns[start].copy()
+            auts = self._auts[start].copy()
+            for pattern, aut in zip(patterns, auts):
+                bs = self._bit_perm[:, pattern].sum(axis=1)
+                stack.append((pattern, aut, bs))
 
         while stack:
             pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
-                # self._patterns[stop].append(pattern)
-                # self._auts[stop].append(aut)
                 yield aut, pattern
                 pbar.update()
                 continue
@@ -1465,7 +1512,6 @@ class PatternMaker:
         #         f"(at {stop}, {n_gen}/{n_pred} were generated)"
         #     )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
-        # self._gen_flag[stop] = True
 
     def _get_sum_subobj_ts(self, pattern, leaf_array, subobj_ts):
         new_rows = self.invar[np.ix_(leaf_array, pattern)]
@@ -1528,12 +1574,6 @@ class PatternMaker:
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        # TODO: "Start-from-middle" implementation when caching is enabled.
-        # lessthan = [i for i in self._gen_flag.keys() if i < stop]
-        # if not lessthan:
-        #     start = 0
-        # else:
-        #     start = max(lessthan[0], start)
 
         enumerator = self._enumerator_collection.get([self._perms])
         n_pred = enumerator.count(((stop, self._nix - stop),))
@@ -1561,14 +1601,12 @@ class PatternMaker:
                 subobj_ts = np.array([0])
                 stack.append((subobj_ts, pattern, aut, bs))
         else:
-            # TODO: "Start-from-middle" implementation when caching is enabled.
-            raise NotImplementedError("Please implement.")
-            # patterns = self._patterns[start].copy()
-            # auts = self._auts[start].copy()
-            # for pattern, aut in zip(patterns, auts):
-            #     bs = self._bit_perm[:, pattern].sum(axis=1)
-            #     subobj_ts = self.invar[np.ix_(pattern, pattern)].sum(axis=1)
-            #     stack.append((subobj_ts, pattern, aut, bs))
+            patterns = self._patterns[start].copy()
+            auts = self._auts[start].copy()
+            for pattern, aut in zip(patterns, auts):
+                bs = self._bit_perm[:, pattern].sum(axis=1)
+                subobj_ts = self.invar[np.ix_(pattern, pattern)].sum(axis=1)
+                stack.append((subobj_ts, pattern, aut, bs))
 
         while stack:
             subobj_ts, pattern, aut, pbs = stack.pop()

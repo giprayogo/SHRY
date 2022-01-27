@@ -196,6 +196,7 @@ class ScriptHelper:
         write_symm=const.DEFAULT_WRITE_SYMM,
         no_write=const.DEFAULT_NO_WRITE,
         no_dmat=const.DEFAULT_NO_DMAT,
+        no_cache=False,
         t_kind=const.DEFAULT_T_KIND,
     ):
         self._timestamp = datetime.datetime.now().timestamp()
@@ -229,6 +230,10 @@ class ScriptHelper:
 
         # TODO: these "derivative attributes" should have a proper setter()
         # In fact any that are not simple assignment should.
+        if no_cache:
+            cache = False
+        else:
+            cache = None
         self.structure = LabeledStructure.from_file(
             self.structure_file, symmetrize=symmetrize,
         )
@@ -246,6 +251,7 @@ class ScriptHelper:
             sample=self.sample,
             no_dmat=self.no_dmat,
             t_kind=self.t_kind,
+            cache=cache,
         )
 
     def __str__(self):
@@ -491,7 +497,9 @@ class ScriptHelper:
         Count the number of unique substituted structures
         """
         count = self.substitutor.count()
-        total_count = self.substitutor.total_count()
+        total_count = (
+            self.substitutor.total_count()
+        )  # pylint: disable=assignment-from-no-return
         logging.info(const.HLINE)
         logging.info(f"Expected total of {count} unique patterns (from {total_count}).")
         logging.info(const.HLINE)
