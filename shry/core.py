@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=unused-import, logging-fstring-interpolation, invalid-name, too-many-lines
+"""
+Core operations, pattern generation, etc.
+"""
 
 # information
 __author__ = "Genki Prayogo, and Kosuke Nakano"
@@ -12,9 +15,6 @@ __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
-"""
-Core operations, pattern generation, etc.
-"""
 
 import collections
 import functools
@@ -117,12 +117,12 @@ class PatchedSymmetrizedStructure(SymmetrizedStructure):
     def __str__(self):
         outs = [
             "SymmetrizedStructure",
-            "Full Formula ({s})".format(s=self.composition.formula),
-            "Reduced Formula: {}".format(self.composition.reduced_formula),
+            f"Full Formula ({self.composition.formula})",
+            f"Reduced Formula: {self.composition.reduced_formula}",
         ]
 
         def to_s(x):
-            return "%0.6f" % x
+            return f"{x:0.6f}"
 
         outs.append(
             "abc   : " + " ".join([to_s(i).rjust(10) for i in self.lattice.abc])
@@ -132,10 +132,10 @@ class PatchedSymmetrizedStructure(SymmetrizedStructure):
         )
         if self._charge:
             if self._charge >= 0:
-                outs.append("Overall Charge: +{}".format(self._charge))
+                outs.append(f"Overall Charge: +{self.charge}")
             else:
-                outs.append("Overall Charge: -{}".format(self._charge))
-        outs.append("Sites ({i})".format(i=len(self)))
+                outs.append(f"Overall Charge: -{self._charge}")
+        outs.append(f"Sites ({len(self)})")
         data = []
         props = self.site_properties  # This should be updated!
         keys = sorted(props.keys())
@@ -206,7 +206,7 @@ class AltCifBlock(CifBlock):
         """
         Returns the cif string for the data block
         """
-        s = ["data_{}".format(self.header)]
+        s = [f"data_{self.header}"]
         keys = self.data.keys()
         written = []
         for k in keys:
@@ -232,7 +232,7 @@ class AltCifBlock(CifBlock):
                 else:
                     v = self.data[k]
                     if len(k) + len(v) + 3 < self.maxlen:
-                        s.append("{}   {}".format(k, v))
+                        s.append(f"{k}   {v}")
                     else:
                         s.extend([k, v])
         return "\n".join(s)
@@ -269,7 +269,7 @@ class AltCifBlock(CifBlock):
                 v = self.data[k]
                 s = []
                 if len(k) + len(v) + 3 < self.maxlen:
-                    s.append("{}   {}".format(k, v))
+                    s.append(f"{k}   {v}")
                 else:
                     s.extend([k, v])
                 self.string_cache[k] = s
@@ -384,11 +384,17 @@ def aP(n, length):
 
 @functools.lru_cache(None)
 def aP_array(n, length):
+    """
+    aP() cache.
+    """
     return np.array(list(aP(n, length)))
 
 
 @functools.lru_cache(None)
 def multinomial_coeff(a):
+    """
+    Get multinomial coefficient of (sum(a), (a_1, a_2, ...))
+    """
     return functools.reduce(
         lambda a, b: a * b, [comb(cx, x, exact=True) for cx, x in zip(np.cumsum(a), a)]
     )
@@ -474,7 +480,7 @@ class Substitutor:
         self._group_indices = dict()
         self._group_bits = dict()
         self._group_bit_perm = dict()
-        # TODO: Decouple.
+        # TODO: Decouple output-format specific attributes.
         self._template_cifwriter = None
         self._template_structure = None
 
@@ -501,11 +507,11 @@ class Substitutor:
         self.structure = self.structure
 
     @structure.setter
-    def structure(self, structure, sample=None):
+    def structure(self, structure):
         logging.info("\nSetting Substitutor with Structure")
         logging.info(f"{structure}")
 
-        # TODO: somewhere the behaviour of these should be written
+        # TODO: Avoid these kinds of manual invocations.
         self.disorder_groups.clear()
         self._group_dmat.clear()
         self._group_perms.clear()
@@ -539,9 +545,8 @@ class Substitutor:
             site.properties["equivalent_atoms"] = equivalent_atoms[i]
             if not site.is_ordered:
                 disorder_sites.append(site)
-                # Ad hoc fix: if occupancy is less than 1,
-                # Stop the program
-                # TODO: Automatic handling
+                # Ad hoc fix: if occupancy is less than 1, stop.
+                # TODO: Automatic vacancy handling
                 if not np.isclose(site.species.num_atoms, 1):
                     raise RuntimeError("Please fill vacancy sites with pseudo atoms")
         if not disorder_sites:
@@ -649,7 +654,6 @@ class Substitutor:
         # Letter-related functions
         self._segmenter = self._disorder_amounts().values()
         n_segments = sum(len(x) for x in self._segmenter)
-        # TODO: can be zero; then crash letters
         self._charset = [chr(97 + i) for i in range(n_segments)]
 
     @staticmethod
@@ -713,7 +717,6 @@ class Substitutor:
             # Note: __init__ checks makes sure this has no remainder.
             fus = len(sites) // fu
 
-            # TODO: stricter ordering.
             orbit_compositions[orbit] = {
                 e: fus * int(a) for e, a in composition.items()
             }
@@ -752,7 +755,7 @@ class Substitutor:
             group_perms = self._group_perms[orbit]
             group_dmat = self._group_dmat[orbit]
 
-            # TODO: "plus" can be done in the end. This is a vestige of the explicit stack.
+            # TODO: Do pattern "plus" at the end.
             subpattern = pattern[-1]
             subperm = group_perms[np.ix_(aut, subpattern)]
             if not self._no_dmat:
@@ -760,13 +763,11 @@ class Substitutor:
             else:
                 dmat = None
 
-            # TODO: Re-do cache implementation. Make it optional.
+            # TODO: Re-do cache implementation. Make it optional.,
             # esp. for many color.
             label = PatternMaker.get_label(subperm)
             if label in self._pattern_makers:
                 maker = self._pattern_makers[label]
-                # TODO: HERE
-                # maker.update_index(subperm)
                 row_map, index_map = maker.update_index(subperm)
             else:
                 maker = PatternMaker(
@@ -775,7 +776,6 @@ class Substitutor:
                     enumerator_collection=self._enumerator_collection,
                     t_kind=self._t_kind,
                 )
-                # TODO: Implement
                 row_map = maker.get_row_map()
                 index_map = maker.get_index_map()
                 self._pattern_makers[label] = maker
@@ -798,8 +798,6 @@ class Substitutor:
             else:
                 yield aut, pattern
 
-        # TODO: This and below can be joined I think?
-        # Also the structure is not optimal... but it work!
         def maker_recurse_o(aut, pattern, ochain):
             if len(ochain) > 0:
                 orbit, sites = ochain.pop()
@@ -823,130 +821,18 @@ class Substitutor:
             raise TooBigError(f"({count} irreducible expected)")
 
         for aut, pattern in maker_recurse_o(
-            # TODO: Temporary fix.
             np.arange(len(self._symmops)),
             [],
+            # TODO: Temporary fix.
             list(self.disorder_groups.items())[::-1],
         ):
             yield (aut, pattern)
 
-        # in_stack = []
-        # out_stack = []
-
-        # Initial values
-        # aut = np.arange(len(self._symmops))
-
-        # # Structure: auts, pattern (growing list)
-        # # in_stack.append([aut, []])
-        # g_stack = (x for x in [[aut, []]])
-        # # ran = False
-
-        # # Wycoff positions
-        # # oo_end = len(self.disorder_groups.items()) - 1
-        # # for oo, (orbit, sites) in enumerate(self.disorder_groups.items()):
-        # for orbit, sites in self.disorder_groups.items():
-        #     # ran = True
-        #     logging.info(f"Making pattern for {orbit}")
-
-        #     # Reverse to minimize sub. amount.
-        #     # chain = list(rscum(self._disorder_amounts()[orbit][::-1]))
-        #     chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[::-1]
-
-        #     # Feed the new orbit into the stack.
-        #     # (But read the aut from patterns from the previous orbit)
-        #     # x[1] is the pattern
-        #     indices = np.arange(len(sites))
-        #     # for x in in_stack:
-        #     #     x[1].append(indices)
-        #     g_stack = ([x[0], x[1] + [indices]] for x in g_stack)
-
-        #     group_perms = self._group_perms[orbit]
-        #     group_dmat = self._group_dmat[orbit]
-
-        #     # Intra-orbit chaining.
-        #     # aa_end = len(chain) - 1
-        #     # for aa, amount in enumerate(chain):
-        #     # for amount in chain:
-        #     #     logging.info(f"Making pattern for {amount}/{chain}")
-        #     # NOTE: with generators, this progress bar won't be representative
-        #     # Progress bar.
-        #     # pbar = tqdm.tqdm(
-        #     #     total=len(in_stack),
-        #     #     desc="Progress",
-        #     #     **const.TQDM_CONF,
-        #     #     disable=const.DISABLE_PROGRESSBAR,
-        #     # )
-
-        #     # n_generated (the number of symmetry-inequivalent structures)
-        #     # used only a the final loop.
-        #     # if oo == oo_end and aa == aa_end:
-        #     #     n_generated = 0
-
-        #     # while in_stack:
-        #     # for aut, pattern in g_stack:
-        #     #     # aut, pattern = in_stack.pop()
-        #     #     # Operate on the _last_ subpattern, except for the first one
-        #     #     subpattern = pattern[-1]
-        #     #     subperm = group_perms[np.ix_(aut, subpattern)]
-        #     #     if not self._no_dmat:
-        #     #         dmat = group_dmat[np.ix_(subpattern, subpattern)]
-        #     #     else:
-        #     #         dmat = None
-
-        #     #     label = PatternMaker.get_label(subperm)
-        #     #     if label in self._pattern_makers:
-        #     #         maker = self._pattern_makers[label]
-        #     #         maker.update_index(subperm)
-        #     #     else:
-        #     #         maker = PatternMaker(
-        #     #             subperm,
-        #     #             invar=dmat,
-        #     #             enumerator_collection=self._enumerator_collection,
-        #     #             t_kind=self._t_kind,
-        #     #         )
-        #     #         self._pattern_makers[label] = maker
-
-        #     #     # Note (K.N.) 19 Jan. 2022:
-        #     #     # these auts and patterns are the sources of the large memory.
-        #     #     # maker.auts() and maker.patterns() return generators, but, you see
-        #     #     # "self._auts[_n]" and "self._patterns[_n]" in def auts(self, n) and def patterns(self, n).
-        #     #     # are stored not as generators but as lists.
-        #     #     # Indeed, they are not 'true' generators.
-        #     #     # We can achieve O(1) memory consumption by doing this, however we should loose the speed instead.
-        #     #     # There are pros and cons. To make this "Python" (because it is very slow intrinsically) package practical,
-        #     #     # we should accept some amount of memory consumption.
-
-        #     #     auts = maker.auts(amount)
-        #     #     patterns = maker.patterns(amount)
-
-        #     #     # # we do not have to store all auts and patterns at the final loop
-        #     #     # if oo==oo_end and aa==aa_end:
-        #     #     #     for _aut, _subpattern in zip(auts, patterns):
-        #     #     #         n_generated+=1
-
-        #     #     #         ### here write all the CIF files!!! ###
-        #     #     #         yield ...
-
-        #     #     # # otherwise, we store the info.
-        #     #     # else:
-        #     #     #     for _aut, _subpattern in zip(auts, patterns):
-        #     #     #         _pattern = pattern + [_subpattern]
-        #     #     #         out_stack.append([aut[_aut], _pattern])
-
-        #     # pbar.update()
-        #     # pbar.close()
-        #     # in_stack, out_stack = out_stack, in_stack
-        #     # in_stack, out_stack = out_stack, []
-
-        # Test whether it actu
-        # if ran:
-        #     # This moved to cif writer.
-        #     n_expected = self.count()
-        #     if n_generated != n_expected:
-        #         raise RuntimeError(
-        #             "Mismatch between generated and predicted "
-        #             f"number of structures ({n_generated}/{n_expected})"
-        #         )
+    def total_count(self):
+        """
+        Total number of combinations.
+        """
+        ...
 
     def count(self):
         """
@@ -1066,7 +952,7 @@ class Substitutor:
         Args:
             p: Substitution pattern.
         """
-        # TODO: Simplify
+        # TODO: Simplify or clarify.
         des = self._disorder_elements()
         orbits = des.keys()
         gis = self._group_indices
@@ -1123,7 +1009,7 @@ class Substitutor:
             block["_atom_site_type_symbol"] = type_symbol
             block["_atom_site_label"] = label
         else:
-            format_str = "{:.%df}" % 8
+            format_str = "{:.8f}"
             latt = template_structure.lattice.matrix
             positions = template_structure.frac_coords
 
@@ -1209,7 +1095,7 @@ class Substitutor:
                 sp = cell_specie[zs[j]].elements[0]  # careful here
                 site = template_structure.sites[j]
                 block["_atom_site_type_symbol"].append(sp.__str__())
-                block["_atom_site_label"].append("{}{}".format(sp.symbol, count))
+                block["_atom_site_label"].append(f"{sp.symbol}{count}")
                 block["_atom_site_symmetry_multiplicity"].append(str(mult))
                 block["_atom_site_fract_x"].append(format_str.format(site.a))
                 block["_atom_site_fract_y"].append(format_str.format(site.b))
@@ -1352,7 +1238,7 @@ class PatternMaker:
 
         # Column sort
         stab_map = perm_list == perm_list[0]
-        # TODO: column index is not much used...
+        # TODO: column_index is not much used...
         column_index = np.lexsort(stab_map)
         perm_list = perm_list[:, column_index]
 
@@ -1362,8 +1248,10 @@ class PatternMaker:
         relabel_element = np.vectorize({s: i for i, s in enumerate(relabel_index)}.get)
         try:
             perm_list = relabel_element(perm_list)
-        except TypeError:
-            raise ValueError(f"\n{perm_list}\n" "Rows must have same elements.")
+        except TypeError as exc:
+            raise ValueError(
+                f"\n{perm_list}\n" "Rows must have same elements."
+            ) from exc
 
         # Row sort
         row_index = np.lexsort(perm_list.T)
@@ -1410,19 +1298,24 @@ class PatternMaker:
         return relabeled_perm_list.tobytes()
 
     def get_row_map(self):
+        """
+        Map between internal order of permutation vs. input permutation
+        """
         return self._row_index
 
     def get_index_map(self):
+        """
+        Map between internal representation of elements vs. input
+        """
         return self._relabel_index
 
     def ap(self, n):
         """
         Get patterns and automorphisms for the specified replacement amount
         """
-        # TODO: Should return full generator?
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
-        # TODO: Implement outside
+        # TODO: "Start-from-middle" implementation when caching is enabled.
         # if not self._gen_flag[_n]:
         # lessthan = [i for i in self._gen_flag.keys() if i < _n]
         # if not lessthan:
@@ -1431,19 +1324,12 @@ class PatternMaker:
         #     start = max(lessthan)
         # "Mirror" patterns
         if _n != n:
-            # TODO: inverter can be made into function for faster eval
             inverter = np.arange(self._nix)
-            # return ((a, np.setdiff1d(inverter, p)) for a, p in self.search(stop=_n))
             for a, p in self.search(stop=_n):
-                # ra = np.sort(self._row_index[a])
-                # rp = self._relabel_index[np.setdiff1d(inverter, p)]
                 rp = np.setdiff1d(inverter, p)
                 yield a, rp
         else:
-            # return ((a, p) for a, p in self.search(stop=_n))
             for a, p in self.search(stop=_n):
-                # ra = np.sort(self._row_index[a])
-                # rp = self._relabel_index[p]
                 yield a, p
 
     def _fill_sieve(self, n):
@@ -1484,15 +1370,13 @@ class PatternMaker:
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        # TODO: implement outside
+        # TODO: "Start-from-middle" implementation when caching is enabled.
         # lessthan = [i for i in self._gen_flag.keys() if i < stop]
         # if not lessthan:
         #     start = 0
         # else:
         #     start = max(lessthan[0], start)
 
-        # Cross-check with exact enumeration.
-        # TODO: fix implementation
         enumerator = self._enumerator_collection.get([self._perms])
         n_pred = enumerator.count(((stop, self._nix - stop),))
 
@@ -1518,13 +1402,13 @@ class PatternMaker:
                 aut = np.flatnonzero(o_bitsums == bitsum)
                 stack.append((pattern, aut, bs))
         else:
-            # TODO: cache or not.
+            # TODO: "Start-from-middle" implementation when caching is enabled.
             raise NotImplementedError("Please implement.")
-            patterns = self._patterns[start].copy()
-            auts = self._auts[start].copy()
-            for pattern, aut in zip(patterns, auts):
-                bs = self._bit_perm[:, pattern].sum(axis=1)
-                stack.append((pattern, aut, bs))
+            # patterns = self._patterns[start].copy()
+            # auts = self._auts[start].copy()
+            # for pattern, aut in zip(patterns, auts):
+            #     bs = self._bit_perm[:, pattern].sum(axis=1)
+            #     stack.append((pattern, aut, bs))
 
         while stack:
             pattern, aut, pbs = stack.pop()
@@ -1572,7 +1456,7 @@ class PatternMaker:
                     stack.append((_i, _aut, _pbs))
         pbar.close()
 
-        # TODO: implement outside
+        # TODO: Reimplement cross-check with enumeration.
         # n_gen = len(self._patterns[stop])
         # if n_pred != n_gen:
         #     raise RuntimeError(
@@ -1640,19 +1524,16 @@ class PatternMaker:
             start: Start seach at this depth.
             stop: Stop search at this depth.
         """
-        # TODO: stop and there
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        # TODO: implement outside
+        # TODO: "Start-from-middle" implementation when caching is enabled.
         # lessthan = [i for i in self._gen_flag.keys() if i < stop]
         # if not lessthan:
         #     start = 0
         # else:
         #     start = max(lessthan[0], start)
 
-        # Cross-check with exact enumeration.
-        # TODO: fix implementation
         enumerator = self._enumerator_collection.get([self._perms])
         n_pred = enumerator.count(((stop, self._nix - stop),))
 
@@ -1679,13 +1560,14 @@ class PatternMaker:
                 subobj_ts = np.array([0])
                 stack.append((subobj_ts, pattern, aut, bs))
         else:
+            # TODO: "Start-from-middle" implementation when caching is enabled.
             raise NotImplementedError("Please implement.")
-            patterns = self._patterns[start].copy()
-            auts = self._auts[start].copy()
-            for pattern, aut in zip(patterns, auts):
-                bs = self._bit_perm[:, pattern].sum(axis=1)
-                subobj_ts = self.invar[np.ix_(pattern, pattern)].sum(axis=1)
-                stack.append((subobj_ts, pattern, aut, bs))
+            # patterns = self._patterns[start].copy()
+            # auts = self._auts[start].copy()
+            # for pattern, aut in zip(patterns, auts):
+            #     bs = self._bit_perm[:, pattern].sum(axis=1)
+            #     subobj_ts = self.invar[np.ix_(pattern, pattern)].sum(axis=1)
+            #     stack.append((subobj_ts, pattern, aut, bs))
 
         while stack:
             subobj_ts, pattern, aut, pbs = stack.pop()
@@ -1758,7 +1640,7 @@ class PatternMaker:
                     stack.append((_subobj_ts, _i, _aut, _pbs))
         pbar.close()
 
-        # TODO: implement outside
+        # TODO: Reimplement cross-check with enumeration.
         # n_gen = len(self._patterns[stop])
         # if n_pred != n_gen:
         #     raise RuntimeError(

@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=logging-fstring-interpolation
+"""
+Main task abstraction
+"""
 
 # information
 __author__ = "Genki Prayogo, and Kosuke Nakano"
@@ -13,9 +16,6 @@ __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
-"""
-Main task abstraction
-"""
 
 import ast
 import collections
@@ -32,7 +32,6 @@ import shutil
 import signal
 import sys
 from fnmatch import fnmatch
-from memory_profiler import profile
 
 import numpy as np
 import tqdm
@@ -42,12 +41,7 @@ from pymatgen.core.lattice import Lattice
 from pymatgen.io.cif import CifParser, str2float
 from pymatgen.io.vasp.inputs import Poscar
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer, SpacegroupOperations
-from pymatgen.util.coord import (
-    lattice_points_in_supercell,
-    find_in_coord_list_pbc,
-    in_coord_list_pbc,
-    in_coord_list,
-)
+from pymatgen.util.coord import in_coord_list_pbc, lattice_points_in_supercell
 
 from . import const
 from .core import Substitutor
@@ -211,9 +205,7 @@ class ScriptHelper:
         self.structure_file = structure_file
 
         if len(from_species) != len(to_species):
-            raise RuntimeError(
-                "from_species and to_species must have the same length."
-            )
+            raise RuntimeError("from_species and to_species must have the same length.")
         self.from_species = from_species
         self.to_species = to_species
         self.scaling_matrix = np.array(scaling_matrix)
@@ -312,7 +304,8 @@ class ScriptHelper:
         parser = configparser.ConfigParser(
             empty_lines_in_values=False, allow_no_value=False
         )
-        with open(input_file, "r") as f:
+        encoding = getattr(io, "LOCALE_ENCODING", "utf8")
+        with open(input_file, "r", encoding=encoding, errors="surrogateescape") as f:
             parser.read_file(f)
 
         structure_file = parser.get("DEFAULT", "structure_file")
@@ -398,15 +391,12 @@ class ScriptHelper:
         Save the irreducible structures
         """
         if self.no_write:
-            # TODO: temporary implementation
-            # for _ in self.substitutor.cifwriters():
-            # for _ in self.substitutor.weights():
-            # for _ in self.substitutor.letters():
+            # (for io-less benchmark)
             for _ in self.substitutor.make_patterns():
                 ...  # do nothing
             return
 
-        # TODO reimplement sampling
+        # TODO Reimplement sampling
         # npatterns = self.substitutor.sampled_indices.size
         npatterns = self.substitutor.count()
         if not npatterns:
@@ -421,7 +411,8 @@ class ScriptHelper:
             Dump log
             """
             logfile = os.path.join(self._outdir, "sub.log")
-            with open(logfile, "w") as f:
+            encoding = getattr(io, "LOCALE_ENCODING", "utf8")
+            with open(logfile, "w", encoding=encoding, errors="surrogateescape") as f:
                 logio.seek(0)
                 shutil.copyfileobj(logio, f)
 
@@ -469,9 +460,11 @@ class ScriptHelper:
         os.makedirs(os.path.join(self._outdir, "slice0"), exist_ok=True)
         if self.write_symm:
             print("N Weight Configuration GroupName", file=logio)
-            for i, (cifwriter, weight, letter) in enumerate(self.substitutor.quantities(
-                ("cifwriter", "weight", "letter"), self.symprec
-            )):
+            for i, (cifwriter, weight, letter) in enumerate(
+                self.substitutor.quantities(
+                    ("cifwriter", "weight", "letter"), self.symprec
+                )
+            ):
                 space_group = list(cifwriter.ciffile.data.values())[0][
                     "_symmetry_space_group_name_H-M"
                 ]
@@ -482,9 +475,9 @@ class ScriptHelper:
                 pbar.update()
         else:
             print("N Weight Configuration", file=logio)
-            for i, (cifwriter, weight, letter) in enumerate(self.substitutor.quantities(
-                ("cifwriter", "weight", "letter")
-            )):
+            for i, (cifwriter, weight, letter) in enumerate(
+                self.substitutor.quantities(("cifwriter", "weight", "letter"))
+            ):
                 line = " ".join([str(i), str(weight), letter])
                 print(line, file=logio)
 
@@ -604,7 +597,13 @@ class LabeledStructure(Structure):
             if not replace:
                 raise RuntimeError(f"Can't find the specified site ({from_species}).")
 
-    def read_label(self, cif_filename, symprec=1e-2, symmetrize=False):
+    def read_label(
+        self,
+        cif_filename,
+        symprec=const.DEFAULT_SYMPREC,
+        angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
+        symmetrize=False,
+    ):
         """
         Add _atom_site_label as site_properties.
         This is useful for enforcing a certain concentration over
@@ -628,7 +627,8 @@ class LabeledStructure(Structure):
             except ValueError:
                 return float(string.split("(")[0])
 
-        with open(cif_filename) as f:
+        encoding = getattr(io, "LOCALE_ENCODING", "utf8")
+        with open(cif_filename, "r", encoding=encoding, errors="surrogateescape") as f:
             parser = CifParser.from_string(f.read())
 
         # Since Structure only takes the first structure inside a CIF, do the same.
@@ -653,7 +653,9 @@ class LabeledStructure(Structure):
 
         # Find equivalent sites.
         if symmetrize:
-            symm_ops = SpacegroupAnalyzer(self).get_space_group_operations()
+            symm_ops = SpacegroupAnalyzer(
+                self, symprec, angle_tolerance
+            ).get_space_group_operations()
         else:
             # A bit of trick.
             parser.data = cif_dict

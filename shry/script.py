@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # pylint: disable=logging-fstring-interpolation, logging-not-lazy
+"""
+Command line interface.
+"""
 
 # information
 __author__ = "Genki Prayogo, and Kosuke Nakano"
@@ -13,22 +16,14 @@ __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
-"""Command line interface."""
 import argparse
 import datetime
 import fnmatch
 import logging
-from memory_profiler import profile
 
 import tqdm
 
 from . import const
-
-# import sys
-
-
-# Disable detailed stack trace.
-# sys.excepthook = lambda t, e, _: print(f"{t.__name__}: {e}")
 
 
 class TqdmLoggingHandler(logging.Handler):
@@ -54,8 +49,6 @@ def print_header():
     now = datetime.datetime.now()
     tz = now.astimezone().tzname()
     time_string = now.strftime("%c ") + tz
-    bold = "\033[1m"
-    end = "\033[0m"
 
     # logger.setLevel(logging.INFO)
     handler = TqdmLoggingHandler()
@@ -63,8 +56,8 @@ def print_header():
     logging.basicConfig(format="%(message)s", level=logging.INFO, handlers=[handler])
     logging.info("********************************\n")
     logging.info(
-        f"SHRY: Suite for High-throughput generation of models"
-        f"with atomic substitutions implemented by Python"
+        "SHRY: Suite for High-throughput generation of models"
+        "with atomic substitutions implemented by Python"
     )
     logging.info("\n********************************")
     logging.info("Begin " + time_string)
@@ -80,6 +73,7 @@ def print_footer():
     logging.info(const.HLINE)
     logging.info("Ends " + time_string)
     logging.info(const.HLINE)
+
 
 def main():  # pylint: disable=missing-function-docstring
     parser = argparse.ArgumentParser(
@@ -257,6 +251,7 @@ def main():  # pylint: disable=missing-function-docstring
     if not args.count_only and not args.mod_only:
         helper.write()
     print_footer()
+
 
 if __name__ == "__main__":
     main()

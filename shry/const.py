@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # pylint: disable=logging-fstring-interpolation, logging-not-lazy
+"""
+Shared constants
+"""
 
 # information
 __author__ = "Genki Prayogo, and Kosuke Nakano"
@@ -13,9 +16,6 @@ __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
-"""
-Shared constants
-"""
 import re
 
 # Default input arguments
@@ -51,6 +51,4 @@ MAX_IRREDUCIBLE = 1e9
 # Display formatting
 LINEWIDTH = 88
 HLINE = "-" * LINEWIDTH
-TQDM_CONF = {
-	"ncols": LINEWIDTH
-}
+TQDM_CONF = {"ncols": LINEWIDTH}

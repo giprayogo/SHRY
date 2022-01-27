@@ -1,23 +1,14 @@
 # -*- coding: utf-8 -*-
-# pylint: disable=redefined-outer-name,missing-function-docstring,wrong-import-order,unused-import
-
+# pylint: disable=redefined-outer-name,missing-function-docstring,wrong-import-order,unused-import,invalid-name,protected-access
 """Test core operations."""
 
-import functools
 import glob
-import io
-import os
-import pickle
 import shutil
-import subprocess
-from pprint import pprint
 import filecmp
 
 import numpy as np
-import pandas as pd
 import pytest
 from pymatgen.core import Structure
-from pymatgen.symmetry.analyzer import SpacegroupAnalyzer
 from pymatgen.analysis.ewald import EwaldSummation
 from shry.core import NeedSupercellError, PatternMaker, Polya, Substitutor, TooBigError
 from shry.main import LabeledStructure, ScriptHelper
@@ -94,9 +85,9 @@ def test_search(pm):
         4: [{"8", "9", "a", "11"}],
     }
     index_map = pm.get_index_map()
-    for n in correct_answer:
+    for n, answers in correct_answer.items():
         for _, p in pm.ap(n):
-            assert set(index_map[x] for x in p) in correct_answer[n]
+            assert set(index_map[x] for x in p) in answers
 
 
 # Substitutor functions
@@ -108,7 +99,7 @@ def test_search(pm):
 )
 @chdir("../examples")
 def test_all(from_species, to_species):
-    """Integrated count-generate function test with multi-color multi-orbit structure."""
+    """Integrated test with multi-color multi-orbit structure."""
     if to_species == "FeTiSnAu":
         with pytest.raises(TooBigError):
             sh = ScriptHelper(
