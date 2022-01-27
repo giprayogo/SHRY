@@ -736,7 +736,6 @@ class Substitutor:
         Returns:
             list: list of list of sites with a distinct species.
         """
-        logging.info("Making patterns.")
 
         def rscum(iterable):
             """Cumulative sum of an iterable, but skip the last element, and reverse."""
@@ -816,6 +815,12 @@ class Substitutor:
                     yield from maker_recurse_o(aut, pattern, _ochain)
             else:
                 yield aut, pattern
+
+        logging.info("Making patterns.")
+        # Safety kill
+        count = self.count()
+        if count > const.MAX_IRREDUCIBLE:
+            raise TooBigError(f"({count} irreducible expected)")
 
         for aut, pattern in maker_recurse_o(
             # TODO: Temporary fix.
@@ -958,10 +963,6 @@ class Substitutor:
         else:  # No-permutations-supplied
             enumerator = self._enumerator_collection.get([])
         count = enumerator.count(tuple(self._disorder_amounts().values()))
-
-        # Arbitrary safe limit
-        if count > const.MAX_IRREDUCIBLE:
-            raise TooBigError(f"({count} irreducible expected)")
         return count
 
     def quantities(self, q, symprec=None):

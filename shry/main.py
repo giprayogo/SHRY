@@ -212,7 +212,7 @@ class ScriptHelper:
 
         if len(from_species) != len(to_species):
             raise RuntimeError(
-                "Must supply equal number of target_sites and compositions"
+                "from_species and to_species must have the same length."
             )
         self.from_species = from_species
         self.to_species = to_species
@@ -235,10 +235,14 @@ class ScriptHelper:
         logging.info(self)
         logging.info(const.HLINE)
 
+        # TODO: these "derivative attributes" should have a proper setter()
+        # In fact any that are not simple assignment should.
         self.structure = LabeledStructure.from_file(
             self.structure_file, symmetrize=symmetrize,
         )
         self.modified_structure = self.structure.copy()
+        # Note: since we don't limit the allowable scaling_matrix,
+        # changing the order of enlargement vs. replace can have different meaning.
         self.modified_structure.replace_species(
             dict(zip(self.from_species, self.to_species))
         )
@@ -497,6 +501,7 @@ class ScriptHelper:
         logging.info(const.HLINE)
         logging.info(f"Expected total of {count} unique patterns.")
         logging.info(const.HLINE)
+        return count
 
 
 class LabeledStructure(Structure):
