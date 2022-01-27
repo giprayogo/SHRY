@@ -665,10 +665,13 @@ class Substitutor:
         # and turn off otherwise
         if self.cache is None:
             da = list(self._disorder_amounts().values())
-            if len(da) > 1 or len(da[0]) > 2:
-                self.cache = True
+            if not da: # no disorder
+                pass
             else:
-                self.cache = False
+                if len(da) > 1 or len(da[0]) > 2:
+                    self.cache = True
+                else:
+                    self.cache = False
 
         # Letter-related functions
         self._segmenter = self._disorder_amounts().values()
