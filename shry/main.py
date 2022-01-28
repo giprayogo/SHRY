@@ -508,7 +508,8 @@ class ScriptHelper:
             self.substitutor.total_count()
         )  # pylint: disable=assignment-from-no-return
         logging.info(const.HLINE)
-        logging.info(f"Expected total of {count} unique patterns (from {total_count}).")
+        logging.info(f"Total number of combinations is {total_count}")
+        logging.info(f"Expected unique patterns is {count}")
         logging.info(const.HLINE)
         return count
 
