@@ -665,7 +665,7 @@ class Substitutor:
         # and turn off otherwise
         if self.cache is None:
             da = list(self._disorder_amounts().values())
-            if not da: # no disorder
+            if not da:  # no disorder
                 pass
             else:
                 if len(da) > 1 or len(da[0]) > 2:
@@ -794,7 +794,7 @@ class Substitutor:
                     invar=dmat,
                     enumerator_collection=self._enumerator_collection,
                     t_kind=self._t_kind,
-                    cache=self.cache
+                    cache=self.cache,
                 )
                 row_map = pm.get_row_map()
                 index_map = pm.get_index_map()
@@ -1356,26 +1356,33 @@ class PatternMaker:
         """
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
-        if not _n in self._patterns:
-            starts = [i for i in self._patterns.keys() if i < _n]
-            if not starts:
-                start = 0
-            else:
-                start = max(starts)
-
-            # "Mirror" patterns
-            if _n != n:
+        # if not _n in self._patterns:
+        if not n in self._patterns:
+            if _n in self._patterns:
                 inverter = np.arange(self._nix)
-                ap = [
-                    (a, np.setdiff1d(inverter, p))
-                    for a, p in self._search(start=start, stop=_n)
+                self._auts[n] = self._auts[_n]
+                self._patterns[n] = [
+                    np.setdiff1d(inverter, p) for p in self._patterns[_n]
                 ]
             else:
-                ap = [(a, p) for a, p in self._search(start=start, stop=_n)]
+                starts = [i for i in self._patterns.keys() if i < _n]
+                if not starts:
+                    start = 0
+                else:
+                    start = max(starts)
 
-            self._patterns[_n], self._auts[_n] = zip(*ap)
+                # "Mirror" patterns
+                if _n != n:
+                    inverter = np.arange(self._nix)
+                    ap = [
+                        (a, np.setdiff1d(inverter, p))
+                        for a, p in self._search(start=start, stop=_n)
+                    ]
+                else:
+                    ap = [(a, p) for a, p in self._search(start=start, stop=_n)]
+                self._auts[n], self._patterns[n] = zip(*ap)
 
-        for a, p in zip(self._patterns[_n], self._auts[_n]):
+        for a, p in zip(self._auts[n], self._patterns[n]):
             yield a, p
 
     def nocache_ap(self, n):
@@ -1457,8 +1464,8 @@ class PatternMaker:
                 aut = np.flatnonzero(o_bitsums == bitsum)
                 stack.append((pattern, aut, bs))
         else:
-            patterns = self._patterns[start].copy()
-            auts = self._auts[start].copy()
+            patterns = self._patterns[start]
+            auts = self._auts[start]
             for pattern, aut in zip(patterns, auts):
                 bs = self._bit_perm[:, pattern].sum(axis=1)
                 stack.append((pattern, aut, bs))
@@ -1604,8 +1611,8 @@ class PatternMaker:
                 subobj_ts = np.array([0])
                 stack.append((subobj_ts, pattern, aut, bs))
         else:
-            patterns = self._patterns[start].copy()
-            auts = self._auts[start].copy()
+            patterns = self._patterns[start]
+            auts = self._auts[start]
             for pattern, aut in zip(patterns, auts):
                 bs = self._bit_perm[:, pattern].sum(axis=1)
                 subobj_ts = self.invar[np.ix_(pattern, pattern)].sum(axis=1)

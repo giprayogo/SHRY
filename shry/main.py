@@ -396,17 +396,24 @@ class ScriptHelper:
         """
         Save the irreducible structures
         """
-        if self.no_write:
-            # (for io-less benchmark)
-            for _ in self.substitutor.make_patterns():
-                ...  # do nothing
-            return
-
         # TODO Reimplement sampling
         # npatterns = self.substitutor.sampled_indices.size
         npatterns = self.substitutor.count()
         if not npatterns:
             logging.warning("No expected patterns.")
+            return
+
+        if self.no_write:
+            # (for io-less benchmark)
+            pbar = tqdm.tqdm(
+                total=npatterns,
+                desc=f"Generating {npatterns} order structures",
+                **const.TQDM_CONF,
+                disable=const.DISABLE_PROGRESSBAR,
+            )
+            for _ in self.substitutor.make_patterns():
+                pbar.update()
+            pbar.close()
             return
 
         # Log file stream
