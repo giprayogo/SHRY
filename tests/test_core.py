@@ -2,20 +2,20 @@
 # pylint: disable=redefined-outer-name,missing-function-docstring,wrong-import-order,unused-import,invalid-name,protected-access
 """Test core operations."""
 
+import filecmp
 import glob
 import shutil
-import filecmp
 
 import numpy as np
 import pytest
-from pymatgen.core import Structure
 from pymatgen.analysis.ewald import EwaldSummation
-from shry.core import NeedSupercellError, PatternMaker, Polya, Substitutor, TooBigError
+from pymatgen.core import Structure
+from shry.core import (NeedSupercellError, PatternMaker, Polya, Substitutor,
+                       TooBigError)
 from shry.main import LabeledStructure, ScriptHelper
 from sympy.tensor.indexed import IndexedBase
 
 from helper import chdir
-
 
 # PatternMaker basic functions.
 
@@ -190,7 +190,7 @@ def test_cifwriter():
     ref_cifs = glob.glob("../tests/test_cifs/smfe7ti/slice*/*.cif")
 
     def give_arbitrary_charge(filename):
-        structure = Structure.from_file(filename)
+        structure = LabeledStructure.from_file(filename)
         structure.add_oxidation_state_by_element({"Sm": 1, "Fe": 2, "Ti": 3})
         return structure
 
@@ -220,6 +220,27 @@ def test_cifwriter():
         shry_outdirs = glob.glob("shry-SmFe*")
         for outdir in shry_outdirs:
             shutil.rmtree(outdir)
+
+
+@chdir("../examples")
+def test_ewald():
+    """Test ewald energy calculation."""
+
+    def give_arbitrary_charge(filename):
+        structure = LabeledStructure.from_file(filename)
+        structure.add_oxidation_state_by_element({"Sm": 1, "Fe": 2, "Ti": 3})
+        return structure
+
+    structure = give_arbitrary_charge("SmFe7Ti.cif")
+    s = Substitutor(structure)
+    esums = list(s.ewalds())
+    assert len(set(esums)) == 16
+
+    structure = LabeledStructure.from_file("SmFe7Ti.cif")
+    s = Substitutor(structure)
+    with pytest.raises(ValueError) as excinfo:
+        list(s.ewalds())
+        assert "defined oxidation" in str(excinfo.value)
 
 
 @chdir("../examples")

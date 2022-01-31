@@ -194,11 +194,13 @@ class ScriptHelper:
         angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
         dir_size=const.DEFAULT_DIR_SIZE,
         write_symm=const.DEFAULT_WRITE_SYMM,
+        write_ewald=const.DEFAULT_WRITE_EWALD,
         no_write=const.DEFAULT_NO_WRITE,
         no_dmat=const.DEFAULT_NO_DMAT,
         no_cache=False,
         t_kind=const.DEFAULT_T_KIND,
     ):
+        # TODO: Refactor with descriptors.
         self._timestamp = datetime.datetime.now().timestamp()
         self.no_write = no_write
         self.no_dmat = no_dmat
@@ -222,6 +224,7 @@ class ScriptHelper:
         self.angle_tolerance = angle_tolerance
         self.dir_size = dir_size
         self.write_symm = write_symm
+        self.write_ewald = write_ewald
 
         logging.info("\nRun configurations:")
         logging.info(const.HLINE)
@@ -471,31 +474,40 @@ class ScriptHelper:
             disable=const.DISABLE_PROGRESSBAR,
         )
         os.makedirs(os.path.join(self._outdir, "slice0"), exist_ok=True)
+
+        # TODO: Refactor
+        header = "N Weight Configuration"
+        if self.write_ewald:
+            header = header + " EwaldEnergy"
+            quantities = ("cifwriter", "weight", "letter", "ewald")
+        else:
+            quantities = ("cifwriter", "weight", "letter")
+
         if self.write_symm:
-            print("N Weight Configuration GroupName", file=logio)
-            for i, (cifwriter, weight, letter) in enumerate(
-                self.substitutor.quantities(
-                    ("cifwriter", "weight", "letter"), self.symprec
-                )
-            ):
+            header = header + " GroupName"
+            symprec = self.symprec
+        else:
+            symprec = None
+
+        print(header, file=logio)
+        for i, packet in enumerate(self.substitutor.quantities(quantities, symprec)):
+            cifwriter = packet["cifwriter"]
+            ewald = packet["ewald"]
+            weight = packet["weight"]
+            letter = packet["letter"]
+
+            line = f"{i} {weight} {letter}"
+            if ewald is not None:
+                line = line + f" {ewald}"
+            if self.write_symm:
                 space_group = list(cifwriter.ciffile.data.values())[0][
                     "_symmetry_space_group_name_H-M"
                 ]
-                line = " ".join([str(i), str(weight), letter, space_group])
-                print(line, file=logio)
+                line += line + f" {space_group}"
+            print(line, file=logio)
 
-                cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
-                pbar.update()
-        else:
-            print("N Weight Configuration", file=logio)
-            for i, (cifwriter, weight, letter) in enumerate(
-                self.substitutor.quantities(("cifwriter", "weight", "letter"))
-            ):
-                line = " ".join([str(i), str(weight), letter])
-                print(line, file=logio)
-
-                cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
-                pbar.update()
+            cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
+            pbar.update()
         pbar.close()
         dump_log()
 

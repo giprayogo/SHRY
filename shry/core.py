@@ -17,6 +17,7 @@ __status__ = "Production"
 
 
 import collections
+import copy
 import functools
 import itertools
 import logging
@@ -24,7 +25,6 @@ import math
 import sys
 from pprint import pprint
 from typing import OrderedDict, Tuple
-import copy
 
 import numpy as np
 import spglib
@@ -32,9 +32,10 @@ import sympy
 import tqdm
 from memory_profiler import profile
 from monty.fractions import gcd_float
+from pymatgen.analysis.ewald import EwaldSummation
 from pymatgen.core.composition import Composition, reduce_formula
 from pymatgen.core.operations import SymmOp
-from pymatgen.io.cif import CifBlock, CifWriter
+from pymatgen.io.cif import CifBlock, CifParser, CifWriter
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer, SpacegroupOperations
 from pymatgen.symmetry.structure import SymmetrizedStructure
 from pymatgen.util.coord import find_in_coord_list_pbc
@@ -898,22 +899,26 @@ class Substitutor:
         Yield tuple of selected quantities.
 
         Args:
-            q: (list) valid options: ("cifwriter", "weight", "letter")
+            q: (list) valid options: ("cifwriter", "weight", "letter", "ewald")
                 will return in this order.
         """
         is_c = "cifwriter" in q
         is_w = "weight" in q
         is_l = "letter" in q
+        is_e = "ewald" in q
 
+        packet = collections.defaultdict(lambda: None)
         for a, p in self.make_patterns():
-            out = []
+            packet.clear()
             if is_c:
-                out.append(self._get_cifwriter(p, symprec))
+                packet["cifwriter"] = self._get_cifwriter(p, symprec)
+            if is_e:
+                packet["ewald"] = self._get_ewald(p, symprec)
             if is_w:
-                out.append(self._get_weight(a))
+                packet["weight"] = self._get_weight(a)
             if is_l:
-                out.append(self._get_letters(p))
-            yield out
+                packet["letter"] = self._get_letters(p)
+            yield packet
 
     def letters(self):
         """
@@ -940,13 +945,17 @@ class Substitutor:
 
     def cifwriters(self, symprec=None):
         """
-        Pattern weights generator.
-
-        Return:
-            list: List of weights of all patterns.
+        Cifwriters generator.
         """
         for _, p in self.make_patterns():
             yield self._get_cifwriter(p, symprec)
+
+    def ewalds(self, symprec=None):
+        """
+        Ewald energy generator.
+        """
+        for _, p in self.make_patterns():
+            yield self._get_ewald(p, symprec)
 
     def _get_letters(self, p):
         """
@@ -1141,6 +1150,21 @@ class Substitutor:
                 count += 1
 
         return cifwriter
+
+    def _get_ewald(self, p, symprec):
+        """
+        Get ewald sums of the structures.
+        """
+        # TODO: less ad hoc implementation.
+        cifwriter = self._get_cifwriter(p, symprec)
+        cifparser = CifParser.from_string(str(cifwriter))
+        structure = cifparser.get_structures(primitive=False)[0]
+        try:
+            return EwaldSummation(structure).total_energy
+        except TypeError as exc:
+            raise ValueError(
+                "Ewald summation required CIFs with defined oxidation states."
+            ) from exc
 
 
 class PatternMaker:

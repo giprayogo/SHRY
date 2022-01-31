@@ -19,6 +19,7 @@ __status__ = "Production"
 import re
 
 # Default input arguments
+# TODO: Refactor together with ScriptHelper
 DEFAULT_FROM_SPECIES = ()
 DEFAULT_TO_SPECIES = ()
 DEFAULT_SCALING_MATRIX = (1, 1, 1)
@@ -29,6 +30,7 @@ DEFAULT_SYMPREC = 1.0e-2
 DEFAULT_ANGLE_TOLERANCE = 5.0
 DEFAULT_DIR_SIZE = 10000
 DEFAULT_WRITE_SYMM = False
+DEFAULT_WRITE_EWALD = False
 DEFAULT_NO_WRITE = False
 DEFAULT_NO_DMAT = False
 DEFAULT_T_KIND = "sum"

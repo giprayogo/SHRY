@@ -152,7 +152,7 @@ def main():  # pylint: disable=missing-function-docstring
         "--no-cache",
         action="store_true",
         help="Force no cache even on multi-substitutions/orbits. "
-             "Saves memory but much slower.",
+        "Saves memory but much slower.",
     )
     group.add_argument(
         "--dir-size",
@@ -169,6 +169,11 @@ def main():  # pylint: disable=missing-function-docstring
         "--write-symm",
         action="store_true",
         help="Write symmetries for all output CIFs (slower).",
+    )
+    group.add_argument(
+        "--write-ewald",
+        action="store_true",
+        help="Write Ewald energy for all output CIFs.",
     )
     group.add_argument(
         "--symmetrize",
@@ -248,6 +253,7 @@ def main():  # pylint: disable=missing-function-docstring
             angle_tolerance=args.angle_tolerance,
             dir_size=args.dir_size,
             write_symm=args.write_symm,
+            write_ewald=args.write_ewald,
             no_write=args.no_write,
             no_dmat=args.no_dmat,
             no_cache=args.no_cache,
