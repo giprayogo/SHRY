@@ -539,7 +539,10 @@ class Substitutor:
             symprec=self._symprec,
             angle_tolerance=self._angle_tolerance,
         )
-        self._symmops = sga.get_symmetry_operations()
+        try:
+            self._symmops = sga.get_symmetry_operations()
+        except TypeError as exc:
+            raise RuntimeError("Couldn't find symmetry.") from exc
 
         logging.info(f"Space group: {sga.get_hall()} ({sga.get_space_group_number()})")
         logging.info(f"Total {len(self._symmops)} symmetry operations")
@@ -1022,7 +1025,6 @@ class Substitutor:
             block = cifwriter.ciffile.data[cfkey]
 
         if symprec is None:
-            # raise NotImplementedError("Implementation broken.")
             type_symbol = block["_atom_site_type_symbol"].copy()
             label = block["_atom_site_label"].copy()
 
