@@ -192,6 +192,12 @@ def main():  # pylint: disable=missing-function-docstring
         help="Symmetry search precision (simulation cell fraction).",
     )
     group.add_argument(
+        "--atol",
+        type=float,
+        default=const.DEFAULT_SYMPREC,
+        help="Discretization absolute tolerance (angstrom).",
+    )
+    group.add_argument(
         "--angle-tolerance",
         type=float,
         default=const.DEFAULT_ANGLE_TOLERANCE,
@@ -250,6 +256,7 @@ def main():  # pylint: disable=missing-function-docstring
             symmetrize=args.symmetrize,
             sample=args.sample,
             symprec=args.symprec,
+            atol=args.atol,
             angle_tolerance=args.angle_tolerance,
             dir_size=args.dir_size,
             write_symm=args.write_symm,

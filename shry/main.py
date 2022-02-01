@@ -191,6 +191,7 @@ class ScriptHelper:
         symmetrize=const.DEFAULT_SYMMETRIZE,
         sample=const.DEFAULT_SAMPLE,
         symprec=const.DEFAULT_SYMPREC,
+        atol=const.DEFAULT_ATOL,
         angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
         dir_size=const.DEFAULT_DIR_SIZE,
         write_symm=const.DEFAULT_WRITE_SYMM,
@@ -221,6 +222,7 @@ class ScriptHelper:
                 sample = int(self._math_eval(sample))
         self.sample = sample
         self.symprec = symprec
+        self.atol = atol
         self.angle_tolerance = angle_tolerance
         self.dir_size = dir_size
         self.write_symm = write_symm
@@ -250,6 +252,7 @@ class ScriptHelper:
         self.substitutor = Substitutor(
             self.modified_structure,
             symprec=self.symprec,
+            atol=self.atol,
             angle_tolerance=self.angle_tolerance,
             sample=self.sample,
             no_dmat=self.no_dmat,
@@ -506,7 +509,12 @@ class ScriptHelper:
                 line += line + f" {space_group}"
             print(line, file=logio)
 
-            cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
+            try:
+                cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
+            except IndexError as exc:
+                raise RuntimeError(
+                    "Mismatch between enumeration and expected structures, check `atol` value."
+                ) from exc
             pbar.update()
         pbar.close()
         dump_log()

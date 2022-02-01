@@ -10,8 +10,7 @@ import numpy as np
 import pytest
 from pymatgen.analysis.ewald import EwaldSummation
 from pymatgen.core import Structure
-from shry.core import (NeedSupercellError, PatternMaker, Polya, Substitutor,
-                       TooBigError)
+from shry.core import NeedSupercellError, PatternMaker, Polya, Substitutor, TooBigError
 from shry.main import LabeledStructure, ScriptHelper
 from sympy.tensor.indexed import IndexedBase
 
@@ -220,6 +219,14 @@ def test_cifwriter():
         shry_outdirs = glob.glob("shry-SmFe*")
         for outdir in shry_outdirs:
             shutil.rmtree(outdir)
+
+
+@chdir("../examples")
+def test_cifwriter2():
+    """Test cifwriter edge cases."""
+    structure = LabeledStructure.from_file("r3m.cif")
+    s = Substitutor(structure)
+    assert len(list(s.make_patterns())) == s.count()
 
 
 @chdir("../examples")

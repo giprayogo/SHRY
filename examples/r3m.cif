@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Ds3Ni4P9Pt2C45
+_symmetry_space_group_name_H-M  'R 3 m :H'
+_cell_length_a   16.86100000
+_cell_length_b   16.86100000
+_cell_length_c   5.61100000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   160
+_chemical_formula_structural   Ds3Ni4P9Pt2C45
+_chemical_formula_sum   'Ds3 Ni4 P9 Pt2 C45'
+_cell_volume   1381.45759105
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  '-y, -x, z'
+  5  '-x+y, y, z'
+  6  'x, x-y, z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-y+2/3, x-y+1/3, z+1/3'
+  9  '-x+y+2/3, -x+1/3, z+1/3'
+  10  '-y+2/3, -x+1/3, z+1/3'
+  11  '-x+y+2/3, y+1/3, z+1/3'
+  12  'x+2/3, x-y+1/3, z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-y+1/3, x-y+2/3, z+2/3'
+  15  '-x+y+1/3, -x+2/3, z+2/3'
+  16  '-y+1/3, -x+2/3, z+2/3'
+  17  '-x+y+1/3, y+2/3, z+2/3'
+  18  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ds+  Ds0  9  0.15053333  0.07526667  0.46006667
+  0.3333333333333333
+  Pt+  Pt1  9  0.15053333  0.07526667  0.46006667
+  0.2222222222222222
+  Ni+  Ni2  9  0.15053333  0.07526667  0.46006667
+  0.4444444444444444
+  P  P3  9  0.06143333  0.12286667  0.33056667  1
+  C  C4  18  0.13216667  0.39853333  0.20173333  1
+  C  C5  18  0.17646667  0.43583333  0.41783333  1
+  C  C6  9  0.18776667  0.37553333  0.06823333  1

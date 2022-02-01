@@ -430,14 +430,17 @@ class Substitutor:
         t_kind (): (to be written)
         cache (bool or None): By default(=None), cache patterns when involving either
             multiple orbits or multiple species, but otherwise don't.
-            Caching allows "reuse" of previously generated patterns, at the cost of memory.
-            Set to False if memory is limited, but note that pattern generation will be much slower.
+            Caching allows "reuse" of previously generated patterns,
+            at the cost of memory.
+            Set to False if memory is limited,
+            but note that pattern generation will be much slower.
     """
 
     __slots__ = (
         "_symprec",
         "_angle_tolerance",
         "_groupby",
+        "_atol",
         "_symmops",
         "_pms",
         "_enumerator_collection",
@@ -463,6 +466,7 @@ class Substitutor:
         structure,
         symprec=const.DEFAULT_SYMPREC,
         angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
+        atol=const.DEFAULT_ATOL,
         groupby=None,
         sample=None,
         no_dmat=const.DEFAULT_NO_DMAT,
@@ -473,6 +477,8 @@ class Substitutor:
         self._angle_tolerance = angle_tolerance
         self._no_dmat = no_dmat
         self._t_kind = t_kind
+        # TODO: These two are consequential to self._structure, so should be property
+        self._atol = atol
         if groupby is None:
             self._groupby = lambda x: x.properties["_atom_site_label"]
 
@@ -593,7 +599,7 @@ class Substitutor:
             indices = [x.properties["index"] for x in sites]
             self._group_indices[orbit] = indices
             group_dmat = self._structure.distance_matrix[np.ix_(indices, indices)]
-            self._group_dmat[orbit] = self.ordinalize(group_dmat)
+            self._group_dmat[orbit] = self.ordinalize(group_dmat, atol=self._atol)
 
             # PERM
             coords = [x.frac_coords for x in sites]
@@ -683,13 +689,13 @@ class Substitutor:
         self._charset = [chr(97 + i) for i in range(n_segments)]
 
     @staticmethod
-    def ordinalize(array, atol=1e-8):
+    def ordinalize(array, atol=const.DEFAULT_ATOL):
         """
         Ordinalize array elements to the specified absolute tolerance.
 
         Args:
             array (np.array): The array to be ordinalized.
-            atol (float): Absolute tolerance. Defaults to 1e-8.
+            atol (float): Absolute tolerance. Defaults to 1e-5.
 
         Returns:
             np.array: The ordinalized array.
