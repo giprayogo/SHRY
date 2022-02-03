@@ -30,7 +30,7 @@ import numpy as np
 import spglib
 import sympy
 import tqdm
-from memory_profiler import profile
+#from memory_profiler import profile
 from monty.fractions import gcd_float
 from pymatgen.analysis.ewald import EwaldSummation
 from pymatgen.core.composition import Composition, reduce_formula
