@@ -1166,6 +1166,8 @@ class Substitutor:
         cifparser = CifParser.from_string(str(cifwriter))
         structure = cifparser.get_structures(primitive=False)[0]
         try:
+            if not np.isclose(structure.charge, 0.):
+                logging.warn(f"Unit cell is charged: (total charge = {structure.charge}).")
             return EwaldSummation(structure).total_energy
         except TypeError as exc:
             raise ValueError(
