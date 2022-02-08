@@ -298,6 +298,35 @@ class TooBigError(Exception):
 # Some numerical methods
 
 
+def rec_asc(a, n, m, k, length):
+    """
+    Recursive part of the thing below
+    """
+    x = m
+    while 2 * x <= n and k < length:
+        a[k - 1] = x
+        yield from rec_asc(a, n - x, x, k + 1, length)
+        x += 1
+    a[k - 1] = n
+    # Pad
+    b = a[:k]
+    b += [0] * (length - k)
+    # Permute
+    for z in multiset_permutations(b):
+        yield z
+
+
+@functools.lru_cache(None)
+def aR_array(n, length=None):
+    """
+    aR() cache.
+    """
+    a = [1] * n
+    if length is None:
+        length = n
+    return np.array(list(rec_asc(a, n, 1, 1, length)))
+
+
 def aP(n, length):
     """Generate partitions of n as ordered lists in ascending
     lexicographical order.
@@ -354,9 +383,6 @@ def aP(n, length):
             y -= x
             v += 1
         w = v + 1
-        # Cut
-        # if w + 1 < length:
-        #     break
 
         while x <= y:
             a[v] = x
@@ -368,7 +394,7 @@ def aP(n, length):
                 b += [0] * (length - w - 1)
                 # Permute
                 for z in multiset_permutations(b):
-                    yield np.array(z)
+                    yield z
             x += 1
             y -= 1
         a[v] = x + y
@@ -380,7 +406,7 @@ def aP(n, length):
             b += [0] * (length - w)
             # Permute
             for z in multiset_permutations(b):
-                yield np.array(z)
+                yield z
 
 
 @functools.lru_cache(None)
@@ -1166,8 +1192,10 @@ class Substitutor:
         cifparser = CifParser.from_string(str(cifwriter))
         structure = cifparser.get_structures(primitive=False)[0]
         try:
-            if not np.isclose(structure.charge, 0.):
-                logging.warn(f"Unit cell is charged: (total charge = {structure.charge}).")
+            if not np.isclose(structure.charge, 0.0):
+                logging.warn(
+                    f"Unit cell is charged: (total charge = {structure.charge})."
+                )
             return EwaldSummation(structure).total_energy
         except TypeError as exc:
             raise ValueError(
@@ -1889,7 +1917,7 @@ class Polya:
         o_counts = []
         for o_cycles in self.ci().values():
             o_parts = [
-                [aP_array(cnum, len(color)) for cnum in cycles.values()]
+                [aR_array(cnum, len(color)) for cnum in cycles.values()]
                 for cycles, color in zip(o_cycles, amt_tuple)
             ]
 
