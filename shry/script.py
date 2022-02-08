@@ -257,7 +257,6 @@ def main():  # pylint: disable=missing-function-docstring
             write_ewald=args.write_ewald,
             no_write=args.no_write,
             no_dmat=args.no_dmat,
-            no_cache=args.no_cache,
             t_kind=args.t_kind,
         )
     helper.count()
