@@ -327,96 +327,6 @@ def aR_array(n, length=None):
     return np.array(list(rec_asc(a, n, 1, 1, length)))
 
 
-def aP(n, length):
-    """Generate partitions of n as ordered lists in ascending
-    lexicographical order.
-
-    This highly efficient routine is based on the delightful
-    work of Kelleher and O'Sullivan.
-
-    Genki: Modified to generate all permutations of the partition
-    at only a specific length. And return numpy arrays.
-
-    Examples
-    ========
-
-    >>> for i in aP(6): i
-    ...
-    [1, 1, 1, 1, 1, 1]
-    [1, 1, 1, 1, 2]
-    [1, 1, 1, 3]
-    [1, 1, 2, 2]
-    [1, 1, 4]
-    [1, 2, 3]
-    [1, 5]
-    [2, 2, 2]
-    [2, 4]
-    [3, 3]
-    [6]
-
-    >>> for i in aP(0): i
-    ...
-    []
-
-    References
-    ==========
-
-    .. [1] Generating Integer Partitions, [online],
-        Available: http://jeromekelleher.net/generating-integer-partitions.html
-    .. [2] Jerome Kelleher and Barry O'Sullivan, "Generating All
-        Partitions: A Comparison Of Two Encodings", [online],
-        Available: http://arxiv.org/pdf/0909.2331v2.pdf
-
-    """
-    # The list `a`'s leading elements contain the partition in which
-    # y is the biggest element and x is either the same as y or the
-    # 2nd largest element; v and w are adjacent element indices
-    # to which x and y are being assigned, respectively.
-    a = [1] * n
-    y = -1
-    v = n
-    while v > 0:
-        v -= 1
-        x = a[v] + 1
-        while y >= 2 * x:
-            a[v] = x
-            y -= x
-            v += 1
-        w = v + 1
-
-        while x <= y:
-            a[v] = x
-            a[w] = y
-            # Filter
-            if w + 1 <= length:
-                # Pad
-                b = a[: w + 1]
-                b += [0] * (length - w - 1)
-                # Permute
-                for z in multiset_permutations(b):
-                    yield z
-            x += 1
-            y -= 1
-        a[v] = x + y
-        y = a[v] - 1
-        # Filter
-        if w <= length:
-            # Pad
-            b = a[:w]
-            b += [0] * (length - w)
-            # Permute
-            for z in multiset_permutations(b):
-                yield z
-
-
-@functools.lru_cache(None)
-def aP_array(n, length):
-    """
-    aP() cache.
-    """
-    return np.array(list(aP(n, length)))
-
-
 @functools.lru_cache(None)
 def multinomial_coeff(a):
     """
@@ -817,13 +727,14 @@ class Substitutor:
             )
             row_map = pm.get_row_map()
             index_map = pm.get_index_map()
-            return pm, row_map, index_map
+            column_map = pm.get_column_map()
+            return pm, row_map, index_map, column_map
 
         def cached_get_pm(subperm, dmat):
             label = PatternMaker.get_label(subperm)
             if label in self._pms:
                 pm = self._pms[label]
-                row_map, index_map = pm.update_index(subperm)
+                row_map, index_map, column_map = pm.update_index(subperm)
             else:
                 pm = PatternMaker(
                     subperm,
@@ -834,8 +745,9 @@ class Substitutor:
                 )
                 row_map = pm.get_row_map()
                 index_map = pm.get_index_map()
+                column_map = pm.get_column_map()
                 self._pms[label] = pm
-            return pm, row_map, index_map
+            return pm, row_map, index_map, column_map
 
         def maker_recurse_unit(aut, pattern, orbit, amount):
             """PatternMaker aut/pattern generation recursion unit."""
@@ -850,10 +762,16 @@ class Substitutor:
             else:
                 dmat = None
 
-            pm, row_map, index_map = get_pm(subperm, dmat)
+            pm, row_map, index_map, column_map = get_pm(subperm, dmat)
             for _aut, _subpattern in pm.ap(amount):
                 _aut = np.sort(row_map[_aut])
-                _subpattern = index_map[_subpattern]
+                # _subpattern = index_map[_subpattern]
+                # print(_subpattern)index
+                # print(index_map, column_map)
+                # sys.exit()
+                # _subpattern = column_map(index_map(_subpattern))
+                # _subpattern = index_map(column_map[_subpattern])
+                _subpattern = column_map[_subpattern]
                 yield [aut[_aut], pattern + [_subpattern]]
 
         def maker_recurse_c(aut, pattern, orbit, chain):
@@ -1294,8 +1212,13 @@ class PatternMaker:
             indexed_perm_list,
         ) = PatternMaker.reindex(perm_list)
 
+        # TODO: cleanup
+        # column_shuffle = column_index(np.arange(invar.shape[0]))
+        # column_shuffle = np.argsort(column_shuffle)
+
         if invar is not None:
             self.invar = invar[np.ix_(column_index, column_index)]
+            # self.invar = invar[np.ix_(column_shuffle, column_shuffle)]
         else:
             self.invar = invar
 
@@ -1335,7 +1258,7 @@ class PatternMaker:
         self.label = self._perms.tobytes()
 
     @staticmethod
-    def reindex(perm_list):
+    def reindex2(perm_list):
         """Standardize symmetry ordering for reuse (rough)"""
         perm_list = perm_list.copy()
 
@@ -1361,6 +1284,42 @@ class PatternMaker:
         relabeled_perm_list = perm_list[row_index]
 
         return column_index, relabel_index, row_index, relabeled_perm_list
+
+    @staticmethod
+    def reindex(perm_list):
+        """Standardize symmetry ordering for reuse (better?)"""
+        _perm_list = perm_list.copy()
+
+        # Pre-Column sort
+        stab_map = _perm_list == _perm_list[0]
+        pre_column_index = np.lexsort(stab_map)
+        _perm_list = _perm_list[:, pre_column_index]
+
+        # Relabel to match column position
+        e, i = np.unique(_perm_list.T.flatten(), return_index=True)
+        relabel_index = e[np.argsort(i)]
+
+        relabel_element = np.vectorize({s: i for i, s in enumerate(relabel_index)}.get)
+        ire = np.vectorize({i: s for i, s in enumerate(relabel_index)}.get)
+        try:
+            _perm_list = relabel_element(_perm_list)
+        except TypeError as exc:
+            raise ValueError(
+                f"\n{_perm_list}\n" "Rows must have same elements."
+            ) from exc
+
+        # Post-Column sort
+        column_index = np.argsort(_perm_list[-1])
+        _perm_list = _perm_list[:, column_index]
+
+        # Join together TODO: cleanup
+        column_index = pre_column_index[column_index]
+
+        # Row sort
+        row_index = np.arange(_perm_list.shape[0])
+        relabeled_perm_list = _perm_list
+
+        return column_index, ire, row_index, relabeled_perm_list
 
     def update_index(self, perm_list):
         """
@@ -1389,7 +1348,7 @@ class PatternMaker:
         self._column_index = column_index
         self._relabel_index = relabel_index
         self._row_index = row_index
-        return row_index, relabel_index
+        return row_index, relabel_index, column_index
 
     @staticmethod
     def get_label(perm_list):
@@ -1411,6 +1370,13 @@ class PatternMaker:
         Map between internal representation of elements vs. input
         """
         return self._relabel_index
+
+    # TODO: cleanup
+    def get_column_map(self):
+        """
+        Internal column shuffle.
+        """
+        return self._column_index
 
     def cached_ap(self, n):
         """
