@@ -8,6 +8,8 @@ for use in computational materials simulations.
 SHRY uses `pymatgen.Structure` extensively
 for easy interfacing with Pymatgen.
 
+![logo](logo/logo.jpg?raw=true "logo")
+
 ## Installation and requirements
 
 Clone, and
