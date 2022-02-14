@@ -727,14 +727,13 @@ class Substitutor:
             )
             row_map = pm.get_row_map()
             index_map = pm.get_index_map()
-            column_map = pm.get_column_map()
-            return pm, row_map, index_map, column_map
+            return pm, row_map, index_map
 
         def cached_get_pm(subperm, dmat):
             label = PatternMaker.get_label(subperm)
             if label in self._pms:
                 pm = self._pms[label]
-                row_map, index_map, column_map = pm.update_index(subperm)
+                row_map, index_map = pm.update_index(subperm)
             else:
                 pm = PatternMaker(
                     subperm,
@@ -745,9 +744,8 @@ class Substitutor:
                 )
                 row_map = pm.get_row_map()
                 index_map = pm.get_index_map()
-                column_map = pm.get_column_map()
                 self._pms[label] = pm
-            return pm, row_map, index_map, column_map
+            return pm, row_map, index_map
 
         def maker_recurse_unit(aut, pattern, orbit, amount):
             """PatternMaker aut/pattern generation recursion unit."""
@@ -762,16 +760,10 @@ class Substitutor:
             else:
                 dmat = None
 
-            pm, row_map, index_map, column_map = get_pm(subperm, dmat)
+            pm, row_map, index_map = get_pm(subperm, dmat)
             for _aut, _subpattern in pm.ap(amount):
                 _aut = np.sort(row_map[_aut])
-                # _subpattern = index_map[_subpattern]
-                # print(_subpattern)index
-                # print(index_map, column_map)
-                # sys.exit()
-                # _subpattern = column_map(index_map(_subpattern))
-                # _subpattern = index_map(column_map[_subpattern])
-                _subpattern = column_map[_subpattern]
+                _subpattern = index_map[_subpattern]
                 yield [aut[_aut], pattern + [_subpattern]]
 
         def maker_recurse_c(aut, pattern, orbit, chain):
@@ -1212,13 +1204,8 @@ class PatternMaker:
             indexed_perm_list,
         ) = PatternMaker.reindex(perm_list)
 
-        # TODO: cleanup
-        # column_shuffle = column_index(np.arange(invar.shape[0]))
-        # column_shuffle = np.argsort(column_shuffle)
-
         if invar is not None:
             self.invar = invar[np.ix_(column_index, column_index)]
-            # self.invar = invar[np.ix_(column_shuffle, column_shuffle)]
         else:
             self.invar = invar
 
@@ -1258,7 +1245,7 @@ class PatternMaker:
         self.label = self._perms.tobytes()
 
     @staticmethod
-    def reindex2(perm_list):
+    def reindex(perm_list):
         """Standardize symmetry ordering for reuse (rough)"""
         perm_list = perm_list.copy()
 
@@ -1284,42 +1271,6 @@ class PatternMaker:
         relabeled_perm_list = perm_list[row_index]
 
         return column_index, relabel_index, row_index, relabeled_perm_list
-
-    @staticmethod
-    def reindex(perm_list):
-        """Standardize symmetry ordering for reuse (better?)"""
-        _perm_list = perm_list.copy()
-
-        # Pre-Column sort
-        stab_map = _perm_list == _perm_list[0]
-        pre_column_index = np.lexsort(stab_map)
-        _perm_list = _perm_list[:, pre_column_index]
-
-        # Relabel to match column position
-        e, i = np.unique(_perm_list.T.flatten(), return_index=True)
-        relabel_index = e[np.argsort(i)]
-
-        relabel_element = np.vectorize({s: i for i, s in enumerate(relabel_index)}.get)
-        ire = np.vectorize({i: s for i, s in enumerate(relabel_index)}.get)
-        try:
-            _perm_list = relabel_element(_perm_list)
-        except TypeError as exc:
-            raise ValueError(
-                f"\n{_perm_list}\n" "Rows must have same elements."
-            ) from exc
-
-        # Post-Column sort
-        column_index = np.argsort(_perm_list[-1])
-        _perm_list = _perm_list[:, column_index]
-
-        # Join together TODO: cleanup
-        column_index = pre_column_index[column_index]
-
-        # Row sort
-        row_index = np.arange(_perm_list.shape[0])
-        relabeled_perm_list = _perm_list
-
-        return column_index, ire, row_index, relabeled_perm_list
 
     def update_index(self, perm_list):
         """
@@ -1348,7 +1299,7 @@ class PatternMaker:
         self._column_index = column_index
         self._relabel_index = relabel_index
         self._row_index = row_index
-        return row_index, relabel_index, column_index
+        return row_index, relabel_index
 
     @staticmethod
     def get_label(perm_list):
