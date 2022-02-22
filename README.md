@@ -109,24 +109,6 @@ structure.replace_species({'Fe': 'Fe3Ti'})
 ...
 ```
 
-#### Random sampling
-
-Randomly choose 50 ordered structures from the output:
-
-```console
-shry SmFe12.cif -f Fe -t Fe3Ti --sample 50
-```
-
-or simply add `sample=50` (`examples/example3.py`)
-
-```python
-...
-substitutor = Substitutor(structure, sample=50)
-...
-```
-
-Note that each run will yield a different set of structures.
-
 #### Using supercells
 
 (Both are equivalent)
@@ -198,11 +180,6 @@ for i, cifwriter in enumerate(substitutor.cifwriters()):
 For larger projects, it is perhaps useful to pickle
 `PatternMaker` instances for later use.
 See `examples/example6a.py` (save) and `examples/example6b.py` (load).
-
-#### Ewald summation
-
-Uses Pymatgen's `EwaldSummation` (see `examples/example7.py`).
-Note that all sites must have their oxidation states defined.
 
 #### Custom grouping
 

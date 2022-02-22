@@ -250,6 +250,7 @@ def test_ewald():
         assert "defined oxidation" in str(excinfo.value)
 
 
+@pytest.mark.skip(reason="Feature not implemented.")
 @chdir("../examples")
 def test_matheval():
     """

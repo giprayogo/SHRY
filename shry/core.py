@@ -17,31 +17,26 @@ __status__ = "Production"
 
 
 import collections
-import copy
 import functools
 import itertools
 import logging
 import math
 import sys
-from pprint import pprint
 from typing import OrderedDict, Tuple
 
 import numpy as np
 import spglib
 import sympy
 import tqdm
-#from memory_profiler import profile
 from monty.fractions import gcd_float
 from pymatgen.analysis.ewald import EwaldSummation
 from pymatgen.core.composition import Composition, reduce_formula
-from pymatgen.core.operations import SymmOp
 from pymatgen.io.cif import CifBlock, CifParser, CifWriter
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer, SpacegroupOperations
 from pymatgen.symmetry.structure import SymmetrizedStructure
 from pymatgen.util.coord import find_in_coord_list_pbc
 from pymatgen.util.string import transformation_to_string
 from scipy.special import comb
-from sympy.tensor.indexed import Indexed
 from sympy.utilities.iterables import multiset_permutations
 from tabulate import tabulate
 

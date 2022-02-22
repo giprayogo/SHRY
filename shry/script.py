@@ -155,11 +155,6 @@ def main():  # pylint: disable=missing-function-docstring
         help="Number of output CIFs written to each output directories.",
     )
     group.add_argument(
-        "--sample",
-        default=const.DEFAULT_SAMPLE,
-        help="Write only SAMPLE CIFs from all ordered structures (random sampling).",
-    )
-    group.add_argument(
         "--write-symm",
         action="store_true",
         help="Write symmetries for all output CIFs (slower).",
@@ -248,7 +243,6 @@ def main():  # pylint: disable=missing-function-docstring
             to_species=to_species,
             scaling_matrix=scaling_matrix,
             symmetrize=args.symmetrize,
-            sample=args.sample,
             symprec=args.symprec,
             atol=args.atol,
             angle_tolerance=args.angle_tolerance,
