@@ -1,0 +1,250 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 22:30:59 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176467 $
+#$URL: svn://www.crystallography.net/cod/cif/4/03/08/4030898.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4030898
+loop_
+_publ_author_name
+'Rumpf, C.'
+'Nather, C.'
+'Jeb, I.'
+'Bensch, W.'
+_publ_section_title
+;
+ Synthesis, crystal structure and optical absorptions of the
+ two-dimensional sulfide NaCu2NbS4
+;
+_journal_name_full
+'European Journal of Solid State and Inorganic Chemistry'
+_journal_page_first              1165
+_journal_page_last               1177
+_journal_volume                  34
+_journal_year                    1997
+_chemical_formula_sum            'Cu2 Na Nb S4'
+_chemical_formula_weight         371.28
+_space_group_IT_number           40
+_symmetry_cell_setting           orthorhombic
+_symmetry_Int_Tables_number      40
+_symmetry_space_group_name_Hall  'A 2 -2a'
+_symmetry_space_group_name_H-M   'A m a 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   7.406(2)
+_cell_length_b                   18.313(4)
+_cell_length_c                   5.522(2)
+_cell_volume                     748.9(4)
+_diffrn_ambient_temperature      150
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_exptl_absorpt_coefficient_mu    8.19
+_exptl_crystal_density_diffrn    3.293
+_exptl_crystal_F_000             696
+_refine_ls_number_parameters     46
+_refine_ls_number_reflns         1585
+_refine_ls_R_factor_gt           0.0347
+_refine_ls_wR_factor_gt          0.0889
+_cod_data_source_file            EJSSIC-1997-34-1165-1177-2.cif
+_cod_data_source_block           NaCu2NbS4-150K
+_cod_original_formula_sum        'Cu2 Na S4 Nb'
+_cod_database_code               4030898
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,z
+3 1/2-x,y,z
+4 1/2+x,-y,z
+5 x,1/2+y,1/2+z
+6 -x,1/2-y,1/2+z
+7 1/2-x,1/2+y,1/2+z
+8 1/2+x,1/2-y,1/2+z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_thermal_displace_type
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Nb Nb Uiso 0.25000 0.38780(10) 0.25160(10) 1.000 0.0110(10) . . . .
+Cu1 Cu Uiso 0.25000 0.39420(10) 0.7520(2) 1.000 0.0150(10) . . . .
+Cu2 Cu Uiso 0.50000 0.50000 0.2280(2) 1.000 0.0150(10) . . . .
+S1 S Uiso 0.25000 0.49300(10) 0.4866(3) 1.000 0.0110(10) . . . .
+S2 S Uiso 0.50050(10) 0.39210(10) 0.0081(3) 1.000 0.0150(10) . . . .
+S3 S Uiso 0.25000 0.29010(10) 0.5051(3) 1.000 0.0200(10) . . . .
+Na Na Uiso 0.25000 0.6807(3) 0.5066(13) 1.000 0.082(2) . . . .
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Cu Cu 0.3201 1.2651 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Na Na 0.0362 0.0249 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Nb Nb -2.0727 0.6215 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+S S 0.1246 0.1234 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+Cu1 Nb Cu2 90.89(5) . . . yes
+Cu1 Nb S1 53.61(6) . . . yes
+Cu1 Nb S2 125.77(4) . . . yes
+Cu1 Nb S3 54.39(6) . . . yes
+Cu1 Nb Cu1 175.14(9) . . 1_554 yes
+Cu1 Nb Cu2 90.89(5) . . 3_555 yes
+Cu1 Nb S2 125.77(4) . . 3_555 yes
+Cu2 Nb S1 53.90(4) . . . yes
+Cu2 Nb S2 53.55(5) . . . yes
+Cu2 Nb S3 127.84(3) . . . yes
+Cu1 Nb Cu2 85.50(5) 1_554 . . yes
+Cu2 Nb Cu2 83.93(5) . . 3_555 yes
+Cu2 Nb S2 119.21(7) . . 3_555 yes
+S1 Nb S2 107.41(7) . . . yes
+S1 Nb S3 108.00(6) . . . yes
+Cu1 Nb S1 121.53(9) 1_554 . . yes
+Cu2 Nb S1 53.90(4) 3_555 . . yes
+S1 Nb S2 107.41(7) . . 3_555 yes
+S2 Nb S3 112.86(7) . . . yes
+Cu1 Nb S2 54.03(4) 1_554 . . yes
+Cu2 Nb S2 119.21(7) 3_555 . . yes
+S2 Nb S2 108.04(5) . . 3_555 yes
+Cu1 Nb S3 130.47(9) 1_554 . . yes
+Cu2 Nb S3 127.84(3) 3_555 . . yes
+S2 Nb S3 112.86(7) 3_555 . . yes
+Cu1 Nb Cu2 85.50(5) 1_554 . 3_555 yes
+Cu1 Nb S2 54.03(4) 1_554 . 3_555 yes
+Cu2 Nb S2 53.55(5) 3_555 . 3_555 yes
+Nb Cu1 S1 53.42(6) . . . yes
+Nb Cu1 S3 52.00(6) . . . yes
+Nb Cu1 Nb 175.14(9) . . 1_556 yes
+Nb Cu1 S2 127.22(4) . . 1_556 yes
+Nb Cu1 S2 127.22(4) . . 3_556 yes
+S1 Cu1 S3 105.42(7) . . . yes
+Nb Cu1 S1 131.44(9) 1_556 . . yes
+S1 Cu1 S2 113.22(7) . . 1_556 yes
+S1 Cu1 S2 113.22(7) . . 3_556 yes
+Nb Cu1 S3 123.14(9) 1_556 . . yes
+S2 Cu1 S3 109.83(7) 1_556 . . yes
+S2 Cu1 S3 109.83(7) 3_556 . . yes
+Nb Cu1 S2 52.68(4) 1_556 . 1_556 yes
+Nb Cu1 S2 52.68(4) 1_556 . 3_556 yes
+S2 Cu1 S2 105.34(6) 1_556 . 3_556 yes
+Nb Cu2 S1 53.27(5) . . . yes
+Nb Cu2 S2 52.66(3) . . . yes
+Nb Cu2 Nb 174.61(5) . . 2_665 yes
+Nb Cu2 S1 122.73(5) . . 2_665 yes
+Nb Cu2 S2 130.98(4) . . 2_665 yes
+S1 Cu2 S2 105.90(5) . . . yes
+Nb Cu2 S1 122.73(5) 2_665 . . yes
+S1 Cu2 S1 104.85(6) . . 2_665 yes
+S1 Cu2 S2 111.39(5) . . 2_665 yes
+Nb Cu2 S2 130.98(4) 2_665 . . yes
+S1 Cu2 S2 111.39(5) 2_665 . . yes
+S2 Cu2 S2 116.86(8) . . 2_665 yes
+Nb Cu2 S1 53.27(5) 2_665 . 2_665 yes
+Nb Cu2 S2 52.66(3) 2_665 . 2_665 yes
+S1 Cu2 S2 105.90(5) 2_665 . 2_665 yes
+Nb S1 Cu1 72.97(7) . . . yes
+Nb S1 Cu2 72.83(5) . . . yes
+Nb S1 Cu2 72.83(5) . . 3_555 yes
+Cu1 S1 Cu2 115.24(6) . . . yes
+Cu1 S1 Cu2 115.24(6) . . 3_555 yes
+Cu2 S1 Cu2 104.49(7) . . 3_555 yes
+Nb S2 Cu2 73.79(6) . . . yes
+Nb S2 Cu1 73.30(3) . . 1_554 yes
+Cu1 S2 Cu2 107.58(7) 1_554 . . yes
+Nb S3 Cu1 73.61(7) . . . yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Nb Cu1 2.7657(16) . . yes
+Nb Cu2 2.7689(17) . . yes
+Nb S1 2.323(3) . . yes
+Nb S2 2.2926(15) . . yes
+Nb S3 2.272(2) . . yes
+Nb Cu1 2.7613(16) . 1_554 yes
+Nb Cu2 2.7689(17) . 3_555 yes
+Nb S2 2.2926(15) . 3_555 yes
+Cu1 S1 2.328(3) . . yes
+Cu1 S3 2.344(3) . . yes
+Cu1 S2 2.3331(16) . 1_556 yes
+Cu1 S2 2.3331(16) . 3_556 yes
+Cu2 S1 2.3417(15) . . yes
+Cu2 S2 2.319(2) . . yes
+Cu2 S1 2.3417(15) . 2_665 yes
+Cu2 S2 2.319(2) . 2_665 yes
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_site_symmetry_1
+_geom_torsion_site_symmetry_2
+_geom_torsion_site_symmetry_3
+_geom_torsion_site_symmetry_4
+_geom_torsion_publ_flag
+Cu2 Nb Cu1 S1 41.97(3) . . . . no
+Cu2 Nb Cu1 S3 -138.03(3) . . . . no
+S1 Nb Cu1 S3 180.00 . . . . no
+S2 Nb Cu1 S1 85.82(10) . . . . no
+S2 Nb Cu1 S3 -94.18(10) . . . . no
+S2 Nb Cu1 S2 -7.22(18) . . . 1_556 no
+S2 Nb Cu1 S2 178.85(11) . . . 3_556 no
+S3 Nb Cu1 S1 180.00 . . . . no
+Cu1 Nb Cu2 S1 -41.78(5) . . . . no
+Cu1 Nb Cu2 S2 135.67(7) . . . . no
+S1 Nb Cu2 S2 177.45(7) . . . . no
+S2 Nb Cu2 S1 -177.45(7) . . . . no
+S2 Nb Cu2 S2 95.16(9) . . . 2_665 no
+S3 Nb Cu2 S1 -85.29(8) . . . . no
+S3 Nb Cu2 S2 92.16(9) . . . . no
+S2 Nb Cu2 S2 -91.61(7) 3_555 . . . no
+Cu1 Nb S1 Cu2 124.15(3) . . . . no
+Cu2 Nb S1 Cu1 -124.15(3) . . . . no
+S2 Nb S1 Cu1 -122.00(5) . . . . no
+S2 Nb S1 Cu2 2.15(6) . . . . no
+S3 Nb S1 Cu1 0.00 . . . . no
+S3 Nb S1 Cu2 124.15(3) . . . . no
+Cu1 Nb S2 Cu2 -59.45(10) . . . . no
+S1 Nb S2 Cu2 -2.16(6) . . . . no
+S3 Nb S2 Cu2 -121.08(6) . . . . no
+S2 Nb S2 Cu2 113.42(9) 3_555 . . . no
+Cu2 Nb S3 Cu1 57.86(6) . . . . no
+S1 Nb S3 Cu1 0.00 . . . . no
+S2 Nb S3 Cu1 118.58(6) . . . . no
+Nb Cu1 S1 Cu2 -60.94(6) . . . . no
+S3 Cu1 S1 Nb 0.00 . . . . no
+S3 Cu1 S1 Cu2 -60.94(6) . . . . no
+S1 Cu1 S3 Nb 0.00 . . . . no
+Nb Cu2 S1 Cu1 61.02(7) . . . . no
+S2 Cu2 S1 Nb -2.11(6) . . . . no
+S2 Cu2 S1 Cu1 58.91(9) . . . . no
+S1 Cu2 S2 Nb 2.13(6) . . . . no
+S2 Cu2 S2 Nb -122.57(4) 2_665 . . . no

@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Fe12Po1Se1.5S9O0.5
+_symmetry_space_group_name_H-M  'P -6 2 c'
+_cell_length_a   5.86100000
+_cell_length_b   5.86100000
+_cell_length_c   11.57700000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   190
+_chemical_formula_structural   Fe12Po1Se1.5S9O0.5
+_chemical_formula_sum   'Fe12 Po1 Se1.5 S9 O0.5'
+_cell_volume   344.40552334
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z+1/2'
+  3  '-y, x-y, z'
+  4  'x, y, -z+1/2'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z+1/2'
+  7  'y, x, z+1/2'
+  8  '-x, -x+y, -z'
+  9  'x-y, -y, z+1/2'
+  10  'y, x, -z'
+  11  '-x, -x+y, z+1/2'
+  12  'x-y, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  12  0.05560000  0.37790000  0.62280000  1
+  Se+  Se1  4  0.33333333  0.66666667  0.02270000  0.375
+  S+  S2  4  0.33333333  0.66666667  0.02270000  0.25
+  O+  O3  4  0.33333333  0.66666667  0.02270000  0.125
+  Po+  Po4  4  0.33333333  0.66666667  0.02270000  0.25
+  S  S5  6  0.00560000  0.67060000  0.25000000  1
+  S  S6  2  0.00000000  0.00000000  0.00000000  1

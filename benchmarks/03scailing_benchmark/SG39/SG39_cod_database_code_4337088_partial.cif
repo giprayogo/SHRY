@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Y4V4Te1.25Se8S1.25O28Lv1.5
-_symmetry_space_group_name_H-M   Aem2
+_symmetry_space_group_name_H-M  'A b m 2'
 _cell_length_a   10.40360000
 _cell_length_b   7.59040000
 _cell_length_c   7.83410000

@@ -1,0 +1,110 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-10-13 19:11:37 +0300 (Tue, 13 Oct 2015) $
+#$Revision: 167403 $
+#$URL: svn://www.crystallography.net/cod/cif/1/53/87/1538724.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1538724
+loop_
+_publ_author_name
+'Marcano, C.M.'
+'Otero-Diaz, L.C.'
+'Vegas, A.'
+'Rasines, I.'
+_publ_section_title
+;
+ Crystal growth and crystal structure of Gd3 Sb5 O12: A new relation
+ between the ccp and the Mn5 Si3 and apatite structures
+;
+_journal_name_full
+'Zeitschrift fuer Anorganische und Allgemeine Chemie'
+_journal_page_first              176
+_journal_page_last               182
+_journal_volume                  555
+_journal_year                    1987
+_chemical_formula_sum            'Gd3 O12 Sb5'
+_chemical_name_systematic        'Gd3 Sb5 O12'
+_space_group_IT_number           217
+_symmetry_space_group_name_Hall  'I -4 2 3'
+_symmetry_space_group_name_H-M   'I -4 3 m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   10.8557
+_cell_length_b                   10.8557
+_cell_length_c                   10.8557
+_cell_volume                     1279.303
+_citation_journal_id_ASTM        ZAACAB
+_cod_data_source_file            Marcano_ZAACAB_1987_1830.cif
+_cod_data_source_block           Gd3O12Sb5
+_cod_database_code               1538724
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,-x,-z
+-x,-y,z
+-y,x,-z
+x,-y,-z
+-y,-x,z
+-x,y,-z
+y,x,z
+z,x,y
+x,-z,-y
+-z,-x,y
+-x,z,-y
+z,-x,-y
+-x,-z,y
+-z,x,-y
+x,z,y
+y,z,x
+y,-z,-x
+-z,-y,x
+-y,z,-x
+z,y,x
+-y,-z,x
+-z,y,-x
+z,-y,-x
+x+1/2,y+1/2,z+1/2
+y+1/2,-x+1/2,-z+1/2
+-x+1/2,-y+1/2,z+1/2
+-y+1/2,x+1/2,-z+1/2
+x+1/2,-y+1/2,-z+1/2
+-y+1/2,-x+1/2,z+1/2
+-x+1/2,y+1/2,-z+1/2
+y+1/2,x+1/2,z+1/2
+z+1/2,x+1/2,y+1/2
+x+1/2,-z+1/2,-y+1/2
+-z+1/2,-x+1/2,y+1/2
+-x+1/2,z+1/2,-y+1/2
+z+1/2,-x+1/2,-y+1/2
+-x+1/2,-z+1/2,y+1/2
+-z+1/2,x+1/2,-y+1/2
+x+1/2,z+1/2,y+1/2
+y+1/2,z+1/2,x+1/2
+y+1/2,-z+1/2,-x+1/2
+-z+1/2,-y+1/2,x+1/2
+-y+1/2,z+1/2,-x+1/2
+z+1/2,y+1/2,x+1/2
+-y+1/2,-z+1/2,x+1/2
+-z+1/2,y+1/2,-x+1/2
+z+1/2,-y+1/2,-x+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O1 O-2 -0.1079 0.5987 0.5987 1 0.0
+O2 O-2 -0.1399 -0.1399 0.6618 1 0.0
+Gd1 Gd+3 0.75 0.5 0 1 0.0
+Sb1 Sb+3 0 0 -0.2806 1 0.0
+Sb2 Sb+3 0.743 0.743 0.743 1 0.0

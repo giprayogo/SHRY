@@ -1,0 +1,62 @@
+# generated using pymatgen
+data_Ra0.33333333Sr3.33333333Ca16.33333333Ge6Pt14
+_symmetry_space_group_name_H-M  'P 63/m c m'
+_cell_length_a   8.80590000
+_cell_length_b   8.80590000
+_cell_length_c   13.88990000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   193
+_chemical_formula_structural
+Ra0.33333333Sr3.33333333Ca16.33333333Ge6Pt14
+_chemical_formula_sum
+'Ra0.33333333 Sr3.33333333 Ca16.33333333 Ge6 Pt14'
+_cell_volume   932.77575521
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  'x-y, x, z+1/2'
+  4  '-x+y, -x, -z+1/2'
+  5  '-y, x-y, z'
+  6  'y, -x+y, -z'
+  7  '-x, -y, z+1/2'
+  8  'x, y, -z+1/2'
+  9  '-x+y, -x, z'
+  10  'x-y, x, -z'
+  11  'y, -x+y, z+1/2'
+  12  '-y, x-y, -z+1/2'
+  13  '-y, -x, -z'
+  14  'y, x, z'
+  15  '-x, -x+y, -z+1/2'
+  16  'x, x-y, z+1/2'
+  17  '-x+y, y, -z'
+  18  'x-y, -y, z'
+  19  'y, x, -z+1/2'
+  20  '-y, -x, z+1/2'
+  21  'x, x-y, -z'
+  22  '-x, -x+y, z'
+  23  'x-y, -y, -z+1/2'
+  24  '-x+y, y, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr+  Sr0  4  0.33333333  0.66666667  0.00000000
+  0.8333333333333334
+  Ca+  Ca1  4  0.33333333  0.66666667  0.00000000
+  0.08333333333333333
+  Ra+  Ra2  4  0.33333333  0.66666667  0.00000000
+  0.08333333333333333
+  Ca  Ca3  12  0.00000000  0.25360000  0.60640000  1.0
+  Ca  Ca4  4  0.33333333  0.66666667  0.25000000  1.0
+  Ge  Ge5  6  0.00000000  0.29300000  0.25000000  1.0
+  Pt  Pt6  12  0.00000000  0.41483000  0.09080000  1.0
+  Pt  Pt7  2  0.00000000  0.00000000  0.25000000  1.0

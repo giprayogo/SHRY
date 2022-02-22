@@ -1,0 +1,66 @@
+# generated using pymatgen
+data_Al0.5In0.5Nh0.5Sn0.5B1.5H60C12Fl3.5N12O12
+_symmetry_space_group_name_H-M  'P -4 3 m'
+_cell_length_a   10.57220000
+_cell_length_b   10.57220000
+_cell_length_c   10.57220000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   215
+_chemical_formula_structural
+Al0.5In0.5Nh0.5Sn0.5B1.5H60C12Fl3.5N12O12
+_chemical_formula_sum
+'Al0.5 In0.5 Nh0.5 Sn0.5 B1.5 H60 C12 Fl3.5 N12 O12'
+_cell_volume   1181.66973083
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y, -z'
+  6  'y, x, z'
+  7  '-x, y, -z'
+  8  '-y, -x, z'
+  9  'z, x, y'
+  10  '-z, y, -x'
+  11  'z, -x, -y'
+  12  '-z, -y, x'
+  13  '-z, x, -y'
+  14  'z, y, x'
+  15  '-z, -x, y'
+  16  'z, -y, -x'
+  17  'y, z, x'
+  18  '-x, -z, y'
+  19  '-y, z, -x'
+  20  'x, -z, -y'
+  21  '-y, -z, x'
+  22  'x, z, y'
+  23  'y, -z, -x'
+  24  '-x, z, -y'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al+  Al0  3  0.00000000  0.50000000  0.50000000
+  0.16666666666666666
+  In+  In1  3  0.00000000  0.50000000  0.50000000
+  0.16666666666666666
+  Nh+  Nh2  3  0.00000000  0.50000000  0.50000000
+  0.16666666666666666
+  B+  B3  3  0.00000000  0.50000000  0.50000000  0.5
+  H  H4  24  0.01690000  0.27540000  0.61980000  1.0
+  H  H5  24  0.23620000  0.33580000  0.51110000  1.0
+  H  H6  12  0.10110000  0.29190000  0.29190000  1.0
+  C  C7  12  0.03440000  0.33550000  0.33550000  1.0
+  Sn+  Sn8  4  0.35230000  0.35230000  0.64770000  0.125
+  Fl+  Fl9  4  0.35230000  0.35230000  0.64770000  0.875
+  N  N10  12  0.30190000  0.45500000  0.69810000  1.0
+  O  O11  12  0.08800000  0.42355000  0.42355000  1.0

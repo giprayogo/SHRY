@@ -1,0 +1,141 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-08-07 12:10:35 +0300 (Sun, 07 Aug 2016) $
+#$Revision: 185460 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/7/03/97/7039792.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7039792
+loop_
+_publ_author_name
+'Hojamberdiev, Mirabbos'
+'Bekheet, Maged F.'
+'Zahedi, Ehsan'
+'Wagata, Hajime'
+'Vequizo, Junie Jhon M.'
+'Yamakata, Akira'
+'Yubuta, Kunio'
+'Gurlo, Aleksander'
+'Domen, Kazunari'
+'Teshima, Katsuya'
+_publ_section_title
+;
+ The contrasting effect of the Ta/Nb ratio in (111)-layered B-site
+ deficient hexagonal perovskite Ba5Nb4-xTaxO15 crystals on
+ visible-light-induced photocatalytic water oxidation activity of their
+ oxynitride derivatives.
+;
+_journal_issue                   31
+_journal_name_full
+'Dalton transactions (Cambridge, England : 2003)'
+_journal_page_first              12559
+_journal_page_last               12568
+_journal_paper_doi               10.1039/c6dt02095j
+_journal_volume                  45
+_journal_year                    2016
+_chemical_formula_moiety         'Ba5 O15 Ta4'
+_chemical_formula_structural     'Ba5 (Ta4 O15)'
+_chemical_formula_sum            'Ba5 O15 Ta4'
+_chemical_formula_weight         1650.44
+_chemical_name_systematic        'Pentabarium Tetratantalum Oxide'
+_space_group_IT_number           164
+_symmetry_cell_setting           trigonal
+_symmetry_Int_Tables_number      164
+_symmetry_space_group_name_Hall  '-P 3 2"'
+_symmetry_space_group_name_H-M   'P -3 m 1'
+_audit_creation_date             1980/11/16
+_audit_update_record
+;
+2016-04-11 deposited with the CCDC.
+2016-07-05 downloaded from the CCDC.
+;
+_cell_angle_alpha                90.
+_cell_angle_beta                 90.
+_cell_angle_gamma                120.
+_cell_formula_units_Z            1
+_cell_length_a                   5.7892(1)
+_cell_length_b                   5.7892(1)
+_cell_length_c                   11.8202(2)
+_cell_measurement_pressure       '1.0 atm'
+_cell_measurement_reflns_used    298
+_cell_measurement_temperature    298
+_cell_measurement_theta_max      24.95
+_cell_measurement_theta_min      3.44
+_cell_volume                     343.078(10)
+_computing_structure_refinement  'Fullprof suite (2015)'
+_diffrn_ambient_environment      air
+_diffrn_ambient_pressure         '1.0 atm'
+_diffrn_ambient_temperature      298
+_diffrn_measurement_device_type  'STOE STADI P'
+_diffrn_radiation_monochromator  'Ge(111) monochromator'
+_diffrn_radiation_probe          x-ray
+_diffrn_source                   'sealed X-ray tube'
+_exptl_crystal_colour            white
+_exptl_crystal_density_diffrn    7.989
+_exptl_crystal_description       plates
+_exptl_crystal_size_max          0.005
+_exptl_crystal_size_mid          0.003
+_exptl_crystal_size_min          0.001
+_pd_calc_method                  'Rietveld Refinement'
+_pd_meas_number_of_points        4494
+_pd_proc_2theta_range_inc        0.01
+_pd_proc_2theta_range_max        50.0
+_pd_proc_2theta_range_min        5.0
+_refine_ls_R_factor_all          0.027
+_cod_data_source_file            c6dt02095j2.cif
+_cod_data_source_block           00000000-ICSD
+_cod_depositor_comments
+'Adding full bibliography for 7039788--7039792.cif.'
+_cod_original_cell_volume        343.08(1)
+_cod_original_sg_symbol_Hall     '-P 3 2'
+_cod_database_code               7039792
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 'x-y, -y, -z'
+2 '-x, -x+y, -z'
+3 'y, x, -z'
+4 'x-y, x, -z'
+5 'y, -x+y, -z'
+6 '-x, -y, -z'
+7 '-x+y, y, z'
+8 'x, x-y, z'
+9 '-y, -x, z'
+10 '-x+y, -x, z'
+11 '-y, x-y, z'
+12 'x, y, z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_B_iso_or_equiv
+_atom_site_adp_type
+Ba1 Ba 1 a 0.0000 0.0000 0.0000 1. 0 0.41(12) Uiso
+Ba2 Ba 2 d 0.3333 0.6667 0.7872(3) 1. 0 0.26(10) Uiso
+Ba3 Ba 2 d 0.3333 0.6667 0.4304(3) 1. 0 1.03(11) Uiso
+Ta1 Ta 2 c 0.0000 0.0000 0.6859(2) 1. 0 0.22(6) Uiso
+Ta2 Ta 2 d 0.3333 0.6667 0.1029(3) 1. 0 0.20(8) Uiso
+O1 O 3 e 0.5 0.0000 0.0000 1. 0 0.21(16) Uiso
+O2 O 6 i 0.1679(21) -.1679(21) 0.1922(17) 1. 0 0.21(16) Uiso
+O3 O 6 i 0.1641(17) -.1641(17) 0.6159(16) 1. 0 0.21(16) Uiso
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Ba 2
+O -2
+Ta 5
+loop_
+_diffrn_radiation_type
+_diffrn_radiation_wavelength
+'Mo K\a~1~' 0.709260

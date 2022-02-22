@@ -1,0 +1,57 @@
+# generated using pymatgen
+data_Mn10Bh1.33333333Re0.66666667Sb12O42
+_symmetry_space_group_name_H-M  'P 31 2 1'
+_cell_length_a   7.19130000
+_cell_length_b   7.19130000
+_cell_length_c   17.40200000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   152
+_chemical_formula_structural   Mn10Bh1.33333333Re0.66666667Sb12O42
+_chemical_formula_sum   'Mn10 Bh1.33333333 Re0.66666667 Sb12 O42'
+_cell_volume   779.37165931
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z+1/3'
+  3  '-x+y, -x, z+2/3'
+  4  'y, x, -z'
+  5  'x-y, -y, -z+2/3'
+  6  '-x, -x+y, -z+1/3'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Mn0+  0.0
+  Re0+  0.0
+  Sb0+  0.0
+  O0+  0.0
+  Bh0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn0+  Mn0  3  0.00000000  0.85600000  0.66666667  1.0
+  Bh0+  Bh1  3  0.00000000  0.80400000  0.16663333
+  0.4444444444444444
+  Re0+  Re2  3  0.00000000  0.80400000  0.16663333
+  0.2222222222222222
+  Mn0+  Mn3  3  0.00000000  0.80400000  0.16663333
+  0.3333333333333333
+  Mn0+  Mn4  6  0.13800000  0.65000000  0.00580000  1.0
+  Sb0+  Sb5  6  0.17400000  0.65800000  0.50246667  1.0
+  Sb0+  Sb6  3  0.00000000  0.32500000  0.66666667  1.0
+  Sb0+  Sb7  3  0.00000000  0.33600000  0.16663333  1.0
+  O0+  O8  6  0.02500000  0.79700000  0.81126667  1.0
+  O0+  O9  6  0.03600000  0.85900000  0.27863333  1.0
+  O0+  O10  6  0.04500000  0.43700000  0.86416667  1.0
+  O0+  O11  6  0.04900000  0.36500000  0.28063333  1.0
+  O0+  O12  6  0.16000000  0.60000000  0.61016667  1.0
+  O0+  O13  6  0.17700000  0.73200000  0.39243333  1.0
+  O0+  O14  6  0.19500000  0.64000000  0.14640000  1.0

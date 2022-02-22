@@ -1,0 +1,76 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/2/31/01/2310189.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2310189
+loop_
+_publ_author_name
+'Ellinger, F.H.'
+'Zachariasen, W.H.'
+_publ_section_title
+;
+ The crystal structure of Pu Ga4 and Pu Ga6
+;
+_journal_name_full               'Acta Crystallographica (1,1948-23,1967)'
+_journal_page_first              281
+_journal_page_last               283
+_journal_volume                  19
+_journal_year                    1965
+_chemical_formula_sum            'Ga6 Pu'
+_space_group_IT_number           125
+_symmetry_space_group_name_Hall  'P 4 2 -1ab'
+_symmetry_space_group_name_H-M   'P 4/n b m :1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   5.942
+_cell_length_b                   5.942
+_cell_length_c                   7.617
+_cell_volume                     268.936
+_citation_journal_id_ASTM        ACCRA9
+_cod_data_source_file            Ellinger_ACCRA9_1965_335.cif
+_cod_data_source_block           Ga6Pu1
+_cod_original_cell_volume        268.9362
+_cod_original_sg_symbol_Hall     '-P 4a 2b (x-1/4,y-1/4,z)'
+_cod_original_formula_sum        'Ga6 Pu1'
+_cod_database_code               2310189
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x,z
+-x,-y,z
+y,-x,z
+x,-y,-z
+y,x,-z
+-x,y,-z
+-y,-x,-z
+-x+1/2,-y+1/2,-z
+y+1/2,-x+1/2,-z
+x+1/2,y+1/2,-z
+-y+1/2,x+1/2,-z
+-x+1/2,y+1/2,z
+-y+1/2,-x+1/2,z
+x+1/2,-y+1/2,z
+y+1/2,x+1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ga1 Ga 0 0 0.167 1 0.0
+Ga2 Ga 0.187 0.687 0.35 1 0.0
+Pu1 Pu 0 0.5 0 1 0.0

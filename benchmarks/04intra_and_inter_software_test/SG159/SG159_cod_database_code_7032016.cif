@@ -1,0 +1,220 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-25 23:07:09 +0200 (Fri, 25 Mar 2016) $
+#$Revision: 180026 $
+#$URL: svn://www.crystallography.net/cod/cif/7/03/20/7032016.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7032016
+loop_
+_publ_author_name
+'Heimann, Stefan'
+'Bl\"aser, Dieter'
+'W\"olper, Christoph'
+'Haack, Rebekka'
+'Jansen, Georg'
+'Schulz, Stephan'
+_publ_section_title
+;
+ The bonding situation in triethylchalcogenostiboranes - polarized single
+ bonds vs. double bonds.
+;
+_journal_issue                   39
+_journal_name_full
+'Dalton transactions (Cambridge, England : 2003)'
+_journal_page_first              14772
+_journal_page_last               14777
+_journal_paper_doi               10.1039/c4dt01940g
+_journal_volume                  43
+_journal_year                    2014
+_chemical_formula_sum            'C6 H15 S Sb'
+_chemical_formula_weight         240.99
+_chemical_name_systematic
+; 
+ ? 
+;
+_space_group_IT_number           159
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'P 3 -2c'
+_symmetry_space_group_name_H-M   'P 3 1 c'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            2
+_cell_length_a                   9.2365(5)
+_cell_length_b                   9.2365(5)
+_cell_length_c                   6.3367(7)
+_cell_measurement_reflns_used    1589
+_cell_measurement_temperature    150(1)
+_cell_measurement_theta_max      28.72
+_cell_measurement_theta_min      2.51
+_cell_volume                     468.18(6)
+_computing_cell_refinement       'BRUKER AXS SMART APEX 2 Vers. 3.0-2009'
+_computing_data_collection       'BRUKER AXS SMART APEX 2 Vers. 3.0-2009'
+_computing_data_reduction        'BRUKER AXS SMART APEX 2 Vers. 3.0-2009'
+_computing_molecular_graphics    'BRUKER AXS SHELXTL (c) 2008 / Vers. 2008/4'
+_computing_publication_material  'BRUKER AXS SHELXTL (c) 2008 / Vers. 2008/4'
+_computing_structure_refinement  'BRUKER AXS SHELXTL (c) 2008 / Vers. 2008/4'
+_computing_structure_solution    'BRUKER AXS SMART APEX 2 Vers. 3.0-2009'
+_diffrn_ambient_temperature      150(1)
+_diffrn_detector_area_resol_mean 512
+_diffrn_measured_fraction_theta_full 0.819
+_diffrn_measured_fraction_theta_max 0.819
+_diffrn_measurement_device_type
+; 
+ Siemens SMART three axis goniometer with APEX II area detector system
+;
+_diffrn_measurement_method
+;
+ Data collection strategy APEX 2 / COSMO
+ with chi = 0 deg, phi +/- 10 deg
+;
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0412
+_diffrn_reflns_av_sigmaI/netI    0.0252
+_diffrn_reflns_limit_h_max       10
+_diffrn_reflns_limit_h_min       -10
+_diffrn_reflns_limit_k_max       10
+_diffrn_reflns_limit_k_min       -10
+_diffrn_reflns_limit_l_max       5
+_diffrn_reflns_limit_l_min       -4
+_diffrn_reflns_number            2573
+_diffrn_reflns_theta_full        24.98
+_diffrn_reflns_theta_max         24.98
+_diffrn_reflns_theta_min         4.10
+_exptl_absorpt_coefficient_mu    3.089
+_exptl_absorpt_correction_T_max  0.75
+_exptl_absorpt_correction_T_min  0.47
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details
+; 
+ BRUKER AXS SMART APEX 2 Vers. 3.0-2009
+ R.H. Blessing, Acta Cryst. (1995) A51 33-38 
+;
+_exptl_crystal_colour            colorless
+_exptl_crystal_density_diffrn    1.710
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       block
+_exptl_crystal_F_000             236
+_exptl_crystal_size_max          0.12
+_exptl_crystal_size_mid          0.08
+_exptl_crystal_size_min          0.05
+_refine_diff_density_max         1.437
+_refine_diff_density_min         -0.361
+_refine_diff_density_rms         0.118
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   0.39(14)
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.155
+_refine_ls_hydrogen_treatment    constr
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     25
+_refine_ls_number_reflns         424
+_refine_ls_number_restraints     1
+_refine_ls_restrained_S_all      1.154
+_refine_ls_R_factor_all          0.0355
+_refine_ls_R_factor_gt           0.0325
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0528P)^2^+0.1621P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0752
+_refine_ls_wR_factor_ref         0.0770
+_reflns_number_gt                392
+_reflns_number_total             424
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            c4dt01940g2.cif
+_cod_data_source_block           she_sbs
+_cod_depositor_comments
+'Adding full bibliography for 7032014--7032016.cif.'
+_cod_original_sg_symbol_H-M      P31c
+_cod_database_code               7032016
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'y, x, z+1/2'
+'x-y, -y, z+1/2'
+'-x, -x+y, z+1/2'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Sb1 Sb 0.6667 0.3333 0.2779 0.0271(3) Uani 1 3 d S
+S1 S 0.6667 0.3333 0.6537(10) 0.0414(9) Uani 1 3 d S
+C1 C 0.4300(17) 0.1496(15) 0.157(3) 0.070(4) Uani 1 1 d .
+H1A H 0.4198 0.1752 0.0078 0.084 Uiso 1 1 d R
+H1B H 0.4210 0.0382 0.1620 0.084 Uiso 1 1 d R
+C2 C 0.2906(8) 0.147(4) 0.286(5) 0.050(3) Uani 1 1 d .
+H2A H 0.3112 0.1398 0.4359 0.075 Uiso 1 1 d R
+H2B H 0.1838 0.0495 0.2451 0.075 Uiso 1 1 d R
+H2C H 0.2866 0.2493 0.2589 0.075 Uiso 1 1 d R
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Sb1 0.0193(3) 0.0193(3) 0.0428(7) 0.000 0.000 0.00966(14)
+S1 0.0370(13) 0.0370(13) 0.050(3) 0.000 0.000 0.0185(7)
+C1 0.068(8) 0.044(6) 0.094(13) -0.009(6) -0.015(7) 0.025(6)
+C2 0.017(3) 0.056(11) 0.068(8) -0.008(8) -0.009(13) 0.013(10)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+S S 0.1246 0.1234 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Sb Sb -0.5866 1.5461 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+C1 Sb1 C1 107.8(5) . 2_655
+C1 Sb1 C1 107.8(5) . 3_665
+C1 Sb1 C1 107.8(5) 2_655 3_665
+C1 Sb1 S1 111.1(5) . .
+C1 Sb1 S1 111.1(5) 2_655 .
+C1 Sb1 S1 111.1(5) 3_665 .
+C2 C1 Sb1 110.2(13) . .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Sb1 C1 2.130(13) .
+Sb1 C1 2.130(13) 2_655
+Sb1 C1 2.130(13) 3_665
+Sb1 S1 2.381(7) .
+C1 C2 1.51(3) .

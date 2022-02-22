@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Zn0.5Cd0.08333333Hg1.08333333Cn0.33333333Au4F16
-_symmetry_space_group_name_H-M   P4/mcc
+_symmetry_space_group_name_H-M  'P 4/m c c'
 _cell_length_a   5.75000000
 _cell_length_b   5.75000000
 _cell_length_c   10.34800000

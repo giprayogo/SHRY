@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Er24Al24In3.5B12.5O96
-_symmetry_space_group_name_H-M   Ia-3d
+_symmetry_space_group_name_H-M  'I a -3 d'
 _cell_length_a   11.99280000
 _cell_length_b   11.99280000
 _cell_length_c   11.99280000

@@ -1,0 +1,71 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/81/1528162.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1528162
+loop_
+_publ_author_name
+'Vennos, D.A.'
+'DiSalvo, F.J.'
+'Badding, M.E.'
+_publ_section_title
+;
+ Synthesis, structure, and properies of a new intermetallic compound, Ca7
+ Ni4 Sn13
+;
+_journal_name_full               'Journal of the Less-Common Metals'
+_journal_page_first              339
+_journal_page_last               346
+_journal_volume                  175
+_journal_year                    1991
+_chemical_formula_sum            'Ca7 Ni4 Sn13'
+_space_group_IT_number           83
+_symmetry_space_group_name_Hall  '-P 4'
+_symmetry_space_group_name_H-M   'P 4/m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            1
+_cell_length_a                   11.2
+_cell_length_b                   11.2
+_cell_length_c                   4.594
+_cell_volume                     576.271
+_citation_journal_id_ASTM        JCOMAH
+_cod_data_source_file            Vennos_JCOMAH_1991_252.cif
+_cod_data_source_block           Ca7Ni4Sn13
+_cod_original_cell_volume        576.2713
+_cod_database_code               1528162
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x,z
+-x,-y,z
+y,-x,z
+-x,-y,-z
+y,-x,-z
+x,y,-z
+-y,x,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ni1 Ni 0.7759 0.38068 0.5 1 0.0
+Ca1 Ca 0.5 0.5 0.5 1 0.0
+Ca3 Ca 0.16284 0.17058 0 1 0.0
+Sn4 Sn 0.28533 0.01751 0.5 1 0.0
+Sn1 Sn 0 0 0.5 1 0.0
+Ca2 Ca 0 0.5 0 1 0.0
+Sn3 Sn 0.21629 0.38922 0.5 1 0.0
+Sn2 Sn 0.42478 0.30952 0 1 0.0

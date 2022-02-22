@@ -1,0 +1,85 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-10-05 12:17:38 +0300 (Mon, 05 Oct 2015) $
+#$Revision: 159787 $
+#$URL: svn://www.crystallography.net/cod/cif/7/22/24/7222415.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7222415
+loop_
+_publ_author_name
+'Armstrong, J.A.'
+'Dann, S.E.'
+'Neumann, K.'
+'Marco, J.F.'
+_publ_section_title
+;
+ Synthesis, structure and magnetic behaviour of the danalite family of
+ minerals, Fe8 (Be Si O4)6 X2 (X = S, Se, Te)
+;
+_journal_name_full               'Journal of Materials Chemistry'
+_journal_page_first              1229
+_journal_page_last               1233
+_journal_volume                  13
+_journal_year                    2003
+_chemical_formula_sum            'Be6 Fe8 O24 Si6 Te2'
+_chemical_name_systematic        'Fe8 (Be Si O4)6 Te2'
+_space_group_IT_number           218
+_symmetry_space_group_name_Hall  'P -4n 2 3'
+_symmetry_space_group_name_H-M   'P -4 3 n'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            1
+_cell_length_a                   8.3685
+_cell_length_b                   8.3685
+_cell_length_c                   8.3685
+_cell_volume                     586.061
+_citation_journal_id_ASTM        JMACEP
+_cod_data_source_file            Armstrong_JMACEP_2003_390.cif
+_cod_data_source_block           Be6Fe8O24Si6Te2
+_cod_database_code               7222415
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y+1/2,-x+1/2,-z+1/2
+-x,-y,z
+-y+1/2,x+1/2,-z+1/2
+x,-y,-z
+-y+1/2,-x+1/2,z+1/2
+-x,y,-z
+y+1/2,x+1/2,z+1/2
+z,x,y
+x+1/2,-z+1/2,-y+1/2
+-z,-x,y
+-x+1/2,z+1/2,-y+1/2
+z,-x,-y
+-x+1/2,-z+1/2,y+1/2
+-z,x,-y
+x+1/2,z+1/2,y+1/2
+y,z,x
+y,-z,-x
+-z+1/2,-y+1/2,x+1/2
+-y,z,-x
+z+1/2,y+1/2,x+1/2
+-y,-z,x
+-z+1/2,y+1/2,-x+1/2
+z+1/2,-y+1/2,-x+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O1 O-2 0.368 0.3564 -0.0669 1 0.0
+Be1 Be+2 0.25 0.5 0 1 0.0
+Fe1 Fe+2 0.1847 0.1847 0.1847 1 0.0
+Si1 Si+4 0.25 0 0.5 1 0.0
+Te1 Te-2 0 0 0 1 0.0

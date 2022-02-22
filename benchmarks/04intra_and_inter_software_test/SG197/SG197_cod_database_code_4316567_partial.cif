@@ -1,0 +1,59 @@
+# generated using pymatgen
+data_U24Te5.5C48Se2.5O120
+_symmetry_space_group_name_H-M  'I 2 3'
+_cell_length_a   16.68970000
+_cell_length_b   16.68970000
+_cell_length_c   16.68970000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   197
+_chemical_formula_structural   U24Te5.5C48Se2.5O120
+_chemical_formula_sum   'U24 Te5.5 C48 Se2.5 O120'
+_cell_volume   4648.85061302
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, -z'
+  4  '-x, y, -z'
+  5  'z, x, y'
+  6  'z, -x, -y'
+  7  '-z, x, -y'
+  8  '-z, -x, y'
+  9  'y, z, x'
+  10  '-y, z, -x'
+  11  '-y, -z, x'
+  12  'y, -z, -x'
+  13  'x+1/2, y+1/2, z+1/2'
+  14  '-x+1/2, -y+1/2, z+1/2'
+  15  'x+1/2, -y+1/2, -z+1/2'
+  16  '-x+1/2, y+1/2, -z+1/2'
+  17  'z+1/2, x+1/2, y+1/2'
+  18  'z+1/2, -x+1/2, -y+1/2'
+  19  '-z+1/2, x+1/2, -y+1/2'
+  20  '-z+1/2, -x+1/2, y+1/2'
+  21  'y+1/2, z+1/2, x+1/2'
+  22  '-y+1/2, z+1/2, -x+1/2'
+  23  '-y+1/2, -z+1/2, x+1/2'
+  24  'y+1/2, -z+1/2, -x+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  U  U0  24  0.11012300  0.27431400  0.26473600  1.0
+  Te+  Te1  8  0.22960000  0.22960000  0.22960000  0.6875
+  Se+  Se2  8  0.22960000  0.22960000  0.22960000  0.3125
+  C  C3  24  0.00170000  0.27020000  0.43840000  1.0
+  C  C4  24  0.00190000  0.43810000  0.22920000  1.0
+  O  O5  24  0.00170000  0.36360000  0.22960000  1.0
+  O  O6  24  0.00230000  0.26730000  0.36270000  1.0
+  O  O7  24  0.06040000  0.20360000  0.20150000  1.0
+  O  O8  24  0.14870000  0.16280000  0.34690000  1.0
+  O  O9  24  0.15240000  0.17100000  0.65500000  1.0

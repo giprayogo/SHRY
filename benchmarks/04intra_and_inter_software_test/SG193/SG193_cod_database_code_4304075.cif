@@ -1,0 +1,376 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-22 23:48:09 +0200 (Tue, 22 Mar 2016) $
+#$Revision: 179078 $
+#$URL: svn://www.crystallography.net/cod/cif/4/30/40/4304075.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4304075
+loop_
+_publ_author_name
+'Oksana Ya. Zelinska'
+'Arthur Mar'
+_publ_contact_author_address
+; Department of Chemistry
+  University of Alberta
+  Edmonton, AB
+  Canada  T6G 2G2
+;
+_publ_contact_author_email       arthur.mar@ualberta.ca
+_publ_contact_author_fax         '(780) 492-8231'
+_publ_contact_author_name        'Dr. Arthur Mar'
+_publ_contact_author_phone       '(780) 492-5592'
+_publ_section_title
+;
+Ternary Rare-Earth Manganese Bismuthides: Structures and Physical
+Properties of RE3MnBi5 (RE = La-Nd) and Sm2Mn3Bi6
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              297
+_journal_page_last               305
+_journal_paper_doi               10.1021/ic701428p
+_journal_volume                  47
+_journal_year                    2008
+_chemical_formula_structural     'Nd3 Mn Bi5'
+_chemical_formula_sum            'Bi5 Mn Nd3'
+_chemical_formula_weight         1532.56
+_chemical_name_common            'neodymium manganese bismuthide (3/1/5)'
+_chemical_name_systematic        'trineodymium manganese pentabismuthide'
+_space_group_IT_number           193
+_symmetry_cell_setting           hexagonal
+_symmetry_space_group_name_Hall  '-P 6c 2'
+_symmetry_space_group_name_H-M   'P 63/m c m'
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_date             'June 3, 2007'
+_audit_creation_method           'SHELXL-97; manual editing of .cif file'
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            2
+_cell_length_a                   9.5438(16)
+_cell_length_b                   9.5438(16)
+_cell_length_c                   6.4089(11)
+_cell_measurement_reflns_used    486
+_cell_measurement_temperature    193(2)
+_cell_measurement_theta_max      28.59
+_cell_measurement_theta_min      6.37
+_cell_volume                     505.54(15)
+_computing_cell_refinement       'Bruker SAINT 6.45 (Bruker, 2003)'
+_computing_data_collection       'Bruker SMART 5.054 (Bruker, 1999)'
+_computing_data_reduction        'Bruker SAINT 6.45'
+_computing_molecular_graphics    'ATOMS 5.1 (Dowty, 1999)'
+_computing_publication_material  'Bruker SHELXTL 6.12'
+_computing_structure_refinement  'Bruker SHELXTL 6.12'
+_computing_structure_solution    'Bruker SHELXTL 6.12'
+_diffrn_ambient_temperature      193(2)
+_diffrn_measured_fraction_theta_full 0.995
+_diffrn_measured_fraction_theta_max 0.995
+_diffrn_measurement_device_type  'Bruker Platform/SMART 1000 CCD'
+_diffrn_measurement_method       '\w scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0967
+_diffrn_reflns_av_sigmaI/netI    0.0406
+_diffrn_reflns_limit_h_max       14
+_diffrn_reflns_limit_h_min       -14
+_diffrn_reflns_limit_k_max       14
+_diffrn_reflns_limit_k_min       -14
+_diffrn_reflns_limit_l_max       9
+_diffrn_reflns_limit_l_min       -9
+_diffrn_reflns_number            5508
+_diffrn_reflns_theta_full        33.00
+_diffrn_reflns_theta_max         33.00
+_diffrn_reflns_theta_min         2.46
+_diffrn_standards_number         0
+_exptl_absorpt_coefficient_mu    102.908
+_exptl_absorpt_correction_T_max  0.0581
+_exptl_absorpt_correction_T_min  0.0065
+_exptl_absorpt_correction_type   numerical
+_exptl_absorpt_process_details   'Bruker SHELXTL 6.12 (Sheldrick, 2001)'
+_exptl_crystal_colour            black
+_exptl_crystal_density_diffrn    10.068
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       prism
+_exptl_crystal_F_000             1240
+_exptl_crystal_size_max          0.15
+_exptl_crystal_size_mid          0.08
+_exptl_crystal_size_min          0.05
+_refine_diff_density_max         4.826
+_refine_diff_density_min         -2.684
+_refine_diff_density_rms         0.719
+_refine_ls_extinction_coef       0.00192(16)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.166
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     14
+_refine_ls_number_reflns         375
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.166
+_refine_ls_R_factor_all          0.0415
+_refine_ls_R_factor_gt           0.0297
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0207P)^2^+10.7815P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0574
+_refine_ls_wR_factor_ref         0.0610
+_reflns_number_gt                319
+_reflns_number_total             375
+_reflns_threshold_expression     I>2\s(I)
+_cod_data_source_file            ic701428p-file006.cif
+_cod_data_source_block           Nd3MnBi5
+_cod_database_code               4304075
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'-x, -y, z+1/2'
+'y, -x+y, z+1/2'
+'x-y, x, z+1/2'
+'y, x, -z+1/2'
+'x-y, -y, -z+1/2'
+'-x, -x+y, -z+1/2'
+'-y, -x, -z'
+'-x+y, y, -z'
+'x, x-y, -z'
+'-x, -y, -z'
+'y, -x+y, -z'
+'x-y, x, -z'
+'x, y, -z-1/2'
+'-y, x-y, -z-1/2'
+'-x+y, -x, -z-1/2'
+'-y, -x, z-1/2'
+'-x+y, y, z-1/2'
+'x, x-y, z-1/2'
+'y, x, z'
+'x-y, -y, z'
+'-x, -x+y, z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Nd Nd 0.61886(10) 0.0000 0.2500 0.0074(2) Uani 1 4 d S . .
+Mn Mn 0.0000 0.0000 0.0000 0.0081(9) Uani 1 12 d S . .
+Bi1 Bi 0.26112(7) 0.0000 0.2500 0.00677(18) Uani 1 4 d S . .
+Bi2 Bi 0.3333 0.6667 0.0000 0.00594(19) Uani 1 6 d S . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Nd 0.0066(3) 0.0075(4) 0.0083(5) 0.000 0.000 0.0038(2)
+Mn 0.0080(12) 0.0080(12) 0.008(3) 0.000 0.000 0.0040(6)
+Bi1 0.0063(2) 0.0062(3) 0.0079(4) 0.000 0.000 0.00308(15)
+Bi2 0.0057(2) 0.0057(2) 0.0064(4) 0.000 0.000 0.00286(11)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Mn Mn 0.3368 0.7283 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Nd Nd -0.1943 3.0179 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Bi Bi -4.1077 10.2566 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+Bi1 Nd Bi1 84.13(3) 2_655 3_655 ?
+Bi1 Nd Bi2 142.61(2) 2_655 1_545 ?
+Bi1 Nd Bi2 72.741(11) 3_655 1_545 ?
+Bi1 Nd Bi2 142.61(2) 2_655 16_546 ?
+Bi1 Nd Bi2 72.741(11) 3_655 16_546 ?
+Bi2 Nd Bi2 56.539(13) 1_545 16_546 ?
+Bi1 Nd Bi2 72.743(11) 2_655 4_665 ?
+Bi1 Nd Bi2 142.61(2) 3_655 4_665 ?
+Bi2 Nd Bi2 140.82(3) 1_545 4_665 ?
+Bi2 Nd Bi2 109.056(17) 16_546 4_665 ?
+Bi1 Nd Bi2 72.743(11) 2_655 13_665 ?
+Bi1 Nd Bi2 142.61(2) 3_655 13_665 ?
+Bi2 Nd Bi2 109.056(18) 1_545 13_665 ?
+Bi2 Nd Bi2 140.82(3) 16_546 13_665 ?
+Bi2 Nd Bi2 56.538(13) 4_665 13_665 ?
+Bi1 Nd Bi1 75.529(17) 2_655 13_656 ?
+Bi1 Nd Bi1 75.529(17) 3_655 13_656 ?
+Bi2 Nd Bi1 123.976(5) 1_545 13_656 ?
+Bi2 Nd Bi1 70.542(9) 16_546 13_656 ?
+Bi2 Nd Bi1 70.543(9) 4_665 13_656 ?
+Bi2 Nd Bi1 123.976(5) 13_665 13_656 ?
+Bi1 Nd Bi1 75.529(17) 2_655 13_655 ?
+Bi1 Nd Bi1 75.529(17) 3_655 13_655 ?
+Bi2 Nd Bi1 70.542(9) 1_545 13_655 ?
+Bi2 Nd Bi1 123.976(5) 16_546 13_655 ?
+Bi2 Nd Bi1 123.976(5) 4_665 13_655 ?
+Bi2 Nd Bi1 70.543(9) 13_665 13_655 ?
+Bi1 Nd Bi1 140.66(4) 13_656 13_655 ?
+Bi1 Nd Bi1 137.936(16) 2_655 . ?
+Bi1 Nd Bi1 137.936(16) 3_655 . ?
+Bi2 Nd Bi1 70.408(15) 1_545 . ?
+Bi2 Nd Bi1 70.408(15) 16_546 . ?
+Bi2 Nd Bi1 70.407(15) 4_665 . ?
+Bi2 Nd Bi1 70.407(15) 13_665 . ?
+Bi1 Nd Bi1 109.670(19) 13_656 . ?
+Bi1 Nd Bi1 109.670(19) 13_655 . ?
+Bi1 Nd Nd 115.404(12) 2_655 13_655 ?
+Bi1 Nd Nd 115.404(12) 3_655 13_655 ?
+Bi2 Nd Nd 54.528(9) 1_545 13_655 ?
+Bi2 Nd Nd 101.11(2) 16_546 13_655 ?
+Bi2 Nd Nd 101.11(3) 4_665 13_655 ?
+Bi2 Nd Nd 54.528(9) 13_665 13_655 ?
+Bi1 Nd Nd 164.37(4) 13_656 13_655 ?
+Bi1 Nd Nd 54.969(17) 13_655 13_655 ?
+Bi1 Nd Nd 54.70(2) . 13_655 ?
+Bi1 Nd Nd 115.404(13) 2_655 13_656 ?
+Bi1 Nd Nd 115.404(12) 3_655 13_656 ?
+Bi2 Nd Nd 101.11(2) 1_545 13_656 ?
+Bi2 Nd Nd 54.528(9) 16_546 13_656 ?
+Bi2 Nd Nd 54.528(9) 4_665 13_656 ?
+Bi2 Nd Nd 101.11(2) 13_665 13_656 ?
+Bi1 Nd Nd 54.969(17) 13_656 13_656 ?
+Bi1 Nd Nd 164.37(4) 13_655 13_656 ?
+Bi1 Nd Nd 54.70(2) . 13_656 ?
+Nd Nd Nd 109.40(5) 13_655 13_656 ?
+Bi1 Mn Bi1 180.000(13) 14 2 ?
+Bi1 Mn Bi1 93.514(13) 14 13 ?
+Bi1 Mn Bi1 86.486(13) 2 13 ?
+Bi1 Mn Bi1 93.514(12) 14 15 ?
+Bi1 Mn Bi1 86.486(12) 2 15 ?
+Bi1 Mn Bi1 93.514(12) 13 15 ?
+Bi1 Mn Bi1 86.486(12) 14 3 ?
+Bi1 Mn Bi1 93.514(12) 2 3 ?
+Bi1 Mn Bi1 86.486(12) 13 3 ?
+Bi1 Mn Bi1 180.00(2) 15 3 ?
+Bi1 Mn Bi1 86.486(13) 14 . ?
+Bi1 Mn Bi1 93.514(13) 2 . ?
+Bi1 Mn Bi1 180.0 13 . ?
+Bi1 Mn Bi1 86.486(12) 15 . ?
+Bi1 Mn Bi1 93.514(12) 3 . ?
+Bi1 Mn Mn 122.738(9) 14 4 ?
+Bi1 Mn Mn 57.262(10) 2 4 ?
+Bi1 Mn Mn 122.738(9) 13 4 ?
+Bi1 Mn Mn 122.738(9) 15 4 ?
+Bi1 Mn Mn 57.262(9) 3 4 ?
+Bi1 Mn Mn 57.262(9) . 4 ?
+Bi1 Mn Mn 57.262(10) 14 4_554 ?
+Bi1 Mn Mn 122.738(9) 2 4_554 ?
+Bi1 Mn Mn 57.262(10) 13 4_554 ?
+Bi1 Mn Mn 57.262(9) 15 4_554 ?
+Bi1 Mn Mn 122.738(9) 3 4_554 ?
+Bi1 Mn Mn 122.738(9) . 4_554 ?
+Mn Mn Mn 180.0 4 4_554 ?
+Mn Bi1 Mn 65.477(19) . 4 ?
+Mn Bi1 Nd 79.874(14) . 2_545 ?
+Mn Bi1 Nd 79.874(14) 4 2_545 ?
+Mn Bi1 Nd 79.874(14) . 3_665 ?
+Mn Bi1 Nd 79.874(14) 4 3_665 ?
+Nd Bi1 Nd 155.87(3) 2_545 3_665 ?
+Mn Bi1 Nd 142.41(2) . 13_656 ?
+Mn Bi1 Nd 76.931(19) 4 13_656 ?
+Nd Bi1 Nd 94.034(2) 2_545 13_656 ?
+Nd Bi1 Nd 94.034(2) 3_665 13_656 ?
+Mn Bi1 Nd 76.931(19) . 13_655 ?
+Mn Bi1 Nd 142.41(2) 4 13_655 ?
+Nd Bi1 Nd 94.034(2) 2_545 13_655 ?
+Nd Bi1 Nd 94.034(2) 3_665 13_655 ?
+Nd Bi1 Nd 140.66(4) 13_656 13_655 ?
+Mn Bi1 Nd 147.262(9) . . ?
+Mn Bi1 Nd 147.262(9) 4 . ?
+Nd Bi1 Nd 102.065(16) 2_545 . ?
+Nd Bi1 Nd 102.065(16) 3_665 . ?
+Nd Bi1 Nd 70.331(19) 13_656 . ?
+Nd Bi1 Nd 70.331(19) 13_655 . ?
+Bi2 Bi2 Bi2 180.0 16_556 16 ?
+Bi2 Bi2 Nd 61.731(6) 16_556 1_565 ?
+Bi2 Bi2 Nd 118.269(7) 16 1_565 ?
+Bi2 Bi2 Nd 118.269(7) 16_556 14_565 ?
+Bi2 Bi2 Nd 61.731(6) 16 14_565 ?
+Nd Bi2 Nd 166.59(3) 1_565 14_565 ?
+Bi2 Bi2 Nd 118.270(6) 16_556 13_665 ?
+Bi2 Bi2 Nd 61.731(6) 16 13_665 ?
+Nd Bi2 Nd 70.945(18) 1_565 13_665 ?
+Nd Bi2 Nd 99.412(8) 14_565 13_665 ?
+Bi2 Bi2 Nd 61.731(6) 16_556 2 ?
+Bi2 Bi2 Nd 118.270(6) 16 2 ?
+Nd Bi2 Nd 99.412(8) 1_565 2 ?
+Nd Bi2 Nd 70.945(18) 14_565 2 ?
+Nd Bi2 Nd 91.53(3) 13_665 2 ?
+Bi2 Bi2 Nd 61.730(6) 16_556 3_665 ?
+Bi2 Bi2 Nd 118.268(7) 16 3_665 ?
+Nd Bi2 Nd 99.412(8) 1_565 3_665 ?
+Nd Bi2 Nd 91.53(3) 14_565 3_665 ?
+Nd Bi2 Nd 166.59(3) 13_665 3_665 ?
+Nd Bi2 Nd 99.412(8) 2 3_665 ?
+Bi2 Bi2 Nd 118.268(7) 16_556 15 ?
+Bi2 Bi2 Nd 61.730(6) 16 15 ?
+Nd Bi2 Nd 91.53(3) 1_565 15 ?
+Nd Bi2 Nd 99.412(8) 14_565 15 ?
+Nd Bi2 Nd 99.412(8) 13_665 15 ?
+Nd Bi2 Nd 166.59(3) 2 15 ?
+Nd Bi2 Nd 70.945(18) 3_665 15 ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Nd Bi1 3.2213(9) 2_655 ?
+Nd Bi1 3.2213(9) 3_655 ?
+Nd Bi2 3.3830(6) 1_545 ?
+Nd Bi2 3.3830(6) 16_546 ?
+Nd Bi2 3.3830(6) 4_665 ?
+Nd Bi2 3.3830(6) 13_665 ?
+Nd Bi1 3.4030(6) 13_656 ?
+Nd Bi1 3.4030(6) 13_655 ?
+Nd Bi1 3.4142(13) . ?
+Nd Nd 3.9263(12) 13_655 ?
+Nd Nd 3.9263(12) 13_656 ?
+Mn Bi1 2.9627(6) 14 ?
+Mn Bi1 2.9627(6) 2 ?
+Mn Bi1 2.9627(7) 13 ?
+Mn Bi1 2.9627(7) 15 ?
+Mn Bi1 2.9627(7) 3 ?
+Mn Bi1 2.9627(7) . ?
+Mn Mn 3.2044(5) 4 ?
+Mn Mn 3.2044(5) 4_554 ?
+Bi1 Mn 2.9627(7) 4 ?
+Bi1 Nd 3.2213(9) 2_545 ?
+Bi1 Nd 3.2213(9) 3_665 ?
+Bi1 Nd 3.4030(6) 13_656 ?
+Bi1 Nd 3.4030(6) 13_655 ?
+Bi2 Bi2 3.2044(5) 16_556 ?
+Bi2 Bi2 3.2044(5) 16 ?
+Bi2 Nd 3.3830(6) 1_565 ?
+Bi2 Nd 3.3830(6) 14_565 ?
+Bi2 Nd 3.3830(6) 13_665 ?
+Bi2 Nd 3.3830(6) 2 ?
+Bi2 Nd 3.3830(6) 3_665 ?
+Bi2 Nd 3.3830(6) 15 ?

@@ -1,0 +1,83 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/8/10/43/8104379.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8104379
+loop_
+_publ_author_name
+'Sarna, I.'
+'Chadha, G.K.'
+'Trigunayat, G.C.'
+_publ_section_title
+;
+ Crystal structure of a fourteen-layered cadmium iodide polytype
+;
+_journal_name_full
+'Zeitschrift fuer Kristallographie (149,1979-)'
+_journal_page_first              311
+_journal_page_last               313
+_journal_volume                  166
+_journal_year                    1984
+_chemical_formula_sum            'Cd I2'
+_space_group_IT_number           156
+_symmetry_space_group_name_Hall  'P 3 -2"'
+_symmetry_space_group_name_H-M   'P 3 m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            7
+_cell_length_a                   4.24
+_cell_length_b                   4.24
+_cell_length_c                   47.84
+_cell_volume                     744.824
+_citation_journal_id_ASTM        ZEKRDZ
+_cod_data_source_file            Sarna_ZEKRDZ_1984_1912.cif
+_cod_data_source_block           Cd1I2
+_cod_original_cell_volume        744.8237
+_cod_original_formula_sum        'Cd1 I2'
+_cod_database_code               8104379
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+-y,-x,z
+x,x-y,z
+-x+y,y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+I7 I-1 0.6667 0.3333 0.3571 1 0.0
+I3 I-1 0 0 0.4286 1 0.0
+I4 I-1 0 0 0.8571 1 0.0
+I5 I-1 0.6667 0.3333 0.0714 1 0.0
+I1 I-1 0 0 0 1 0.0
+Cd1 Cd+2 0 0 0.1786 1 0.0
+Cd2 Cd+2 0 0 0.6071 1 0.0
+I12 I-1 0.3333 0.6667 0.1429 1 0.0
+I14 I-1 0.3333 0.6667 0.7143 1 0.0
+I10 I-1 0.6667 0.3333 0.7857 1 0.0
+I2 I-1 0 0 0.2857 1 0.0
+Cd5 Cd+2 0.3333 0.6667 0.3214 1 0.0
+I6 I-1 0.6667 0.3333 0.2143 1 0.0
+Cd3 Cd+2 0 0 0.75 1 0.0
+Cd6 Cd+2 0.3333 0.6667 0.4643 1 0.0
+I13 I-1 0.3333 0.6667 0.5714 1 0.0
+I11 I-1 0.6667 0.3333 0.9286 1 0.0
+I8 I-1 0.6667 0.3333 0.5 1 0.0
+I9 I-1 0.6667 0.3333 0.6429 1 0.0
+Cd7 Cd+2 0.3333 0.6667 0.8929 1 0.0
+Cd4 Cd+2 0.3333 0.6667 0.0357 1 0.0

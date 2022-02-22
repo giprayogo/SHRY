@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Te6Pt5.5Ds0.33333333Pd0.16666667
-_symmetry_space_group_name_H-M   R-3m
+_symmetry_space_group_name_H-M  'R -3 m :H'
 _cell_length_a   3.96300000
 _cell_length_b   3.96300000
 _cell_length_c   19.98000000

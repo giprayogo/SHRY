@@ -1,0 +1,293 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-20 22:30:07 +0200 (Sat, 20 Feb 2016) $
+#$Revision: 176789 $
+#$URL: svn://www.crystallography.net/cod/cif/2/22/71/2227109.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2227109
+loop_
+_publ_author_name
+'Gougeon, Patrick'
+'Gall, Philippe'
+'Potel, Michel'
+_publ_section_title
+;
+ Tl~2~Mo~9~Se~11~
+;
+_journal_coeditor_code           WM2368
+_journal_issue                   8
+_journal_name_full               'Acta Crystallographica Section E'
+_journal_page_first              i56
+_journal_paper_doi               10.1107/S1600536810026541
+_journal_volume                  66
+_journal_year                    2010
+_chemical_formula_iupac          'Tl2 Mo9 Se11'
+_chemical_formula_structural     'Tl2 (Mo9 Se11)'
+_chemical_formula_sum            'Mo9 Se11 Tl2'
+_chemical_formula_weight         2140.8
+_chemical_name_systematic
+;
+dithallium nonamolybdenum undecaselenide
+;
+_space_group_IT_number           148
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  '-R 3'
+_symmetry_space_group_name_H-M   'R -3 :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            6
+_cell_length_a                   9.62120(10)
+_cell_length_b                   9.62120(10)
+_cell_length_c                   36.3316(7)
+_cell_measurement_reflns_used    10017
+_cell_measurement_temperature    293
+_cell_measurement_theta_max      40.25
+_cell_measurement_theta_min      1
+_cell_volume                     2912.55(7)
+_computing_cell_refinement       'COLLECT (Nonius, 1998)'
+_computing_data_collection       'COLLECT (Nonius, 1998)'
+_computing_data_reduction        'EvalCCD (Duisenberg <i>et al.</i>,  2003)'
+_computing_molecular_graphics    'DIAMOND (Brandenburg, 2001)'
+_computing_publication_material
+'JANA2006 (Pet\<r\'i\<cek <i>et al.</i>,  2006)'
+_computing_structure_refinement
+'JANA2006 (Pet\<r\'i\<cek <i>et al.</i>,  2006)'
+_computing_structure_solution    'SIR97 (Altomare <i>et al.</i>,  1999)'
+_diffrn_ambient_temperature      293
+_diffrn_detector_area_resol_mean 9
+_diffrn_measured_fraction_theta_full 0.99
+_diffrn_measured_fraction_theta_max 0.99
+_diffrn_measurement_device       '95mm CCD camera on \k-goniostat'
+_diffrn_measurement_device_type  'Nonius KappaCCD'
+_diffrn_measurement_method       '\f- and \w-scans'
+_diffrn_radiation_monochromator  'horizontally mounted graphite crystal'
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           'Mo K\a'
+_diffrn_radiation_wavelength     0.71069
+_diffrn_reflns_av_R_equivalents  0.0868
+_diffrn_reflns_av_sigmaI/netI    0.0501
+_diffrn_reflns_limit_h_max       17
+_diffrn_reflns_limit_h_min       -16
+_diffrn_reflns_limit_k_max       17
+_diffrn_reflns_limit_k_min       -16
+_diffrn_reflns_limit_l_max       66
+_diffrn_reflns_limit_l_min       -58
+_diffrn_reflns_number            21097
+_diffrn_reflns_theta_full        40.23
+_diffrn_reflns_theta_max         40.23
+_diffrn_reflns_theta_min         1.68
+_exptl_absorpt_coefficient_mu    42.727
+_exptl_absorpt_correction_T_max  0.1082
+_exptl_absorpt_correction_T_min  0.0326
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details   '(PLATON; Spek, 2009)'
+_exptl_crystal_colour            black
+_exptl_crystal_density_diffrn    7.3208
+_exptl_crystal_description       'irregular block'
+_exptl_crystal_F_000             5484
+_exptl_crystal_size_max          0.125
+_exptl_crystal_size_mid          0.120
+_exptl_crystal_size_min          0.110
+_refine_diff_density_max         3.92
+_refine_diff_density_min         -2.89
+_refine_ls_extinction_coef       232E1(4)
+_refine_ls_extinction_method
+'B-C type 1 Gaussian isotropic (Becker & Coppens, 1974)'
+_refine_ls_goodness_of_fit_ref   1.37
+_refine_ls_number_constraints    0
+_refine_ls_number_parameters     69
+_refine_ls_number_reflns         4097
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          0.0632
+_refine_ls_R_factor_gt           0.0431
+_refine_ls_shift/su_max          0.0327
+_refine_ls_shift/su_mean         0.0046
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details     w=1/[\s^2^(I)+0.0004I^2^]
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_gt          0.0864
+_refine_ls_wR_factor_ref         0.0916
+_reflns_number_gt                3156
+_reflns_number_total             4097
+_reflns_threshold_expression     I>2\s(I)
+_cod_data_source_file            wm2368.cif
+_cod_data_source_block           I
+_cod_original_sg_symbol_H-M      'R -3'
+_cod_database_code               2227109
+_cod_database_fobs_code          2227109
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -y,x-y,z
+3 -x+y,-x,z
+4 -x,-y,-z
+5 y,-x+y,-z
+6 x-y,x,-z
+7 x+2/3,y+1/3,z+1/3
+8 -y+2/3,x-y+1/3,z+1/3
+9 -x+y+2/3,-x+1/3,z+1/3
+10 -x+2/3,-y+1/3,-z+1/3
+11 y+2/3,-x+y+1/3,-z+1/3
+12 x-y+2/3,x+1/3,-z+1/3
+13 x+1/3,y+2/3,z+2/3
+14 -y+1/3,x-y+2/3,z+2/3
+15 -x+y+1/3,-x+2/3,z+2/3
+16 -x+1/3,-y+2/3,-z+2/3
+17 y+1/3,-x+y+2/3,-z+2/3
+18 x-y+1/3,x+2/3,-z+2/3
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_occupancy
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Tl Tl1 0.333333 0.666667 0.495781(14) 0.04933(17) Uani d . 1 . .
+Tl Tl2 0 0 0.267672(12) 0.02611(11) Uani d . 1 . .
+Mo Mo1 -0.18022(5) 0.31787(5) 0.364749(12) 0.01129(13) Uani d . 1 . .
+Mo Mo2 0.16529(5) 0.15027(5) 0.406587(12) 0.01120(13) Uani d . 1 . .
+Mo Mo3 0.15606(5) -0.00891(5) 0.469882(12) 0.01087(13) Uani d . 1 . .
+Se Se1 -0.04118(6) 0.29911(6) 0.306626(15) 0.01295(17) Uani d . 1 . .
+Se Se2 0.03067(6) 0.32633(6) 0.411871(15) 0.01342(17) Uani d . 1 . .
+Se Se3 0.32150(6) 0.30388(6) 0.467628(15) 0.01463(17) Uani d . 1 . .
+Se Se4 -0.333333 0.333333 0.41962(2) 0.01559(19) Uani d . 1 . .
+Se Se5 0 0 0.35157(2) 0.01474(19) Uani d . 1 . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+_atom_site_aniso_type_symbol
+Tl1 0.0620(2) 0.0620(2) 0.0239(2) 0.03102(12) 0 0 Tl
+Tl2 0.02704(13) 0.02704(13) 0.0242(2) 0.01352(7) 0 0 Tl
+Mo1 0.01119(17) 0.01064(17) 0.01168(17) 0.00518(13) 0.00061(13) -0.00028(13) Mo
+Mo2 0.01129(17) 0.01096(17) 0.01107(17) 0.00535(14) 0.00023(13) 0.00051(13) Mo
+Mo3 0.01081(16) 0.01111(16) 0.01077(17) 0.00553(13) 0.00040(13) 0.00014(13) Mo
+Se1 0.0120(2) 0.0136(2) 0.0140(2) 0.00691(17) 0.00193(16) 0.00090(16) Se
+Se2 0.0145(2) 0.0121(2) 0.0140(2) 0.00685(17) -0.00087(17) 0.00125(16) Se
+Se3 0.0121(2) 0.0135(2) 0.0151(2) 0.00408(17) 0.00057(17) 0.00032(17) Se
+Se4 0.0181(2) 0.0181(2) 0.0106(3) 0.00905(12) 0 0 Se
+Se5 0.0167(2) 0.0167(2) 0.0108(3) 0.00835(11) 0 0 Se
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Se -0.093 2.226 'International Tables Vol C tables 4.2.6.8 and 6.1.1.4'
+Mo -1.683 0.686 'International Tables Vol C tables 4.2.6.8 and 6.1.1.4'
+Tl -2.836 9.669 'International Tables Vol C tables 4.2.6.8 and 6.1.1.4'
+loop_
+_diffrn_standard_refln_index_h
+_diffrn_standard_refln_index_k
+_diffrn_standard_refln_index_l
+? ? ?
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+Mo1 Mo1 Mo1 2_565 . 3_455 60.000(18) ?
+Mo1 Mo1 Mo1 2_565 . 17_445 90 ?
+Mo1 Mo1 Mo1 2_565 . 18_555 60.85(2) ?
+Mo1 Mo1 Mo1 3_455 . 17_445 60.849(16) ?
+Mo1 Mo1 Mo1 3_455 . 18_555 90 ?
+Mo1 Mo1 Mo1 17_445 . 18_555 58.302(17) ?
+Mo2 Mo2 Mo2 2_555 . 3_555 60.00(2) ?
+Mo2 Mo2 Mo3 2_555 . . 90.953(18) ?
+Mo2 Mo2 Mo3 2_555 . 2_555 60.546(16) ?
+Mo2 Mo2 Mo3 3_555 . . 62.472(16) ?
+Mo2 Mo2 Mo3 3_555 . 2_555 89.850(19) ?
+Mo3 Mo2 Mo3 . . 2_555 57.92(2) ?
+Mo2 Mo3 Mo2 . . 3_555 56.983(15) ?
+Mo2 Mo3 Mo3 . . 2_555 61.982(19) ?
+Mo2 Mo3 Mo3 . . 3_555 90.11(2) ?
+Mo2 Mo3 Mo3 . . 5_556 147.49(3) ?
+Mo2 Mo3 Mo3 . . 6_556 111.83(2) ?
+Mo2 Mo3 Mo3 3_555 . 2_555 89.04(2) ?
+Mo2 Mo3 Mo3 3_555 . 3_555 60.094(17) ?
+Mo2 Mo3 Mo3 3_555 . 5_556 110.275(17) ?
+Mo2 Mo3 Mo3 3_555 . 6_556 145.90(3) ?
+Mo3 Mo3 Mo3 2_555 . 3_555 60.000(18) ?
+Mo3 Mo3 Mo3 2_555 . 5_556 90 ?
+Mo3 Mo3 Mo3 2_555 . 6_556 60.02(2) ?
+Mo3 Mo3 Mo3 3_555 . 5_556 60.019(16) ?
+Mo3 Mo3 Mo3 3_555 . 6_556 90 ?
+Mo3 Mo3 Mo3 5_556 . 6_556 59.962(18) ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Tl1 Tl2 . 16_555 3.5164(7) yes
+Tl1 Se2 . . 4.3543(6) yes
+Tl1 Se2 . 2_665 4.3543(7) yes
+Tl1 Se2 . 3_565 4.3543(7) yes
+Tl1 Se3 . . 3.5840(6) yes
+Tl1 Se3 . 2_665 3.5840(5) yes
+Tl1 Se3 . 3_565 3.5840(8) yes
+Tl1 Se3 . 4_666 3.4547(6) yes
+Tl1 Se3 . 5_566 3.4547(8) yes
+Tl1 Se3 . 6_556 3.4547(5) yes
+Tl1 Se4 . 4_566 3.0737(10) yes
+Tl2 Se1 . . 3.4032(7) yes
+Tl2 Se1 . 2_555 3.4032(6) yes
+Tl2 Se1 . 3_555 3.4032(8) yes
+Tl2 Se2 . 16_555 3.1441(4) yes
+Tl2 Se2 . 17_445 3.1441(7) yes
+Tl2 Se2 . 18_545 3.1441(7) yes
+Tl2 Se3 . 16_555 4.2446(7) yes
+Tl2 Se3 . 17_445 4.2446(6) yes
+Tl2 Se3 . 18_545 4.2446(8) yes
+Tl2 Se5 . . 3.0483(9) yes
+Mo1 Mo1 . 2_565 2.6897(9) ?
+Mo1 Mo1 . 3_455 2.6897(7) yes
+Mo1 Mo1 . 17_445 2.7609(6) yes
+Mo1 Mo1 . 18_555 2.7609(7) ?
+Mo1 Mo2 . 2_555 3.4239(8) yes
+Mo1 Se1 . . 2.5540(8) yes
+Mo1 Se1 . 17_445 2.6143(8) yes
+Mo1 Se1 . 18_555 2.5757(6) yes
+Mo1 Se2 . . 2.6247(8) yes
+Mo1 Se4 . . 2.5269(8) yes
+Mo2 Mo2 . 2_555 2.6382(6) ?
+Mo2 Mo2 . 3_555 2.6382(5) yes
+Mo2 Mo3 . . 2.7397(7) yes
+Mo2 Mo3 . 2_555 2.7901(7) yes
+Mo2 Se1 . 16_555 2.6597(6) yes
+Mo2 Se2 . . 2.6034(9) yes
+Mo2 Se2 . 3_555 2.6124(10) yes
+Mo2 Se3 . . 2.6721(6) yes
+Mo2 Se5 . . 2.5129(8) yes
+Mo3 Mo3 . 2_555 2.6780(9) ?
+Mo3 Mo3 . 3_555 2.6780(7) yes
+Mo3 Mo3 . 5_556 2.6796(6) yes
+Mo3 Mo3 . 6_556 2.6796(7) ?
+Mo3 Se2 . 3_555 2.5634(8) yes
+Mo3 Se3 . . 2.6090(6) yes
+Mo3 Se3 . 3_555 2.6112(6) yes
+Mo3 Se3 . 5_556 2.7025(8) yes

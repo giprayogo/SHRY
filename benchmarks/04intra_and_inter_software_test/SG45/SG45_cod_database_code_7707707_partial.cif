@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_FrCs6RbNa8V8Po4P16H16(SO16)4
+_symmetry_space_group_name_H-M  'I b a 2'
+_cell_length_a   13.86852000
+_cell_length_b   13.79850000
+_cell_length_c   7.47677000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   45
+_chemical_formula_structural   FrCs6RbNa8V8Po4P16H16(SO16)4
+_chemical_formula_sum   'Fr1 Cs6 Rb1 Na8 V8 Po4 P16 H16 S4 O64'
+_cell_volume   1430.79039547
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, z+1/2'
+  4  '-x, y, z+1/2'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  'x+1/2, -y+1/2, z'
+  8  '-x+1/2, y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs+  Cs0  8  0.00480000  0.23670000  0.05000000  0.75
+  Fr+  Fr1  8  0.00480000  0.23670000  0.05000000  0.125
+  Rb+  Rb2  8  0.00480000  0.23670000  0.05000000  0.125
+  Na  Na3  8  0.23790000  0.49990000  0.08000000  1.0
+  V  V4  8  0.24930000  0.23300000  0.53000000  1.0
+  P  P5  8  0.10540000  0.38460000  0.33000000  1.0
+  P  P6  8  0.10770000  0.10870000  0.81000000  1.0
+  H  H7  8  0.04700000  0.12000000  0.32800000  1.0
+  H  H8  8  0.06700000  0.37000000  0.81800000  1.0
+  S+  S9  8  0.12660000  0.48680000  0.31000000  0.5
+  Po+  Po10  8  0.12660000  0.48680000  0.31000000  0.5
+  O  O11  8  0.00300000  0.12450000  0.83000000  1.0
+  O  O12  8  0.00800000  0.36540000  0.82000000  1.0
+  O  O13  8  0.13860000  0.00230000  0.34000000  1.0
+  O  O14  8  0.14000000  0.32920000  0.49000000  1.0
+  O  O15  8  0.14700000  0.32890000  0.15000000  1.0
+  O  O16  8  0.15700000  0.15270000  0.98000000  1.0
+  O  O17  8  0.16500000  0.15060000  0.65000000  1.0
+  O  O18  8  0.24400000  0.31290000  0.77000000  1.0

@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Li16Re24Po4Te2Se4S32.5Lv1.5
-_symmetry_space_group_name_H-M   Pccn
+_symmetry_space_group_name_H-M  'P c c n'
 _cell_length_a   9.57100000
 _cell_length_b   14.00600000
 _cell_length_c   11.67800000

@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Po3H32C48S0.33333333Br8O0.33333333Lv0.33333333
+_symmetry_space_group_name_H-M  'C c c 2'
+_cell_length_a   26.64500000
+_cell_length_b   7.69020000
+_cell_length_c   5.72230000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   37
+_chemical_formula_structural
+Po3H32C48S0.33333333Br8O0.33333333Lv0.33333333
+_chemical_formula_sum
+'Po3 H32 C48 S0.33333333 Br8 O0.33333333 Lv0.33333333'
+_cell_volume   1172.53005025
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, z+1/2'
+  4  '-x, y, z+1/2'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, z'
+  7  'x+1/2, -y+1/2, z+1/2'
+  8  '-x+1/2, y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  H  H0  8  0.09020000  0.12400000  0.91390000  1.0
+  H  H1  8  0.14440000  0.39210000  0.37160000  1.0
+  H  H2  8  0.16990000  0.11160000  0.08020000  1.0
+  H  H3  8  0.22440000  0.38340000  0.53830000  1.0
+  C  C4  8  0.11080000  0.26110000  0.62950000  1.0
+  C  C5  8  0.11740000  0.17630000  0.83970000  1.0
+  C  C6  8  0.14950000  0.33730000  0.51400000  1.0
+  C  C7  8  0.16490000  0.16960000  0.94000000  1.0
+  C  C8  8  0.19750000  0.33180000  0.61520000  1.0
+  C  C9  8  0.20510000  0.25060000  0.82730000  1.0
+  Br  Br10  8  0.04658000  0.27028000  0.48950000  1.0
+  Po+  Po11  4  0.25000000  0.25000000  0.95900000  0.75
+  O+  O12  4  0.25000000  0.25000000  0.95900000
+  0.08333333333333333
+  S+  S13  4  0.25000000  0.25000000  0.95900000
+  0.08333333333333333
+  Lv+  Lv14  4  0.25000000  0.25000000  0.95900000
+  0.08333333333333333

@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Gd3Al0.5In0.5B2Pd2.5Ds0.5
+_symmetry_space_group_name_H-M  'P -6 2 m'
+_cell_length_a   7.76600000
+_cell_length_b   7.76600000
+_cell_length_c   3.80700000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   189
+_chemical_formula_structural   Gd3Al0.5In0.5B2Pd2.5Ds0.5
+_chemical_formula_sum   'Gd3 Al0.5 In0.5 B2 Pd2.5 Ds0.5'
+_cell_volume   198.84207243
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  'y, x, z'
+  8  '-x, -x+y, -z'
+  9  'x-y, -y, z'
+  10  'y, x, -z'
+  11  '-x, -x+y, z'
+  12  'x-y, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  3  0.00000000  0.58500000  0.50000000  1.0
+  In+  In1  3  0.00000000  0.24500000  0.00000000
+  0.16666666666666666
+  Al+  Al2  3  0.00000000  0.24500000  0.00000000
+  0.16666666666666666
+  B+  B3  3  0.00000000  0.24500000  0.00000000  0.6666666666666666
+  Pd+  Pd4  1  0.00000000  0.00000000  0.50000000  0.5
+  Ds+  Ds5  1  0.00000000  0.00000000  0.50000000  0.5
+  Pd  Pd6  2  0.33333333  0.66666667  0.00000000  1.0

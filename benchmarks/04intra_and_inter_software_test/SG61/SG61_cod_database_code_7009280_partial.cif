@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Na0.5Li7Cr8H32.5C40Cl16
+_symmetry_space_group_name_H-M  'P b c a'
+_cell_length_a   11.14400000
+_cell_length_b   9.85200000
+_cell_length_c   12.13900000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   61
+_chemical_formula_structural   Na0.5Li7Cr8H32.5C40Cl16
+_chemical_formula_sum   'Na0.5 Li7 Cr8 H32.5 C40 Cl16'
+_cell_volume   1332.74916163
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  'x+1/2, -y+1/2, -z'
+  4  '-x+1/2, y+1/2, z'
+  5  '-x, y+1/2, -z+1/2'
+  6  'x, -y+1/2, z+1/2'
+  7  '-x+1/2, -y, z+1/2'
+  8  'x+1/2, y, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li+  Li0  8  0.01590000  0.64050000  0.28500000  0.875
+  Na+  Na1  8  0.01590000  0.64050000  0.28500000  0.0625
+  H+  H2  8  0.01590000  0.64050000  0.28500000  0.0625
+  Cr  Cr3  8  0.03501000  0.64792000  0.94055000  1.0
+  H  H4  8  0.07940000  0.66080000  0.61040000  1.0
+  H  H5  8  0.13360000  0.22490000  0.92260000  1.0
+  H  H6  8  0.17300000  0.61440000  0.42890000  1.0
+  H  H7  8  0.17340000  0.20810000  0.12180000  1.0
+  C  C8  8  0.00550000  0.65360000  0.36110000  1.0
+  C  C9  8  0.04100000  0.66530000  0.54160000  1.0
+  C  C10  8  0.07770000  0.19980000  0.97680000  1.0
+  C  C11  8  0.09250000  0.63860000  0.44110000  1.0
+  C  C12  8  0.09950000  0.19130000  0.08710000  1.0
+  Cl  Cl13  8  0.11402000  0.52043000  0.08952000  1.0
+  Cl  Cl14  8  0.16878000  0.57250000  0.81253000  1.0

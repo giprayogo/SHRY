@@ -1,0 +1,51 @@
+# generated using pymatgen
+data_Zr3TiMn2ReTc5O16
+_symmetry_space_group_name_H-M  'P 43 2 2'
+_cell_length_a   6.17000000
+_cell_length_b   6.17000000
+_cell_length_c   8.56400000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   95
+_chemical_formula_structural   Zr3TiMn2ReTc5O16
+_chemical_formula_sum   'Zr3 Ti1 Mn2 Tc5 Re1 O16'
+_cell_volume   326.02205960
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z+3/4'
+  3  '-x, -y, z+1/2'
+  4  'y, -x, z+1/4'
+  5  'x, -y, -z+1/2'
+  6  '-y, -x, -z+3/4'
+  7  '-x, y, -z'
+  8  'y, x, -z+1/4'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Zr4+  4.0
+  Ti4+  4.0
+  Mn2+  2.0
+  Re2+  2.0
+  Tc2+  2.0
+  O2-  -2.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr4+  Zr0  4  0.24700000  0.50000000  0.25000000  0.75
+  Ti4+  Ti1  4  0.24700000  0.50000000  0.25000000  0.25
+  Tc2+  Tc2  4  0.24100000  0.24100000  0.62500000  0.75
+  Mn2+  Mn3  4  0.24100000  0.24100000  0.62500000  0.25
+  Mn2+  Mn4  4  0.00000000  0.24200000  0.00000000  0.25
+  Tc2+  Tc5  4  0.00000000  0.24200000  0.00000000  0.5
+  Re2+  Re6  4  0.00000000  0.24200000  0.00000000  0.25
+  O2-  O7  8  0.01100000  0.27200000  0.24100000  1.0
+  O2-  O8  8  0.29200000  0.47900000  0.48500000  1.0

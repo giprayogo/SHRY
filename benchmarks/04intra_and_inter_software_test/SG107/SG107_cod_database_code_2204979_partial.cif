@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_La2Fe2Ge2C3.5Fl0.16666667Pb0.33333333
+_symmetry_space_group_name_H-M  'I 4 m m'
+_cell_length_a   4.36600000
+_cell_length_b   4.36600000
+_cell_length_c   9.97260000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   107
+_chemical_formula_structural   La2Fe2Ge2C3.5Fl0.16666667Pb0.33333333
+_chemical_formula_sum   'La2 Fe2 Ge2 C3.5 Fl0.16666667 Pb0.33333333'
+_cell_volume   190.09726241
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z'
+  3  '-x, -y, z'
+  4  'y, -x, z'
+  5  '-x, y, z'
+  6  'y, x, z'
+  7  'x, -y, z'
+  8  '-y, -x, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-y+1/2, x+1/2, z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'y+1/2, -x+1/2, z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  'y+1/2, x+1/2, z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  2  0.00000000  0.00000000  0.00000000  1.0
+  Fe  Fe1  2  0.00000000  0.00000000  0.66360000  1.0
+  Ge  Ge2  2  0.00000000  0.00000000  0.43307000  1.0
+  C+  C3  4  0.00000000  0.50000000  0.25686000  0.875
+  Fl+  Fl4  4  0.00000000  0.50000000  0.25686000
+  0.041666666666666664
+  Pb+  Pb5  4  0.00000000  0.50000000  0.25686000
+  0.08333333333333333

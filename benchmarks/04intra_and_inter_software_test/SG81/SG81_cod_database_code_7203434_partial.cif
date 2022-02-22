@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Ca1Co2Si2Sn0.5H16C9Fl0.5N4O16
+_symmetry_space_group_name_H-M  'P -4'
+_cell_length_a   8.89800000
+_cell_length_b   8.89800000
+_cell_length_c   7.67900000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   81
+_chemical_formula_structural   Ca1Co2Si2Sn0.5H16C9Fl0.5N4O16
+_chemical_formula_sum   'Ca1 Co2 Si2 Sn0.5 H16 C9 Fl0.5 N4 O16'
+_cell_volume   607.98024832
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.00000000  0.00000000  0.50000000  1.0
+  Co  Co1  2  0.00000000  0.50000000  0.04855000  1.0
+  H  H2  4  0.10670000  0.61000000  0.69770000  1.0
+  H  H3  4  0.11770000  0.45320000  0.60360000  1.0
+  H  H4  4  0.13160000  0.33530000  0.85840000  1.0
+  H  H5  4  0.22670000  0.46660000  0.88940000  1.0
+  C  C6  4  0.05730000  0.76470000  0.18610000  1.0
+  C  C7  4  0.08220000  0.29430000  0.27870000  1.0
+  Si+  Si8  4  0.07600000  0.50540000  0.70360000  0.5
+  Sn+  Sn9  4  0.07600000  0.50540000  0.70360000  0.125
+  Fl+  Fl10  4  0.07600000  0.50540000  0.70360000  0.125
+  C+  C11  4  0.07600000  0.50540000  0.70360000  0.25
+  N  N12  4  0.13210000  0.43620000  0.86720000  1.0
+  O  O13  4  0.10190000  0.68430000  0.05830000  1.0
+  O  O14  4  0.11610000  0.88320000  0.23750000  1.0
+  O  O15  4  0.13030000  0.41950000  0.22530000  1.0
+  O  O16  4  0.13970000  0.21820000  0.39750000  1.0

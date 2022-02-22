@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Fr5K16Rb3Na16Si2Ge5Sb4As18CMc2
-_symmetry_space_group_name_H-M   Cmce
+_symmetry_space_group_name_H-M  'C m c a'
 _cell_length_a   20.43500000
 _cell_length_b   6.82000000
 _cell_length_c   15.35100000

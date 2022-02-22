@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Fe12Po6Se3S2Lv
-_symmetry_space_group_name_H-M   P-62c
+_symmetry_space_group_name_H-M  'P -6 2 c'
 _cell_length_a   5.86100000
 _cell_length_b   5.86100000
 _cell_length_c   11.57700000

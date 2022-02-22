@@ -1,0 +1,62 @@
+# generated using pymatgen
+data_Tl8Ni3.25Pd0.25Ds0.25Pt0.25
+_symmetry_space_group_name_H-M  'I 4/m c m'
+_cell_length_a   6.71200000
+_cell_length_b   6.71200000
+_cell_length_c   5.74800000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   140
+_chemical_formula_structural   Tl8Ni3.25Pd0.25Ds0.25Pt0.25
+_chemical_formula_sum   'Tl8 Ni3.25 Pd0.25 Ds0.25 Pt0.25'
+_cell_volume   258.95282611
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z+1/2'
+  10  '-x, y, z+1/2'
+  11  '-y, -x, -z+1/2'
+  12  'y, x, z+1/2'
+  13  '-x, y, -z+1/2'
+  14  'x, -y, z+1/2'
+  15  'y, x, -z+1/2'
+  16  '-y, -x, z+1/2'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-x+1/2, -y+1/2, -z+1/2'
+  19  '-y+1/2, x+1/2, z+1/2'
+  20  'y+1/2, -x+1/2, -z+1/2'
+  21  '-x+1/2, -y+1/2, z+1/2'
+  22  'x+1/2, y+1/2, -z+1/2'
+  23  'y+1/2, -x+1/2, z+1/2'
+  24  '-y+1/2, x+1/2, -z+1/2'
+  25  'x+1/2, -y+1/2, -z'
+  26  '-x+1/2, y+1/2, z'
+  27  '-y+1/2, -x+1/2, -z'
+  28  'y+1/2, x+1/2, z'
+  29  '-x+1/2, y+1/2, -z'
+  30  'x+1/2, -y+1/2, z'
+  31  'y+1/2, x+1/2, -z'
+  32  '-y+1/2, -x+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tl  Tl0  8  0.16560000  0.33440000  0.50000000  1.0
+  Ni+  Ni1  4  0.00000000  0.00000000  0.25000000  0.8125
+  Pd+  Pd2  4  0.00000000  0.00000000  0.25000000  0.0625
+  Ds+  Ds3  4  0.00000000  0.00000000  0.25000000  0.0625
+  Pt+  Pt4  4  0.00000000  0.00000000  0.25000000  0.0625

@@ -1,0 +1,482 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-19 16:29:56 +0200 (Fri, 19 Feb 2016) $
+#$Revision: 176759 $
+#$URL: svn://www.crystallography.net/cod/cif/2/00/90/2009000.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2009000
+loop_
+_publ_author_name
+'L\'evy, David'
+'Barbier, Jacques'
+_publ_section_title
+;
+ Normal and inverse garnets: Ca~3~Fe~2~Ge~3~O~12~, Ca~3~Y~2~Ge~3~O~12~
+ and Mg~3~Y~2~Ge~3~O~12~
+;
+_journal_issue                   10
+_journal_name_full               'Acta Crystallographica Section C'
+_journal_page_first              1611
+_journal_page_last               1614
+_journal_paper_doi               10.1107/S0108270199007854
+_journal_volume                  55
+_journal_year                    1999
+_chemical_formula_moiety         'Ca3 Fe2 Ge3 O12'
+_chemical_formula_sum            'Ca3 Fe2 Ge3 O12'
+_chemical_formula_weight         641.71
+_chemical_name_common            Garnet
+_chemical_name_systematic
+;
+ ?
+;
+_space_group_IT_number           230
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_Hall  '-I 4bd 2c 3'
+_symmetry_space_group_name_H-M   'I a -3 d'
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            8
+_cell_length_a                   12.321(9)
+_cell_length_b                   12.321(9)
+_cell_length_c                   12.321(9)
+_cell_measurement_reflns_used    2873
+_cell_measurement_temperature    300(2)
+_cell_measurement_theta_max      36.34
+_cell_measurement_theta_min      4.05
+_cell_volume                     1870(2)
+_computing_cell_refinement       'SAINT (Siemens, 1996)'
+_computing_data_collection       'SMART (Siemens, 1996)'
+_computing_data_reduction        SAINT
+_computing_molecular_graphics    'XP in SHELXTL/PC (Sheldrick, 1990b)'
+_computing_publication_material  SHELXL97
+_computing_structure_refinement  'SHELXL97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS86 (Sheldrick, 1990a)'
+_diffrn_ambient_temperature      300(2)
+_diffrn_detector_area_resol_mean 819.2
+_diffrn_measured_fraction_theta_full 0.995
+_diffrn_measured_fraction_theta_max 0.995
+_diffrn_measurement_device
+'Siemens SMART 1K CCD area detector + Siemens P4'
+_diffrn_measurement_method       'area detector'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.050
+_diffrn_reflns_av_sigmaI/netI    0.014
+_diffrn_reflns_limit_h_max       12
+_diffrn_reflns_limit_h_min       -19
+_diffrn_reflns_limit_k_max       20
+_diffrn_reflns_limit_k_min       -20
+_diffrn_reflns_limit_l_max       20
+_diffrn_reflns_limit_l_min       -19
+_diffrn_reflns_number            9916
+_diffrn_reflns_theta_full        36.33
+_diffrn_reflns_theta_max         36.33
+_diffrn_reflns_theta_min         4.05
+_diffrn_standards_decay_%        0
+_exptl_absorpt_coefficient_mu    14.277
+_exptl_absorpt_correction_T_max  0.259
+_exptl_absorpt_correction_T_min  0.200
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details   '(Sheldrick, 1996)'
+_exptl_crystal_colour            brown
+_exptl_crystal_density_diffrn    4.558
+_exptl_crystal_density_meas      ?
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       prism
+_exptl_crystal_F_000             2432
+_exptl_crystal_size_max          0.12
+_exptl_crystal_size_mid          0.12
+_exptl_crystal_size_min          0.12
+_refine_diff_density_max         0.708
+_refine_diff_density_min         -0.579
+_refine_ls_extinction_coef       0.00095(10)
+_refine_ls_extinction_method     'SHELXL97 (Sheldrick, 1997)'
+_refine_ls_goodness_of_fit_ref   1.253
+_refine_ls_hydrogen_treatment    none
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     18
+_refine_ls_number_reflns         382
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.253
+_refine_ls_R_factor_all          0.044
+_refine_ls_R_factor_gt           0.030
+_refine_ls_shift/su_max          <0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w = 1/[\s^2^(Fo^2^)+(0.0228P)^2^+9.5751P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_ref         0.068
+_reflns_number_total             382
+_cod_data_source_file            br1247.cif
+_cod_data_source_block           Ca3Fe2Ge3O12
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_geom_bond_publ_flag' value 'NO' changed to 'no' according to
+/home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary named
+'cif_core.dic' version 2.4.2 from 2011-04-26 (12
+times).
+
+'_geom_angle_publ_flag' value 'NO' changed to 'no' according
+to /home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary
+named 'cif_core.dic' version 2.4.2 from 2011-04-26 (153 times).
+
+Automatic conversion script
+Id: cif_fix_values 1715 2011-07-08 13:25:40Z adriana 
+
+The following automatic conversions were performed:
+
+'_exptl_crystal_density_meas' value 'not measured' was changed to '?'
+- the value is perceived as not measured.
+
+Automatic conversion script
+Id: cif_fix_values 3008 2015-01-20 13:52:24Z robertas 
+;
+_cod_original_sg_symbol_H-M      I_a_-3_d
+_cod_database_code               2009000
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y, z+1/2'
+'-x, y+1/2, -z+1/2'
+'x+1/2, -y+1/2, -z'
+'z, x, y'
+'z+1/2, -x+1/2, -y'
+'-z+1/2, -x, y+1/2'
+'-z, x+1/2, -y+1/2'
+'y, z, x'
+'-y, z+1/2, -x+1/2'
+'y+1/2, -z+1/2, -x'
+'-y+1/2, -z, x+1/2'
+'y+3/4, x+1/4, -z+1/4'
+'-y+3/4, -x+3/4, -z+3/4'
+'y+1/4, -x+1/4, z+3/4'
+'-y+1/4, x+3/4, z+1/4'
+'x+3/4, z+1/4, -y+1/4'
+'-x+1/4, z+3/4, y+1/4'
+'-x+3/4, -z+3/4, -y+3/4'
+'x+1/4, -z+1/4, y+3/4'
+'z+3/4, y+1/4, -x+1/4'
+'z+1/4, -y+1/4, x+3/4'
+'-z+1/4, y+3/4, x+1/4'
+'-z+3/4, -y+3/4, -x+3/4'
+'x+1/2, y+1/2, z+1/2'
+'-x+1, -y+1/2, z+1'
+'-x+1/2, y+1, -z+1'
+'x+1, -y+1, -z+1/2'
+'z+1/2, x+1/2, y+1/2'
+'z+1, -x+1, -y+1/2'
+'-z+1, -x+1/2, y+1'
+'-z+1/2, x+1, -y+1'
+'y+1/2, z+1/2, x+1/2'
+'-y+1/2, z+1, -x+1'
+'y+1, -z+1, -x+1/2'
+'-y+1, -z+1/2, x+1'
+'y+5/4, x+3/4, -z+3/4'
+'-y+5/4, -x+5/4, -z+5/4'
+'y+3/4, -x+3/4, z+5/4'
+'-y+3/4, x+5/4, z+3/4'
+'x+5/4, z+3/4, -y+3/4'
+'-x+3/4, z+5/4, y+3/4'
+'-x+5/4, -z+5/4, -y+5/4'
+'x+3/4, -z+3/4, y+5/4'
+'z+5/4, y+3/4, -x+3/4'
+'z+3/4, -y+3/4, x+5/4'
+'-z+3/4, y+5/4, x+3/4'
+'-z+5/4, -y+5/4, -x+5/4'
+'-x, -y, -z'
+'x-1/2, y, -z-1/2'
+'x, -y-1/2, z-1/2'
+'-x-1/2, y-1/2, z'
+'-z, -x, -y'
+'-z-1/2, x-1/2, y'
+'z-1/2, x, -y-1/2'
+'z, -x-1/2, y-1/2'
+'-y, -z, -x'
+'y, -z-1/2, x-1/2'
+'-y-1/2, z-1/2, x'
+'y-1/2, z, -x-1/2'
+'-y-3/4, -x-1/4, z-1/4'
+'y-3/4, x-3/4, z-3/4'
+'-y-1/4, x-1/4, -z-3/4'
+'y-1/4, -x-3/4, -z-1/4'
+'-x-3/4, -z-1/4, y-1/4'
+'x-1/4, -z-3/4, -y-1/4'
+'x-3/4, z-3/4, y-3/4'
+'-x-1/4, z-1/4, -y-3/4'
+'-z-3/4, -y-1/4, x-1/4'
+'-z-1/4, y-1/4, -x-3/4'
+'z-1/4, -y-3/4, -x-1/4'
+'z-3/4, y-3/4, x-3/4'
+'-x+1/2, -y+1/2, -z+1/2'
+'x, y+1/2, -z'
+'x+1/2, -y, z'
+'-x, y, z+1/2'
+'-z+1/2, -x+1/2, -y+1/2'
+'-z, x, y+1/2'
+'z, x+1/2, -y'
+'z+1/2, -x, y'
+'-y+1/2, -z+1/2, -x+1/2'
+'y+1/2, -z, x'
+'-y, z, x+1/2'
+'y, z+1/2, -x'
+'-y-1/4, -x+1/4, z+1/4'
+'y-1/4, x-1/4, z-1/4'
+'-y+1/4, x+1/4, -z-1/4'
+'y+1/4, -x-1/4, -z+1/4'
+'-x-1/4, -z+1/4, y+1/4'
+'x+1/4, -z-1/4, -y+1/4'
+'x-1/4, z-1/4, y-1/4'
+'-x+1/4, z+1/4, -y-1/4'
+'-z-1/4, -y+1/4, x+1/4'
+'-z+1/4, y+1/4, -x-1/4'
+'z+1/4, -y-1/4, -x+1/4'
+'z-1/4, y-1/4, x-1/4'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_occupancy
+_atom_site_type_symbol
+Ge 0 0.25 0.375 0.00571(16) Uani d S 1 Ge
+Fe 0 0 0 0.00611(19) Uani d S 1 Fe
+Ca 0 0.25 0.125 0.00804(18) Uani d S 1 Ca
+O -0.03415(14) 0.05099(14) 0.15172(14) 0.0076(3) Uani d . 1 O
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Ge 0.00602(18) 0.00602(18) 0.0051(2) 0 0 0
+Fe 0.00611(19) 0.00611(19) 0.00611(19) -0.00002(16) -0.00002(16) -0.00002(16)
+Ca 0.0090(2) 0.0090(2) 0.0060(4) 0.0012(3) 0 0
+O 0.0091(8) 0.0077(7) 0.0059(7) 0.0000(6) 0.0010(6) 0.0002(6)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ca Ca 0.2262 0.3064 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Fe Fe 0.3463 0.8444 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ge Ge 0.1547 1.8001 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+O Ge O 58_566 48_444 113.72(6) no
+O Ge O 58_566 21_455 113.72(6) no
+O Ge O 48_444 21_455 101.26(12) no
+O Ge O 58_566 83 101.26(12) no
+O Ge O 48_444 83 113.72(6) no
+O Ge O 21_455 83 113.72(6) no
+O Ge Ca 58_566 51_566 50.63(6) no
+O Ge Ca 48_444 51_566 129.37(6) no
+O Ge Ca 21_455 51_566 129.37(6) no
+O Ge Ca 83 51_566 50.63(6) no
+O Ge Ca 58_566 . 129.37(6) no
+O Ge Ca 48_444 . 50.63(6) no
+O Ge Ca 21_455 . 50.63(6) no
+O Ge Ca 83 . 129.37(6) no
+Ca Ge Ca 51_566 . 180.0 no
+O Fe O 5 9 88.26(7) no
+O Fe O 5 . 88.26(7) no
+O Fe O 9 . 88.26(7) no
+O Fe O 5 57 91.74(7) no
+O Fe O 9 57 180.00(4) no
+O Fe O . 57 91.74(7) no
+O Fe O 5 53 180.00(10) no
+O Fe O 9 53 91.74(7) no
+O Fe O . 53 91.74(7) no
+O Fe O 57 53 88.26(7) no
+O Fe O 5 49 91.74(7) no
+O Fe O 9 49 91.74(7) no
+O Fe O . 49 180.00(14) no
+O Fe O 57 49 88.26(7) no
+O Fe O 53 49 88.26(7) no
+O Fe Ca 5 9 42.62(5) no
+O Fe Ca 9 9 46.11(5) no
+O Fe Ca . 9 92.71(5) no
+O Fe Ca 57 9 133.89(5) no
+O Fe Ca 53 9 137.38(5) no
+O Fe Ca 49 9 87.29(5) no
+O Fe Ca 5 5 46.11(5) no
+O Fe Ca 9 5 92.71(5) no
+O Fe Ca . 5 42.62(5) no
+O Fe Ca 57 5 87.29(5) no
+O Fe Ca 53 5 133.89(5) no
+O Fe Ca 49 5 137.38(5) no
+Ca Fe Ca 9 5 66.4 no
+O Fe Ca 5 57 137.38(5) no
+O Fe Ca 9 57 133.89(5) no
+O Fe Ca . 57 87.29(5) no
+O Fe Ca 57 57 46.11(5) no
+O Fe Ca 53 57 42.62(5) no
+O Fe Ca 49 57 92.71(5) no
+Ca Fe Ca 9 57 180.0 no
+Ca Fe Ca 5 57 113.6 no
+O Fe Ca 5 . 92.71(5) no
+O Fe Ca 9 . 42.62(5) no
+O Fe Ca . . 46.11(5) no
+O Fe Ca 57 . 137.38(5) no
+O Fe Ca 53 . 87.29(5) no
+O Fe Ca 49 . 133.89(5) no
+Ca Fe Ca 9 . 66.4 no
+Ca Fe Ca 5 . 66.4 no
+Ca Fe Ca 57 . 113.6 no
+O Fe Ca 5 53 133.89(5) no
+O Fe Ca 9 53 87.29(5) no
+O Fe Ca . 53 137.38(5) no
+O Fe Ca 57 53 92.71(5) no
+O Fe Ca 53 53 46.11(5) no
+O Fe Ca 49 53 42.62(5) no
+Ca Fe Ca 9 53 113.6 no
+Ca Fe Ca 5 53 180.0 no
+Ca Fe Ca 57 53 66.4 no
+Ca Fe Ca . 53 113.6 no
+O Fe Ca 5 49 87.29(5) no
+O Fe Ca 9 49 137.38(5) no
+O Fe Ca . 49 133.89(5) no
+O Fe Ca 57 49 42.62(5) no
+O Fe Ca 53 49 92.71(5) no
+O Fe Ca 49 49 46.11(5) no
+Ca Fe Ca 9 49 113.6 no
+Ca Fe Ca 5 49 113.6 no
+Ca Fe Ca 57 49 66.4 no
+Ca Fe Ca . 49 180.0 no
+Ca Fe Ca 53 49 66.4 no
+O Ca O 48_444 9 114.03(9) no
+O Ca O 48_444 21_455 69.65(8) no
+O Ca O 9 21_455 160.13(8) no
+O Ca O 48_444 36_454 160.13(8) no
+O Ca O 9 36_454 69.65(8) no
+O Ca O 21_455 36_454 114.03(9) no
+O Ca O 48_444 38_444 69.91(8) no
+O Ca O 9 38_444 73.76(7) no
+O Ca O 21_455 38_444 123.98(4) no
+O Ca O 36_454 38_444 93.69(5) no
+O Ca O 48_444 26_454 93.69(5) no
+O Ca O 9 26_454 123.98(4) no
+O Ca O 21_455 26_454 73.76(7) no
+O Ca O 36_454 26_454 69.91(8) no
+O Ca O 38_444 26_454 71.91(8) no
+O Ca O 48_444 . 73.76(7) no
+O Ca O 9 . 69.91(8) no
+O Ca O 21_455 . 93.69(5) no
+O Ca O 36_454 . 123.98(4) no
+O Ca O 38_444 . 110.17(8) no
+O Ca O 26_454 . 164.93(8) no
+O Ca O 48_444 13_455 123.98(4) no
+O Ca O 9 13_455 93.69(5) no
+O Ca O 21_455 13_455 69.91(8) no
+O Ca O 36_454 13_455 73.76(7) no
+O Ca O 38_444 13_455 164.93(8) no
+O Ca O 26_454 13_455 110.17(8) no
+O Ca O . 13_455 71.91(8) no
+O Ca Ge 48_444 . 34.83(4) no
+O Ca Ge 9 . 145.17(4) no
+O Ca Ge 21_455 . 34.83(4) no
+O Ca Ge 36_454 . 145.17(4) no
+O Ca Ge 38_444 . 97.54(4) no
+O Ca Ge 26_454 . 82.46(4) no
+O Ca Ge . . 82.46(4) no
+O Ca Ge 13_455 . 97.54(4) no
+O Ca Ge 48_444 51_565 145.17(4) no
+O Ca Ge 9 51_565 34.83(4) no
+O Ca Ge 21_455 51_565 145.17(4) no
+O Ca Ge 36_454 51_565 34.83(4) no
+O Ca Ge 38_444 51_565 82.46(4) no
+O Ca Ge 26_454 51_565 97.54(4) no
+O Ca Ge . 51_565 97.54(4) no
+O Ca Ge 13_455 51_565 82.46(4) no
+Ge Ca Ge . 51_565 180.0 no
+O Ca Fe 48_444 38_444 34.86(4) no
+O Ca Fe 9 38_444 97.58(4) no
+O Ca Fe 21_455 38_444 94.95(4) no
+O Ca Fe 36_454 38_444 127.04(4) no
+O Ca Fe 38_444 38_444 35.39(4) no
+O Ca Fe 26_454 38_444 77.96(4) no
+O Ca Fe . 38_444 95.24(4) no
+O Ca Fe 13_455 38_444 158.84(4) no
+Ge Ca Fe . 38_444 63.4 no
+Ge Ca Fe 51_565 38_444 116.6 no
+O Ca Fe 48_444 . 97.58(4) no
+O Ca Fe 9 . 34.86(4) no
+O Ca Fe 21_455 . 127.04(4) no
+O Ca Fe 36_454 . 94.95(4) no
+O Ca Fe 38_444 . 95.24(4) no
+O Ca Fe 26_454 . 158.84(4) no
+O Ca Fe . . 35.39(4) no
+O Ca Fe 13_455 . 77.96(4) no
+Ge Ca Fe . . 116.6 no
+Ge Ca Fe 51_565 . 63.4 no
+Fe Ca Fe 38_444 . 101.5 no
+Ge O Fe 55_556 . 131.12(10) no
+Ge O Ca 55_556 5 94.54(7) no
+Fe O Ca . 5 102.52(7) no
+Ge O Ca 55_556 . 122.97(8) no
+Fe O Ca . . 98.50(7) no
+Ca O Ca 5 . 100.71(6) no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Ge O 58_566 1.765(2) n
+Ge O 48_444 1.765(2) n
+Ge O 21_455 1.765(2) n
+Ge O 83 1.765(2) n
+Ge Ca 51_566 3.080(2) no
+Ge Ca . 3.080(2) no
+Fe O 5 2.016(2) n
+Fe O 9 2.016(2) n
+Fe O . 2.016(2) n
+Fe O 57 2.016(2) n
+Fe O 53 2.016(2) n
+Fe O 49 2.016(2) n
+Fe Ca 9 3.444(3) no
+Fe Ca 5 3.444(3) no
+Fe Ca 57 3.444(3) no
+Fe Ca . 3.444(3) no
+Fe Ca 53 3.444(3) no
+Fe Ca 49 3.444(3) no
+Ca O 48_444 2.389(2) n
+Ca O 9 2.389(2) n
+Ca O 21_455 2.389(2) n
+Ca O 36_454 2.389(2) n
+Ca O 38_444 2.510(3) n
+Ca O 26_454 2.510(3) n
+Ca O . 2.510(3) n
+Ca O 13_455 2.510(3) n
+Ca Ge 51_565 3.080(2) no
+Ca Fe 38_444 3.444(3) no
+O Ge 55_556 1.765(2) no
+O Ca 5 2.389(2) no

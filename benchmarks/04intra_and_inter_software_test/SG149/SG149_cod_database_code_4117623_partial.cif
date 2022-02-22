@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Cs0.5Tc0.5Ag3Bi4.0H0.5Bh0.5C6N2.0
+_symmetry_space_group_name_H-M  'P 3 1 2'
+_cell_length_a   6.84310000
+_cell_length_b   6.84310000
+_cell_length_c   8.21370000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   149
+_chemical_formula_structural   Cs0.5Tc0.5Ag3Bi4.0H0.5Bh0.5C6N2.0
+_chemical_formula_sum   'Cs0.5 Tc0.5 Ag3 Bi4.0 H0.5 Bh0.5 C6 N2.0'
+_cell_volume   333.10046671
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  '-y, -x, -z'
+  5  '-x+y, y, -z'
+  6  'x, x-y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  H+  H0  1  0.33333333  0.66666667  0.00000000  0.5
+  Cs+  Cs1  1  0.33333333  0.66666667  0.00000000  0.5
+  Tc+  Tc2  1  0.00000000  0.00000000  0.00000000  0.5
+  Bh+  Bh3  1  0.00000000  0.00000000  0.00000000  0.5
+  Ag  Ag4  3  0.50462000  0.00924000  0.50000000  1.0
+  N+  N5  6  0.00300000  0.26020000  0.16540000  0.3333333333333333
+  Bi+  Bi6  6  0.00300000  0.26020000  0.16540000
+  0.6666666666666666
+  C  C7  6  0.34790000  0.00400000  0.28460000  1.0

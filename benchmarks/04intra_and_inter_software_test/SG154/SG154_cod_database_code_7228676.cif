@@ -1,0 +1,286 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-07-12 07:43:39 +0300 (Wed, 12 Jul 2017) $
+#$Revision: 198666 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/7/22/86/7228676.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7228676
+loop_
+_publ_author_name
+'Liu, Zhanning'
+'Liu, Chenxi'
+'Li, Qiang'
+'Chen, Jun'
+'Xing, Xianran'
+_publ_section_title
+;
+ Spring-like Motion Caused Large Anisotropic Thermal Expansion in
+ Nonporous M(eim)2 (M=Zn, Cd)
+;
+_journal_name_full               'Phys. Chem. Chem. Phys.'
+_journal_paper_doi               10.1039/C7CP03937A
+_journal_year                    2017
+_chemical_formula_sum            'C5 H7 Cd0.5 N2'
+_chemical_formula_weight         151.33
+_chemical_name_systematic
+; 
+ ? 
+;
+_space_group_IT_number           154
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'P 32 2"'
+_symmetry_space_group_name_H-M   'P 32 2 1'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_block_doi                 10.5517/ccdc.csd.cc1ny9hd
+_audit_creation_method           SHELXL-97
+_audit_update_record
+;
+2017-06-07 deposited with the CCDC.
+2017-07-11 downloaded from the CCDC.
+;
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            6
+_cell_length_a                   8.63350(10)
+_cell_length_b                   8.63350(10)
+_cell_length_c                   13.7402(2)
+_cell_measurement_reflns_used    3730
+_cell_measurement_temperature    150(2)
+_cell_measurement_theta_max      67.0982
+_cell_measurement_theta_min      3.2137
+_cell_volume                     886.947(19)
+_computing_cell_refinement       'Bruker FRAMBO'
+_computing_data_collection       'Bruker FRAMBO'
+_computing_data_reduction        'Bruker SAINT'
+_computing_molecular_graphics    'Bruker SHELXTL'
+_computing_publication_material  'Bruker SHELXTL'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      150(2)
+_diffrn_measured_fraction_theta_full 0.998
+_diffrn_measured_fraction_theta_max 0.998
+_diffrn_measurement_device_type  'multiwire proportional'
+_diffrn_measurement_method       'phi and omega scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           CuK\a
+_diffrn_radiation_wavelength     1.54178
+_diffrn_reflns_av_R_equivalents  0.0274
+_diffrn_reflns_av_sigmaI/netI    0.0174
+_diffrn_reflns_limit_h_max       10
+_diffrn_reflns_limit_h_min       -9
+_diffrn_reflns_limit_k_max       10
+_diffrn_reflns_limit_k_min       -8
+_diffrn_reflns_limit_l_max       16
+_diffrn_reflns_limit_l_min       -16
+_diffrn_reflns_number            4562
+_diffrn_reflns_theta_full        67.21
+_diffrn_reflns_theta_max         67.21
+_diffrn_reflns_theta_min         5.92
+_exptl_absorpt_coefficient_mu    14.578
+_exptl_absorpt_correction_T_max  1.00000
+_exptl_absorpt_correction_T_min  0.41680
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details
+;
+CrysAlisPro, Agilent Technologies,
+Version 1.171.35.11 (release 16-05-2011 CrysAlis171 .NET)
+(compiled May 16 2011,17:55:39)
+Empirical absorption correction using spherical harmonics,
+ implemented in SCALE3 ABSPACK scaling algorithm.
+;
+_exptl_crystal_colour            yellow
+_exptl_crystal_density_diffrn    1.685
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       block
+_exptl_crystal_F_000             450
+_exptl_crystal_size_max          0.4
+_exptl_crystal_size_mid          0.2
+_exptl_crystal_size_min          0.2
+_refine_diff_density_max         0.589
+_refine_diff_density_min         -1.665
+_refine_diff_density_rms         0.215
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   -0.003(15)
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.233
+_refine_ls_hydrogen_treatment    mixed
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     70
+_refine_ls_number_reflns         1071
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.233
+_refine_ls_R_factor_all          0.0279
+_refine_ls_R_factor_gt           0.0279
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0534P)^2^+0.5219P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0744
+_refine_ls_wR_factor_ref         0.0744
+_reflns_number_gt                1070
+_reflns_number_total             1071
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            c7cp03937a2.cif
+_cod_data_source_block           150k-1204
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_symmetry_cell_setting' value 'Trigonal' changed to 'trigonal'
+according to
+/home/data/users/saulius/crontab/automatic-downloads/rss-feeds/RSC/lib/dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 from 2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 4973 2017-02-22 13:04:09Z antanas 
+;
+_cod_original_cell_volume        886.946(19)
+_cod_original_sg_symbol_H-M      P3(2)21
+_cod_original_formula_sum        'C5 H7 Cd0.50 N2'
+_cod_database_code               7228676
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z+2/3'
+'-x+y, -x, z+1/3'
+'x-y, -y, -z+1/3'
+'-x, -x+y, -z+2/3'
+'y, x, -z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Cd1 Cd 0.53334(4) 0.0000 0.1667 0.00351(16) Uani 1 2 d SD
+N2 N 0.4232(5) 0.0891(5) 0.2835(2) 0.0095(7) Uani 1 1 d .
+C5 C 0.2454(6) 0.0304(6) 0.2993(3) 0.0129(9) Uani 1 1 d .
+H5 H 0.1510 -0.0526 0.2614 0.015 Uiso 1 1 calc R
+N1 N 0.7748(3) 0.1742(4) 0.0823(2) 0.0073(7) Uani 1 1 d D
+C4 C 0.8865(6) 0.1166(6) 0.0463(3) 0.0104(8) Uani 1 1 d .
+H4 H 0.9022 0.0260 0.0725 0.012 Uiso 1 1 calc R
+C1 C 0.5110(6) 0.2060(6) 0.3552(3) 0.0080(8) Uani 1 1 d .
+C2 C 0.7090(6) 0.2985(7) 0.3689(3) 0.0174(9) Uani 1 1 d .
+H2A H 0.7535 0.4250 0.3792 0.021 Uiso 1 1 calc R
+H2B H 0.7635 0.2862 0.3099 0.021 Uiso 1 1 calc R
+C3 C 0.7656(9) 0.2263(11) 0.4537(4) 0.0423(17) Uani 1 1 d .
+H3A H 0.7291 0.1031 0.4420 0.064 Uiso 1 1 calc R
+H3B H 0.7104 0.2359 0.5123 0.064 Uiso 1 1 calc R
+H3C H 0.8933 0.2942 0.4606 0.064 Uiso 1 1 calc R
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Cd1 0.00367(19) 0.0065(2) 0.0013(2) 0.00000(12) 0.00000(6) 0.00325(11)
+N2 0.0092(18) 0.0119(17) 0.0069(16) -0.0037(14) -0.0008(13) 0.0050(14)
+C5 0.0035(19) 0.015(2) 0.015(2) -0.0090(16) -0.0016(16) -0.0001(17)
+N1 0.0063(16) 0.0084(16) 0.0079(16) 0.0046(13) 0.0034(13) 0.0043(14)
+C4 0.013(2) 0.0100(19) 0.0135(19) 0.0056(16) 0.0041(16) 0.0101(18)
+C1 0.007(2) 0.010(2) 0.0069(18) 0.0021(16) 0.0010(15) 0.0046(18)
+C2 0.009(2) 0.020(2) 0.021(2) -0.0081(18) -0.0016(16) 0.006(2)
+C3 0.031(3) 0.088(5) 0.023(3) -0.010(3) -0.013(2) 0.041(4)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0181 0.0091 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Cd Cd 0.1185 4.6533 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N N 0.0311 0.0180 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+N2 Cd1 N2 104.91(18) . 4
+N2 Cd1 N1 99.44(12) . 4
+N2 Cd1 N1 125.19(14) 4 4
+N2 Cd1 N1 125.19(14) . .
+N2 Cd1 N1 99.44(12) 4 .
+N1 Cd1 N1 105.21(18) 4 .
+C1 N2 C5 105.6(3) . .
+C1 N2 Cd1 128.4(3) . .
+C5 N2 Cd1 126.0(3) . .
+C4 C5 N2 108.7(4) 3_665 .
+C1 N1 C4 105.4(3) 2_654 .
+C1 N1 Cd1 125.3(3) 2_654 .
+C4 N1 Cd1 122.6(3) . .
+C5 C4 N1 108.2(3) 2_654 .
+N2 C1 N1 112.1(3) . 3_665
+N2 C1 C2 124.1(4) . .
+N1 C1 C2 123.7(4) 3_665 .
+C1 C2 C3 113.3(4) . .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Cd1 N2 2.192(3) .
+Cd1 N2 2.192(3) 4
+Cd1 N1 2.1943(18) 4
+Cd1 N1 2.1943(18) .
+N2 C1 1.341(6) .
+N2 C5 1.372(6) .
+C5 C4 1.358(6) 3_665
+N1 C1 1.345(5) 2_654
+N1 C4 1.379(5) .
+C4 C5 1.358(6) 2_654
+C1 N1 1.345(5) 3_665
+C1 C2 1.493(6) .
+C2 C3 1.513(8) .
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_site_symmetry_1
+_geom_torsion_site_symmetry_4
+N2 Cd1 N2 C1 -155.9(4) 4 .
+N1 Cd1 N2 C1 73.6(4) 4 .
+N1 Cd1 N2 C1 -42.6(4) . .
+N2 Cd1 N2 C5 26.2(3) 4 .
+N1 Cd1 N2 C5 -104.3(4) 4 .
+N1 Cd1 N2 C5 139.4(3) . .
+C1 N2 C5 C4 0.3(5) . 3_665
+Cd1 N2 C5 C4 178.6(3) . 3_665
+N2 Cd1 N1 C1 -64.9(4) . 2_654
+N2 Cd1 N1 C1 50.9(3) 4 2_654
+N1 Cd1 N1 C1 -178.5(4) 4 2_654
+N2 Cd1 N1 C4 147.9(3) . .
+N2 Cd1 N1 C4 -96.2(3) 4 .
+N1 Cd1 N1 C4 34.4(3) 4 .
+C1 N1 C4 C5 0.4(5) 2_654 2_654
+Cd1 N1 C4 C5 153.0(3) . 2_654
+C5 N2 C1 N1 -0.1(5) . 3_665
+Cd1 N2 C1 N1 -178.3(3) . 3_665
+C5 N2 C1 C2 177.5(4) . .
+Cd1 N2 C1 C2 -0.8(6) . .
+N2 C1 C2 C3 -106.1(5) . .
+N1 C1 C2 C3 71.2(6) 3_665 .

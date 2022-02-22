@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Dy16Ni53(Sn8Pt)3
-_symmetry_space_group_name_H-M   Cmce
+_symmetry_space_group_name_H-M  'C m c a'
 _cell_length_a   8.59640000
 _cell_length_b   23.64150000
 _cell_length_c   7.53830000

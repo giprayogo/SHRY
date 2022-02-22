@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Hs0.66666667Sb4Os1.33333333
+_symmetry_space_group_name_H-M  'P n n m'
+_cell_length_a   5.83280000
+_cell_length_b   6.73560000
+_cell_length_c   3.19730000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   58
+_chemical_formula_structural   Hs0.66666667Sb4Os1.33333333
+_chemical_formula_sum   'Hs0.66666667 Sb4 Os1.33333333'
+_cell_volume   125.61362858
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-x+1/2, y+1/2, z+1/2'
+  7  '-x+1/2, y+1/2, -z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Hs+  Hs0  2  0.00000000  0.00000000  0.00000000
+  0.3333333333333333
+  Os+  Os1  2  0.00000000  0.00000000  0.00000000
+  0.6666666666666666
+  Sb  Sb2  4  0.18850000  0.35610000  0.00000000  1

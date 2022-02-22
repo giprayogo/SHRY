@@ -1,0 +1,107 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-06 19:24:22 +0300 (Fri, 06 Oct 2017) $
+#$Revision: 201816 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/9/01/50/9015064.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9015064
+loop_
+_publ_author_name
+'Fourquet, J. L.'
+'Plet, F.'
+'de Pape, R.'
+_publ_section_title
+;
+ RbAlF4: Structure of Its beta Metastable Form and Description of
+ the Mechanism of Its Irreversible and Topotactic Phase Transition
+ beta to alpha
+;
+_journal_issue                   9
+_journal_name_full               'Acta Crystallographica, Section B'
+_journal_page_first              1997
+_journal_page_last               2000
+_journal_paper_doi               10.1107/S0567740880007790
+_journal_volume                  36
+_journal_year                    1980
+_chemical_formula_sum            'Al5 F20 Rb5'
+_space_group_IT_number           120
+_symmetry_space_group_name_Hall  'I -4 -2c'
+_symmetry_space_group_name_H-M   'I -4 c 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   11.666
+_cell_length_b                   11.666
+_cell_length_c                   12.551
+_cell_volume                     1708.135
+_database_code_amcsd             0009714
+_exptl_crystal_density_diffrn    3.664
+_cod_duplicate_entry             1000175
+_cod_original_formula_sum        'Rb5 Al5 F20'
+_cod_database_code               9015064
+_amcsd_formula_title             RbAlF4
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,1/2+z
+y,x,1/2-z
+1/2+y,1/2+x,-z
+y,-x,-z
+1/2+y,1/2-x,1/2-z
+x,-y,1/2+z
+1/2+x,1/2-y,+z
+-x,-y,z
+1/2-x,1/2-y,1/2+z
+-y,-x,1/2-z
+1/2-y,1/2-x,-z
+-y,x,-z
+1/2-y,1/2+x,1/2-z
+-x,y,1/2+z
+1/2-x,1/2+y,+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Rb1 0.01580 0.01580 0.02410 0.00610 0.00000 0.00000
+Rb2 0.03200 0.01740 0.02260 -0.00590 0.01040 0.00270
+Al1 0.00630 0.00630 0.01060 -0.00130 0.00000 0.00000
+Al2 0.00590 0.00610 0.01160 0.00040 0.00450 0.00590
+F1 0.00820 0.01190 0.02850 -0.00220 0.00830 0.01100
+F2 0.01080 0.00750 0.03980 0.00250 -0.00660 0.00620
+F3 0.03510 0.01810 0.02330 -0.00190 0.00100 -0.00620
+F4 0.01980 0.01780 0.00240 -0.00410 -0.00140 0.00480
+F5 0.00990 0.00990 0.02810 0.00060 0.00190 -0.00190
+F6 0.00810 0.04010 0.00960 -0.01030 0.00000 0.00000
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Rb1 0.00000 0.00000 0.25000
+Rb2 0.34150 0.84040 0.68810
+Al1 0.50000 0.00000 0.00000
+Al2 0.79260 0.07630 0.00070
+F1 0.34450 0.00110 0.00150
+F2 0.14190 0.06670 0.00120
+F3 0.07770 0.20610 0.13850
+F4 -0.08010 -0.21110 -0.14000
+F5 0.21840 -0.28160 0.50000
+F6 0.00000 0.50000 0.13790
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0009714

@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Na2Cu4Te1.33333333S2.66666667O20
-_symmetry_space_group_name_H-M   C2/m
+_symmetry_space_group_name_H-M  'C 1 2/m 1'
 _cell_length_a   8.80900000
 _cell_length_b   6.18700000
 _cell_length_c   7.50900000

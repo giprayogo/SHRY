@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cs1.75K2.125H0.125C4O8
-_symmetry_space_group_name_H-M   Pbam
+_symmetry_space_group_name_H-M  'P b a m'
 _cell_length_a   11.28797000
 _cell_length_b   6.29475000
 _cell_length_c   3.62210200

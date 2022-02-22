@@ -1,0 +1,271 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-25 11:34:00 +0200 (Fri, 25 Mar 2016) $
+#$Revision: 179796 $
+#$URL: svn://www.crystallography.net/cod/cif/7/00/92/7009280.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7009280
+loop_
+_publ_author_name
+'Umbarkar, Shubhangi'
+'Sekar, Perumal'
+'Scheer, Manfred'
+_publ_section_title
+;
+ Chromium complexes with mixed Group 15 elements as ligands. Synthesis
+ and characterisation of the first cyclo-P2As ligand in
+ [CrCp(CO)2(\h3-P2As)]&#x200A;&#x2020;
+;
+_journal_issue                   7
+_journal_name_full
+'Journal of the Chemical Society, Dalton Transactions'
+_journal_page_first              1135
+_journal_paper_doi               10.1039/a909717a
+_journal_year                    2000
+_chemical_formula_sum            'C10 H10 Cl4 Cr2'
+_chemical_formula_weight         375.98
+_chemical_name_systematic
+;
+ ?
+;
+_space_group_IT_number           61
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  '-P 2ac 2ab'
+_symmetry_space_group_name_H-M   'P b c a'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   11.144(2)
+_cell_length_b                   9.852(2)
+_cell_length_c                   12.139(2)
+_cell_measurement_reflns_used    42
+_cell_measurement_temperature    203(2)
+_cell_measurement_theta_max      25
+_cell_measurement_theta_min      5
+_cell_volume                     1332.7(4)
+_computing_cell_refinement       'Stoe DIF4'
+_computing_data_collection       'Stoe DIF4'
+_computing_data_reduction        'Stoe REDU4'
+_computing_molecular_graphics    'SIEMENS XP'
+_computing_publication_material  SHELXL-93
+_computing_structure_refinement  'SHELXL-93 (Sheldrick, 1993)'
+_computing_structure_solution    'SHELXS-86 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      203(2)
+_diffrn_measurement_device       'STOE STADI4'
+_diffrn_measurement_method       omega-scans
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0388
+_diffrn_reflns_av_sigmaI/netI    0.0346
+_diffrn_reflns_limit_h_max       14
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       12
+_diffrn_reflns_limit_k_min       -12
+_diffrn_reflns_limit_l_max       15
+_diffrn_reflns_limit_l_min       0
+_diffrn_reflns_number            2892
+_diffrn_reflns_theta_max         27.53
+_diffrn_reflns_theta_min         3.23
+_diffrn_standards_interval_time  120
+_diffrn_standards_number         2
+_exptl_absorpt_coefficient_mu    2.399
+_exptl_absorpt_correction_T_max  0.4866
+_exptl_absorpt_correction_T_min  0.1702
+_exptl_absorpt_correction_type   'Psi-scans (10)'
+_exptl_crystal_colour            black
+_exptl_crystal_density_diffrn    1.874
+_exptl_crystal_description       route
+_exptl_crystal_F_000             744
+_exptl_crystal_size_max          0.76
+_exptl_crystal_size_mid          0.38
+_exptl_crystal_size_min          0.15
+_refine_diff_density_max         0.504
+_refine_diff_density_min         -0.570
+_refine_diff_density_rms         0.096
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_all   1.124
+_refine_ls_goodness_of_fit_obs   1.117
+_refine_ls_hydrogen_treatment    riding
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     73
+_refine_ls_number_reflns         1530
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.141
+_refine_ls_restrained_S_obs      1.117
+_refine_ls_R_factor_all          0.0375
+_refine_ls_R_factor_obs          0.0299
+_refine_ls_shift/esd_max         -0.001
+_refine_ls_shift/esd_mean        0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'w=1/[\s^2^(Fo^2^)+(0.0397P)^2^+0.4047P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_all         0.0842
+_refine_ls_wR_factor_obs         0.0765
+_reflns_number_observed          1327
+_reflns_number_total             1532
+_reflns_observed_criterion       >2sigma(I)
+_cod_data_source_file            a909717a.txt
+_cod_data_source_block           2
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_refine_ls_weighting_scheme' value 'calc
+w=1/[\s^2^(Fo^2^)+(0.0397P)^2^+0.4047P] where P=(Fo^2^+2Fc^2^)/3' was
+changed to 'calc'. New tag '_refine_ls_weighting_details' was
+created. The value of the new tag was set to
+'w=1/[\s^2^(Fo^2^)+(0.0397P)^2^+0.4047P] where P=(Fo^2^+2Fc^2^)/3'.
+
+Automatic conversion script
+Id: cif_fix_values 3143 2015-03-26 13:38:13Z robertas 
+;
+_cod_original_cell_volume        1332.7(5)
+_cod_original_sg_symbol_H-M      Pbca
+_cod_database_code               7009280
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y, z+1/2'
+'-x, y+1/2, -z+1/2'
+'x+1/2, -y+1/2, -z'
+'-x, -y, -z'
+'x-1/2, y, -z-1/2'
+'x, -y-1/2, z-1/2'
+'-x-1/2, y-1/2, z'
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Cr 0.0233(2) 0.0135(2) 0.0245(2) -0.00022(13) -0.00097(12) -0.00181(12)
+Cl1 0.0317(3) 0.0226(3) 0.0333(3) -0.0052(2) -0.0123(2) 0.0047(2)
+Cl2 0.0335(3) 0.0417(4) 0.0333(3) 0.0093(3) 0.0026(2) -0.0080(3)
+C1 0.109(3) 0.0180(14) 0.050(2) 0.0130(13) -0.031(2) -0.015(2)
+C2 0.040(2) 0.0134(13) 0.125(4) 0.001(2) 0.019(2) 0.0047(10)
+C3 0.130(3) 0.023(2) 0.037(2) -0.0108(13) 0.008(2) -0.030(2)
+C4 0.045(2) 0.029(2) 0.110(3) 0.008(2) -0.029(2) -0.0176(14)
+C5 0.074(2) 0.026(2) 0.083(3) 0.004(2) 0.047(2) -0.0106(15)
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_thermal_displace_type
+_atom_site_occupancy
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_group
+Cr Cr 0.96499(3) 0.14792(4) 0.55945(3) 0.02046(13) Uani 1 d . .
+Cl1 Cl 0.88598(5) 0.02043(6) 0.41048(5) 0.0292(2) Uani 1 d . .
+Cl2 Cl 0.83122(5) 0.07250(7) 0.68747(5) 0.0362(2) Uani 1 d . .
+C1 C 0.9590(4) 0.3347(3) 0.4584(3) 0.0593(11) Uani 1 d . .
+H1 H 0.9206(4) 0.3392(3) 0.3896(3) 0.071 Uiso 1 calc R .
+C2 C 0.9075(3) 0.3614(3) 0.5589(4) 0.0595(12) Uani 1 d . .
+H2 H 0.8270(3) 0.3856(3) 0.5711(4) 0.071 Uiso 1 calc R .
+C3 C 0.9945(5) 0.3464(3) 0.6389(3) 0.0631(11) Uani 1 d . .
+H3 H 0.9841(5) 0.3595(3) 0.7150(3) 0.076 Uiso 1 calc R .
+C4 C 1.0995(3) 0.3087(3) 0.5871(4) 0.0614(11) Uani 1 d . .
+H4 H 1.1734(3) 0.2919(3) 0.6218(4) 0.074 Uiso 1 calc R .
+C5 C 1.0777(4) 0.3002(3) 0.4768(4) 0.0610(11) Uani 1 d . .
+H5 H 1.1336(4) 0.2751(3) 0.4226(4) 0.073 Uiso 1 calc R .
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Cl Cl 0.1484 0.1585 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Cr Cr 0.3209 0.6236 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+C2 Cr C5 60.82(13) . . ?
+C2 Cr C3 36.5(2) . . ?
+C5 Cr C3 60.62(14) . . ?
+C2 Cr C4 60.76(13) . . ?
+C5 Cr C4 36.0(2) . . ?
+C3 Cr C4 36.4(2) . . ?
+C2 Cr C1 36.29(14) . . ?
+C5 Cr C1 36.6(2) . . ?
+C3 Cr C1 60.63(13) . . ?
+C4 Cr C1 60.49(13) . . ?
+C2 Cr Cl2 97.08(10) . . ?
+C5 Cr Cl2 155.18(10) . . ?
+C3 Cr Cl2 95.07(10) . . ?
+C4 Cr Cl2 125.11(13) . . ?
+C1 Cr Cl2 129.03(13) . . ?
+C2 Cr Cl1 113.35(12) . . ?
+C5 Cr Cl1 103.04(12) . . ?
+C3 Cr Cl1 149.18(11) . . ?
+C4 Cr Cl1 138.45(13) . . ?
+C1 Cr Cl1 90.38(9) . . ?
+Cl2 Cr Cl1 96.00(3) . . ?
+C2 Cr Cl1 150.70(10) . 5_756 ?
+C5 Cr Cl1 98.46(11) . 5_756 ?
+C3 Cr Cl1 116.59(13) . 5_756 ?
+C4 Cr Cl1 90.17(10) . 5_756 ?
+C1 Cr Cl1 133.40(12) . 5_756 ?
+Cl2 Cr Cl1 97.18(3) . 5_756 ?
+Cl1 Cr Cl1 90.40(2) . 5_756 ?
+Cr Cl1 Cr 89.60(2) . 5_756 ?
+C2 C1 C5 107.6(3) . . ?
+C2 C1 Cr 71.3(2) . . ?
+C5 C1 Cr 71.2(2) . . ?
+C1 C2 C3 108.1(3) . . ?
+C1 C2 Cr 72.4(2) . . ?
+C3 C2 Cr 72.0(2) . . ?
+C4 C3 C2 107.7(3) . . ?
+C4 C3 Cr 71.8(2) . . ?
+C2 C3 Cr 71.5(2) . . ?
+C5 C4 C3 108.3(3) . . ?
+C5 C4 Cr 71.6(2) . . ?
+C3 C4 Cr 71.7(2) . . ?
+C4 C5 C1 108.3(3) . . ?
+C4 C5 Cr 72.3(2) . . ?
+C1 C5 Cr 72.3(2) . . ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Cr C2 2.198(3) . ?
+Cr C5 2.199(3) . ?
+Cr C3 2.205(3) . ?
+Cr C4 2.207(3) . ?
+Cr C1 2.213(3) . ?
+Cr Cl2 2.2781(7) . ?
+Cr Cl1 2.3713(7) . ?
+Cr Cl1 2.3754(7) 5_756 ?
+Cl1 Cr 2.3753(7) 5_756 ?
+C1 C2 1.374(5) . ?
+C1 C5 1.384(6) . ?
+C2 C3 1.380(6) . ?
+C3 C4 1.380(6) . ?
+C4 C5 1.363(6) . ?

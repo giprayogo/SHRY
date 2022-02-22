@@ -1,0 +1,76 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-10-28 01:16:15 +0300 (Fri, 28 Oct 2016) $
+#$Revision: 187632 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/54/43/1544381.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1544381
+loop_
+_publ_author_name
+'Kirik, S.D.'
+'Zaitseva, J.N.'
+_publ_section_title
+;
+ NaAlF4: preparation, crystal structure and thermal stability
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              431
+_journal_page_last               436
+_journal_volume                  183
+_journal_year                    2010
+_chemical_formula_sum            'Al F4 Na'
+_chemical_name_common            NaAlF4
+_space_group_IT_number           63
+_space_group_name_H-M_alt        'C m c m'
+_symmetry_space_group_name_Hall  '-C 2c 2'
+_symmetry_space_group_name_H-M   'C m c m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   3.6124(1)
+_cell_length_b                   14.9469(7)
+_cell_length_c                   5.2617(3)
+_cell_volume                     284.10(2)
+_cod_data_source_file            NaAlF4.cif
+_cod_data_source_block           NaAlF4
+_cod_original_formula_sum        'Na Al F4'
+_cod_database_code               1544381
+loop_
+_space_group_symop_operation_xyz
+'x, y, z'
+'-x, -y, -z'
+'-x, -y, z+1/2'
+'x, y, -z+1/2'
+'-x, y, -z+1/2'
+'x, -y, z+1/2'
+'x, -y, -z'
+'-x, y, z'
+'x+1/2, y+1/2, z'
+'-x+1/2, -y+1/2, -z'
+'-x+1/2, -y+1/2, z+1/2'
+'x+1/2, y+1/2, -z+1/2'
+'-x+1/2, y+1/2, -z+1/2'
+'x+1/2, -y+1/2, z+1/2'
+'x+1/2, -y+1/2, -z'
+'-x+1/2, y+1/2, z'
+loop_
+_atom_site_label
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+Al 1.0 0.500000 0.0836(2) 0.250000 Uiso 0.020000 Al
+Na 1.0 0.000000 0.1917(2) 0.750000 Uiso 0.021000 Na
+F1 1.0 0.500000 0.16910(10) 0.0115(5) Uiso 0.028000 F
+F2 1.0 0.000000 0.0820(4) 0.250000 Uiso 0.025000 F
+F3 1.0 0.500000 0.000000 0.000000 Uiso 0.030000 F

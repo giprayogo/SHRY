@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_Cs2Cr2H16N4Lv3Po2Te3O8
+_symmetry_space_group_name_H-M  'I -4 2 m'
+_cell_length_a   7.03860000
+_cell_length_b   7.03860000
+_cell_length_c   8.17480000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   121
+_chemical_formula_structural   Cs2Cr2H16N4Lv3Po2Te3O8
+_chemical_formula_sum   'Cs2 Cr2 H16 N4 Lv3 Po2 Te3 O8'
+_cell_volume   404.99504205
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y, -z'
+  6  'y, x, z'
+  7  '-x, y, -z'
+  8  '-y, -x, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  'y+1/2, -x+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  'x+1/2, -y+1/2, -z+1/2'
+  14  'y+1/2, x+1/2, z+1/2'
+  15  '-x+1/2, y+1/2, -z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  2  0.00000000  0.00000000  0.00000000  1.0
+  Cr  Cr1  2  0.00000000  0.00000000  0.50000000  1.0
+  H  H2  16  0.02500000  0.40800000  0.69100000  1.0
+  N  N3  4  0.00000000  0.50000000  0.25000000  1.0
+  Lv+  Lv4  8  0.13420000  0.13420000  0.33540000  0.375
+  Po+  Po5  8  0.13420000  0.13420000  0.33540000  0.25
+  Te+  Te6  8  0.13420000  0.13420000  0.33540000  0.375
+  O  O7  8  0.19397000  0.19397000  0.49650000  1.0

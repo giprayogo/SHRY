@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Tm2Cu2PoB10Te3O16
+_symmetry_space_group_name_H-M  'I b a 2'
+_cell_length_a   6.22000000
+_cell_length_b   8.44700000
+_cell_length_c   12.66000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   45
+_chemical_formula_structural   Tm2Cu2PoB10Te3O16
+_chemical_formula_sum   'Tm4 Cu4 Po2 B20 Te6 O32'
+_cell_volume   665.16070440
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x+1/2, y+1/2, z'
+  4  'x+1/2, -y+1/2, z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  '-x, y, z+1/2'
+  8  'x, -y, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Tm0+  0.0
+  Cu0+  0.0
+  Po0+  0.0
+  B0+  0.0
+  Te0+  0.0
+  O0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tm0+  Tm0  4  0.00000000  0.50000000  0.18797000  1.0
+  Cu0+  Cu1  4  0.00000000  0.50000000  0.43990000  1.0
+  B0+  B2  8  0.11590000  0.18990000  0.03970000  1.0
+  B0+  B3  8  0.11770000  0.19310000  0.84190000  1.0
+  B0+  B4  4  0.00000000  0.00000000  0.19310000  1.0
+  Po0+  Po5  8  0.06890000  0.34520000  0.05250000  0.25
+  Te0+  Te6  8  0.06890000  0.34520000  0.05250000  0.75
+  O0+  O7  8  0.05330000  0.34180000  0.83140000  1.0
+  O0+  O8  8  0.14590000  0.10000000  0.12810000  1.0
+  O0+  O9  8  0.15100000  0.12380000  0.94080000  1.0
+  O0+  O10  8  0.15300000  0.08970000  0.75570000  1.0

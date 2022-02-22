@@ -1,0 +1,172 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/4/51/30/4513059.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4513059
+loop_
+_publ_author_name
+'Timokhin, Ivan'
+'Pettinari, Claudio'
+'Marchetti, Fabio'
+'Pettinari, Riccardo'
+'Condello, Francesca'
+'Galli, Simona'
+'Alegria, Elisabete C. B. A.'
+'Martins, Lu\'isa M. D. R. S.'
+'Pombeiro, Armando J. L.'
+_publ_section_title
+;
+ Novel Coordination Polymers with (Pyrazolato)-Based Tectons: Catalytic
+ Activity in the Peroxidative Oxidation of Alcohols and Cyclohexane
+;
+_journal_issue                   5
+_journal_name_full               'Crystal Growth &amp; Design'
+_journal_page_first              2303
+_journal_paper_doi               10.1021/acs.cgd.5b00083
+_journal_volume                  15
+_journal_year                    2015
+_chemical_formula_moiety         'C11 H14 Cd1 N4'
+_chemical_formula_structural     'Cd1 (C11 H14 N4)'
+_chemical_formula_sum            'C11 H14 Cd N4'
+_chemical_formula_weight         314.67
+_chemical_name_systematic
+;
+catena-(bis(3,5-dimethyl-4-pyrazolato)methane)-cd(ii)
+;
+_space_group_crystal_system      orthorhombic
+_space_group_IT_number           54
+_space_group_name_H-M_alt        'P c c a'
+_symmetry_space_group_name_Hall  '-P 2a 2ac'
+_symmetry_space_group_name_H-M   'P c c a'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   16.98325(54)
+_cell_length_b                   8.46710(24)
+_cell_length_c                   7.93214(20)
+_cell_measurement_temperature    298
+_cell_volume                     1140.63(6)
+_computing_cell_refinement       TOPAS-R
+_computing_data_collection       'Bruker XRD Commander'
+_computing_structure_refinement  TOPAS-R
+_computing_structure_solution    TOPAS-R
+_diffrn_ambient_temperature      298
+_diffrn_detector_type            'Bruker Lynxeye linear PSD'
+_diffrn_measurement_device_type  'Bruker AXS D8 Advance'
+_diffrn_radiation_monochromator  'Nickel filter'
+_diffrn_radiation_wavelength     'CuK\a~1~ 1.54056 CuK\a~2~ 1.54439'
+_diffrn_source_target            Cu
+_diffrn_source_type              'sealed X-ray tube'
+_exptl_crystal_density_diffrn    1.83
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_F_000             624
+_pd_char_colour                  white
+_pd_instr_location               ' ?'
+_pd_meas_2theta_range_inc        0.02
+_pd_meas_2theta_range_max        105
+_pd_meas_2theta_range_min        5
+_pd_meas_number_of_points        5001
+_pd_meas_scan_method             step
+_pd_proc_2theta_range_inc        0.02
+_pd_proc_2theta_range_max        105
+_pd_proc_2theta_range_min        9.5
+_pd_proc_ls_background_function  'Chebychev polynomial'
+_pd_proc_ls_profile_function     'fundamental parameters approach'
+_pd_proc_ls_prof_R_factor        0.072
+_pd_proc_ls_prof_wR_expected     0.026
+_pd_proc_ls_prof_wR_factor       0.098
+_pd_spec_mounting
+;
+ packed powder pellet
+;
+_pd_spec_mount_mode              reflection
+_pd_spec_shape                   flat_sheet
+_pd_spec_size_axial              15
+_pd_spec_size_equat              15
+_pd_spec_size_thick              0.1
+_refine_ls_extinction_method     none
+_refine_ls_hydrogen_treatment    fixed
+_refine_ls_matrix_type           fullcycle
+_refine_ls_number_parameters     35
+_refine_ls_number_restraints     0
+_refine_ls_shift/su_max          .01
+_refine_ls_structure_factor_coef Inet
+_refine_ls_weighting_details     'w = 1/[Y~i~]'
+_refine_ls_weighting_scheme      calc
+_cod_data_source_file            cg5b00083_si_002.cif
+_cod_data_source_block
+;
+;
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_refine_ls_weighting_scheme' value '1/[Y~i~]' was changed to 'calc'.
+New tag '_refine_ls_weighting_details' was created. The value of the
+new tag was set to 'w = 1/[Y~i~]'.
+
+Automatic conversion script
+Id: cif_fix_values 3271 2015-04-21 07:52:19Z andrius 
+;
+_cod_original_cell_volume        1140.633(57)
+_cod_original_formula_sum        'C11 H14 Cd1 N4'
+_cod_database_code               4513059
+loop_
+_symmetry_equiv_pos_as_xyz
+'-x, -y, -z'
+'-x, y, -z+1/2'
+'-x+1/2, -y, z'
+'-x+1/2, y, z+1/2'
+'x, -y, z+1/2'
+'x, y, z'
+'x+1/2, -y, -z+1/2'
+'x+1/2, y, -z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_B_iso_or_equiv
+Cd Cd 4 0.25 0 -0.03316(28) 1 0.985(62)
+C1 C 4 0.5 -0.3389033 -0.25 1 2.985(62)
+C2 C 8 0.5770397 -0.2536566 -0.2334921 1 2.985(62)
+C3 C 8 0.6347075 -0.2469477 -0.3522368 1 2.985(62)
+N1 N 8 0.6947932 -0.1586501 -0.2892854 1 2.985(62)
+N2 N 8 0.6742604 -0.1107882 -0.1316347 1 2.985(62)
+C4 C 8 0.6014847 -0.1695054 -0.09715255 1 2.985(62)
+C5 C 8 0.55614 -0.1456428 0.06311545 1 2.985(62)
+H51 H 8 0.556926 -0.2553543 0.1373676 1 2.985(62)
+H52 H 8 0.5832886 -0.04994 0.1367109 1 2.985(62)
+H53 H 8 0.4949055 -0.1141101 0.03296461 1 2.985(62)
+H1 H 8 0.4843469 -0.392788 -0.1283468 1 2.985(62)
+C6 C 8 0.6405213 -0.3561711 -0.503351 1 2.985(62)
+H61 H 8 0.7014714 -0.3627447 -0.5497412 1 2.985(62)
+H62 H 8 0.6185559 -0.4761115 -0.4782944 1 2.985(62)
+H63 H 8 0.6032215 -0.2994195 -0.5991814 1 2.985(62)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_source
+C C 'International Tables for Crystallography (Vol. IV)'
+H H 'International Tables for Crystallography (Vol. IV)'
+Cd Cd 'International Tables for Crystallography (Vol. IV)'
+N N 'International Tables for Crystallography (Vol. IV)'
+loop_
+_diffrn_radiation_type
+'Cu K\a'
+loop_
+_pd_proc_wavelength
+1.540562
+1.544390

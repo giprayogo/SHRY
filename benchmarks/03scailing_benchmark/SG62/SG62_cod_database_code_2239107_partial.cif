@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Li8Mn4P14.33333333Mc0.83333333Bi0.66666667As0.16666667O48
-_symmetry_space_group_name_H-M   Pnma
+_symmetry_space_group_name_H-M  'P n m a'
 _cell_length_a   9.42950000
 _cell_length_b   9.27550000
 _cell_length_c   10.09720000

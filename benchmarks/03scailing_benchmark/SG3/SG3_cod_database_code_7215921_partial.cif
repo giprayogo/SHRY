@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Si0.66666667Sn1Bi1As0.33333333Pb0.66666667C37.33333333Fl0.33333333S4N10.33
-_symmetry_space_group_name_H-M   P2
+_symmetry_space_group_name_H-M  'P 1 2 1'
 _cell_length_a   12.89360000
 _cell_length_b   6.68210000
 _cell_length_c   17.17630000

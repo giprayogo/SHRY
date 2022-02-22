@@ -1,0 +1,79 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/34/1523435.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1523435
+loop_
+_publ_author_name
+'Daams, J.L.C.'
+'van Vucht, J.H.N.'
+_publ_section_title
+;
+ Contribution to the system Mg-Au-Hg
+;
+_journal_name_full               'Philips Journal of Research'
+_journal_page_first              275
+_journal_page_last               292
+_journal_volume                  39
+_journal_year                    1984
+_chemical_formula_sum            'Hg Mg3'
+_space_group_IT_number           155
+_symmetry_space_group_name_Hall  'R 3 2"'
+_symmetry_space_group_name_H-M   'R 3 2 :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            18
+_cell_length_a                   8.351
+_cell_length_b                   8.351
+_cell_length_c                   25.845
+_cell_volume                     1560.933
+_citation_journal_id_ASTM        PHJRD9
+_cod_data_source_file            Daams_PHJRD9_1984_635.cif
+_cod_data_source_block           Hg1Mg3
+_cod_original_cell_volume        1560.932
+_cod_original_formula_sum        'Hg1 Mg3'
+_cod_database_code               1523435
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+y,x,-z
+-x,-x+y,-z
+x-y,-y,-z
+x+2/3,y+1/3,z+1/3
+-y+2/3,x-y+1/3,z+1/3
+-x+y+2/3,-x+1/3,z+1/3
+y+2/3,x+1/3,-z+1/3
+-x+2/3,-x+y+1/3,-z+1/3
+x-y+2/3,-y+1/3,-z+1/3
+x+1/3,y+2/3,z+2/3
+-y+1/3,x-y+2/3,z+2/3
+-x+y+1/3,-x+2/3,z+2/3
+y+1/3,x+2/3,-z+2/3
+-x+1/3,-x+y+2/3,-z+2/3
+x-y+1/3,-y+2/3,-z+2/3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Mg5 Mg 0.333 0.333 0.111 1 0.0
+Mg1 Mg 0 0 0.861 1 0.0
+Hg1 Hg 0.667 0 0 1 0.0
+Hg2 Hg 0.333 0 0.5 1 0.0
+Mg3 Mg 0 0 0.695 1 0.0
+Mg4 Mg 0.667 0.667 0.055 1 0.0
+Mg2 Mg 0 0 0.417 1 0.0

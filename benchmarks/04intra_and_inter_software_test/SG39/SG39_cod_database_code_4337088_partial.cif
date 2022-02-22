@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Y1Lr3Ta0.5Nb2.5V0.5Db0.5Se8O32
+_symmetry_space_group_name_H-M  'A b m 2'
+_cell_length_a   10.40360000
+_cell_length_b   7.59040000
+_cell_length_c   7.83410000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   39
+_chemical_formula_structural   Y1Lr3Ta0.5Nb2.5V0.5Db0.5Se8O32
+_chemical_formula_sum   'Y1 Lr3 Ta0.5 Nb2.5 V0.5 Db0.5 Se8 O32'
+_cell_volume   618.63917769
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y+1/2, z'
+  4  'x, -y+1/2, z'
+  5  'x, y+1/2, z+1/2'
+  6  '-x, -y+1/2, z+1/2'
+  7  '-x, y, z+1/2'
+  8  'x, -y, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Lr+  Lr0  4  0.50000000  0.00000000  0.34180000  0.75
+  Y+  Y1  4  0.50000000  0.00000000  0.34180000  0.25
+  Nb+  Nb2  4  0.00000000  0.00000000  0.35660000  0.625
+  Ta+  Ta3  4  0.00000000  0.00000000  0.35660000  0.125
+  V+  V4  4  0.00000000  0.00000000  0.35660000  0.125
+  Db+  Db5  4  0.00000000  0.00000000  0.35660000  0.125
+  Se  Se6  4  0.22449000  0.25000000  0.19640000  1.0
+  Se  Se7  4  0.29861000  0.25000000  0.65590000  1.0
+  O  O8  8  0.17450000  0.07180000  0.31520000  1.0
+  O  O9  8  0.38870000  0.07610000  0.58850000  1.0
+  O  O10  4  0.00000000  0.00000000  0.06280000  1.0
+  O  O11  4  0.04640000  0.25000000  0.82710000  1.0
+  O  O12  4  0.36480000  0.25000000  0.85760000  1.0
+  O  O13  4  0.37930000  0.25000000  0.26190000  1.0

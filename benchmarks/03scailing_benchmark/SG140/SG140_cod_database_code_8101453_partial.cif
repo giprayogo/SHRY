@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Ra0.5Sr4Mg2Be13.5Si12
-_symmetry_space_group_name_H-M   I4/mcm
+_symmetry_space_group_name_H-M  'I 4/m c m'
 _cell_length_a   8.08900000
 _cell_length_b   8.08900000
 _cell_length_c   15.73300000

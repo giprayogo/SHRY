@@ -1,0 +1,273 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-10-05 15:19:55 +0300 (Fri, 05 Oct 2018) $
+#$Revision: 211332 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/4/11/76/4117623.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4117623
+loop_
+_publ_author_name
+'Andrew B. Cairns'
+'Amber L. Thompson'
+'Matthew G. Tucker'
+'Julien Haines'
+'Andrew L. Goodwin'
+_publ_contact_author             'Andrew L. Goodwin'
+_publ_contact_author_email       andrew.goodwin@chem.ox.ac.uk
+_publ_section_title
+;
+ Rational Design of Materials with Extreme Negative Compressibility:
+ Selective Soft-Mode Frustration in KMn[Ag(CN)2]3
+;
+_journal_name_full               'Journal of the American Chemical Society'
+_journal_page_first              4454
+_journal_page_last               4456
+_journal_paper_doi               10.1021/ja204908m
+_journal_volume                  134
+_journal_year                    2012
+_chemical_absolute_configuration ad
+_chemical_formula_moiety         'C6 Ag3 K1 Mn1 N6'
+_chemical_formula_sum            'C6 Ag3 K Mn N6'
+_chemical_formula_weight         573.74
+_chemical_name_systematic        'Potassium Manganese Dicyanoargentate'
+_space_group_IT_number           149
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'P 3 2'
+_symmetry_space_group_name_H-M   'P 3 1 2'
+_atom_sites_solution_hydrogens   none
+_atom_sites_solution_primary     direct
+_audit_creation_date             11-05-27
+_audit_creation_method           CRYSTALS_ver_14.11
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   6.8431(2)
+_cell_length_b                   6.8431(2)
+_cell_length_c                   8.2137(4)
+_cell_measurement_reflns_used    498
+_cell_measurement_temperature    150
+_cell_measurement_theta_max      27
+_cell_measurement_theta_min      5
+_cell_volume                     333.10(2)
+_computing_cell_refinement       'DENZO/SCALEPACK (Otwinowski & Minor, 1997)'
+_computing_data_collection       'COLLECT (Nonius, 2001).'
+_computing_data_reduction        'DENZO/SCALEPACK (Otwinowski & Minor, 1997)'
+_computing_molecular_graphics    'CAMERON (Watkin et al., 1996)'
+_computing_publication_material  'CRYSTALS (Betteridge et al., 2003)'
+_computing_structure_refinement  'CRYSTALS (Betteridge et al., 2003)'
+_computing_structure_solution    'ATOMIC COORDINATES FROM 100K SOLUTION'
+_diffrn_ambient_temperature      150
+_diffrn_measured_fraction_theta_full 0.987
+_diffrn_measured_fraction_theta_max 0.987
+_diffrn_measurement_device       Area
+_diffrn_measurement_device_type  'Nonius KappaCCD'
+_diffrn_measurement_method       \w
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_type           'Mo K\a'
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.017
+_diffrn_reflns_limit_h_max       8
+_diffrn_reflns_limit_h_min       -8
+_diffrn_reflns_limit_k_max       7
+_diffrn_reflns_limit_k_min       -7
+_diffrn_reflns_limit_l_max       10
+_diffrn_reflns_limit_l_min       -8
+_diffrn_reflns_number            3078
+_diffrn_reflns_theta_full        27.446
+_diffrn_reflns_theta_max         27.446
+_diffrn_reflns_theta_min         5.962
+_diffrn_standards_number         0
+_exptl_absorpt_coefficient_mu    5.565
+_exptl_absorpt_correction_T_max  0.57
+_exptl_absorpt_correction_T_min  0.49
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details   'DENZO/SCALEPACK (Otwinowski & Minor, 1997)'
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    2.860
+_exptl_crystal_description       block
+_exptl_crystal_F_000             263
+_exptl_crystal_size_max          0.180
+_exptl_crystal_size_mid          0.170
+_exptl_crystal_size_min          0.100
+_refine_diff_density_max         1.38
+_refine_diff_density_min         -0.66
+_refine_ls_abs_structure_details 'Flack (1983), 0 Friedel-pairs'
+_refine_ls_abs_structure_Flack   -0.05(10)
+_refine_ls_extinction_coef       115(6)
+_refine_ls_extinction_method     'Larson (1970), Equation 22'
+_refine_ls_goodness_of_fit_ref   0.9461
+_refine_ls_hydrogen_treatment    none
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     30
+_refine_ls_number_reflns         515
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          0.0239
+_refine_ls_R_factor_gt           0.0237
+_refine_ls_shift/su_max          0.0001963
+_refine_ls_shift/su_mean         0.0000124
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+;
+ Method, part 1, Chebychev polynomial, (Watkin, 1994, Prince, 1982) 
+ [weight] = 1.0/[A~0~*T~0~(x)+A~1~*T~1~(x) ... +A~n-1~]*T~n-1~(x)] 
+ where A~i~ are the Chebychev coefficients listed below and x= Fcalc/Fmax 
+ Method = Robust Weighting (Prince, 1982) 
+ W = [weight] * [1-(deltaF/6*sigmaF)^2^]^2^ 
+ A~i~ are: 
+ 29.4 48.6 32.0 16.0 5.75 
+;
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_all         0.0598
+_refine_ls_wR_factor_gt          0.0570
+_refine_ls_wR_factor_ref         0.0598
+_reflns_limit_h_max              8
+_reflns_limit_h_min              0
+_reflns_limit_k_max              4
+_reflns_limit_k_min              -8
+_reflns_limit_l_max              0
+_reflns_limit_l_min              -10
+_reflns_number_gt                506
+_reflns_number_total             517
+_reflns_threshold_expression     I>2.0\s(I)
+_oxford_diffrn_Wilson_B_factor   1.34
+_oxford_diffrn_Wilson_scale      3.61
+_oxford_refine_ls_r_factor_ref   0.0239
+_oxford_refine_ls_scale          0.656(4)
+_oxford_reflns_number_all        515
+_oxford_reflns_threshold_expression_ref I>-3.0\s(I)
+_oxford_structure_analysis_title 007abc11-150K
+_cod_data_source_file            ja204908m_si_001_4.cif
+_cod_data_source_block           150K
+_cod_original_sg_symbol_H-M      'P 3 1 2 '
+_cod_original_formula_sum        'C6 Ag3 K1 Mn1 N6'
+_cod_database_code               4117623
+_iucr_refine_instruction_details_constraints
+;
+BLOCK SCALE X'S, U'S 
+CONT EXTPARAM 
+CONT ENANTIO 
+END                                                                             
+;
+_iucr_refine_instruction_details_restraints
+;
+NO 
+REM   HREST   START (DO NOT REMOVE THIS LINE) 
+REM   HREST   END (DO NOT REMOVE THIS LINE) 
+END                                                                             
+;
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+x,x-y,-z
+-y,-x,-z
+-x+y,y,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_refinement_flags_posn
+_atom_site_refinement_flags_adp
+Ag2 Ag 0.50462(5) 0.00924(10) 0.5000 0.0252 1.0000 Uani S T
+Mn3 Mn 0.0000 0.0000 0.0000 0.0121 1.0000 Uani S T
+K4 K 0.3333 0.6667 0.0000 0.0204 1.0000 Uani S T
+N6 N 0.2572(6) -0.0030(8) 0.1654(4) 0.0208 1.0000 Uani . .
+C7 C 0.3479(7) 0.0040(9) 0.2846(5) 0.0214 1.0000 Uani . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Ag2 0.0284(2) 0.0294(3) 0.0181(3) 0.0000 -0.01058(11) 0.01470(13)
+Mn3 0.0139(3) 0.0139(3) 0.0086(5) 0.0000 0.0000 0.00693(16)
+K4 0.0184(6) 0.0184(6) 0.0242(9) 0.0000 0.0000 0.0092(3)
+N6 0.0225(16) 0.0230(12) 0.0199(13) -0.0012(14) -0.0034(11) 0.0137(14)
+C7 0.0212(17) 0.0228(15) 0.0201(15) -0.0007(17) -0.0050(13) 0.0109(16)
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_Cromer_Mann_a1
+_atom_type_scat_Cromer_Mann_b1
+_atom_type_scat_Cromer_Mann_a2
+_atom_type_scat_Cromer_Mann_b2
+_atom_type_scat_Cromer_Mann_a3
+_atom_type_scat_Cromer_Mann_b3
+_atom_type_scat_Cromer_Mann_a4
+_atom_type_scat_Cromer_Mann_b4
+_atom_type_scat_Cromer_Mann_c
+_atom_type_scat_source
+C 0.0033 0.0016 2.3100 20.8439 1.0200 10.2075 1.5886 0.5687 0.8650 51.6512
+0.2156 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+Ag -0.8971 1.1015 19.2808 0.6446 16.6885 7.4726 4.8045 24.6605 1.0463 99.8156
+5.1790 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+K 0.2009 0.2494 8.2186 12.7949 7.4398 0.7748 1.0519 213.1870 0.8659 41.6841
+1.4228 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+Mn 0.3368 0.7283 11.2819 5.3409 7.3573 0.3432 3.0193 17.8674 2.2441 83.7543
+1.0896 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+N 0.0061 0.0033 12.2126 0.0057 3.1322 9.8933 2.0125 28.9975 1.1663 0.5826
+-11.5290 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_site_symmetry_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+Ag2 3_665 Ag2 Ag2 2_655 60.000 yes
+Ag2 3_665 Ag2 C7 6_656 105.61(14) yes
+Ag2 2_655 Ag2 C7 6_656 75.93(13) yes
+Ag2 3_665 Ag2 C7 . 75.93(13) yes
+Ag2 2_655 Ag2 C7 . 105.61(14) yes
+C7 6_656 Ag2 C7 . 178.3(3) yes
+N6 4_555 Mn3 N6 2_555 92.6(2) yes
+N6 4_555 Mn3 N6 6_555 86.80(11) yes
+N6 2_555 Mn3 N6 6_555 93.8(2) yes
+N6 4_555 Mn3 N6 5_555 86.80(11) yes
+N6 2_555 Mn3 N6 5_555 179.1(3) yes
+N6 6_555 Mn3 N6 5_555 86.80(11) yes
+N6 4_555 Mn3 N6 3_555 179.1(3) yes
+N6 2_555 Mn3 N6 3_555 86.80(11) yes
+N6 6_555 Mn3 N6 3_555 92.6(2) yes
+N6 5_555 Mn3 N6 3_555 93.8(2) yes
+N6 4_555 Mn3 N6 . 93.8(2) yes
+N6 2_555 Mn3 N6 . 86.80(11) yes
+N6 6_555 Mn3 N6 . 179.1(3) yes
+N6 5_555 Mn3 N6 . 92.6(2) yes
+N6 3_555 Mn3 N6 . 86.80(11) yes
+Mn3 . N6 C7 . 158.7(3) yes
+Ag2 . C7 N6 . 178.7(4) yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Ag2 Ag2 3_665 3.3267(10) yes
+Ag2 Ag2 2_655 3.3267(10) yes
+Ag2 C7 6_656 2.060(3) yes
+Ag2 C7 . 2.060(3) yes
+Mn3 N6 4_555 2.232(3) yes
+Mn3 N6 2_555 2.232(3) yes
+Mn3 N6 6_555 2.232(3) yes
+Mn3 N6 5_555 2.232(3) yes
+Mn3 N6 3_555 2.232(3) yes
+Mn3 N6 . 2.232(3) yes
+N6 C7 . 1.147(5) yes

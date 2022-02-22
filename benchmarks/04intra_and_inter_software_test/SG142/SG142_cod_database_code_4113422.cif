@@ -1,0 +1,235 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-22 11:34:44 +0200 (Tue, 22 Mar 2016) $
+#$Revision: 178905 $
+#$URL: svn://www.crystallography.net/cod/cif/4/11/34/4113422.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4113422
+loop_
+_publ_author_name
+'Nanfeng Zheng'
+'Xianhui Bu'
+'Pingyun Feng'
+_publ_section_title
+;
+ Nonaqueous Synthesis and Selective Crystallization of Gallium Sulfide
+ Clusters into Three-Dimensional Photoluminescent Superlattices
+;
+_journal_name_full               'Journal of the American Chemical Society'
+_journal_page_first              1138
+_journal_page_last               1139
+_journal_paper_doi               10.1021/ja021274k
+_journal_volume                  125
+_journal_year                    2003
+_chemical_formula_sum            'In5 S9'
+_chemical_formula_weight         862.64
+_chemical_name_common            UCR-7InS-AEP
+_chemical_name_systematic
+; 
+ ? 
+;
+_space_group_IT_number           142
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  '-I 4bd 2c'
+_symmetry_space_group_name_H-M   'I 41/a c d :2'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            16
+_cell_length_a                   20.318(2)
+_cell_length_b                   20.318(2)
+_cell_length_c                   31.994(5)
+_cell_measurement_temperature    293(2)
+_cell_volume                     13208(3)
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_measured_fraction_theta_full 1.000
+_diffrn_measured_fraction_theta_max 1.000
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.1002
+_diffrn_reflns_av_sigmaI/netI    0.0398
+_diffrn_reflns_limit_h_max       24
+_diffrn_reflns_limit_h_min       -24
+_diffrn_reflns_limit_k_max       24
+_diffrn_reflns_limit_k_min       -24
+_diffrn_reflns_limit_l_max       38
+_diffrn_reflns_limit_l_min       -38
+_diffrn_reflns_number            51677
+_diffrn_reflns_theta_full        25.00
+_diffrn_reflns_theta_max         25.00
+_diffrn_reflns_theta_min         1.91
+_exptl_absorpt_coefficient_mu    3.990
+_exptl_crystal_density_diffrn    1.735
+_exptl_crystal_F_000             6224
+_refine_diff_density_max         1.354
+_refine_diff_density_min         -0.637
+_refine_diff_density_rms         0.259
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.338
+_refine_ls_hydrogen_treatment    mixed
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     67
+_refine_ls_number_reflns         2915
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.338
+_refine_ls_R_factor_all          0.0756
+_refine_ls_R_factor_gt           0.0474
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.1000P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.1928
+_refine_ls_wR_factor_ref         0.2054
+_reflns_number_gt                1962
+_reflns_number_total             2915
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            ja021274k_7.cif
+_cod_data_source_block           UCR7InSAEP
+_cod_original_sg_symbol_H-M      'I 41/a c d'
+_cod_database_code               4113422
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y, z+1/2'
+'-y+1/4, x+3/4, z+1/4'
+'y+1/4, -x+1/4, z+3/4'
+'-x+1/2, y, -z'
+'x, -y, -z+1/2'
+'y+1/4, x+3/4, -z+3/4'
+'-y+1/4, -x+1/4, -z+1/4'
+'x+1/2, y+1/2, z+1/2'
+'-x+1, -y+1/2, z+1'
+'-y+3/4, x+5/4, z+3/4'
+'y+3/4, -x+3/4, z+5/4'
+'-x+1, y+1/2, -z+1/2'
+'x+1/2, -y+1/2, -z+1'
+'y+3/4, x+5/4, -z+5/4'
+'-y+3/4, -x+3/4, -z+3/4'
+'-x, -y, -z'
+'x-1/2, y, -z-1/2'
+'y-1/4, -x-3/4, -z-1/4'
+'-y-1/4, x-1/4, -z-3/4'
+'x-1/2, -y, z'
+'-x, y, z-1/2'
+'-y-1/4, -x-3/4, z-3/4'
+'y-1/4, x-1/4, z-1/4'
+'-x+1/2, -y+1/2, -z+1/2'
+'x, y+1/2, -z'
+'y+1/4, -x-1/4, -z+1/4'
+'-y+1/4, x+1/4, -z-1/4'
+'x, -y+1/2, z+1/2'
+'-x+1/2, y+1/2, z'
+'-y+1/4, -x-1/4, z-1/4'
+'y+1/4, x+1/4, z+1/4'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+In1 In 0.03756(4) 0.61315(4) 0.12474(3) 0.0389(3) Uani 1 1 d .
+In2 In 0.16867(4) 0.65834(5) 0.03871(3) 0.0419(3) Uani 1 1 d .
+In3 In 0.0000 0.7500 0.03411(4) 0.0410(4) Uani 1 2 d S
+S4 S -0.04995(16) 0.66251(16) 0.07954(9) 0.0418(8) Uani 1 1 d .
+S5 S 0.12161(18) 0.56751(17) 0.08077(11) 0.0526(10) Uani 1 1 d .
+S6 S 0.08722(19) 0.7069(2) -0.00891(11) 0.0586(10) Uani 1 1 d .
+S7 S -0.00988(19) 0.52682(17) 0.16687(12) 0.0524(10) Uani 1 1 d .
+S8 S 0.2500 0.5948(2) 0.0000 0.0482(12) Uani 1 2 d S
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+In1 0.0386(6) 0.0373(6) 0.0408(6) 0.0017(4) 0.0063(4) 0.0002(4)
+In2 0.0397(6) 0.0449(6) 0.0411(6) -0.0030(4) 0.0092(4) 0.0022(4)
+In3 0.0415(8) 0.0465(8) 0.0350(7) 0.000 0.000 0.0060(6)
+S4 0.0401(18) 0.0443(19) 0.0410(17) 0.0019(15) 0.0012(14) 0.0020(15)
+S5 0.055(2) 0.042(2) 0.061(2) -0.0006(16) 0.0232(18) 0.0029(17)
+S6 0.057(2) 0.080(3) 0.0394(19) -0.0030(18) 0.0061(17) 0.021(2)
+S7 0.056(2) 0.0373(19) 0.064(2) 0.0104(17) 0.0170(18) 0.0041(16)
+S8 0.050(3) 0.037(3) 0.058(3) 0.000 0.027(2) 0.000
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+S S 0.1246 0.1234 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+In In -0.7276 1.3100 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+S5 In1 S7 109.33(12) . .
+S5 In1 S4 108.79(12) . .
+S7 In1 S4 109.29(12) . .
+S5 In1 S4 109.05(12) . 20_666
+S7 In1 S4 110.34(12) . 20_666
+S4 In1 S4 110.02(15) . 20_666
+S8 In2 S7 110.34(10) . 20_666
+S8 In2 S6 110.77(9) . .
+S7 In2 S6 113.07(14) 20_666 .
+S8 In2 S5 98.24(12) . .
+S7 In2 S5 111.39(13) 20_666 .
+S6 In2 S5 112.10(14) . .
+S6 In3 S6 110.31(17) . 10_464
+S6 In3 S4 106.91(12) . 10_464
+S6 In3 S4 111.77(12) 10_464 10_464
+S6 In3 S4 111.77(12) . .
+S6 In3 S4 106.91(12) 10_464 .
+S4 In3 S4 109.24(15) 10_464 .
+In1 S4 In1 109.00(11) . 27_465
+In1 S4 In3 109.34(12) . .
+In1 S4 In3 109.64(13) 27_465 .
+In1 S5 In2 107.79(14) . .
+In3 S6 In2 106.70(13) . .
+In1 S7 In2 105.44(13) . 27_465
+In2 S8 In2 115.99(19) 5 .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+In1 S5 2.399(3) .
+In1 S7 2.413(3) .
+In1 S4 2.502(3) .
+In1 S4 2.507(3) 20_666
+In2 S8 2.435(3) .
+In2 S7 2.451(4) 20_666
+In2 S6 2.456(4) .
+In2 S5 2.476(4) .
+In3 S6 2.409(3) .
+In3 S6 2.409(3) 10_464
+In3 S4 2.511(3) 10_464
+In3 S4 2.511(3) .
+S4 In1 2.507(3) 27_465
+S7 In2 2.451(4) 27_465
+S8 In2 2.435(3) 5

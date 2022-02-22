@@ -1,0 +1,73 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/2/10/67/2106748.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2106748
+loop_
+_publ_author_name
+'Arakcheeva, A.V.'
+'Chapuis, G.'
+'Birkedal, H.'
+'Grinevich, V.V.'
+'Pattison, P.'
+_publ_section_title
+;
+ The commensurate composite sigma-structure of beta-tantalum
+;
+_journal_name_full               'Acta Crystallographica B (39,1983-)'
+_journal_page_first              324
+_journal_page_last               336
+_journal_volume                  59
+_journal_year                    2003
+_chemical_formula_sum            Ta
+_space_group_IT_number           113
+_symmetry_space_group_name_Hall  'P -4 2ab'
+_symmetry_space_group_name_H-M   'P -4 21 m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            30
+_cell_length_a                   10.211
+_cell_length_b                   10.211
+_cell_length_c                   5.3064
+_cell_volume                     553.269
+_citation_journal_id_ASTM        ASBSDK
+_cod_data_source_file            Arakcheeva_ASBSDK_2003_1649.cif
+_cod_data_source_block           Ta1
+_cod_original_cell_volume        553.2693
+_cod_original_formula_sum        Ta1
+_cod_database_code               2106748
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,-x,-z
+-x,-y,z
+-y,x,-z
+x+1/2,-y+1/2,-z
+-y+1/2,-x+1/2,z
+-x+1/2,y+1/2,-z
+y+1/2,x+1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ta4 Ta 0.1033 -0.6033 0.235 1 0.0
+Ta2 Ta 0.7598 0.0677 0.235 1 0.0
+Ta3 Ta 0.0343 0.1267 0.255 1 0.0
+Ta1 Ta 0.5 0 0.228 1 0.0
+Ta6 Ta 0.8196 0.3196 0.491 1 0.0
+Ta5 Ta 0.8142 0.3142 0.003 1 0.0

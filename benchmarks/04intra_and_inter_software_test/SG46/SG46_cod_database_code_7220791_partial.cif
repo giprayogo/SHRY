@@ -1,0 +1,55 @@
+# generated using pymatgen
+data_Rb2Na2SiGeH32PbC21(NO5)4
+_symmetry_space_group_name_H-M  'I m a 2'
+_cell_length_a   6.88490000
+_cell_length_b   19.66180000
+_cell_length_c   6.44130000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   46
+_chemical_formula_structural   Rb2Na2SiGeH32PbC21(NO5)4
+_chemical_formula_sum   'Rb2 Na2 Si1 Ge1 H32 Pb1 C21 N4 O20'
+_cell_volume   871.95573311
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x+1/2, y, z'
+  4  'x+1/2, -y, z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  '-x, y+1/2, z+1/2'
+  8  'x, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb+  Rb0  4  0.25000000  0.72843000  0.29211000  0.5
+  Na+  Na1  4  0.25000000  0.72843000  0.29211000  0.5
+  C+  C2  4  0.25000000  0.11305000  0.21470000  0.25
+  Si+  Si3  4  0.25000000  0.11305000  0.21470000  0.25
+  Pb+  Pb4  4  0.25000000  0.11305000  0.21470000  0.25
+  Ge+  Ge5  4  0.25000000  0.11305000  0.21470000  0.25
+  H  H6  8  0.05700000  0.21140000  0.47100000  1.0
+  H  H7  8  0.06500000  0.26590000  0.58500000  1.0
+  H  H8  4  0.25000000  0.00480000  0.83080000  1.0
+  H  H9  4  0.25000000  0.07910000  0.51100000  1.0
+  H  H10  4  0.25000000  0.12000000  0.89960000  1.0
+  H  H11  4  0.25000000  0.53600000  0.94030000  1.0
+  C  C12  4  0.25000000  0.02020000  0.96740000  1.0
+  C  C13  4  0.25000000  0.06447000  0.37360000  1.0
+  C  C14  4  0.25000000  0.08911000  0.00890000  1.0
+  C  C15  4  0.25000000  0.50445000  0.83260000  1.0
+  C  C16  4  0.25000000  0.52558000  0.62840000  1.0
+  N  N17  4  0.25000000  0.59717000  0.58490000  1.0
+  O  O18  8  0.00692000  0.73635000  0.03732000  1.0
+  O  O19  4  0.25000000  0.17825000  0.25440000  1.0
+  O  O20  4  0.25000000  0.61470000  0.40110000  1.0
+  O  O21  4  0.25000000  0.63814000  0.72700000  1.0

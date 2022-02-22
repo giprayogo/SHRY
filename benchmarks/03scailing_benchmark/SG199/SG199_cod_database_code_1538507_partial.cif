@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Hg12Po3Te2O2LvBrCl7
-_symmetry_space_group_name_H-M   I2_13
+_symmetry_space_group_name_H-M  'I 21 3'
 _cell_length_a   9.54000000
 _cell_length_b   9.54000000
 _cell_length_c   9.54000000

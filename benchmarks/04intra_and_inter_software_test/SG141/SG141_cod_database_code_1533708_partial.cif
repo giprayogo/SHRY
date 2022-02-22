@@ -1,0 +1,70 @@
+# generated using pymatgen
+data_Cs3.77777778K0.22222222Gd4O8
+_symmetry_space_group_name_H-M  'I 41/a m d :1'
+_cell_length_a   4.66070000
+_cell_length_b   4.66070000
+_cell_length_c   10.51910000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   141
+_chemical_formula_structural   Cs3.77777778K0.22222222Gd4O8
+_chemical_formula_sum   'Cs3.77777778 K0.22222222 Gd4 O8'
+_cell_volume   228.49719972
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x+1/2, z+1/4'
+  3  '-x, -y, z'
+  4  'y, -x+1/2, z+1/4'
+  5  'x, -y+1/2, -z+1/4'
+  6  '-y, -x, -z'
+  7  '-x, y+1/2, -z+1/4'
+  8  'y, x, -z'
+  9  '-x, -y+1/2, -z+1/4'
+  10  'y, -x, -z'
+  11  'x, y+1/2, -z+1/4'
+  12  '-y, x, -z'
+  13  '-x, y, z'
+  14  'y, x+1/2, z+1/4'
+  15  'x, -y, z'
+  16  '-y, -x+1/2, z+1/4'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-y+1/2, x, z+3/4'
+  19  '-x+1/2, -y+1/2, z+1/2'
+  20  'y+1/2, -x, z+3/4'
+  21  'x+1/2, -y, -z+3/4'
+  22  '-y+1/2, -x+1/2, -z+1/2'
+  23  '-x+1/2, y, -z+3/4'
+  24  'y+1/2, x+1/2, -z+1/2'
+  25  '-x+1/2, -y, -z+3/4'
+  26  'y+1/2, -x+1/2, -z+1/2'
+  27  'x+1/2, y, -z+3/4'
+  28  '-y+1/2, x+1/2, -z+1/2'
+  29  '-x+1/2, y+1/2, z+1/2'
+  30  'y+1/2, x, z+3/4'
+  31  'x+1/2, -y+1/2, z+1/2'
+  32  '-y+1/2, -x, z+3/4'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Cs0+  0.0
+  K0+  0.0
+  Gd0+  0.0
+  O0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs0+  Cs0  4  0.00000000  0.00000000  0.50000000
+  0.9444444444444444
+  K0+  K1  4  0.00000000  0.00000000  0.50000000
+  0.05555555555555555
+  Gd0+  Gd2  4  0.00000000  0.00000000  0.00000000  1.0
+  O0+  O3  8  0.00000000  0.00000000  0.21900000  1.0

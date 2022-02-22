@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Na1Li1.5Si1Sn1Ge1H57.5C36O12
-_symmetry_space_group_name_H-M   P3_1
+_symmetry_space_group_name_H-M  'P 31'
 _cell_length_a   9.34920000
 _cell_length_b   9.34920000
 _cell_length_c   13.55550000

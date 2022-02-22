@@ -1,0 +1,195 @@
+#------------------------------------------------------------------------------
+#$Date: 2020-09-04 03:27:40 +0300 (Fri, 04 Sep 2020) $
+#$Revision: 255857 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/4/51/79/4517939.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4517939
+loop_
+_publ_author_name
+'Liu, Youquan'
+'Mei, Dajiang'
+'Wang, Naizheng'
+'Molokeev, Maxim S.'
+'Jiang, Xingxing'
+'Lin, Zheshuai'
+_publ_section_title
+;
+ Intrinsic Isotropic Near-Zero Thermal Expansion in
+ Zn<sub>4</sub>B<sub>6</sub>O<sub>12</sub>X (X = O, S, Se).
+;
+_journal_issue                   34
+_journal_name_full               'ACS applied materials &amp; interfaces'
+_journal_page_first              38435
+_journal_page_last               38440
+_journal_paper_doi               10.1021/acsami.0c12351
+_journal_volume                  12
+_journal_year                    2020
+_chemical_formula_moiety
+;
+B6 O12 Se Zn4
+;
+_chemical_formula_sum            'B6 O12 Se Zn4'
+_chemical_formula_weight         597.38
+_chemical_name_mineral
+;
+;
+_space_group_IT_number           217
+_space_group_name_Hall           'I -4 2 3'
+_space_group_name_H-M_alt        'I -4 3 m'
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_Hall  'I -4 2 3'
+_symmetry_space_group_name_H-M   'I -4 3 m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   7.68194(8)
+_cell_length_b                   7.68194(8)
+_cell_length_c                   7.68194(8)
+_cell_measurement_reflns_used    104
+_cell_measurement_temperature    200
+_cell_measurement_theta_max      45
+_cell_measurement_theta_min      5
+_cell_volume                     453.328(8)
+_diffrn_ambient_temperature      200
+_diffrn_measurement_device_type
+;
+D8 ADVANCE Bruker
+;
+_diffrn_radiation_monochromator  none
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type
+;
+ Cu K\a~1~~2~
+;
+_exptl_absorpt_coefficient_mu    17.459
+_exptl_crystal_density_diffrn    4.3752(4)
+_exptl_crystal_description       cylinder
+_pd_char_colour
+;
+colourless
+;
+_pd_meas_2theta_range_inc        0.02
+_pd_meas_2theta_range_max        90
+_pd_meas_2theta_range_min        10
+_pd_meas_scan_method             step
+_pd_proc_ls_pref_orient_corr
+;
+Anisotropic model of PO. Spherical harmonics 2 ordrer.
+ Jarvinen (1993). Application of symmetrized harmonics expansion to correction
+of the preferred orientation effect. - J. Appl. Cryst. 26 p525-531.
+;
+_pd_proc_ls_profile_function     PearsonVII
+_pd_proc_ls_prof_R_factor        5.69
+_pd_proc_ls_prof_wR_expected     1.30
+_pd_proc_ls_prof_wR_factor       9.35
+_pd_proc_number_of_points        4000
+_pd_spec_mount_mode              reflection
+_refine_ls_goodness_of_fit_all   7.19
+_refine_ls_R_I_factor            1.59
+_refine_ls_shift/su_max          0.01000
+_cod_data_source_file            ZBOSe_200K.cif
+_cod_data_source_block           a
+_cod_depositor_comments
+'Adding full bibliography for 4517906--4517952.cif.'
+_cod_original_cell_volume        453.327(15)
+_cod_original_sg_symbol_Hall
+;
+I -4 2 3
+;
+_cod_original_sg_symbol_H-M      I-43m
+_cod_original_formula_sum
+;
+B6 O12 Se Zn4
+;
+_cod_database_code               4517939
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z '
+'-x, -z, y '
+'-x, z, -y '
+'-x, y, -z '
+'-y, -x, z '
+'-y, -z, x '
+'-y, z, -x '
+'-y, x, -z '
+'-z, -x, y '
+'-z, -y, x '
+'-z, y, -x '
+'-z, x, -y '
+'z, -x, -y '
+'z, -y, -x '
+'z, y, x '
+'z, x, y '
+'y, -x, -z '
+'y, -z, -x '
+'y, z, x '
+'y, x, z '
+'x, -y, -z '
+'x, -z, -y '
+'x, z, y '
+'-x, -y, z '
+'x+1/2, y+1/2, z+1/2 '
+'-x+1/2, -z+1/2, y+1/2 '
+'-x+1/2, z+1/2, -y+1/2 '
+'-x+1/2, y+1/2, -z+1/2 '
+'-y+1/2, -x+1/2, z+1/2 '
+'-y+1/2, -z+1/2, x+1/2 '
+'-y+1/2, z+1/2, -x+1/2 '
+'-y+1/2, x+1/2, -z+1/2 '
+'-z+1/2, -x+1/2, y+1/2 '
+'-z+1/2, -y+1/2, x+1/2 '
+'-z+1/2, y+1/2, -x+1/2 '
+'-z+1/2, x+1/2, -y+1/2 '
+'z+1/2, -x+1/2, -y+1/2 '
+'z+1/2, -y+1/2, -x+1/2 '
+'z+1/2, y+1/2, x+1/2 '
+'z+1/2, x+1/2, y+1/2 '
+'y+1/2, -x+1/2, -z+1/2 '
+'y+1/2, -z+1/2, -x+1/2 '
+'y+1/2, z+1/2, x+1/2 '
+'y+1/2, x+1/2, z+1/2 '
+'x+1/2, -y+1/2, -z+1/2 '
+'x+1/2, -z+1/2, -y+1/2 '
+'x+1/2, z+1/2, y+1/2 '
+'-x+1/2, -y+1/2, z+1/2 '
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_B_iso_or_equiv
+Zn Zn 0.17816(8) 0.17816(8) 0.17816(8) 1 0.10(4)
+B B 0.25 0.5 0 1 0.50(18)
+Se1 Se 0 0 0 1 0.50(5)
+O2 O 0.1435(2) 0.1435(2) 0.4300(4) 1 0.50(10)
+loop_
+_diffrn_radiation_wavelength
+_diffrn_radiation_wavelength_wt
+1.5406 1.0000
+1.5443 0.5000
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+Se1 Zn O2 114.25(5) 1_555 1_555
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Zn Se1 2.37051(61) .
+Zn O2 1.9709(31) .
+B O2 1.4743(25) 18_565

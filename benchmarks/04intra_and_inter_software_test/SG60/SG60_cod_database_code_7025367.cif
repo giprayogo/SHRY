@@ -1,0 +1,400 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-25 16:14:00 +0200 (Fri, 25 Mar 2016) $
+#$Revision: 179959 $
+#$URL: svn://www.crystallography.net/cod/cif/7/02/53/7025367.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7025367
+loop_
+_publ_author_name
+'Zhang, Jian-Han'
+'Li, Pei-Xin'
+'Mao, Jiang-Gao'
+_publ_section_title
+;
+ Ln2GeB2O8 (Ln = Nd, Sm-Tb): a series of luminescent lanthanide(III)
+ borogermanates with a layered structure.
+;
+_journal_issue                   22
+_journal_name_full
+'Dalton transactions (Cambridge, England : 2003)'
+_journal_page_first              5301
+_journal_page_last               5305
+_journal_paper_doi               10.1039/b927300j
+_journal_volume                  39
+_journal_year                    2010
+_chemical_formula_sum            'B2 Eu2 Ge O8'
+_chemical_formula_weight         526.17
+_chemical_name_systematic
+;
+?
+;
+_space_group_IT_number           60
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  '-P 2n 2ab'
+_symmetry_space_group_name_H-M   'P b c n'
+_atom_sites_solution_hydrogens   none
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   13.564(7)
+_cell_length_b                   4.435(2)
+_cell_length_c                   9.334(5)
+_cell_measurement_reflns_used    669
+_cell_measurement_temperature    293(2)
+_cell_measurement_theta_max      27.4797
+_cell_measurement_theta_min      2.1817
+_cell_volume                     561.5(5)
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_measured_fraction_theta_full 0.997
+_diffrn_measured_fraction_theta_max 0.997
+_diffrn_measurement_device_type  'Mercury2 (2x2 bin mode)'
+_diffrn_measurement_method       CCD_Profile_fitting
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0309
+_diffrn_reflns_av_sigmaI/netI    0.0207
+_diffrn_reflns_limit_h_max       17
+_diffrn_reflns_limit_h_min       -16
+_diffrn_reflns_limit_k_max       5
+_diffrn_reflns_limit_k_min       -5
+_diffrn_reflns_limit_l_max       11
+_diffrn_reflns_limit_l_min       -12
+_diffrn_reflns_number            3866
+_diffrn_reflns_theta_full        27.46
+_diffrn_reflns_theta_max         27.46
+_diffrn_reflns_theta_min         4.37
+_exptl_absorpt_coefficient_mu    27.393
+_exptl_absorpt_correction_T_max  1.0000
+_exptl_absorpt_correction_T_min  0.4117
+_exptl_absorpt_correction_type   multi-scan
+_exptl_crystal_colour            Colorless
+_exptl_crystal_density_diffrn    6.224
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       brick
+_exptl_crystal_F_000             464
+_exptl_crystal_size_max          0.18
+_exptl_crystal_size_mid          0.10
+_exptl_crystal_size_min          0.08
+_refine_diff_density_max         1.715
+_refine_diff_density_min         -1.627
+_refine_diff_density_rms         0.272
+_refine_ls_extinction_coef       0.0078(3)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.191
+_refine_ls_hydrogen_treatment    none
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     61
+_refine_ls_number_reflns         642
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.191
+_refine_ls_R_factor_all          0.0194
+_refine_ls_R_factor_gt           0.0188
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0217P)^2^+0.5592P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0407
+_refine_ls_wR_factor_ref         0.0410
+_reflns_number_gt                628
+_reflns_number_total             642
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            b927300j.txt
+_cod_data_source_block           Eu2GeB2O8
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_exptl_absorpt_correction_type' value 'Multi-scan' changed to
+'multi-scan' according to
+/home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary named
+'cif_core.dic' version 2.4.2 from 2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 1891 2012-01-12 08:04:46Z andrius 
+;
+_cod_original_sg_symbol_H-M      Pbcn
+_cod_database_code               7025367
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y+1/2, z+1/2'
+'-x, y, -z+1/2'
+'x+1/2, -y+1/2, -z'
+'-x, -y, -z'
+'x-1/2, y-1/2, -z-1/2'
+'x, -y, z-1/2'
+'-x-1/2, y-1/2, z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Eu1 Eu 0.640097(15) 0.53903(5) 0.02542(3) 0.00506(12) Uani 1 1 d .
+Ge1 Ge 0.5000 0.07409(15) 0.2500 0.00462(16) Uani 1 2 d S
+B1 B 0.1999(4) 0.4683(10) 0.2038(6) 0.0052(9) Uani 1 1 d .
+O1 O 0.1924(2) 0.4629(6) 0.0495(4) 0.0052(6) Uani 1 1 d .
+O2 O 0.1061(2) 0.3441(7) 0.2662(3) 0.0068(6) Uani 1 1 d .
+O3 O 0.2163(2) 0.7810(6) 0.2595(3) 0.0054(6) Uani 1 1 d .
+O4 O 0.49596(19) 0.2950(7) 0.0986(3) 0.0074(6) Uani 1 1 d .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Eu1 0.00500(15) 0.00470(16) 0.00548(18) 0.00053(7) 0.00075(8) 0.00033(7)
+Ge1 0.0047(3) 0.0049(3) 0.0043(3) 0.000 0.0001(2) 0.000
+B1 0.008(2) 0.003(2) 0.004(2) -0.0023(17) 0.0010(19) -0.0008(16)
+O1 0.0073(15) 0.0053(15) 0.0030(16) 0.0011(11) 0.0000(13) -0.0011(11)
+O2 0.0055(14) 0.0069(15) 0.0079(17) 0.0024(12) 0.0014(12) 0.0003(11)
+O3 0.0060(13) 0.0039(14) 0.0062(15) -0.0022(11) 0.0005(12) -0.0011(11)
+O4 0.0057(13) 0.0081(15) 0.0083(16) 0.0037(11) 0.0008(12) -0.0004(11)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+B B 0.0013 0.0007 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ge Ge 0.1547 1.8001 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Eu Eu -0.1578 3.6682 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+O4 Eu1 O4 67.90(13) 5_665 .
+O4 Eu1 O1 128.32(11) 5_665 5_665
+O4 Eu1 O1 152.13(10) . 5_665
+O4 Eu1 O2 94.18(11) 5_665 6_666
+O4 Eu1 O2 82.20(11) . 6_666
+O1 Eu1 O2 114.95(10) 5_665 6_666
+O4 Eu1 O1 78.33(11) 5_665 4_565
+O4 Eu1 O1 138.71(10) . 4_565
+O1 Eu1 O1 68.82(9) 5_665 4_565
+O2 Eu1 O1 77.16(11) 6_666 4_565
+O4 Eu1 O1 112.40(11) 5_665 4
+O4 Eu1 O1 84.51(11) . 4
+O1 Eu1 O1 68.55(9) 5_665 4
+O2 Eu1 O1 142.97(11) 6_666 4
+O1 Eu1 O1 131.62(15) 4_565 4
+O4 Eu1 O3 150.65(10) 5_665 6_656
+O4 Eu1 O3 84.30(10) . 6_656
+O1 Eu1 O3 80.87(11) 5_665 6_656
+O2 Eu1 O3 72.08(10) 6_666 6_656
+O1 Eu1 O3 121.44(10) 4_565 6_656
+O1 Eu1 O3 72.31(11) 4 6_656
+O4 Eu1 O3 75.05(10) 5_665 4_565
+O4 Eu1 O3 132.77(9) . 4_565
+O1 Eu1 O3 53.37(10) 5_665 4_565
+O2 Eu1 O3 129.72(10) 6_666 4_565
+O1 Eu1 O3 52.64(10) 4_565 4_565
+O1 Eu1 O3 83.50(10) 4 4_565
+O3 Eu1 O3 133.71(12) 6_656 4_565
+O4 Eu1 O3 138.11(10) 5_665 3_655
+O4 Eu1 O3 120.93(10) . 3_655
+O1 Eu1 O3 64.99(10) 5_665 3_655
+O2 Eu1 O3 51.93(9) 6_666 3_655
+O1 Eu1 O3 71.14(10) 4_565 3_655
+O1 Eu1 O3 109.29(10) 4 3_655
+O3 Eu1 O3 50.58(6) 6_656 3_655
+O3 Eu1 O3 106.15(4) 4_565 3_655
+O4 Eu1 B1 102.79(13) 5_665 5_665
+O4 Eu1 B1 142.75(12) . 5_665
+O1 Eu1 B1 27.49(13) 5_665 5_665
+O2 Eu1 B1 135.05(11) 6_666 5_665
+O1 Eu1 B1 66.33(11) 4_565 5_665
+O1 Eu1 B1 65.28(11) 4 5_665
+O3 Eu1 B1 105.14(13) 6_656 5_665
+O3 Eu1 B1 28.86(11) 4_565 5_665
+O3 Eu1 B1 90.66(12) 3_655 5_665
+O4 Eu1 B1 69.17(12) 5_665 4_565
+O4 Eu1 B1 137.06(12) . 4_565
+O1 Eu1 B1 63.79(12) 5_665 4_565
+O2 Eu1 B1 101.94(12) 6_666 4_565
+O1 Eu1 B1 25.86(12) 4_565 4_565
+O1 Eu1 B1 111.21(12) 4 4_565
+O3 Eu1 B1 138.05(12) 6_656 4_565
+O3 Eu1 B1 28.05(10) 4_565 4_565
+O3 Eu1 B1 92.23(11) 3_655 4_565
+B1 Eu1 B1 49.45(12) 5_665 4_565
+O4 Eu1 B1 95.26(13) 5_665 4
+O4 Eu1 B1 94.69(12) . 4
+O1 Eu1 B1 63.87(12) 5_665 4
+O2 Eu1 B1 168.11(12) 6_666 4
+O1 Eu1 B1 111.87(13) 4_565 4
+O1 Eu1 B1 25.21(12) 4 4
+O3 Eu1 B1 96.23(12) 6_656 4
+O3 Eu1 B1 60.13(11) 4_565 4
+O3 Eu1 B1 122.25(11) 3_655 4
+B1 Eu1 B1 49.03(12) 5_665 4
+B1 Eu1 B1 88.18(14) 4_565 4
+O4 Ge1 O4 110.6(2) 3_655 .
+O4 Ge1 O2 111.86(13) 3_655 6_656
+O4 Ge1 O2 106.49(14) . 6_656
+O4 Ge1 O2 106.49(14) 3_655 8_655
+O4 Ge1 O2 111.86(13) . 8_655
+O2 Ge1 O2 109.6(2) 6_656 8_655
+O4 Ge1 Eu1 98.00(11) 3_655 .
+O4 Ge1 Eu1 35.91(9) . .
+O2 Ge1 Eu1 81.20(10) 6_656 .
+O2 Ge1 Eu1 146.27(10) 8_655 .
+O4 Ge1 Eu1 35.91(9) 3_655 3_655
+O4 Ge1 Eu1 98.00(11) . 3_655
+O2 Ge1 Eu1 146.27(10) 6_656 3_655
+O2 Ge1 Eu1 81.20(10) 8_655 3_655
+Eu1 Ge1 Eu1 107.83(4) . 3_655
+O4 Ge1 Eu1 29.77(9) 3_655 7_566
+O4 Ge1 Eu1 109.23(11) . 7_566
+O2 Ge1 Eu1 84.68(10) 6_656 7_566
+O2 Ge1 Eu1 129.62(10) 8_655 7_566
+Eu1 Ge1 Eu1 82.04(4) . 7_566
+Eu1 Ge1 Eu1 65.26(3) 3_655 7_566
+O4 Ge1 Eu1 109.23(11) 3_655 5_665
+O4 Ge1 Eu1 29.77(9) . 5_665
+O2 Ge1 Eu1 129.62(10) 6_656 5_665
+O2 Ge1 Eu1 84.68(10) 8_655 5_665
+Eu1 Ge1 Eu1 65.26(3) . 5_665
+Eu1 Ge1 Eu1 82.04(4) 3_655 5_665
+Eu1 Ge1 Eu1 123.55(4) 7_566 5_665
+O4 Ge1 Eu1 144.67(9) 3_655 1_545
+O4 Ge1 Eu1 85.18(11) . 1_545
+O2 Ge1 Eu1 33.18(10) 6_656 1_545
+O2 Ge1 Eu1 95.54(11) 8_655 1_545
+Eu1 Ge1 Eu1 76.07(4) . 1_545
+Eu1 Ge1 Eu1 176.097(17) 3_655 1_545
+Eu1 Ge1 Eu1 115.89(3) 7_566 1_545
+Eu1 Ge1 Eu1 99.85(4) 5_665 1_545
+O4 Ge1 Eu1 85.18(11) 3_655 3_645
+O4 Ge1 Eu1 144.67(9) . 3_645
+O2 Ge1 Eu1 95.54(11) 6_656 3_645
+O2 Ge1 Eu1 33.18(10) 8_655 3_645
+Eu1 Ge1 Eu1 176.097(17) . 3_645
+Eu1 Ge1 Eu1 76.07(4) 3_655 3_645
+Eu1 Ge1 Eu1 99.85(4) 7_566 3_645
+Eu1 Ge1 Eu1 115.89(3) 5_665 3_645
+Eu1 Ge1 Eu1 100.03(4) 1_545 3_645
+O1 B1 O3 111.8(4) . .
+O1 B1 O3 113.0(4) . 8_655
+O3 B1 O3 106.3(3) . 8_655
+O1 B1 O2 108.7(4) . .
+O3 B1 O2 109.3(4) . .
+O3 B1 O2 107.7(3) 8_655 .
+O1 B1 Eu1 49.5(2) . 5_665
+O3 B1 Eu1 98.5(3) . 5_665
+O3 B1 Eu1 72.4(2) 8_655 5_665
+O2 B1 Eu1 150.5(3) . 5_665
+O1 B1 Eu1 47.05(19) . 4_465
+O3 B1 Eu1 68.5(2) . 4_465
+O3 B1 Eu1 144.2(3) 8_655 4_465
+O2 B1 Eu1 107.3(3) . 4_465
+Eu1 B1 Eu1 73.45(12) 5_665 4_465
+O1 B1 Eu1 46.01(18) . 4_455
+O3 B1 Eu1 156.7(3) . 4_455
+O3 B1 Eu1 92.0(2) 8_655 4_455
+O2 B1 Eu1 77.7(2) . 4_455
+Eu1 B1 Eu1 72.81(12) 5_665 4_455
+Eu1 B1 Eu1 88.18(14) 4_465 4_455
+O1 B1 Eu1 138.1(3) . 6_556
+O3 B1 Eu1 107.9(3) . 6_556
+O3 B1 Eu1 66.3(2) 8_655 6_556
+O2 B1 Eu1 43.69(19) . 6_556
+Eu1 B1 Eu1 135.56(16) 5_665 6_556
+Eu1 B1 Eu1 149.54(18) 4_465 6_556
+Eu1 B1 Eu1 92.55(12) 4_455 6_556
+B1 O1 Eu1 103.0(3) . 5_665
+B1 O1 Eu1 107.1(2) . 4_465
+Eu1 O1 Eu1 101.42(11) 5_665 4_465
+B1 O1 Eu1 108.8(2) . 4_455
+Eu1 O1 Eu1 100.96(11) 5_665 4_455
+Eu1 O1 Eu1 131.62(14) 4_465 4_455
+B1 O2 Ge1 116.4(3) . 6_566
+B1 O2 Eu1 110.8(3) . 6_556
+Ge1 O2 Eu1 123.16(15) 6_566 6_556
+B1 O3 B1 120.3(4) . 8_665
+B1 O3 Eu1 129.3(3) . 6_566
+B1 O3 Eu1 109.5(2) 8_665 6_566
+B1 O3 Eu1 83.5(2) . 4_465
+B1 O3 Eu1 78.7(2) 8_665 4_465
+Eu1 O3 Eu1 116.59(11) 6_566 4_465
+B1 O3 Eu1 89.8(2) . 3_655
+B1 O3 Eu1 86.5(2) 8_665 3_655
+Eu1 O3 Eu1 84.04(9) 6_566 3_655
+Eu1 O3 Eu1 157.64(11) 4_465 3_655
+Ge1 O4 Eu1 128.41(14) . 5_665
+Ge1 O4 Eu1 118.50(14) . .
+Eu1 O4 Eu1 112.10(13) 5_665 .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Eu1 O4 2.299(3) 5_665
+Eu1 O4 2.337(3) .
+Eu1 O1 2.378(3) 5_665
+Eu1 O2 2.414(3) 6_666
+Eu1 O1 2.423(3) 4_565
+Eu1 O1 2.439(3) 4
+Eu1 O3 2.531(3) 6_656
+Eu1 O3 2.963(3) 4_565
+Eu1 O3 2.996(3) 3_655
+Eu1 B1 3.048(5) 5_665
+Eu1 B1 3.164(5) 4_565
+Eu1 B1 3.209(5) 4
+Ge1 O4 1.721(3) 3_655
+Ge1 O4 1.721(3) .
+Ge1 O2 1.770(3) 6_656
+Ge1 O2 1.770(3) 8_655
+Ge1 Eu1 3.5011(11) 3_655
+Ge1 Eu1 3.6283(12) 7_566
+Ge1 Eu1 3.6283(12) 5_665
+Ge1 Eu1 3.6928(12) 1_545
+Ge1 Eu1 3.6928(12) 3_645
+B1 O1 1.444(6) .
+B1 O3 1.498(5) .
+B1 O3 1.500(6) 8_655
+B1 O2 1.504(6) .
+B1 Eu1 3.048(5) 5_665
+B1 Eu1 3.164(5) 4_465
+B1 Eu1 3.209(5) 4_455
+B1 Eu1 3.267(5) 6_556
+O1 Eu1 2.378(3) 5_665
+O1 Eu1 2.423(3) 4_465
+O1 Eu1 2.439(3) 4_455
+O2 Ge1 1.770(3) 6_566
+O2 Eu1 2.414(3) 6_556
+O3 B1 1.500(6) 8_665
+O3 Eu1 2.531(3) 6_566
+O3 Eu1 2.963(3) 4_465
+O3 Eu1 2.996(3) 3_655
+O4 Eu1 2.299(3) 5_665

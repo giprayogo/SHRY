@@ -1,0 +1,75 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-09-28 13:12:22 +0300 (Mon, 28 Sep 2015) $
+#$Revision: 158542 $
+#$URL: svn://www.crystallography.net/cod/cif/8/10/37/8103789.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8103789
+loop_
+_publ_author_name
+'Ivashkevich, L.S.'
+'Lesnikovich, A.I.'
+'Lyakhov, A.S.'
+'Selevich, A.F.'
+_publ_section_title
+;
+ Ab initio structure determination of In2 H2 (P2 O7) (P4 O12) from X-ray
+ powder diffraction data
+;
+_journal_name_full
+'Zeitschrift fuer Kristallographie (149,1979-)'
+_journal_page_first              32
+_journal_page_last               36
+_journal_volume                  218
+_journal_year                    2003
+_chemical_formula_sum            'H2 In2 O19 P6'
+_chemical_name_systematic        'In2 H2 (P2 O7) (P4 O12)'
+_space_group_IT_number           59
+_symmetry_space_group_name_Hall  '-P 2ab 2a'
+_symmetry_space_group_name_H-M   'P m m n :2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   12.9398
+_cell_length_b                   11.3725
+_cell_length_c                   5.0385
+_cell_volume                     741.455
+_citation_journal_id_ASTM        ZEKRDZ
+_cod_data_source_file            Ivashkevich_ZEKRDZ_2003_1119.cif
+_cod_data_source_block           H2In2O19P6
+_cod_database_code               8103789
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x+1/2,-y+1/2,z
+x+1/2,-y,-z
+-x,y+1/2,-z
+-x,-y,-z
+x-1/2,y-1/2,-z
+-x-1/2,y,z
+x,-y-1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+In1 In+3 0.5 0 0 1 0.0
+O3 O-2 0.25 0.897 0.369 1 0.0
+O2 O-2 0.4374 0.881 0.279 1 0.0
+P2 P+5 0.3641 0.8788 0.506 1 0.0
+O1 O-2 0.3684 0.75 0.644 1 0.0
+O5 O-2 0.3613 0.25 0.72 1 0.0
+O6 O-2 0.415 0.1444 0.182 1 0.0
+O4 O-2 0.3809 -0.035 0.713 1 0.0
+O7 O-2 0.25 0.25 0.168 1 0.0
+P1 P+5 0.3672 0.25 0.056 1 0.0

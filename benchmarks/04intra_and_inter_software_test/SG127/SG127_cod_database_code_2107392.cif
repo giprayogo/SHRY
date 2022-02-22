@@ -1,0 +1,81 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-01-09 13:40:42 +0200 (Sat, 09 Jan 2016) $
+#$Revision: 173810 $
+#$URL: svn://www.crystallography.net/cod/cif/2/10/73/2107392.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2107392
+loop_
+_publ_author_name
+'Braun, H.F.'
+'Braun, R.M.'
+'Yvon, K.'
+_publ_section_title
+;
+ Sc5 T4 Si10 (T= Co, Rh, Ir) and Y5 T4 Ge10 (T= Os, Ir) with a new
+ tetragonal structure type
+;
+_journal_name_full               'Acta Crystallographica B (24,1968-38,1982)'
+_journal_page_first              2397
+_journal_page_last               2399
+_journal_volume                  36
+_journal_year                    1980
+_chemical_formula_sum            'Co4 Sc5 Si10'
+_chemical_name_systematic        'Sc5 Co4 Si10'
+_space_group_IT_number           127
+_symmetry_space_group_name_Hall  '-P 4 2ab'
+_symmetry_space_group_name_H-M   'P 4/m b m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   12.01
+_cell_length_b                   12.01
+_cell_length_c                   3.936
+_cell_volume                     567.729
+_citation_journal_id_ASTM        ACBCAR
+_cod_data_source_file            Braun_ACBCAR_1980_1742.cif
+_cod_data_source_block           Co4Sc5Si10
+_cod_original_cell_volume        567.7291
+_cod_database_code               2107392
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x,z
+-x,-y,z
+y,-x,z
+x+1/2,-y+1/2,-z
+y+1/2,x+1/2,-z
+-x+1/2,y+1/2,-z
+-y+1/2,-x+1/2,-z
+-x,-y,-z
+y,-x,-z
+x,y,-z
+-y,x,-z
+-x-1/2,y-1/2,z
+-y-1/2,-x-1/2,z
+x-1/2,-y-1/2,z
+y-1/2,x-1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Sc3 Sc 0.3882 0.8882 0.5 1 0.0
+Co1 Co 0.254 0.524 0 1 0.0
+Sc1 Sc 0 0 0 1 0.0
+Sc2 Sc 0.1756 0.6756 0.5 1 0.0
+Si3 Si 0.1638 0.0031 0.5 1 0.0
+Si2 Si 0.1575 0.1985 0 1 0.0
+Si1 Si 0.0679 0.5679 0 1 0.0

@@ -1,0 +1,163 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 18:55:33 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176466 $
+#$URL: svn://www.crystallography.net/cod/cif/8/10/03/8100307.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8100307
+loop_
+_publ_author_name
+'Gray, Amy K.'
+'Martin, Benjamin R.'
+'Dorhout, Peter K.'
+_publ_section_title
+;
+Crystal structure of potassium ytterbium(III) selenide, KYbSe~2~
+;
+_journal_issue                   1
+_journal_name_full
+'Zeitschrift f\"ur Kristallographie - New Crystal Structures'
+_journal_page_first              20
+_journal_page_last               20
+_journal_volume                  218
+_journal_year                    2003
+_chemical_formula_structural     KYbSe2
+_chemical_formula_sum            'K Se2 Yb'
+_chemical_formula_weight         370.06
+_space_group_IT_number           166
+_symmetry_cell_setting           rhombohedral
+_symmetry_space_group_name_Hall  '-R 3 2"'
+_symmetry_space_group_name_H-M   'R -3 m :H'
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            3
+_cell_length_a                   4.1110(18)
+_cell_length_b                   4.1110(18)
+_cell_length_c                   22.697(14)
+_cell_measurement_temperature    293(2)
+_cell_volume                     332.2(3)
+_diffrn_ambient_temperature      293(2)
+_exptl_crystal_density_diffrn    5.549
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+'_symmetry_cell_setting' value 'Rhombohedral' changed to 'rhombohedral'
+according to '/home/saulius/struct/CIF-dictionaries/cif_core.dic'
+dictionary named 'cif_core.dic' version 2.4.1 from 2010-06-29.
+
+Automatic conversion script
+Id: cif_fix_enum 1527 2010-12-29 10:47:43Z saulius 
+;
+_cod_original_sg_symbol_H-M      'R -3 m'
+_cod_original_formula_sum        'K1 Yb1 Se2'
+_cod_database_code               8100307
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'y, x, -z'
+'x-y, -y, -z'
+'-x, -x+y, -z'
+'x+2/3, y+1/3, z+1/3'
+'-y+2/3, x-y+1/3, z+1/3'
+'-x+y+2/3, -x+1/3, z+1/3'
+'y+2/3, x+1/3, -z+1/3'
+'x-y+2/3, -y+1/3, -z+1/3'
+'-x+2/3, -x+y+1/3, -z+1/3'
+'x+1/3, y+2/3, z+2/3'
+'-y+1/3, x-y+2/3, z+2/3'
+'-x+y+1/3, -x+2/3, z+2/3'
+'y+1/3, x+2/3, -z+2/3'
+'x-y+1/3, -y+2/3, -z+2/3'
+'-x+1/3, -x+y+2/3, -z+2/3'
+'-x, -y, -z'
+'y, -x+y, -z'
+'x-y, x, -z'
+'-y, -x, z'
+'-x+y, y, z'
+'x, x-y, z'
+'-x+2/3, -y+1/3, -z+1/3'
+'y+2/3, -x+y+1/3, -z+1/3'
+'x-y+2/3, x+1/3, -z+1/3'
+'-y+2/3, -x+1/3, z+1/3'
+'-x+y+2/3, y+1/3, z+1/3'
+'x+2/3, x-y+1/3, z+1/3'
+'-x+1/3, -y+2/3, -z+2/3'
+'y+1/3, -x+y+2/3, -z+2/3'
+'x-y+1/3, x+2/3, -z+2/3'
+'-y+1/3, -x+2/3, z+2/3'
+'-x+y+1/3, y+2/3, z+2/3'
+'x+1/3, x-y+2/3, z+2/3'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+K1 K 0.0000 0.0000 0.5000 0.025(3) Uani 1 3 a d S . .
+Yb1 Yb 0.0000 0.0000 0.0000 0.0077(10) Uani 1 3 b d S . .
+Se1 Se 0.0000 0.0000 0.26530(15) 0.0122(12) Uani 1 6 c d S . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+K1 0.012(3) 0.012(3) 0.051(8) 0.000 0.000 0.0061(16)
+Yb1 0.0058(11) 0.0058(11) 0.0114(15) 0.000 0.000 0.0029(6)
+Se1 0.0071(15) 0.0071(15) 0.022(2) 0.000 0.000 0.0035(7)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+K1 Se1 3.263(3) 31_445 ?
+K1 Se1 3.263(3) 7 ?
+K1 Se1 3.263(3) 31 ?
+K1 Se1 3.263(3) 7_445 ?
+K1 Se1 3.263(3) 31_545 ?
+K1 Se1 3.263(3) 7_455 ?
+K1 K1 4.1110(18) 1_445 ?
+K1 K1 4.1110(18) 1_665 ?
+K1 K1 4.1110(18) 1_455 ?
+K1 K1 4.1110(18) 1_565 ?
+K1 K1 4.1110(18) 1_545 ?
+K1 K1 4.1110(18) 1_655 ?
+Yb1 Se1 2.832(2) 25 ?
+Yb1 Se1 2.832(2) 13_444 ?
+Yb1 Se1 2.832(2) 25_445 ?
+Yb1 Se1 2.832(2) 13_554 ?
+Yb1 Se1 2.832(2) 25_455 ?
+Yb1 Se1 2.832(2) 13_544 ?
+Yb1 Yb1 4.1110(18) 1_665 ?
+Yb1 Yb1 4.1110(18) 1_445 ?
+Yb1 Yb1 4.1110(18) 1_545 ?
+Yb1 Yb1 4.1110(18) 1_455 ?
+Yb1 Yb1 4.1110(18) 1_655 ?
+Yb1 Yb1 4.1110(18) 1_565 ?
+Se1 Yb1 2.832(2) 7 ?
+Se1 Yb1 2.832(2) 7_445 ?
+Se1 Yb1 2.832(2) 7_455 ?
+Se1 K1 3.263(3) 13_444 ?
+Se1 K1 3.263(3) 13_554 ?
+Se1 K1 3.263(3) 13_544 ?

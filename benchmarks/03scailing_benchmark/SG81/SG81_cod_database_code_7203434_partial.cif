@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_CsKNaLiCaCo2SiSnGeH12C8FlPoTeN4O13Lv
-_symmetry_space_group_name_H-M   P-4
+_symmetry_space_group_name_H-M  'P -4'
 _cell_length_a   8.89800000
 _cell_length_b   8.89800000
 _cell_length_c   7.67900000

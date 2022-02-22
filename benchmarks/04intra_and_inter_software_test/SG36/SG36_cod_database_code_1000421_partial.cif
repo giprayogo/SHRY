@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Ba4Zn4F12Ts2.75At1.25
+_symmetry_space_group_name_H-M  'C m c 21'
+_cell_length_a   4.19740000
+_cell_length_b   14.54600000
+_cell_length_c   5.83910000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   36
+_chemical_formula_structural   Ba4Zn4F12Ts2.75At1.25
+_chemical_formula_sum   'Ba4 Zn4 F12 Ts2.75 At1.25'
+_cell_volume   356.50847169
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z+1/2'
+  3  '-x, y, z'
+  4  'x, -y, z+1/2'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  '-x+1/2, y+1/2, z'
+  8  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Ba2+  2.0
+  Zn2+  2.0
+  At+  1.0
+  F-  -1.0
+  Ts+  1.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba2+  Ba0  4  0.00000000  0.14765000  0.96262000  1.0
+  Zn2+  Zn1  4  0.00000000  0.41317000  0.00000000  1.0
+  F-  F2  4  0.00000000  0.30170000  0.20030000  1.0
+  F-  F3  4  0.00000000  0.33260000  0.72950000  1.0
+  F-  F4  4  0.00000000  0.47150000  0.32410000  1.0
+  Ts+  Ts5  4  0.00000000  0.07730000  0.51180000  0.6875
+  At+  At6  4  0.00000000  0.07730000  0.51180000  0.3125

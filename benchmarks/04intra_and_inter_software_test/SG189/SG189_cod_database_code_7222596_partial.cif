@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Pr2.25Pm0.75Co0.25Sn3Ir0.25Rh2.25Mt0.25
+_symmetry_space_group_name_H-M  'P -6 2 m'
+_cell_length_a   7.54500000
+_cell_length_b   7.54500000
+_cell_length_c   3.77100000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   189
+_chemical_formula_structural
+Pr2.25Pm0.75Co0.25Sn3Ir0.25Rh2.25Mt0.25
+_chemical_formula_sum
+'Pr2.25 Pm0.75 Co0.25 Sn3 Ir0.25 Rh2.25 Mt0.25'
+_cell_volume   185.91124204
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  'y, x, z'
+  8  '-x, -x+y, -z'
+  9  'x-y, -y, z'
+  10  'y, x, -z'
+  11  '-x, -x+y, z'
+  12  'x-y, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr+  Pr0  3  0.00000000  0.40395000  0.00000000  0.75
+  Pm+  Pm1  3  0.00000000  0.40395000  0.00000000  0.25
+  Sn  Sn2  3  0.00000000  0.73784000  0.50000000  1.0
+  Rh+  Rh3  1  0.00000000  0.00000000  0.00000000  0.25
+  Co+  Co4  1  0.00000000  0.00000000  0.00000000  0.25
+  Ir+  Ir5  1  0.00000000  0.00000000  0.00000000  0.25
+  Mt+  Mt6  1  0.00000000  0.00000000  0.00000000  0.25
+  Rh  Rh7  2  0.33333333  0.66666667  0.50000000  1.0

@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Ti1.0Rf1.0Hf1.33333333Zr0.66666667Tl1B1
-_symmetry_space_group_name_H-M   P6_3/mmc
+_symmetry_space_group_name_H-M  'P 63/m m c'
 _cell_length_a   4.51000000
 _cell_length_b   4.51000000
 _cell_length_c   5.50000000

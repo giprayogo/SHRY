@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Al0.5Tl0.5In0.5Cu4B2.5S8
+_symmetry_space_group_name_H-M  'I -4 2 d'
+_cell_length_a   5.35100000
+_cell_length_b   5.35100000
+_cell_length_c   10.48000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   122
+_chemical_formula_structural   Al0.5Tl0.5In0.5Cu4B2.5S8
+_chemical_formula_sum   'Al0.5 Tl0.5 In0.5 Cu4 B2.5 S8'
+_cell_volume   300.07594648
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y+1/2, -z+1/4'
+  6  'y, x+1/2, z+1/4'
+  7  '-x, y+1/2, -z+1/4'
+  8  '-y, -x+1/2, z+1/4'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  'y+1/2, -x+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  'x+1/2, -y, -z+3/4'
+  14  'y+1/2, x, z+3/4'
+  15  '-x+1/2, y, -z+3/4'
+  16  '-y+1/2, -x, z+3/4'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu  Cu0  4  0.00000000  0.00000000  0.00000000  1
+  B+  B1  4  0.00000000  0.00000000  0.50000000  0.625
+  Al+  Al2  4  0.00000000  0.00000000  0.50000000  0.125
+  Tl+  Tl3  4  0.00000000  0.00000000  0.50000000  0.125
+  In+  In4  4  0.00000000  0.00000000  0.50000000  0.125
+  S  S5  8  0.22800000  0.25000000  0.62500000  1

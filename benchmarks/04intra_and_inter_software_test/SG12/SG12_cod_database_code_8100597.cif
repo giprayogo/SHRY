@@ -1,0 +1,123 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-18 14:25:00 +0200 (Thu, 18 Feb 2016) $
+#$Revision: 176728 $
+#$URL: svn://www.crystallography.net/cod/cif/8/10/05/8100597.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8100597
+loop_
+_publ_author_name
+'Soetebier, Frank'
+'Urland, Werner'
+_publ_section_title
+;
+Crystal structure of lutetium disilicate, Lu~2~Si~2~O~7~
+;
+_journal_issue                   1
+_journal_name_full
+'Zeitschrift f\"ur Kristallographie - New Crystal Structures'
+_journal_page_first              22
+_journal_page_last               22
+_journal_volume                  217
+_journal_year                    2002
+_chemical_formula_structural     'Lu2 (Si2 O7)'
+_chemical_formula_sum            'Lu2 O7 Si2'
+_chemical_formula_weight         518.10
+_chemical_name_common            'lutetium disilicate'
+_space_group_IT_number           12
+_symmetry_cell_setting           monoclinic
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90.00
+_cell_angle_beta                 101.99(4)
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            2
+_cell_length_a                   6.762(2)
+_cell_length_b                   8.835(3)
+_cell_length_c                   4.7113(15)
+_cell_measurement_temperature    293(2)
+_cell_volume                     275.31(16)
+_diffrn_ambient_temperature      293(2)
+_exptl_crystal_density_diffrn    3.125
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+'_geom_bond_publ_flag' value 'Y' changed to 'y' according to
+'/home/saulius/struct/CIF-dictionaries/cif_core.dic' dictionary named
+'cif_core.dic' version 2.4.1 from 2010-06-29.
+
+Automatic conversion script
+Id: cif_fix_enum 1527 2010-12-29 10:47:43Z saulius 
+;
+_cod_original_sg_symbol_H-M      'C 2/m'
+_cod_database_code               8100597
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, y, -z'
+'x+1/2, y+1/2, z'
+'-x+1/2, y+1/2, -z'
+'-x, -y, -z'
+'x, -y, z'
+'-x+1/2, -y+1/2, -z'
+'x+1/2, -y+1/2, z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Lu1 Lu 0.5000 0.80718(4) 0.0000 0.0039(2) Uani 1 d S . .
+Si1 Si 0.7196(3) 0.5000 0.4121(6) 0.0031(5) Uani 1 d S . .
+O1 O 0.5000 0.5000 0.5000 0.014(2) Uani 1 d S . .
+O2 O 0.8832(9) 0.5000 0.7156(15) 0.0060(12) Uani 1 d S . .
+O3 O 0.7367(6) 0.6510(5) 0.2200(11) 0.0052(9) Uani 1 d . . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Lu1 0.0011(2) 0.0041(2) 0.0064(3) 0.000 0.00030(14) 0.000
+Si1 0.0026(10) 0.0047(10) 0.0035(13) 0.000 -0.0005(8) 0.000
+O1 0.004(2) 0.024(5) 0.017(6) 0.000 0.005(4) 0.000
+O2 0.005(3) 0.007(3) 0.007(3) 0.000 -0.002(2) 0.000
+O3 0.0029(19) 0.0057(18) 0.007(3) 0.0025(18) 0.0002(16) 0.0007(16)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Lu1 O3 2.203(4) 2_655 yes
+Lu1 O3 2.203(4) . y
+Lu1 O2 2.209(4) 7_666 yes
+Lu1 O2 2.209(4) 3_454 yes
+Lu1 O3 2.269(5) 8_465 yes
+Lu1 O3 2.269(5) 7_665 yes
+Lu1 Lu1 3.4071(14) 5_675 ?
+Lu1 Lu1 3.5286(11) 7_565 ?
+Lu1 Lu1 3.5286(11) 7_665 ?
+Si1 O2 1.616(7) . yes
+Si1 O1 1.622(2) . yes
+Si1 O3 1.629(5) 6_565 yes
+Si1 O3 1.629(5) . yes
+O1 Si1 1.622(2) 5_666 ?
+O2 Lu1 2.209(4) 7_666 ?
+O2 Lu1 2.209(4) 3_546 ?
+O3 Lu1 2.269(5) 7_665 ?

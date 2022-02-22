@@ -1,0 +1,111 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 22:30:59 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176467 $
+#$URL: svn://www.crystallography.net/cod/cif/4/31/32/4313231.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4313231
+loop_
+_publ_author_name
+'Robert E. Dinnebier'
+'Sascha Vensky'
+'Martin Panth\"ofer'
+'Martin Jansen'
+_publ_contact_author
+;
+    Martin Jansen
+    Max-Planck f\"ur Festk\"orperforschung
+    Heisenbergstrasse 1
+    70569 Stuttgart
+    Deutschland
+;
+_publ_contact_author_email       m.jansen@fkf.mpg.de
+_publ_contact_author_fax         '049 711 689-1502'
+_publ_contact_author_phone       '049 711 689-1500'
+_publ_section_title
+;
+ Crystal and Molecular Structures of Alkali Oxalates: First Proof of a
+ Staggered Oxalate Anion in the Solid State
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              1499
+_journal_page_last               1507
+_journal_paper_doi               10.1021/ic0205536
+_journal_volume                  42
+_journal_year                    2003
+_chemical_formula_sum            'C2 O4 Rb2'
+_space_group_IT_number           55
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  '-P 2 2ab'
+_symmetry_space_group_name_H-M   'P b a m'
+_cell_angle_alpha                90.0
+_cell_angle_beta                 90.0
+_cell_angle_gamma                90.0
+_cell_formula_units_Z            2
+_cell_length_a                   11.28797(7)
+_cell_length_b                   6.29475(4)
+_cell_length_c                   3.622102(22)
+_cell_volume                     257.368(3)
+_computing_structure_refinement  GSAS
+_diffrn_radiation_polarisn_ratio 0.97
+_diffrn_radiation_wavelength     0.82978
+_pd_block_id                     'Jul 29 14:54:01 |PHASE_1||'
+_pd_calc_method                  'Rietveld Refinement'
+_pd_meas_2theta_range_inc        0.005
+_pd_meas_2theta_range_max        58.995
+_pd_meas_2theta_range_min        5.005
+_pd_phase_name                   \b-Rb~2~C~2~O~4~
+_pd_proc_2theta_range_inc        0.005
+_pd_proc_2theta_range_max        58.995
+_pd_proc_2theta_range_min        5.005
+_pd_proc_info_datetime           'Jul 29 14:54:01 2002'
+_pd_proc_ls_prof_R_factor        0.0599
+_pd_proc_ls_prof_wR_expected     0.0586
+_pd_proc_ls_prof_wR_factor       0.0755
+_refine_ls_goodness_of_fit_all   1.29
+_refine_ls_number_parameters     13
+_refine_ls_shift/esd_max         0.08
+_refine_ls_shift/esd_mean        0.02
+_cod_data_source_file            ic0205536_1.cif
+_cod_data_source_block           \b-Rb~2~C~2~O~4~
+_cod_original_formula_sum        'Rb2 C2 O4'
+_cod_database_code               4313231
+_cod_database_fobs_code          4313231
+#BEGIN Tags that were not found in dictionaries:
+_pd_instr_radiation_probe        x-ray
+#END Tags that were not found in dictionaries
+loop_
+_symmetry_equiv_pos_as_xyz
++x,+y,+z
+-x+1/2,+y+1/2,+z
++x+1/2,-y+1/2,+z
+-x,-y,+z
+-x,-y,-z
++x+1/2,-y+1/2,-z
+-x+1/2,+y+1/2,-z
++x,+y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_thermal_displace_type
+_atom_site_U_iso_or_equiv
+_atom_site_symmetry_multiplicity
+C1 0.44022(28) 1.0632(6) 0.0 1.0 Uiso -0.0098(10) 4
+O2 0.45168(20) 1.2584(4) 0.0 1.0 Uiso 0.0006(8) 4
+O3 0.34863(23) 0.97059(28) 0.0 1.0 Uiso -0.0069(7) 4
+RB4 0.34720(5) 0.59303(8) 0.5 1.0 Uiso 0.02831(15) 4
+loop_
+_atom_type_symbol
+_atom_type_number_in_cell
+C 4.0
+O 8.0
+RB 4.0

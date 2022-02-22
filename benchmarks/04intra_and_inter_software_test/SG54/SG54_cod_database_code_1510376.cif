@@ -1,0 +1,70 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-18 17:37:37 +0200 (Thu, 18 Feb 2016) $
+#$Revision: 176729 $
+#$URL: svn://www.crystallography.net/cod/cif/1/51/03/1510376.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1510376
+loop_
+_publ_author_name
+'Kanatzidis, M.G.'
+'Axtell, E.A.'
+_publ_section_title
+;
+ First examples of gold thiocadmates: A2 Au2 Cd2 S4 (A = rb, Cs) and K2
+ Au4 Cd S4 : bright photoluminescence from new alkali metal/gold
+ thiocadmates
+;
+_journal_name_full               'Chemistry - A European Journal'
+_journal_page_first              2435
+_journal_page_last               2441
+_journal_paper_doi
+10.1002/(SICI)1521-3765(19981204)4:12<2435::AID-CHEM2435>3.0.CO;2-V
+_journal_volume                  4
+_journal_year                    1998
+_chemical_formula_sum            'Au2 Cd2 Rb2 S4'
+_chemical_name_systematic        'Rb2 Au2 Cd2 S4'
+_space_group_IT_number           54
+_symmetry_space_group_name_Hall  '-P 2a 2ac'
+_symmetry_space_group_name_H-M   'P c c a'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   13.93
+_cell_length_b                   5.757
+_cell_length_c                   6.742
+_cell_volume                     540.675
+_citation_journal_id_ASTM        CEUJED
+_cod_data_source_file            gold_458.cif
+_cod_data_source_block           Au2Cd2Rb2S4
+_cod_original_cell_volume        540.6748
+_cod_database_code               1510376
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x+1/2,-y,z
+x+1/2,-y,-z+1/2
+-x,y,-z+1/2
+-x,-y,-z
+x-1/2,y,-z
+-x-1/2,y,z-1/2
+x,-y,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Au1 Au+1 0.25 0.5 0.1842 1 0.0
+S1 S-2 0.3642 0.204 0.188 1 0.0
+Cd1 Cd+2 0.25 0 -0.0618 1 0.0
+Rb1 Rb+1 0 0.278 0.25 1 0.0

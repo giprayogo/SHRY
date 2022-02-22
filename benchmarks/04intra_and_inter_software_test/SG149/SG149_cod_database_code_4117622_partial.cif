@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_K1Mn0.5Re0.5Rg1.5Ag1.5C6N6
+_symmetry_space_group_name_H-M  'P 3 1 2'
+_cell_length_a   6.86600000
+_cell_length_b   6.86600000
+_cell_length_c   8.18950000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   149
+_chemical_formula_structural   K1Mn0.5Re0.5Rg1.5Ag1.5C6N6
+_chemical_formula_sum   'K1 Mn0.5 Re0.5 Rg1.5 Ag1.5 C6 N6'
+_cell_volume   334.34560376
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  '-y, -x, -z'
+  5  '-x+y, y, -z'
+  6  'x, x-y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.33333333  0.66666667  0.00000000  1.0
+  Mn+  Mn1  1  0.00000000  0.00000000  0.00000000  0.5
+  Re+  Re2  1  0.00000000  0.00000000  0.00000000  0.5
+  Rg+  Rg3  3  0.50468000  0.00937000  0.50000000  0.5
+  Ag+  Ag4  3  0.50468000  0.00937000  0.50000000  0.5
+  C  C5  6  0.34790000  0.00390000  0.28440000  1.0
+  N  N6  6  0.00380000  0.25990000  0.16600000  1.0

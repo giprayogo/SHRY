@@ -1,0 +1,66 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-09-16 18:09:56 +0300 (Fri, 16 Sep 2016) $
+#$Revision: 186594 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/65/1526587.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1526587
+loop_
+_publ_author_name
+'Scotti, N.'
+'Jacobs, H.'
+_publ_section_title
+;
+ Kaliumtriamidostannat(II), K (Sn (N H2)3) - Synthese und Kristallstruktur
+;
+_journal_name_full
+'Zeitschrift fuer Anorganische und Allgemeine Chemie'
+_journal_page_first              2275
+_journal_page_last               2278
+_journal_volume                  626
+_journal_year                    2000
+_chemical_formula_sum            'H6 K N3 Sn'
+_chemical_name_systematic        'K (Sn (N H2)3)'
+_space_group_IT_number           147
+_symmetry_space_group_name_Hall  '-P 3'
+_symmetry_space_group_name_H-M   'P -3'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            2
+_cell_length_a                   6.56
+_cell_length_b                   6.56
+_cell_length_c                   7.413
+_cell_volume                     276.269
+_citation_journal_id_ASTM        ZAACAB
+_cod_data_source_file            Scotti_ZAACAB_2000_784.cif
+_cod_data_source_block           H6K1N3Sn1
+_cod_original_cell_volume        276.2691
+_cod_original_formula_sum        'H6 K1 N3 Sn1'
+_cod_database_code               1526587
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+-x,-y,-z
+y,-x+y,-z
+x-y,x,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_attached_hydrogens
+N1 N-3 0.737 0.633 0.781 1 0.0 2
+K1 K+1 0.6667 0.3333 0.0988 1 0.0 0
+Sn1 Sn+2 0.6667 0.3333 0.6175 1 0.0 0

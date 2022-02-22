@@ -1,0 +1,66 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/1/53/56/1535640.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1535640
+loop_
+_publ_author_name
+'Troyanov, S.I.'
+'Rybakov, V.B.'
+'Ionov, V.M.'
+_publ_section_title
+;
+ Synthesis and crystal structures of TiBr4,TiBr3 and Ti(AlBr4)2
+;
+_journal_name_full               'Zhurnal Neorganicheskoi Khimii'
+_journal_page_first              882
+_journal_page_last               887
+_journal_volume                  35
+_journal_year                    1990
+_chemical_formula_sum            'Al2 Br8 Ti'
+_chemical_name_systematic        'Ti (Al Br4)2'
+_space_group_IT_number           34
+_symmetry_space_group_name_Hall  'P 2 -2n'
+_symmetry_space_group_name_H-M   'P n n 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   6.274
+_cell_length_b                   12.801
+_cell_length_c                   8.676
+_cell_volume                     696.800
+_citation_journal_id_ASTM        ZNOKAQ
+_cod_data_source_file            Troyanov_ZNOKAQ_1990_992.cif
+_cod_data_source_block           Al2Br8Ti1
+_cod_original_cell_volume        696.7997
+_cod_original_formula_sum        'Al2 Br8 Ti1'
+_cod_database_code               1535640
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+-x+1/2,y+1/2,z+1/2
+x+1/2,-y+1/2,z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Al1 Al+3 0.605 0.1865 0.001 1 0.0
+Ti1 Ti+2 0 0 0 1 0.0
+Br1 Br-1 0.2349 0.1796 -0.009 1 0.0
+Br2 Br-1 -0.257 0.0925 0.1936 1 0.0
+Br4 Br-1 0.7131 0.3541 -0.013 1 0.0
+Br3 Br-1 -0.2612 0.0935 -0.2196 1 0.0

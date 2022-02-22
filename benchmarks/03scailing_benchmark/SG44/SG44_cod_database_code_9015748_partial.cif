@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cs2Rb0.33333333K0.33333333Na4Te1P8H1.33333333S0.33333333O30Lv0.66666667
-_symmetry_space_group_name_H-M   Imm2
+_symmetry_space_group_name_H-M  'I m m 2'
 _cell_length_a   14.50000000
 _cell_length_b   7.80400000
 _cell_length_c   7.00600000

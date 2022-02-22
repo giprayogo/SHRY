@@ -1,0 +1,70 @@
+# generated using pymatgen
+data_Cu16H32At0.33333333Pb32I32O32F0.33333333Ts15.33333333
+_symmetry_space_group_name_H-M  'I 41/a c d :2'
+_cell_length_a   14.55790000
+_cell_length_b   14.55790000
+_cell_length_c   16.29610000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   142
+_chemical_formula_structural
+Cu16H32At0.33333333Pb32I32O32F0.33333333Ts15.33333333
+_chemical_formula_sum
+'Cu16 H32 At0.33333333 Pb32 I32 O32 F0.33333333 Ts15.33333333'
+_cell_volume   3453.67243772
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+3/4, x+1/4, z+3/4'
+  3  '-x, -y+1/2, z'
+  4  'y+1/4, -x+1/4, z+3/4'
+  5  'x, -y, -z+1/2'
+  6  '-y+1/4, -x+1/4, -z+1/4'
+  7  '-x+1/2, y, -z'
+  8  'y+1/4, x+3/4, -z+3/4'
+  9  '-x, -y, -z'
+  10  'y+3/4, -x+1/4, -z+3/4'
+  11  'x, y+1/2, -z'
+  12  '-y+1/4, x+1/4, -z+3/4'
+  13  '-x, y, z+1/2'
+  14  'y+1/4, x+1/4, z+1/4'
+  15  'x+1/2, -y, z'
+  16  '-y+1/4, -x+3/4, z+3/4'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-y+1/4, x+3/4, z+1/4'
+  19  '-x+1/2, -y, z+1/2'
+  20  'y+3/4, -x+3/4, z+1/4'
+  21  'x+1/2, -y+1/2, -z'
+  22  '-y+3/4, -x+3/4, -z+3/4'
+  23  '-x, y+1/2, -z+1/2'
+  24  'y+3/4, x+1/4, -z+1/4'
+  25  '-x+1/2, -y+1/2, -z+1/2'
+  26  'y+1/4, -x+3/4, -z+1/4'
+  27  'x+1/2, y, -z+1/2'
+  28  '-y+3/4, x+3/4, -z+1/4'
+  29  '-x+1/2, y+1/2, z'
+  30  'y+3/4, x+3/4, z+3/4'
+  31  'x, -y+1/2, z+1/2'
+  32  '-y+3/4, -x+1/4, z+1/4'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu  Cu0  16  0.16670000  0.08330000  0.62500000  1.0
+  H  H1  32  0.10310000  0.35410000  0.27910000  1.0
+  Pb  Pb2  32  0.09524000  0.15314000  0.95673000  1.0
+  I  I3  32  0.00302000  0.04702000  0.12310000  1.0
+  F+  F4  16  0.22900000  0.00000000  0.75000000
+  0.020833333333333332
+  At+  At5  16  0.22900000  0.00000000  0.75000000
+  0.020833333333333332
+  Ts+  Ts6  16  0.22900000  0.00000000  0.75000000
+  0.9583333333333334
+  O  O7  32  0.07010000  0.17940000  0.81010000  1.0

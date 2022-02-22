@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cu2Si6Sn4Ge6B2H18N8(ClF3)3
-_symmetry_space_group_name_H-M   P4/nbm
+_symmetry_space_group_name_H-M  'P 4/n b m :2'
 _cell_length_a   9.69010000
 _cell_length_b   9.69010000
 _cell_length_c   6.61930000

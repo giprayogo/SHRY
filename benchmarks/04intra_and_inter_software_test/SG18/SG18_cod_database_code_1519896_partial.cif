@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_LiH31C30(N2O)2
+_symmetry_space_group_name_H-M  'P 21 21 2'
+_cell_length_a   9.58990000
+_cell_length_b   14.53370000
+_cell_length_c   4.60280000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   18
+_chemical_formula_structural   LiH31C30(N2O)2
+_chemical_formula_sum   'Li1 H31 C30 N4 O2'
+_cell_volume   641.52321114
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x+1/2, -y+1/2, -z'
+  4  '-x+1/2, y+1/2, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li+  Li0  4  0.04300000  0.43510000  0.36300000  0.25
+  H+  H1  4  0.04300000  0.43510000  0.36300000  0.75
+  H  H2  4  0.03780000  0.25990000  0.42470000  1.0
+  H  H3  4  0.06630000  0.07410000  0.66490000  1.0
+  H  H4  4  0.12050000  0.80530000  0.87040000  1.0
+  H  H5  4  0.13090000  0.10030000  0.35530000  1.0
+  H  H6  4  0.16610000  0.65740000  0.03990000  1.0
+  H  H7  4  0.22840000  0.05720000  0.60250000  1.0
+  H  H8  4  0.24240000  0.93150000  0.05500000  1.0
+  C  C9  4  0.10760000  0.26886000  0.56850000  1.0
+  C  C10  4  0.13485000  0.35717000  0.67030000  1.0
+  C  C11  4  0.14890000  0.09786000  0.56480000  1.0
+  C  C12  4  0.18140000  0.19319000  0.67490000  1.0
+  C  C13  4  0.18990000  0.79620000  0.01480000  1.0
+  C  C14  4  0.21720000  0.70798000  0.11540000  1.0
+  C  C15  4  0.23730000  0.37114000  0.87750000  1.0
+  C  C16  2  0.00000000  0.50000000  0.70710000  1.0
+  N  N17  4  0.05960000  0.43152000  0.54780000  1.0
+  O  O18  2  0.00000000  0.50000000  0.97720000  1.0

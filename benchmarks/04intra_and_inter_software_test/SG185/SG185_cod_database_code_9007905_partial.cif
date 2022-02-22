@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Yb2Ce1.5Sm1.5Eu1Mn6O18
+_symmetry_space_group_name_H-M  'P 63 c m'
+_cell_length_a   6.05840000
+_cell_length_b   6.05840000
+_cell_length_c   11.35610000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   185
+_chemical_formula_structural   Yb2Ce1.5Sm1.5Eu1Mn6O18
+_chemical_formula_sum   'Yb2 Ce1.5 Sm1.5 Eu1 Mn6 O18'
+_cell_volume   360.97383840
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z+1/2'
+  3  '-y, x-y, z'
+  4  '-x, -y, z+1/2'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z+1/2'
+  7  'y, x, z'
+  8  'x, x-y, z+1/2'
+  9  'x-y, -y, z'
+  10  '-y, -x, z+1/2'
+  11  '-x, -x+y, z'
+  12  '-x+y, y, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  2  0.00000000  0.00000000  0.27336000  1
+  Ce+  Ce1  4  0.33333333  0.66666667  0.23061000  0.375
+  Eu+  Eu2  4  0.33333333  0.66666667  0.23061000  0.25
+  Sm+  Sm3  4  0.33333333  0.66666667  0.23061000  0.375
+  Mn  Mn4  6  0.00000000  0.33333333  0.99806000  1
+  O  O5  6  0.00000000  0.30300000  0.16170000  1
+  O  O6  6  0.00000000  0.36100000  0.83420000  1
+  O  O7  4  0.33333333  0.66666667  0.01920000  1
+  O  O8  2  0.00000000  0.00000000  0.47320000  1

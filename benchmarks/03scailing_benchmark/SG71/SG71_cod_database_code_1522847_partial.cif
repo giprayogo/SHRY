@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cr0.66666667Mo0.33333333Sg1Ds0.66666667Ni2Pt1.33333333
-_symmetry_space_group_name_H-M   Immm
+_symmetry_space_group_name_H-M  'I m m m'
 _cell_length_a   2.76500000
 _cell_length_b   8.29600000
 _cell_length_c   3.93800000

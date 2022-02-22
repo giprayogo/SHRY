@@ -1,0 +1,299 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-26 23:02:33 +0200 (Sat, 26 Mar 2016) $
+#$Revision: 180527 $
+#$URL: svn://www.crystallography.net/cod/cif/7/21/96/7219621.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7219621
+loop_
+_publ_author_name
+'Liu, Guangfeng'
+'Liu, Jie'
+'Zheng, Xiaoxin'
+'Liu, Yang'
+'Yuan, Dongsheng'
+'Zhang, Xixia'
+'Gao, Zeliang'
+'Tao, Xutang'
+_publ_section_title
+;
+ Bulk crystal growth and characterization of semi-organic nonlinear
+ optical crystal tri-diethylammonium hexachlorobismuthate (TDCB)
+;
+_journal_issue                   12
+_journal_name_full               CrystEngComm
+_journal_page_first              2569
+_journal_paper_doi               10.1039/C4CE02182G
+_journal_volume                  17
+_journal_year                    2015
+_chemical_formula_moiety         'Bi Cl6, 3(C4 H12 N)'
+_chemical_formula_sum            'C12 H36 Bi Cl6 N3'
+_chemical_formula_weight         644.12
+_chemical_name_systematic
+; 
+ ? 
+;
+_space_group_IT_number           161
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'R 3 -2"c'
+_symmetry_space_group_name_H-M   'R 3 c :H'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_audit_update_record
+;
+2014-10-26 deposited with the CCDC.
+2015-02-20 downloaded from the CCDC.
+;
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            6
+_cell_length_a                   14.699(4)
+_cell_length_b                   14.699(4)
+_cell_length_c                   19.102(5)
+_cell_measurement_reflns_used    9919
+_cell_measurement_temperature    100(2)
+_cell_measurement_theta_max      27.49
+_cell_measurement_theta_min      2.67
+_cell_volume                     3574.3(17)
+_computing_cell_refinement       'Bruker SAINT'
+_computing_data_collection       'Bruker APEX2'
+_computing_data_reduction        'Bruker SAINT'
+_computing_molecular_graphics    'Bruker SHELXTL'
+_computing_publication_material  'Bruker SHELXTL'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 2008)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 2008)'
+_diffrn_ambient_temperature      100(2)
+_diffrn_measured_fraction_theta_full 1.000
+_diffrn_measured_fraction_theta_max 1.000
+_diffrn_measurement_device_type  'Bruker APEX-II CCD'
+_diffrn_measurement_method       '\f and \w scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71069
+_diffrn_reflns_av_R_equivalents  0.0278
+_diffrn_reflns_av_sigmaI/netI    0.0261
+_diffrn_reflns_limit_h_max       19
+_diffrn_reflns_limit_h_min       -18
+_diffrn_reflns_limit_k_max       18
+_diffrn_reflns_limit_k_min       -19
+_diffrn_reflns_limit_l_max       24
+_diffrn_reflns_limit_l_min       -24
+_diffrn_reflns_number            12907
+_diffrn_reflns_theta_full        27.49
+_diffrn_reflns_theta_max         27.49
+_diffrn_reflns_theta_min         2.67
+_exptl_absorpt_coefficient_mu    8.072
+_exptl_absorpt_correction_T_max  0.1956
+_exptl_absorpt_correction_T_min  0.1406
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details   'APEX2 Software Suite (Bruker,2009)'
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    1.795
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       bulk
+_exptl_crystal_F_000             1884
+_exptl_crystal_size_max          0.40
+_exptl_crystal_size_mid          0.30
+_exptl_crystal_size_min          0.30
+_refine_diff_density_max         0.783
+_refine_diff_density_min         -0.392
+_refine_diff_density_rms         0.060
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   -0.009(6)
+_refine_ls_extinction_coef       0.00115(3)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.092
+_refine_ls_hydrogen_treatment    constr
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     70
+_refine_ls_number_reflns         1816
+_refine_ls_number_restraints     1
+_refine_ls_restrained_S_all      1.092
+_refine_ls_R_factor_all          0.0109
+_refine_ls_R_factor_gt           0.0109
+_refine_ls_shift/su_max          0.002
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0000P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0295
+_refine_ls_wR_factor_ref         0.0295
+_reflns_number_gt                1807
+_reflns_number_total             1816
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            c4ce02182g2.cif
+_cod_data_source_block           TDCB
+_cod_depositor_comments          'Adding full bibliography for 7219621.cif.'
+_cod_original_cell_volume        3574.2(17)
+_cod_original_sg_symbol_H-M      'R 3 c'
+_cod_database_code               7219621
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'-y, -x, z+1/2'
+'x, x-y, z+1/2'
+'-x+y, y, z+1/2'
+'x+2/3, y+1/3, z+1/3'
+'-y+2/3, x-y+1/3, z+1/3'
+'-x+y+2/3, -x+1/3, z+1/3'
+'-y+2/3, -x+1/3, z+5/6'
+'x+2/3, x-y+1/3, z+5/6'
+'-x+y+2/3, y+1/3, z+5/6'
+'x+1/3, y+2/3, z+2/3'
+'-y+1/3, x-y+2/3, z+2/3'
+'-x+y+1/3, -x+2/3, z+2/3'
+'-y+1/3, -x+2/3, z+7/6'
+'x+1/3, x-y+2/3, z+7/6'
+'-x+y+1/3, y+2/3, z+7/6'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+N1 N 0.25301(9) 0.88619(10) 0.97588(6) 0.0146(3) Uani 1 1 d .
+H3A H 0.2159 0.8174 0.9867 0.018 Uiso 1 1 d R
+H3B H 0.2084 0.9043 0.9567 0.018 Uiso 1 1 d R
+C1 C 0.34057(13) 1.06365(13) 1.03123(10) 0.0230(3) Uani 1 1 d .
+H1A H 0.2852 1.0766 1.0176 0.035 Uiso 1 1 calc R
+H1B H 0.3932 1.0883 0.9953 0.035 Uiso 1 1 calc R
+H1C H 0.3715 1.1001 1.0741 0.035 Uiso 1 1 calc R
+C2 C 0.29633(13) 0.94729(13) 1.04181(8) 0.0204(3) Uani 1 1 d .
+H2A H 0.3513 0.9352 1.0595 0.024 Uiso 1 1 calc R
+H2B H 0.2411 0.9222 1.0767 0.024 Uiso 1 1 calc R
+C4 C 0.33447(12) 0.90217(13) 0.92242(8) 0.0188(3) Uani 1 1 d .
+H4A H 0.3922 0.8996 0.9451 0.023 Uiso 1 1 calc R
+H4B H 0.3620 0.9708 0.9011 0.023 Uiso 1 1 calc R
+C6 C 0.28757(16) 0.81806(14) 0.86636(9) 0.0260(4) Uani 1 1 d .
+H6A H 0.2313 0.8215 0.8433 0.039 Uiso 1 1 calc R
+H6B H 0.2609 0.7502 0.8875 0.039 Uiso 1 1 calc R
+H6C H 0.3408 0.8293 0.8327 0.039 Uiso 1 1 calc R
+Bi1 Bi 0.0000 1.0000 0.95845(4) 0.01017(5) Uani 1 3 d S
+Cl2 Cl 0.15648(3) 0.99315(3) 0.872649(17) 0.01561(8) Uani 1 1 d .
+Cl3 Cl 0.02079(3) 0.86414(3) 1.033565(18) 0.01856(9) Uani 1 1 d .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+N1 0.0129(6) 0.0131(6) 0.0181(6) 0.0025(5) 0.0002(5) 0.0067(5)
+C1 0.0229(8) 0.0210(9) 0.0262(8) -0.0043(7) -0.0041(7) 0.0118(8)
+C2 0.0213(7) 0.0242(8) 0.0176(7) 0.0023(7) 0.0008(7) 0.0128(6)
+C4 0.0154(8) 0.0220(8) 0.0184(7) 0.0030(6) 0.0032(6) 0.0089(7)
+C6 0.0309(10) 0.0237(9) 0.0222(8) 0.0008(7) 0.0057(7) 0.0127(8)
+Bi1 0.01004(6) 0.01004(6) 0.01044(7) 0.000 0.000 0.00502(3)
+Cl2 0.01690(18) 0.01532(18) 0.01568(18) 0.00323(14) 0.00369(14) 0.00885(16)
+Cl3 0.01979(18) 0.01779(17) 0.01869(19) 0.00586(15) 0.00102(15) 0.00983(16)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Bi Bi -4.1077 10.2566 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Cl Cl 0.1484 0.1585 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N N 0.0061 0.0033 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+C2 N1 C4 114.41(12) . .
+C2 N1 H3A 108.6 . .
+C4 N1 H3A 108.7 . .
+C2 N1 H3B 108.7 . .
+C4 N1 H3B 108.7 . .
+H3A N1 H3B 107.6 . .
+C2 C1 H1A 109.5 . .
+C2 C1 H1B 109.5 . .
+H1A C1 H1B 109.5 . .
+C2 C1 H1C 109.5 . .
+H1A C1 H1C 109.5 . .
+H1B C1 H1C 109.5 . .
+N1 C2 C1 112.44(12) . .
+N1 C2 H2A 109.1 . .
+C1 C2 H2A 109.1 . .
+N1 C2 H2B 109.1 . .
+C1 C2 H2B 109.1 . .
+H2A C2 H2B 107.8 . .
+N1 C4 C6 110.57(13) . .
+N1 C4 H4A 109.5 . .
+C6 C4 H4A 109.5 . .
+N1 C4 H4B 109.5 . .
+C6 C4 H4B 109.5 . .
+H4A C4 H4B 108.1 . .
+C4 C6 H6A 109.5 . .
+C4 C6 H6B 109.5 . .
+H6A C6 H6B 109.5 . .
+C4 C6 H6C 109.5 . .
+H6A C6 H6C 109.5 . .
+H6B C6 H6C 109.5 . .
+Cl3 Bi1 Cl3 92.43(2) 2_675 3_465
+Cl3 Bi1 Cl3 92.43(2) 2_675 .
+Cl3 Bi1 Cl3 92.43(2) 3_465 .
+Cl3 Bi1 Cl2 172.324(13) 2_675 3_465
+Cl3 Bi1 Cl2 83.339(19) 3_465 3_465
+Cl3 Bi1 Cl2 94.140(18) . 3_465
+Cl3 Bi1 Cl2 83.339(18) 2_675 2_675
+Cl3 Bi1 Cl2 94.141(18) 3_465 2_675
+Cl3 Bi1 Cl2 172.323(13) . 2_675
+Cl2 Bi1 Cl2 90.56(2) 3_465 2_675
+Cl3 Bi1 Cl2 94.142(18) 2_675 .
+Cl3 Bi1 Cl2 172.324(13) 3_465 .
+Cl3 Bi1 Cl2 83.339(18) . .
+Cl2 Bi1 Cl2 90.56(2) 3_465 .
+Cl2 Bi1 Cl2 90.56(2) 2_675 .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+N1 C2 1.492(2) .
+N1 C4 1.5001(19) .
+N1 H3A 0.9001 .
+N1 H3B 0.9000 .
+C1 C2 1.509(2) .
+C1 H1A 0.9600 .
+C1 H1B 0.9600 .
+C1 H1C 0.9600 .
+C2 H2A 0.9700 .
+C2 H2B 0.9700 .
+C4 C6 1.516(2) .
+C4 H4A 0.9700 .
+C4 H4B 0.9700 .
+C6 H6A 0.9600 .
+C6 H6B 0.9600 .
+C6 H6C 0.9600 .
+Bi1 Cl3 2.5981(7) 2_675
+Bi1 Cl3 2.5981(7) 3_465
+Bi1 Cl3 2.5981(7) .
+Bi1 Cl2 2.8667(8) 3_465
+Bi1 Cl2 2.8667(8) 2_675
+Bi1 Cl2 2.8667(8) .

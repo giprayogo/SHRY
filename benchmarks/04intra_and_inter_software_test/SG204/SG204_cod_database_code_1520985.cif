@@ -1,0 +1,108 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-07-07 10:56:50 +0300 (Tue, 07 Jul 2015) $
+#$Revision: 140603 $
+#$URL: svn://www.crystallography.net/cod/cif/1/52/09/1520985.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1520985
+loop_
+_publ_author_name
+'Claves, D.'
+'Ksari-Habiles, Y.'
+'Chouteau, G.'
+'Touzain, P.'
+_publ_section_title
+;
+ Crystal chemistry of europium fullerides
+;
+_journal_name_full               'Solid State Communications'
+_journal_page_first              431
+_journal_page_last               435
+_journal_volume                  106
+_journal_year                    1998
+_chemical_formula_sum            'C60 Eu6'
+_chemical_name_systematic        'Eu6 C60'
+_space_group_IT_number           204
+_symmetry_space_group_name_Hall  '-I 2 2 3'
+_symmetry_space_group_name_H-M   'I m -3'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   10.97
+_cell_length_b                   10.97
+_cell_length_c                   10.97
+_cell_volume                     1320.140
+_citation_journal_id_ASTM        SSCOA4
+_cod_data_source_file            Claves_SSCOA4_1998_251.cif
+_cod_data_source_block           C60Eu6
+_cod_original_cell_volume        1320.14
+_cod_database_code               1520985
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+x,-y,-z
+-x,y,-z
+z,x,y
+-z,-x,y
+z,-x,-y
+-z,x,-y
+y,z,x
+y,-z,-x
+-y,z,-x
+-y,-z,x
+-x,-y,-z
+x,y,-z
+-x,y,z
+x,-y,z
+-z,-x,-y
+z,x,-y
+-z,x,y
+z,-x,y
+-y,-z,-x
+-y,z,x
+y,-z,x
+y,z,-x
+x+1/2,y+1/2,z+1/2
+-x+1/2,-y+1/2,z+1/2
+x+1/2,-y+1/2,-z+1/2
+-x+1/2,y+1/2,-z+1/2
+z+1/2,x+1/2,y+1/2
+-z+1/2,-x+1/2,y+1/2
+z+1/2,-x+1/2,-y+1/2
+-z+1/2,x+1/2,-y+1/2
+y+1/2,z+1/2,x+1/2
+y+1/2,-z+1/2,-x+1/2
+-y+1/2,z+1/2,-x+1/2
+-y+1/2,-z+1/2,x+1/2
+-x+1/2,-y+1/2,-z+1/2
+x+1/2,y+1/2,-z+1/2
+-x+1/2,y+1/2,z+1/2
+x+1/2,-y+1/2,z+1/2
+-z+1/2,-x+1/2,-y+1/2
+z+1/2,x+1/2,-y+1/2
+-z+1/2,x+1/2,y+1/2
+z+1/2,-x+1/2,y+1/2
+-y+1/2,-z+1/2,-x+1/2
+-y+1/2,z+1/2,x+1/2
+y+1/2,-z+1/2,x+1/2
+y+1/2,z+1/2,-x+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+C1 C 0.0654 0 0.3174 1 0.0
+C3 C 0.0654 0.2116 0.2366 1 0.0
+Eu1 Eu 0.2796 0 0.5 1 0.0
+C2 C 0.1308 0.1058 0.277 1 0.0

@@ -1,0 +1,56 @@
+# generated using pymatgen
+data_Y1.5Lu0.16666667Lr0.16666667Sc8.16666667Co8Si20
+_symmetry_space_group_name_H-M  'P 4/m b m'
+_cell_length_a   12.01000000
+_cell_length_b   12.01000000
+_cell_length_c   3.93600000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   127
+_chemical_formula_structural
+Y1.5Lu0.16666667Lr0.16666667Sc8.16666667Co8Si20
+_chemical_formula_sum
+'Y1.5 Lu0.16666667 Lr0.16666667 Sc8.16666667 Co8 Si20'
+_cell_volume   567.72903360
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x+1/2, -y+1/2, -z'
+  10  '-x+1/2, y+1/2, z'
+  11  '-y+1/2, -x+1/2, -z'
+  12  'y+1/2, x+1/2, z'
+  13  '-x+1/2, y+1/2, -z'
+  14  'x+1/2, -y+1/2, z'
+  15  'y+1/2, x+1/2, -z'
+  16  '-y+1/2, -x+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y+  Y0  2  0.00000000  0.00000000  0.00000000  0.75
+  Sc+  Sc1  2  0.00000000  0.00000000  0.00000000
+  0.08333333333333333
+  Lu+  Lu2  2  0.00000000  0.00000000  0.00000000
+  0.08333333333333333
+  Lr+  Lr3  2  0.00000000  0.00000000  0.00000000
+  0.08333333333333333
+  Sc  Sc4  4  0.11180000  0.38820000  0.50000000  1.0
+  Sc  Sc5  4  0.17560000  0.67560000  0.50000000  1.0
+  Co  Co6  8  0.02400000  0.75400000  0.00000000  1.0
+  Si  Si7  8  0.00310000  0.83620000  0.50000000  1.0
+  Si  Si8  8  0.15750000  0.19850000  0.00000000  1.0
+  Si  Si9  4  0.06790000  0.56790000  0.00000000  1.0

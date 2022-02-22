@@ -1,0 +1,78 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 03:10:39 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176453 $
+#$URL: svn://www.crystallography.net/cod/cif/7/20/94/7209484.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7209484
+loop_
+_publ_author_name
+'Schaefer, J.'
+'Bluhm, K.'
+_publ_section_title
+;
+ Synthese und Kristallstruktur von Verbindungen des Typs Cu M (B5 O10) (M=
+ Tm3+, Lu3+)
+;
+_journal_name_full
+;
+Zeitschrift fuer Naturforschung, Teil B. Anorganische Chemie, Organische
+ Chemie (42,1987-)
+;
+_journal_page_first              762
+_journal_page_last               766
+_journal_volume                  50
+_journal_year                    1995
+_chemical_formula_sum            'B5 Cu O10 Tm'
+_chemical_name_systematic        'Cu Tm (B5 O10)'
+_space_group_IT_number           45
+_symmetry_space_group_name_Hall  'I 2 -2c'
+_symmetry_space_group_name_H-M   'I b a 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   6.22
+_cell_length_b                   8.447
+_cell_length_c                   12.66
+_cell_volume                     665.161
+_citation_journal_id_ASTM        ZNBSEN
+_cod_data_source_file            boron4-x_178.cif
+_cod_data_source_block           B5Cu1O10Tm1
+_cod_original_cell_volume        665.1606
+_cod_original_formula_sum        'B5 Cu1 O10 Tm1'
+_cod_database_code               7209484
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+-x,y,z+1/2
+x,-y,z+1/2
+x+1/2,y+1/2,z+1/2
+-x+1/2,-y+1/2,z+1/2
+-x+1/2,y+1/2,z+1
+x+1/2,-y+1/2,z+1
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Tm1 Tm+3 0 0.5 0.18797 1 0.0
+O3 O-2 0.151 0.1238 0.9408 1 0.0
+O1 O-2 0.0533 0.6582 0.3314 1 0.0
+Cu1 Cu+2 0 0.5 0.9399 1 0.0
+B2 B+3 0.1159 0.1899 0.0397 1 0.0
+O2 O-2 0.153 0.9103 0.2557 1 0.0
+O4 O-2 0.1459 0.1 0.1281 1 0.0
+B3 B+3 0 0 0.1931 1 0.0
+B1 B+3 0.1177 0.8069 0.3419 1 0.0
+O5 O-2 0.0689 0.3452 0.0525 1 0.0

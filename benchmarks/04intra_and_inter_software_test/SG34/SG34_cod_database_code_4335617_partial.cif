@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_B8Nh2Al0.5Tl0.5In1H8Pb8O30
+_symmetry_space_group_name_H-M  'P n n 2'
+_cell_length_a   11.58240000
+_cell_length_b   11.76640000
+_cell_length_c   4.56570000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   34
+_chemical_formula_structural   B8Nh2Al0.5Tl0.5In1H8Pb8O30
+_chemical_formula_sum   'B8 Nh2 Al0.5 Tl0.5 In1 H8 Pb8 O30'
+_cell_volume   622.22798416
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x+1/2, y+1/2, z+1/2'
+  4  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  B  B0  4  0.15330000  0.72650000  0.70100000  1.0
+  Nh+  Nh1  4  0.24540000  0.17340000  0.69600000  0.5
+  Al+  Al2  4  0.24540000  0.17340000  0.69600000  0.125
+  In+  In3  4  0.24540000  0.17340000  0.69600000  0.25
+  Tl+  Tl4  4  0.24540000  0.17340000  0.69600000  0.125
+  B  B5  4  0.01590000  0.11680000  0.72200000  1.0
+  H  H6  4  0.10230000  0.58160000  0.83070000  1.0
+  H  H7  4  0.16080000  0.55190000  0.05870000  1.0
+  Pb  Pb8  4  0.07542000  0.28439000  0.21399000  1.0
+  Pb  Pb9  4  0.15243000  0.94738000  0.22324000  1.0
+  O  O10  4  0.01780000  0.11610000  0.02960000  1.0
+  O  O11  4  0.08130000  0.82090000  0.58580000  1.0
+  O  O12  4  0.08410000  0.62270000  0.69300000  1.0
+  O  O13  4  0.12160000  0.16690000  0.59280000  1.0
+  O  O14  4  0.19630000  0.75310000  0.99280000  1.0
+  O  O15  4  0.20510000  0.55890000  0.19800000  1.0
+  O  O16  4  0.24540000  0.22050000  0.99630000  1.0
+  O  O17  2  0.00000000  0.00000000  0.58730000  1.0

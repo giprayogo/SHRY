@@ -1,0 +1,56 @@
+# generated using pymatgen
+data_RaSr5CaBeCu4Br4F19Ts
+_symmetry_space_group_name_H-M  'P -4 b 2'
+_cell_length_a   5.71000000
+_cell_length_b   5.71000000
+_cell_length_c   16.45800000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   117
+_chemical_formula_structural   RaSr5CaBeCu4Br4F19Ts
+_chemical_formula_sum   'Ra1 Sr5 Ca1 Be1 Cu4 Br4 F19 Ts1'
+_cell_volume   536.59827780
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x+1/2, y+1/2, z'
+  6  '-y+1/2, -x+1/2, -z'
+  7  'x+1/2, -y+1/2, z'
+  8  'y+1/2, x+1/2, -z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Ra0+  0.0
+  Sr0+  0.0
+  Ca0+  0.0
+  Be0+  0.0
+  Cu0+  0.0
+  Br0+  0.0
+  F0+  0.0
+  Ts0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr0+  Sr0  4  0.00000000  0.00000000  0.33700000  1.0
+  Sr0+  Sr1  4  0.00000000  0.50000000  0.16200000  0.25
+  Ra0+  Ra2  4  0.00000000  0.50000000  0.16200000  0.25
+  Ca0+  Ca3  4  0.00000000  0.50000000  0.16200000  0.25
+  Be0+  Be4  4  0.00000000  0.50000000  0.16200000  0.25
+  Cu0+  Cu5  2  0.00000000  0.00000000  0.00000000  1.0
+  Cu0+  Cu6  2  0.00000000  0.50000000  0.50000000  1.0
+  F0+  F7  8  0.23500000  0.25900000  0.25100000  1.0
+  F0+  F8  8  0.14300000  0.82300000  0.07500000  0.375
+  Br0+  Br9  8  0.14300000  0.82300000  0.07500000  0.5
+  Ts0+  Ts10  8  0.14300000  0.82300000  0.07500000  0.125
+  F0+  F11  8  0.14200000  0.67700000  0.57800000  1.0

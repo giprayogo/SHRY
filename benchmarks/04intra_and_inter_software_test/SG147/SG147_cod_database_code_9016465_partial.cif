@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Ba8Ra0.75Sr0.5Mg0.75P6S1O24
+_symmetry_space_group_name_H-M  'P -3'
+_cell_length_a   10.25200000
+_cell_length_b   10.25200000
+_cell_length_c   7.65900000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   147
+_chemical_formula_structural   Ba8Ra0.75Sr0.5Mg0.75P6S1O24
+_chemical_formula_sum   'Ba8 Ra0.75 Sr0.5 Mg0.75 P6 S1 O24'
+_cell_volume   697.13983009
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  6  0.01756000  0.26261000  0.26060000  1
+  Ba  Ba1  2  0.33333333  0.66666667  0.01420000  1
+  Mg+  Mg2  2  0.33333333  0.66666667  0.51060000  0.375
+  Ra+  Ra3  2  0.33333333  0.66666667  0.51060000  0.375
+  Sr+  Sr4  2  0.33333333  0.66666667  0.51060000  0.25
+  P  P5  6  0.02880000  0.40100000  0.76960000  1
+  S  S6  1  0.00000000  0.00000000  0.50000000  1
+  O  O7  6  0.04890000  0.33700000  0.59680000  1
+  O  O8  6  0.09880000  0.34400000  0.90600000  1
+  O  O9  6  0.12740000  0.57250000  0.80100000  1
+  O  O10  6  0.13010000  0.64640000  0.30200000  1

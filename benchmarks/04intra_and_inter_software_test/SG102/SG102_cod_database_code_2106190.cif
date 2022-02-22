@@ -1,0 +1,70 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/2/10/61/2106190.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2106190
+loop_
+_publ_author_name
+'Donohue, J.'
+'Einspahr, H.'
+_publ_section_title
+;
+ The structure of beta-uranium
+;
+_journal_name_full               'Acta Crystallographica B (24,1968-38,1982)'
+_journal_page_first              1740
+_journal_page_last               1743
+_journal_volume                  27
+_journal_year                    1971
+_chemical_formula_sum            U
+_space_group_IT_number           102
+_symmetry_space_group_name_Hall  'P 4n -2n'
+_symmetry_space_group_name_H-M   'P 42 n m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            30
+_cell_length_a                   10.759
+_cell_length_b                   10.759
+_cell_length_c                   5.656
+_cell_volume                     654.716
+_citation_journal_id_ASTM        ACBCAR
+_cod_data_source_file            Donohue_ACBCAR_1971_89.cif
+_cod_data_source_block           U1
+_cod_original_cell_volume        654.7164
+_cod_original_formula_sum        U1
+_cod_database_code               2106190
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y+1/2,x+1/2,z+1/2
+-x,-y,z
+y+1/2,-x+1/2,z+1/2
+-x+1/2,y+1/2,z+1/2
+-y,-x,z
+x+1/2,-y+1/2,z+1/2
+y,x,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+U2 U 0.107 0.107 -0.014 1 0.0
+U3 U 0.303 0.303 0.769 1 0.0
+U5 U 0.558 0.225 0.052 1 0.0
+U6 U 0.372 0.045 -0.023 1 0.0
+U1 U 0 0 0.5 1 0.0
+U4 U 0.321 0.321 0.294 1 0.0

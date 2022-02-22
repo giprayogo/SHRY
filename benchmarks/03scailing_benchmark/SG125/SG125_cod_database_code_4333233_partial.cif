@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cu0.5Rg1Rb0.5K0.5Na0.5Li0.5Ag0.5Bi1B2Sb2As3H16C16N2F12
-_symmetry_space_group_name_H-M   P4/nbm
+_symmetry_space_group_name_H-M  'P 4/n b m :2'
 _cell_length_a   9.68720000
 _cell_length_b   9.68720000
 _cell_length_c   6.59980000

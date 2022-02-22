@@ -1,0 +1,51 @@
+# generated using pymatgen
+data_CePr2ErPo2Te2P20(S2O11)4
+_symmetry_space_group_name_H-M  'P m n a'
+_cell_length_a   13.14000000
+_cell_length_b   8.84000000
+_cell_length_c   9.01000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   53
+_chemical_formula_structural   CePr2ErPo2Te2P20(S2O11)4
+_chemical_formula_sum   'Ce1 Pr2 Er1 Po2 Te2 P20 S8 O44'
+_cell_volume   1046.57997600
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x+1/2, y, -z+1/2'
+  8  'x+1/2, -y, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr+  Pr0  4  0.00000000  0.22247000  0.31012000  0.5
+  Er+  Er1  4  0.00000000  0.22247000  0.31012000  0.25
+  Ce+  Ce2  4  0.00000000  0.22247000  0.31012000  0.25
+  P  P3  8  0.16525000  0.26430000  0.95000000  1.0
+  P  P4  4  0.00000000  0.18660000  0.74630000  1.0
+  P  P5  4  0.17450000  0.50000000  0.50000000  1.0
+  P  P6  4  0.20410000  0.00000000  0.50000000  1.0
+  Te+  Te7  4  0.00000000  0.03680000  0.81340000  0.5
+  Po+  Po8  4  0.00000000  0.03680000  0.81340000  0.25
+  S+  S9  4  0.00000000  0.03680000  0.81340000  0.25
+  S+  S10  8  0.09380000  0.28430000  0.81350000  0.875
+  Po+  Po11  8  0.09380000  0.28430000  0.81350000  0.125
+  O  O12  8  0.11340000  0.27730000  0.09160000  1.0
+  O  O13  8  0.11900000  0.41980000  0.38310000  1.0
+  O  O14  8  0.15030000  0.08620000  0.38370000  1.0
+  O  O15  8  0.21860000  0.11180000  0.91590000  1.0
+  O  O16  8  0.24810000  0.38760000  0.91850000  1.0
+  O  O17  4  0.00000000  0.20960000  0.58510000  1.0

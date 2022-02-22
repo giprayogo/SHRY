@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Zn32Si7Sn17PoH48C72Se3(N12O13)4
-_symmetry_space_group_name_H-M   F23
+_symmetry_space_group_name_H-M  'F 2 3'
 _cell_length_a   20.09440000
 _cell_length_b   20.09440000
 _cell_length_c   20.09440000

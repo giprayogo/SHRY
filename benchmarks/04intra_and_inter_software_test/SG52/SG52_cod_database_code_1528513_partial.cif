@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_K8Zr4Ti2Rf2PoO18Lv
+_symmetry_space_group_name_H-M  'P n n a'
+_cell_length_a   5.85000000
+_cell_length_b   10.79000000
+_cell_length_c   8.76000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   52
+_chemical_formula_structural   K8Zr4Ti2Rf2PoO18Lv
+_chemical_formula_sum   'K8 Zr4 Ti2 Rf2 Po1 O18 Lv1'
+_cell_volume   552.94434000
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z'
+  4  'x+1/2, y, -z'
+  5  'x, -y+1/2, -z+1/2'
+  6  '-x, y+1/2, z+1/2'
+  7  '-x+1/2, y+1/2, -z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  K0+  0.0
+  Zr0+  0.0
+  Ti0+  0.0
+  Po0+  0.0
+  O0+  0.0
+  Lv0+  0.0
+  Rf0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K0+  K0  8  0.06200000  0.66600000  0.07700000  1.0
+  Zr0+  Zr1  8  0.03030000  0.57630000  0.66030000  0.5
+  Ti0+  Ti2  8  0.03030000  0.57630000  0.66030000  0.25
+  Rf0+  Rf3  8  0.03030000  0.57630000  0.66030000  0.25
+  O0+  O4  8  0.13600000  0.10200000  0.94600000  1.0
+  O0+  O5  4  0.25000000  0.00000000  0.25500000  1.0
+  Po0+  Po6  4  0.04000000  0.25000000  0.25000000  0.25
+  Lv0+  Lv7  4  0.04000000  0.25000000  0.25000000  0.25
+  O0+  O8  4  0.04000000  0.25000000  0.25000000  0.5
+  O0+  O9  4  0.25000000  0.00000000  0.67700000  1.0

@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_Si1Sn0.5H32C10.5Br4N4O2
+_symmetry_space_group_name_H-M  'P m m n :2'
+_cell_length_a   7.28440000
+_cell_length_b   10.91800000
+_cell_length_c   5.66300000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   59
+_chemical_formula_structural   Si1Sn0.5H32C10.5Br4N4O2
+_chemical_formula_sum   'Si1 Sn0.5 H32 C10.5 Br4 N4 O2'
+_cell_volume   450.38450151
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+1/2, -y+1/2, z'
+  3  'x+1/2, -y, -z'
+  4  '-x, y+1/2, -z'
+  5  '-x, -y, -z'
+  6  'x+1/2, y+1/2, -z'
+  7  '-x+1/2, y, z'
+  8  'x, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  H  H0  8  0.09700000  0.06560000  0.13730000  1.0
+  H  H1  8  0.09700000  0.13770000  0.89670000  1.0
+  H  H2  8  0.10080000  0.17800000  0.51300000  1.0
+  H  H3  4  0.04550000  0.75000000  0.81610000  1.0
+  H  H4  4  0.25000000  0.67450000  0.21800000  1.0
+  C+  C5  8  0.14270000  0.13810000  0.05800000  0.8125
+  Si+  Si6  8  0.14270000  0.13810000  0.05800000  0.125
+  Sn+  Sn7  8  0.14270000  0.13810000  0.05800000  0.0625
+  C  C8  4  0.14610000  0.25000000  0.43100000  1.0
+  Br  Br9  4  0.25000000  0.56635000  0.59450000  1.0
+  N  N10  4  0.07940000  0.25000000  0.18200000  1.0
+  O  O11  2  0.25000000  0.75000000  0.13500000  1.0

@@ -1,0 +1,62 @@
+# generated using pymatgen
+data_Fr3Rb4NaP12
+_symmetry_space_group_name_H-M  'F m m m'
+_cell_length_a   9.64100000
+_cell_length_b   14.62900000
+_cell_length_c   9.01000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   69
+_chemical_formula_structural   Fr3Rb4NaP12
+_chemical_formula_sum   'Fr6 Rb8 Na2 P24'
+_cell_volume   1270.75408289
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'x, -y, -z'
+  8  '-x, y, z'
+  9  'x, y+1/2, z+1/2'
+  10  '-x, -y+1/2, -z+1/2'
+  11  '-x, y+1/2, -z+1/2'
+  12  'x, -y+1/2, z+1/2'
+  13  '-x, -y+1/2, z+1/2'
+  14  'x, y+1/2, -z+1/2'
+  15  'x, -y+1/2, -z+1/2'
+  16  '-x, y+1/2, z+1/2'
+  17  'x+1/2, y, z+1/2'
+  18  '-x+1/2, -y, -z+1/2'
+  19  '-x+1/2, y, -z+1/2'
+  20  'x+1/2, -y, z+1/2'
+  21  '-x+1/2, -y, z+1/2'
+  22  'x+1/2, y, -z+1/2'
+  23  'x+1/2, -y, -z+1/2'
+  24  '-x+1/2, y, z+1/2'
+  25  'x+1/2, y+1/2, z'
+  26  '-x+1/2, -y+1/2, -z'
+  27  '-x+1/2, y+1/2, -z'
+  28  'x+1/2, -y+1/2, z'
+  29  '-x+1/2, -y+1/2, z'
+  30  'x+1/2, y+1/2, -z'
+  31  'x+1/2, -y+1/2, -z'
+  32  '-x+1/2, y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fr0+  Fr0  8  0.21800000  0.00000000  0.50000000  0.75
+  Na0+  Na1  8  0.21800000  0.00000000  0.50000000  0.25
+  Rb0+  Rb2  8  0.25000000  0.25000000  0.25000000  1.0
+  P  P3  16  0.00000000  0.07350000  0.20680000  1.0
+  P  P4  8  0.00000000  0.14810000  0.00000000  1.0

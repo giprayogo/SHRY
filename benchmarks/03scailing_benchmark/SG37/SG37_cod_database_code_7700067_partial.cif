@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Fe4Si4GeBi6B8SbPH88C80Fl3(SN)16
-_symmetry_space_group_name_H-M   Ccc2
+_symmetry_space_group_name_H-M  'C c c 2'
 _cell_length_a   14.18180000
 _cell_length_b   20.15000000
 _cell_length_c   10.72500000

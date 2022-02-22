@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_K12Lu4Si12Po1.5S2.5O32
-_symmetry_space_group_name_H-M   Pmn2_1
+_symmetry_space_group_name_H-M  'P m 21 n'
 _cell_length_a   14.01100000
 _cell_length_b   12.91900000
 _cell_length_c   5.85300000

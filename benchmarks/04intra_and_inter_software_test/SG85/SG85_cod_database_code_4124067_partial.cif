@@ -1,0 +1,51 @@
+# generated using pymatgen
+data_Ge6.5Fl0.5Si8Pb0.5C0.5O32
+_symmetry_space_group_name_H-M  'P 4/n :1'
+_cell_length_a   10.87553000
+_cell_length_b   10.87553000
+_cell_length_c   4.51093000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   85
+_chemical_formula_structural   Ge6.5Fl0.5Si8Pb0.5C0.5O32
+_chemical_formula_sum   'Ge6.5 Fl0.5 Si8 Pb0.5 C0.5 O32'
+_cell_volume   533.53995679
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z'
+  5  '-x+1/2, -y+1/2, -z'
+  6  'y, -x, -z'
+  7  'x+1/2, y+1/2, -z'
+  8  '-y, x, -z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Si0+  0.0
+  Ge0+  0.0
+  Pb0+  0.0
+  C0+  0.0
+  O0+  0.0
+  Fl0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ge0+  Ge0  8  0.09877000  0.26191000  0.19024000  0.8125
+  Fl0+  Fl1  8  0.09877000  0.26191000  0.19024000  0.0625
+  Pb0+  Pb2  8  0.09877000  0.26191000  0.19024000  0.0625
+  C0+  C3  8  0.09877000  0.26191000  0.19024000  0.0625
+  Si0+  Si4  8  0.06441000  0.72114000  0.64020000  1.0
+  O0+  O5  8  0.00457000  0.81156000  0.38713000  1.0
+  O0+  O6  8  0.04646000  0.31502000  0.87831000  1.0
+  O0+  O7  8  0.11804000  0.37592000  0.42167000  1.0
+  O0+  O8  8  0.16969000  0.78454000  0.84556000  1.0

@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Na0.5Li0.5Zn4Fe4P8H39C38.5Fl1.5O16
-_symmetry_space_group_name_H-M   P4_322
+_symmetry_space_group_name_H-M  'P 43 2 2'
 _cell_length_a   8.25000000
 _cell_length_b   8.25000000
 _cell_length_c   18.65500000

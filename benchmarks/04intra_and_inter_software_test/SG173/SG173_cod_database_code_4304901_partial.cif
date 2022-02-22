@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Ni2Rg0.75Ag2.5H48Au0.75C12I8N12
+_symmetry_space_group_name_H-M  'P 63'
+_cell_length_a   8.99690000
+_cell_length_b   8.99690000
+_cell_length_c   14.43740000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   173
+_chemical_formula_structural   Ni2Rg0.75Ag2.5H48Au0.75C12I8N12
+_chemical_formula_sum   'Ni2 Rg0.75 Ag2.5 H48 Au0.75 C12 I8 N12'
+_cell_volume   1012.05801243
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z+1/2'
+  3  '-y, x-y, z'
+  4  '-x, -y, z+1/2'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ni  Ni0  2  0.00000000  0.00000000  0.17650000  1.0
+  Rg+  Rg1  2  0.33333333  0.66666667  0.97698000  0.375
+  Ag+  Ag2  2  0.33333333  0.66666667  0.97698000  0.25
+  Au+  Au3  2  0.33333333  0.66666667  0.97698000  0.375
+  Ag  Ag4  2  0.33330000  0.66666667  0.37611000  1.0
+  H  H5  6  0.03300000  0.37540000  0.69400000  1.0
+  H  H6  6  0.03370000  0.65840000  0.65930000  1.0
+  H  H7  6  0.07310000  0.21610000  0.54360000  1.0
+  H  H8  6  0.07390000  0.85800000  0.81000000  1.0
+  H  H9  6  0.08790000  0.27490000  0.27080000  1.0
+  H  H10  6  0.08860000  0.81320000  0.08310000  1.0
+  H  H11  6  0.15570000  0.46440000  0.60930000  1.0
+  H  H12  6  0.15660000  0.69190000  0.74380000  1.0
+  C  C13  6  0.11060000  0.36640000  0.65070000  1.0
+  C  C14  6  0.11140000  0.74490000  0.70260000  1.0
+  I  I15  6  0.00004000  0.39727000  0.92649000  1.0
+  I  I16  2  0.33333333  0.66666667  0.17648000  1.0
+  N  N17  6  0.01730000  0.20660000  0.59690000  1.0
+  N  N18  6  0.01790000  0.81130000  0.75680000  1.0

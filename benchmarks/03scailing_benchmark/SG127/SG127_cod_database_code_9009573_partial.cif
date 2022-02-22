@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Pb4C2BrCl2TsO6
-_symmetry_space_group_name_H-M   P4/mbm
+_symmetry_space_group_name_H-M  'P 4/m b m'
 _cell_length_a   8.16000000
 _cell_length_b   8.16000000
 _cell_length_c   8.88300000

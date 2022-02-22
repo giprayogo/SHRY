@@ -1,0 +1,249 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-24 02:33:27 +0200 (Thu, 24 Mar 2016) $
+#$Revision: 179585 $
+#$URL: svn://www.crystallography.net/cod/cif/4/50/50/4505055.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4505055
+loop_
+_publ_author_name
+'Zhang, Jian'
+'Li, Zhao-Ji'
+'Kang, Yao'
+'Qin, Ye-Yan'
+'Cheng, Jian-Kai'
+'Yao, Yuan-Gen'
+_publ_section_title
+;
+ Syntheses and Characterizations of Two Novel Silver(I) Complexes
+ Constructed by Oxydipropionitrile Ligand
+;
+_journal_issue                   1
+_journal_name_full               'Crystal Growth &amp; Design'
+_journal_page_first              73
+_journal_paper_doi               10.1021/cg0498756
+_journal_volume                  5
+_journal_year                    2005
+_chemical_formula_sum            'C12 H16 Ag B F4 N4 O2'
+_chemical_formula_weight         442.97
+_chemical_name_systematic
+;
+ ?
+;
+_space_group_IT_number           81
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  'P -4'
+_symmetry_space_group_name_H-M   'P -4'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            1
+_cell_length_a                   9.006(2)
+_cell_length_b                   9.006(2)
+_cell_length_c                   5.6627(18)
+_cell_measurement_reflns_used    97
+_cell_measurement_temperature    293(2)
+_cell_measurement_theta_max      25.06
+_cell_measurement_theta_min      2.26
+_cell_volume                     459.3(2)
+_computing_cell_refinement       'Siemens SMART & SAINT'
+_computing_data_collection       'Siemens SMART'
+_computing_data_reduction        'Siemens XPREP'
+_computing_molecular_graphics    'Bruker SHELXTL'
+_computing_publication_material  'Bruker SHELXTL'
+_computing_structure_refinement  'Siemens SHELXTL'
+_computing_structure_solution    'Siemens SHELXTL'
+_diffrn_ambient_temperature      293(2)
+_diffrn_measured_fraction_theta_full 0.991
+_diffrn_measured_fraction_theta_max 0.991
+_diffrn_measurement_device_type  'CCD area detector'
+_diffrn_measurement_method       'phi and omega scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0279
+_diffrn_reflns_av_sigmaI/netI    0.0311
+_diffrn_reflns_limit_h_max       10
+_diffrn_reflns_limit_h_min       -7
+_diffrn_reflns_limit_k_max       5
+_diffrn_reflns_limit_k_min       -10
+_diffrn_reflns_limit_l_max       6
+_diffrn_reflns_limit_l_min       -6
+_diffrn_reflns_number            1161
+_diffrn_reflns_theta_full        25.06
+_diffrn_reflns_theta_max         25.06
+_diffrn_reflns_theta_min         2.26
+_diffrn_standards_decay_%        none
+_diffrn_standards_interval_count none
+_diffrn_standards_interval_time  none
+_diffrn_standards_number         none
+_exptl_absorpt_coefficient_mu    1.146
+_exptl_absorpt_correction_T_max  1.0000
+_exptl_absorpt_correction_T_min  .5084
+_exptl_absorpt_correction_type   empirical
+_exptl_absorpt_process_details   'SADABS (Sheldrick, 1996)'
+_exptl_crystal_colour            colorless
+_exptl_crystal_density_diffrn    1.601
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       tubular
+_exptl_crystal_F_000             220
+_exptl_crystal_size_max          0.80
+_exptl_crystal_size_mid          0.32
+_exptl_crystal_size_min          0.32
+_refine_diff_density_max         0.925
+_refine_diff_density_min         -0.373
+_refine_diff_density_rms         0.116
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   0.10(13)
+_refine_ls_extinction_coef       0.43(5)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.082
+_refine_ls_hydrogen_treatment    mixed
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     56
+_refine_ls_number_reflns         713
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.082
+_refine_ls_R_factor_gt           0.0506
+_refine_ls_shift/su_max          0.025
+_refine_ls_shift/su_mean         0.002
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.1068P)^2^+0.3037P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.1412
+_refine_ls_wR_factor_ref         0.1498
+_reflns_number_gt                699
+_reflns_number_total             713
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            cg0498756si20040403_062733.cif
+_cod_data_source_block           a
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_symmetry_cell_setting' value 'Tetragonal' changed to 'tetragonal'
+according to /home/saulius/struct/CIF-dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.1 from 2010-06-29.
+
+Automatic conversion script
+Id: cif_fix_values 1715 2011-07-08 13:25:40Z adriana 
+;
+_cod_original_sg_symbol_H-M      P-4
+_cod_database_code               4505055
+#BEGIN Tags that were not found in dictionaries:
+_refine_ls_r_factor_ref          0.0544
+#END Tags that were not found in dictionaries
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y, z'
+'y, -x, -z'
+'-y, x, -z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Ag1 Ag 0.0000 0.0000 0.5000 0.0807(7) Uani 1 4 d S
+N1 N 0.1774(8) 0.0897(10) 0.7486(17) 0.085(2) Uani 1 1 d .
+C2 C 0.3425(11) 0.2075(10) 1.0694(19) 0.084(3) Uani 1 1 d .
+H2A H 0.2825 0.2743 1.1640 0.101 Uiso 1 1 calc R
+H2B H 0.4184 0.2662 0.9918 0.101 Uiso 1 1 calc R
+C3 C 0.2488(9) 0.1396(10) 0.8905(18) 0.075(2) Uani 1 1 d .
+O1 O 0.5000 0.0000 1.0872(14) 0.0682(18) Uani 1 2 d S
+B1 B 0.5000 0.5000 1.5000 0.062(3) Uani 1 4 d S
+C1 C 0.4157(10) 0.0981(11) 1.2285(17) 0.079(2) Uani 1 1 d .
+H1B H 0.4797 0.1490 1.3398 0.094 Uiso 1 1 calc R
+H1C H 0.3414 0.0432 1.3167 0.094 Uiso 1 1 calc R
+F1 F 0.4106(18) 0.569(2) 1.372(3) 0.261(12) Uani 1 1 d .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Ag1 0.0843(7) 0.0843(7) 0.0737(9) 0.000 0.000 0.000
+N1 0.066(4) 0.105(5) 0.083(5) -0.012(4) -0.014(4) 0.002(3)
+C2 0.077(4) 0.072(4) 0.105(9) -0.023(4) -0.006(4) -0.004(3)
+C3 0.068(4) 0.078(5) 0.079(5) -0.003(4) 0.009(4) -0.007(4)
+O1 0.067(4) 0.081(4) 0.056(4) 0.000 0.000 0.006(3)
+B1 0.066(4) 0.066(4) 0.055(6) 0.000 0.000 0.000
+C1 0.077(5) 0.091(5) 0.069(5) -0.014(4) -0.005(4) -0.011(4)
+F1 0.190(13) 0.32(3) 0.268(18) 0.20(2) -0.084(11) -0.012(11)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+B B 0.0013 0.0007 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N N 0.0061 0.0033 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+F F 0.0171 0.0103 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ag Ag -0.8971 1.1015 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+N1 Ag1 N1 112.5(3) . 3_556
+N1 Ag1 N1 112.5(3) . 4_556
+N1 Ag1 N1 103.6(5) 3_556 4_556
+N1 Ag1 N1 103.6(5) . 2
+N1 Ag1 N1 112.5(3) 3_556 2
+N1 Ag1 N1 112.5(3) 4_556 2
+C3 N1 Ag1 170.4(8) . .
+C3 C2 C1 113.6(7) . .
+N1 C3 C2 178.4(11) . .
+C1 O1 C1 111.0(10) 2_655 .
+F1 B1 F1 108.9(19) 3_568 4_658
+F1 B1 F1 109.8(9) 3_568 .
+F1 B1 F1 109.8(9) 4_658 .
+F1 B1 F1 109.8(9) 3_568 2_665
+F1 B1 F1 109.8(9) 4_658 2_665
+F1 B1 F1 108.9(19) . 2_665
+O1 C1 C2 108.0(8) . .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Ag1 N1 2.277(8) .
+Ag1 N1 2.277(8) 3_556
+Ag1 N1 2.277(8) 4_556
+Ag1 N1 2.277(8) 2
+N1 C3 1.123(12) .
+C2 C3 1.453(13) .
+C2 C1 1.489(16) .
+O1 C1 1.413(10) 2_655
+O1 C1 1.413(10) .
+B1 F1 1.248(10) 3_568
+B1 F1 1.248(10) 4_658
+B1 F1 1.248(10) .
+B1 F1 1.248(10) 2_665

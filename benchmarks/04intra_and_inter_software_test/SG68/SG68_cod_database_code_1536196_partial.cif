@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Ni2.5Sn16Ds0.5Pd0.5Pt0.5
+_symmetry_space_group_name_H-M  'C c c a :2'
+_cell_length_a   6.44170000
+_cell_length_b   11.44520000
+_cell_length_c   6.38860000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   68
+_chemical_formula_structural   Ni2.5Sn16Ds0.5Pd0.5Pt0.5
+_chemical_formula_sum   'Ni2.5 Sn16 Ds0.5 Pd0.5 Pt0.5'
+_cell_volume   471.00940436
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+1/2, -y, z'
+  3  'x+1/2, -y, -z+1/2'
+  4  '-x, y, -z+1/2'
+  5  '-x, -y, -z'
+  6  'x+1/2, y, -z'
+  7  '-x+1/2, y, z+1/2'
+  8  'x, -y, z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x, -y+1/2, z'
+  11  'x, -y+1/2, -z+1/2'
+  12  '-x+1/2, y+1/2, -z+1/2'
+  13  '-x+1/2, -y+1/2, -z'
+  14  'x, y+1/2, -z'
+  15  '-x, y+1/2, z+1/2'
+  16  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sn  Sn0  16  0.16877000  0.12331000  0.58010000  1.0
+  Ni+  Ni1  4  0.00000000  0.25000000  0.25000000  0.625
+  Ds+  Ds2  4  0.00000000  0.25000000  0.25000000  0.125
+  Pd+  Pd3  4  0.00000000  0.25000000  0.25000000  0.125
+  Pt+  Pt4  4  0.00000000  0.25000000  0.25000000  0.125

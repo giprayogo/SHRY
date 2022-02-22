@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_SiPb2Lv4Se2
+_symmetry_space_group_name_H-M  'P 62 2 2'
+_cell_length_a   4.99640000
+_cell_length_b   4.99640000
+_cell_length_c   5.45430000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   180
+_chemical_formula_structural   SiPb2Lv4Se2
+_chemical_formula_sum   'Si1 Pb2 Lv4.0 Se2.0'
+_cell_volume   117.91907197
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z+1/3'
+  3  '-y, x-y, z+2/3'
+  4  '-x, -y, z'
+  5  '-x+y, -x, z+1/3'
+  6  'y, -x+y, z+2/3'
+  7  '-y, -x, -z+2/3'
+  8  '-x, -x+y, -z+1/3'
+  9  '-x+y, y, -z'
+  10  'y, x, -z+2/3'
+  11  'x, x-y, -z+1/3'
+  12  'x-y, -y, -z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Si+  1.0
+  Pb+  1.0
+  Se+  1.0
+  Lv+  1.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pb+  Pb0  3  0.00000000  0.50000000  0.66666667
+  0.6666666666666666
+  Si+  Si1  3  0.00000000  0.50000000  0.66666667
+  0.3333333333333333
+  Lv+  Lv2  6  0.20750000  0.41500000  0.50000333
+  0.6666666666666666
+  Se+  Se3  6  0.20750000  0.41500000  0.50000333
+  0.3333333333333333

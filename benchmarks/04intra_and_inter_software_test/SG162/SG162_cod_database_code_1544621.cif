@@ -1,0 +1,77 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-11-18 15:37:42 +0200 (Fri, 18 Nov 2016) $
+#$Revision: 188565 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/54/46/1544621.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1544621
+loop_
+_publ_author_name
+'Matsuzaki, T.'
+'Hagiya, K.'
+'Shatskiy, A.'
+'Katsura, T.'
+'Matsui, M.'
+_publ_section_title
+;
+ Crystal structure of anhydrous phase X, K1.93(Mg2.02Cr0.02)Si2.00O7
+;
+_journal_name_full
+'Journal of Mineralogical and Petrological Sciences'
+_journal_page_first              303
+_journal_page_last               308
+_journal_volume                  105
+_journal_year                    2010
+_chemical_formula_sum            'Cr0.02 K1.93 Mg2.02 O7 Si2'
+_chemical_name_common            K1.93(Mg2.02Cr0.02)Si2O7
+_chemical_name_mineral           'anhydrous phase X'
+_space_group_IT_number           162
+_space_group_name_H-M_alt        'P -3 1 m'
+_symmetry_space_group_name_Hall  '-P 3 2'
+_symmetry_space_group_name_H-M   'P -3 1 m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   5.0756(1)
+_cell_length_b                   5.0756(1)
+_cell_length_c                   6.5969(2)
+_cell_volume                     147.179(6)
+_cod_data_source_file            K2Mg2Si2O7.cif
+_cod_data_source_block           K1Mg2Si2O7
+_cod_original_formula_sum        'K1.93 Mg2.02 Cr0.02 Si2 O7'
+_cod_database_code               1544621
+loop_
+_space_group_symop_operation_xyz
+'x, y, z'
+'-x, -y, -z'
+'-y, x-y, z'
+'y, -x+y, -z'
+'-x+y, -x, z'
+'x-y, x, -z'
+'-y, -x, -z'
+'y, x, z'
+'-x+y, y, -z'
+'x-y, -y, z'
+'x, x-y, -z'
+'-x, -x+y, z'
+loop_
+_atom_site_label
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_B_iso_or_equiv
+_atom_site_type_symbol
+K 1.0 0.333333 0.666667 0.500000 Biso 0.900 K
+Mg 1.0 0.666667 0.333333 0.000000 Biso 0.340 Mg
+Si 1.0 0.000000 0.000000 0.24350(10) Biso 0.220 Si
+O1 1.0 0.000000 0.000000 0.500000 Biso 0.580 O
+O2 1.0 0.3101(4) 0.000000 0.8186(2) Biso 0.370 O

@@ -1,0 +1,78 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/8/10/40/8104097.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8104097
+loop_
+_publ_author_name
+'Weinberger, M.'
+'Schneider, M.'
+'Gessner, W.'
+_publ_section_title
+;
+ Crystal structure of pentanatrium hexahydroxoaluminate dihydroxide, Na5
+ (Al (O H)6) . (O H)2
+;
+_journal_name_full
+'Zeitschrift fuer Kristallographie (149,1979-)'
+_journal_page_first              236
+_journal_page_last               236
+_journal_volume                  212
+_journal_year                    1997
+_chemical_formula_sum            'Al H8 Na5 O8'
+_chemical_name_systematic        'Na5 (Al (O H)6) (O H)2'
+_space_group_IT_number           96
+_symmetry_space_group_name_Hall  'P 4nw 2abw'
+_symmetry_space_group_name_H-M   'P 43 21 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   9.35
+_cell_length_b                   9.35
+_cell_length_c                   9.61
+_cell_volume                     840.130
+_citation_journal_id_ASTM        ZEKRDZ
+_cod_data_source_file            Weinberger_ZEKRDZ_1997_1941.cif
+_cod_data_source_block           H8Al1Na5O8
+_cod_original_cell_volume        840.1302
+_cod_original_formula_sum        'H8 Al1 Na5 O8'
+_cod_database_code               8104097
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y+1/2,x+1/2,z+3/4
+-x,-y,z+1/2
+y+1/2,-x+1/2,z+1/4
+x+1/2,-y+1/2,-z+1/4
+y,x,-z
+-x+1/2,y+1/2,-z+3/4
+-y,-x,-z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Al1 Al+3 0.62756 0.62756 0 1 0.0
+O3 O-2 0.62898 0.62763 -0.20193 1 0.0
+O2 O-2 0.8341 0.62507 0.01101 1 0.0
+Na3 Na+1 0.37521 0.62479 -0.25 1 0.0
+O4 O-2 0.12094 0.63869 -0.22736 1 0.0
+H1 H+1 0.3921 0.5729 0.0348 1 0.0
+O1 O-2 0.42108 0.63353 0.0039 1 0.0
+H2 H+1 0.8562 0.6932 0.0403 1 0.0
+H4 H+1 0.1221 0.7175 -0.2128 1 0.0
+Na2 Na+1 0.61276 0.86975 -0.27723 1 0.0
+Na1 Na+1 0.87751 0.63244 -0.23217 1 0.0
+H3 H+1 0.6408 0.5576 -0.2241 1 0.0

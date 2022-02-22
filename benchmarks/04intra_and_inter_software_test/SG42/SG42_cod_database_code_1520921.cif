@@ -1,0 +1,80 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/09/1520921.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1520921
+loop_
+_publ_author_name
+'Cario, L.'
+'Meerschaut, A.'
+'Lafond, A.'
+'Palvadeau, P.'
+'Deudon, C.'
+_publ_section_title
+;
+ Evidence of a mixed-valence state for europium in the misfit layer
+ compound [(Eu S)1.5]1.15 Nb S2 by means of a superspace structural
+ determination, Mossbauer spectroscopy, and magnetic measurements
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              58
+_journal_page_last               67
+_journal_volume                  147
+_journal_year                    1999
+_chemical_formula_sum            'Eu S'
+_space_group_IT_number           42
+_symmetry_space_group_name_Hall  'F -2 -2'
+_symmetry_space_group_name_H-M   'F m 2 m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            12
+_cell_length_a                   5.762
+_cell_length_b                   5.7837
+_cell_length_c                   29.637
+_cell_volume                     987.673
+_citation_journal_id_ASTM        JSSCBI
+_cod_data_source_file            Cario_JSSCBI_1999_662.cif
+_cod_data_source_block           Eu1S1
+_cod_original_cell_volume        987.6732
+_cod_original_sg_symbol_Hall     'F 2 -2 (y,z,x)'
+_cod_original_formula_sum        'Eu1 S1'
+_cod_database_code               1520921
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,-z
+x,y,-z
+-x,y,z
+x+1/2,y+1/2,z
+-x+1/2,y+1/2,-z
+x+1/2,y+1/2,-z
+-x+1/2,y+1/2,z
+x,y+1/2,z+1/2
+-x,y+1/2,-z+1/2
+x,y+1/2,-z+1/2
+-x,y+1/2,z+1/2
+x+1/2,y,z+1/2
+-x+1/2,y,-z+1/2
+x+1/2,y,-z+1/2
+-x+1/2,y,z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Eu1 Eu 0 0 0 1 0.0
+Eu2 Eu 0 0.498 0.11209 1 0.0
+S1 S 0 0.495 0 1 0.0
+S2 S 0 -0.0009 0.09041 1 0.0

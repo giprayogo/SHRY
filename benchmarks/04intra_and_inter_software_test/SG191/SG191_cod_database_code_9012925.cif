@@ -1,0 +1,85 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-14 23:18:49 +0300 (Sat, 14 Oct 2017) $
+#$Revision: 202019 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/9/01/29/9012925.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9012925
+loop_
+_publ_author_name
+'Chebotareva, E. S.'
+'Nuzhdina, S. G.'
+_publ_section_title
+;
+ Observation of omega-titanium in a composite hard facing alloy based
+ on fine-grain diamonds
+ Locality: synthetic
+ Sample: at P = 4 GPa, known as the omega phase
+;
+_journal_name_full               'Fizika Metallov i Metallovedenie'
+_journal_page_first              200
+_journal_page_last               202
+_journal_volume                  36
+_journal_year                    1973
+_chemical_formula_sum            Ti
+_chemical_name_common            Titanium
+_space_group_IT_number           191
+_symmetry_space_group_name_Hall  '-P 6 2'
+_symmetry_space_group_name_H-M   'P 6/m m m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   4.6
+_cell_length_b                   4.6
+_cell_length_c                   2.82
+_cell_volume                     51.677
+_diffrn_ambient_pressure         4e+06
+_exptl_crystal_density_diffrn    4.616
+_cod_database_code               9012925
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-x+y,z
+x,x-y,-z
+-x+y,-x,-z
+x-y,x,z
+-y,-x,z
+y,x,-z
+y,-x+y,-z
+-y,x-y,z
+x-y,-y,z
+-x+y,y,-z
+x,y,-z
+-x,-y,z
+x,x-y,z
+-x,-x+y,-z
+x-y,x,-z
+-x+y,-x,z
+y,x,z
+-y,-x,-z
+-y,x-y,-z
+y,-x+y,z
+-x+y,y,z
+x-y,-y,-z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Ti1 0.00000 0.00000 0.00000
+Ti2 0.33333 0.66667 0.50000
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 ChemSpider 22402

@@ -1,0 +1,90 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/45/1524515.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1524515
+loop_
+_publ_author_name
+'Havinga, E.E.'
+'Damsma, H.'
+'Hokkeling, P.'
+_publ_section_title
+;
+ Compounds and pseudo-binary alloys with the Cu Al2 (C16)-type structure.
+ I. Preparation and X-ray results
+;
+_journal_name_full               'Journal of the Less-Common Metals'
+_journal_page_first              169
+_journal_page_last               186
+_journal_volume                  27
+_journal_year                    1972
+_chemical_formula_sum            'Pd Tl2'
+_space_group_IT_number           140
+_symmetry_space_group_name_Hall  '-I 4 2c'
+_symmetry_space_group_name_H-M   'I 4/m c m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   6.712
+_cell_length_b                   6.712
+_cell_length_c                   5.748
+_cell_volume                     258.953
+_citation_journal_id_ASTM        JCOMAH
+_cod_data_source_file            Havinga_JCOMAH_1972_1321.cif
+_cod_data_source_block           Pd1Tl2
+_cod_original_cell_volume        258.9528
+_cod_original_formula_sum        'Pd1 Tl2'
+_cod_database_code               1524515
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x,z
+-x,-y,z
+y,-x,z
+x,-y,-z+1/2
+y,x,-z+1/2
+-x,y,-z+1/2
+-y,-x,-z+1/2
+-x,-y,-z
+y,-x,-z
+x,y,-z
+-y,x,-z
+-x,y,z-1/2
+-y,-x,z-1/2
+x,-y,z-1/2
+y,x,z-1/2
+x+1/2,y+1/2,z+1/2
+-y+1/2,x+1/2,z+1/2
+-x+1/2,-y+1/2,z+1/2
+y+1/2,-x+1/2,z+1/2
+x+1/2,-y+1/2,-z+1
+y+1/2,x+1/2,-z+1
+-x+1/2,y+1/2,-z+1
+-y+1/2,-x+1/2,-z+1
+-x+1/2,-y+1/2,-z+1/2
+y+1/2,-x+1/2,-z+1/2
+x+1/2,y+1/2,-z+1/2
+-y+1/2,x+1/2,-z+1/2
+-x+1/2,y+1/2,z
+-y+1/2,-x+1/2,z
+x+1/2,-y+1/2,z
+y+1/2,x+1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Pd1 Pd 0 0 0.25 1 0.0
+Tl1 Tl 0.1656 0.6656 0 1 0.0

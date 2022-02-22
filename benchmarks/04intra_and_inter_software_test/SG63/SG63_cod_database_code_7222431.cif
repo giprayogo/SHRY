@@ -1,0 +1,151 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-10-05 15:39:59 +0300 (Mon, 05 Oct 2015) $
+#$Revision: 160195 $
+#$URL: svn://www.crystallography.net/cod/cif/7/22/24/7222431.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7222431
+loop_
+_publ_author_name
+'Gottschilch, Michael'
+'Gourdon, Olivier'
+'Persson, Joerg'
+'de la Cruz, Clarina'
+'Petricek, Vaclav'
+'Brueckel, Thomas'
+_publ_section_title
+;
+ Study of the antiferromagnetism of Mn5Si3: an inverse magnetocaloric
+ effect material
+;
+_journal_issue                   30
+_journal_name_full               'Journal of Materials Chemistry'
+_journal_page_first              15275
+_journal_paper_doi               10.1039/c2jm00154c
+_journal_volume                  22
+_journal_year                    2012
+_chemical_absolute_configuration .
+_chemical_formula_sum            'Mn5 Si3'
+_chemical_formula_weight         358.9
+_chemical_name_systematic        ' ?'
+_space_group_IT_number           63
+_space_group_ssg_name            Ccmm1(0\b0)00ss
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  '-C 2c 2c'
+_symmetry_space_group_name_H-M   'C c m m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   6.89900(7)
+_cell_length_b                   11.90799(11)
+_cell_length_c                   4.79730(4)
+_cell_measurement_temperature    90
+_cell_modulation_dimension       1
+_cell_volume                     394.114(6)
+_diffrn_ambient_temperature      90
+_diffrn_radiation_type           neutron
+_diffrn_radiation_wavelength     -1
+_exptl_absorpt_coefficient_mu    0
+_exptl_crystal_density_diffrn    3.0238
+_exptl_crystal_F_000             668
+_pd_instr_location               ' ?'
+_pd_meas_2theta_range_max        72.793
+_pd_meas_2theta_range_min        7.006
+_pd_meas_number_of_points        2343
+_pd_proc_2theta_range_max        72.793
+_pd_proc_2theta_range_min        7.006
+_pd_proc_ls_background_function  '10 Legendre polynoms'
+_pd_proc_ls_pref_orient_corr     none
+_pd_proc_ls_profile_function     Gaussian
+_refine_ls_number_constraints    0
+_refine_ls_number_restraints     0
+_refine_ls_weighting_scheme      sigma
+_cod_data_source_file            c2jm00154c.txt
+_cod_data_source_block           Ih
+_cod_database_code               7222431
+_jana_cell_commen_supercell_matrix_1_1 1
+_jana_cell_commen_supercell_matrix_1_2 0
+_jana_cell_commen_supercell_matrix_1_3 0
+_jana_cell_commen_supercell_matrix_2_1 0
+_jana_cell_commen_supercell_matrix_2_2 1
+_jana_cell_commen_supercell_matrix_2_3 0
+_jana_cell_commen_supercell_matrix_3_1 0
+_jana_cell_commen_supercell_matrix_3_2 0
+_jana_cell_commen_supercell_matrix_3_3 1
+_jana_cell_commen_t_section_1    0
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -x,-y,z+0.5
+3 -x,y,-z
+4 x,-y,-z+0.5
+5 x+0.5,y+0.5,z
+6 -x+0.5,-y+0.5,z+0.5
+7 -x+0.5,y+0.5,-z
+8 x+0.5,-y+0.5,-z+0.5
+9 -x,-y,-z
+10 x,y,-z+0.5
+11 x,-y,z
+12 -x,y,z+0.5
+13 -x+0.5,-y+0.5,-z
+14 x+0.5,y+0.5,-z+0.5
+15 x+0.5,-y+0.5,z
+16 -x+0.5,y+0.5,z+0.5
+loop_
+_space_group_symop_ssg_id
+_space_group_symop_ssg_operation_algebraic
+1 x1,x2,x3,x4
+2 -x1,-x2,x3+1/2,-x4+1/2
+3 -x1,x2,-x3,x4+1/2
+4 x1,-x2,-x3+1/2,-x4
+5 -x1,-x2,-x3,-x4
+6 x1,x2,-x3+1/2,x4+1/2
+7 x1,-x2,x3,-x4+1/2
+8 -x1,x2,x3+1/2,x4
+9 x1+1/2,x2+1/2,x3,x4
+10 -x1+1/2,-x2+1/2,x3+1/2,-x4+1/2
+11 -x1+1/2,x2+1/2,-x3,x4+1/2
+12 x1+1/2,-x2+1/2,-x3+1/2,-x4
+13 -x1+1/2,-x2+1/2,-x3,-x4
+14 x1+1/2,x2+1/2,-x3+1/2,x4+1/2
+15 x1+1/2,-x2+1/2,x3,-x4+1/2
+16 -x1+1/2,x2+1/2,x3+1/2,x4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_U_iso_or_equiv
+_atom_site_symmetry_multiplicity
+_atom_site_occupancy
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Mn1 Mn 0 0.33275(13) 0 Uiso 0.00182(10) 8 1 d . . .
+Mn21 Mn 0.2630(3) 0.5 0.25 Uiso 0.0023(2) 4 1 d . . .
+Mn22 Mn 0.6172(2) 0.61746(11) 0.25 Uiso 0.00238(15) 8 1 d . . .
+Si1 Si 0.0989(3) 0.5 -0.25 Uiso 0.0028(2) 4 1 d . . .
+Si2 Si -0.29944(19) 0.30012(10) -0.25 Uiso 0.00269(14) 8 1 d . . .
+loop_
+_atom_type_symbol
+_atom_type_scat_length_neutron
+_atom_type_scat_source
+Mn -3.730 International_Tables_Vol_C
+Si 4.149 International_Tables_Vol_C
+loop_
+_cell_wave_vector_seq_id
+_cell_wave_vector_x
+_cell_wave_vector_y
+_cell_wave_vector_z
+1 0.000000 1.000000 0.000000

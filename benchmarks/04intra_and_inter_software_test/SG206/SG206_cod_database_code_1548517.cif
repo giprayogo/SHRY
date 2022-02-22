@@ -1,0 +1,145 @@
+#------------------------------------------------------------------------------
+#$Date: 2019-03-01 11:51:38 +0200 (Fri, 01 Mar 2019) $
+#$Revision: 213925 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/54/85/1548517.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1548517
+loop_
+_publ_author_name
+'Pavlik, III, Alfred J.'
+'Ushakov, Sergey V.'
+'Navrotsky, Alexandra'
+'Benmore, Chris J.'
+'Weber, Richard J.K.'
+_publ_section_title
+;
+ Structure and thermal expansion of Lu 2 O 3 and Yb 2 O 3 up to the
+ melting points
+;
+_journal_name_full               'Journal of Nuclear Materials'
+_journal_page_first              385
+_journal_paper_doi               10.1016/j.jnucmat.2017.08.031
+_journal_volume                  495
+_journal_year                    2017
+_chemical_formula_structural     Lu2O3
+_chemical_formula_sum            'Lu2 O3'
+_chemical_name_systematic        'Lutetium(III) Oxide (2/3)'
+_space_group_IT_number           206
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_Hall  '-I 2b 2c 3'
+_symmetry_space_group_name_H-M   'I a -3'
+_audit_author_name
+' 'Pavlik III, Alfred J.', 'Ushakov, Sergey V.', 'Navrotsky, Alexandra', 'Benmore, Chris J.', 'Weber, Richard J.K.''
+_audit_creation_date             2017/09/15
+_audit_creation_method           'created in GSAS-II'
+_audit_update_record
+'2017-09-15T16:25  Initial software-generated CIF'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            16
+_cell_length_a                   10.4786(22)
+_cell_length_b                   10.4786(22)
+_cell_length_c                   10.4786(22)
+_cell_measurement_temperature    1123.15(50)
+_cell_volume                     1150.6(4)
+_computing_structure_refinement
+'GSAS-II (Toby & Von Dreele, J. Appl. Cryst. 46, 544-549, 2013)'
+_pd_calc_method                  'Rietveld Refinement'
+_pd_phase_name                   Lu2O3
+_pd_proc_info_datetime           2017-09-15T16:25
+_refine_ls_goodness_of_fit_all   7.867
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     28
+_refine_ls_wR_factor_obs         0.10616
+_cod_data_source_file            Lu2O3-Ar-850C.cif
+_cod_data_source_block           Lu2O3-Ar-850C
+_cod_depositor_comments
+;
+  Moved the _audit_creation_method data item out of the loop.
+
+  Antanas Vaitkus,
+  2019-03-01
+
+Removed whitespace in chemical formula for proper reading, and added
+ middle name initial and generational suffix to author name.
+;
+_cod_original_cell_volume        1150.6(7)
+_cod_database_code               1548517
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 z,x,y
+3 y,z,x
+4 1/2+x,y,1/2-z
+5 1/2-z,1/2+x,y
+6 y,1/2-z,1/2+x
+7 -z,1/2+x,1/2-y
+8 1/2-y,-z,1/2+x
+9 1/2+y,1/2-z,-x
+10 -x,1/2+y,1/2-z
+11 1/2-z,-x,1/2+y
+12 1/2+x,1/2-y,-z
+13 -x,-y,-z
+14 -z,-x,-y
+15 -y,-z,-x
+16 1/2-x,-y,1/2+z
+17 1/2+z,1/2-x,-y
+18 -y,1/2+z,1/2-x
+19 z,1/2-x,1/2+y
+20 1/2+y,z,1/2-x
+21 1/2-y,1/2+z,x
+22 x,1/2-y,1/2+z
+23 1/2+z,x,1/2-y
+24 1/2-x,1/2+y,z
+25 1/2+x,1/2+y,1/2+z
+26 1/2+z,1/2+x,1/2+y
+27 1/2+y,1/2+z,1/2+x
+28 x,1/2+y,-z
+29 -z,x,1/2+y
+30 1/2+y,-z,x
+31 1/2-z,x,-y
+32 -y,1/2-z,x
+33 y,-z,1/2-x
+34 1/2-x,y,-z
+35 -z,1/2-x,y
+36 x,-y,1/2-z
+37 1/2-x,1/2-y,1/2-z
+38 1/2-z,1/2-x,1/2-y
+39 1/2-y,1/2-z,1/2-x
+40 -x,1/2-y,z
+41 z,-x,1/2-y
+42 1/2-y,z,-x
+43 1/2+z,-x,y
+44 y,1/2+z,-x
+45 -y,z,1/2+x
+46 1/2+x,-y,z
+47 z,1/2+x,-y
+48 -x,y,1/2+z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_U_iso_or_equiv
+Lu1 Lu3+ 8 b 0.25000 0.25000 0.25000 1.000 Uiso -0.058(5)
+Lu2 Lu3+ 24 d -0.0325(7) 0.00000 0.25000 1.000 Uiso -0.074(5)
+O1 O2- 48 e 0.391(15) 0.152(13) 0.382(16) 1.000 Uiso -0.14(4)
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Lu3+ 3
+O2- -2

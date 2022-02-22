@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_D12Ra1.0Sr4.33333333Mg6.66666667N12
-_symmetry_space_group_name_H-M   P6/m
+_symmetry_space_group_name_H-M  'P 6/m'
 _cell_length_a   11.57961000
 _cell_length_b   11.57961000
 _cell_length_c   3.68110000

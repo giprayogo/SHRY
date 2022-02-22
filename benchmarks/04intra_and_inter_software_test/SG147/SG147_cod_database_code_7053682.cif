@@ -1,0 +1,312 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-26 00:39:48 +0200 (Sat, 26 Mar 2016) $
+#$Revision: 180090 $
+#$URL: svn://www.crystallography.net/cod/cif/7/05/36/7053682.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7053682
+loop_
+_publ_author_name
+'Mazej, Zoran'
+'Goreshnik, Evgeny'
+_publ_section_title
+;
+ Fluoride ion donor properties of group 13 trifluorides (MF3, M = Al, Ga,
+ In, Tl) and crystal structures of InF3&#x00B7;3SbF5, TlF3&#x00B7;3SbF5
+ and TlF3&#x00B7;AsF5&#x00B7;2HF
+;
+_journal_issue                   12
+_journal_name_full               'New Journal of Chemistry'
+_journal_page_first              2806
+_journal_paper_doi               10.1039/c0nj00514b
+_journal_volume                  34
+_journal_year                    2010
+_chemical_formula_moiety         'F18 Sb3 Tl'
+_chemical_formula_sum            'F18 Sb3 Tl'
+_chemical_formula_weight         911.62
+_chemical_name_systematic
+;
+?
+;
+_space_group_IT_number           147
+_symmetry_cell_setting           trigonal
+_symmetry_Int_Tables_number      147
+_symmetry_space_group_name_Hall  '-P 3'
+_symmetry_space_group_name_H-M   'P -3'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            2
+_cell_length_a                   9.408(16)
+_cell_length_b                   9.408(16)
+_cell_length_c                   8.597(14)
+_cell_measurement_reflns_used    77
+_cell_measurement_temperature    200(2)
+_cell_measurement_theta_max      28.6986
+_cell_measurement_theta_min      2.3681
+_cell_volume                     659.0(19)
+_computing_cell_refinement       'CrystalClear (Rigaku Corp., 2000)'
+_computing_data_collection       'CrystalClear (Rigaku Corp., 2000)'
+_computing_data_reduction        'CrystalClear (Rigaku Corp., 2000)'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution
+;
+SIR92 (Altomare, et. al. 1994)
+;
+_diffrn_ambient_temperature      200.0
+_diffrn_detector_area_resol_mean 14.7059
+_diffrn_measured_fraction_theta_full 0.923
+_diffrn_measured_fraction_theta_max 0.98
+_diffrn_measurement_details
+;
+scan:
+Number of images: 133
+Slice: 0.1000 - 40.0000
+Image width: 0.3000
+Exp time: 15.0000
+Rotation axis: Omega
+Omega: 0.0000
+Chi: 90.0000
+Phi: 0.0000
+XTD: 50.1258
+2theta: 20.0995
+scan:
+Number of images: 600
+Slice: -90.0000 - 90.0000
+Image width: 0.3000
+Exp time: 15.0000
+Rotation axis: Phi
+Omega: 0.0000
+Chi: 0.0000
+Phi: 0.0000
+XTD: 50.1258
+2theta: 20.0995
+;
+_diffrn_measurement_device
+;
+Mercury CCD (2x2 bin mode)
+;
+_diffrn_measurement_device_details
+;
+AFC7: Eulerian 3-circle
+;
+_diffrn_measurement_method       dtprofit.ref
+_diffrn_radiation_detector       CCD
+_diffrn_radiation_monochromator  'Graphite Monochromator'
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           'Mo K\a'
+_diffrn_radiation_wavelength     0.7107
+_diffrn_reflns_av_R_equivalents  0.03330
+_diffrn_reflns_av_sigmaI/netI    0.073
+_diffrn_reflns_limit_h_max       9
+_diffrn_reflns_limit_h_min       -12
+_diffrn_reflns_limit_k_max       12
+_diffrn_reflns_limit_k_min       -5
+_diffrn_reflns_limit_l_max       11
+_diffrn_reflns_limit_l_min       -11
+_diffrn_reflns_number            2936
+_diffrn_reflns_reduction_process 'Lp corrections applied'
+_diffrn_reflns_theta_full        28.73
+_diffrn_reflns_theta_max         27.66
+_diffrn_reflns_theta_min         2.37
+_diffrn_source_current           30.0000
+_diffrn_source_power             1.5000
+_diffrn_source_voltage           50.0000
+_exptl_absorpt_coefficient_mu    18.480
+_exptl_absorpt_correction_T_max  0.1600
+_exptl_absorpt_correction_T_min  0.0445
+_exptl_absorpt_correction_type   multi-scan
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    4.594
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       block
+_exptl_crystal_F_000             792
+_exptl_crystal_size_max          0.20
+_exptl_crystal_size_mid          0.15
+_exptl_crystal_size_min          0.10
+_refine_diff_density_max         4.963
+_refine_diff_density_min         -2.878
+_refine_diff_density_rms         0.412
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.137
+_refine_ls_hydrogen_treatment    mixed
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     67
+_refine_ls_number_reflns         1058
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.137
+_refine_ls_R_factor_all          0.0450
+_refine_ls_R_factor_gt           0.0407
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0511P)^2^+1.3977P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0938
+_refine_ls_wR_factor_ref         0.0972
+_reflns_number_gt                957
+_reflns_number_total             1058
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            c0nj00514b.txt
+_cod_data_source_block           TlF3_3SbF5
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_exptl_absorpt_correction_type' value 'Multi-scan' changed to
+'multi-scan' according to
+/home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary named
+'cif_core.dic' version 2.4.2 from 2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 1891 2012-01-12 08:04:46Z andrius 
+;
+_cod_original_sg_symbol_H-M      P-3
+_cod_database_code               7053682
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'-x, -y, -z'
+'y, -x+y, -z'
+'x-y, x, -z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Tl1 Tl 0.6667 0.3333 0.42734(7) 0.01656(19) Uani 1 3 d S
+Sb2 Sb 0.34432(7) 0.36364(7) 0.24005(7) 0.01747(19) Uani 1 1 d .
+F3 F 0.8612(6) 0.3899(6) 0.5964(6) 0.0208(11) Uani 1 1 d .
+F4 F 0.3200(7) 0.2109(6) 0.0943(7) 0.0265(12) Uani 1 1 d .
+F5 F 0.3899(7) 0.5278(7) 0.1002(7) 0.0271(12) Uani 1 1 d .
+F6 F 0.8798(7) 0.6435(7) 0.4046(7) 0.0287(13) Uani 1 1 d .
+F7 F 0.1250(6) 0.2904(7) 0.2668(7) 0.0302(13) Uani 1 1 d .
+F8 F 0.5823(6) 0.4482(6) 0.2544(6) 0.0204(11) Uani 1 1 d .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Tl1 0.0158(2) 0.0158(2) 0.0181(3) 0.000 0.000 0.00790(11)
+Sb2 0.0178(3) 0.0174(3) 0.0188(3) -0.0018(2) -0.0022(2) 0.0100(2)
+F3 0.015(2) 0.020(2) 0.025(3) 0.002(2) -0.002(2) 0.007(2)
+F4 0.037(3) 0.020(3) 0.025(3) -0.008(2) -0.003(3) 0.016(2)
+F5 0.029(3) 0.026(3) 0.031(3) 0.006(2) 0.000(3) 0.017(3)
+F6 0.028(3) 0.040(3) 0.028(3) -0.004(3) 0.004(2) 0.025(3)
+F7 0.017(3) 0.035(3) 0.030(3) -0.006(3) -0.001(2) 0.007(2)
+F8 0.014(2) 0.023(3) 0.028(3) 0.001(2) -0.001(2) 0.011(2)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Tl Tl -2.8358 9.6688 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Sb Sb -0.5866 1.5461 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+F F 0.0171 0.0103 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+F3 Tl1 F3 80.6(2) . 3_665
+F3 Tl1 F3 80.6(2) . 2_655
+F3 Tl1 F3 80.6(2) 3_665 2_655
+F3 Tl1 F8 84.4(2) . 3_665
+F3 Tl1 F8 142.38(19) 3_665 3_665
+F3 Tl1 F8 130.6(2) 2_655 3_665
+F3 Tl1 F8 130.6(2) . 2_655
+F3 Tl1 F8 84.4(2) 3_665 2_655
+F3 Tl1 F8 142.38(19) 2_655 2_655
+F8 Tl1 F8 79.6(2) 3_665 2_655
+F3 Tl1 F8 142.38(19) . .
+F3 Tl1 F8 130.6(2) 3_665 .
+F3 Tl1 F8 84.4(2) 2_655 .
+F8 Tl1 F8 79.6(2) 3_665 .
+F8 Tl1 F8 79.6(2) 2_655 .
+F3 Tl1 F6 70.27(18) . 3_665
+F3 Tl1 F6 72.15(18) 3_665 3_665
+F3 Tl1 F6 142.6(2) 2_655 3_665
+F8 Tl1 F6 70.32(18) 3_665 3_665
+F8 Tl1 F6 60.29(17) 2_655 3_665
+F8 Tl1 F6 132.9(2) . 3_665
+F3 Tl1 F6 72.15(18) . .
+F3 Tl1 F6 142.6(2) 3_665 .
+F3 Tl1 F6 70.27(19) 2_655 .
+F8 Tl1 F6 60.29(17) 3_665 .
+F8 Tl1 F6 132.9(2) 2_655 .
+F8 Tl1 F6 70.32(18) . .
+F6 Tl1 F6 119.44(4) 3_665 .
+F3 Tl1 F6 142.6(2) . 2_655
+F3 Tl1 F6 70.27(19) 3_665 2_655
+F3 Tl1 F6 72.15(18) 2_655 2_655
+F8 Tl1 F6 132.9(2) 3_665 2_655
+F8 Tl1 F6 70.32(18) 2_655 2_655
+F8 Tl1 F6 60.29(17) . 2_655
+F6 Tl1 F6 119.44(4) 3_665 2_655
+F6 Tl1 F6 119.44(4) . 2_655
+F5 Sb2 F4 95.6(3) . .
+F5 Sb2 F7 98.3(3) . .
+F4 Sb2 F7 96.6(3) . .
+F5 Sb2 F6 164.0(3) . 2_655
+F4 Sb2 F6 92.2(3) . 2_655
+F7 Sb2 F6 94.7(3) . 2_655
+F5 Sb2 F8 87.8(2) . .
+F4 Sb2 F8 91.8(2) . .
+F7 Sb2 F8 169.1(2) . .
+F6 Sb2 F8 78.0(2) 2_655 .
+F5 Sb2 F3 86.4(3) . 5_566
+F4 Sb2 F3 174.5(2) . 5_566
+F7 Sb2 F3 88.1(2) . 5_566
+F6 Sb2 F3 84.7(3) 2_655 5_566
+F8 Sb2 F3 83.2(2) . 5_566
+Sb2 F3 Tl1 156.7(3) 6_656 .
+Sb2 F6 Tl1 104.3(2) 3_665 .
+Sb2 F8 Tl1 117.3(2) . .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Tl1 F3 2.184(6) .
+Tl1 F3 2.184(6) 3_665
+Tl1 F3 2.184(6) 2_655
+Tl1 F8 2.205(6) 3_665
+Tl1 F8 2.205(6) 2_655
+Tl1 F8 2.205(6) .
+Tl1 F6 2.593(8) 3_665
+Tl1 F6 2.593(8) .
+Tl1 F6 2.593(8) 2_655
+Sb2 F5 1.831(6) .
+Sb2 F4 1.833(6) .
+Sb2 F7 1.834(6) .
+Sb2 F6 1.894(6) 2_655
+Sb2 F8 1.970(6) .
+Sb2 F3 1.977(6) 5_566
+F3 Sb2 1.977(6) 6_656
+F6 Sb2 1.894(6) 3_665

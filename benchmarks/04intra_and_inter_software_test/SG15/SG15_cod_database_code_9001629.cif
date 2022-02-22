@@ -1,0 +1,68 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/16/9001629.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9001629
+loop_
+_publ_author_name
+'Hugh-Jones D A'
+'Woodland, A. B.'
+'Angel, R. J.'
+_publ_section_title
+;
+ The structure of high-pressure C2/c ferrosilite and crystal chemistry of
+ high-pressure C2/c pyroxenes
+ Sample: fictive hedenbergite-like C2/c FeSiO3 phase
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1032
+_journal_page_last               1041
+_journal_volume                  79
+_journal_year                    1994
+_chemical_formula_sum            'Fe O3 Si'
+_chemical_name_mineral           Clinoferrosilite
+_space_group_IT_number           15
+_symmetry_space_group_name_Hall  '-C 2yc'
+_symmetry_space_group_name_H-M   'C 1 2/c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 107.8
+_cell_angle_gamma                90
+_cell_length_a                   9.73
+_cell_length_b                   9.11
+_cell_length_c                   5.23
+_cell_volume                     441.396
+_exptl_crystal_density_diffrn    3.971
+_cod_original_formula_sum        'Fe Si O3'
+_cod_database_code               9001629
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,1/2+z
+1/2+x,1/2-y,1/2+z
+-x,y,1/2-z
+1/2-x,1/2+y,1/2-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Fe1 0.00000 0.90100 0.25000
+Fe2 0.00000 0.26300 0.25000
+Si 0.29600 0.08500 0.25200
+O1 0.12400 0.09000 0.15900
+O2 0.37500 0.24000 0.36200
+O3 0.35900 0.03100 0.04500

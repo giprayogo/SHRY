@@ -1,0 +1,104 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/96/9009613.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009613
+loop_
+_publ_author_name
+'Mereiter, K.'
+_publ_section_title
+;
+ The crystal structure of liebigite, Ca2UO2(CO3)3*~11H2O
+ Locality: Joachimsthal, Bohmen
+;
+_journal_name_full
+'Tschermaks Mineralogische und Petrographische Mitteilungen'
+_journal_page_first              277
+_journal_page_last               288
+_journal_volume                  30
+_journal_year                    1982
+_chemical_formula_sum            'C3 H22 Ca2 O22 U'
+_chemical_name_mineral           Liebigite
+_space_group_IT_number           41
+_symmetry_space_group_name_Hall  'B 2 -2ab'
+_symmetry_space_group_name_H-M   'B b a 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   16.699
+_cell_length_b                   17.557
+_cell_length_c                   13.697
+_cell_volume                     4015.746
+_exptl_crystal_density_diffrn    2.410
+_cod_original_formula_sum        'Ca2 U O22 C3 H22'
+_cod_database_code               9009613
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+x,y,1/2+z
+1/2-x,1/2+y,z
+-x,1/2+y,1/2+z
+1/2+x,1/2-y,z
++x,1/2-y,1/2+z
+-x,-y,z
+1/2-x,-y,1/2+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Ca1 0.02160 0.02160 0.02360 -0.00040 -0.00380 0.00060
+Ca2 0.01400 0.02790 0.01830 0.00390 0.00000 0.00000
+Ca3 0.01240 0.02250 0.01700 -0.00010 0.00000 0.00000
+U 0.01080 0.02120 0.01740 -0.00110 0.00130 -0.00330
+Wat42 0.23640 0.05590 0.07570 -0.01720 -0.00370 -0.00090
+Wat43 0.10700 0.15990 0.26500 0.06330 0.10500 0.11850
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Ca1 0.31411 0.20626 0.19102 0.02229
+Ca2 0.00000 0.00000 0.38804 0.02001
+Ca3 0.00000 0.00000 -0.02542 0.01735
+U 0.23820 0.04408 0.00000 0.01646
+O1 0.23920 -0.02790 0.09190 0.02660
+O2 0.23760 0.11580 -0.09120 0.03293
+C1 0.18050 -0.06570 -0.13760 0.02533
+O11 0.25670 -0.05250 -0.12690 0.02913
+O22 0.13530 -0.02240 -0.08540 0.02280
+O13 0.15410 -0.11650 -0.19180 0.03926
+C2 0.12490 0.13180 0.11020 0.01900
+O21 0.10340 0.08090 0.04870 0.02660
+O22 0.20170 0.13880 0.12160 0.02533
+O23 0.07500 0.17180 0.15690 0.02913
+C3 0.40420 0.07440 0.03310 0.02153
+O31 0.34900 0.10810 0.08240 0.02786
+O32 0.37930 0.02070 -0.02600 0.02786
+O33 0.47760 0.08820 0.04140 0.02786
+Wat11 0.32610 0.28430 0.04180 0.06713
+Wat12 0.45870 0.21140 0.17040 0.03926
+Wat13 0.18940 0.26900 0.23880 0.06459
+Wat14 0.35330 0.31000 0.29430 0.05826
+Wat21 0.10260 0.00150 0.26290 0.03546
+Wat22 0.00730 0.13310 0.33610 0.03546
+Wat31 0.06250 -0.08980 0.09370 0.02913
+Wat32 0.01010 0.09900 -0.14860 0.03546
+Wat41 0.10930 0.41740 0.18460 0.07092
+Wat42 0.52390 0.26000 -0.05090 0.12285
+Wat43 0.31550 -0.19210 -0.05360 0.17731

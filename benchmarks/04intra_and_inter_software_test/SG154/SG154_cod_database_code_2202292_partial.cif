@@ -1,0 +1,55 @@
+# generated using pymatgen
+data_Cu3H30At0.5I0.5Br1.5Cl6Ts0.5O54
+_symmetry_space_group_name_H-M  'P 32 2 1'
+_cell_length_a   10.16590000
+_cell_length_b   10.16590000
+_cell_length_c   13.16010000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   154
+_chemical_formula_structural   Cu3H30At0.5I0.5Br1.5Cl6Ts0.5O54
+_chemical_formula_sum   'Cu3 H30 At0.5 I0.5 Br1.5 Cl6 Ts0.5 O54'
+_cell_volume   1177.82695126
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z+2/3'
+  3  '-x+y, -x, z+1/3'
+  4  'y, x, -z'
+  5  'x-y, -y, -z+1/3'
+  6  '-x, -x+y, -z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu  Cu0  3  0.00000000  0.70337000  0.83336667  1.0
+  H  H1  6  0.08130000  0.46700000  0.82700000  1.0
+  H  H2  6  0.10000000  0.33800000  0.59966667  1.0
+  H  H3  6  0.11200000  0.74000000  0.64700000  1.0
+  H  H4  6  0.15200000  0.37200000  0.38566667  1.0
+  H  H5  6  0.18500000  0.75100000  0.97500000  1.0
+  Cl  Cl6  6  0.17902000  0.54783000  0.14489000  1.0
+  Br+  Br7  3  0.00000000  0.08400000  0.83336667  0.5
+  Ts+  Ts8  3  0.00000000  0.08400000  0.83336667
+  0.16666666666666666
+  At+  At9  3  0.00000000  0.08400000  0.83336667
+  0.16666666666666666
+  I+  I10  3  0.00000000  0.08400000  0.83336667
+  0.16666666666666666
+  O  O11  6  0.01790000  0.17300000  0.92030000  1.0
+  O  O12  6  0.05920000  0.92650000  0.51073333  1.0
+  O  O13  6  0.06630000  0.45430000  0.21970000  1.0
+  O  O14  6  0.12450000  0.77750000  0.70940000  1.0
+  O  O15  6  0.12630000  0.47980000  0.04620000  1.0
+  O  O16  6  0.18700000  0.80150000  0.91970000  1.0
+  O  O17  6  0.19160000  0.69370000  0.14650000  1.0
+  O  O18  6  0.23840000  0.68160000  0.49773333  1.0
+  O  O19  3  0.00000000  0.47520000  0.83336667  1.0
+  O  O20  3  0.00000000  0.67200000  0.33333333  1.0

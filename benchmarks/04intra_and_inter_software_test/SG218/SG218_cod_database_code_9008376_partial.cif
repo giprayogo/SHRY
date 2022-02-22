@@ -1,0 +1,59 @@
+# generated using pymatgen
+data_Mn8Be6Fl0.5Si4.0Pb1.5Se0.5Lv1.5O24
+_symmetry_space_group_name_H-M  'P -4 3 n'
+_cell_length_a   8.20300000
+_cell_length_b   8.20300000
+_cell_length_c   8.20300000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   218
+_chemical_formula_structural   Mn8Be6Fl0.5Si4.0Pb1.5Se0.5Lv1.5O24
+_chemical_formula_sum   'Mn8 Be6 Fl0.5 Si4.0 Pb1.5 Se0.5 Lv1.5 O24'
+_cell_volume   551.97338143
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y+1/2, -x+1/2, -z+1/2'
+  3  '-x, -y, z'
+  4  '-y+1/2, x+1/2, -z+1/2'
+  5  'x, -y, -z'
+  6  'y+1/2, x+1/2, z+1/2'
+  7  '-x, y, -z'
+  8  '-y+1/2, -x+1/2, z+1/2'
+  9  'z, x, y'
+  10  '-z+1/2, y+1/2, -x+1/2'
+  11  'z, -x, -y'
+  12  '-z+1/2, -y+1/2, x+1/2'
+  13  '-z, x, -y'
+  14  'z+1/2, y+1/2, x+1/2'
+  15  '-z, -x, y'
+  16  'z+1/2, -y+1/2, -x+1/2'
+  17  'y, z, x'
+  18  '-x+1/2, -z+1/2, y+1/2'
+  19  '-y, z, -x'
+  20  'x+1/2, -z+1/2, -y+1/2'
+  21  '-y, -z, x'
+  22  'x+1/2, z+1/2, y+1/2'
+  23  'y, -z, -x'
+  24  '-x+1/2, z+1/2, -y+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  8  0.17080000  0.17080000  0.17080000  1
+  Be  Be1  6  0.00000000  0.25000000  0.50000000  1
+  Fl+  Fl2  6  0.00000000  0.50000000  0.25000000
+  0.08333333333333333
+  Pb+  Pb3  6  0.00000000  0.50000000  0.25000000  0.25
+  Si+  Si4  6  0.00000000  0.50000000  0.25000000
+  0.6666666666666666
+  Se+  Se5  2  0.00000000  0.00000000  0.00000000  0.25
+  Lv+  Lv6  2  0.00000000  0.00000000  0.00000000  0.75
+  O  O7  24  0.08530000  0.36000000  0.63820000  1

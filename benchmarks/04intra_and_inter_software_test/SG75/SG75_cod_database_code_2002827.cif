@@ -1,0 +1,105 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-01-27 21:58:39 +0200 (Tue, 27 Jan 2015) $
+#$Revision: 130149 $
+#$URL: svn://www.crystallography.net/cod/cif/2/00/28/2002827.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_2002827
+loop_
+_publ_author_name
+'Mueller-Buschbaum, Hk'
+'Mertens, B'
+_publ_section_title
+;
+Synthese und Roentgen-Strukturuntersuchung von Rb4 Cd (V O) (V2 O7)2 Cl
+und Tl4 Cd (V O) (V2 O7)2 Cl
+;
+_journal_name_full
+;
+Zeitschrift fuer Naturforschung, Teil B. Anorganische Chemie,
+Organische Chemie (42,1987-)
+;
+_journal_page_first              453
+_journal_page_last               456
+_journal_volume                  52
+_journal_year                    1997
+_chemical_formula_structural     'Rb4 Cd (V O) (V2 O7)2 Cl'
+_chemical_formula_sum            'Cd Cl O15 Rb4 V5'
+_chemical_name_systematic
+;
+Tetrarubidium cadmium oxovanadium bis(divanadate) chloride
+;
+_space_group_IT_number           75
+_symmetry_cell_setting           tetragonal
+_symmetry_Int_Tables_number      75
+_symmetry_space_group_name_Hall  'P 4'
+_symmetry_space_group_name_H-M   'P 4'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            1
+_cell_length_a                   9.1421(13)
+_cell_length_b                   9.1421(13)
+_cell_length_c                   5.5250(6)
+_cell_volume                     461.8
+_refine_ls_R_factor_all          0.0756
+_cod_database_code               2002827
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+y,-x,z
+-y,x,z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_22
+_atom_site_aniso_U_23
+_atom_site_aniso_U_33
+Cd1 0.0096(2) 0. 0. 0.0096(2) 0. 0.0219(5)
+Rb1 0.0208(3) -0.0080(3) 0.0009(3) 0.0318(4) -0.0009(4) 0.0245(3)
+V1 0.0092(4) -0.0001(4) -0.0006(5) 0.0093(4) -0.0004(5) 0.0183(5)
+V2 0.0082(5) 0. 0. 0.0082(5) 0. 0.0201(12)
+Cl1 0.0217(10) 0. 0. 0.0217(10) 0. 0.019(2)
+O1 0.024(3) 0.009(3) -0.001(3) 0.029(3) 0.007(3) 0.023(3)
+O2 0.013(2) -0.012(2) 0.008(3) 0.032(3) -0.014(3) 0.034(3)
+O3 0.025(3) -0.001(2) -0.002(3) 0.012(2) 0.002(2) 0.032(3)
+O4 0.028(4) 0.012(3) 0. 0.014(4) 0. 0.023(4)
+O5 0.033(5) 0. 0. 0.033(5) 0. 0.025(7)
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Cd1 Cd2+ 1 a 0. 0. 0.5 1. 0 d
+Rb1 Rb1+ 4 d 0.67482(9) 0.16536(10) 0.9388(2) 1. 0 d
+V1 V5+ 4 d 0.38270(13) 0.14267(12) 0.4613(3) 1. 0 d
+V2 V5+ 1 b 0.5 0.5 0.4922(6) 1. 0 d
+Cl1 Cl1- 1 a 0. 0. 0.0366(8) 1. 0 d
+O1 O2- 4 d 0.3852(8) 0.1416(8) 0.1678(14) 1. 0 d
+O2 O2- 4 d 0.2139(7) 0.1119(8) 0.5584(13) 1. 0 d
+O3 O2- 4 d 0.4424(8) 0.3104(7) 0.5815(13) 1. 0 d
+O4 O2- 2 c 0.5 0. 0.5746(17) 1. 0 d
+O5 O2- 1 b 0.5 0.5 0.2043(27) 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Cd2+ 2.000
+Rb1+ 1.000
+V5+ 5.000
+Cl1- -1.000
+O2- -2.000

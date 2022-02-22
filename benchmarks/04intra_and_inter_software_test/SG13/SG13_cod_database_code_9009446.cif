@@ -1,0 +1,70 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/94/9009446.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009446
+loop_
+_publ_author_name
+'Fanfani, L.'
+'Nunzi, A.'
+'Zanazzi, P. F.'
+_publ_section_title
+;
+ Structure and twinning in spencerite
+ Locality: Salmo, British Columbia, Canada
+;
+_journal_name_full               'Mineralogical Magazine'
+_journal_page_first              687
+_journal_page_last               692
+_journal_paper_doi               10.1180/minmag.1972.038.298.05
+_journal_volume                  38
+_journal_year                    1972
+_chemical_formula_sum            'H8 O13 P2 Zn4'
+_chemical_name_mineral           Spencerite
+_space_group_IT_number           13
+_symmetry_space_group_name_Hall  '-P 2yc'
+_symmetry_space_group_name_H-M   'P 1 2/c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 116.73
+_cell_angle_gamma                90
+_cell_length_a                   10.448
+_cell_length_b                   5.282
+_cell_length_c                   11.208
+_cell_volume                     552.430
+_exptl_crystal_density_diffrn    3.232
+_cod_original_formula_sum        'Zn4 P2 O13 H8'
+_cod_database_code               9009446
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x,-y,1/2+z
+-x,y,1/2-z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Zn1 0.00000 0.00000 0.00000 0.02216
+Zn2 0.00000 0.02260 0.25000 0.01849
+Zn3 0.28630 0.70280 0.49060 0.01634
+P 0.17120 0.50970 0.19360 0.00203
+O1 0.07750 0.26800 0.15660 0.00874
+O2 0.07460 0.74690 0.16410 0.01267
+O3 0.28050 0.50270 0.33750 0.01621
+O4 0.25380 0.52570 0.11110 0.01127
+O-H 0.16910 0.00270 0.44140 0.01406
+Wat1 0.49670 0.78730 0.58730 0.01798
+Wat2 0.50000 0.81530 0.25000 0.00887

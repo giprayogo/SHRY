@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cu4Bi3As(CN2)4
-_symmetry_space_group_name_H-M   Pbcm
+_symmetry_space_group_name_H-M  'P b c m'
 _cell_length_a   4.68400000
 _cell_length_b   9.17200000
 _cell_length_c   7.83000000

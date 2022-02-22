@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_La6Co4Si0.75Sn12Pb1C0.25
+_symmetry_space_group_name_H-M  'C m m m'
+_cell_length_a   4.59000000
+_cell_length_b   27.60000000
+_cell_length_c   4.60000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   65
+_chemical_formula_structural   La6Co4Si0.75Sn12Pb1C0.25
+_chemical_formula_sum   'La6 Co4 Si0.75 Sn12 Pb1 C0.25'
+_cell_volume   582.74640000
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z'
+  8  'x, -y, z'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x+1/2, -y+1/2, z'
+  12  'x+1/2, y+1/2, -z'
+  13  'x+1/2, -y+1/2, -z'
+  14  '-x+1/2, y+1/2, z'
+  15  '-x+1/2, y+1/2, -z'
+  16  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  4  0.00000000  0.18450000  0.00000000  1.0
+  La  La1  2  0.00000000  0.50000000  0.50000000  1.0
+  Co  Co2  4  0.00000000  0.37170000  0.50000000  1.0
+  Sn  Sn3  4  0.00000000  0.09070000  0.50000000  1.0
+  Sn  Sn4  4  0.00000000  0.28220000  0.50000000  1.0
+  Sn  Sn5  4  0.00000000  0.40950000  0.00000000  1.0
+  Pb+  Pb6  2  0.00000000  0.00000000  0.00000000  0.5
+  C+  C7  2  0.00000000  0.00000000  0.00000000  0.125
+  Si+  Si8  2  0.00000000  0.00000000  0.00000000  0.375

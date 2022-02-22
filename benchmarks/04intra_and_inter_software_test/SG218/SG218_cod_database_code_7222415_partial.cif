@@ -1,0 +1,66 @@
+# generated using pymatgen
+data_Sr5.33333333Ca0.66666667Fe8Si6Te2O24
+_symmetry_space_group_name_H-M  'P -4 3 n'
+_cell_length_a   8.36850000
+_cell_length_b   8.36850000
+_cell_length_c   8.36850000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   218
+_chemical_formula_structural   Sr5.33333333Ca0.66666667Fe8Si6Te2O24
+_chemical_formula_sum   'Sr5.33333333 Ca0.66666667 Fe8 Si6 Te2 O24'
+_cell_volume   586.06105344
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y+1/2, -x+1/2, -z+1/2'
+  3  '-x, -y, z'
+  4  '-y+1/2, x+1/2, -z+1/2'
+  5  'x, -y, -z'
+  6  'y+1/2, x+1/2, z+1/2'
+  7  '-x, y, -z'
+  8  '-y+1/2, -x+1/2, z+1/2'
+  9  'z, x, y'
+  10  '-z+1/2, y+1/2, -x+1/2'
+  11  'z, -x, -y'
+  12  '-z+1/2, -y+1/2, x+1/2'
+  13  '-z, x, -y'
+  14  'z+1/2, y+1/2, x+1/2'
+  15  '-z, -x, y'
+  16  'z+1/2, -y+1/2, -x+1/2'
+  17  'y, z, x'
+  18  '-x+1/2, -z+1/2, y+1/2'
+  19  '-y, z, -x'
+  20  'x+1/2, -z+1/2, -y+1/2'
+  21  '-y, -z, x'
+  22  'x+1/2, z+1/2, y+1/2'
+  23  'y, -z, -x'
+  24  '-x+1/2, z+1/2, -y+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Sr0+  0.0
+  Ca0+  0.0
+  Fe0+  0.0
+  Si0+  0.0
+  Te0+  0.0
+  O0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca0+  Ca0  6  0.00000000  0.25000000  0.50000000
+  0.1111111111111111
+  Sr0+  Sr1  6  0.00000000  0.25000000  0.50000000
+  0.8888888888888888
+  Fe0+  Fe2  8  0.18470000  0.18470000  0.18470000  1.0
+  Si0+  Si3  6  0.00000000  0.50000000  0.25000000  1.0
+  Te0+  Te4  2  0.00000000  0.00000000  0.00000000  1.0
+  O0+  O5  24  0.06690000  0.36800000  0.64360000  1.0

@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Gd4Si1.25Sn6.75H12C28O28
-_symmetry_space_group_name_H-M   P4_322
+_symmetry_space_group_name_H-M  'P 43 2 2'
 _cell_length_a   10.36040000
 _cell_length_b   10.36040000
 _cell_length_c   14.50590000

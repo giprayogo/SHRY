@@ -1,0 +1,81 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-09-11 09:26:27 +0300 (Mon, 11 Sep 2017) $
+#$Revision: 200438 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/9/01/12/9011265.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9011265
+loop_
+_publ_author_name
+'McIntyre, G. J.'
+'Ptasiewicz-Bak H'
+'Olovsson, I.'
+_publ_section_title
+;
+ Bonding deformation and superposition effects in the
+ electron density of tetragonal nickel sulfate hexadeuterate NiSO4*6D2O
+ Sample: X-ray refinement
+;
+_journal_issue                   1
+_journal_name_full               'Acta Crystallographica, Section B'
+_journal_page_first              27
+_journal_page_last               39
+_journal_paper_doi               10.1107/S0108768189010840
+_journal_volume                  46
+_journal_year                    1990
+_chemical_formula_structural     Ni(SO4)*6H2O
+_chemical_formula_sum            'H12 Ni O10 S'
+_chemical_name_mineral           Retgersite
+_space_group_IT_number           96
+_symmetry_space_group_name_Hall  'P 4nw 2abw'
+_symmetry_space_group_name_H-M   'P 43 21 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   6.7803
+_cell_length_b                   6.7803
+_cell_length_c                   18.288
+_cell_volume                     840.744
+_exptl_crystal_density_diffrn    1.981
+_cell_formula_units_Z            4
+_cod_depositor_comments
+;
+       Insterting Z value to be consistent with given formula
+       Water oxygen renamed so they are recognized as oxygens
+                                  miguel
+;
+_cod_original_cell_volume        840.745
+_cod_original_formula_sum        'Ni S O10'
+_cod_database_code               9011265
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,x,-z
+1/2-y,1/2+x,3/4+z
+1/2-x,1/2+y,3/4-z
+-x,-y,1/2+z
+-y,-x,1/2-z
+1/2+y,1/2-x,1/4+z
+1/2+x,1/2-y,1/4-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Ni -0.21039 -0.21039 0.00000 0.01460
+S -0.70910 -0.70910 0.00000 0.01670
+O4 -0.61965 0.37988 -0.06604 0.03180
+O5 -0.92339 0.32770 -0.00050 0.02870
+O11 -0.17284 0.04673 -0.05278 0.03010
+O12 -0.47011 -0.24399 -0.05617 0.02250
+O13 -0.06596 0.64363 -0.08493 0.02130

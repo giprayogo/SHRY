@@ -1,0 +1,68 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-18 13:08:31 +0200 (Thu, 18 Feb 2016) $
+#$Revision: 176725 $
+#$URL: svn://www.crystallography.net/cod/cif/9/01/25/9012535.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9012535
+loop_
+_publ_author_name
+'Lindahl, T.'
+'Westman, S.'
+_publ_section_title
+;The structure of the rhombohedral gamma brass like phase in the
+ copper-mercury system Locality: synthetic
+;
+_journal_name_full               'Acta Chemica Scandinavica'
+_journal_page_first              1181
+_journal_page_last               1190
+_journal_paper_doi               10.3891/acta.chem.scand.23-1181
+_journal_volume                  23
+_journal_year                    1969
+_chemical_formula_sum            'Cu7 Hg6'
+_chemical_name_mineral           Belendorffite
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'P 3* -2'
+_symmetry_space_group_name_H-M   'R 3 m :R'
+_cell_angle_alpha                90.425
+_cell_angle_beta                 90.425
+_cell_angle_gamma                90.425
+_cell_length_a                   9.4024
+_cell_length_b                   9.4024
+_cell_length_c                   9.4024
+_cell_volume                     831.151
+_exptl_crystal_density_diffrn    6.586
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_database_code               9012535
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x,z,y
+z,x,y
+y,x,z
+y,z,x
+z,y,x
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+CuIT1 0.09700 0.09700 0.09700 0.02533
+CuIT3 -0.09700 -0.09700 0.09700 ?
+CuOT1 -0.16300 -0.16300 -0.16300 ?
+CuOT3 0.16300 0.16300 -0.16300 -0.02533
+CuOH3 0.00500 0.00500 0.34500 -0.05066
+CuCO3 0.29500 0.29500 0.06800 0.02533
+HgOH3* -0.00300 -0.00300 -0.35200 0.01267
+HgCO3* -0.30700 -0.30700 0.04000 0.01267
+HgCO6 -0.06000 0.33700 -0.28400 0.01267

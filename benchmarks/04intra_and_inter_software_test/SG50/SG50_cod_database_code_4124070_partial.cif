@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_Si8O15.25Lv0.75
+_symmetry_space_group_name_H-M  'P b a n :1'
+_cell_length_a   9.10822000
+_cell_length_b   9.53351000
+_cell_length_c   3.66611000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   50
+_chemical_formula_structural   Si8O15.25Lv0.75
+_chemical_formula_sum   'Si8 O15.25 Lv0.75'
+_cell_volume   318.34045312
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, -z'
+  4  '-x, y, -z'
+  5  '-x+1/2, -y+1/2, -z'
+  6  'x+1/2, y+1/2, -z'
+  7  '-x+1/2, y+1/2, z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Si0+  0.0
+  O0+  0.0
+  Lv0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Si0+  Si0  8  0.15965000  0.11644000  0.33661000  1.0
+  O0+  O1  4  0.13519000  0.00000000  0.00000000  1.0
+  O0+  O2  4  0.23310000  0.50000000  0.50000000  1.0
+  Lv0+  Lv3  4  0.00000000  0.15360000  0.50000000  0.1875
+  O0+  O4  4  0.00000000  0.15360000  0.50000000  0.8125
+  O0+  O5  4  0.25000000  0.25000000  0.50000000  1.0

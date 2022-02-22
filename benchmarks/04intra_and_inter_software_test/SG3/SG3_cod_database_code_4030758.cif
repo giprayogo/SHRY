@@ -1,0 +1,297 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-21 05:35:49 +0200 (Mon, 21 Mar 2016) $
+#$Revision: 178486 $
+#$URL: svn://www.crystallography.net/cod/cif/4/03/07/4030758.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4030758
+loop_
+_publ_author_name
+'Tabachenko, V. V.'
+'D Yachenko, O. G.'
+'Sundberg, M.'
+_publ_section_title
+;
+ The crystal structures of UMo5O16 and U0.75Mo5O16 studies by X-ray
+ diffraction and high-resolution electron microscopy
+;
+_journal_name_full
+'European Journal of Solid State and Inorganic Chemistry'
+_journal_page_first              1137
+_journal_page_last               1149
+_journal_volume                  32
+_journal_year                    1995
+_chemical_formula_sum            'Mo5 O16 U'
+_chemical_formula_weight         973.72
+_space_group_IT_number           3
+_symmetry_cell_setting           monoclinic
+_symmetry_Int_Tables_number      3
+_symmetry_space_group_name_Hall  'P 2'
+_symmetry_space_group_name_H-M   'P 1 1 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90.20(1)
+_cell_formula_units_Z            1
+_cell_length_a                   9.9026(6)
+_cell_length_b                   7.1823(5)
+_cell_length_c                   4.1340(3)
+_cell_volume                     294.02(3)
+_diffrn_ambient_temperature      293
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_exptl_absorpt_coefficient_mu    18.985
+_exptl_crystal_density_diffrn    5.499
+_exptl_crystal_F_000             430
+_refine_ls_number_parameters     49
+_refine_ls_number_reflns         1545
+_refine_ls_R_factor_gt           0.042
+_refine_ls_wR_factor_gt          0.042
+_cod_data_source_file            EJSSIC-1995-32-1137-1149-1.cif
+_cod_data_source_block           UMo5O16-1
+_cod_original_cell_volume        294.03(3)
+_cod_database_code               4030758
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 -x,-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_thermal_displace_type
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+U1 U Uiso 0.00000 0.00000 0.00000 1.000 0.0047(1)
+Mo1 Mo Uiso 0.00000 0.50000 0.1081(6) 1.000 0.0079(4)
+Mo2 Mo Uiso 0.31990(10) 0.2489(2) 0.1003(4) 1.000 0.0049(3)
+Mo3 Mo Uiso 0.68020(10) 0.2500(2) 0.9061(4) 1.000 0.0057(3)
+O1 O Uiso 0.00000 0.00000 0.501(8) 1.000 0.022(4)
+O2 O Uiso 0.00000 0.50000 0.520(8) 1.000 0.017(3)
+O3 O Uiso 0.1250(10) 0.2990(10) 0.007(4) 1.000 0.0139(13)
+O4 O Uiso 0.2500(9) 0.0000(10) -0.013(3) 1.000 0.0051(13)
+O5 O Uiso 0.3490(10) 0.498(2) 0.041(4) 1.000 0.018(3)
+O6 O Uiso 0.3200(10) 0.2470(10) 0.514(5) 1.000 0.011(3)
+O7 O Uiso 0.5010(10) 0.1910(10) -0.001(4) 1.000 0.0076(13)
+O31 O Uiso 0.8770(10) 0.3010(10) 0.007(4) 1.000 0.0139(13)
+O61 O Uiso 0.6860(10) 0.2510(10) 0.503(5) 1.000 0.014(3)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Mo Mo -1.6832 0.6857 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.0060 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+U U -9.6767 9.6646 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+O1 U1 O3 89.3(4) . . yes
+O1 U1 O4 91.2(3) . . yes
+O1 U1 O31 89.3(4) . 1_455 yes
+O1 U1 O1 180.00 . 1_554 yes
+O1 U1 O3 89.3(4) . 2_555 yes
+O1 U1 O4 91.2(3) . 2_555 yes
+O1 U1 O31 89.3(4) . 2_655 yes
+O3 U1 O4 60.2(3) . . yes
+O3 U1 O31 59.4(3) . 1_455 yes
+O1 U1 O3 90.7(4) 1_554 . yes
+O3 U1 O3 178.7(5) . 2_555 yes
+O3 U1 O4 119.8(3) . 2_555 yes
+O3 U1 O31 120.6(3) . 2_655 yes
+O4 U1 O31 119.6(3) . 1_455 yes
+O1 U1 O4 88.8(3) 1_554 . yes
+O3 U1 O4 119.8(3) 2_555 . yes
+O4 U1 O4 177.5(4) . 2_555 yes
+O4 U1 O31 60.5(3) . 2_655 yes
+O1 U1 O31 90.7(4) 1_554 1_455 yes
+O3 U1 O31 120.6(3) 2_555 1_455 yes
+O4 U1 O31 60.5(3) 2_555 1_455 yes
+O31 U1 O31 178.7(5) 1_455 2_655 yes
+O1 U1 O3 90.7(4) 1_554 2_555 yes
+O1 U1 O4 88.8(3) 1_554 2_555 yes
+O1 U1 O31 90.7(4) 1_554 2_655 yes
+O3 U1 O4 60.2(3) 2_555 2_555 yes
+O3 U1 O31 59.4(3) 2_555 2_655 yes
+O4 U1 O31 119.6(3) 2_555 2_655 yes
+O2 Mo1 O3 102.4(5) . . yes
+O2 Mo1 O31 102.6(5) . 1_455 yes
+O2 Mo1 O2 180.00 . 1_554 yes
+O2 Mo1 O3 102.4(5) . 2_565 yes
+O2 Mo1 O31 102.6(5) . 2_665 yes
+O3 Mo1 O31 78.8(4) . 1_455 yes
+O2 Mo1 O3 77.6(5) 1_554 . yes
+O3 Mo1 O3 155.3(7) . 2_565 yes
+O3 Mo1 O31 95.8(4) . 2_665 yes
+O2 Mo1 O31 77.4(5) 1_554 1_455 yes
+O3 Mo1 O31 95.8(4) 2_565 1_455 yes
+O31 Mo1 O31 154.9(7) 1_455 2_665 yes
+O2 Mo1 O3 77.6(5) 1_554 2_565 yes
+O2 Mo1 O31 77.4(5) 1_554 2_665 yes
+O3 Mo1 O31 78.8(4) 2_565 2_665 yes
+O3 Mo2 O4 77.4(3) . . yes
+O3 Mo2 O5 87.0(4) . . yes
+O3 Mo2 O6 101.2(6) . . yes
+O3 Mo2 O7 156.0(7) . . yes
+O3 Mo2 O6 79.0(5) . 1_554 yes
+O4 Mo2 O5 155.4(6) . . yes
+O4 Mo2 O6 103.3(4) . . yes
+O4 Mo2 O7 94.5(4) . . yes
+O4 Mo2 O6 76.0(4) . 1_554 yes
+O5 Mo2 O6 98.2(6) . . yes
+O5 Mo2 O7 92.3(4) . . yes
+O5 Mo2 O6 82.6(5) . 1_554 yes
+O6 Mo2 O7 102.7(6) . . yes
+O6 Mo2 O6 179.2(3) . 1_554 yes
+O6 Mo2 O7 77.1(5) 1_554 . yes
+O7 Mo3 O61 103.9(6) 1_556 . yes
+O31 Mo3 O61 99.9(6) 1_556 . yes
+O61 Mo3 O61 176.7(4) . 1_556 yes
+O4 Mo3 O61 99.4(5) 2_656 . yes
+O5 Mo3 O61 107.0(6) 2_666 . yes
+O7 Mo3 O31 156.1(7) 1_556 1_556 yes
+O7 Mo3 O61 79.4(6) 1_556 1_556 yes
+O4 Mo3 O7 95.5(4) 2_656 1_556 yes
+O5 Mo3 O7 90.5(4) 2_666 1_556 yes
+O31 Mo3 O61 76.8(5) 1_556 1_556 yes
+O4 Mo3 O31 77.8(3) 2_656 1_556 yes
+O5 Mo3 O31 85.3(4) 2_666 1_556 yes
+O4 Mo3 O61 79.8(4) 2_656 1_556 yes
+O5 Mo3 O61 73.1(5) 2_666 1_556 yes
+O4 Mo3 O5 150.7(6) 2_656 2_666 yes
+U1 O1 U1 180.00 . 1_556 yes
+Mo1 O2 Mo1 180.00 . 1_556 yes
+U1 O3 Mo1 109.2(4) . . yes
+U1 O3 Mo2 109.0(3) . . yes
+Mo1 O3 Mo2 135.0(6) . . yes
+U1 O4 Mo2 110.0(4) . . yes
+U1 O4 Mo3 111.1(3) . 2_654 yes
+Mo2 O4 Mo3 138.5(5) . 2_654 yes
+Mo2 O5 Mo3 160.0(7) . 2_664 yes
+Mo2 O6 Mo2 179.2(5) . 1_556 yes
+Mo2 O7 Mo3 154.1(4) . 1_554 yes
+U1 O31 Mo3 108.3(3) 1_655 1_554 yes
+Mo1 O31 Mo3 141.9(4) 1_655 1_554 yes
+U1 O31 Mo1 109.8(4) 1_655 1_655 yes
+Mo3 O61 Mo3 176.7(6) . 1_554 yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+U1 O1 2.07(3) . yes
+U1 O3 2.475(8) . yes
+U1 O4 2.476(9) . yes
+U1 O31 2.485(8) 1_455 yes
+U1 O1 2.06(3) 1_554 yes
+U1 O3 2.475(8) 2_555 yes
+U1 O4 2.476(9) 2_555 yes
+U1 O31 2.485(8) 2_655 yes
+Mo1 O2 1.70(3) . yes
+Mo1 O3 1.950(9) . yes
+Mo1 O31 1.921(9) 1_455 yes
+Mo1 O2 2.43(3) 1_554 yes
+Mo1 O3 1.950(9) 2_565 yes
+Mo1 O31 1.921(9) 2_665 yes
+Mo2 O3 2.002(10) . yes
+Mo2 O4 1.971(8) . yes
+Mo2 O5 1.828(14) . yes
+Mo2 O6 1.71(2) . yes
+Mo2 O7 1.889(10) . yes
+Mo2 O6 2.42(2) 1_554 yes
+Mo3 O61 1.67(2) . yes
+Mo3 O7 1.863(10) 1_556 yes
+Mo3 O31 2.025(10) 1_556 yes
+Mo3 O61 2.47(2) 1_556 yes
+Mo3 O4 1.955(8) 2_656 yes
+Mo3 O5 1.917(15) 2_666 yes
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_site_symmetry_1
+_geom_torsion_site_symmetry_3
+_geom_torsion_site_symmetry_4
+_geom_torsion_publ_flag
+O1 U1 O3 Mo1 -77.1(6) . . . no
+O1 U1 O3 Mo2 78.5(6) . . . no
+O4 U1 O3 Mo1 -168.9(9) . . . no
+O4 U1 O3 Mo2 -13.3(5) . . . no
+O31 U1 O3 Mo1 12.5(6) 1_455 . . no
+O31 U1 O3 Mo2 168.1(10) 1_455 . . no
+O1 U1 O3 Mo2 -101.5(6) 1_554 . . no
+O4 U1 O3 Mo1 13.9(9) 2_555 . . no
+O4 U1 O3 Mo2 169.5(5) 2_555 . . no
+O31 U1 O3 Mo1 -166.0(6) 2_655 . . no
+O31 U1 O3 Mo2 -10.4(10) 2_655 . . no
+O1 U1 O4 Mo2 -74.9(5) . . . no
+O1 U1 O4 Mo3 100.1(5) . . 2_654 no
+O3 U1 O4 Mo2 13.6(5) . . . no
+O3 U1 O4 Mo3 -171.4(8) . . 2_654 no
+O31 U1 O4 Mo2 15.1(8) 1_455 . . no
+O1 U1 O4 Mo2 105.1(5) 1_554 . . no
+O3 U1 O4 Mo2 -164.8(5) 2_555 . . no
+O31 U1 O4 Mo2 -163.4(8) 2_655 . . no
+O3 U1 O31 Mo1 -12.7(6) . 1_455 . no
+O4 U1 O31 Mo1 -14.2(9) . 1_455 . no
+O2 Mo1 O3 U1 86.4(6) . . . no
+O2 Mo1 O3 Mo2 -60.2(11) . . . no
+O31 Mo1 O3 U1 -14.2(7) 1_455 . . no
+O31 Mo1 O3 Mo2 -160.7(12) 1_455 . . no
+O2 Mo1 O3 Mo2 119.9(11) 1_554 . . no
+O3 Mo1 O3 U1 -93.6(10) 2_565 . . no
+O3 Mo1 O3 Mo2 119.9(12) 2_565 . . no
+O31 Mo1 O3 U1 -169.4(7) 2_665 . . no
+O31 Mo1 O3 Mo2 44.1(12) 2_665 . . no
+O3 Mo1 O31 U1 14.2(7) . 1_455 . no
+O4 Mo2 O3 U1 14.9(6) . . . no
+O4 Mo2 O3 Mo1 161.5(12) . . . no
+O5 Mo2 O3 U1 175.9(8) . . . no
+O5 Mo2 O3 Mo1 -37.6(11) . . . no
+O6 Mo2 O3 U1 -86.4(6) . . . no
+O6 Mo2 O3 Mo1 60.2(11) . . . no
+O7 Mo2 O3 U1 87.2(10) . . . no
+O7 Mo2 O3 Mo1 -126.3(11) . . . no
+O6 Mo2 O3 U1 92.8(6) 1_554 . . no
+O6 Mo2 O3 Mo1 -120.6(11) 1_554 . . no
+O3 Mo2 O4 U1 -15.0(6) . . . no
+O3 Mo2 O4 Mo3 172.1(11) . . 2_654 no
+O5 Mo2 O4 U1 -66.7(13) . . . no
+O5 Mo2 O4 Mo3 120.4(12) . . 2_654 no
+O6 Mo2 O4 U1 83.7(5) . . . no
+O6 Mo2 O4 Mo3 -89.2(10) . . 2_654 no
+O7 Mo2 O4 U1 -172.1(6) . . . no
+O7 Mo2 O4 Mo3 15.0(11) . . 2_654 no
+O6 Mo2 O4 U1 -96.6(5) 1_554 . . no
+O6 Mo2 O4 Mo3 90.5(10) 1_554 . 2_654 no
+O3 Mo2 O5 Mo3 -18(3) . . 2_664 no
+O4 Mo2 O5 Mo3 32(3) . . 2_664 no
+O6 Mo2 O5 Mo3 -119(3) . . 2_664 no
+O7 Mo2 O5 Mo3 138(3) . . 2_664 no
+O6 Mo2 O5 Mo3 61(3) 1_554 . 2_664 no
+O3 Mo2 O7 Mo3 95(2) . . 1_554 no
+O4 Mo2 O7 Mo3 164(2) . . 1_554 no
+O5 Mo2 O7 Mo3 8(2) . . 1_554 no
+O6 Mo2 O7 Mo3 -91(2) . . 1_554 no
+O6 Mo2 O7 Mo3 89(2) 1_554 . 1_554 no
+O61 Mo3 O7 Mo2 -95(2) . 1_556 1_556 no
+O61 Mo3 O4 Mo2 -101.6(10) . 2_656 2_656 no
+O61 Mo3 O5 Mo2 -63(3) . 2_666 2_666 no

@@ -1,0 +1,79 @@
+# generated using pymatgen
+data_Cd6.5Cn0.5Zn1B12Se2O24
+_symmetry_space_group_name_H-M  'I -4 3 m'
+_cell_length_a   7.68194000
+_cell_length_b   7.68194000
+_cell_length_c   7.68194000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   217
+_chemical_formula_structural   Cd6.5Cn0.5Zn1B12Se2O24
+_chemical_formula_sum   'Cd6.5 Cn0.5 Zn1 B12 Se2 O24'
+_cell_volume   453.32819629
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y, -z'
+  6  'y, x, z'
+  7  '-x, y, -z'
+  8  '-y, -x, z'
+  9  'z, x, y'
+  10  '-z, y, -x'
+  11  'z, -x, -y'
+  12  '-z, -y, x'
+  13  '-z, x, -y'
+  14  'z, y, x'
+  15  '-z, -x, y'
+  16  'z, -y, -x'
+  17  'y, z, x'
+  18  '-x, -z, y'
+  19  '-y, z, -x'
+  20  'x, -z, -y'
+  21  '-y, -z, x'
+  22  'x, z, y'
+  23  'y, -z, -x'
+  24  '-x, z, -y'
+  25  'x+1/2, y+1/2, z+1/2'
+  26  'y+1/2, -x+1/2, -z+1/2'
+  27  '-x+1/2, -y+1/2, z+1/2'
+  28  '-y+1/2, x+1/2, -z+1/2'
+  29  'x+1/2, -y+1/2, -z+1/2'
+  30  'y+1/2, x+1/2, z+1/2'
+  31  '-x+1/2, y+1/2, -z+1/2'
+  32  '-y+1/2, -x+1/2, z+1/2'
+  33  'z+1/2, x+1/2, y+1/2'
+  34  '-z+1/2, y+1/2, -x+1/2'
+  35  'z+1/2, -x+1/2, -y+1/2'
+  36  '-z+1/2, -y+1/2, x+1/2'
+  37  '-z+1/2, x+1/2, -y+1/2'
+  38  'z+1/2, y+1/2, x+1/2'
+  39  '-z+1/2, -x+1/2, y+1/2'
+  40  'z+1/2, -y+1/2, -x+1/2'
+  41  'y+1/2, z+1/2, x+1/2'
+  42  '-x+1/2, -z+1/2, y+1/2'
+  43  '-y+1/2, z+1/2, -x+1/2'
+  44  'x+1/2, -z+1/2, -y+1/2'
+  45  '-y+1/2, -z+1/2, x+1/2'
+  46  'x+1/2, z+1/2, y+1/2'
+  47  'y+1/2, -z+1/2, -x+1/2'
+  48  '-x+1/2, z+1/2, -y+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cd+  Cd0  8  0.17816000  0.17816000  0.17816000  0.8125
+  Cn+  Cn1  8  0.17816000  0.17816000  0.17816000  0.0625
+  Zn+  Zn2  8  0.17816000  0.17816000  0.17816000  0.125
+  B  B3  12  0.00000000  0.25000000  0.50000000  1.0
+  Se  Se4  2  0.00000000  0.00000000  0.00000000  1.0
+  O  O5  24  0.07000000  0.35650000  0.64350000  1.0

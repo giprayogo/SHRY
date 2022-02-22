@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Pd1Ds0.5Si0.5Ni0.5Pt1Pb0.25C2.25F18
-_symmetry_space_group_name_H-M   R-3
+_symmetry_space_group_name_H-M  'R -3 :H'
 _cell_length_a   5.15200000
 _cell_length_b   5.15200000
 _cell_length_c   13.76300000

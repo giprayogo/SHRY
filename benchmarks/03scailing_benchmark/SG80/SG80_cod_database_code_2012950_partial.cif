@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cs0.5K6.5Li2H55C40N32O12
-_symmetry_space_group_name_H-M   I4_1
+_symmetry_space_group_name_H-M  'I 41'
 _cell_length_a   9.74510000
 _cell_length_b   9.74510000
 _cell_length_c   14.17640000

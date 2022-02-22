@@ -1,0 +1,71 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-01-09 15:07:35 +0200 (Sat, 09 Jan 2016) $
+#$Revision: 174324 $
+#$URL: svn://www.crystallography.net/cod/cif/8/10/45/8104516.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8104516
+loop_
+_publ_author_name
+'Somer, M.'
+'Hartweg, M.'
+'Peters, K.'
+'von Schnering, H.G.'
+_publ_section_title
+;
+ Crystal structure of potassium arsenidoniccolate
+;
+_journal_name_full
+'Zeitschrift fuer Kristallographie (149,1979-)'
+_journal_page_first              99
+_journal_page_last               100
+_journal_volume                  195
+_journal_year                    1991
+_chemical_formula_sum            'As7 K2 Ni12'
+_chemical_name_systematic        'K2 Ni12 As7'
+_space_group_IT_number           174
+_symmetry_space_group_name_Hall  'P -6'
+_symmetry_space_group_name_H-M   'P -6'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   9.429
+_cell_length_b                   9.429
+_cell_length_c                   3.7433
+_cell_volume                     288.215
+_citation_journal_id_ASTM        ZEKRDZ
+_cod_data_source_file            Somer_ZEKRDZ_1991_1428.cif
+_cod_data_source_block           As7K2Ni12
+_cod_database_code               8104516
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x+y,-x,-z
+-y,x-y,z
+x,y,-z
+-x+y,-x,z
+-y,x-y,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ni1 Ni 0.38038 -0.04712 0.5 1 0.0
+K1 K 0.66666 0.33333 0.5 1 0.0
+Ni4 Ni 0.61853 0.05229 0 1 0.0
+Ni3 Ni 0.15755 -0.12169 0 1 0.0
+As1 As 0 0 0 1 0.0
+Ni2 Ni 0.21362 0.11956 0.5 1 0.0
+As2 As 0.41124 0.12296 0 1 0.0
+As3 As 0.58912 -0.11634 0.5 1 0.0
+K2 K 0.33333 0.66667 0 1 0.0

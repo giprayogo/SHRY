@@ -1,0 +1,316 @@
+#------------------------------------------------------------------------------
+#$Date: 2021-05-18 11:48:22 +0300 (Tue, 18 May 2021) $
+#$Revision: 265299 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/56/26/1562646.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1562646
+loop_
+_publ_author_name
+'Yin, Wenlong'
+'Wang, Wendong'
+'Kang, Lei'
+'Lin, Zheshuai'
+'Feng, Kai'
+'Shi, Youguo'
+'Hao, Wenyu'
+'Yao, Jiyong'
+'Wu, Yicheng'
+_publ_section_title
+;
+ Ln3FeGaQ7: A new series of transition-metal rare-earth chalcogenides
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              269
+_journal_page_last               275
+_journal_paper_doi               10.1016/j.jssc.2013.03.029
+_journal_volume                  202
+_journal_year                    2013
+_chemical_formula_sum            'Fe Ga Gd3 S7'
+_chemical_formula_weight         821.74
+_space_group_IT_number           173
+_space_group_name_Hall           'P 6c'
+_space_group_name_H-M_alt        'P 63'
+_symmetry_cell_setting           hexagonal
+_symmetry_space_group_name_H-M   'P 63'
+_atom_sites_solution_hydrogens   .
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            2
+_cell_length_a                   9.6933(3)
+_cell_length_b                   9.6933(3)
+_cell_length_c                   6.1281(3)
+_cell_measurement_reflns_used    1931
+_cell_measurement_temperature    293(2)
+_cell_measurement_theta_max      26.2901
+_cell_measurement_theta_min      3.3177
+_cell_volume                     498.65(3)
+_computing_cell_refinement       'CrysAlisPro (Oxford Diffraction Ltd., 2010)'
+_computing_data_collection       'CrysAlisPro (Oxford Diffraction Ltd., 2010)'
+_computing_data_reduction        'CrysAlisPro (Oxford Diffraction Ltd., 2010)'
+_computing_molecular_graphics    'SHELXL-97 (Sheldrick, 2008)'
+_computing_publication_material  Diamond
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 2008)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 2008)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_detector_area_resol_mean 15.9149
+_diffrn_measured_fraction_theta_full 0.997
+_diffrn_measured_fraction_theta_max 0.997
+_diffrn_measurement_device_type  'Xcalibur, Sapphire3, Gemini ultra'
+_diffrn_measurement_method       '\w scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'Enhance (Mo) X-ray Source'
+_diffrn_radiation_type           'Mo K\a'
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0384
+_diffrn_reflns_av_sigmaI/netI    0.0294
+_diffrn_reflns_limit_h_max       10
+_diffrn_reflns_limit_h_min       -12
+_diffrn_reflns_limit_k_max       12
+_diffrn_reflns_limit_k_min       -7
+_diffrn_reflns_limit_l_max       7
+_diffrn_reflns_limit_l_min       -4
+_diffrn_reflns_number            2624
+_diffrn_reflns_theta_full        26.35
+_diffrn_reflns_theta_max         26.35
+_diffrn_reflns_theta_min         4.12
+_exptl_absorpt_coefficient_mu    25.153
+_exptl_absorpt_correction_T_max  0.362
+_exptl_absorpt_correction_T_min  0.151
+_exptl_absorpt_correction_type   numerical
+_exptl_absorpt_process_details   'face indexed'
+_exptl_crystal_colour            Black
+_exptl_crystal_density_diffrn    5.473
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       Needle
+_exptl_crystal_F_000             722
+_exptl_crystal_size_max          0.2450
+_exptl_crystal_size_mid          0.0570
+_exptl_crystal_size_min          0.0420
+_refine_diff_density_max         0.869
+_refine_diff_density_min         -0.838
+_refine_diff_density_rms         0.179
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   -0.06(3)
+_refine_ls_extinction_coef       0.0111(5)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.269
+_refine_ls_hydrogen_treatment    .
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     38
+_refine_ls_number_reflns         521
+_refine_ls_number_restraints     1
+_refine_ls_restrained_S_all      1.268
+_refine_ls_R_factor_all          0.0216
+_refine_ls_R_factor_gt           0.0210
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0200P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0489
+_refine_ls_wR_factor_ref         0.0491
+_reflns_number_gt                509
+_reflns_number_total             521
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            JSSC-2013-202-269.cif
+_cod_data_source_block           Gd3FeGaS7
+_cod_original_sg_symbol_H-M      P63
+_cod_database_code               1562646
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'-x, -y, z+1/2'
+'y, -x+y, z+1/2'
+'x-y, x, z+1/2'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Gd Gd 0.62273(5) 0.77694(5) 0.68066(15) 0.01152(18) Uani 1 1 d . . .
+Ga Ga 0.6667 0.3333 0.6049(3) 0.0103(4) Uani 1 3 d S . .
+Fe Fe 1.0000 1.0000 0.9969(4) 0.0173(6) Uani 1 3 d S . .
+S1 S 0.4790(3) 0.9110(3) 0.9507(4) 0.0111(5) Uani 1 1 d . . .
+S2 S 0.6667 0.3333 0.9712(7) 0.0107(8) Uani 1 3 d S . .
+S3 S 0.8977(3) 0.7603(3) 0.7561(5) 0.0116(5) Uani 1 1 d . . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Gd 0.0074(2) 0.0100(3) 0.0162(3) -0.0001(2) 0.0007(2) 0.00360(18)
+Ga 0.0102(6) 0.0102(6) 0.0106(8) 0.000 0.000 0.0051(3)
+Fe 0.0132(7) 0.0132(7) 0.0255(15) 0.000 0.000 0.0066(4)
+S1 0.0071(12) 0.0086(11) 0.0159(12) -0.0001(10) -0.0007(10) 0.0027(10)
+S2 0.0114(13) 0.0114(13) 0.0091(18) 0.000 0.000 0.0057(6)
+S3 0.0080(11) 0.0081(11) 0.0180(11) 0.0018(10) -0.0010(10) 0.0034(9)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+S S 0.1246 0.1234 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Fe Fe 0.3463 0.8444 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ga Ga 0.2307 1.6083 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Gd Gd -0.1653 3.9035 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+S2 Gd S1 80.67(8) 4_664 3_565
+S2 Gd S3 150.25(7) 4_664 .
+S1 Gd S3 94.48(7) 3_565 .
+S2 Gd S3 85.72(10) 4_664 5_564
+S1 Gd S3 143.97(7) 3_565 5_564
+S3 Gd S3 81.19(7) . 5_564
+S2 Gd S1 79.28(7) 4_664 .
+S1 Gd S1 78.66(10) 3_565 .
+S3 Gd S1 128.85(8) . .
+S3 Gd S1 131.21(7) 5_564 .
+S2 Gd S3 127.37(5) 4_664 3_675
+S1 Gd S3 134.19(8) 3_565 3_675
+S3 Gd S3 76.36(9) . 3_675
+S3 Gd S3 79.81(7) 5_564 3_675
+S1 Gd S3 73.64(7) . 3_675
+S2 Gd S1 75.77(6) 4_664 6_654
+S1 Gd S1 72.73(3) 3_565 6_654
+S3 Gd S1 74.77(7) . 6_654
+S3 Gd S1 71.62(7) 5_564 6_654
+S1 Gd S1 144.50(7) . 6_654
+S3 Gd S1 141.86(7) 3_675 6_654
+S2 Gd Fe 131.03(9) 4_664 4_774
+S1 Gd Fe 142.56(6) 3_565 4_774
+S3 Gd Fe 48.09(6) . 4_774
+S3 Gd Fe 46.40(6) 5_564 4_774
+S1 Gd Fe 121.30(5) . 4_774
+S3 Gd Fe 47.72(5) 3_675 4_774
+S1 Gd Fe 94.18(5) 6_654 4_774
+S2 Ga S1 114.61(7) . 5_554
+S2 Ga S1 114.61(7) . 4_664
+S1 Ga S1 103.88(9) 5_554 4_664
+S2 Ga S1 114.61(7) . 6_654
+S1 Ga S1 103.88(9) 5_554 6_654
+S1 Ga S1 103.88(9) 4_664 6_654
+S3 Fe S3 88.74(10) . 3_675
+S3 Fe S3 88.74(10) . 2_765
+S3 Fe S3 88.74(10) 3_675 2_765
+S3 Fe S3 177.96(13) . 4_775
+S3 Fe S3 92.72(5) 3_675 4_775
+S3 Fe S3 92.72(5) 2_765 4_775
+S3 Fe S3 92.72(5) . 6_655
+S3 Fe S3 177.96(13) 3_675 6_655
+S3 Fe S3 92.72(5) 2_765 6_655
+S3 Fe S3 85.79(10) 4_775 6_655
+S3 Fe S3 92.72(5) . 5_565
+S3 Fe S3 92.72(5) 3_675 5_565
+S3 Fe S3 177.96(13) 2_765 5_565
+S3 Fe S3 85.79(10) 4_775 5_565
+S3 Fe S3 85.79(10) 6_655 5_565
+S3 Fe Gd 55.64(6) . 6_655
+S3 Fe Gd 126.21(6) 3_675 6_655
+S3 Fe Gd 124.31(6) 2_765 6_655
+S3 Fe Gd 122.33(10) 4_775 6_655
+S3 Fe Gd 53.86(6) 6_655 6_655
+S3 Fe Gd 55.72(5) 5_565 6_655
+S3 Fe Gd 126.21(6) . 4_775
+S3 Fe Gd 124.31(6) 3_675 4_775
+S3 Fe Gd 55.64(6) 2_765 4_775
+S3 Fe Gd 53.86(6) 4_775 4_775
+S3 Fe Gd 55.72(5) 6_655 4_775
+S3 Fe Gd 122.33(10) 5_565 4_775
+Gd Fe Gd 109.47(4) 6_655 4_775
+S3 Fe Gd 124.31(6) . 5_565
+S3 Fe Gd 55.64(6) 3_675 5_565
+S3 Fe Gd 126.21(6) 2_765 5_565
+S3 Fe Gd 55.72(5) 4_775 5_565
+S3 Fe Gd 122.33(10) 6_655 5_565
+S3 Fe Gd 53.86(6) 5_565 5_565
+Gd Fe Gd 109.47(4) 6_655 5_565
+Gd Fe Gd 109.47(4) 4_775 5_565
+Ga S1 Gd 89.52(8) 4_665 2_665
+Ga S1 Gd 87.55(8) 4_665 .
+Gd S1 Gd 97.73(8) 2_665 .
+Ga S1 Gd 118.33(10) 4_665 5_565
+Gd S1 Gd 148.63(9) 2_665 5_565
+Gd S1 Gd 97.60(7) . 5_565
+Ga S2 Gd 117.63(8) . 5
+Ga S2 Gd 117.63(8) . 6_655
+Gd S2 Gd 100.22(10) 5 6_655
+Ga S2 Gd 117.63(8) . 4_665
+Gd S2 Gd 100.22(10) 5 4_665
+Gd S2 Gd 100.22(10) 6_655 4_665
+Fe S3 Fe 74.34(6) . 4_774
+Fe S3 Gd 89.46(7) . .
+Fe S3 Gd 78.05(7) 4_774 .
+Fe S3 Gd 77.96(8) . 6_655
+Fe S3 Gd 152.28(11) 4_774 6_655
+Gd S3 Gd 103.19(8) . 6_655
+Fe S3 Gd 87.64(8) . 2_765
+Fe S3 Gd 76.57(6) 4_774 2_765
+Gd S3 Gd 154.29(11) . 2_765
+Gd S3 Gd 101.17(8) 6_655 2_765
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Gd S2 2.768(2) 4_664
+Gd S1 2.779(2) 3_565
+Gd S3 2.788(2) .
+Gd S3 2.851(3) 5_564
+Gd S1 2.859(2) .
+Gd S3 2.869(2) 3_675
+Gd S1 3.013(3) 6_654
+Gd Fe 3.3778(10) 4_774
+Ga S2 2.245(4) .
+Ga S1 2.270(2) 5_554
+Ga S1 2.270(2) 4_664
+Ga S1 2.270(2) 6_654
+Fe S3 2.501(3) .
+Fe S3 2.501(3) 3_675
+Fe S3 2.501(3) 2_765
+Fe S3 2.569(3) 4_775
+Fe S3 2.569(3) 6_655
+Fe S3 2.569(3) 5_565
+Fe Gd 3.3778(10) 6_655
+Fe Gd 3.3778(10) 4_775
+Fe Gd 3.3778(10) 5_565
+S1 Ga 2.270(2) 4_665
+S1 Gd 2.779(2) 2_665
+S1 Gd 3.013(3) 5_565
+S2 Gd 2.768(2) 5
+S2 Gd 2.768(2) 6_655
+S2 Gd 2.768(2) 4_665
+S3 Fe 2.569(3) 4_774
+S3 Gd 2.851(3) 6_655
+S3 Gd 2.869(2) 2_765

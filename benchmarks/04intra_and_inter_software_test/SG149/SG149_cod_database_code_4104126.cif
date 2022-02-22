@@ -1,0 +1,297 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 22:30:59 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176467 $
+#$URL: svn://www.crystallography.net/cod/cif/4/10/41/4104126.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4104126
+loop_
+_publ_author_name
+'Jasmine L. Kor\<cok'
+'Michael J. Katz'
+'Daniel B. Leznoff'
+_publ_contact_author_address
+; 
+ Department of Chemistry
+ Simon Fraser University
+ Burnaby, British Columbia
+ Canada   V5A 1S6 
+;
+_publ_contact_author_email       dleznoff@sfu.ca
+_publ_contact_author_fax         778-782-3765
+_publ_contact_author_name        'Leznoff, Daniel B.'
+_publ_contact_author_phone       778-782-4887
+_publ_section_title
+;
+ Impact of Metallophilicity on "Colossal" Positive and Negative Thermal
+ Expansion in a Series of Isostructural Dicyanometallate Coordination
+ Polymers
+;
+_journal_name_full               'Journal of the American Chemical Society'
+_journal_page_first              4866
+_journal_page_last               4871
+_journal_paper_doi               10.1021/ja809631r
+_journal_volume                  131
+_journal_year                    2009
+_chemical_absolute_configuration ad
+_chemical_formula_moiety         'C6 Au3 Cd1 K1 N6'
+_chemical_formula_sum            'C6 Au3 Cd K N6'
+_chemical_formula_weight         898.51
+_chemical_name_systematic        ?
+_space_group_IT_number           149
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'P 3 2'
+_symmetry_space_group_name_H-M   'P 3 1 2'
+_atom_sites_solution_hydrogens   none
+_atom_sites_solution_primary     direct
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   6.81070(10)
+_cell_length_b                   6.81070(10)
+_cell_length_c                   8.2665(3)
+_cell_measurement_reflns_used    5946
+_cell_measurement_temperature    205
+_cell_measurement_theta_max      37.49
+_cell_measurement_theta_min      2.46
+_cell_volume                     332.075(14)
+_computing_cell_refinement       'SAINT (Siemens ,1995)'
+_computing_data_collection       'SMART (Siemens, 1993)'
+_computing_data_reduction        'SAINT '
+_computing_molecular_graphics    'ORTEP (Farrugia, L.J., 1997)'
+_computing_publication_material  'CRYSTALS '
+_computing_structure_refinement  'CRYSTALS (Betteridge et al., 2003)'
+_computing_structure_solution    'SIR92 (Altomare et al., 1994)'
+_diffrn_ambient_temperature      205
+_diffrn_measured_fraction_theta_full 0.998
+_diffrn_measured_fraction_theta_max 0.998
+_diffrn_measurement_device       'Bruker SMART'
+_diffrn_measurement_method       '\f & \w scans'
+_diffrn_radiation_detector       'APEX II CCD area detector'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'Sealed Tube'
+_diffrn_radiation_type           'Mo K\a'
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.042
+_diffrn_reflns_limit_h_max       11
+_diffrn_reflns_limit_h_min       -11
+_diffrn_reflns_limit_k_max       11
+_diffrn_reflns_limit_k_min       -11
+_diffrn_reflns_limit_l_max       13
+_diffrn_reflns_limit_l_min       -14
+_diffrn_reflns_number            11683
+_diffrn_reflns_theta_full        37.488
+_diffrn_reflns_theta_max         37.488
+_diffrn_reflns_theta_min         2.464
+_diffrn_source_current           30.000
+_diffrn_source_voltage           50.000
+_exptl_absorpt_coefficient_mu    34.907
+_exptl_absorpt_correction_T_max  0.4721
+_exptl_absorpt_correction_T_min  0.0655
+_exptl_absorpt_correction_type   numerical
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    4.493
+_exptl_crystal_description       ' triangular plate '
+_exptl_crystal_F_000             382
+_exptl_crystal_size_max          0.180
+_exptl_crystal_size_mid          0.133
+_exptl_crystal_size_min          0.022
+_refine_diff_density_max         2.62
+_refine_diff_density_min         -1.81
+_refine_ls_abs_structure_details 'Flack (1983), 527 Friedel-pairs'
+_refine_ls_abs_structure_Flack   0.418(14)
+_refine_ls_extinction_coef       4.00(15)
+_refine_ls_extinction_method     'Larson (1970), Equation 22'
+_refine_ls_goodness_of_fit_ref   0.4574
+_refine_ls_hydrogen_treatment    none
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     18
+_refine_ls_number_reflns         780
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          0.0320
+_refine_ls_R_factor_gt           0.0185
+_refine_ls_shift/su_max          0.000133
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_details
+;
+ Method= Modified Sheldrick 
+ w=1/[\s^2^(F^2^)]
+;
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_all         0.0180
+_refine_ls_wR_factor_gt          0.0161
+_refine_ls_wR_factor_ref         0.0156
+_reflns_limit_h_max              5
+_reflns_limit_h_min              -11
+_reflns_limit_k_max              11
+_reflns_limit_k_min              0
+_reflns_limit_l_max              14
+_reflns_limit_l_min              0
+_reflns_number_gt                842
+_reflns_number_total             1183
+_reflns_threshold_expression     I>2.0\s(I)
+_oxford_diffrn_Wilson_B_factor   1.63
+_oxford_diffrn_Wilson_scale      52.03
+_oxford_refine_ls_r_factor_ref   0.0169
+_oxford_refine_ls_scale          0.1490(2)
+_oxford_reflns_number_all        1183
+_oxford_reflns_threshold_expression_ref I>2.5\s(I)
+_cod_data_source_file            ja809631r_si_002_3.cif
+_cod_data_source_block           KCd[Au(CN)2]3_205K
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_exptl_absorpt_correction_type' value 'Numerical' changed to
+'numerical' according to the built-in table from CIF Core dictionary
+named 'cif_core.dic' version 2.4.1 from
+2010-06-29.
+
+'_refine_ls_matrix_type' value 'Full' changed to 'full'
+according to the built-in table from CIF Core dictionary named
+'cif_core.dic' version 2.4.1 from 2010-06-29.
+
+Automatic conversion script
+Id: cif_fix_values 1715 2011-07-08 13:25:40Z adriana 
+;
+_cod_original_sg_symbol_H-M      'P 3 1 2 '
+_cod_original_formula_sum        'C6 Au3 Cd1 K1 N6'
+_cod_database_code               4104126
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+x,x-y,-z
+-y,-x,-z
+-x+y,y,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_refinement_flags_posn
+_atom_site_refinement_flags_adp
+Au1 Au -0.49667(4) 0.00666(9) 0.5000 0.0219 1.0000 Uani S T
+Cd1 Cd 0.0000 0.0000 0.0000 0.0166 1.0000 Uani S T
+K1 K -0.6667 -0.3333 0.0000 0.0269 1.0000 Uani S T
+N1 N -0.2733(10) -0.0025(16) 0.1706(4) 0.0259 1.0000 Uani . .
+C1 C -0.3547(10) 0.0033(18) 0.2897(5) 0.0225 1.0000 Uani . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Au1 0.02370(8) 0.02657(14) 0.01641(8) 0.0000 0.00427(7) 0.01329(7)
+Cd1 0.01888(17) 0.01888(17) 0.0121(2) 0.0000 0.0000 0.00944(8)
+K1 0.0256(8) 0.0256(8) 0.0295(14) 0.0000 0.0000 0.0128(4)
+N1 0.0308 0.0294 0.0242 -0.0045 0.0013 0.0200
+C1 0.0255 0.0236 0.0212 -0.0048 0.0000 0.0144
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_Cromer_Mann_a1
+_atom_type_scat_Cromer_Mann_b1
+_atom_type_scat_Cromer_Mann_a2
+_atom_type_scat_Cromer_Mann_b2
+_atom_type_scat_Cromer_Mann_a3
+_atom_type_scat_Cromer_Mann_b3
+_atom_type_scat_Cromer_Mann_a4
+_atom_type_scat_Cromer_Mann_b4
+_atom_type_scat_Cromer_Mann_c
+_atom_type_scat_source
+Au -2.0133 8.8022 16.8819 0.4611 18.5913 8.6216 25.5582 1.4826 5.8600 36.3956
+12.0658 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+Cd -0.8075 1.2024 19.2214 0.5946 17.6444 6.9089 4.4610 24.7008 1.6029 87.4825
+5.0694 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+K 0.2009 0.2494 8.2186 12.7949 7.4398 0.7748 1.0519 213.1870 0.8659 41.6841
+1.4228 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+C 0.0033 0.0016 2.3100 20.8439 1.0200 10.2075 1.5886 0.5687 0.8650 51.6512
+0.2156 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+N 0.0061 0.0033 12.2126 0.0057 3.1322 9.8933 2.0125 28.9975 1.1663 0.5826
+-11.5290 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+loop_
+_exptl_crystal_face_index_h
+_exptl_crystal_face_index_k
+_exptl_crystal_face_index_l
+_exptl_crystal_face_perp_dist
+0.000 0.000 1.000 0.01000
+0.000 0.000 -1.000 0.01100
+-1.000 0.000 0.000 0.04000
+1.000 -1.000 0.000 0.05400
+0.000 1.000 0.000 0.05700
+-2.000 3.000 0.000 0.06000
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_site_symmetry_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+Au1 2_565 Au1 Au1 3_455 60.000 yes
+Au1 2_565 Au1 C1 6_456 104.7(3) yes
+Au1 3_455 Au1 C1 6_456 76.3(3) yes
+Au1 2_565 Au1 C1 . 76.3(3) yes
+Au1 3_455 Au1 C1 . 104.7(3) yes
+C1 6_456 Au1 C1 . 178.9(6) yes
+Au1 2_565 Au1 Au1 2_455 179.997 yes
+Au1 3_455 Au1 Au1 2_455 120.000 yes
+C1 6_456 Au1 Au1 2_455 75.3(3) yes
+C1 . Au1 Au1 2_455 103.7(3) yes
+Au1 2_565 Au1 Au1 3_445 120.000 yes
+Au1 3_455 Au1 Au1 3_445 179.997 yes
+C1 6_456 Au1 Au1 3_445 103.7(3) yes
+C1 . Au1 Au1 3_445 75.3(3) yes
+Au1 2_455 Au1 Au1 3_445 60.000 yes
+N1 2_555 Cd1 N1 6_555 92.4(3) yes
+N1 2_555 Cd1 N1 5_555 179.3(5) yes
+N1 6_555 Cd1 N1 5_555 87.12(12) yes
+N1 2_555 Cd1 N1 3_555 87.12(12) yes
+N1 6_555 Cd1 N1 3_555 93.4(3) yes
+N1 5_555 Cd1 N1 3_555 92.4(3) yes
+N1 2_555 Cd1 N1 4_555 93.4(3) yes
+N1 6_555 Cd1 N1 4_555 87.12(12) yes
+N1 5_555 Cd1 N1 4_555 87.12(12) yes
+N1 3_555 Cd1 N1 4_555 179.3(5) yes
+N1 2_555 Cd1 N1 . 87.12(12) yes
+N1 6_555 Cd1 N1 . 179.3(5) yes
+N1 5_555 Cd1 N1 . 93.4(3) yes
+N1 3_555 Cd1 N1 . 87.12(12) yes
+N1 4_555 Cd1 N1 . 92.4(3) yes
+Cd1 . N1 C1 . 157.5(3) yes
+Au1 . C1 N1 . 178.5(8) yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Au1 Au1 2_565 3.3373(9) yes
+Au1 Au1 3_455 3.3373(9) yes
+Au1 C1 6_456 1.995(4) yes
+Au1 C1 . 1.995(4) yes
+Au1 Au1 2_455 3.4734(9) yes
+Au1 Au1 3_445 3.4734(9) yes
+Cd1 N1 2_555 2.328(3) yes
+Cd1 N1 6_555 2.328(3) yes
+Cd1 N1 5_555 2.328(3) yes
+Cd1 N1 3_555 2.328(3) yes
+Cd1 N1 4_555 2.328(3) yes
+Cd1 N1 . 2.328(3) yes
+N1 C1 . 1.141(5) yes

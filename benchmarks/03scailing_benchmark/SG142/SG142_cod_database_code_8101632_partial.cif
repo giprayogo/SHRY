@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cs32Si0.25Pb31.25C0.25Fl0.25
-_symmetry_space_group_name_H-M   I4_1/acd
+_symmetry_space_group_name_H-M  'I 41/a c d :2'
 _cell_length_a   12.12200000
 _cell_length_b   12.12200000
 _cell_length_c   19.82000000

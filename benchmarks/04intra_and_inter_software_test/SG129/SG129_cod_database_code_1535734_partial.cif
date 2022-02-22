@@ -1,0 +1,59 @@
+# generated using pymatgen
+data_No1Pa1Te1Se0.5S1.5Lv0.5O0.5
+_symmetry_space_group_name_H-M  'P 4/n m m :1'
+_cell_length_a   4.01200000
+_cell_length_b   4.01200000
+_cell_length_c   7.50100000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   129
+_chemical_formula_structural   No1Pa1Te1Se0.5S1.5Lv0.5O0.5
+_chemical_formula_sum   'No1 Pa1 Te1 Se0.5 S1.5 Lv0.5 O0.5'
+_cell_volume   120.73717614
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z'
+  5  'x+1/2, -y+1/2, -z'
+  6  '-y, -x, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'y, x, -z'
+  9  '-x+1/2, -y+1/2, -z'
+  10  'y, -x, -z'
+  11  'x+1/2, y+1/2, -z'
+  12  '-y, x, -z'
+  13  '-x, y, z'
+  14  'y+1/2, x+1/2, z'
+  15  'x, -y, z'
+  16  '-y+1/2, -x+1/2, z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  No0+  0.0
+  Pa0+  0.0
+  Te0+  0.0
+  Se0+  0.0
+  S0+  0.0
+  O0+  0.0
+  Lv0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pa0+  Pa0  2  0.00000000  0.50000000  0.17000000  0.5
+  No0+  No1  2  0.00000000  0.50000000  0.17000000  0.5
+  Te0+  Te2  2  0.00000000  0.50000000  0.63500000  0.5
+  S0+  S3  2  0.00000000  0.50000000  0.63500000  0.5
+  S0+  S4  2  0.00000000  0.00000000  0.00000000  0.25
+  Se0+  Se5  2  0.00000000  0.00000000  0.00000000  0.25
+  Lv0+  Lv6  2  0.00000000  0.00000000  0.00000000  0.25
+  O0+  O7  2  0.00000000  0.00000000  0.00000000  0.25

@@ -1,0 +1,295 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 22:30:59 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176467 $
+#$URL: svn://www.crystallography.net/cod/cif/4/33/56/4335617.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4335617
+loop_
+_publ_author_name
+'Jun-Ling Song'
+'Chun-Li Hu'
+'Xiang Xu'
+'Fang Kong'
+'Jiang-Gao Mao'
+_publ_section_title
+;
+ Pb2B3O5.5(OH)2 and [Pb3(B3O7)](NO3): Facile Syntheses of New Lead(II)
+ Borates by Simply Changing the pH Values of the Reaction Systems
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              8979
+_journal_page_last               8986
+_journal_paper_doi               10.1021/ic401175r
+_journal_volume                  52
+_journal_year                    2013
+_chemical_formula_sum            'B3 H2 O7.5 Pb2'
+_chemical_formula_weight         568.83
+_chemical_name_systematic
+; 
+ ? 
+;
+_space_group_IT_number           34
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  'P 2 -2n'
+_symmetry_space_group_name_H-M   'P n n 2'
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   11.5824(7)
+_cell_length_b                   11.7664(7)
+_cell_length_c                   4.5657(2)
+_cell_measurement_reflns_used    2920
+_cell_measurement_temperature    293(2)
+_cell_measurement_theta_max      29.2391
+_cell_measurement_theta_min      3.4563
+_cell_volume                     622.23(6)
+_computing_cell_refinement       'Bruker FRAMBO'
+_computing_data_collection       'Bruker FRAMBO'
+_computing_data_reduction        'Bruker SAINT'
+_computing_molecular_graphics    'Bruker SHELXTL'
+_computing_publication_material  'Bruker SHELXTL'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_detector_area_resol_mean 10.3503
+_diffrn_measured_fraction_theta_full 0.996
+_diffrn_measured_fraction_theta_max 0.996
+_diffrn_measurement_device_type  'SuperNova, Dual, Cu at zero, Atlas'
+_diffrn_measurement_method       '\w scans'
+_diffrn_radiation_monochromator  mirror
+_diffrn_radiation_source         'SuperNova (Mo) x-ray Source'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0361
+_diffrn_reflns_av_sigmaI/netI    0.0422
+_diffrn_reflns_limit_h_max       14
+_diffrn_reflns_limit_h_min       -14
+_diffrn_reflns_limit_k_max       14
+_diffrn_reflns_limit_k_min       -12
+_diffrn_reflns_limit_l_max       5
+_diffrn_reflns_limit_l_min       -5
+_diffrn_reflns_number            4064
+_diffrn_reflns_theta_full        26.36
+_diffrn_reflns_theta_max         26.36
+_diffrn_reflns_theta_min         3.46
+_diffrn_standards_number         2916
+_exptl_absorpt_coefficient_mu    54.041
+_exptl_absorpt_correction_T_max  1.00000
+_exptl_absorpt_correction_T_min  0.19012
+_exptl_absorpt_correction_type   analytical
+_exptl_crystal_colour            Colorless
+_exptl_crystal_density_diffrn    6.072
+_exptl_crystal_description       needle
+_exptl_crystal_F_000             964
+_exptl_crystal_size_max          0.2500
+_exptl_crystal_size_mid          0.0300
+_exptl_crystal_size_min          0.0200
+_refine_diff_density_max         0.814
+_refine_diff_density_min         -1.211
+_refine_diff_density_rms         0.203
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   0.001(18)
+_refine_ls_extinction_coef       0.00126(9)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   0.994
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     115
+_refine_ls_number_reflns         1237
+_refine_ls_number_restraints     7
+_refine_ls_restrained_S_all      0.991
+_refine_ls_R_factor_all          0.0242
+_refine_ls_R_factor_gt           0.0217
+_refine_ls_shift/su_max          0.008
+_refine_ls_shift/su_mean         0.001
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0093P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0385
+_refine_ls_wR_factor_ref         0.0394
+_reflns_number_gt                1146
+_reflns_number_total             1237
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            ic401175r_si_001_2.cif
+_cod_data_source_block           Pb2B3O7.5H2
+_cod_original_formula_sum        'B3 H2 O7.50 Pb2'
+_cod_database_code               4335617
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y, z'
+'x+1/2, -y+1/2, z+1/2'
+'-x+1/2, y+1/2, z+1/2'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Pb1 Pb 0.42458(2) 0.78439(3) 0.71399(17) 0.01588(11) Uani 1 1 d .
+Pb2 Pb 0.65243(2) 0.55262(3) 0.72324(11) 0.01525(11) Uani 1 1 d .
+B1 B 0.1533(8) 0.7265(9) 0.701(4) 0.014(2) Uani 1 1 d .
+B2 B 0.2546(8) 0.6734(9) 0.196(4) 0.014(3) Uani 1 1 d .
+B3 B 0.4841(6) 0.6168(7) 0.222(5) 0.0112(16) Uani 1 1 d U
+O1 O 0.0841(5) 0.6227(5) 0.693(3) 0.0195(17) Uani 1 1 d .
+H1A H 0.1023 0.5816 0.8307 0.029 Uiso 1 1 calc R
+O2 O 0.0813(5) 0.8209(6) 0.5858(14) 0.0148(15) Uani 1 1 d .
+O3 O 0.1963(6) 0.7531(7) 0.9928(14) 0.0151(16) Uani 1 1 d .
+O4 O 0.2546(6) 0.7205(6) 0.4963(14) 0.0154(16) Uani 1 1 d .
+O5 O 0.3784(5) 0.6669(6) 0.0928(13) 0.0145(14) Uani 1 1 d .
+O6 O 0.2051(5) 0.5589(5) 0.198(3) 0.0216(18) Uani 1 1 d .
+H6A H 0.1608 0.5519 0.0587 0.032 Uiso 1 1 calc R
+O7 O 0.4822(5) 0.6161(6) 0.5296(13) 0.0108(14) Uani 1 1 d .
+O8 O 0.5000 0.5000 0.0873(18) 0.013(2) Uani 1 2 d S
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Pb1 0.01940(17) 0.01308(19) 0.01516(16) -0.0004(4) 0.0000(4) 0.00068(12)
+Pb2 0.01344(16) 0.0187(2) 0.01364(15) 0.0005(4) -0.0001(4) 0.00198(11)
+B1 0.016(4) 0.016(5) 0.011(6) -0.001(7) 0.001(8) 0.009(4)
+B2 0.015(4) 0.015(5) 0.011(7) -0.004(7) 0.002(6) -0.003(4)
+B3 0.010(3) 0.011(3) 0.012(3) -0.001(3) 0.000(3) 0.000(2)
+O1 0.026(3) 0.015(3) 0.017(5) 0.006(4) -0.003(4) -0.005(3)
+O2 0.012(3) 0.016(4) 0.016(3) 0.002(3) 0.004(3) 0.004(3)
+O3 0.018(4) 0.018(5) 0.009(3) -0.003(3) -0.001(3) 0.009(3)
+O4 0.019(4) 0.018(5) 0.009(3) -0.006(3) 0.001(3) 0.010(3)
+O5 0.013(3) 0.016(4) 0.014(3) 0.000(3) 0.005(3) 0.004(3)
+O6 0.029(3) 0.011(3) 0.024(5) -0.002(5) 0.000(5) -0.001(2)
+O7 0.013(3) 0.010(4) 0.010(3) -0.002(3) -0.006(3) 0.005(3)
+O8 0.016(4) 0.006(5) 0.016(4) 0.000 0.000 0.002(4)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+B B 0.0013 0.0007 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Pb Pb -3.3944 10.1111 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+O7 Pb1 O5 79.6(2) . 1_556
+O7 Pb1 O4 78.9(2) . .
+O5 Pb1 O4 86.0(2) 1_556 .
+O7 Pb1 O3 108.4(2) . .
+O5 Pb1 O3 52.2(2) 1_556 .
+O4 Pb1 O3 52.27(18) . .
+O7 Pb2 O2 76.4(2) . 3_565
+O7 Pb2 O8 74.29(19) . 1_556
+O2 Pb2 O8 56.44(18) 3_565 1_556
+O7 Pb2 O3 73.8(2) . 3_564
+O2 Pb2 O3 78.2(2) 3_565 3_564
+O8 Pb2 O3 129.21(16) 1_556 3_564
+O7 Pb2 O7 67.2(3) . 2_665
+O2 Pb2 O7 119.57(19) 3_565 2_665
+O8 Pb2 O7 67.95(17) 1_556 2_665
+O3 Pb2 O7 129.86(19) 3_564 2_665
+O3 B1 O1 113.0(13) . .
+O3 B1 O2 110.9(10) . .
+O1 B1 O2 107.9(8) . .
+O3 B1 O4 108.2(8) . .
+O1 B1 O4 111.9(10) . .
+O2 B1 O4 104.6(11) . .
+O6 B2 O4 109.8(12) . .
+O6 B2 O3 114.1(10) . 1_554
+O4 B2 O3 110.1(9) . 1_554
+O6 B2 O5 109.1(8) . .
+O4 B2 O5 107.9(9) . .
+O3 B2 O5 105.7(11) 1_554 .
+O7 B3 O5 112.8(9) . .
+O7 B3 O2 115.8(10) . 3_564
+O5 B3 O2 105.3(11) . 3_564
+O7 B3 O8 113.8(10) . .
+O5 B3 O8 107.4(11) . .
+O2 B3 O8 100.7(10) 3_564 .
+B3 O2 B1 130.4(11) 3_465 .
+B3 O2 Pb2 104.3(7) 3_465 3_464
+B1 O2 Pb2 121.4(6) . 3_464
+B1 O3 B2 126.3(9) . 1_556
+B1 O3 Pb2 119.9(6) . 3_465
+B2 O3 Pb2 113.4(7) 1_556 3_465
+B1 O3 Pb1 86.5(5) . .
+B2 O3 Pb1 86.6(6) 1_556 .
+Pb2 O3 Pb1 104.0(2) 3_465 .
+B2 O4 B1 126.6(9) . .
+B2 O4 Pb1 121.1(5) . .
+B1 O4 Pb1 112.2(7) . .
+B3 O5 B2 132.9(11) . .
+B3 O5 Pb1 110.5(7) . 1_554
+B2 O5 Pb1 115.3(7) . 1_554
+B3 O7 Pb1 111.9(5) . .
+B3 O7 Pb2 112.0(4) . .
+Pb1 O7 Pb2 113.5(3) . .
+B3 O7 Pb2 110.1(5) . 2_665
+Pb1 O7 Pb2 110.9(2) . 2_665
+Pb2 O7 Pb2 97.6(2) . 2_665
+B3 O8 B3 132.1(17) . 2_665
+B3 O8 Pb2 114.1(6) . 2_664
+B3 O8 Pb2 97.5(6) 2_665 2_664
+B3 O8 Pb2 97.5(6) . 1_554
+B3 O8 Pb2 114.1(6) 2_665 1_554
+Pb2 O8 Pb2 96.8(3) 2_664 1_554
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Pb1 O7 2.253(6) .
+Pb1 O5 2.278(7) 1_556
+Pb1 O4 2.330(7) .
+Pb1 O3 2.957(7) .
+Pb2 O7 2.286(6) .
+Pb2 O2 2.374(7) 3_565
+Pb2 O8 2.503(6) 1_556
+Pb2 O3 2.568(7) 3_564
+Pb2 O7 2.675(6) 2_665
+B1 O3 1.46(2) .
+B1 O1 1.461(12) .
+B1 O2 1.485(14) .
+B1 O4 1.502(16) .
+B2 O6 1.464(12) .
+B2 O4 1.480(19) .
+B2 O3 1.481(17) 1_554
+B2 O5 1.511(12) .
+B3 O7 1.40(2) .
+B3 O5 1.482(13) .
+B3 O2 1.481(13) 3_564
+B3 O8 1.517(12) .
+O2 B3 1.481(13) 3_465
+O2 Pb2 2.374(7) 3_464
+O3 B2 1.481(17) 1_556
+O3 Pb2 2.568(7) 3_465
+O5 Pb1 2.278(7) 1_554
+O7 Pb2 2.675(6) 2_665
+O8 B3 1.517(12) 2_665
+O8 Pb2 2.503(5) 2_664
+O8 Pb2 2.503(5) 1_554

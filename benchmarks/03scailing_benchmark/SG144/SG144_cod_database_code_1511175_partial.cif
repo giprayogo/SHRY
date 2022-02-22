@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Pr3Po1.66666667Pb1.66666667Fl1.33333333B3Te2Se2O9Lv0.33333333
-_symmetry_space_group_name_H-M   P3_1
+_symmetry_space_group_name_H-M  'P 31'
 _cell_length_a   6.94360000
 _cell_length_b   6.94360000
 _cell_length_c   6.86880000

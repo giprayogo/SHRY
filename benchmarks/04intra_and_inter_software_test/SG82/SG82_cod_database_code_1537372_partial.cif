@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Al0.33333333Tl0.33333333Cd2Ga3B0.33333333S8
+_symmetry_space_group_name_H-M  'I -4'
+_cell_length_a   5.57600000
+_cell_length_b   5.57600000
+_cell_length_c   10.07400000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   82
+_chemical_formula_structural
+Al0.33333333Tl0.33333333Cd2Ga3B0.33333333S8
+_chemical_formula_sum
+'Al0.33333333 Tl0.33333333 Cd2 Ga3 B0.33333333 S8'
+_cell_volume   313.21855142
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  'y+1/2, -x+1/2, -z+1/2'
+  7  '-x+1/2, -y+1/2, z+1/2'
+  8  '-y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Al0+  0.0
+  Tl0+  0.0
+  Cd0+  0.0
+  Ga0+  0.0
+  B0+  0.0
+  S0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cd0+  Cd0  2  0.00000000  0.00000000  0.00000000  1.0
+  Ga0+  Ga1  2  0.00000000  0.50000000  0.25000000  0.5
+  B0+  B2  2  0.00000000  0.50000000  0.25000000
+  0.16666666666666666
+  Al0+  Al3  2  0.00000000  0.50000000  0.25000000
+  0.16666666666666666
+  Tl0+  Tl4  2  0.00000000  0.50000000  0.25000000
+  0.16666666666666666
+  Ga0+  Ga5  2  0.00000000  0.00000000  0.50000000  1.0
+  S0+  S6  8  0.23000000  0.24000000  0.64000000  1.0

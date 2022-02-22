@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_Cu17RgAs18(AuSe13)3
+_symmetry_space_group_name_H-M  'R 3 :H'
+_cell_length_a   14.02500000
+_cell_length_b   14.02500000
+_cell_length_c   9.61000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   146
+_chemical_formula_structural   Cu17RgAs18(AuSe13)3
+_chemical_formula_sum   'Cu17 Rg1 As18 Au3 Se39'
+_cell_volume   1637.04176401
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'x+2/3, y+1/3, z+1/3'
+  5  '-y+2/3, x-y+1/3, z+1/3'
+  6  '-x+y+2/3, -x+1/3, z+1/3'
+  7  'x+1/3, y+2/3, z+2/3'
+  8  '-y+1/3, x-y+2/3, z+2/3'
+  9  '-x+y+1/3, -x+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu+  Cu0  9  0.19715333  0.06315667  0.42536667
+  0.5555555555555556
+  Rg+  Rg1  9  0.19715333  0.06315667  0.42536667
+  0.1111111111111111
+  Au+  Au2  9  0.19715333  0.06315667  0.42536667
+  0.3333333333333333
+  Cu  Cu3  9  0.03633667  0.86463333  0.09493333  1.0
+  Cu  Cu4  3  0.00000000  0.00000000  0.73610000  1.0
+  As  As5  9  0.02289333  0.43170667  0.42016667  1.0
+  As  As6  9  0.09924333  0.74259667  0.41496667  1.0
+  Se  Se7  9  0.03953333  0.44395667  0.66006667  1.0
+  Se  Se8  9  0.04966667  0.88211333  0.34803333  1.0
+  Se  Se9  9  0.10149333  0.74993667  0.65536667  1.0
+  Se  Se10  9  0.17842333  0.05351667  0.67026667  1.0
+  Se  Se11  3  0.00000000  0.00000000  0.00000000  1.0

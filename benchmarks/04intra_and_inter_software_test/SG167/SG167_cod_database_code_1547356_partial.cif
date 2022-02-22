@@ -1,0 +1,65 @@
+# generated using pymatgen
+data_Ca2SiSnO6
+_symmetry_space_group_name_H-M  'R -3 c :H'
+_cell_length_a   4.97520000
+_cell_length_b   4.97520000
+_cell_length_c   17.44500000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   167
+_chemical_formula_structural   Ca2SiSnO6
+_chemical_formula_sum   'Ca6 Si3 Sn3 O18'
+_cell_volume   373.95788347
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y+1/3, x+2/3, -z+1/6'
+  8  '-y+1/3, -x+2/3, z+1/6'
+  9  'x-y+1/3, -y+2/3, -z+1/6'
+  10  '-x+y+1/3, y+2/3, z+1/6'
+  11  '-x+1/3, -x+y+2/3, -z+1/6'
+  12  'x+1/3, x-y+2/3, z+1/6'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y, x, -z+1/2'
+  20  '-y, -x, z+1/2'
+  21  'x-y, -y, -z+1/2'
+  22  '-x+y, y, z+1/2'
+  23  '-x, -x+y, -z+1/2'
+  24  'x, x-y, z+1/2'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+2/3, x+1/3, -z+5/6'
+  32  '-y+2/3, -x+1/3, z+5/6'
+  33  'x-y+2/3, -y+1/3, -z+5/6'
+  34  '-x+y+2/3, y+1/3, z+5/6'
+  35  '-x+2/3, -x+y+1/3, -z+5/6'
+  36  'x+2/3, x-y+1/3, z+5/6'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  6  0.00000000  0.00000000  0.00000000  1.0
+  Sn+  Sn1  6  0.00000000  0.00000000  0.25000000  0.5
+  Si+  Si2  6  0.00000000  0.00000000  0.25000000  0.5
+  O  O3  18  0.00000000  0.24890000  0.25000000  1.0

@@ -1,0 +1,55 @@
+# generated using pymatgen
+data_Ba0.33333333Sr0.16666667Ca4Mg9.33333333Be0.16666667Si16O48
+_symmetry_space_group_name_H-M  'I 1 2/m 1'
+_cell_length_a   9.77000000
+_cell_length_b   17.79999000
+_cell_length_c   5.26000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   73.97000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural
+Ba0.33333333Sr0.16666667Ca4Mg9.33333333Be0.16666667Si16O48
+_chemical_formula_sum
+'Ba0.33333333 Sr0.16666667 Ca4 Mg9.33333333 Be0.16666667 Si16 O48'
+_cell_volume   879.17723474
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, -z+1/2'
+  7  '-x+1/2, y+1/2, -z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  4  0.00000000  0.28000000  0.50000000  1
+  Ba+  Ba1  2  0.00000000  0.00000000  0.00000000
+  0.16666666666666666
+  Mg+  Mg2  2  0.00000000  0.00000000  0.00000000
+  0.6666666666666666
+  Sr+  Sr3  2  0.00000000  0.00000000  0.00000000
+  0.08333333333333333
+  Be+  Be4  2  0.00000000  0.00000000  0.00000000
+  0.08333333333333333
+  Mg  Mg5  4  0.00000000  0.09000000  0.50000000  1
+  Mg  Mg6  4  0.00000000  0.17000000  0.00000000  1
+  Si  Si7  8  0.21000000  0.32000000  0.99000000  1
+  Si  Si8  8  0.21000000  0.42000000  0.49000000  1
+  O  O9  8  0.14000000  0.08000000  0.10000000  1
+  O  O10  8  0.14000000  0.18000000  0.60000000  1
+  O  O11  8  0.14000000  0.25000000  0.10000000  1
+  O  O12  8  0.14000000  0.36000000  0.75000000  1
+  O  O13  8  0.14000000  0.39000000  0.25000000  1
+  O  O14  4  0.14000000  0.00000000  0.60000000  1
+  O  O15  4  0.14000000  0.50000000  0.60000000  1
