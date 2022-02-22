@@ -1,5 +1,4 @@
-
-#PbSnTe, benchmark test
+# PbSnTe, benchmark test
 PbSnTe, 9011358.cif (unsubstituted), $2\times2\times2\times$ supercell.
 
 First you should set enviroment variables in ``bench.py``.

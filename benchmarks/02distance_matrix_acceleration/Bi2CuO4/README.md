@@ -1,4 +1,4 @@
-#Bi2CuO4, benchmark test
+# Bi2CuO4, benchmark test
 Bi2CuO4, 1008474.cif (unsubstituted), $2\times1\times1\times$ supercell.
 
 First you should set enviroment variables in ``bench.py``.

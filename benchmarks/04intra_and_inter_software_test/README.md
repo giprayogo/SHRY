@@ -13,7 +13,6 @@ TOTAL_SUBSTITUTION_MIN = 1e1
 TOTAL_SUBSTITUTION_MAX = 1e4
 ```
 
-## Environment setting
 Before the benchmark test, you should establish your python enviroment in which all the depenedent python packages are installed.
 
 ```bash:

@@ -1,5 +1,4 @@
-
-#SmFeTiMo, benchmark test
+# SmFeTiMo, benchmark test
 SmFeTiMo, 1525023.cif (unsubstituted), $1\times1\times1\times$ supercell.
 
 First you should set enviroment variables in ``bench.py``.
