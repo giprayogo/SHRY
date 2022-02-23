@@ -647,7 +647,7 @@ for row, zipped in enumerate(
                 non_match_shry_index_list=recvbuf
                 if len(non_match_shry_index_list) > 0:
                     df.at[row, "Note"] = df.at[row, "Note"] + f"No equiv. str in supercell:{[shry_cifs[i] for i in non_match_shry_index_list]}"
-                    print("the consistency test was failure. See the xsl file.")
+                    print("the consistency test was failure. See the xls file.")
                     #raise RuntimeError(f"rank={rank}: Failure")
                 
             comm.Barrier()
