@@ -27,11 +27,7 @@ pip install .
 
 ## Documentation
 
-The documentation is available [here]().
-
-<!--
 The documentation is available [here](https://shry.readthedocs.io/en/latest/usage.html).
--->
 
 ## How to cite
 
