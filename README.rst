@@ -9,7 +9,6 @@ with atomic substitutions implemented by p\ **y**\ thon)
 is a tool for generating unique ordered structures
 corresponding to a given disordered structure.
 
-------------
 Installation
 ------------
 
@@ -19,7 +18,6 @@ SHRY is available via PyPI (pending)
 
     pip install shry
 
-^^^^^^^^^^^
 Development
 ^^^^^^^^^^^
 
@@ -31,13 +29,11 @@ Installing from source
     cd SHRY
     pip install .
 
--------------
 Documentation
 -------------
 
 The documentation is available `here <https://shry.readthedocs.io/en/latest/>`_.
 
--------------
 How to cite
 -------------
 
@@ -52,7 +48,6 @@ When using our code please cite
 .. |Paper| image:: https://img.shields.io/static/v1?label=arXiV&message=2111.13409&color=b31b1b
    :target: https://arxiv.org/abs/2111.13409
 
--------------
 Contributing
 -------------
 

@@ -7,7 +7,6 @@ with atomic substitutions implemented by p\ **y**\ thon)
 is a tool for generating unique ordered structures
 corresponding to a given disordered structure.
 
-------------
 Installation
 ------------
 
@@ -17,7 +16,6 @@ SHRY is available via PyPI (pending)
 
     pip install shry
 
-^^^^^^^^^^^
 Development
 ^^^^^^^^^^^
 
@@ -28,3 +26,11 @@ Installing from source
     git clone https://github.com/giprayogo/SHRY.git
     cd SHRY
     pip install .
+
+Contents
+--------
+
+.. toctree::
+
+    usage
+    scripting examples
