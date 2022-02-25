@@ -200,16 +200,18 @@ def main():  # pylint: disable=missing-function-docstring
     group.add_argument(
         "--no-dmat",
         action="store_true",
-        help="(devel/algo) Alternative algorithm without distance matrix (slower).",
+        # help="(devel/algo) Alternative algorithm without distance matrix (slower).",
+        help=argparse.SUPPRESS,
     )
     group.add_argument(
         "--t-kind",
         default="sum",
         choices=("sum", "plsum", "det"),
-        help=(
-            "(devel/algo) Type of T function applied to "
-            "distance matrix (sum, plsum, det)."
-        ),
+        # help=(
+        #     "(devel/algo) Type of T function applied to "
+        #     "distance matrix (sum, plsum, det)."
+        # ),
+        help=argparse.SUPPRESS,
     )
     args = parser.parse_args()
     const.DISABLE_PROGRESSBAR = args.disable_progressbar
