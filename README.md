@@ -38,6 +38,8 @@ When using our code please cite
 
 ## Quick use
 
+### Preparation of an input file (a CIF file)
+
 You can prepare a CIF file with partial occupations.
 
     # label element x y z occupation
@@ -50,7 +52,7 @@ You can prepare a CIF file with partial occupations.
 occupancy of a site is either less or more than 1.0.
 To simulate vacancies, create a pseudo atom with species ``X``.
 
-## Check total symmetry-inequivalent structures
+### Check total symmetry-inequivalent structures
 
 You can readily check the number of total symmetry-inquivalent structures using the following command.
 
@@ -59,7 +61,7 @@ You can readily check the number of total symmetry-inquivalent structures using 
 This operation is based on Polya enumeration
 and takes much less time than a proper generation.
 
-## Creating supercell
+### Creating supercell
 
 Sometimes a supercell is required to fit in finer concentrations. ``SHRY`` accepts either 3-digit (diagonal) or 9-digit (non-diagonal) format
 to specify the supercell's scaling matrix.
@@ -72,7 +74,7 @@ or
     shry -s 2 0 0 0 2 0 0 0 1 --count-only STRUCTURE_CIF
 
 
-## Generating unique structures
+### Generating unique structures
 
 Finally, you can generate symmetry-inequivalent structures using the following command:
 
@@ -80,14 +82,14 @@ Finally, you can generate symmetry-inequivalent structures using the following c
 
 The generated symmetry-inequivalent structures are saved in sliceXX directories.
 
-## Additional information
+### Additional information
 For additional information, you can use the help command:
 
     shry -h
 
 of you can refer to the document.
 
-## Contributing
+## Contributing to the project
 
 If you want to contribute to the project, report a bug, or ask for
 a new feature, please [raise an issue](https://github.com/giprayogo/SHRY/issues).
