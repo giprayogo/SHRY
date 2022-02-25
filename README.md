@@ -25,17 +25,6 @@ cd SHRY
 pip install .
 ```
 
-## Documentation
-
-The documentation is available [here](https://shry.readthedocs.io/en/latest/usage.html).
-
-## How to cite
-
-When using our code please cite
-
-- DOI [![DOI](https://zenodo.org/badge/425687455.svg)](https://zenodo.org/badge/latestdoi/425687455)
-- Paper [![arXiv](https://img.shields.io/static/v1?label=arXiV&message=2111.13409&color=b31b1b)](https://arxiv.org/abs/2111.13409)
-
 ## Quick use
 
 ### Preparation of an input file (a CIF file)
@@ -88,6 +77,17 @@ For additional information, you can use the help command:
     shry -h
 
 of you can refer to the document.
+
+## Documentation
+
+The documentation is available [here](https://shry.readthedocs.io/en/beta/index.html).
+
+## How to cite
+
+When using our code please cite
+
+- DOI [![DOI](https://zenodo.org/badge/425687455.svg)](https://zenodo.org/badge/latestdoi/425687455)
+- Paper [![arXiv](https://img.shields.io/static/v1?label=arXiV&message=2111.13409&color=b31b1b)](https://arxiv.org/abs/2111.13409)
 
 ## Contributing to the project
 
