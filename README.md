@@ -27,7 +27,11 @@ pip install .
 
 ## Documentation
 
-The documentation is available here:
+The documentation is available [here]().
+
+<!--
+The documentation is available [here](https://shry.readthedocs.io/en/latest/usage.html).
+-->
 
 ## How to cite
 
@@ -39,4 +43,4 @@ When using our code please cite
 ## Contributing
 
 If you want to contribute, report a bug, or ask for
-a new feature, please raise an issue:
+a new feature, please [raise an issue](https://github.com/giprayogo/SHRY/issues).

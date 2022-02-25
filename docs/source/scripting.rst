@@ -1,5 +1,7 @@
-Examples
-========
+Scripting Examples
+==================
+
+(under development)
 
 See ``SHRY_INSTALLDIR/examples`` for examples
 on how to use SHRY as a Python module.
