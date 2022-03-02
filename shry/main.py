@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=logging-fstring-interpolation
+"""
+Main task abstraction
+"""
 
 # information
 __author__ = "Genki Prayogo, and Kosuke Nakano"
@@ -7,15 +10,12 @@ __copyright__ = "Copyright (c) 2021-, The SHRY Project"
 __credits__ = ["Genki Prayogo", "Kosuke Nakano"]
 
 __license__ = "MIT"
-__version__ = "1.0.3"
+__version__ = "1.1.0"
 __maintainer__ = "Genki Prayogo"
 __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
-"""
-Main task abstraction
-"""
 
 import ast
 import collections
@@ -41,12 +41,7 @@ from pymatgen.core.lattice import Lattice
 from pymatgen.io.cif import CifParser, str2float
 from pymatgen.io.vasp.inputs import Poscar
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer, SpacegroupOperations
-from pymatgen.util.coord import (
-    lattice_points_in_supercell,
-    find_in_coord_list_pbc,
-    in_coord_list_pbc,
-    in_coord_list,
-)
+from pymatgen.util.coord import in_coord_list_pbc, lattice_points_in_supercell
 
 from . import const
 from .core import Substitutor
@@ -196,13 +191,17 @@ class ScriptHelper:
         symmetrize=const.DEFAULT_SYMMETRIZE,
         sample=const.DEFAULT_SAMPLE,
         symprec=const.DEFAULT_SYMPREC,
+        atol=const.DEFAULT_ATOL,
         angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
         dir_size=const.DEFAULT_DIR_SIZE,
         write_symm=const.DEFAULT_WRITE_SYMM,
+        write_ewald=const.DEFAULT_WRITE_EWALD,
         no_write=const.DEFAULT_NO_WRITE,
         no_dmat=const.DEFAULT_NO_DMAT,
+        no_cache=False,
         t_kind=const.DEFAULT_T_KIND,
     ):
+        # TODO: Refactor with descriptors.
         self._timestamp = datetime.datetime.now().timestamp()
         self.no_write = no_write
         self.no_dmat = no_dmat
@@ -210,9 +209,7 @@ class ScriptHelper:
         self.structure_file = structure_file
 
         if len(from_species) != len(to_species):
-            raise RuntimeError(
-                "Must supply equal number of target_sites and compositions"
-            )
+            raise RuntimeError("from_species and to_species must have the same length.")
         self.from_species = from_species
         self.to_species = to_species
         self.scaling_matrix = np.array(scaling_matrix)
@@ -225,20 +222,29 @@ class ScriptHelper:
                 sample = int(self._math_eval(sample))
         self.sample = sample
         self.symprec = symprec
+        self.atol = atol
         self.angle_tolerance = angle_tolerance
         self.dir_size = dir_size
         self.write_symm = write_symm
+        self.write_ewald = write_ewald
 
         logging.info("\nRun configurations:")
         logging.info(const.HLINE)
         logging.info(self)
         logging.info(const.HLINE)
 
+        # TODO: these "derivative attributes" should have a proper setter()
+        # In fact any that are not simple assignment should.
+        if no_cache:
+            cache = False
+        else:
+            cache = None
         self.structure = LabeledStructure.from_file(
-            self.structure_file,
-            symmetrize=symmetrize,
+            self.structure_file, symmetrize=symmetrize,
         )
         self.modified_structure = self.structure.copy()
+        # Note: since we don't limit the allowable scaling_matrix,
+        # changing the order of enlargement vs. replace can have different meaning.
         self.modified_structure.replace_species(
             dict(zip(self.from_species, self.to_species))
         )
@@ -246,10 +252,12 @@ class ScriptHelper:
         self.substitutor = Substitutor(
             self.modified_structure,
             symprec=self.symprec,
+            atol=self.atol,
             angle_tolerance=self.angle_tolerance,
             sample=self.sample,
             no_dmat=self.no_dmat,
             t_kind=self.t_kind,
+            cache=cache,
         )
 
     def __str__(self):
@@ -308,7 +316,8 @@ class ScriptHelper:
         parser = configparser.ConfigParser(
             empty_lines_in_values=False, allow_no_value=False
         )
-        with open(input_file, "r") as f:
+        encoding = getattr(io, "LOCALE_ENCODING", "utf8")
+        with open(input_file, "r", encoding=encoding, errors="surrogateescape") as f:
             parser.read_file(f)
 
         structure_file = parser.get("DEFAULT", "structure_file")
@@ -393,17 +402,25 @@ class ScriptHelper:
         """
         Save the irreducible structures
         """
-        self.substitutor.make_patterns()
-        if self.no_write:
-            return
-
-        npatterns = self.substitutor.sampled_indices.size
+        # TODO Reimplement sampling
+        # npatterns = self.substitutor.sampled_indices.size
+        npatterns = self.substitutor.count()
         if not npatterns:
             logging.warning("No expected patterns.")
             return
-        letters = self.substitutor.configurations()
-        weights = self.substitutor.weights()
-        assert len(weights) == npatterns
+
+        if self.no_write:
+            # (for io-less benchmark)
+            pbar = tqdm.tqdm(
+                total=npatterns,
+                desc=f"Generating {npatterns} order structures",
+                **const.TQDM_CONF,
+                disable=const.DISABLE_PROGRESSBAR,
+            )
+            for _ in self.substitutor.make_patterns():
+                pbar.update()
+            pbar.close()
+            return
 
         # Log file stream
         logio = io.StringIO()
@@ -413,7 +430,8 @@ class ScriptHelper:
             Dump log
             """
             logfile = os.path.join(self._outdir, "sub.log")
-            with open(logfile, "w") as f:
+            encoding = getattr(io, "LOCALE_ENCODING", "utf8")
+            with open(logfile, "w", encoding=encoding, errors="surrogateescape") as f:
                 logio.seek(0)
                 shutil.copyfileobj(logio, f)
 
@@ -442,7 +460,7 @@ class ScriptHelper:
         ndigits = int(math.log10(npatterns)) + 1
         index_f = "_{:0" + str(ndigits) + "d}"
         filenames = [
-            os.path.join(outdir(i), formula + index_f.format(i) + f"_{weights[i]}.cif")
+            os.path.join(outdir(i), formula + index_f.format(i))
             for i in range(npatterns)
         ]
 
@@ -459,27 +477,45 @@ class ScriptHelper:
             disable=const.DISABLE_PROGRESSBAR,
         )
         os.makedirs(os.path.join(self._outdir, "slice0"), exist_ok=True)
+
+        # TODO: Refactor
+        header = "N Weight Configuration"
+        if self.write_ewald:
+            header = header + " EwaldEnergy"
+            quantities = ("cifwriter", "weight", "letter", "ewald")
+        else:
+            quantities = ("cifwriter", "weight", "letter")
+
         if self.write_symm:
-            print("N Weight Configuration GroupName", file=logio)
-            for i, cifwriter in enumerate(self.substitutor.cifwriters(self.symprec)):
+            header = header + " GroupName"
+            symprec = self.symprec
+        else:
+            symprec = None
+
+        print(header, file=logio)
+        for i, packet in enumerate(self.substitutor.quantities(quantities, symprec)):
+            cifwriter = packet["cifwriter"]
+            ewald = packet["ewald"]
+            weight = packet["weight"]
+            letter = packet["letter"]
+
+            line = f"{i} {weight} {letter}"
+            if ewald is not None:
+                line = line + f" {ewald}"
+            if self.write_symm:
                 space_group = list(cifwriter.ciffile.data.values())[0][
                     "_symmetry_space_group_name_H-M"
                 ]
-                letter = letters[i]
-                line = " ".join([str(i), str(weights[i]), letter, space_group])
-                print(line, file=logio)
+                line += line + f" {space_group}"
+            print(line, file=logio)
 
-                cifwriter.write_file(filename=filenames[i])
-                pbar.update()
-        else:
-            print("N Weight Configuration", file=logio)
-            for i, cifwriter in enumerate(self.substitutor.cifwriters()):
-                letter = letters[i]
-                line = " ".join([str(i), str(weights[i]), letter])
-                print(line, file=logio)
-
-                cifwriter.write_file(filename=filenames[i])
-                pbar.update()
+            try:
+                cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
+            except IndexError as exc:
+                raise RuntimeError(
+                    "Mismatch between enumeration and expected structures, check `atol` value."
+                ) from exc
+            pbar.update()
         pbar.close()
         dump_log()
 
@@ -488,9 +524,14 @@ class ScriptHelper:
         Count the number of unique substituted structures
         """
         count = self.substitutor.count()
+        total_count = (
+            self.substitutor.total_count()
+        )  # pylint: disable=assignment-from-no-return
         logging.info(const.HLINE)
-        logging.info(f"Expected total of {count} unique patterns.")
+        logging.info(f"Total number of combinations is {total_count}")
+        logging.info(f"Expected unique patterns is {count}")
         logging.info(const.HLINE)
+        return count
 
 
 class LabeledStructure(Structure):
@@ -536,12 +577,7 @@ class LabeledStructure(Structure):
 
     @classmethod
     def from_file(  # pylint: disable=arguments-differ
-        cls,
-        filename,
-        primitive=False,
-        sort=False,
-        merge_tol=0.0,
-        symmetrize=False,
+        cls, filename, primitive=False, sort=False, merge_tol=0.0, symmetrize=False,
     ):
         fname = os.path.basename(filename)
         if not fnmatch(fname.lower(), "*.cif*") and not fnmatch(
@@ -598,7 +634,13 @@ class LabeledStructure(Structure):
             if not replace:
                 raise RuntimeError(f"Can't find the specified site ({from_species}).")
 
-    def read_label(self, cif_filename, symprec=1e-2, symmetrize=False):
+    def read_label(
+        self,
+        cif_filename,
+        symprec=const.DEFAULT_SYMPREC,
+        angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
+        symmetrize=False,
+    ):
         """
         Add _atom_site_label as site_properties.
         This is useful for enforcing a certain concentration over
@@ -622,7 +664,8 @@ class LabeledStructure(Structure):
             except ValueError:
                 return float(string.split("(")[0])
 
-        with open(cif_filename) as f:
+        encoding = getattr(io, "LOCALE_ENCODING", "utf8")
+        with open(cif_filename, "r", encoding=encoding, errors="surrogateescape") as f:
             parser = CifParser.from_string(f.read())
 
         # Since Structure only takes the first structure inside a CIF, do the same.
@@ -641,16 +684,15 @@ class LabeledStructure(Structure):
             labels = tuple(sorted({x[1] for x in zipgroup}))
             cif_sites.append(
                 PeriodicSite(
-                    "X",
-                    coord,
-                    self.lattice,
-                    properties={"_atom_site_label": labels},
+                    "X", coord, self.lattice, properties={"_atom_site_label": labels},
                 )
             )
 
         # Find equivalent sites.
         if symmetrize:
-            symm_ops = SpacegroupAnalyzer(self).get_space_group_operations()
+            symm_ops = SpacegroupAnalyzer(
+                self, symprec, angle_tolerance
+            ).get_space_group_operations()
         else:
             # A bit of trick.
             parser.data = cif_dict

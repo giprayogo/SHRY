@@ -1,0 +1,56 @@
+# generated using pymatgen
+data_Ni3Sn1.33333333Pb1.66666667F18
+_symmetry_space_group_name_H-M  'R -3 :H'
+_cell_length_a   5.15200000
+_cell_length_b   5.15200000
+_cell_length_c   13.76300000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   148
+_chemical_formula_structural   Ni3Sn1.33333333Pb1.66666667F18
+_chemical_formula_sum   'Ni3 Sn1.33333333 Pb1.66666667 F18'
+_cell_volume   316.37011347
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-x+2/3, -y+1/3, -z+1/3'
+  9  '-y+2/3, x-y+1/3, z+1/3'
+  10  'y+2/3, -x+y+1/3, -z+1/3'
+  11  '-x+y+2/3, -x+1/3, z+1/3'
+  12  'x-y+2/3, x+1/3, -z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-x+1/3, -y+2/3, -z+2/3'
+  15  '-y+1/3, x-y+2/3, z+2/3'
+  16  'y+1/3, -x+y+2/3, -z+2/3'
+  17  '-x+y+1/3, -x+2/3, z+2/3'
+  18  'x-y+1/3, x+2/3, -z+2/3'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Ni0+  0.0
+  Sn0+  0.0
+  Pb0+  0.0
+  F0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ni0+  Ni0  3  0.00000000  0.00000000  0.50000000  1.0
+  Pb0+  Pb1  3  0.00000000  0.00000000  0.00000000
+  0.5555555555555556
+  Sn0+  Sn2  3  0.00000000  0.00000000  0.00000000
+  0.4444444444444444
+  F0+  F3  18  0.00466667  0.39733333  0.41633333  1.0

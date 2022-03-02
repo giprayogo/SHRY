@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_No1.33333333Cf2U0.66666667Si8
-_symmetry_space_group_name_H-M   I4_1/amd
+_symmetry_space_group_name_H-M  'I 41/a m d :1'
 _cell_length_a   4.12600000
 _cell_length_b   4.12600000
 _cell_length_c   14.34600000

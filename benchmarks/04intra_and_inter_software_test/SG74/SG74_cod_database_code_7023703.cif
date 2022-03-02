@@ -1,0 +1,198 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-25 15:54:39 +0200 (Fri, 25 Mar 2016) $
+#$Revision: 179942 $
+#$URL: svn://www.crystallography.net/cod/cif/7/02/37/7023703.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7023703
+loop_
+_publ_author_name
+'Smida, Mouna'
+'Lhoste, J\'er\^ome'
+'Pimenta, Vanessa'
+'H\'emon-Ribaud, Annie'
+'Jouffret, Laurent'
+'Leblanc, Marc'
+'Dammak, Mohamed'
+'Gren\`eche, Jean-Marc'
+'Maisonneuve, Vincent'
+_publ_section_title
+;
+ New series of hybrid fluoroferrates synthesized with triazoles: various
+ dimensionalities and M\"ossbauer studies.
+;
+_journal_issue                   44
+_journal_name_full
+'Dalton transactions (Cambridge, England : 2003)'
+_journal_page_first              15748
+_journal_page_last               15755
+_journal_paper_doi               10.1039/c3dt51812d
+_journal_volume                  42
+_journal_year                    2013
+_chemical_formula_moiety         'C2 H3 F5 Fe2 N3'
+_chemical_formula_sum            'C2 H3 F5 Fe2 N3'
+_chemical_formula_weight         275.77
+_chemical_name_systematic        ' ?'
+_space_group_IT_number           74
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  '-I 2b 2'
+_symmetry_space_group_name_H-M   'I m m a'
+_cell_angle_alpha                90.00000
+_cell_angle_beta                 90.00000
+_cell_angle_gamma                90.00000
+_cell_formula_units_Z            4
+_cell_length_a                   9.1552(3)
+_cell_length_b                   7.4896(2)
+_cell_length_c                   9.4644(3)
+_cell_measurement_temperature    296(2)
+_cell_volume                     648.96(3)
+_computing_structure_refinement  FULLPROF
+_diffrn_ambient_temperature      296(2)
+_diffrn_detector_type            ' XCelerator PANanalytical'
+_diffrn_measurement_device_type  'Panalytical XPERT-PRO'
+_diffrn_radiation_type           'Cu K\a'
+_diffrn_radiation_wavelength     1.5418
+_diffrn_reflns_limit_h_max       9
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       7
+_diffrn_reflns_limit_k_min       0
+_diffrn_reflns_limit_l_max       9
+_diffrn_reflns_limit_l_min       0
+_diffrn_source                   'X-ray tube'
+_exptl_crystal_colour            purple
+_exptl_crystal_density_diffrn    2.822
+_exptl_crystal_density_meas      ?
+_pd_instr_location               ' ?'
+_pd_meas_2theta_range_inc        0.017001
+_pd_meas_2theta_range_max        99.99300
+_pd_meas_2theta_range_min        5.11600
+_pd_meas_number_of_points        5582
+_pd_proc_2theta_range_inc        0.017001
+_pd_proc_2theta_range_max        99.8618
+_pd_proc_2theta_range_min        4.9848
+_pd_proc_ls_pref_orient_corr     ' ?'
+_pd_proc_ls_prof_R_factor        1.5258
+_pd_proc_ls_prof_wR_expected     1.8280
+_pd_proc_ls_prof_wR_factor       2.0003
+_pd_proc_wavelength              1.540510
+_pd_spec_mounting                ' ?'
+_refine_diff_density_min         -1.95
+_refine_ls_hydrogen_treatment    refxyz
+_refine_ls_number_parameters     66
+_refine_ls_number_reflns         425
+_refine_ls_number_restraints     0
+_refine_ls_R_I_factor            3.0467
+_reflns_number_total             200
+_cod_data_source_file            c3dt51812d.txt
+_cod_data_source_block           FeF5Htaz
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_symmetry_cell_setting' value 'Orthorhombic' changed to
+'orthorhombic' according to
+/home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary named
+'cif_core.dic' version 2.4.2 from 2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 1891 2012-01-12 08:04:46Z andrius 
+
+The following automatic conversions were performed:
+
+'_exptl_crystal_density_meas' value 'not measured' was changed to '?'
+- the value is perceived as not measured.
+
+Automatic conversion script
+Id: cif_fix_values 3008 2015-01-20 13:52:24Z robertas 
+;
+_cod_original_cell_volume        648.97(4)
+_cod_database_code               7023703
+#BEGIN Tags that were not found in dictionaries:
+_pd_proc_ls_prof_cr_factor       14.2800
+_pd_proc_ls_prof_cwr_factor      8.8686
+_pd_proc_ls_prof_cwr_expected    8.1043
+_pd_proc_ls_prof_chi2            1.1975
+_pd_proc_ls_prof_echi2           1.2381
+#END Tags that were not found in dictionaries
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x+1/2,-y+1/2,-z+1/2
+-x+1/2,y,-z+1/2
+-x,-y+1/2,z
+-x,-y,-z
+-x+1/2,y+1/2,z+1/2
+x+1/2,-y,z+1/2
+x,y+1/2,-z
+x+1/2,y+1/2,z+1/2
+x,-y,-z
+-x,y+1/2,-z
+-x+1/2,-y,z+1/2
+-x+1/2,-y+1/2,-z+1/2
+-x,y,z
+x,-y+1/2,z
+x+1/2,y,-z+1/2
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_type_symbol
+Fe1 0.50000 0.50000 0.50000 0.0139(8) 1.00000 Uiso Fe
+Fe2 0.75000 0.75000 0.75000 0.0212(8) 1.00000 Uiso Fe
+F1 0.50000 0.75000 0.4318(5) 0.014(2) 1.00000 Uiso F
+F2 0.6461(3) 0.5537(4) 0.6367(2) 0.0197(11) 1.00000 Uiso F
+N1 0.9258(5) 0.75000 0.5845(6) 0.022(3) 1.00000 Uiso N
+N2 1.00000 0.75000 0.3695(7) 0.022(3) 1.00000 Uiso N
+C1 0.8845(7) 0.75000 0.4590(9) 0.044(4) 1.00000 Uiso C
+H1 0.78030 0.75000 0.41930 0.01267 1.00000 Uiso H
+H2 1.00000 0.75000 0.27110 0.01267 1.00000 Uiso H
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Fe -1.134 3.197 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+F 0.0727 0.0534 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N 0.0311 0.0180 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+C 0.0181 0.0091 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_3
+F1 Fe1 F1 89.93(5) 2_666
+F1 Fe1 F2 73.90(9) 3_555
+F1 Fe1 F2 91.75(13) 4_666
+F2 Fe2 F2 89.76(8) 4_575
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Fe1 F1 1.9805(15) .
+Fe1 F1 1.9805(15) 5_666
+Fe1 F2 1.904(2) .
+Fe1 F2 1.904(2) 5_666
+Fe1 F2 1.904(2) 10_566
+Fe1 F2 1.904(2) 14_655
+Fe2 F2 2.053(3) .
+Fe2 F2 2.053(3) 3_656
+Fe2 F2 2.053(3) 13_666
+Fe2 F2 2.053(3) 15_565
+Fe2 N1 2.246(5) .
+Fe2 N1 2.246(5) 3_656
+N1 N1 1.359(6) 4_765
+N1 C1 1.247(10) .
+N2 C1 1.355(8) .

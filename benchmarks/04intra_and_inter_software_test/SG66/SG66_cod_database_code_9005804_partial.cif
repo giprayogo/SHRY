@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Mg8Al16Si20Te14.5Se1.5O56
+_symmetry_space_group_name_H-M  'C c c m'
+_cell_length_a   17.01300000
+_cell_length_b   9.68000000
+_cell_length_c   9.30350000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   66
+_chemical_formula_structural   Mg8Al16Si20Te14.5Se1.5O56
+_chemical_formula_sum   'Mg8 Al16 Si20 Te14.5 Se1.5 O56'
+_cell_volume   1532.15471244
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  '-x, y, -z+1/2'
+  6  'x, -y, z+1/2'
+  7  'x, -y, -z+1/2'
+  8  '-x, y, z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x+1/2, -y+1/2, z'
+  12  'x+1/2, y+1/2, -z'
+  13  '-x+1/2, y+1/2, -z+1/2'
+  14  'x+1/2, -y+1/2, z+1/2'
+  15  'x+1/2, -y+1/2, -z+1/2'
+  16  '-x+1/2, y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mg  Mg0  8  0.16220000  0.50000000  0.25000000  1
+  Al  Al1  8  0.05060000  0.30830000  0.00000000  1
+  Al  Al2  8  0.25000000  0.25000000  0.25030000  1
+  Si  Si3  8  0.13510000  0.23740000  0.50000000  1
+  Si  Si4  8  0.19300000  0.07790000  0.00000000  1
+  Si  Si5  4  0.00000000  0.50000000  0.25000000  1
+  Te+  Te6  16  0.24740000  0.10310000  0.14210000  0.90625
+  Se+  Se7  16  0.24740000  0.10310000  0.14210000  0.09375
+  O  O8  16  0.06240000  0.41540000  0.15060000  1
+  O  O9  16  0.17330000  0.31160000  0.35770000  1
+  O  O10  8  0.04280000  0.24800000  0.50000000  1
+  O  O11  8  0.12280000  0.18510000  0.00000000  1
+  O  O12  8  0.16470000  0.08060000  0.50000000  1

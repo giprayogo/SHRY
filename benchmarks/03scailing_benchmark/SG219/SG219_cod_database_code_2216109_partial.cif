@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_K16Al11B5H144(C3F)16
-_symmetry_space_group_name_H-M   F-43c
+_symmetry_space_group_name_H-M  'F -4 3 c'
 _cell_length_a   17.76000000
 _cell_length_b   17.76000000
 _cell_length_c   17.76000000

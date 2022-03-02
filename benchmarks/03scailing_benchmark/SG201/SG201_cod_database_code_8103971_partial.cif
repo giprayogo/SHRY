@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Mo24At3.5Pb4I48Br4Cl0.5
-_symmetry_space_group_name_H-M   Pn-3
+_symmetry_space_group_name_H-M  'P n -3 :2'
 _cell_length_a   14.42900000
 _cell_length_b   14.42900000
 _cell_length_c   14.42900000

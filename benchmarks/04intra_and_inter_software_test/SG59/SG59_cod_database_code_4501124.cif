@@ -1,0 +1,260 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-24 01:50:36 +0200 (Thu, 24 Mar 2016) $
+#$Revision: 179542 $
+#$URL: svn://www.crystallography.net/cod/cif/4/50/11/4501124.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4501124
+loop_
+_publ_author_name
+'Andrzejewski, Micha\/l'
+'Olejniczak, Anna'
+'Katrusiak, Andrzej'
+_publ_section_title
+;
+ Humidity Control of Isostructural Dehydration and Pressure-Induced
+ Polymorphism in 1,4-Diazabicyclo[2.2.2]octane Dihydrobromide Monohydrate
+;
+_journal_issue                   11
+_journal_name_full               'Crystal Growth &amp; Design'
+_journal_page_first              4892
+_journal_paper_doi               10.1021/cg200743n
+_journal_volume                  11
+_journal_year                    2011
+_chemical_formula_moiety         '    C6 H14 N2, H2 O, 2(Br)'
+_chemical_formula_sum            'C6 H16 Br2 N2 O'
+_chemical_formula_weight         292.03
+_chemical_name_common
+;
+dabco dihydrobromide monohydrate, dabco2HBr*H2O
+;
+_chemical_name_systematic
+;
+1,4-diazabicyclo[2.2.2]octane dihydrobromide monohydrate
+;
+_space_group_IT_number           59
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  '-P 2ab 2a'
+_symmetry_space_group_name_H-M   'P m m n :2'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            2
+_cell_length_a                   7.2844(19)
+_cell_length_b                   10.918(4)
+_cell_length_c                   5.663(4)
+_cell_measurement_pressure       1500000
+_cell_measurement_reflns_used    2039
+_cell_measurement_temperature    296(2)
+_cell_measurement_theta_max      29.19
+_cell_measurement_theta_min      3.36
+_cell_volume                     450.4(4)
+_computing_cell_refinement       'CrysAlis (Oxford Diffraction, 2002)'
+_computing_data_collection       'CrysAlis (Oxford Diffraction, 2002)'
+_computing_data_reduction        'CrysAlis (Oxford Diffraction, 2002)'
+_computing_molecular_graphics
+;X-Seed (Barbour, 2001) 
+and POV-Ray (Persistence of Vision, 2004)
+
+Mercury (2008)
+;
+_computing_publication_material  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1997)'
+_diffrn_ambient_temperature      296(2)
+_diffrn_measured_fraction_theta_full 0.413
+_diffrn_measured_fraction_theta_max 0.413
+_diffrn_measurement_device_type  'multiwire proportional'
+_diffrn_measurement_method
+;
+HP omega scans - for more details see:
+A. Budzianowski, A. Katrusiak in High-Pressure Crystallography
+(Eds.: A. Katrusiak, P. F. McMillan),
+Dordrecht: Kluwer Acad. Publ., 2004 pp.157-168
+;
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.1222
+_diffrn_reflns_av_sigmaI/netI    0.0520
+_diffrn_reflns_limit_h_max       9
+_diffrn_reflns_limit_h_min       -9
+_diffrn_reflns_limit_k_max       13
+_diffrn_reflns_limit_k_min       -13
+_diffrn_reflns_limit_l_max       3
+_diffrn_reflns_limit_l_min       -3
+_diffrn_reflns_number            2039
+_diffrn_reflns_theta_full        29.19
+_diffrn_reflns_theta_max         29.19
+_diffrn_reflns_theta_min         3.36
+_diffrn_standards_decay_%        0
+_diffrn_standards_interval_count 0
+_diffrn_standards_number         0
+_exptl_absorpt_coefficient_mu    8.947
+_exptl_absorpt_correction_T_max  0.65
+_exptl_absorpt_correction_T_min  0.49
+_exptl_absorpt_correction_type   integration
+_exptl_absorpt_process_details
+;
+ Katrusiak, A. (2003). REDSHABS - Program for correcting
+ reflections intensities for DAC absorption, gasket shadowing
+ and sample crystal absorption. Adam Mickiewicz University, Pozna\'n.
+ Katrusiak, A. (2004). Z. Kristallogr. 219, 461-467
+;
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    2.153
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       plate
+_exptl_crystal_F_000             288
+_exptl_crystal_size_max          0.43
+_exptl_crystal_size_mid          0.21
+_exptl_crystal_size_min          0.08
+_refine_diff_density_max         1.381
+_refine_diff_density_min         -0.833
+_refine_diff_density_rms         0.167
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.175
+_refine_ls_hydrogen_treatment    mixed
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     34
+_refine_ls_number_reflns         283
+_refine_ls_number_restraints     2
+_refine_ls_restrained_S_all      1.170
+_refine_ls_R_factor_all          0.0608
+_refine_ls_R_factor_gt           0.0532
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0852P)^2^+0.4723P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.1308
+_refine_ls_wR_factor_ref         0.1396
+_reflns_number_gt                253
+_reflns_number_total             283
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            cg200743n_si_002.cif
+_cod_data_source_block           dabco2HBr*H2Odelta
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_symmetry_cell_setting' value 'Orthorhombic' changed to
+'orthorhombic' according to
+/home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary named
+'cif_core.dic' version 2.4.1 from 2010-06-29.
+
+Automatic conversion script
+Id: cif_fix_values 1715 2011-07-08 13:25:40Z adriana 
+;
+_cod_original_sg_symbol_H-M      Pmmn
+_cod_database_code               4501124
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y+1/2, z'
+'-x, y+1/2, -z'
+'x+1/2, -y, -z'
+'-x, -y, -z'
+'x-1/2, y-1/2, -z'
+'x, -y-1/2, z'
+'-x-1/2, y, z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Br1 Br 0.2500 0.56635(8) 0.5945(3) 0.0305(10) Uani 1 2 d S
+N1 N 0.0794(10) 0.2500 0.182(3) 0.039(6) Uani 1 2 d S
+H1N H -0.0455 0.2500 0.1839 0.046 Uiso 1 2 calc SR
+C1 C 0.1461(13) 0.2500 0.431(4) 0.031(7) Uani 1 2 d S
+H1A H 0.1008 0.1780 0.5130 0.038 Uiso 0.50 1 calc PR
+H1B H 0.1008 0.3220 0.5130 0.038 Uiso 0.50 1 calc PR
+C2 C 0.1427(9) 0.3619(6) 0.058(2) 0.028(5) Uani 1 1 d .
+H2A H 0.0970 0.4344 0.1373 0.033 Uiso 1 1 calc R
+H2B H 0.0970 0.3623 -0.1033 0.033 Uiso 1 1 calc R
+O1W O 0.2500 0.7500 0.135(3) 0.030(6) Uani 1 4 d SD
+H1W H 0.2500 0.6745(5) 0.218(5) 0.036 Uiso 1 2 d SD
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Br1 0.0209(6) 0.0253(10) 0.045(3) -0.0023(4) 0.000 0.000
+N1 0.013(3) 0.018(5) 0.09(2) 0.000 -0.007(6) 0.000
+C1 0.019(4) 0.034(8) 0.04(3) 0.000 -0.002(7) 0.000
+C2 0.026(3) 0.025(5) 0.032(18) 0.010(3) 0.006(4) 0.001(3)
+O1W 0.026(5) 0.045(8) 0.02(2) 0.000 0.000 0.000
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N N 0.0061 0.0033 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Br Br -0.2901 2.4595 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+C2 N1 C2 110.8(12) 7_565 .
+C2 N1 C1 110.4(8) 7_565 .
+C2 N1 C1 110.4(8) . .
+C2 N1 H1N 108.4 7_565 .
+C2 N1 H1N 108.4 . .
+C1 N1 H1N 108.4 . .
+N1 C1 C1 109.0(5) . 2
+N1 C1 H1A 109.9 . .
+C1 C1 H1A 109.9 2 .
+N1 C1 H1B 109.9 . .
+C1 C1 H1B 109.9 2 .
+H1A C1 H1B 108.3 . .
+N1 C2 C2 108.1(4) . 8_655
+N1 C2 H2A 110.1 . .
+C2 C2 H2A 110.1 8_655 .
+N1 C2 H2B 110.1 . .
+C2 C2 H2B 110.1 8_655 .
+H2A C2 H2B 108.4 . .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+N1 C2 1.485(11) 7_565
+N1 C2 1.485(11) .
+N1 C1 1.49(2) .
+N1 H1N 0.9100 .
+C1 C1 1.513(18) 2
+C1 H1A 0.9700 .
+C1 H1B 0.9700 .
+C2 C2 1.563(13) 8_655
+C2 H2A 0.9700 .
+C2 H2B 0.9700 .
+O1W H1W 0.950(11) .

@@ -1,0 +1,66 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/36/1523681.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1523681
+loop_
+_publ_author_name
+'Giessen, B.C.'
+'Jaehnigen, U.'
+'Grant, N.J.'
+_publ_section_title
+;
+ Ordered AB and AB3 phases in T6-T9 alloy systems and a modified Mo-Ir
+ phase diagram
+;
+_journal_name_full               'Journal of the Less-Common Metals'
+_journal_page_first              147
+_journal_page_last               150
+_journal_volume                  10
+_journal_year                    1966
+_chemical_formula_sum            'Ir W'
+_space_group_IT_number           51
+_symmetry_space_group_name_Hall  '-P 2a 2a'
+_symmetry_space_group_name_H-M   'P m m a'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   4.452
+_cell_length_b                   2.76
+_cell_length_c                   4.811
+_cell_volume                     59.115
+_citation_journal_id_ASTM        JCOMAH
+_cod_data_source_file            Giessen_JCOMAH_1966_843.cif
+_cod_data_source_block           Ir1W1
+_cod_original_cell_volume        59.11526
+_cod_original_formula_sum        'Ir1 W1'
+_cod_database_code               1523681
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x+1/2,-y,z
+x+1/2,-y,-z
+-x,y,-z
+-x,-y,-z
+x-1/2,y,-z
+-x-1/2,y,z
+x,-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ir1 Ir 0.25 0.5 0.667 1 0.0
+W1 W 0.25 0 0.167 1 0.0

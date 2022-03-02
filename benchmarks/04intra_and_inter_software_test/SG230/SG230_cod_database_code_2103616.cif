@@ -1,0 +1,326 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-14 06:40:26 +0200 (Sun, 14 Feb 2016) $
+#$Revision: 176432 $
+#$URL: svn://www.crystallography.net/cod/cif/2/10/36/2103616.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2103616
+loop_
+_publ_author_name
+'Etschmann, Barbara'
+'Streltsov, Victor'
+'Ishizawa, Nobuo'
+'Maslen, E. N.'
+_publ_section_title
+;
+ Synchrotron X-ray study of Er~3~Al~5~O~12~ and Yb~3~Al~5~O~12~ garnets
+;
+_journal_issue                   2
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              136
+_journal_page_last               141
+_journal_paper_doi               10.1107/S0108768100019923
+_journal_volume                  57
+_journal_year                    2001
+_chemical_formula_moiety         'Al5 Er3 O12'
+_chemical_formula_sum            'Al5 Er3 O12'
+_chemical_formula_weight         828.68
+_space_group_IT_number           230
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_Hall  '-I 4bd 2c 3'
+_symmetry_space_group_name_H-M   'I a -3 d'
+_cell_angle_alpha                90.000
+_cell_angle_beta                 90.000
+_cell_angle_gamma                90.000
+_cell_formula_units_Z            8
+_cell_length_a                   11.9928(2)
+_cell_length_b                   11.9928(2)
+_cell_length_c                   11.9928(2)
+_cell_measurement_reflns_used    14
+_cell_measurement_temperature    293
+_cell_measurement_theta_max      81.060
+_cell_measurement_theta_min      77.420
+_cell_volume                     1724.89(5)
+_computing_data_reduction        'xtal DIFDAT ADDREF SORTRF ABSORB'
+_computing_molecular_graphics    xtal
+_computing_publication_material  'xtal BONDLA CIFIO'
+_computing_structure_refinement  'xtal CRYLSQ'
+_computing_structure_solution    xtal
+_diffrn_ambient_temperature      293
+_diffrn_measurement_device_type  BL14A_diffractometer
+_diffrn_measurement_method       \w/2\q
+_diffrn_radiation_monochromator  Si(111)
+_diffrn_radiation_source         synchrotron
+_diffrn_radiation_type           synchrotron
+_diffrn_radiation_wavelength     .7500(2)
+_diffrn_reflns_av_R_equivalents  .09
+_diffrn_reflns_av_sigmaI/netI    .026
+_diffrn_reflns_limit_h_max       26
+_diffrn_reflns_limit_h_min       -26
+_diffrn_reflns_limit_k_max       26
+_diffrn_reflns_limit_k_min       -26
+_diffrn_reflns_limit_l_max       26
+_diffrn_reflns_limit_l_min       -26
+_diffrn_reflns_number            38377
+_diffrn_reflns_theta_max         57.41
+_diffrn_reflns_theta_min         4.39
+_diffrn_standards_decay_%        1
+_diffrn_standards_interval_count 94
+_diffrn_standards_number         6
+_exptl_absorpt_coefficient_mu    32.72
+_exptl_absorpt_correction_T_max  .66
+_exptl_absorpt_correction_T_min  .41
+_exptl_absorpt_correction_type   'analytical (Alcock, 1974)'
+_exptl_absorpt_process_details   'Alcock (1974)'
+_exptl_crystal_colour            light_red
+_exptl_crystal_density_diffrn    6.382
+_exptl_crystal_description       'rectangular plate'
+_exptl_crystal_F_000             2920
+_exptl_crystal_size_max          .021
+_exptl_crystal_size_mid          .020
+_exptl_crystal_size_min          .013
+_refine_diff_density_max         2.1
+_refine_diff_density_min         -4.8
+_refine_ls_extinction_coef       0.35(7)x10^4^
+_refine_ls_extinction_method     Zachariasen
+_refine_ls_goodness_of_fit_all   3.097
+_refine_ls_goodness_of_fit_ref   3.097
+_refine_ls_matrix_type           full
+_refine_ls_number_constraints    0
+_refine_ls_number_parameters     16
+_refine_ls_number_reflns         866
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          .022
+_refine_ls_R_factor_gt           .022
+_refine_ls_shift/su_max          .001
+_refine_ls_shift/su_mean         0
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_all         .028
+_refine_ls_wR_factor_ref         .028
+_reflns_number_gt                866
+_reflns_number_total             866
+_reflns_threshold_expression     F>3\s(F)
+_cod_data_source_file            os0064.cif
+_cod_data_source_block           Er3Al5O12
+_cod_original_cell_volume        1724.89(9)
+_cod_original_sg_symbol_Hall     '-I 4bd 2ab 3'
+_cod_database_code               2103616
+_cod_database_fobs_code          2103616
+loop_
+_symmetry_equiv_pos_as_xyz
++x,+y,+z
++x,-y,1/2-z
+1/2-x,-y,1/2+z
+1/2-x,+y,-z
+1/4-y,3/4+x,1/4+z
+1/4+y,3/4+x,3/4-z
+1/4+y,1/4-x,3/4+z
+1/4-y,1/4-x,1/4-z
++y,+z,+x
+1/2-y,-z,1/2+x
++y,-z,1/2-x
+1/2-y,+z,-x
+1/4-z,3/4+y,1/4+x
+1/4-z,1/4-y,1/4-x
+1/4+z,1/4-y,3/4+x
+1/4+z,3/4+y,3/4-x
++z,+x,+y
+-z,1/2+x,1/2-y
+-z,1/2-x,+y
++z,-x,1/2-y
+1/4-x,1/4-z,1/4-y
+1/4-x,3/4+z,1/4+y
+3/4+x,3/4-z,1/4+y
+1/4+x,3/4+z,3/4-y
+-x,-y,-z
+-x,+y,1/2+z
+1/2+x,+y,1/2-z
+1/2+x,-y,+z
+3/4+y,1/4-x,3/4-z
+3/4-y,1/4-x,1/4+z
+3/4-y,3/4+x,1/4-z
+3/4+y,3/4+x,3/4+z
+-y,-z,-x
+1/2+y,+z,1/2-x
+-y,+z,1/2+x
+1/2+y,-z,+x
+3/4+z,1/4-y,3/4-x
+3/4+z,3/4+y,3/4+x
+3/4-z,3/4+y,1/4-x
+3/4-z,1/4-y,1/4+x
+-z,-x,-y
++z,1/2-x,1/2+y
++z,1/2+x,-y
+-z,+x,1/2+y
+3/4+x,3/4+z,3/4+y
+3/4+x,1/4-z,3/4-y
+1/4-x,1/4+z,3/4-y
+3/4-x,1/4-z,1/4+y
+1/2+x,1/2+y,1/2+z
+1/2+x,1/2-y,-z
+-x,1/2-y,+z
+-x,1/2+y,1/2-z
+3/4-y,1/4+x,3/4+z
+3/4+y,1/4+x,1/4-z
+3/4+y,3/4-x,1/4+z
+3/4-y,3/4-x,3/4-z
+1/2+y,1/2+z,1/2+x
+-y,1/2-z,+x
+1/2+y,1/2-z,-x
+-y,1/2+z,1/2-x
+3/4-z,1/4+y,3/4+x
+3/4-z,3/4-y,3/4-x
+3/4+z,3/4-y,1/4+x
+3/4+z,1/4+y,1/4-x
+1/2+z,1/2+x,1/2+y
+1/2-z,+x,-y
+1/2-z,-x,1/2+y
+1/2+z,1/2-x,-y
+3/4-x,3/4-z,3/4-y
+3/4-x,1/4+z,3/4+y
+1/4+x,1/4-z,3/4+y
+3/4+x,1/4+z,1/4-y
+1/2-x,1/2-y,1/2-z
+1/2-x,1/2+y,+z
++x,1/2+y,-z
++x,1/2-y,1/2+z
+1/4+y,3/4-x,1/4-z
+1/4-y,3/4-x,3/4+z
+1/4-y,1/4+x,3/4-z
+1/4+y,1/4+x,1/4+z
+1/2-y,1/2-z,1/2-x
++y,1/2+z,-x
+1/2-y,1/2+z,+x
++y,1/2-z,1/2+x
+1/4+z,3/4-y,1/4-x
+1/4+z,1/4+y,1/4+x
+1/4-z,1/4+y,3/4-x
+1/4-z,3/4-y,3/4+x
+1/2-z,1/2-x,1/2-y
+1/2+z,-x,+y
+1/2+z,+x,1/2-y
+1/2-z,1/2+x,+y
+1/4+x,1/4+z,1/4+y
+1/4+x,3/4-z,1/4-y
+3/4-x,3/4+z,1/4-y
+1/4-x,3/4-z,3/4+y
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+Er .12500 .00000 .25000 .00322(3) Uani 1.00000
+Al(1) .00000 .00000 .00000 .00272(18) Uani 1.00000
+Al(2) .37500 .00000 .25000 .0032(2) Uani 1.00000
+O -.03039(6) .05124(7) .14915(6) .00309(19) Uani 1.00000
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Er .00218(3) .00374(2) .00374(2) .00000 .00000 .000811(17)
+Al(1) .00272(18) .00272(18) .00272(18) -.00003(10) -.00003(10) -.00003(10)
+Al(2) .0016(3) .0040(2) .0040(2) .00000 .00000 .00000
+O .00272(18) .0040(2) .00253(19) .00004(14) .00036(14) .00025(14)
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Er -.28772 5.437 'Int. Tables Vol IV Tables 2.2B and 2.3.1'
+Al .043396 .057983 'Int. Tables Vol IV Tables 2.2B and 2.3.1'
+O .01178 .007019 'Int. Tables Vol IV Tables 2.2B and 2.3.1'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+O Er O '22 545' '13 545' 67.76(3) yes
+O Er O '22 545' 21 72.11(3) yes
+O Er O '22 545' 20 73.78(3) yes
+O Er O '22 545' 17 94.96(3) yes
+O Er O '22 545' 2 111.95(3) yes
+O Er O '22 545' 14 124.85(2) yes
+O Er O '22 545' . 158.97(3) yes
+O Er Al(2) '22 545' . 36.054(18) yes
+O Er Al(2) '22 545' 21 143.946(19) yes
+O Er Al(1) '22 545' '5 545' 33.812(18) ?
+O Er Al(1) '22 545' 8 96.186(18) ?
+O Er Al(1) '22 545' 2 97.07(2) ?
+O Er Al(1) '22 545' . 126.87(2) ?
+O Al(1) O 41 33 86.55(3) ?
+O Al(1) O 41 25 86.55(3) yes
+O Al(1) O 41 9 93.45(3) yes
+O Al(1) O 41 . 93.45(3) ?
+O Al(1) O 41 17 180.0000 ?
+O Al(2) O '22 545' 21 100.18(3) yes
+O Al(2) O '22 545' 27 114.30(4) yes
+O Al(2) O '22 545' 28 114.30(4) ?
+O Al(2) Er '22 545' . 50.09(2) yes
+O Al(2) Er '22 545' 27 129.91(2) yes
+O Al(2) Er '22 545' 36 81.11(2) ?
+O Al(2) Er '22 545' 34 132.72(3) ?
+O Al(2) Er '22 545' '7 554' 107.52(3) ?
+O Al(2) Er '22 545' '5 545' 34.43(3) ?
+Al(2) O Al(1) 21 . 130.21(4) yes
+Al(2) O Er 21 . 93.85(3) yes
+Al(2) O Er 21 9 121.25(4) yes
+Al(1) O Er . . 104.43(3) yes
+Al(1) O Er . 9 100.02(3) yes
+Er O Er . 9 101.71(3) yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Er O '22 545' 2.3051(7) ?
+Er O 21 2.3051(7) ?
+Er O 2 2.3051(7) yes
+Er O . 2.3051(7) ?
+Er O '13 545' 2.4287(8) ?
+Er O 20 2.4287(8) ?
+Er O 17 2.4287(8) ?
+Er O 14 2.4287(8) yes
+Er Al(2) 21 2.99820(5) ?
+Er Al(2) . 2.99820(5) yes
+Er Al(1) 8 3.35209(5) ?
+Er Al(1) '5 545' 3.35209(5) ?
+Er Al(1) 2 3.35209(5) ?
+Er Al(1) . 3.35209(5) yes
+Er Er 11 3.67200(10) yes
+Er Er 9 3.67200(10) ?
+Er Er '7 554' 3.67200(10) ?
+Er Er '5 545' 3.67200(10) ?
+Er Al(2) 9 3.67200(10) ?
+Er Al(2) 11 3.67200(10) ?
+Er Al(2) '7 554' 3.67200(10) ?
+Er Al(2) '5 545' 3.67200(10) ?
+Al(1) O 41 1.9261(7) ?
+Al(1) O 33 1.9261(7) ?
+Al(1) O 25 1.9261(7) yes
+Al(1) O 17 1.9261(7) ?
+Al(1) O 9 1.9261(7) ?
+Al(1) O . 1.9261(7) ?
+Al(2) O '22 545' 1.7686(7) ?
+Al(2) O 27 1.7686(7) ?
+Al(2) O 21 1.7686(7) ?
+Al(2) O 28 1.7686(7) yes

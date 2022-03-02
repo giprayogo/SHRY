@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """Some helper functions related to testing."""
 
 import glob

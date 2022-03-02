@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Zn8H64At2.25C16Ts1Br12N16F0.75
-_symmetry_space_group_name_H-M   Ima2
+_symmetry_space_group_name_H-M  'I m a 2'
 _cell_length_a   19.27000000
 _cell_length_b   7.21110000
 _cell_length_c   10.02500000

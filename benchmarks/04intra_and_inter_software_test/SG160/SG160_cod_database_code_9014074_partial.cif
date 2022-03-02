@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_Ba1Hf0.5Rf0.5Po1Lv1.5Se0.5
+_symmetry_space_group_name_H-M  'R 3 m :R'
+_cell_length_a   4.00430000
+_cell_length_b   4.00430000
+_cell_length_c   4.00430000
+_cell_angle_alpha   89.85500000
+_cell_angle_beta   89.85500000
+_cell_angle_gamma   89.85500000
+_symmetry_Int_Tables_number   160
+_chemical_formula_structural   Ba1Hf0.5Rf0.5Po1Lv1.5Se0.5
+_chemical_formula_sum   'Ba1 Hf0.5 Rf0.5 Po1 Lv1.5 Se0.5'
+_cell_volume   64.20600617
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, z, x'
+  3  'z, x, y'
+  4  'x, z, y'
+  5  'y, x, z'
+  6  'z, y, x'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.00000000  0.00000000  0.00000000  1
+  Hf+  Hf1  1  0.48700000  0.48700000  0.48700000  0.5
+  Rf+  Rf2  1  0.48700000  0.48700000  0.48700000  0.5
+  Po+  Po3  3  0.01890000  0.50920000  0.50920000
+  0.3333333333333333
+  Lv+  Lv4  3  0.01890000  0.50920000  0.50920000  0.5
+  Se+  Se5  3  0.01890000  0.50920000  0.50920000
+  0.16666666666666666

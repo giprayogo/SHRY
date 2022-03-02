@@ -1,0 +1,303 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-20 05:06:23 +0200 (Sat, 20 Feb 2016) $
+#$Revision: 176774 $
+#$URL: svn://www.crystallography.net/cod/cif/2/20/20/2202040.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2202040
+loop_
+_publ_author_name
+'Kuratieva, Natalia V.'
+'Naumova, Marina I.'
+'Naumov, Dmitry Yu.'
+'Podberezskaya, Nina V.'
+_publ_section_title
+;
+ A new polymorph of hexaaquamagnesium(II) bis(hypophosphite)
+;
+_journal_issue                   6
+_journal_name_full               'Acta Crystallographica Section E'
+_journal_page_first              i89
+_journal_page_last               i91
+_journal_paper_doi               10.1107/S160053680300758X
+_journal_volume                  59
+_journal_year                    2003
+_chemical_formula_moiety         'H12 Mg O6, 2(H2 O2 P)'
+_chemical_formula_structural     'Mg (H2 O)6 (H2 P O2)2'
+_chemical_formula_sum            'H16 Mg O10 P2'
+_chemical_formula_weight         262.38
+_chemical_name_common            'hexaaquamagnesium(II) bis(hypophosphite)'
+_chemical_name_systematic
+;
+hexaaquamagnesium(II) bis(hypophosphite)
+;
+_space_group_IT_number           137
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  '-P 4ac 2a'
+_symmetry_space_group_name_H-M   'P 42/n m c :2'
+_atom_sites_solution_hydrogens   difmap
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            2
+_cell_length_a                   7.2187(9)
+_cell_length_b                   7.2187(9)
+_cell_length_c                   10.4639(13)
+_cell_measurement_reflns_used    22
+_cell_measurement_temperature    295(2)
+_cell_measurement_theta_max      14.85
+_cell_measurement_theta_min      11.74
+_cell_volume                     545.27(12)
+_computing_cell_refinement       'CD4CA0 (Enraf-Nonius, 1989)'
+_computing_data_collection       'CD4CA0 (Enraf-Nonius, 1989)'
+_computing_data_reduction        'CD4CA0 (Enraf-Nonius, 1989)'
+_computing_molecular_graphics    'ORTEPIII (Burnett & Johnson, 1996)'
+_computing_publication_material  'SHELXL97 (Sheldrick, 1997)'
+_computing_structure_refinement  'SHELXL97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS97 (Sheldrick, 1997)'
+_diffrn_ambient_temperature      295(2)
+_diffrn_measured_fraction_theta_full 1.000
+_diffrn_measured_fraction_theta_max 1.000
+_diffrn_measurement_device_type  'Enraf-Nonius CAD4'
+_diffrn_measurement_method       2\q/\q
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0377
+_diffrn_reflns_av_sigmaI/netI    0.0591
+_diffrn_reflns_limit_h_max       9
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       9
+_diffrn_reflns_limit_k_min       0
+_diffrn_reflns_limit_l_max       14
+_diffrn_reflns_limit_l_min       0
+_diffrn_reflns_number            809
+_diffrn_reflns_theta_full        29.10
+_diffrn_reflns_theta_max         29.10
+_diffrn_reflns_theta_min         3.43
+_diffrn_standards_decay_%        0
+_diffrn_standards_interval_time  60
+_diffrn_standards_number         3
+_exptl_absorpt_coefficient_mu    0.484
+_exptl_absorpt_correction_T_max  0.925
+_exptl_absorpt_correction_T_min  0.904
+_exptl_absorpt_correction_type   empirical
+_exptl_absorpt_process_details   'CADDAT (Enraf-Nonius, 1989)'
+_exptl_crystal_colour            colorless
+_exptl_crystal_density_diffrn    1.598
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       prism
+_exptl_crystal_F_000             276
+_exptl_crystal_size_max          0.24
+_exptl_crystal_size_mid          0.20
+_exptl_crystal_size_min          0.16
+_refine_diff_density_max         0.179
+_refine_diff_density_min         -0.202
+_refine_ls_extinction_coef       0.016(2)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL97
+_refine_ls_goodness_of_fit_ref   0.739
+_refine_ls_hydrogen_treatment    refall
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     33
+_refine_ls_number_reflns         427
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      0.739
+_refine_ls_R_factor_all          0.0677
+_refine_ls_R_factor_gt           0.0209
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w = 1/[\s^2^(Fo^2^)+(0.0118P)^2^] where P = (Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0379
+_refine_ls_wR_factor_ref         0.0481
+_reflns_number_gt                238
+_reflns_number_total             427
+_reflns_threshold_expression     I>2\s(I)
+_cod_data_source_file            mg6022.cif
+_cod_data_source_block           I
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+'_geom_bond_publ_flag' value 'No' changed to 'no' according to
+'/home/saulius/struct/CIF-dictionaries/cif_core.dic' dictionary named
+'cif_core.dic' version 2.4.1 from 2010-06-29 (8
+times).
+
+'_geom_bond_publ_flag' value 'Yes' changed to 'yes' according to
+'/home/saulius/struct/CIF-dictionaries/cif_core.dic' dictionary named
+'cif_core.dic' version 2.4.1 from 2010-06-29 (4 times).
+
+Automatic conversion script
+Id: cif_fix_enum 1527 2010-12-29 10:47:43Z saulius 
+
+The following automatic conversions were performed:
+
+'_geom_bond_publ_flag' value 'No' changed to 'no' according to
+/home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary named
+'cif_core.dic' version 2.4.1 from 2010-06-29 (8
+times).
+
+'_geom_bond_publ_flag' value 'Yes' changed to 'yes'
+according to /home/saulius/struct/CIF-dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.1 from 2010-06-29 (4
+times).
+
+'_geom_angle_publ_flag' value 'Yes' changed to 'yes'
+according to /home/saulius/struct/CIF-dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.1 from 2010-06-29 (6
+times).
+
+'_geom_angle_publ_flag' value 'No' changed to 'no' according
+to /home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary
+named 'cif_core.dic' version 2.4.1 from 2010-06-29 (16
+times).
+
+'_geom_hbond_publ_flag' value 'Yes' changed to 'yes'
+according to /home/saulius/struct/CIF-dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.1 from 2010-06-29 (2
+times).
+
+Automatic conversion script
+Id: cif_fix_values 1715 2011-07-08 13:25:40Z adriana 
+;
+_cod_original_sg_symbol_H-M      'P 42/n m c'
+_cod_database_code               2202040
+_cod_database_fobs_code          2202040
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y+1/2, z'
+'-y+1/2, x, z+1/2'
+'y, -x+1/2, z+1/2'
+'-x, y+1/2, -z'
+'x+1/2, -y, -z'
+'y+1/2, x+1/2, -z+1/2'
+'-y, -x, -z+1/2'
+'-x, -y, -z'
+'x-1/2, y-1/2, -z'
+'y-1/2, -x, -z-1/2'
+'-y, x-1/2, -z-1/2'
+'x, -y-1/2, z'
+'-x-1/2, y, z'
+'-y-1/2, -x-1/2, z-1/2'
+'y, x, z-1/2'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_occupancy
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+_atom_site_type_symbol
+Mg1 0.2500 0.7500 0.2500 0.0319(4) Uani d S 1 . . Mg
+P1 0.2500 0.2500 0.50851(9) 0.0335(3) Uani d S 1 . . P
+H1 0.101(3) 0.2500 0.4297(17) 0.012(5) Uiso d S 1 . . H
+O1 0.2500 0.4273(2) 0.58483(15) 0.0368(5) Uani d S 1 . . O
+O1W 0.2500 0.7500 0.0549(3) 0.0496(8) Uani d S 1 . . O
+H1W 0.342(4) 0.7500 0.011(2) 0.076(13) Uiso d S 1 . . H
+O2W 0.04819(19) 0.54819(19) 0.2500 0.0474(5) Uani d S 1 . . O
+H2W 0.048(3) 0.465(2) 0.2047(14) 0.045(6) Uiso d . 1 . . H
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Mg1 0.0335(6) 0.0335(6) 0.0285(8) 0.000 0.000 0.000
+P1 0.0428(8) 0.0298(7) 0.0280(5) 0.000 0.000 0.000
+O1 0.0442(11) 0.0312(11) 0.0351(9) 0.000 0.000 -0.0021(9)
+O1W 0.0288(18) 0.090(3) 0.0302(14) 0.000 0.000 0.000
+O2W 0.0464(8) 0.0464(8) 0.0496(12) -0.0126(10) 0.0179(9) -0.0179(9)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Mg Mg 0.0486 0.0363 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+P P 0.1023 0.0942 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+O1W Mg1 O1W 11_566 . 180.0 yes
+O1W Mg1 O2W 11_566 . 90.0 no
+O1W Mg1 O2W . . 90.0 yes
+O1W Mg1 O2W 11_566 2_565 90.0 no
+O1W Mg1 O2W . 2_565 90.0 no
+O2W Mg1 O2W . 2_565 180.0 yes
+O1W Mg1 O2W 11_566 12_666 90.0 no
+O1W Mg1 O2W . 12_666 90.0 no
+O2W Mg1 O2W . 12_666 90.0 no
+O2W Mg1 O2W 2_565 12_666 90.0 no
+O1W Mg1 O2W 11_566 11_566 90.0 no
+O1W Mg1 O2W . 11_566 90.0 ?
+O2W Mg1 O2W . 11_566 90.0 yes
+O2W Mg1 O2W 2_565 11_566 90.0 no
+O2W Mg1 O2W 12_666 11_566 180.0 no
+H1 P1 O1 2 . 108.8(3) no
+H1 P1 O1 2 2 108.8(3) no
+O1 P1 O1 . 2 116.08(14) yes
+H1 P1 H1 2 . 105.2(15) yes
+O1 P1 H1 . . 108.8(3) no
+O1 P1 H1 2 . 108.8(3) no
+Mg1 O1W H1W . . 124(2) no
+Mg1 O2W H2W . . 123.7(15) no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Mg1 O1W 11_566 2.042(3) no
+Mg1 O1W . 2.042(3) yes
+Mg1 O2W . 2.060(2) yes
+Mg1 O2W 2_565 2.060(2) no
+Mg1 O2W 12_666 2.060(2) no
+Mg1 O2W 11_566 2.060(2) no
+P1 H1 2 1.36(2) no
+P1 O1 . 1.5088(18) yes
+P1 O1 2 1.5088(18) no
+P1 H1 . 1.356(19) yes
+O1W H1W . 0.81(2) no
+O2W H2W . 0.762(14) no
+loop_
+_geom_hbond_atom_site_label_D
+_geom_hbond_atom_site_label_H
+_geom_hbond_atom_site_label_A
+_geom_hbond_site_symmetry_A
+_geom_hbond_distance_DH
+_geom_hbond_distance_HA
+_geom_hbond_distance_DA
+_geom_hbond_angle_DHA
+_geom_hbond_publ_flag
+O1W H1W O1 12_666 0.81(2) 1.94(2) 2.750(2) 177(3) yes
+O2W H2W O1 3_554 0.762(14) 2.006(14) 2.7662(14) 175(2) yes

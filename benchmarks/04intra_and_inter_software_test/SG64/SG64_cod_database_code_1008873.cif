@@ -1,0 +1,110 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-01-27 21:58:39 +0200 (Tue, 27 Jan 2015) $
+#$Revision: 130149 $
+#$URL: svn://www.crystallography.net/cod/cif/1/00/88/1008873.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1008873
+loop_
+_publ_author_name
+'Eisenmann, B'
+'Klein, J'
+_publ_section_title
+;
+Dimere Zintl-Anionen (Sn2 As6)10- und (Sn2 Sb6)10- in Alkaliverbindungen
+;
+_journal_coden_ASTM              ZEKRDZ
+_journal_name_full
+;
+Zeitschrift fuer Kristallographie (149,1979-)
+;
+_journal_page_first              213
+_journal_page_last               229
+_journal_volume                  196
+_journal_year                    1991
+_chemical_formula_structural     'Na4 K6 (As2 (Sn As2)2)'
+_chemical_formula_sum            'As6 K6 Na4 Sn2'
+_chemical_name_systematic
+;
+Tetrasodium hexapotassium di-$-mue-arsenido-bis(diarsenidostannate)
+;
+_space_group_IT_number           64
+_symmetry_cell_setting           orthorhombic
+_symmetry_Int_Tables_number      64
+_symmetry_space_group_name_Hall  '-C 2ac 2'
+_symmetry_space_group_name_H-M   'C m c a'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   20.435(9)
+_cell_length_b                   6.820(3)
+_cell_length_c                   15.351(5)
+_cell_volume                     2139.4
+_exptl_crystal_density_meas      3.15
+_refine_ls_R_factor_all          0.072
+_cod_database_code               1008873
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x,-y,-z
+x,1/2-y,1/2+z
+x,1/2+y,1/2-z
+-x,-y,-z
+-x,y,z
+-x,1/2+y,1/2-z
+-x,1/2-y,1/2+z
+1/2+x,1/2+y,z
+1/2+x,1/2-y,-z
+1/2+x,-y,1/2+z
+1/2+x,y,1/2-z
+1/2-x,1/2-y,-z
+1/2-x,1/2+y,z
+1/2-x,y,1/2-z
+1/2-x,-y,1/2+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_22
+_atom_site_aniso_U_23
+_atom_site_aniso_U_33
+Sn1 0.0103(3) 0. 0. 0.0104(3) 0.0002(3) 0.0107(3)
+As1 0.0123(5) 0. 0. 0.0142(5) -0.0025(4) 0.0151(5)
+As2 0.0146(3) -0.0010(3) 0.0018(3) 0.0144(4) 0.0025(3) 0.0145(3)
+Na1 0.0241(24) 0. 0. 0.0137(20) 0.0004(20) 0.0249(23)
+Na2 0.0217(23) 0. 0. 0.0256(25) -0.0045(21) 0.0231(23)
+K1 0.0250(13) 0. 0. 0.0381(17) 0.0061(13) 0.0301(15)
+K2 0.0392(11) 0.002(1) -0.0018(8) 0.0293(10) 0.0026(8) 0.0231(9)
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Sn1 Sn4+ 8 d 0.4117 0. 0. 1. 0 d
+As1 As3- 8 f 0. 0.2036(2) 0.5949(1) 1. 0 d
+As2 As3- 16 g 0.3419 0.2786(1) 0.6057(1) 1. 0 d
+Na1 Na1+ 8 d 0.0808(3) 0. 0. 1. 0 d
+Na2 Na1+ 8 d 0.2446(3) 0. 0. 1. 0 d
+K1 K1+ 8 f 0. 0.2604(5) 0.3203(2) 1. 0 d
+K2 K1+ 16 g 0.6660(1) 0.7307(3) 0.1758(1) 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Sn4+ 4.000
+As3- -3.000
+Na1+ 1.000
+K1+ 1.000

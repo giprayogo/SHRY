@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_K12Na6Al2Bi2.0Mc2.0Sb1.5As0.5P1.5N0.5
-_symmetry_space_group_name_H-M   P6_3/mmc
+_symmetry_space_group_name_H-M  'P 63/m m c'
 _cell_length_a   10.16800000
 _cell_length_b   10.16800000
 _cell_length_c   10.52700000

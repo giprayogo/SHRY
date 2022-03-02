@@ -1,0 +1,72 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/7/22/26/7222662.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7222662
+loop_
+_publ_author_name
+'Eisenmann, B.'
+'Schaefer, H.'
+_publ_section_title
+;
+ Zintlphasen mit binaeren Anionen: Zur Kenntnis von Ba Ge2 P2 und Ba Ge2
+ As2
+;
+_journal_name_full
+;
+Zeitschrift fuer Naturforschung, Teil B. Anorganische Chemie, Organische 
+Chemie (33,1978-41,1986)
+;
+_journal_page_first              415
+_journal_page_last               419
+_journal_volume                  36
+_journal_year                    1981
+_chemical_formula_sum            'Ba Ge2 P2'
+_space_group_IT_number           105
+_symmetry_space_group_name_Hall  'P 4c -2'
+_symmetry_space_group_name_H-M   'P 42 m c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   7.618
+_cell_length_b                   7.618
+_cell_length_c                   8.5
+_cell_volume                     493.288
+_citation_journal_id_ASTM        ZNBAD2
+_cod_data_source_file            Eisenmann_ZNBAD2_1981_1316.cif
+_cod_data_source_block           Ba1Ge2P2
+_cod_original_cell_volume        493.2884
+_cod_original_formula_sum        'Ba1 Ge2 P2'
+_cod_database_code               7222662
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x,z+1/2
+-x,-y,z
+y,-x,z+1/2
+-x,y,z
+-y,-x,z+1/2
+x,-y,z
+y,x,z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ge1 Ge+2 0.3318 0.5 0.8655 1 0.0
+Ba2 Ba+2 0.5 0 0.0276 1 0.0
+Ba1 Ba+2 0 0 0 1 0.0
+P1 P-3 0.2315 0.2488 0.2564 1 0.0
+Ge2 Ge+2 0.5 0.1656 0.6141 1 0.0

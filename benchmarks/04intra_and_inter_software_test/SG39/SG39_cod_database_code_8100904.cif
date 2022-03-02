@@ -1,0 +1,136 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-01-27 21:58:39 +0200 (Tue, 27 Jan 2015) $
+#$Revision: 130149 $
+#$URL: svn://www.crystallography.net/cod/cif/8/10/09/8100904.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8100904
+loop_
+_publ_author_name
+'Rademacher, O.'
+'G\"obel, H.'
+'Ruck, M.'
+'Oppermann, H.'
+_publ_section_title
+;
+Crystal structure of dibismuth selenium pentoxide, Bi~2~SeO~5~
+;
+_journal_issue                   1
+_journal_name_full
+'Zeitschrift f\"ur Kristallographie - New Crystal Structures'
+_journal_page_first              29
+_journal_page_last               30
+_journal_volume                  216
+_journal_year                    2001
+_chemical_formula_structural     'Bi2 O5 Se'
+_chemical_formula_sum            'Bi2 O5 Se'
+_chemical_formula_weight         576.92
+_chemical_melting_point          1198
+_space_group_IT_number           39
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  'A 2 -2b'
+_symmetry_space_group_name_H-M   'A b m 2'
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            8
+_cell_length_a                   11.425(2)
+_cell_length_b                   16.244(3)
+_cell_length_c                   5.487(2)
+_cell_measurement_temperature    293(2)
+_cell_volume                     1018.3(5)
+_diffrn_ambient_temperature      293(2)
+_exptl_crystal_density_diffrn    7.526
+_cod_database_code               8100904
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y, z'
+'-x, y+1/2, z'
+'x, -y+1/2, z'
+'x, y+1/2, z+1/2'
+'-x, -y+1/2, z+1/2'
+'-x, y+1, z+1/2'
+'x, -y+1, z+1/2'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Bi1 Bi 0.38938(5) 0.08543(3) 0.50902(16) 0.0128(2) Uani 1 8 d d . . .
+Bi2 Bi 0.12332(5) 0.2500 0.50594(19) 0.0137(3) Uani 1 4 c d S . .
+Bi3 Bi 0.37888(6) 0.2500 0.9701(2) 0.0127(4) Uani 1 4 c d S . .
+Se1 Se 0.14184(15) 0.08666(7) 0.0157(7) 0.0120(4) Uani 1 8 d d . . .
+O1 O 0.2688(9) 0.0565(7) 0.890(2) 0.029(3) Uani 1 8 d d . . .
+O2 O 0.5000 0.0000 0.719(3) 0.018(3) Uani 1 4 b d S . .
+O3 O 0.0809(11) 0.1487(7) 0.804(3) 0.036(3) Uani 1 8 d d . . .
+O4 O 0.2973(12) 0.2500 0.607(3) 0.026(3) Uani 1 4 c d S . .
+O5 O 0.4877(8) 0.1619(4) 0.781(2) 0.013(2) Uani 1 8 d d . . .
+O6 O 0.1954(10) 0.1550(7) 0.223(3) 0.034(3) Uani 1 8 d d . . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Bi1 0.0126(3) 0.0123(3) 0.0134(5) 0.0022(3) -0.0004(5) -0.00128(15)
+Bi2 0.0092(3) 0.0176(3) 0.0143(7) 0.000 -0.0032(5) 0.000
+Bi3 0.0101(4) 0.0115(3) 0.0165(10) 0.000 0.0017(3) 0.000
+Se1 0.0119(5) 0.0104(6) 0.0138(11) 0.0006(6) 0.0028(12) 0.0001(4)
+O1 0.032(6) 0.035(5) 0.021(7) 0.007(5) 0.014(5) 0.013(5)
+O2 0.017(6) 0.012(5) 0.026(10) 0.000 0.000 0.001(6)
+O3 0.034(6) 0.034(6) 0.039(9) 0.027(6) 0.000(6) 0.001(5)
+O4 0.023(8) 0.033(7) 0.023(9) 0.000 -0.006(6) 0.000
+O5 0.016(5) 0.013(4) 0.011(5) -0.003(4) -0.004(4) 0.003(4)
+O6 0.026(6) 0.047(7) 0.030(8) -0.013(5) 0.003(6) -0.003(5)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Bi1 O2 2.201(9) . ?
+Bi1 O5 2.253(9) 7_644 ?
+Bi1 O5 2.243(10) . ?
+Bi1 O2 2.462(11) 7_644 ?
+Bi1 O1 2.548(11) . ?
+Bi1 Bi3 3.6826(14) . ?
+Bi2 O4 2.064(14) . ?
+Bi2 O6 2.338(12) 4 ?
+Bi2 O6 2.338(12) . ?
+Bi2 O3 2.370(12) . ?
+Bi2 O3 2.370(12) 4 ?
+Bi3 O5 2.161(9) 4 ?
+Bi3 O5 2.161(9) . ?
+Bi3 O4 2.197(16) . ?
+Bi3 O5 2.700(10) 6_655 ?
+Bi3 O5 2.700(10) 7_645 ?
+Bi3 Bi1 3.6826(14) 4 ?
+Se1 O3 1.688(13) 1_554 ?
+Se1 O1 1.679(10) 1_554 ?
+Se1 O6 1.704(13) . ?
+O1 Se1 1.679(10) 1_556 ?
+O2 Bi1 2.201(9) 2_655 ?
+O2 Bi1 2.462(11) 7_645 ?
+O2 Bi1 2.462(11) 8_545 ?
+O3 Se1 1.688(13) 1_556 ?
+O5 Bi1 2.253(9) 7_645 ?
+O5 Bi3 2.700(10) 6_654 ?

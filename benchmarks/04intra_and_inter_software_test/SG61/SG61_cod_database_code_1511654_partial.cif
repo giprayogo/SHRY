@@ -1,0 +1,57 @@
+# generated using pymatgen
+data_Co8Po2B32Te4O49Lv
+_symmetry_space_group_name_H-M  'P b c a'
+_cell_length_a   8.11890000
+_cell_length_b   8.62100000
+_cell_length_c   13.73700000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   61
+_chemical_formula_structural   Co8Po2B32Te4O49Lv
+_chemical_formula_sum   'Co8 Po2 B32 Te4 O49 Lv1'
+_cell_volume   961.49434790
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z'
+  6  '-x+1/2, y+1/2, z'
+  7  '-x, y+1/2, -z+1/2'
+  8  'x, -y+1/2, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Co0+  0.0
+  Po0+  0.0
+  B0+  0.0
+  Te0+  0.0
+  O0+  0.0
+  Lv0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Co0+  Co0  8  0.11080000  0.11890000  0.11800000  1.0
+  B0+  B1  8  0.02790000  0.92170000  0.66640000  1.0
+  B0+  B2  8  0.03150000  0.15440000  0.76880000  1.0
+  B0+  B3  8  0.07820000  0.70210000  0.56310000  1.0
+  B0+  B4  8  0.17010000  0.13670000  0.46230000  1.0
+  O0+  O5  8  0.18070000  0.60810000  0.50350000  0.75
+  Po0+  Po6  8  0.18070000  0.60810000  0.50350000  0.25
+  O0+  O7  8  0.02090000  0.18850000  0.24930000  1.0
+  O0+  O8  8  0.06940000  0.24390000  0.99580000  0.375
+  Te0+  Te9  8  0.06940000  0.24390000  0.99580000  0.5
+  Lv0+  Lv10  8  0.06940000  0.24390000  0.99580000  0.125
+  O0+  O11  8  0.02320000  0.59650000  0.64390000  1.0
+  O0+  O12  8  0.09880000  0.06210000  0.70070000  1.0
+  O0+  O13  8  0.12270000  0.04860000  0.38660000  1.0
+  O0+  O14  8  0.14900000  0.66110000  0.10680000  1.0

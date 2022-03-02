@@ -1,0 +1,97 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/52/45/1524537.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1524537
+loop_
+_publ_author_name
+'Herbst, J.F.'
+'Croat, J.J.'
+'Lee, R.W.'
+'Yelon, W.B.'
+_publ_section_title
+;
+ Neutron diffraction studies of Nd2 (Cox Fe1-x)17 alloys: Preferential
+ site occupation and magnetic structure
+;
+_journal_name_full               'Journal of Applied Physics'
+_journal_page_first              250
+_journal_page_last               256
+_journal_volume                  53
+_journal_year                    1982
+_chemical_formula_sum            'Co17 Nd2'
+_space_group_IT_number           166
+_symmetry_space_group_name_Hall  '-R 3 2"'
+_symmetry_space_group_name_H-M   'R -3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   8.398
+_cell_length_b                   8.398
+_cell_length_c                   12.218
+_cell_volume                     746.247
+_citation_journal_id_ASTM        JAPIAU
+_cod_data_source_file            Herbst_JAPIAU_1982_1136.cif
+_cod_data_source_block           Co17Nd2
+_cod_original_cell_volume        746.2468
+_cod_database_code               1524537
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+y,x,-z
+-x,-x+y,-z
+x-y,-y,-z
+-x,-y,-z
+y,-x+y,-z
+x-y,x,-z
+-y,-x,z
+x,x-y,z
+-x+y,y,z
+x+2/3,y+1/3,z+1/3
+-y+2/3,x-y+1/3,z+1/3
+-x+y+2/3,-x+1/3,z+1/3
+y+2/3,x+1/3,-z+1/3
+-x+2/3,-x+y+1/3,-z+1/3
+x-y+2/3,-y+1/3,-z+1/3
+-x+2/3,-y+1/3,-z+1/3
+y+2/3,-x+y+1/3,-z+1/3
+x-y+2/3,x+1/3,-z+1/3
+-y+2/3,-x+1/3,z+1/3
+x+2/3,x-y+1/3,z+1/3
+-x+y+2/3,y+1/3,z+1/3
+x+1/3,y+2/3,z+2/3
+-y+1/3,x-y+2/3,z+2/3
+-x+y+1/3,-x+2/3,z+2/3
+y+1/3,x+2/3,-z+2/3
+-x+1/3,-x+y+2/3,-z+2/3
+x-y+1/3,-y+2/3,-z+2/3
+-x+1/3,-y+2/3,-z+2/3
+y+1/3,-x+y+2/3,-z+2/3
+x-y+1/3,x+2/3,-z+2/3
+-y+1/3,-x+2/3,z+2/3
+x+1/3,x-y+2/3,z+2/3
+-x+y+1/3,y+2/3,z+2/3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Co1 Co 0 0 0.099 1 0.0
+Co4 Co 0.171 0.829 0.486 1 0.0
+Co2 Co 0.5 0 0.5 1 0.0
+Co3 Co 0.283 0 0 1 0.0
+Nd1 Nd 0 0 0.343 1 0.0

@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Cr3.5Si3Mo0.5Pb1O16
+_symmetry_space_group_name_H-M  'I 41/a :2'
+_cell_length_a   5.43241000
+_cell_length_b   5.43241000
+_cell_length_c   12.04817000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   88
+_chemical_formula_structural   Cr3.5Si3Mo0.5Pb1O16
+_chemical_formula_sum   'Cr3.5 Si3 Mo0.5 Pb1 O16'
+_cell_volume   355.55448954
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+3/4, x+1/4, z+1/4'
+  3  '-x, -y+1/2, z'
+  4  'y+1/4, -x+1/4, z+1/4'
+  5  '-x, -y, -z'
+  6  'y+3/4, -x+1/4, -z+1/4'
+  7  'x, y+1/2, -z'
+  8  '-y+1/4, x+1/4, -z+1/4'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-y+1/4, x+3/4, z+3/4'
+  11  '-x+1/2, -y, z+1/2'
+  12  'y+3/4, -x+3/4, z+3/4'
+  13  '-x+1/2, -y+1/2, -z+1/2'
+  14  'y+1/4, -x+3/4, -z+3/4'
+  15  'x+1/2, y, -z+1/2'
+  16  '-y+3/4, x+3/4, -z+3/4'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cr+  Cr0  4  0.00000000  0.25000000  0.12500000  0.875
+  Mo+  Mo1  4  0.00000000  0.25000000  0.12500000  0.125
+  Pb+  Pb2  4  0.00000000  0.25000000  0.62500000  0.25
+  Si+  Si3  4  0.00000000  0.25000000  0.62500000  0.75
+  O  O4  16  0.14156000  0.48416000  0.20917000  1

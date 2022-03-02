@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Fr1.5Cs2.5Si2.5Sn2Ge1H76Pb2C80Fl0.5O8
-_symmetry_space_group_name_H-M   C2
+_symmetry_space_group_name_H-M  'C 1 2 1'
 _cell_length_a   19.58200000
 _cell_length_b   6.49570000
 _cell_length_c   15.89800000

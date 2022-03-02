@@ -1,0 +1,189 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-01-27 21:58:39 +0200 (Tue, 27 Jan 2015) $
+#$Revision: 130149 $
+#$URL: svn://www.crystallography.net/cod/cif/8/10/14/8101453.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8101453
+loop_
+_publ_author_name
+'Nesper, Reinhard'
+'Z\"urcher, Fabio'
+_publ_section_title
+;
+Redetermination of the crystal structure of pentastrontium trisilicide, 
+Sr~5~Si~3~
+;
+_journal_issue                   1
+_journal_name_full
+'Zeitschrift f\"ur Kristallographie - New Crystal Structures'
+_journal_page_first              19
+_journal_page_last               19
+_journal_volume                  214
+_journal_year                    1999
+_chemical_formula_moiety         'Sr5 Si3'
+_chemical_formula_sum            'Si3 Sr5'
+_chemical_formula_weight         522.37
+_space_group_IT_number           140
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  '-I 4 2c'
+_symmetry_space_group_name_H-M   'I 4/m c m'
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   8.089(4)
+_cell_length_b                   8.089(4)
+_cell_length_c                   15.733(8)
+_cell_measurement_temperature    298(2)
+_cell_volume                     1029.4(9)
+_diffrn_ambient_temperature      298(2)
+_exptl_crystal_density_diffrn    3.371
+_refine_ls_R_factor_obs          0.0288
+_refine_ls_wR_factor_obs         0.0551
+_cod_database_code               8101453
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y, z'
+'-y, x, z'
+'y, -x, z'
+'-x, y, -z+1/2'
+'x, -y, -z+1/2'
+'y, x, -z+1/2'
+'-y, -x, -z+1/2'
+'x+1/2, y+1/2, z+1/2'
+'-x+1/2, -y+1/2, z+1/2'
+'-y+1/2, x+1/2, z+1/2'
+'y+1/2, -x+1/2, z+1/2'
+'-x+1/2, y+1/2, -z+1'
+'x+1/2, -y+1/2, -z+1'
+'y+1/2, x+1/2, -z+1'
+'-y+1/2, -x+1/2, -z+1'
+'-x, -y, -z'
+'x, y, -z'
+'y, -x, -z'
+'-y, x, -z'
+'x, -y, z-1/2'
+'-x, y, z-1/2'
+'-y, -x, z-1/2'
+'y, x, z-1/2'
+'-x+1/2, -y+1/2, -z+1/2'
+'x+1/2, y+1/2, -z+1/2'
+'y+1/2, -x+1/2, -z+1/2'
+'-y+1/2, x+1/2, -z+1/2'
+'x+1/2, -y+1/2, z'
+'-x+1/2, y+1/2, z'
+'-y+1/2, -x+1/2, z'
+'y+1/2, x+1/2, z'
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Sr1 0.0182(3) 0.0182(3) 0.0498(7) 0.000 0.000 0.000
+Sr2 0.0211(2) 0.0211(2) 0.0227(2) -0.00301(15) -0.00301(15) 0.00025(18)
+Si1 0.0233(9) 0.0233(9) 0.0232(14) 0.000 0.000 0.000
+Si2 0.0172(6) 0.0172(6) 0.0200(9) 0.000 0.000 -0.0003(7)
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_thermal_displace_type
+_atom_site_occupancy
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_group
+Sr1 Sr 0.0000 0.0000 0.0000 0.0288(3) Uani 1 d S .
+Sr2 Sr 0.17815(4) 0.67815(4) 0.14162(3) 0.02163(17) Uani 1 d S .
+Si1 Si 0.0000 0.0000 0.2500 0.0232(6) Uani 1 d S .
+Si2 Si 0.39188(18) 0.89188(18) 0.0000 0.0181(4) Uani 1 d S .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Sr1 Si2 3.2882(10) 19_455 ?
+Sr1 Si2 3.2882(10) 3_655 ?
+Sr1 Si2 3.2882(10) 17_565 ?
+Sr1 Si2 3.2882(10) 1_545 ?
+Sr1 Sr2 3.7173(3) 19_455 ?
+Sr1 Sr2 3.7173(3) 3_655 ?
+Sr1 Sr2 3.7173(3) 2_565 ?
+Sr1 Sr2 3.7173(3) 18_545 ?
+Sr1 Sr2 3.7173(3) 4_455 ?
+Sr1 Sr2 3.7173(3) 20_655 ?
+Sr1 Sr2 3.7173(3) 1_545 ?
+Sr1 Sr2 3.7173(3) 17_565 ?
+Sr1 Si1 3.9333(3) . ?
+Sr1 Si1 3.9333(3) 17 ?
+Sr1 Si2 4.9961(17) 17_665 ?
+Sr1 Si2 4.9961(17) 1_445 ?
+Sr1 Si2 4.9961(17) 19_465 ?
+Sr1 Si2 4.9961(17) 3_645 ?
+Sr2 Si2 3.2631(9) 19_465 ?
+Sr2 Si2 3.2631(9) 3_655 ?
+Sr2 Si2 3.3078(16) . ?
+Sr2 Si1 3.4295(3) 25 ?
+Sr2 Si1 3.4295(3) 1_565 ?
+Sr2 Sr1 3.7173(3) 13_554 ?
+Sr2 Sr1 3.7173(3) 1_565 ?
+Sr2 Sr2 3.7858(10) 25_565 ?
+Sr2 Sr2 4.0758(9) 2_565 ?
+Sr2 Sr2 4.2080(3) 3_665 ?
+Sr2 Sr2 4.2080(3) 4_565 ?
+Sr2 Sr2 4.2081(3) 3_655 ?
+Sr2 Sr2 4.2081(3) 4_465 ?
+Sr2 Sr2 4.4562(10) 18 ?
+Sr2 Sr2 4.4650(9) 27_455 ?
+Sr2 Sr2 4.4650(9) 28 ?
+Sr2 Si2 5.3997(19) 17_675 ?
+Si1 Sr2 3.4295(3) 4_455 ?
+Si1 Sr2 3.4295(3) 27_455 ?
+Si1 Sr2 3.4295(3) 25 ?
+Si1 Sr2 3.4295(3) 1_545 ?
+Si1 Sr2 3.4295(3) 28_545 ?
+Si1 Sr2 3.4295(3) 3_655 ?
+Si1 Sr2 3.4295(3) 2_565 ?
+Si1 Sr2 3.4295(3) 26_445 ?
+Si1 Sr1 3.9333(3) 5 ?
+Si1 Si2 5.1267(7) 27_455 ?
+Si1 Si2 5.1267(7) 19_455 ?
+Si1 Si2 5.1267(7) 9_445 ?
+Si1 Si2 5.1267(7) 17_565 ?
+Si1 Si2 5.1267(7) 1_545 ?
+Si1 Si2 5.1267(7) 3_655 ?
+Si1 Si2 5.1267(7) 11_545 ?
+Si1 Si2 5.1267(7) 25 ?
+Si2 Si2 2.474(4) 17_675 ?
+Si2 Sr2 3.2630(9) 4_565 ?
+Si2 Sr2 3.2630(9) 3_665 ?
+Si2 Sr2 3.2630(9) 20_665 ?
+Si2 Sr2 3.2630(9) 19_565 ?
+Si2 Sr1 3.2882(10) 13_554 ?
+Si2 Sr1 3.2882(10) 1_565 ?
+Si2 Sr2 3.3078(16) 18 ?
+Si2 Si2 4.6502(14) 19_565 ?
+Si2 Si2 4.6502(14) 3_665 ?
+Si2 Si2 4.6502(14) 19_465 ?
+Si2 Si2 4.6502(14) 3_655 ?
+Si2 Sr1 4.9961(17) 13_564 ?
+Si2 Sr1 4.9961(17) 1_665 ?
+Si2 Si1 5.1267(7) 9_554 ?
+Si2 Si1 5.1267(7) 17_565 ?
+Si2 Si1 5.1267(7) 25 ?
+Si2 Si1 5.1267(7) 1_565 ?
+Si2 Sr2 5.3997(19) 2_675 ?

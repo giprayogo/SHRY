@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Si0.33333333Ag1Au3C3.66666667S4
+_symmetry_space_group_name_H-M  'P 42/m'
+_cell_length_a   8.44880000
+_cell_length_b   8.44880000
+_cell_length_c   4.00590000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   84
+_chemical_formula_structural   Si0.33333333Ag1Au3C3.66666667S4
+_chemical_formula_sum   'Si0.33333333 Ag1 Au3 C3.66666667 S4'
+_cell_volume   285.95004087
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z+1/2'
+  4  'y, -x, -z+1/2'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z+1/2'
+  8  '-y, x, -z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Si0+  0.0
+  Ag0+  0.0
+  Au0+  0.0
+  C0+  0.0
+  S0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Au0+  Au0  4  0.07400000  0.17200000  0.00000000  0.75
+  Ag0+  Ag1  4  0.07400000  0.17200000  0.00000000  0.25
+  C0+  C2  4  0.22900000  0.59800000  0.00000000  0.9166666666666666
+  Si0+  Si3  4  0.22900000  0.59800000  0.00000000
+  0.08333333333333333
+  S0+  S4  4  0.18700000  0.19600000  0.50000000  1.0

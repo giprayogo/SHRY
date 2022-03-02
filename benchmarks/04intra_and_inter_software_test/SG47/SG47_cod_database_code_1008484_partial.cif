@@ -1,0 +1,59 @@
+# generated using pymatgen
+data_Ba1Ra0.33333333Sr0.33333333Ca0.33333333Y1Cu3O7
+_symmetry_space_group_name_H-M  'P m m m'
+_cell_length_a   3.81310000
+_cell_length_b   3.88060000
+_cell_length_c   11.63290000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   47
+_chemical_formula_structural
+Ba1Ra0.33333333Sr0.33333333Ca0.33333333Y1Cu3O7
+_chemical_formula_sum
+'Ba1 Ra0.33333333 Sr0.33333333 Ca0.33333333 Y1 Cu3 O7'
+_cell_volume   172.13336909
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z'
+  8  'x, -y, z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Ba2+  2.0
+  Ra2+  2.0
+  Sr2+  2.0
+  Ca2+  2.0
+  Y3+  3.0
+  Cu2.331+  2.331
+  O2-  -2.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba2+  Ba0  2  0.50000000  0.50000000  0.18270000  0.5
+  Ra2+  Ra1  2  0.50000000  0.50000000  0.18270000
+  0.16666666666666666
+  Sr2+  Sr2  2  0.50000000  0.50000000  0.18270000
+  0.16666666666666666
+  Ca2+  Ca3  2  0.50000000  0.50000000  0.18270000
+  0.16666666666666666
+  Y3+  Y4  1  0.50000000  0.50000000  0.50000000  1.0
+  Cu2.331+  Cu5  2  0.00000000  0.00000000  0.35470000  1.0
+  Cu2.331+  Cu6  1  0.00000000  0.00000000  0.00000000  1.0
+  O2-  O7  2  0.00000000  0.00000000  0.15900000  1.0
+  O2-  O8  2  0.00000000  0.50000000  0.37730000  1.0
+  O2-  O9  2  0.50000000  0.00000000  0.37710000  1.0
+  O2-  O10  1  0.00000000  0.50000000  0.00000000  1.0

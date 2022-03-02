@@ -1,0 +1,94 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-01-27 21:58:39 +0200 (Tue, 27 Jan 2015) $
+#$Revision: 130149 $
+#$URL: svn://www.crystallography.net/cod/cif/1/00/90/1009006.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1009006
+loop_
+_publ_author_name
+'Philippot, E'
+'Armand, P'
+'Yot, P'
+'Cambon, O'
+'Goiffon, A'
+'McIntyre, G J'
+'Bordet, P'
+_publ_section_title
+;
+Neutron and x-ray structure refinements between 15 and 1083 K of
+piezoelectric gallium arsenate, Ga As O4: temperature and pressure
+behavior compared with other $-alpha-quartz materials
+;
+_journal_coden_ASTM              JSSCBI
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              114
+_journal_page_last               123
+_journal_paper_doi               10.1006/jssc.1999.8316
+_journal_volume                  146
+_journal_year                    1999
+_chemical_formula_structural     'Ga (As O4)'
+_chemical_formula_sum            'As Ga O4'
+_chemical_name_systematic        'Gallium arsenate(V)'
+_space_group_IT_number           152
+_symmetry_cell_setting           trigonal
+_symmetry_Int_Tables_number      152
+_symmetry_space_group_name_Hall  'P 31 2"'
+_symmetry_space_group_name_H-M   'P 31 2 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   5.025(1)
+_cell_length_b                   5.025(1)
+_cell_length_c                   11.408(3)
+_cell_volume                     249.5
+_refine_ls_R_factor_all          0.036
+_cod_database_code               1009006
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,1/3+z
+y-x,-x,2/3+z
+y,x,-z
+-x,y-x,1/3-z
+x-y,-y,2/3-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_22
+_atom_site_aniso_U_23
+_atom_site_aniso_U_33
+Ga1 0.021(7) 0. 0. 0.019(9) -0.0012(5) 0.018(5)
+As1 0.0208(6) 0. 0. 0.0163(8) -0.0006(4) 0.0158(5)
+O1 0.046(5) 0.033(4) 0.010(2) 0.035(4) 0.011(2) 0.025(2)
+O2 0.042(5) 0.027(4) -0.010(2) 0.034(3) -0.011(2) 0.026(2)
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Ga1 Ga3+ 3 a 0.4533(3) 0. 0.3333 1. 0 d
+As1 As5+ 3 b 0.4522(3) 0. 0.8333 1. 0 d
+O1 O2- 6 c 0.401(1) 0.315(1) 0.3846(3) 1. 0 d
+O2 O2- 6 c 0.402(1) 0.290(1) 0.8730(4) 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Ga3+ 3.000
+As5+ 5.000
+O2- -2.000

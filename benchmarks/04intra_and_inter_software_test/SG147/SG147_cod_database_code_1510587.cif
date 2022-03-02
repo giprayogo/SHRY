@@ -1,0 +1,72 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/51/05/1510587.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1510587
+loop_
+_publ_author_name
+'Puselj, M.'
+'Schubert, K.'
+_publ_section_title
+;
+ Kristallstrukturen von Au9 In4 (h) und Au7 In3
+;
+_journal_name_full               'Journal of the Less-Common Metals'
+_journal_page_first              33
+_journal_page_last               44
+_journal_paper_doi               10.1016/0022-5088(75)90091-0
+_journal_volume                  41
+_journal_year                    1975
+_chemical_formula_sum            'Au7 In3'
+_space_group_IT_number           147
+_symmetry_space_group_name_Hall  '-P 3'
+_symmetry_space_group_name_H-M   'P -3'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            6
+_cell_length_a                   12.215
+_cell_length_b                   12.215
+_cell_length_c                   8.509
+_cell_volume                     1099.502
+_citation_journal_id_ASTM        JCOMAH
+_cod_data_source_file            gold_694.cif
+_cod_data_source_block           Au7In3
+_cod_database_code               1510587
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+-x,-y,-z
+y,-x+y,-z
+x-y,x,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+In1 In 0.186 0.022 0.754 1 0.0
+Au6 Au 0.642 0.555 0.629 1 0.0
+Au2 Au 0.233 0.013 0.425 1 0.0
+In3 In 0.642 0.502 0.956 1 0.0
+Au3 Au 0.435 0.296 0.794 1 0.0
+Au9 Au 0 0 0 1 0.0
+Au7 Au 0.6667 0.3333 0.175 1 0.0
+Au1 Au 0.244 0.037 0.083 1 0.0
+Au8 Au 0.6667 0.3333 0.688 1 0.0
+Au10 Au 0 0 0.5 1 0.0
+Au5 Au 0.637 0.529 0.294 1 0.0
+In2 In 0.473 0.306 0.457 1 0.0
+Au4 Au 0.422 0.314 0.126 1 0.0

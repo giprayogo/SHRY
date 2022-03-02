@@ -1,0 +1,203 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-19 16:29:56 +0200 (Fri, 19 Feb 2016) $
+#$Revision: 176759 $
+#$URL: svn://www.crystallography.net/cod/cif/2/00/35/2003540.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2003540
+loop_
+_publ_author_name
+'Guillou, N.'
+'Lou\"er, M.'
+'Auffr\'edic, J. P.'
+'Lou\"er, D.'
+_publ_section_title
+;
+ Two Polymorphic Forms of Ceric Potassium Nitrate, K~2~Ce(NO~3~)~6~
+;
+_journal_issue                   6
+_journal_name_full               'Acta Crystallographica Section C'
+_journal_page_first              1029
+_journal_page_last               1032
+_journal_paper_doi               10.1107/S0108270194014927
+_journal_volume                  51
+_journal_year                    1995
+_chemical_compound_source        'see text'
+_chemical_formula_moiety         'K2 Ce (N O3 )6'
+_chemical_formula_sum            'Ce K2 N6 O18'
+_chemical_formula_weight         590.3
+_space_group_IT_number           147
+_symmetry_cell_setting           hexagonal
+_symmetry_space_group_name_Hall  '-P 3'
+_symmetry_space_group_name_H-M   'P -3'
+_atom_type_scat_source           IntTabIV
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   13.5737(4)
+_cell_length_b                   13.5737(4)
+_cell_length_c                   6.6624(3)
+_cell_measurement_reflns_used    25
+_cell_measurement_temperature    293
+_cell_measurement_theta_max      12
+_cell_measurement_theta_min      9
+_cell_volume                     1063.06(7)
+_diffrn_measurement_device       'Enraf-Nonius CAD-4'
+_diffrn_measurement_method       \q/2\q
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.04
+_diffrn_reflns_limit_h_max       21
+_diffrn_reflns_limit_h_min       -21
+_diffrn_reflns_limit_k_max       21
+_diffrn_reflns_limit_k_min       0
+_diffrn_reflns_limit_l_max       10
+_diffrn_reflns_limit_l_min       0
+_diffrn_reflns_number            5201
+_diffrn_reflns_theta_max         35
+_diffrn_standards_decay_%        0
+_diffrn_standards_interval_time  90
+_diffrn_standards_number         3
+_exptl_absorpt_coefficient_mu    4.0
+_exptl_absorpt_correction_T_max  0.9983
+_exptl_absorpt_correction_T_min  0.6746
+_exptl_absorpt_correction_type
+'empirical (\y scan; North, Phillips & Mathew'
+_exptl_crystal_colour            orange
+_exptl_crystal_density_diffrn    2.767
+_exptl_crystal_description       'hexagonal plate'
+_exptl_crystal_size_max          0.20
+_exptl_crystal_size_mid          0.17
+_exptl_crystal_size_min          0.05
+_refine_diff_density_max         1.2
+_refine_diff_density_min         -1.3
+_refine_ls_extinction_coef       7.4E-7
+_refine_ls_extinction_method     'Stout & Jensen (1968)'
+_refine_ls_goodness_of_fit_obs   1.7
+_refine_ls_number_parameters     124
+_refine_ls_number_reflns         2748
+_refine_ls_R_factor_obs          0.045
+_refine_ls_shift/esd_max         0.38
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_details     'w = 1/\s^2^(F)'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_obs         0.051
+_reflns_number_observed          2748
+_reflns_number_total             3148
+_reflns_observed_criterion       I>3\s(I)
+_cod_data_source_file            du1103.cif
+_cod_data_source_block           I
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_refine_ls_weighting_scheme' value '1/\s^2^(F)' was changed to
+'calc'. New tag '_refine_ls_weighting_details' was created. The value
+of the new tag was set to 'w = 1/\s^2^(F)'.
+
+Automatic conversion script
+Id: cif_fix_values 3143 2015-03-26 13:38:13Z robertas 
+;
+_cod_original_cell_volume        1063.06(6)
+_cod_database_code               2003540
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,y-x,-z
+x-y,x,-z
+-x,-y,-z
+-y,-y+x,z
+-x+y,-x,z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_B_iso_or_equiv
+Ce1 .000 .000 .000 1.367(3)
+Ce2 .3333 .6667 .51053(3) 1.339(2)
+K .00696(6) .32616(6) .2227(1) 3.40(1)
+N1 .1691(2) .1788(2) .2676(3) 1.87(3)
+O11 .1381(1) .0735(1) .2871(3) 2.16(3)
+O12 .1283(2) .2017(1) .1127(3) 2.27(3)
+O13 .2311(2) .2509(2) .3839(3) 2.97(4)
+N2 .5268(2) .7240(2) .7768(3) 2.02(3)
+O21 .4324(2) .6351(2) .8021(3) 2.27(3)
+O22 .5354(2) .7824(2) .6211(3) 2.48(4)
+O23 .6067(2) .7567(2) .8933(3) 2.82(4)
+N3 .3835(2) .5223(2) .2518(3) 2.23(4)
+O31 .2965(2) .5331(2) .2295(3) 2.43(3)
+O32 .4474(2) .5774(2) .4005(3) 2.58(4)
+O33 .4075(2) .4666(2) .1421(4) 3.73(4)
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_publ_flag
+O11 N1 O12 114.4(2) yes
+O11 N1 O13 123.4(2) yes
+O12 N1 O13 122.2(2) yes
+O21 N2 O22 116.0(2) yes
+O21 N2 O23 123.9(2) yes
+O22 N2 O23 120.1(2) yes
+O31 N3 O32 114.8(2) yes
+O31 N3 O33 124.0(2) yes
+O32 N3 O33 121.2(3) yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Ce1 O11 1_555 2.510(2) yes
+Ce1 O11 4_555 2.510(2) yes
+Ce1 O11 5_555 2.510(2) yes
+Ce1 O11 2_555 2.510(2) yes
+Ce1 O11 6_555 2.510(2) yes
+Ce1 O11 3_555 2.510(2) yes
+Ce1 O12 1_555 2.515(2) yes
+Ce1 O12 4_555 2.515(2) yes
+Ce1 O12 5_555 2.515(2) yes
+Ce1 O12 2_555 2.515(2) yes
+Ce1 O12 6_555 2.515(2) yes
+Ce1 O12 3_555 2.515(2) yes
+Ce2 O21 1_555 2.518(2) yes
+Ce2 O21 5_665 2.518(2) yes
+Ce2 O21 6_565 2.518(2) yes
+Ce2 O22 1_555 2.495(2) yes
+Ce2 O22 5_665 2.495(2) yes
+Ce2 O22 6_565 2.495(2) yes
+Ce2 O31 1_555 2.477(2) yes
+Ce2 O31 5_665 2.477(2) yes
+Ce2 O31 6_565 2.477(2) yes
+Ce2 O32 1_555 2.506(3) yes
+Ce2 O32 5_665 2.506(3) yes
+Ce2 O32 6_565 2.506(3) yes
+K O11 5_555 3.178(2) yes
+K O12 . 2.981(3) yes
+K O12 3_555 3.235(2) yes
+K O13 3_556 2.864(2) yes
+K O22 2_456 2.873(2) yes
+K O23 2_456 3.120(3) yes
+K O23 6_564 2.765(2) yes
+K O32 6_565 2.917(2) yes
+K O33 3_555 2.986(2) yes
+N1 O11 . 1.278(3) yes
+N1 O12 . 1.281(3) yes
+N1 O13 . 1.201(3) yes
+N2 O21 . 1.257(2) yes
+N2 O22 . 1.275(3) yes
+N2 O23 . 1.222(3) yes
+N3 O31 . 1.269(3) yes
+N3 O32 . 1.283(3) yes
+N3 O33 . 1.207(4) yes

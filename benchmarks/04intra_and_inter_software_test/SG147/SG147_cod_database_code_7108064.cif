@@ -1,0 +1,260 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-26 03:29:39 +0200 (Sat, 26 Mar 2016) $
+#$Revision: 180184 $
+#$URL: svn://www.crystallography.net/cod/cif/7/10/80/7108064.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7108064
+loop_
+_publ_author_name
+'Olivier Roubeau'
+'Marco Evangelisti'
+'Eva Natividad'
+_publ_section_title
+;
+ A spin crossover ferrous complex with ordered magnetic ferric anions
+;
+_journal_name_full               Chem.Commun.
+_journal_page_first              7604
+_journal_paper_doi               10.1039/c2cc33709f
+_journal_volume                  48
+_journal_year                    2012
+_chemical_formula_moiety         'C12 H24 Fe N24, 2(Br4 Fe)'
+_chemical_formula_sum            'C12 H24 Br8 Fe3 N24'
+_chemical_formula_weight         1311.38
+_chemical_name_systematic
+;
+?
+;
+_space_group_IT_number           147
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  '-P 3'
+_symmetry_space_group_name_H-M   'P -3'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                120.00
+_cell_formula_units_Z            1
+_cell_length_a                   12.683(2)
+_cell_length_b                   12.683(2)
+_cell_length_c                   6.7980(14)
+_cell_measurement_reflns_used    26453
+_cell_measurement_temperature    104(2)
+_cell_measurement_theta_max      28.19
+_cell_measurement_theta_min      1.89
+_cell_volume                     947.0(3)
+_computing_cell_refinement       'HKL-2000 (Otwinowski & Minor, 1997)'
+_computing_data_collection       MxCube
+_computing_data_reduction        'HKL-2000 (Otwinowski & Minor, 1997)'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      104(2)
+_diffrn_measured_fraction_theta_full 0.964
+_diffrn_measured_fraction_theta_max 0.964
+_diffrn_measurement_device_type  'Single-axis HUBER diffractometer'
+_diffrn_measurement_method       'phi rotation at various kappa'
+_diffrn_radiation_monochromator  'silicon 111'
+_diffrn_radiation_source         'ESRF BM16'
+_diffrn_radiation_type           synchrotron
+_diffrn_radiation_wavelength     0.73780
+_diffrn_reflns_av_R_equivalents  0.0000
+_diffrn_reflns_av_sigmaI/netI    0.0487
+_diffrn_reflns_limit_h_max       16
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       0
+_diffrn_reflns_limit_k_min       -13
+_diffrn_reflns_limit_l_max       8
+_diffrn_reflns_limit_l_min       -8
+_diffrn_reflns_number            1342
+_diffrn_reflns_theta_full        28.19
+_diffrn_reflns_theta_max         28.18
+_diffrn_reflns_theta_min         1.92
+_diffrn_standards_number         0
+_exptl_absorpt_coefficient_mu    10.523
+_exptl_absorpt_correction_T_max  0.70
+_exptl_absorpt_correction_T_min  0.32
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details   'HKL2000, Otwinoski, 2003'
+_exptl_crystal_colour            red
+_exptl_crystal_density_diffrn    2.299
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       parallelepiped
+_exptl_crystal_F_000             622
+_exptl_crystal_size_max          0.14
+_exptl_crystal_size_mid          0.04
+_exptl_crystal_size_min          0.04
+_refine_diff_density_max         0.906
+_refine_diff_density_min         -0.836
+_refine_diff_density_rms         0.154
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.086
+_refine_ls_hydrogen_treatment    constr
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     73
+_refine_ls_number_reflns         1342
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.086
+_refine_ls_R_factor_all          0.0359
+_refine_ls_R_factor_gt           0.0358
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0588P)^2^+1.8323P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0978
+_refine_ls_wR_factor_ref         0.0979
+_reflns_number_gt                1339
+_reflns_number_total             1342
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            c2cc33709f.txt
+_cod_data_source_block           orz89b
+_cod_original_sg_symbol_H-M      P-3
+_cod_database_code               7108064
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y, x-y, z'
+'-x+y, -x, z'
+'-x, -y, -z'
+'y, -x+y, -z'
+'x-y, x, -z'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Fe1 Fe 0.0000 0.0000 0.5000 0.0052(2) Uani 1 6 d S
+Fe2 Fe 0.6667 0.3333 0.46791(10) 0.0111(2) Uani 1 3 d S
+Br1 Br 0.6667 0.3333 0.12598(8) 0.01936(19) Uani 1 3 d S
+Br2 Br 0.66691(3) 0.50734(3) 0.58522(4) 0.01587(17) Uani 1 1 d .
+N1 N 0.1089(2) 0.1440(2) 0.6670(3) 0.0082(4) Uani 1 1 d .
+N2 N 0.0691(2) 0.2105(2) 0.7656(4) 0.0160(5) Uani 1 1 d .
+N3 N 0.1588(2) 0.2992(2) 0.8573(4) 0.0163(5) Uani 1 1 d .
+N4 N 0.2582(2) 0.2910(2) 0.8184(3) 0.0101(5) Uani 1 1 d .
+C1 C 0.2267(2) 0.1966(2) 0.7013(4) 0.0099(5) Uani 1 1 d .
+H1A H 0.2801 0.1711 0.6505 0.012 Uiso 1 1 calc R
+C2 C 0.3773(3) 0.3794(3) 0.8969(4) 0.0158(6) Uani 1 1 d .
+H2A H 0.4367 0.3543 0.8630 0.024 Uiso 1 1 calc R
+H2B H 0.3722 0.3835 1.0402 0.024 Uiso 1 1 calc R
+H2C H 0.4031 0.4597 0.8401 0.024 Uiso 1 1 calc R
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Fe1 0.0029(3) 0.0029(3) 0.0098(4) 0.000 0.000 0.00144(14)
+Fe2 0.0107(3) 0.0107(3) 0.0117(4) 0.000 0.000 0.00536(13)
+Br1 0.0229(2) 0.0229(2) 0.0123(3) 0.000 0.000 0.01144(12)
+Br2 0.0167(2) 0.0116(2) 0.0194(2) -0.00068(10) 0.00295(10) 0.00719(13)
+N1 0.0071(10) 0.0074(10) 0.0110(10) -0.0007(8) 0.0008(8) 0.0045(9)
+N2 0.0112(12) 0.0133(11) 0.0233(13) -0.0064(10) 0.0004(9) 0.0060(10)
+N3 0.0110(12) 0.0138(12) 0.0224(13) -0.0047(10) 0.0036(9) 0.0050(10)
+N4 0.0091(11) 0.0089(10) 0.0109(10) 0.0003(8) 0.0007(8) 0.0034(9)
+C1 0.0069(12) 0.0074(12) 0.0155(12) 0.0001(9) 0.0002(10) 0.0037(10)
+C2 0.0110(13) 0.0102(13) 0.0188(14) 0.0015(11) -0.0030(10) -0.0002(11)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C -0.0020 0.0018
+'WCROMER Program in WinGX L.Kissel & R.H.Pratt Acta Cryst A46 170 1990'
+H H 0.0000 0.0000
+'WCROMER Program in WinGX L.Kissel & R.H.Pratt Acta Cryst A46 170 1990'
+N N -0.0031 0.0036
+'WCROMER Program in WinGX L.Kissel & R.H.Pratt Acta Cryst A46 170 1990'
+Fe Fe 0.2141 0.9091
+'WCROMER Program in WinGX L.Kissel & R.H.Pratt Acta Cryst A46 170 1990'
+Br Br -0.5753 2.5931
+'WCROMER Program in WinGX L.Kissel & R.H.Pratt Acta Cryst A46 170 1990'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+N1 Fe1 N1 180 . 4_556
+N1 Fe1 N1 91.03(9) . 3
+N1 Fe1 N1 88.97(9) 4_556 3
+N1 Fe1 N1 88.97(9) . 6_556
+N1 Fe1 N1 91.03(9) 4_556 6_556
+N1 Fe1 N1 180 3 6_556
+N1 Fe1 N1 91.03(9) . 2
+N1 Fe1 N1 88.97(9) 4_556 2
+N1 Fe1 N1 91.03(9) 3 2
+N1 Fe1 N1 88.97(9) 6_556 2
+N1 Fe1 N1 88.97(9) . 5_556
+N1 Fe1 N1 91.03(9) 4_556 5_556
+N1 Fe1 N1 88.97(9) 3 5_556
+N1 Fe1 N1 91.03(9) 6_556 5_556
+N1 Fe1 N1 180 2 5_556
+Br1 Fe2 Br2 109.879(18) . 3_665
+Br1 Fe2 Br2 109.879(18) . 2_655
+Br2 Fe2 Br2 109.060(18) 3_665 2_655
+Br1 Fe2 Br2 109.879(18) . .
+Br2 Fe2 Br2 109.060(18) 3_665 .
+Br2 Fe2 Br2 109.060(18) 2_655 .
+C1 N1 N2 106.1(2) . .
+C1 N1 Fe1 130.78(19) . .
+N2 N1 Fe1 123.06(19) . .
+N3 N2 N1 109.9(2) . .
+N2 N3 N4 106.9(2) . .
+C1 N4 N3 108.6(2) . .
+C1 N4 C2 130.0(3) . .
+N3 N4 C2 121.4(2) . .
+N1 C1 N4 108.5(2) . .
+N1 C1 H1A 125.8 . .
+N4 C1 H1A 125.8 . .
+N4 C2 H2A 109.5 . .
+N4 C2 H2B 109.5 . .
+H2A C2 H2B 109.5 . .
+N4 C2 H2C 109.5 . .
+H2A C2 H2C 109.5 . .
+H2B C2 H2C 109.5 . .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Fe1 N1 2.003(2) .
+Fe1 N1 2.003(2) 4_556
+Fe1 N1 2.003(2) 3
+Fe1 N1 2.003(2) 6_556
+Fe1 N1 2.003(2) 2
+Fe1 N1 2.003(2) 5_556
+Fe2 Br1 2.3244(10) .
+Fe2 Br2 2.3452(5) 3_665
+Fe2 Br2 2.3452(5) 2_655
+Fe2 Br2 2.3452(5) .
+N1 C1 1.317(4) .
+N1 N2 1.357(3) .
+N2 N3 1.291(4) .
+N3 N4 1.341(4) .
+N4 C1 1.323(4) .
+N4 C2 1.460(4) .
+C1 H1A 0.9500 .
+C2 H2A 0.9800 .
+C2 H2B 0.9800 .
+C2 H2C 0.9800 .

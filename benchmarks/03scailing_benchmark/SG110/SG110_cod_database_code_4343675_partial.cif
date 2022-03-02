@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Na3.5Li12Be16B32H112.5
-_symmetry_space_group_name_H-M   I4_1cd
+_symmetry_space_group_name_H-M  'I 41 c d'
 _cell_length_a   13.62000000
 _cell_length_b   13.62000000
 _cell_length_c   9.10000000

@@ -1,0 +1,143 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-23 22:10:53 +0200 (Wed, 23 Mar 2016) $
+#$Revision: 179470 $
+#$URL: svn://www.crystallography.net/cod/cif/4/33/67/4336776.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4336776
+loop_
+_publ_author_name
+'Izabela Sosnowska'
+'Masaki Azuma'
+'Rados\/law Przenios\/lo'
+'Dariusz Wardecki'
+'Wei-tin Chen'
+'Kengo Oka'
+'Yuichi Shimakawa'
+_publ_contact_author_email       izabela@fuw.edu.pl
+_publ_contact_author_name        'Izabela Sosnowska'
+_publ_section_title
+;
+ Crystal and Magnetic Structure in Co-Substituted BiFeO3
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              13269
+_journal_page_last               13277
+_journal_paper_doi               10.1021/ic402427q
+_journal_volume                  52
+_journal_year                    2013
+_chemical_formula_sum            'Bi Fe O3'
+_chemical_name_common            'bismuth ferrite'
+_space_group_IT_number           161
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'R 3 -2"c'
+_symmetry_space_group_name_H-M   'R 3 c :H'
+_cell_angle_alpha                90.00000
+_cell_angle_beta                 90.00000
+_cell_angle_gamma                120.00000
+_cell_formula_units_Z            6
+_cell_length_a                   5.57174(2)
+_cell_length_b                   5.57174(2)
+_cell_length_c                   13.83512(4)
+_cell_measurement_temperature    10
+_cell_volume                     371.959(2)
+_computing_structure_refinement  FULLPROF
+_diffrn_ambient_temperature      10
+_diffrn_radiation_probe          neutron
+_diffrn_radiation_type           'TOF Neutron Diffraction'
+_diffrn_source                   'spallation source'
+_diffrn_source_type              'HRPD at ISIS'
+_pd_meas_2theta_fixed            168.3300
+_pd_meas_2theta_range_inc        6.851413
+_pd_meas_2theta_range_max        125012.46094
+_pd_meas_2theta_range_min        31367.02734
+_pd_meas_number_of_points        13671
+_pd_proc_ls_prof_R_factor        3.8540
+_pd_proc_ls_prof_wR_expected     3.4869
+_pd_proc_ls_prof_wR_factor       4.8624
+_refine_ls_number_parameters     25
+_refine_ls_number_reflns         262
+_refine_ls_number_restraints     0
+_refine_ls_R_I_factor            5.7481
+_cod_data_source_file            ic402427q_si_002.cif
+_cod_data_source_block           BiFeO3_10K
+_cod_original_cell_volume        371.959(14)
+_cod_original_sg_symbol_H-M      'R 3 c'
+_cod_database_code               4336776
+#BEGIN Tags that were not found in dictionaries:
+_pd_proc_ls_prof_cr_factor       13.3634
+_pd_proc_ls_prof_cwr_factor      11.3604
+_pd_proc_ls_prof_cwr_expected    8.1467
+_pd_proc_ls_prof_chi2            1.9446
+_pd_proc_ls_prof_echi2           2.1260
+#END Tags that were not found in dictionaries
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+-y,-x,z+1/2
+-x+y,y,z+1/2
+x,x-y,z+1/2
+x+2/3,y+1/3,z+1/3
+-y+2/3,x-y+1/3,z+1/3
+-x+y+2/3,-x+1/3,z+1/3
+-y+2/3,-x+1/3,z+5/6
+-x+y+2/3,y+1/3,z+5/6
+x+2/3,x-y+1/3,z+5/6
+x+1/3,y+2/3,z+2/3
+-y+1/3,x-y+2/3,z+2/3
+-x+y+1/3,-x+2/3,z+2/3
+-y+1/3,-x+2/3,z+1/6
+-x+y+1/3,y+2/3,z+1/6
+x+1/3,x-y+2/3,z+1/6
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_type_symbol
+Bi 0.00000 0.00000 0.00000 0.00112(17) 1.00000 Uiso BI
+Fe 0.00000 0.00000 0.2205(1) 0.00163(18) 1.00000 Uiso FE
+O 0.4458(1) 0.0186(1) 0.9516(1) 0.00332(11) 1.00000 Uiso O
+loop_
+_atom_type_symbol
+_atom_type_scat_length_neutron
+_atom_type_scat_source
+BI 0.85320 V.F._Sears_Neutron_News_3_26_(1992)
+FE 0.94500 V.F._Sears_Neutron_News_3_26_(1992)
+O 0.58030 V.F._Sears_Neutron_News_3_26_(1992)
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_publ_flag
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+Fe(1) O(1) Fe(1) 154.79(21) yes 10_555 13_545
+O(1) Fe(1) O(1) 164.97(24) yes 8_444 18_554
+loop_
+_geom_contact_atom_site_label_1
+_geom_contact_atom_site_label_2
+_geom_contact_distance
+_geom_contact_site_symmetry_2
+Bi(1) Fe(1) 3.0501(10) .
+Bi(1) Fe(1) 3.3018(11) 10_454
+Bi(1) Fe(1) 3.5758(8) 13_444
+Bi(1) Fe(1) 3.8675(8) 13_544
+Bi(1) O(1) 2.5240(5) 3_554
+Bi(1) O(1) 3.2117(10) 3_664
+Bi(1) O(1) 3.4441(11) 12_453
+Bi(1) O(1) 2.2603(14) 16_544
+Fe(1) O(1) 1.9507(12) 7_454
+Fe(1) O(1) 2.1047(13) .

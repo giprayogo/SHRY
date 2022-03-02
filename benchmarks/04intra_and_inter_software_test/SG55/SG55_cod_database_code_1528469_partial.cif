@@ -1,0 +1,62 @@
+# generated using pymatgen
+data_Cs1.5K1Rb7.5Na1.5Li0.5P8H28S16N8O4
+_symmetry_space_group_name_H-M  'P b a m'
+_cell_length_a   8.07900000
+_cell_length_b   14.33700000
+_cell_length_c   8.68100000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   55
+_chemical_formula_structural   Cs1.5K1Rb7.5Na1.5Li0.5P8H28S16N8O4
+_chemical_formula_sum   'Cs1.5 K1 Rb7.5 Na1.5 Li0.5 P8 H28 S16 N8 O4'
+_cell_volume   1005.50827626
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x+1/2, -y+1/2, -z'
+  6  '-x+1/2, y+1/2, z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Cs0+  0.0
+  K0+  0.0
+  Rb0+  0.0
+  Na0+  0.0
+  Li0+  0.0
+  P0+  0.0
+  H0+  0.0
+  S0+  0.0
+  N0+  0.0
+  O0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li0+  Li0  8  0.23280000  0.83650000  0.40710000  0.0625
+  Rb0+  Rb1  8  0.23280000  0.83650000  0.40710000  0.9375
+  K0+  K2  4  0.16500000  0.59220000  0.00000000  0.25
+  Cs0+  Cs3  4  0.16500000  0.59220000  0.00000000  0.375
+  Na0+  Na4  4  0.16500000  0.59220000  0.00000000  0.375
+  P0+  P5  8  0.07820000  0.93380000  0.13170000  1.0
+  H0+  H6  8  0.02960000  0.64300000  0.08790000  1.0
+  H0+  H7  8  0.15750000  0.59740000  0.41120000  1.0
+  H0+  H8  4  0.10710000  0.33850000  0.50000000  1.0
+  H0+  H9  4  0.15040000  0.70800000  0.00000000  1.0
+  H0+  H10  4  0.24530000  0.24280000  0.50000000  1.0
+  S0+  S11  8  0.04480000  0.17380000  0.21610000  1.0
+  S0+  S12  8  0.19750000  0.46040000  0.21240000  1.0
+  N0+  N13  4  0.09970000  0.64960000  0.00000000  1.0
+  N0+  N14  4  0.21830000  0.30830000  0.50000000  1.0
+  O0+  O15  4  0.13920000  0.62410000  0.50000000  1.0

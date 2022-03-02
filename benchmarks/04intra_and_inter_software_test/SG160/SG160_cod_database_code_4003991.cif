@@ -1,0 +1,297 @@
+#------------------------------------------------------------------------------
+#$Date: 2021-07-07 01:27:44 +0300 (Wed, 07 Jul 2021) $
+#$Revision: 267305 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/4/00/39/4003991.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4003991
+loop_
+_publ_author_name
+'Routledge, Kieran'
+'Vir, Praveen'
+'Cook, Nicholas'
+'Murgatroyd, Philip A. E.'
+'Ahmed, Sheikh J.'
+'Savvin, Stanislav N.'
+'Claridge, John B.'
+'Alaria, Jonathan'
+_publ_section_title
+;
+ Mode Crystallography Analysis through the Structural Phase Transition and
+ Magnetic Critical Behavior of the Lacunar Spinel GaMo4Se8
+;
+_journal_name_full               'Chemistry of Materials'
+_journal_paper_doi               10.1021/acs.chemmater.1c01448
+_journal_year                    2021
+_chemical_formula_analytical     N/A
+_chemical_formula_iupac          GaMo4Se8
+_chemical_formula_moiety         'Ga Mo4 Se8'
+_chemical_formula_structural     GaMo4Se8
+_chemical_formula_sum            'Ga Mo4 Se8'
+_chemical_formula_weight         1085.2
+_chemical_name_common            GaMo4Se8
+_chemical_name_systematic        GaMo4Se8
+_space_group_IT_number           160
+_space_group_name_Hall           'R 3 -2"'
+_space_group_name_H-M_alt        'R 3 m :H'
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90.0000
+_cell_angle_beta                 90.0000
+_cell_angle_gamma                120.000
+_cell_formula_units_Z            3
+_cell_length_a                   7.22055(4)
+_cell_length_b                   7.22055(4)
+_cell_length_c                   17.44069(12)
+_cell_measurement_temperature    35
+_cell_volume                     787.472(8)
+_computing_structure_refinement  FULLPROF
+_computing_structure_solution    FULLPROF
+_diffrn_ambient_temperature      35
+_diffrn_detector                 '128 He-3 counting tubes'
+_diffrn_measurement_device_type  'Two-axis diffractometer'
+_diffrn_measurement_method       High-resolution
+_diffrn_radiation_monochromator  Germanium
+_diffrn_radiation_type           Neutron
+_diffrn_radiation_wavelength     1.59400
+_diffrn_source                   'nuclear reactor'
+_diffrn_source_type              'High-resolution 2-axis diffractometer (D2B)'
+_pd_char_colour                  Black
+_pd_char_particle_morphology     'fine powder'
+_pd_instr_location               'Institut Laue-Langevin (ILL) Grenoble'
+_pd_meas_2theta_range_inc        0.050018
+_pd_meas_2theta_range_max        159.95000
+_pd_meas_2theta_range_min        0.05000
+_pd_meas_number_of_points        3199
+_pd_meas_scan_method             cont
+_pd_proc_2theta_range_inc        0.050018
+_pd_proc_2theta_range_max        159.8549
+_pd_proc_2theta_range_min        -0.0451
+_pd_proc_info_excluded_regions   '146 -160 deg'
+_pd_proc_ls_background_function
+'Linear intrapolation between a set of background points'
+_pd_proc_ls_pref_orient_corr     No
+_pd_proc_ls_profile_function
+'Thompson-Cox-Hastings pseudo-Voigt (Axial divergence asymmetry)'
+_pd_proc_ls_prof_R_factor        4.1137
+_pd_proc_ls_prof_wR_expected     2.6318
+_pd_proc_ls_prof_wR_factor       5.5450
+_pd_proc_wavelength              1.594000
+_pd_spec_mounting                Vanadium
+_pd_spec_mount_mode              transmission
+_pd_spec_shape                   cylinder
+_pd_spec_size_axial              6
+_pd_spec_size_equat              6
+_pd_spec_size_thick              5
+_refine_ls_goodness_of_fit_all   2.1069
+_refine_ls_number_parameters     45
+_refine_ls_number_reflns         224
+_refine_ls_number_restraints     0
+_refine_ls_R_I_factor            3.1840
+_cod_data_source_file            cm1c01448_si_004.cif
+_cod_data_source_block           GaMo4Se8_rhom
+_cod_original_cell_volume        787.472(10)
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum        'Ga1 Mo4 Se8'
+_cod_database_code               4003991
+_pd_proc_ls_prof_cr_factor       8.3388
+_pd_proc_ls_prof_cwr_factor      9.4431
+_pd_proc_ls_prof_cwr_expected    4.4820
+_pd_proc_ls_prof_chi2            4.4391
+_pd_proc_ls_prof_echi2           4.4411
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+-y,-x,z
+-x+y,y,z
+x,x-y,z
+x+2/3,y+1/3,z+1/3
+-y+2/3,x-y+1/3,z+1/3
+-x+y+2/3,-x+1/3,z+1/3
+-y+2/3,-x+1/3,z+1/3
+-x+y+2/3,y+1/3,z+1/3
+x+2/3,x-y+1/3,z+1/3
+x+1/3,y+2/3,z+2/3
+-y+1/3,x-y+2/3,z+2/3
+-x+y+1/3,-x+2/3,z+2/3
+-y+1/3,-x+2/3,z+2/3
+-x+y+1/3,y+2/3,z+2/3
+x+1/3,x-y+2/3,z+2/3
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_type_symbol
+Mo1 0.00000 0.00000 0.4018(4) 0.0055(12) 1.00000 Uiso Mo
+Mo2 0.1971(2) 0.8029(2) 0.2003(3) 0.0008(5) 1.00000 Uiso Mo
+Se1 0.00000 0.00000 0.6355(4) 0.0035(11) 1.00000 Uiso Se
+Se2 0.5162(3) 0.4838(3) 0.1228(3) 0.0017(8) 1.00000 Uiso Se
+Se3 0.00000 0.00000 0.1366(4) 0.0001(11) 1.00000 Uiso Se
+Se4 0.8493(3) 0.1507(3) 0.2891(3) 0.0027(9) 1.00000 Uiso Se
+Ga1 0.00000 0.00000 0.00000 0.0007(8) 1.00000 Uiso Ga
+loop_
+_atom_type_symbol
+_atom_type_scat_length_neutron
+_atom_type_scat_source
+Mo 0.67150 V.F._Sears_Neutron_News_3_26_(1992)
+Se 0.79700 V.F._Sears_Neutron_News_3_26_(1992)
+Ga 0.72880 V.F._Sears_Neutron_News_3_26_(1992)
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+Mo2 Mo1 Mo2 62.0690(5) 7_445 8_555 ?
+Mo2 Mo1 Mo2 62.0690(5) 7_445 9_455 ?
+Mo2 Mo1 Se2 104.0192(5) 7_445 7_445 ?
+Mo2 Mo1 Se2 54.3627(4) 7_445 8_555 ?
+Mo2 Mo1 Se2 54.3627(4) 7_445 9_455 ?
+Mo2 Mo1 Se4 99.6660(10) 7_445 1_455 ?
+Mo2 Mo1 Se4 141.8092(10 7_445 2_545 ?
+Mo2 Mo1 Se4 141.8092(10 7_445 3_665 ?
+Mo2 Mo1 Mo2 62.0690(4) 8_555 9_455 ?
+Mo2 Mo1 Se2 54.3626(4) 8_555 7_445 ?
+Mo2 Mo1 Se2 104.0192(6) 8_555 8_555 ?
+Mo2 Mo1 Se2 54.3627(4) 8_555 9_455 ?
+Mo2 Mo1 Se4 141.8092(10 8_555 1_455 ?
+Mo2 Mo1 Se4 99.6659(10) 8_555 2_545 ?
+Mo2 Mo1 Se4 141.8091(10 8_555 3_665 ?
+Mo2 Mo1 Se2 54.3626(4) 9_455 7_445 ?
+Mo2 Mo1 Se2 54.3627(4) 9_455 8_555 ?
+Mo2 Mo1 Se2 104.0192(6) 9_455 9_455 ?
+Mo2 Mo1 Se4 141.8092(10 9_455 1_455 ?
+Mo2 Mo1 Se4 141.8091(10 9_455 2_545 ?
+Mo2 Mo1 Se4 99.6659(10) 9_455 3_665 ?
+Se2 Mo1 Se2 106.2627(7) 7_445 8_555 ?
+Se2 Mo1 Se2 106.2627(7) 7_445 9_455 ?
+Se2 Mo1 Se4 156.3148(7) 7_445 1_455 ?
+Se2 Mo1 Se4 87.5183(6) 7_445 2_545 ?
+Se2 Mo1 Se4 87.5183(6) 7_445 3_665 ?
+Se2 Mo1 Se2 106.2628(5) 8_555 9_455 ?
+Se2 Mo1 Se4 87.5184(6) 8_555 1_455 ?
+Se2 Mo1 Se4 156.3148(9) 8_555 2_545 ?
+Se2 Mo1 Se4 87.5183(6) 8_555 3_665 ?
+Se2 Mo1 Se4 87.5184(6) 9_455 1_455 ?
+Se2 Mo1 Se4 87.5183(6) 9_455 2_545 ?
+Se2 Mo1 Se4 156.3148(9) 9_455 3_665 ?
+Se4 Mo1 Se4 73.6547(5) 1_455 2_545 ?
+Se4 Mo1 Se4 73.6547(5) 1_455 3_665 ?
+Se4 Mo1 Se4 73.6548(4) 2_545 3_665 ?
+Mo1 Mo2 Mo2 58.9656(4) 13_554 2_665 ?
+Mo1 Mo2 Mo2 58.9656(4) 13_554 3_565 ?
+Mo1 Mo2 Se1 99.6688(10) 13_554 13_554 ?
+Mo1 Mo2 Se2 54.8105(4) 13_554 2_665 ?
+Mo1 Mo2 Se2 54.8105(4) 13_554 3_565 ?
+Mo1 Mo2 Se3 102.2724(5) 13_554 1_565 ?
+Mo1 Mo2 Se4 142.3462(9) 13_554 2_555 ?
+Mo1 Mo2 Se4 142.3462(9) 13_554 3_675 ?
+Mo2 Mo2 Mo2 60.0000(4) 2_665 3_565 ?
+Mo2 Mo2 Se1 53.1748(4) 2_665 13_554 ?
+Mo2 Mo2 Se2 101.8473(6) 2_665 2_665 ?
+Mo2 Mo2 Se2 53.1897(3) 2_665 3_565 ?
+Mo2 Mo2 Se3 142.1419(7) 2_665 1_565 ?
+Mo2 Mo2 Se4 100.6635(5) 2_665 2_555 ?
+Mo2 Mo2 Se4 141.7913(9) 2_665 3_675 ?
+Mo2 Mo2 Se1 53.1748(4) 3_565 13_554 ?
+Mo2 Mo2 Se2 53.1897(3) 3_565 2_665 ?
+Mo2 Mo2 Se2 101.8473(6) 3_565 3_565 ?
+Mo2 Mo2 Se3 142.1419(7) 3_565 1_565 ?
+Mo2 Mo2 Se4 141.7913(9) 3_565 2_555 ?
+Mo2 Mo2 Se4 100.6635(5) 3_565 3_675 ?
+Se1 Mo2 Se2 103.8099(7) 13_554 2_665 ?
+Se1 Mo2 Se2 103.8099(7) 13_554 3_565 ?
+Se1 Mo2 Se3 158.0588(7) 13_554 1_565 ?
+Se1 Mo2 Se4 88.6500(5) 13_554 2_555 ?
+Se1 Mo2 Se4 88.6500(5) 13_554 3_675 ?
+Se2 Mo2 Se2 107.1185(5) 2_665 3_565 ?
+Se2 Mo2 Se3 88.9587(5) 2_665 1_565 ?
+Se2 Mo2 Se4 157.4491(8) 2_665 2_555 ?
+Se2 Mo2 Se4 87.5361(6) 2_665 3_675 ?
+Se2 Mo2 Se3 88.9587(5) 3_565 1_565 ?
+Se2 Mo2 Se4 87.5361(6) 3_565 2_555 ?
+Se2 Mo2 Se4 157.4490(8) 3_565 3_675 ?
+Se3 Mo2 Se4 73.9344(5) 1_565 2_555 ?
+Se3 Mo2 Se4 73.9344(5) 1_565 3_675 ?
+Se4 Mo2 Se4 73.8434(4) 2_555 3_675 ?
+Mo2 Se1 Mo2 73.6505(5) 7_445 8_555 ?
+Mo2 Se1 Mo2 73.6505(5) 7_445 9_455 ?
+Mo2 Se1 Mo2 73.6504(4) 8_555 9_455 ?
+Mo1 Se2 Mo2 70.8268(4) 13_554 2_665 ?
+Mo1 Se2 Mo2 70.8268(4) 13_554 3_565 ?
+Mo2 Se2 Mo2 73.6206(4) 2_665 3_565 ?
+Mo2 Se3 Mo2 104.2837(6) 1_545 2_665 ?
+Mo2 Se3 Mo2 104.2837(6) 1_545 3_455 ?
+Mo2 Se3 Ga1 114.2623(9) 1_545 1_555 ?
+Mo2 Se3 Mo2 104.2837(5) 2_665 3_455 ?
+Mo2 Se3 Ga1 114.2623(9) 2_665 1_555 ?
+Mo2 Se3 Ga1 114.2623(9) 3_455 1_555 ?
+Mo1 Se4 Mo2 104.2025(7) 1_655 2_765 ?
+Mo1 Se4 Mo2 104.2025(7) 1_655 3_555 ?
+Mo1 Se4 Ga1 115.1248(5) 1_655 7_555 ?
+Mo2 Se4 Mo2 103.5827(5) 2_765 3_555 ?
+Mo2 Se4 Ga1 114.1979(6) 2_765 7_555 ?
+Mo2 Se4 Ga1 114.1980(6) 3_555 7_555 ?
+Se3 Ga1 Se4 108.6745(8) 1_555 13_444 ?
+Se3 Ga1 Se4 108.6744(8) 1_555 14_544 ?
+Se3 Ga1 Se4 108.6744(8) 1_555 15_554 ?
+Se4 Ga1 Se4 110.2562(7) 13_444 14_544 ?
+Se4 Ga1 Se4 110.2562(7) 13_444 15_554 ?
+Se4 Ga1 Se4 110.2560(5) 14_544 15_554 ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Mo1 Mo2 2.861573(13 7_445 ?
+Mo1 Mo2 2.861576(13 8_555 ?
+Mo1 Mo2 2.861576(13 9_455 ?
+Mo1 Se2 2.475969(7) 7_445 ?
+Mo1 Se2 2.475963(9) 8_555 ?
+Mo1 Se2 2.475963(9) 9_455 ?
+Mo1 Se4 2.723026(10 1_455 ?
+Mo1 Se4 2.723026(11 2_545 ?
+Mo1 Se4 2.723026(11 3_665 ?
+Mo2 Mo1 2.861573(13 13_554 ?
+Mo2 Mo2 2.950593(12 2_665 ?
+Mo2 Mo2 2.950593(12 3_565 ?
+Mo2 Se1 2.461385(9) 13_554 ?
+Mo2 Se2 2.462244(8) 2_665 ?
+Mo2 Se2 2.462244(8) 3_565 ?
+Mo2 Se3 2.704085(7) 1_565 ?
+Mo2 Se4 2.717057(10 2_555 ?
+Mo2 Se4 2.717057(10 3_675 ?
+Se1 Mo2 2.461384(9) 7_445 ?
+Se1 Mo2 2.461388(10 8_555 ?
+Se1 Mo2 2.461388(10 9_455 ?
+Se2 Mo1 2.475969(7) 13_554 ?
+Se2 Mo2 2.462244(9) 2_665 ?
+Se2 Mo2 2.462244(9) 3_565 ?
+Se3 Mo2 2.704085(7) 1_545 ?
+Se3 Mo2 2.704085(10 2_665 ?
+Se3 Mo2 2.704085(10 3_455 ?
+Se3 Ga1 2.381530(16 1_555 ?
+Se4 Mo1 2.723026(10 1_655 ?
+Se4 Mo2 2.717057(9) 2_765 ?
+Se4 Mo2 2.717057(9) 3_555 ?
+Se4 Ga1 2.410996(7) 7_555 ?
+Ga1 Se3 2.381530(16 1_555 ?
+Ga1 Se4 2.410996(7) 13_444 ?
+Ga1 Se4 2.411002(9) 14_544 ?
+Ga1 Se4 2.411002(9) 15_554 ?

@@ -1,0 +1,122 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-02-10 15:10:13 +0200 (Fri, 10 Feb 2017) $
+#$Revision: 191974 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/8/10/16/8101632.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8101632
+loop_
+_publ_author_name
+'Baitinger, M.'
+'Grin, Yu.'
+'von Schnering, H. G.'
+'Kniep, R.'
+_publ_section_title
+;
+Crystal structure of tetrarubidium tetrahedro-tetrastannide, Rb~4~Sn~4~ 
+and of tetracaesium tetrahedro-tetrastannide, Cs~4~Sn~4~
+;
+_journal_issue                   4
+_journal_name_full
+'Zeitschrift f\"ur Kristallographie - New Crystal Structures'
+_journal_page_first              457
+_journal_page_last               458
+_journal_volume                  214
+_journal_year                    1999
+_chemical_formula_structural     'Cs4 Sn4'
+_chemical_formula_sum            'Cs16 Sn16'
+_chemical_formula_weight         8051.2
+_chemical_name_common            'Caesium stannide'
+_space_group_IT_number           142
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  '-I 4bd 2c'
+_symmetry_space_group_name_H-M   'I 41/a c d :2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            8
+_cell_length_a                   12.122(1)
+_cell_length_b                   12.122(1)
+_cell_length_c                   19.820(2)
+_cell_measurement_temperature    295
+_cell_volume                     2912.4(8)
+_diffrn_ambient_environment      air
+_diffrn_ambient_temperature      295
+_exptl_crystal_density_diffrn    4.5890(1)
+_refine_ls_R_factor_obs          0.0671
+_refine_ls_wR_factor_obs         0.0671
+_cod_depositor_comments
+;
+ Changing the _atom_site_occupancy data item value from '.' to '1'
+ for all fully occupied atom sites.
+
+ Antanas Vaitkus,
+ 2017-02-10
+;
+_cod_original_sg_symbol_H-M      'I 41/a c d'
+_cod_database_code               8101632
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+3/4-y,1/4+x,3/4+z
+1/2-x,-y,1/2+z
+3/4+y,3/4-x,1/4+z
+-x,y,1/2+z
+1/4+y,1/4+x,1/4+z
+1/2+x,-y,z
+1/4-y,3/4-x,3/4+z
+-x,-y,-z
+-3/4+y,-1/4-x,-3/4-z
+-1/2+x,y,-1/2-z
+-3/4-y,-3/4+x,-1/4-z
+x,-y,-1/2-z
+-1/4-y,-1/4-x,-1/4-z
+-1/2-x,y,-z
+-1/4+y,-3/4+x,-3/4-z
+1/2+x,1/2+y,1/2+z
+5/4-y,3/4+x,5/4+z
+1-x,1/2-y,1+z
+5/4+y,5/4-x,3/4+z
+1/2-x,1/2+y,1+z
+3/4+y,3/4+x,3/4+z
+1+x,1/2-y,1/2+z
+3/4-y,5/4-x,5/4+z
+1/2-x,1/2-y,1/2-z
+-1/4+y,1/4-x,-1/4-z
+x,1/2+y,-z
+-1/4-y,-1/4+x,1/4-z
+1/2+x,1/2-y,-z
+1/4-y,1/4-x,1/4-z
+-x,1/2+y,1/2-z
+1/4+y,-1/4+x,-1/4-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Cs1 0.0310(10) 0.0351(10) 0.0360(10) 0 0 -0.0080(9)
+Cs2 0.0364(7) 0.0364(7) 0.0378(10) 0.0018(9) -0.0015(6) 0.0015(6)
+Sn 0.0288(7) 0.0291(7) 0.0273(7) -0.0004(6) -0.0045(6) 0.0085(6)
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_thermal_displace_type
+_atom_site_U_iso_or_equiv
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_type_symbol
+_atom_site_occupancy
+Cs1 0.8557(2) 0 0.25 Uani 0.0341(6) 16 e Cs 1
+Cs2 0.3816(1) 0.6316(1) 0.125 Uani 0.0369(5) 16 f Cs 1
+Sn 0.0620(1) 0.1458(1) 0.92740(7) Uani 0.0284(4) 32 g Sn 1

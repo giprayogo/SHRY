@@ -1,0 +1,82 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/2/31/02/2310217.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2310217
+loop_
+_publ_author_name
+'Jeitschko, W.'
+'Parthe, E.'
+_publ_section_title
+;
+ D8,8 phases of the rare earth elements with tin and lead
+;
+_journal_name_full               'Acta Crystallographica (1,1948-23,1967)'
+_journal_page_first              551
+_journal_page_last               555
+_journal_volume                  22
+_journal_year                    1967
+_chemical_formula_sum            'Ho5 Sn3'
+_space_group_IT_number           193
+_symmetry_space_group_name_Hall  '-P 6c 2'
+_symmetry_space_group_name_H-M   'P 63/m c m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            2
+_cell_length_a                   8.847
+_cell_length_b                   8.847
+_cell_length_c                   6.458
+_cell_volume                     437.745
+_citation_journal_id_ASTM        ACCRA9
+_cod_data_source_file            Jeitschko_ACCRA9_1967_734.cif
+_cod_data_source_block           Ho5Sn3
+_cod_original_cell_volume        437.7446
+_cod_database_code               2310217
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x-y,x,z+1/2
+-y,x-y,z
+-x,-y,z+1/2
+-x+y,-x,z
+y,-x+y,z+1/2
+-y,-x,-z
+x-y,-y,-z+1/2
+x,x-y,-z
+y,x,-z+1/2
+-x+y,y,-z
+-x,-x+y,-z+1/2
+-x,-y,-z
+-x+y,-x,-z-1/2
+y,-x+y,-z
+x,y,-z-1/2
+x-y,x,-z
+-y,x-y,-z-1/2
+y,x,z
+-x+y,y,z-1/2
+-x,-x+y,z
+-y,-x,z-1/2
+x-y,-y,z
+x,x-y,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ho1 Ho 0.3333 0.6667 0 1 0.0
+Ho2 Ho 0.234 0 0.25 1 0.0
+Sn1 Sn 0.605 0 0.25 1 0.0

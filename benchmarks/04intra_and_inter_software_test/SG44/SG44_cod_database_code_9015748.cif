@@ -1,0 +1,78 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-06 19:24:22 +0300 (Fri, 06 Oct 2017) $
+#$Revision: 201816 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/9/01/57/9015748.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9015748
+loop_
+_publ_author_name
+'Averbuch-Pouchot M'
+'Durif, A.'
+_publ_section_title
+;
+ Contribution to the Crystal Chemistry of Tetrametaphosphates(II)
+ _cod_database_code 1007157
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              13
+_journal_page_last               19
+_journal_paper_doi               10.1016/0022-4596(85)90158-6
+_journal_volume                  60
+_journal_year                    1985
+_chemical_formula_sum            'Cs Na3 O16 P4'
+_space_group_IT_number           44
+_symmetry_space_group_name_Hall  'I 2 -2'
+_symmetry_space_group_name_H-M   'I m m 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   14.50
+_cell_length_b                   7.804
+_cell_length_c                   7.006
+_cell_volume                     792.785
+_database_code_amcsd             0013561
+_exptl_crystal_density_diffrn    2.437
+_cod_duplicate_entry             1007157
+_cod_original_formula_sum        'Cs P4 Na3 O16'
+_cod_database_code               9015748
+_amcsd_formula_title             'Cs H8 Na3 O16 P4'
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,1/2+z
+x,-y,z
+1/2+x,1/2-y,1/2+z
+-x,y,z
+1/2-x,1/2+y,1/2+z
+-x,-y,z
+1/2-x,1/2-y,1/2+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Cs1 0.00000 0.00000 0.00000
+P1 0.10103 0.19300 0.49240
+Na1 0.00000 0.50000 0.18640
+Na2 0.27840 0.00000 0.73020
+O1 0.16730 0.21610 0.65370
+O2 0.39510 0.19750 0.82110
+O3 0.50000 0.29960 0.08990
+O4 0.60440 0.50000 0.91410
+O5 0.21100 0.00000 0.03890
+O6 0.12900 0.50000 0.92930
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0013561

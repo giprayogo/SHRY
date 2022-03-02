@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Si2Sn2.5H32Pb3C40.5Br8O4
-_symmetry_space_group_name_H-M   Ccc2
+_symmetry_space_group_name_H-M  'C c c 2'
 _cell_length_a   26.64500000
 _cell_length_b   7.69020000
 _cell_length_c   5.72230000

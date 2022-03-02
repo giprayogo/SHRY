@@ -1,0 +1,264 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-26 17:11:47 +0200 (Sat, 26 Mar 2016) $
+#$Revision: 180380 $
+#$URL: svn://www.crystallography.net/cod/cif/7/20/49/7204933.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7204933
+loop_
+_publ_author_name
+'Barone, Giampaolo'
+'Hibbert, Tom G.'
+'Mahon, Mary F.'
+'Molloy, Kieran C.'
+'Price, Louise S.'
+'Parkin, Ivan P.'
+'Hardy, Amanda M. E.'
+'Field, Mark N.'
+_publ_section_title
+;
+ Deposition of tin sulfide thin films from tin(iv) thiolate precursors
+;
+_journal_issue                   2
+_journal_name_full               'Journal of Materials Chemistry'
+_journal_page_first              464
+_journal_paper_doi               10.1039/b005888m
+_journal_volume                  11
+_journal_year                    2001
+_chemical_formula_sum            'C24 H20 S4 Sn'
+_chemical_formula_weight         555.33
+_chemical_name_systematic        ?
+_space_group_IT_number           32
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  'P 2 -2ab'
+_symmetry_space_group_name_H-M   'P b a 2'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            2
+_cell_length_a                   17.1920(10)
+_cell_length_b                   8.553(2)
+_cell_length_c                   8.3420(10)
+_cell_measurement_temperature    293(2)
+_cell_volume                     1226.6(3)
+_computing_structure_refinement  'SHELXL-93 (Sheldrick, 1993)'
+_computing_structure_solution    'SHELXS-86 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_wavelength     0.70930
+_diffrn_reflns_av_R_equivalents  0.0123
+_diffrn_reflns_av_sigmaI/netI    0.0401
+_diffrn_reflns_limit_h_max       19
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       9
+_diffrn_reflns_limit_k_min       0
+_diffrn_reflns_limit_l_max       0
+_diffrn_reflns_limit_l_min       -9
+_diffrn_reflns_number            1037
+_diffrn_reflns_theta_max         23.89
+_diffrn_reflns_theta_min         2.36
+_exptl_absorpt_coefficient_mu    1.390
+_exptl_crystal_density_diffrn    1.504
+_exptl_crystal_F_000             556
+_exptl_crystal_size_max          0.2
+_exptl_crystal_size_mid          0.2
+_exptl_crystal_size_min          0.2
+_refine_diff_density_max         1.087
+_refine_diff_density_min         -0.532
+_refine_diff_density_rms         0.148
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   0.10(10)
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_all   1.073
+_refine_ls_goodness_of_fit_obs   1.244
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     132
+_refine_ls_number_reflns         1029
+_refine_ls_number_restraints     1
+_refine_ls_restrained_S_all      1.301
+_refine_ls_restrained_S_obs      1.243
+_refine_ls_R_factor_all          0.0872
+_refine_ls_R_factor_obs          0.0527
+_refine_ls_shift/esd_max         0.000
+_refine_ls_shift/esd_mean        0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'w=1/[\s^2^(Fo^2^)+(0.0769P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_all         0.1494
+_refine_ls_wR_factor_obs         0.1179
+_reflns_number_observed          729
+_reflns_number_total             1035
+_reflns_observed_criterion       >2sigma(I)
+_cod_data_source_file            b005888m.txt
+_cod_data_source_block           98kcm2
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+'_symmetry_cell_setting' value 'Orthorhombic' changed to 'orthorhombic'
+according to '/home/saulius/struct/CIF-dictionaries/cif_core.dic'
+dictionary named 'cif_core.dic' version 2.4.1 from 2010-06-29.
+
+Automatic conversion script
+Id: cif_fix_enum 1527 2010-12-29 10:47:43Z saulius 
+
+The following automatic conversions were performed:
+
+'_refine_ls_weighting_scheme' value 'calc
+w=1/[\s^2^(Fo^2^)+(0.0769P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3' was
+changed to 'calc'. New tag '_refine_ls_weighting_details' was
+created. The value of the new tag was set to
+'w=1/[\s^2^(Fo^2^)+(0.0769P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'.
+
+Automatic conversion script
+Id: cif_fix_values 3143 2015-03-26 13:38:13Z robertas 
+;
+_cod_original_sg_symbol_H-M      Pba2
+_cod_database_code               7204933
+#BEGIN Tags that were not found in dictionaries:
+_r_factor_obs
+'etc. and is not relevant to the choice of reflections for refinement. R-factors based on F^2^ are statistically about twice as large as those based on F, and R- factors based on ALL data will be even larger. ;'
+#END Tags that were not found in dictionaries
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, y+1/2, z'
+'x+1/2, -y+1/2, z'
+'-x, -y, z'
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Sn1 0.0563(5) 0.0657(6) 0.0751(6) 0.000 0.000 0.0058(5)
+S1 0.087(2) 0.085(2) 0.109(3) -0.027(2) -0.001(2) 0.024(2)
+S2 0.071(2) 0.084(2) 0.119(3) 0.010(2) -0.023(2) -0.011(2)
+C1 0.104(10) 0.051(6) 0.066(8) -0.015(6) 0.008(7) 0.006(6)
+C2 0.095(9) 0.060(6) 0.073(9) 0.007(8) 0.011(9) 0.002(6)
+C3 0.104(11) 0.086(9) 0.116(14) -0.023(9) -0.025(11) 0.023(8)
+C4 0.072(9) 0.129(13) 0.142(16) -0.060(14) -0.014(11) 0.001(10)
+C5 0.109(14) 0.130(16) 0.131(17) -0.023(15) 0.003(13) -0.039(11)
+C6 0.133(12) 0.072(8) 0.084(10) -0.006(9) -0.011(11) -0.005(8)
+C7 0.066(7) 0.085(8) 0.058(8) -0.012(7) -0.024(6) 0.001(6)
+C8 0.090(9) 0.105(11) 0.075(10) -0.006(9) 0.017(9) 0.013(8)
+C9 0.169(17) 0.108(12) 0.082(10) 0.022(9) 0.011(11) 0.029(12)
+C10 0.154(18) 0.078(10) 0.160(20) -0.011(12) -0.067(18) 0.022(11)
+C11 0.077(10) 0.099(11) 0.121(15) 0.004(11) -0.018(10) 0.013(9)
+C12 0.050(6) 0.103(9) 0.086(9) 0.000(10) 0.001(7) 0.005(6)
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_thermal_displace_type
+_atom_site_occupancy
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_group
+Sn1 Sn 0.5000 0.0000 0.9675(2) 0.0657(4) Uani 1 d S .
+S1 S 0.4840(2) 0.2322(4) 1.1209(6) 0.0936(11) Uani 1 d . .
+S2 S 0.3833(2) -0.0277(4) 0.8120(6) 0.0915(11) Uani 1 d . .
+C1 C 0.5808(8) 0.2538(13) 1.1856(14) 0.074(3) Uani 1 d . .
+C2 C 0.6122(8) 0.1665(11) 1.3078(19) 0.076(3) Uani 1 d . .
+H2 H 0.5810(8) 0.0927(11) 1.3584(19) 0.091 Uiso 1 calc R .
+C3 C 0.6882(10) 0.1837(16) 1.3588(21) 0.102(5) Uani 1 d . .
+H3 H 0.7088(10) 0.1194(16) 1.4380(21) 0.123 Uiso 1 calc R .
+C4 C 0.7314(9) 0.2967(21) 1.2900(29) 0.115(6) Uani 1 d . .
+H4 H 0.7814(9) 0.3141(21) 1.3287(29) 0.137 Uiso 1 calc R .
+C5 C 0.7051(10) 0.3871(20) 1.1657(31) 0.123(6) Uani 1 d . .
+H5 H 0.7375(10) 0.4596(20) 1.1160(31) 0.148 Uiso 1 calc R .
+C6 C 0.6283(9) 0.3669(14) 1.1161(20) 0.096(4) Uani 1 d . .
+H6 H 0.6084(9) 0.4301(14) 1.0352(20) 0.115 Uiso 1 calc R .
+C7 C 0.3790(7) 0.1648(14) 0.7314(14) 0.070(3) Uani 1 d . .
+C8 C 0.4234(7) 0.2075(17) 0.5986(18) 0.090(4) Uani 1 d . .
+H8 H 0.4547(7) 0.1329(17) 0.5496(18) 0.108 Uiso 1 calc R .
+C9 C 0.4220(10) 0.3562(19) 0.5386(20) 0.120(6) Uani 1 d . .
+H9 H 0.4537(10) 0.3873(19) 0.4540(20) 0.144 Uiso 1 calc R .
+C10 C 0.3693(14) 0.4596(18) 0.6138(34) 0.131(8) Uani 1 d . .
+H10 H 0.3662(14) 0.5615(18) 0.5756(34) 0.157 Uiso 1 calc R .
+C11 C 0.3229(8) 0.4181(20) 0.7390(24) 0.099(5) Uani 1 d . .
+H11 H 0.2869(8) 0.4881(20) 0.7814(24) 0.119 Uiso 1 calc R .
+C12 C 0.3303(6) 0.2753(15) 0.7988(19) 0.080(3) Uani 1 d . .
+H12 H 0.3016(6) 0.2485(15) 0.8893(19) 0.096 Uiso 1 calc R .
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+S S 0.1246 0.1234 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Sn Sn -0.6537 1.4246 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+S1 Sn1 S1 114.9(2) . 4_655 ?
+S1 Sn1 S2 106.04(13) . . ?
+S1 Sn1 S2 107.77(13) 4_655 . ?
+S1 Sn1 S2 107.77(13) . 4_655 ?
+S1 Sn1 S2 106.04(13) 4_655 4_655 ?
+S2 Sn1 S2 114.6(2) . 4_655 ?
+C1 S1 Sn1 98.2(4) . . ?
+C7 S2 Sn1 98.5(4) . . ?
+C2 C1 C6 117.1(12) . . ?
+C2 C1 S1 122.8(10) . . ?
+C6 C1 S1 120.0(10) . . ?
+C1 C2 C3 122.8(13) . . ?
+C4 C3 C2 117.8(15) . . ?
+C3 C4 C5 123.1(16) . . ?
+C4 C5 C6 117.8(17) . . ?
+C1 C6 C5 121.2(15) . . ?
+C12 C7 C8 118.4(12) . . ?
+C12 C7 S2 120.3(10) . . ?
+C8 C7 S2 121.3(10) . . ?
+C9 C8 C7 121.7(13) . . ?
+C8 C9 C10 115.5(17) . . ?
+C11 C10 C9 123.6(18) . . ?
+C12 C11 C10 118.2(16) . . ?
+C11 C12 C7 122.4(14) . . ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Sn1 S1 2.379(4) . ?
+Sn1 S1 2.379(4) 4_655 ?
+Sn1 S2 2.401(4) . ?
+Sn1 S2 2.401(4) 4_655 ?
+S1 C1 1.761(13) . ?
+S2 C7 1.780(13) . ?
+C1 C2 1.37(2) . ?
+C1 C6 1.39(2) . ?
+C2 C3 1.38(2) . ?
+C3 C4 1.35(2) . ?
+C4 C5 1.37(3) . ?
+C5 C6 1.39(2) . ?
+C7 C12 1.38(2) . ?
+C7 C8 1.39(2) . ?
+C8 C9 1.37(2) . ?
+C9 C10 1.41(2) . ?
+C10 C11 1.36(3) . ?
+C11 C12 1.33(2) . ?

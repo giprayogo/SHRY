@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Sm0.75Eu0.25Bi0.25As0.5P0.5At0.25Br0.75N0.75O4
-_symmetry_space_group_name_H-M   P4/mmm
+_symmetry_space_group_name_H-M  'P 4/m m m'
 _cell_length_a   3.87500000
 _cell_length_b   3.87500000
 _cell_length_c   9.54800000

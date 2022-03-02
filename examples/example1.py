@@ -8,7 +8,7 @@ structure.replace_species({'Fe1': 'Fe3Ti'})
 structure.replace_species({'Fe2': 'Fe3Ti', 'Fe3': 'Fe3Ti'})
 
 substitutor = Substitutor(structure)
-substitutor.make_patterns()
+substitutor.get_ap()
 os.makedirs("output", exist_ok=True)
 # A generator for Pymatgen's CifWriters
 for i, cifwriter in enumerate(substitutor.cifwriters()):

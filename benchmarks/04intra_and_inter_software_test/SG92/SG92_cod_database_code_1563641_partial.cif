@@ -1,0 +1,43 @@
+# generated using pymatgen
+data_Y8Po8Ge8TeS2O16Lv
+_symmetry_space_group_name_H-M  'P 41 21 2'
+_cell_length_a   6.80399000
+_cell_length_b   6.80399000
+_cell_length_c   12.37550000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   92
+_chemical_formula_structural   Y8Po8Ge8TeS2O16Lv
+_chemical_formula_sum   'Y8 Po8 Ge8 Te1 S2 O16 Lv1'
+_cell_volume   572.91486115
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z+1/4'
+  3  '-x, -y, z+1/2'
+  4  'y+1/2, -x+1/2, z+3/4'
+  5  'x+1/2, -y+1/2, -z+3/4'
+  6  '-y, -x, -z+1/2'
+  7  '-x+1/2, y+1/2, -z+1/4'
+  8  'y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  8  0.12180000  0.65000000  0.13510000  1.0
+  Ge  Ge1  8  0.09820000  0.84500000  0.62090000  1.0
+  O  O2  8  0.06350000  0.33680000  0.07120000  1.0
+  O  O3  8  0.14300000  0.68890000  0.95440000  1.0
+  S+  S4  8  0.02830000  0.92460000  0.37490000  0.125
+  Po+  Po5  8  0.02830000  0.92460000  0.37490000  0.625
+  Te+  Te6  8  0.02830000  0.92460000  0.37490000  0.125
+  Lv+  Lv7  8  0.02830000  0.92460000  0.37490000  0.125
+  S+  S8  4  0.19600000  0.80400000  0.75000000  0.25
+  Po+  Po9  4  0.19600000  0.80400000  0.75000000  0.75

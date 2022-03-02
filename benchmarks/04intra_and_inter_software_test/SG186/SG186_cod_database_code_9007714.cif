@@ -1,0 +1,88 @@
+#------------------------------------------------------------------------------
+#$Date: 2014-10-25 21:56:42 +0300 (Sat, 25 Oct 2014) $
+#$Revision: 125874 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/77/9007714.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9007714
+loop_
+_publ_author_name
+'Kanazawa, Y.'
+'Sasaki, A.'
+_publ_section_title
+;
+ Structure of kamiokite
+ Locality: Kamioka mine, Gifu Prefecture, Japan
+ Note: anisoB's taken from ICSD
+;
+_journal_name_full               'Acta Crystallographica, Section C'
+_journal_page_first              9
+_journal_page_last               11
+_journal_volume                  42
+_journal_year                    1986
+_chemical_formula_sum            'Fe2 Mo3 O8'
+_chemical_name_mineral           Kamiokite
+_space_group_IT_number           186
+_symmetry_space_group_name_Hall  'P 6c -2c'
+_symmetry_space_group_name_H-M   'P 63 m c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   5.781
+_cell_length_b                   5.781
+_cell_length_c                   10.060
+_cell_volume                     291.162
+_exptl_crystal_density_diffrn    6.017
+_cod_database_code               9007714
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-x+y,1/2+z
+x-y,x,1/2+z
+-y,-x,z
+-y,x-y,z
+x-y,-y,1/2+z
+-x,-y,1/2+z
+x,x-y,z
+-x+y,-x,z
+y,x,1/2+z
+y,-x+y,1/2+z
+-x+y,y,z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Fe1 0.00762 0.00762 0.00513 0.00381 0.00000 0.00000
+Fe2 0.00597 0.00597 0.00513 0.00292 0.00000 0.00000
+Mo 0.00241 0.00241 0.00410 0.00063 0.00026 0.00026
+O1 0.00470 0.00470 0.00667 0.00229 0.00000 0.00000
+O2 0.00622 0.00622 0.00410 0.00317 0.00000 0.00000
+O3 0.00736 0.00736 0.00615 0.00533 -0.00179 -0.00179
+O4 0.00571 0.00571 0.00769 0.00317 0.00204 0.00204
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Fe1 0.33333 0.66667 0.95040 0.00684
+Fe2 0.33333 0.66667 0.51200 0.00557
+Mo 0.14603 0.29206 0.25000 0.00320
+O1 0.00000 0.00000 0.39230 0.00519
+O2 0.33333 0.66667 0.14860 0.00557
+O3 0.48720 0.97440 0.36450 0.00621
+O4 0.16650 0.33300 0.63520 0.00633
+_journal_paper_doi 10.1107/S0108270186097500

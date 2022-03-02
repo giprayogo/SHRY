@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Ra1.5Li16Ca1.5Mg4.5Be0.5
-_symmetry_space_group_name_H-M   Fd-3m
+_symmetry_space_group_name_H-M  'F d -3 m :1'
 _cell_length_a   8.85600000
 _cell_length_b   8.85600000
 _cell_length_c   8.85600000

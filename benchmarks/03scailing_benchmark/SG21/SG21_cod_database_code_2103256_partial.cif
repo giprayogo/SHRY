@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Sr48Co32Bi16O117.5Lv1.5S1
-_symmetry_space_group_name_H-M   C222
+_symmetry_space_group_name_H-M  'C 2 2 2'
 _cell_length_a   23.47820000
 _cell_length_b   23.48570000
 _cell_length_c   5.51710000

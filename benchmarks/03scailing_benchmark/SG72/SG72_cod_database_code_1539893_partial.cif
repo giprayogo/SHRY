@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cs8Bh0.16666667Mn1.5Re2.33333333S8
-_symmetry_space_group_name_H-M   Ibam
+_symmetry_space_group_name_H-M  'I b a m'
 _cell_length_a   7.58900000
 _cell_length_b   13.78100000
 _cell_length_c   6.41400000

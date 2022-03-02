@@ -1,0 +1,85 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/58/9005804.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9005804
+loop_
+_publ_author_name
+'Koepke, J.'
+'Schulz, H.'
+_publ_section_title
+;
+ Single crystal structure investigations under high-pressure of the
+ mineral cordierite with an improved high-pressure cell
+ Sample: P = 1.2 GPa
+ Locality: Zabargad island, Red Sea
+;
+_journal_name_full               'Physics and Chemistry of Minerals'
+_journal_page_first              165
+_journal_page_last               173
+_journal_paper_doi               10.1007/BF00308159
+_journal_volume                  13
+_journal_year                    1986
+_chemical_formula_sum            'Al4 Mg2 O18 Si5'
+_chemical_name_mineral           Cordierite
+_space_group_IT_number           66
+_symmetry_space_group_name_Hall  '-C 2 2c'
+_symmetry_space_group_name_H-M   'C c c m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   17.013
+_cell_length_b                   9.680
+_cell_length_c                   9.3035
+_cell_volume                     1532.155
+_diffrn_ambient_pressure         1.2e+06
+_exptl_crystal_density_diffrn    2.536
+_cod_original_formula_sum        'Mg2 Al4 Si5 O18'
+_cod_database_code               9005804
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,1/2+z
+1/2+x,1/2-y,1/2+z
+-x,y,1/2-z
+1/2-x,1/2+y,1/2-z
+-x,y,1/2+z
+1/2-x,1/2+y,1/2+z
+x,-y,1/2-z
+1/2+x,1/2-y,1/2-z
+x,y,-z
+1/2+x,1/2+y,-z
+-x,-y,z
+1/2-x,1/2-y,z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Mg 0.16220 0.50000 0.25000 0.00690
+Al11 0.25000 0.25000 0.25030 0.00720
+Si16 0.00000 0.50000 0.25000 0.00610
+Si21 0.19300 0.07790 0.00000 0.00420
+Al26 0.05060 0.30830 0.00000 0.00510
+Si23 -0.13510 0.23740 0.00000 0.00570
+O11 0.24740 0.10310 0.14210 0.00680
+O16 0.06240 0.41540 0.15060 0.00780
+O13 -0.17330 0.31160 0.14230 0.00780
+O21 0.12280 0.18510 0.00000 0.01120
+O26 -0.04280 0.24800 0.00000 0.00820
+O23 -0.16470 0.08060 0.00000 0.01060

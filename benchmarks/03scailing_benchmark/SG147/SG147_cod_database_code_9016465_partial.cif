@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Ba10Te2.25P6S1O18Lv3.75
-_symmetry_space_group_name_H-M   P-3
+_symmetry_space_group_name_H-M  'P -3'
 _cell_length_a   10.25200000
 _cell_length_b   10.25200000
 _cell_length_c   7.65900000

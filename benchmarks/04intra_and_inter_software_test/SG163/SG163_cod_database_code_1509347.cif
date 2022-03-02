@@ -1,0 +1,73 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-14 16:26:36 +0200 (Sun, 14 Feb 2016) $
+#$Revision: 176435 $
+#$URL: svn://www.crystallography.net/cod/cif/1/50/93/1509347.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1509347
+loop_
+_publ_author_name
+'Kniep, R.'
+'Pfeiff, R.'
+_publ_section_title
+;
+ Quaternary selenodiphosphates(IV):M(I)M(III)(P2Se6),
+ (M(I)=Cu,Ag;M(III)=Cr,Al,Ga,In)
+;
+_journal_name_full               'Journal of Alloys Compd.'
+_journal_page_first              111
+_journal_page_last               133
+_journal_paper_doi               10.1016/0925-8388(92)90626-K
+_journal_volume                  186
+_journal_year                    1992
+_chemical_formula_sum            'Ag Ga P2 Se6'
+_chemical_name_systematic        'Ag Ga (P2 Se6)'
+_space_group_IT_number           163
+_symmetry_space_group_name_Hall  '-P 3 2c'
+_symmetry_space_group_name_H-M   'P -3 1 c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            2
+_cell_length_a                   6.375
+_cell_length_b                   6.375
+_cell_length_c                   13.32
+_cell_volume                     468.808
+_citation_journal_id_ASTM        JALCEU
+_cod_data_source_file            silver1-2_269.cif
+_cod_data_source_block           Ag1Ga1P2Se6
+_cod_original_cell_volume        468.8082
+_cod_original_formula_sum        'Ag1 Ga1 P2 Se6'
+_cod_database_code               1509347
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+-y,-x,-z+1/2
+x,x-y,-z+1/2
+-x+y,y,-z+1/2
+-x,-y,-z
+y,-x+y,-z
+x-y,x,-z
+y,x,z-1/2
+-x,-x+y,z-1/2
+x-y,-y,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ga1 Ga+3 0 0 0.25 1 0.0
+Ag1 Ag+1 0.6667 0.3333 0.25 1 0.0
+Se1 Se-2 0.3015 0.3218 0.1214 1 0.0
+P1 P+4 0.3333 0.6667 0.1718 1 0.0

@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Fe5.5Ru1.5Os0.5Hs0.5H12C8N12F20
+_symmetry_space_group_name_H-M  'I m m a'
+_cell_length_a   9.15520000
+_cell_length_b   7.48960000
+_cell_length_c   9.46440000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   74
+_chemical_formula_structural   Fe5.5Ru1.5Os0.5Hs0.5H12C8N12F20
+_chemical_formula_sum   'Fe5.5 Ru1.5 Os0.5 Hs0.5 H12 C8 N12 F20'
+_cell_volume   648.96241746
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y+1/2, z'
+  4  'x, y+1/2, -z'
+  5  '-x, y+1/2, -z'
+  6  'x, -y+1/2, z'
+  7  'x, -y, -z'
+  8  '-x, y, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-x+1/2, -y+1/2, -z+1/2'
+  11  '-x+1/2, -y, z+1/2'
+  12  'x+1/2, y, -z+1/2'
+  13  '-x+1/2, y, -z+1/2'
+  14  'x+1/2, -y, z+1/2'
+  15  'x+1/2, -y+1/2, -z+1/2'
+  16  '-x+1/2, y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  4  0.00000000  0.00000000  0.00000000  1.0
+  Ru+  Ru1  4  0.25000000  0.25000000  0.25000000  0.375
+  Fe+  Fe2  4  0.25000000  0.25000000  0.25000000  0.375
+  Os+  Os3  4  0.25000000  0.25000000  0.25000000  0.125
+  Hs+  Hs4  4  0.25000000  0.25000000  0.25000000  0.125
+  H  H5  8  0.21970000  0.25000000  0.58070000  1.0
+  H  H6  4  0.00000000  0.25000000  0.72890000  1.0
+  C  C7  8  0.11550000  0.25000000  0.54100000  1.0
+  N  N8  8  0.07420000  0.25000000  0.41550000  1.0
+  N  N9  4  0.00000000  0.25000000  0.63050000  1.0
+  F  F10  16  0.14610000  0.05370000  0.13670000  1.0
+  F  F11  4  0.00000000  0.25000000  0.93180000  1.0

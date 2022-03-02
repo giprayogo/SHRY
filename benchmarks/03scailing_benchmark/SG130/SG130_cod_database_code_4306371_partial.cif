@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_H48Ds0.75Ni1.75Pd1.5Pt4C32S32
-_symmetry_space_group_name_H-M   P4/ncc
+_symmetry_space_group_name_H-M  'P 4/n c c :2'
 _cell_length_a   12.71300000
 _cell_length_b   12.71300000
 _cell_length_c   11.81800000

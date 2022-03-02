@@ -1,0 +1,65 @@
+# generated using pymatgen
+data_Cr4Mo0.66666667Pb20W7Sg0.33333333F76
+_symmetry_space_group_name_H-M  'I 4 c m'
+_cell_length_a   14.38400000
+_cell_length_b   14.38400000
+_cell_length_c   7.40800000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   108
+_chemical_formula_structural   Cr4Mo0.66666667Pb20W7Sg0.33333333F76
+_chemical_formula_sum   'Cr4 Mo0.66666667 Pb20 W7 Sg0.33333333 F76'
+_cell_volume   1532.71117005
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z'
+  3  '-x, -y, z'
+  4  'y, -x, z'
+  5  '-x, y, z+1/2'
+  6  'y, x, z+1/2'
+  7  'x, -y, z+1/2'
+  8  '-y, -x, z+1/2'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-y+1/2, x+1/2, z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'y+1/2, -x+1/2, z+1/2'
+  13  '-x+1/2, y+1/2, z'
+  14  'y+1/2, x+1/2, z'
+  15  'x+1/2, -y+1/2, z'
+  16  '-y+1/2, -x+1/2, z'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Cr0+  0.0
+  Mo0+  0.0
+  Pb0+  0.0
+  W0+  0.0
+  F0+  0.0
+  Sg0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cr0+  Cr0  4  0.00000000  0.00000000  0.17990000  1.0
+  W0+  W1  8  0.16320000  0.33680000  0.98930000  0.875
+  Mo0+  Mo2  8  0.16320000  0.33680000  0.98930000
+  0.08333333333333333
+  Sg0+  Sg3  8  0.16320000  0.33680000  0.98930000
+  0.041666666666666664
+  Pb0+  Pb4  16  0.07360000  0.22730000  0.50000000  1.0
+  Pb0+  Pb5  4  0.00000000  0.50000000  0.15080000  1.0
+  F0+  F6  16  0.05690000  0.11530000  0.68750000  1.0
+  F0+  F7  16  0.06910000  0.30160000  0.16550000  1.0
+  F0+  F8  16  0.10850000  0.24880000  0.82740000  1.0
+  F0+  F9  8  0.07200000  0.42800000  0.91720000  1.0
+  F0+  F10  8  0.11440000  0.38560000  0.51950000  1.0
+  F0+  F11  8  0.24770000  0.25230000  0.55710000  1.0
+  F0+  F12  4  0.00000000  0.00000000  0.43230000  1.0

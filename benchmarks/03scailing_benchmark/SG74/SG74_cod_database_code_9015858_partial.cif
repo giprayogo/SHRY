@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Ba0.25Sr2.5Ca3Mg8.5Be1.75Si8O32
-_symmetry_space_group_name_H-M   Imma
+_symmetry_space_group_name_H-M  'I m m a'
 _cell_length_a   5.70160000
 _cell_length_b   11.44270000
 _cell_length_c   8.24910000

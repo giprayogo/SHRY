@@ -1,0 +1,68 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-07-13 22:12:34 +0300 (Mon, 13 Jul 2015) $
+#$Revision: 150882 $
+#$URL: svn://www.crystallography.net/cod/cif/1/52/85/1528513.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1528513
+loop_
+_publ_author_name
+'Gatehouse, B.M.'
+'Lloyd, D.J.'
+_publ_section_title
+;
+ The crystal structure of beta-K2 Zr2 O5
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              478
+_journal_page_last               483
+_journal_volume                  1
+_journal_year                    1970
+_chemical_formula_sum            'K2 O5 Zr2'
+_chemical_name_systematic        'K2 (Zr2 O5)'
+_space_group_IT_number           52
+_symmetry_space_group_name_Hall  '-P 2a 2bc'
+_symmetry_space_group_name_H-M   'P n n a'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   5.85
+_cell_length_b                   10.79
+_cell_length_c                   8.76
+_cell_volume                     552.944
+_citation_journal_id_ASTM        JSSCBI
+_cod_data_source_file            Gatehouse_JSSCBI_1970_1915.cif
+_cod_data_source_block           K2O5Zr2
+_cod_original_cell_volume        552.9443
+_cod_database_code               1528513
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x+1/2,-y,z
+x,-y+1/2,-z+1/2
+-x+1/2,y+1/2,-z+1/2
+-x,-y,-z
+x-1/2,y,-z
+-x,y-1/2,z-1/2
+x-1/2,-y-1/2,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O2 O-2 0.25 0 0.255 1 0.0
+O4 O-2 0.04 0.25 0.25 1 0.0
+O3 O-2 0.25 0 0.677 1 0.0
+K1 K+1 0.438 0.334 0.077 1 0.0
+O1 O-2 0.136 0.398 0.554 1 0.0
+Zr1 Zr+4 0.9697 0.0763 0.1603 1 0.0

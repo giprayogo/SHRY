@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Ra0.33333333Na4Sr1Ca0.33333333Be0.33333333Si10Te3.33333333Se0.66666667O20
-_symmetry_space_group_name_H-M   P2/c
+_symmetry_space_group_name_H-M  'P 1 2/n 1'
 _cell_length_a   9.41800000
 _cell_length_b   8.64700000
 _cell_length_c   5.27400000

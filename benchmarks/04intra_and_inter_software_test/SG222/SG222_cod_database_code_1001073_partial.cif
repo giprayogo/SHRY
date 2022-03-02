@@ -1,0 +1,90 @@
+# generated using pymatgen
+data_Nd12.5Sm0.5Eu0.5Tm6.5Mo12O64
+_symmetry_space_group_name_H-M  'P n -3 n :2'
+_cell_length_a   10.99000000
+_cell_length_b   10.99000000
+_cell_length_c   10.99000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   222
+_chemical_formula_structural   Nd12.5Sm0.5Eu0.5Tm6.5Mo12O64
+_chemical_formula_sum   'Nd12.5 Sm0.5 Eu0.5 Tm6.5 Mo12 O64'
+_cell_volume   1327.37329900
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x, z'
+  3  '-x+1/2, -y+1/2, z'
+  4  'y, -x+1/2, z'
+  5  'x, -y+1/2, -z+1/2'
+  6  '-y+1/2, -x+1/2, -z+1/2'
+  7  '-x+1/2, y, -z+1/2'
+  8  'y, x, -z+1/2'
+  9  'z, x, y'
+  10  'z, -y+1/2, x'
+  11  'z, -x+1/2, -y+1/2'
+  12  'z, y, -x+1/2'
+  13  '-z+1/2, x, -y+1/2'
+  14  '-z+1/2, -y+1/2, -x+1/2'
+  15  '-z+1/2, -x+1/2, y'
+  16  '-z+1/2, y, x'
+  17  'y, z, x'
+  18  'x, z, -y+1/2'
+  19  '-y+1/2, z, -x+1/2'
+  20  '-x+1/2, z, y'
+  21  '-y+1/2, -z+1/2, x'
+  22  '-x+1/2, -z+1/2, -y+1/2'
+  23  'y, -z+1/2, -x+1/2'
+  24  'x, -z+1/2, y'
+  25  '-x, -y, -z'
+  26  'y+1/2, -x, -z'
+  27  'x+1/2, y+1/2, -z'
+  28  '-y, x+1/2, -z'
+  29  '-x, y+1/2, z+1/2'
+  30  'y+1/2, x+1/2, z+1/2'
+  31  'x+1/2, -y, z+1/2'
+  32  '-y, -x, z+1/2'
+  33  '-z, -x, -y'
+  34  '-z, y+1/2, -x'
+  35  '-z, x+1/2, y+1/2'
+  36  '-z, -y, x+1/2'
+  37  'z+1/2, -x, y+1/2'
+  38  'z+1/2, y+1/2, x+1/2'
+  39  'z+1/2, x+1/2, -y'
+  40  'z+1/2, -y, -x'
+  41  '-y, -z, -x'
+  42  '-x, -z, y+1/2'
+  43  'y+1/2, -z, x+1/2'
+  44  'x+1/2, -z, -y'
+  45  'y+1/2, z+1/2, -x'
+  46  'x+1/2, z+1/2, y+1/2'
+  47  '-y, z+1/2, x+1/2'
+  48  '-x, z+1/2, -y'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Nd0+  0.0
+  Sm0+  0.0
+  Eu0+  0.0
+  Tm0+  0.0
+  Mo0+  0.0
+  O0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd0+  Nd0  12  0.02000000  0.75000000  0.75000000  1.0
+  Tm0+  Tm1  8  0.00000000  0.00000000  0.00000000  0.8125
+  Nd0+  Nd2  8  0.00000000  0.00000000  0.00000000  0.0625
+  Eu0+  Eu3  8  0.00000000  0.00000000  0.00000000  0.0625
+  Sm0+  Sm4  8  0.00000000  0.00000000  0.00000000  0.0625
+  Mo0+  Mo5  12  0.00000000  0.25000000  0.75000000  1.0
+  O0+  O6  48  0.07000000  0.17000000  0.87000000  1.0
+  O0+  O7  16  0.12800000  0.12800000  0.12800000  1.0

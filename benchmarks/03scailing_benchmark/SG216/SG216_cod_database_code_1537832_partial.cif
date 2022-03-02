@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Yb1Tb0.5Pm1Er1.5Ni1Sb4Pd1.5Pt1.5
-_symmetry_space_group_name_H-M   F-43m
+_symmetry_space_group_name_H-M  'F -4 3 m'
 _cell_length_a   6.29000000
 _cell_length_b   6.29000000
 _cell_length_c   6.29000000

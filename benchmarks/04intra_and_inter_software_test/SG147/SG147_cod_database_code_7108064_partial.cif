@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Fe1.5Ru1.25Os0.25H24C12Br8N24
+_symmetry_space_group_name_H-M  'P -3'
+_cell_length_a   12.68300000
+_cell_length_b   12.68300000
+_cell_length_c   6.79800000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   147
+_chemical_formula_structural   Fe1.5Ru1.25Os0.25H24C12Br8N24
+_chemical_formula_sum   'Fe1.5 Ru1.25 Os0.25 H24 C12 Br8 N24'
+_cell_volume   947.01264257
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  1  0.00000000  0.00000000  0.50000000  1.0
+  Ru+  Ru1  2  0.33333333  0.66666667  0.53209000  0.625
+  Fe+  Fe2  2  0.33333333  0.66666667  0.53209000  0.25
+  Os+  Os3  2  0.33333333  0.66666667  0.53209000  0.125
+  H  H4  6  0.01130000  0.62780000  0.04020000  1.0
+  H  H5  6  0.05660000  0.59690000  0.84010000  1.0
+  H  H6  6  0.08240000  0.43670000  0.13700000  1.0
+  H  H7  6  0.10900000  0.28010000  0.34950000  1.0
+  C  C8  6  0.00210000  0.62270000  0.89690000  1.0
+  C  C9  6  0.03010000  0.22670000  0.29870000  1.0
+  Br  Br10  6  0.15957000  0.66691000  0.41478000  1.0
+  Br  Br11  2  0.33333333  0.66666667  0.87402000  1.0
+  N  N12  6  0.03280000  0.74180000  0.81840000  1.0
+  N  N13  6  0.03510000  0.89110000  0.66700000  1.0
+  N  N14  6  0.06910000  0.21050000  0.76560000  1.0
+  N  N15  6  0.14040000  0.84120000  0.85730000  1.0

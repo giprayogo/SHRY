@@ -1,0 +1,59 @@
+# generated using pymatgen
+data_Ni8As7H96C56N9O32
+_symmetry_space_group_name_H-M  'C m m a'
+_cell_length_a   15.48000000
+_cell_length_b   15.63800000
+_cell_length_c   8.04800000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   67
+_chemical_formula_structural   Ni8As7H96C56N9O32
+_chemical_formula_sum   'Ni8 As7 H96 C56 N9 O32'
+_cell_volume   1948.22957952
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z'
+  4  'x+1/2, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x+1/2, y, -z'
+  8  'x+1/2, -y, z'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x, -y+1/2, z'
+  12  'x, y+1/2, -z'
+  13  'x+1/2, -y+1/2, -z'
+  14  '-x+1/2, y+1/2, z'
+  15  '-x, y+1/2, -z'
+  16  'x, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ni  Ni0  8  0.00000000  0.05907000  0.11560000  1.0
+  H  H1  16  0.07770000  0.12290000  0.46100000  1.0
+  H  H2  16  0.12900000  0.17250000  0.32340000  1.0
+  H  H3  16  0.18650000  0.17420000  0.73930000  1.0
+  H  H4  16  0.21400000  0.08570000  0.66460000  1.0
+  H  H5  16  0.24690000  0.11300000  0.84100000  1.0
+  H  H6  8  0.00000000  0.19990000  0.66980000  1.0
+  H  H7  8  0.05070000  0.25000000  0.10850000  1.0
+  As+  As8  8  0.00000000  0.17180000  0.28230000  0.875
+  N+  N9  8  0.00000000  0.17180000  0.28230000  0.125
+  C  C10  16  0.07740000  0.17360000  0.39150000  1.0
+  C  C11  16  0.12090000  0.07420000  0.84320000  1.0
+  C  C12  16  0.19920000  0.11550000  0.76490000  1.0
+  C  C13  4  0.00000000  0.25000000  0.17940000  1.0
+  C  C14  4  0.00000000  0.25000000  0.59880000  1.0
+  N  N15  8  0.07880000  0.25000000  0.49750000  1.0
+  O  O16  16  0.09030000  0.00920000  0.77500000  1.0
+  O  O17  16  0.09200000  0.10760000  0.97350000  1.0

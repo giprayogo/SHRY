@@ -1,0 +1,69 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-14 16:26:36 +0200 (Sun, 14 Feb 2016) $
+#$Revision: 176435 $
+#$URL: svn://www.crystallography.net/cod/cif/1/51/12/1511206.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1511206
+loop_
+_publ_author_name
+'Shuvaeva, V.A.'
+'Belokoneva, E.L.'
+'Leonyuk, N.I.'
+'Antipin, M.Yu.'
+_publ_section_title
+;
+ Crystal structure of a high-temperature modification of La B Si O5, a
+ synthetic analog of stillwellite
+;
+_journal_name_full               'Zhurnal Neorganicheskoi Khimii'
+_journal_page_first              1097
+_journal_page_last               1101
+_journal_volume                  41
+_journal_year                    1996
+_chemical_formula_sum            'B La O5 Si'
+_chemical_name_systematic        'La (B Si O5)'
+_space_group_IT_number           144
+_symmetry_space_group_name_Hall  'P 31'
+_symmetry_space_group_name_H-M   'P 31'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   6.838
+_cell_length_b                   6.838
+_cell_length_c                   6.773
+_cell_volume                     274.265
+_citation_journal_id_ASTM        ZNOKAQ
+_cod_data_source_file            boron0-1_317.cif
+_cod_data_source_block           B1La1O5Si1
+_cod_original_cell_volume        274.2647
+_cod_original_formula_sum        'B1 La1 O5 Si1'
+_cod_database_code               1511206
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z+1/3
+-x+y,-x,z+2/3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O4 O-2 0.466 0.603 0.002 1 0.0
+O2 O-2 0.191 0.343 0.307 1 0.0
+Si1 Si+4 0.5825 0 0.499 1 0.0
+O5 O-2 0 0.037 0.833 1 0.0
+O1 O-2 0.343 0.191 0.027 1 0.0
+B1 B+3 0.111 0.001 0 1 0.0
+La1 La+3 0.59784 0 0 1 0.0
+O3 O-2 0.603 0.466 0.33 1 0.0

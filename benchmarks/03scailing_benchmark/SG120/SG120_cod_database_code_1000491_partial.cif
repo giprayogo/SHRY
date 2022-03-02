@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cs20Co20I6.33333333Br1.33333333F72Ts0.33333333
-_symmetry_space_group_name_H-M   I-4c2
+_symmetry_space_group_name_H-M  'I -4 c 2'
 _cell_length_a   12.43530000
 _cell_length_b   12.43530000
 _cell_length_c   12.86120000

@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # pylint: disable=logging-fstring-interpolation, logging-not-lazy
+"""
+Shared constants
+"""
 
 # information
 __author__ = "Genki Prayogo, and Kosuke Nakano"
@@ -13,12 +16,10 @@ __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
-"""
-Shared constants
-"""
 import re
 
 # Default input arguments
+# TODO: Refactor together with ScriptHelper
 DEFAULT_FROM_SPECIES = ()
 DEFAULT_TO_SPECIES = ()
 DEFAULT_SCALING_MATRIX = (1, 1, 1)
@@ -26,9 +27,11 @@ DEFAULT_SCALING_MATRIX_STR = "1 1 1"
 DEFAULT_SYMMETRIZE = False
 DEFAULT_SAMPLE = None
 DEFAULT_SYMPREC = 1.0e-2
+DEFAULT_ATOL = 1.0e-5
 DEFAULT_ANGLE_TOLERANCE = 5.0
 DEFAULT_DIR_SIZE = 10000
 DEFAULT_WRITE_SYMM = False
+DEFAULT_WRITE_EWALD = False
 DEFAULT_NO_WRITE = False
 DEFAULT_NO_DMAT = False
 DEFAULT_T_KIND = "sum"
@@ -51,6 +54,4 @@ MAX_IRREDUCIBLE = 1e9
 # Display formatting
 LINEWIDTH = 88
 HLINE = "-" * LINEWIDTH
-TQDM_CONF = {
-	"ncols": LINEWIDTH
-}
+TQDM_CONF = {"ncols": LINEWIDTH}

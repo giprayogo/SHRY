@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_FrK2NaGd4TeH8C36Se6O20Lv
+_symmetry_space_group_name_H-M  'P 43 2 2'
+_cell_length_a   10.36040000
+_cell_length_b   10.36040000
+_cell_length_c   14.50590000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   95
+_chemical_formula_structural   FrK2NaGd4TeH8C36Se6O20Lv
+_chemical_formula_sum   'Fr1 K2 Na1 Gd4 Te1 H8 C36 Se6 O20 Lv1'
+_cell_volume   1557.03267186
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z+3/4'
+  3  '-x, -y, z+1/2'
+  4  'y, -x, z+1/4'
+  5  'x, -y, -z+1/2'
+  6  '-y, -x, -z+3/4'
+  7  '-x, y, -z'
+  8  'y, x, -z+1/4'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fr+  Fr0  4  0.00000000  0.10960000  0.50000000  0.25
+  Na+  Na1  4  0.00000000  0.10960000  0.50000000  0.25
+  K+  K2  4  0.00000000  0.10960000  0.50000000  0.5
+  Gd  Gd3  4  0.14567000  0.14567000  0.12500000  1.0
+  H  H4  8  0.06980000  0.44340000  0.37170000  1.0
+  C  C5  8  0.03990000  0.26250000  0.42200000  1.0
+  C  C6  8  0.04120000  0.39780000  0.42300000  1.0
+  C  C7  8  0.08280000  0.18900000  0.33940000  1.0
+  C  C8  4  0.00000000  0.19940000  0.50000000  1.0
+  C  C9  4  0.00000000  0.38930000  0.00000000  1.0
+  C  C10  4  0.00000000  0.46290000  0.50000000  1.0
+  O  O11  8  0.06920000  0.33550000  0.05860000  1.0
+  Te+  Te12  8  0.08950000  0.24750000  0.26380000  0.125
+  Se+  Se13  8  0.08950000  0.24750000  0.26380000  0.75
+  Lv+  Lv14  8  0.08950000  0.24750000  0.26380000  0.125
+  O  O15  8  0.07240000  0.10690000  0.90450000  1.0
+  O  O16  4  0.31410000  0.31410000  0.12500000  1.0

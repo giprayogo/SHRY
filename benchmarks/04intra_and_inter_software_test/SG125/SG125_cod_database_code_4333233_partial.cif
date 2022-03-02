@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Al0.83333333Cu2B0.16666667Nh1H18C16N8F12
+_symmetry_space_group_name_H-M  'P 4/n b m :2'
+_cell_length_a   9.68720000
+_cell_length_b   9.68720000
+_cell_length_c   6.59980000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   125
+_chemical_formula_structural
+Al0.83333333Cu2B0.16666667Nh1H18C16N8F12
+_chemical_formula_sum
+'Al0.83333333 Cu2 B0.16666667 Nh1 H18 C16 N8 F12'
+_cell_volume   619.33740098
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x, z'
+  3  '-x+1/2, -y+1/2, z'
+  4  'y, -x+1/2, z'
+  5  'x, -y+1/2, -z'
+  6  '-y+1/2, -x+1/2, -z'
+  7  '-x+1/2, y, -z'
+  8  'y, x, -z'
+  9  '-x, -y, -z'
+  10  'y+1/2, -x, -z'
+  11  'x+1/2, y+1/2, -z'
+  12  '-y, x+1/2, -z'
+  13  '-x, y+1/2, z'
+  14  'y+1/2, x+1/2, z'
+  15  'x+1/2, -y, z'
+  16  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu  Cu0  2  0.25000000  0.25000000  0.50000000  1.0
+  Al+  Al1  2  0.25000000  0.75000000  0.00000000
+  0.4166666666666667
+  B+  B2  2  0.25000000  0.75000000  0.00000000  0.08333333333333333
+  Nh+  Nh3  2  0.25000000  0.75000000  0.00000000  0.5
+  H  H4  16  0.01020000  0.15940000  0.24520000  1.0
+  H  H5  2  0.25000000  0.25000000  0.00000000  1.0
+  C  C6  16  0.00750000  0.09400000  0.35230000  1.0
+  N  N7  8  0.10100000  0.10100000  0.50000000  1.0
+  F  F8  8  0.16570000  0.66570000  0.89030000  1.0
+  F  F9  4  0.25000000  0.25000000  0.16730000  1.0

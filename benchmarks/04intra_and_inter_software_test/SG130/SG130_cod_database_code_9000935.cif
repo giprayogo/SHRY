@@ -1,0 +1,90 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/09/9000935.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9000935
+loop_
+_publ_author_name
+'Belsky, H. L.'
+'Rossman, G. R.'
+'Prewitt, C. T.'
+'Gasparik, T.'
+_publ_section_title
+;
+ Crystal structure and optical spectroscopy (300 to 2200 nm) of CaCrSi4O10
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              771
+_journal_page_last               776
+_journal_volume                  69
+_journal_year                    1984
+_chemical_formula_sum            'Ca Cr O10 Si4'
+_chemical_name_mineral           Gillespite
+_space_group_IT_number           130
+_symmetry_space_group_name_Hall  'P 4ab 2n -1ab'
+_symmetry_space_group_name_H-M   'P 4/n c c :1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   7.378
+_cell_length_b                   7.378
+_cell_length_c                   15.119
+_cell_volume                     823.001
+_exptl_crystal_density_diffrn    2.941
+_cod_original_sg_symbol_H-M      'P 4/n c c'
+_cod_original_formula_sum        'Ca Cr Si4 O10'
+_cod_database_code               9000935
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2-y,1/2-x,1/2+z
+y,x,1/2-z
+y,-x,-z
+1/2-y,1/2+x,z
+x,-y,1/2+z
+1/2-x,1/2+y,1/2-z
+1/2+x,1/2+y,-z
+-x,-y,z
+1/2+y,1/2+x,1/2+z
+-y,-x,1/2-z
+-y,x,-z
+1/2+y,1/2-x,z
+-x,y,1/2+z
+1/2+x,1/2-y,1/2-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Ca 0.00847 0.00847 0.01065 0.00000 0.00000 0.00000
+Cr 0.00472 0.00472 0.01471 0.00000 0.00000 0.00000
+Si 0.00510 0.00521 0.00973 0.00025 0.00017 -0.00034
+O1 0.02231 0.02231 0.02084 -0.00345 0.00384 -0.00384
+O2 0.00463 0.01409 0.01841 -0.00185 -0.00085 0.00283
+O3 0.00723 0.00609 0.02119 0.00135 -0.00333 -0.00028
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Ca 0.00000 0.00000 0.00000
+Cr 0.00000 0.50000 0.07951
+Si 0.25310 0.17208 0.14801
+O1 0.20819 0.20819 0.25000
+O2 0.45499 0.24829 0.12833
+O3 0.10627 0.25049 0.08189

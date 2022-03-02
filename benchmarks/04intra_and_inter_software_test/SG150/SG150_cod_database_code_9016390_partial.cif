@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_K6Po3Te2S6LvO12
+_symmetry_space_group_name_H-M  'P 3 2 1'
+_cell_length_a   9.82000000
+_cell_length_b   9.82000000
+_cell_length_c   6.36000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   150
+_chemical_formula_structural   K6Po3Te2S6LvO12
+_chemical_formula_sum   'K6 Po3 Te2 S6 Lv1 O12'
+_cell_volume   531.14209582
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'y, x, -z'
+  5  'x-y, -y, -z'
+  6  '-x, -x+y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  3  0.00000000  0.31000000  0.50000000  1
+  K  K1  3  0.00000000  0.61000000  0.00000000  1
+  S+  S2  2  0.00000000  0.00000000  0.16000000  0.5
+  Te+  Te3  2  0.00000000  0.00000000  0.16000000  0.5
+  S  S4  2  0.33333333  0.66666667  0.73000000  1
+  Lv+  Lv5  2  0.33333333  0.66666667  0.41000000  0.5
+  S+  S6  2  0.33333333  0.66666667  0.41000000  0.5
+  Te+  Te7  6  0.09000000  0.18000000  0.78000000
+  0.16666666666666666
+  S+  S8  6  0.09000000  0.18000000  0.78000000  0.3333333333333333
+  Po+  Po9  6  0.09000000  0.18000000  0.78000000  0.5
+  O  O10  6  0.16000000  0.58000000  0.79000000  1
+  O  O11  6  0.24000000  0.48000000  0.35000000  1

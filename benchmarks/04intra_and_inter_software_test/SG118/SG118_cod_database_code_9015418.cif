@@ -1,0 +1,74 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-06 19:24:22 +0300 (Fri, 06 Oct 2017) $
+#$Revision: 201816 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/9/01/54/9015418.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9015418
+loop_
+_publ_author_name
+'Clark, G. L.'
+'Reynolds, D. A.'
+_publ_section_title
+;
+ The crystal structure of zinc meta-antimonate Zn(SbO~3~)~2~
+;
+_journal_issue                   1-6
+_journal_name_full
+;
+ Zeitschrift f\"ur Kristallographie - Crystalline Materials
+;
+_journal_page_first              185
+_journal_page_last               190
+_journal_paper_doi               10.1524/zkri.1938.98.1.185
+_journal_volume                  98
+_journal_year                    1938
+_chemical_formula_sum            'Sb2 Zn'
+_space_group_IT_number           118
+_symmetry_space_group_name_Hall  'P -4 -2n'
+_symmetry_space_group_name_H-M   'P -4 n 2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   6.585
+_cell_length_b                   6.585
+_cell_length_c                   6.585
+_cell_volume                     285.540
+_database_code_amcsd             0017499
+_exptl_crystal_density_diffrn    3.593
+_cod_duplicate_entry             1010617
+_cod_original_formula_sum        'Zn Sb2'
+_cod_database_code               9015418
+_amcsd_formula_title             'O6 Sb2 Zn'
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+y,1/2+x,1/2-z
+y,-x,-z
+1/2+x,1/2-y,1/2+z
+-x,-y,z
+1/2-y,1/2-x,1/2-z
+-y,x,-z
+1/2-x,1/2+y,1/2+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Zn1 0.00000 0.00000 0.00000
+Sb1 0.34000 0.16000 0.25000
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0017499

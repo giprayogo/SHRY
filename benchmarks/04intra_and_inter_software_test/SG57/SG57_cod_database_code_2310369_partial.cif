@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Cu4C4N8Mc2.5Bi0.5Sb0.5As0.5
+_symmetry_space_group_name_H-M  'P b c m'
+_cell_length_a   4.68400000
+_cell_length_b   9.17200000
+_cell_length_c   7.83000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   57
+_chemical_formula_structural   Cu4C4N8Mc2.5Bi0.5Sb0.5As0.5
+_chemical_formula_sum   'Cu4 C4 N8 Mc2.5 Bi0.5 Sb0.5 As0.5'
+_cell_volume   336.38970384
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z+1/2'
+  4  'x, y, -z+1/2'
+  5  'x, -y+1/2, -z'
+  6  '-x, y+1/2, z'
+  7  '-x, y+1/2, -z+1/2'
+  8  'x, -y+1/2, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Cu0+  0.0
+  Bi0+  0.0
+  Sb0+  0.0
+  As0+  0.0
+  C0+  0.0
+  N0+  0.0
+  Mc0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu0+  Cu0  4  0.22430000  0.15350000  0.75000000  1.0
+  C0+  C1  4  0.03190000  0.53280000  0.25000000  1.0
+  N0+  N2  8  0.47850000  0.67680000  0.53980000  1.0
+  Mc0+  Mc3  4  0.06580000  0.14990000  0.25000000  0.625
+  Bi0+  Bi4  4  0.06580000  0.14990000  0.25000000  0.125
+  As0+  As5  4  0.06580000  0.14990000  0.25000000  0.125
+  Sb0+  Sb6  4  0.06580000  0.14990000  0.25000000  0.125

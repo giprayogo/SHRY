@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Nb8Ir1.83333333Mt0.16666667Sb0.16666667P0.33333333N1.5
+_symmetry_space_group_name_H-M  'P 4/m c c'
+_cell_length_a   6.11800000
+_cell_length_b   6.11800000
+_cell_length_c   4.99600000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   124
+_chemical_formula_structural
+Nb8Ir1.83333333Mt0.16666667Sb0.16666667P0.33333333N1.5
+_chemical_formula_sum
+'Nb8 Ir1.83333333 Mt0.16666667 Sb0.16666667 P0.33333333 N1.5'
+_cell_volume   186.99990030
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z+1/2'
+  10  '-x, y, z+1/2'
+  11  '-y, -x, -z+1/2'
+  12  'y, x, z+1/2'
+  13  '-x, y, -z+1/2'
+  14  'x, -y, z+1/2'
+  15  'y, x, -z+1/2'
+  16  '-y, -x, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nb  Nb0  8  0.16200000  0.33800000  0.50000000  1.0
+  Ir+  Ir1  2  0.00000000  0.00000000  0.25000000
+  0.9166666666666666
+  Mt+  Mt2  2  0.00000000  0.00000000  0.25000000
+  0.08333333333333333
+  P+  P3  2  0.50000000  0.50000000  0.25000000  0.16666666666666666
+  Sb+  Sb4  2  0.50000000  0.50000000  0.25000000
+  0.08333333333333333
+  N+  N5  2  0.50000000  0.50000000  0.25000000  0.75

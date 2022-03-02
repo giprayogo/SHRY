@@ -1,0 +1,288 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-26 17:16:47 +0200 (Sat, 26 Mar 2016) $
+#$Revision: 180385 $
+#$URL: svn://www.crystallography.net/cod/cif/7/20/54/7205491.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7205491
+loop_
+_publ_author_name
+'Hu, Fei'
+'Zhai, Quan-Guo'
+'Li, Shu-Ni'
+'Jiang, Yu-Cheng'
+'Hu, Man-Cheng'
+_publ_section_title
+;
+ Ionothermal synthesis of a new (4,12)-connected heterometallic
+ iodoplumbate with [Pb4(OH)4] cubane as joint points of the helices
+;
+_journal_issue                   2
+_journal_name_full               CrystEngComm
+_journal_page_first              414
+_journal_paper_doi               10.1039/c0ce00651c
+_journal_volume                  13
+_journal_year                    2011
+_chemical_formula_moiety         'Br Cu H2 I2 O2 Pb2'
+_chemical_formula_sum            'Br Cu H2 I2 O2 Pb2'
+_chemical_formula_weight         845.65
+_chemical_name_systematic
+;
+?
+;
+_space_group_IT_number           142
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  '-I 4bd 2c'
+_symmetry_space_group_name_H-M   'I 41/a c d :2'
+_atom_sites_solution_hydrogens   geom
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            16
+_cell_length_a                   14.5579(14)
+_cell_length_b                   14.5579(14)
+_cell_length_c                   16.2961(16)
+_cell_measurement_reflns_used    2071
+_cell_measurement_temperature    298(2)
+_cell_measurement_theta_max      26.891
+_cell_measurement_theta_min      2.796
+_cell_volume                     3453.7(6)
+_computing_cell_refinement       'Bruker SMART'
+_computing_data_collection       'Bruker SMART'
+_computing_data_reduction        'Bruker SHELXTL'
+_computing_molecular_graphics    'Bruker SHELXTL'
+_computing_publication_material  'Bruker SHELXTL'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      298(2)
+_diffrn_measured_fraction_theta_full 0.988
+_diffrn_measured_fraction_theta_max 0.988
+_diffrn_measurement_device_type  'CCD area detector'
+_diffrn_measurement_method       'phi and omega scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0810
+_diffrn_reflns_av_sigmaI/netI    0.0670
+_diffrn_reflns_limit_h_max       17
+_diffrn_reflns_limit_h_min       -15
+_diffrn_reflns_limit_k_max       17
+_diffrn_reflns_limit_k_min       -16
+_diffrn_reflns_limit_l_max       19
+_diffrn_reflns_limit_l_min       -18
+_diffrn_reflns_number            8002
+_diffrn_reflns_theta_full        25.02
+_diffrn_reflns_theta_max         25.02
+_diffrn_reflns_theta_min         2.80
+_exptl_absorpt_coefficient_mu    53.048
+_exptl_absorpt_correction_T_max  0.0376
+_exptl_absorpt_correction_T_min  0.0246
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details   sadabs
+_exptl_crystal_colour            'light yellow'
+_exptl_crystal_density_diffrn    6.505
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       polyhedron
+_exptl_crystal_F_000             5632
+_exptl_crystal_size_max          0.27
+_exptl_crystal_size_mid          0.20
+_exptl_crystal_size_min          0.18
+_refine_diff_density_max         3.588
+_refine_diff_density_min         -5.726
+_refine_diff_density_rms         1.002
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.067
+_refine_ls_hydrogen_treatment    constr
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     38
+_refine_ls_number_reflns         755
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.067
+_refine_ls_R_factor_all          0.0907
+_refine_ls_R_factor_gt           0.0727
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.1270P)^2^+634.1979P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.1995
+_refine_ls_wR_factor_ref         0.2178
+_reflns_number_gt                546
+_reflns_number_total             755
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            C0CE00651C.TXT
+_cod_data_source_block           1
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+'_symmetry_cell_setting' value 'Tetragonal' changed to 'tetragonal'
+according to '/home/saulius/struct/CIF-dictionaries/cif_core.dic'
+dictionary named 'cif_core.dic' version 2.4.1 from 2010-06-29.
+
+Automatic conversion script
+Id: cif_fix_enum 1555 2011-01-17 13:19:09Z saulius 
+;
+_cod_original_sg_symbol_H-M      I4(1)/acd
+_cod_database_code               7205491
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-y+1/4, x+3/4, z+1/4'
+'-x+1/2, -y, z+1/2'
+'y+1/4, -x+1/4, z+3/4'
+'x, -y, -z+1/2'
+'y+1/4, x+3/4, -z+3/4'
+'-x+1/2, y, -z'
+'-y+1/4, -x+1/4, -z+1/4'
+'x+1/2, y+1/2, z+1/2'
+'-y+3/4, x+5/4, z+3/4'
+'-x+1, -y+1/2, z+1'
+'y+3/4, -x+3/4, z+5/4'
+'x+1/2, -y+1/2, -z+1'
+'y+3/4, x+5/4, -z+5/4'
+'-x+1, y+1/2, -z+1/2'
+'-y+3/4, -x+3/4, -z+3/4'
+'-x, -y, -z'
+'y-1/4, -x-3/4, -z-1/4'
+'x-1/2, y, -z-1/2'
+'-y-1/4, x-1/4, -z-3/4'
+'-x, y, z-1/2'
+'-y-1/4, -x-3/4, z-3/4'
+'x-1/2, -y, z'
+'y-1/4, x-1/4, z-1/4'
+'-x+1/2, -y+1/2, -z+1/2'
+'y+1/4, -x-1/4, -z+1/4'
+'x, y+1/2, -z'
+'-y+1/4, x+1/4, -z-1/4'
+'-x+1/2, y+1/2, z'
+'-y+1/4, -x-1/4, z-1/4'
+'x, -y+1/2, z+1/2'
+'y+1/4, x+1/4, z+1/4'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Pb1 Pb 0.09524(7) 0.15314(7) 0.95673(7) 0.0114(6) Uani 1 1 d . . .
+Cu1 Cu -0.1667(3) 0.0833(3) 1.1250 0.0209(13) Uani 1 2 d S . .
+Br1 Br -0.2500 0.0210(2) 1.0000 0.0093(9) Uani 1 2 d S . .
+I1 I 0.00302(16) 0.04702(16) 1.12310(12) 0.0266(8) Uani 1 1 d . . .
+O1 O 0.0706(13) 0.3201(13) 0.9399(11) 0.005(4) Uani 1 1 d . . .
+H1A H 0.1041 0.3531 0.9709 0.006 Uiso 1 1 d R . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Pb1 0.0106(8) 0.0092(8) 0.0143(8) 0.0030(4) -0.0037(4) 0.0075(4)
+Cu1 0.0208(19) 0.0208(19) 0.021(3) 0.0002(17) -0.0002(17) -0.001(2)
+Br1 0.0096(18) 0.0082(19) 0.0102(19) 0.000 -0.0046(15) 0.000
+I1 0.0259(14) 0.0273(14) 0.0266(14) 0.0002(11) 0.0004(9) 0.0002(10)
+O1 0.005(9) 0.005(9) 0.005(9) 0.000(8) 0.000(8) 0.000(8)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+H H 0.0000 0.0000 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+I I -0.4742 1.8119 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Br Br -0.2901 2.4595 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Pb Pb -3.3944 10.1111 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Cu Cu 0.3201 1.2651 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+O1 Pb1 O1 73.8(7) 18_567 11_454 ?
+O1 Pb1 O1 73.6(7) 18_567 . ?
+O1 Pb1 O1 72.0(7) 11_454 . ?
+O1 Pb1 I1 142.3(4) 18_567 . ?
+O1 Pb1 I1 76.9(5) 11_454 . ?
+O1 Pb1 I1 118.6(4) . . ?
+I1 Cu1 I1 114.1(2) 14_446 . ?
+I1 Cu1 Br1 105.02(9) 14_446 . ?
+I1 Cu1 Br1 112.51(6) . . ?
+I1 Cu1 Br1 112.51(6) 14_446 12_444 ?
+I1 Cu1 Br1 105.02(9) . 12_444 ?
+Br1 Cu1 Br1 107.7(2) . 12_444 ?
+Cu1 Br1 Cu1 138.2(2) . 10_444 ?
+Cu1 I1 Pb1 107.54(9) . . ?
+Pb1 O1 Pb1 103.8(7) 28_557 11_454 ?
+Pb1 O1 Pb1 103.4(7) 28_557 . ?
+Pb1 O1 Pb1 106.6(7) 11_454 . ?
+Pb1 O1 H1A 114.0 28_557 . ?
+Pb1 O1 H1A 114.0 11_454 . ?
+Pb1 O1 H1A 114.0 . . ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Pb1 O1 2.447(18) 18_567 ?
+Pb1 O1 2.461(18) 11_454 ?
+Pb1 O1 2.473(19) . ?
+Pb1 I1 3.397(2) . ?
+Cu1 I1 2.527(4) 14_446 ?
+Cu1 I1 2.527(4) . ?
+Cu1 Br1 2.538(4) . ?
+Cu1 Br1 2.538(4) 12_444 ?
+Br1 Cu1 2.538(4) 10_444 ?
+O1 Pb1 2.447(18) 28_557 ?
+O1 Pb1 2.461(18) 11_454 ?
+O1 H1A 0.8501 . ?
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_site_symmetry_1
+_geom_torsion_site_symmetry_2
+_geom_torsion_site_symmetry_3
+_geom_torsion_site_symmetry_4
+_geom_torsion_publ_flag
+I1 Cu1 Br1 Cu1 11.08(11) 14_446 . . 10_444 ?
+I1 Cu1 Br1 Cu1 -113.59(19) . . . 10_444 ?
+Br1 Cu1 Br1 Cu1 131.17(5) 12_444 . . 10_444 ?
+I1 Cu1 I1 Pb1 -56.88(6) 14_446 . . . ?
+Br1 Cu1 I1 Pb1 62.6(2) . . . . ?
+Br1 Cu1 I1 Pb1 179.46(10) 12_444 . . . ?
+O1 Pb1 I1 Cu1 -46.0(8) 18_567 . . . ?
+O1 Pb1 I1 Cu1 -6.5(5) 11_454 . . . ?
+O1 Pb1 I1 Cu1 54.2(5) . . . . ?
+O1 Pb1 O1 Pb1 -17.9(7) 18_567 . . 28_557 ?
+O1 Pb1 O1 Pb1 -95.8(5) 11_454 . . 28_557 ?
+I1 Pb1 O1 Pb1 -159.0(4) . . . 28_557 ?
+O1 Pb1 O1 Pb1 91.1(6) 18_567 . . 11_454 ?
+O1 Pb1 O1 Pb1 13.3(9) 11_454 . . 11_454 ?
+I1 Pb1 O1 Pb1 -50.0(8) . . . 11_454 ?

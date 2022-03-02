@@ -1,0 +1,203 @@
+#------------------------------------------------------------------------------
+#$Date: 2020-07-16 12:32:21 +0300 (Thu, 16 Jul 2020) $
+#$Revision: 254337 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/55/85/1558598.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1558598
+loop_
+_publ_author_name
+'Kansikas, Jarno'
+'Leskela, Markku'
+'Kenessey, Gabor'
+'Werner, Per-Erik'
+'Liptay, Gyorgy'
+_publ_section_title
+;
+ Pyridine-Type Complexes of Transition-Metal Halides. VI. Preparation and
+ Characterization of 2,6- and 3,5-Dimethylpyridine Complexes of Cobalt(II)
+ Halides; the Crystal Structure of Di(2,6-dimethylpyridinium)
+ Tetrachlorocobaltate(II) and
+ Dichlorotetrakis(3,5-dimethylpyridine)cobalt(II)
+;
+_journal_name_full               'Acta Chemica Scandinavica'
+_journal_page_first              951
+_journal_page_last               959
+_journal_paper_doi               10.3891/acta.chem.scand.48-0951
+_journal_volume                  48
+_journal_year                    1994
+_chemical_formula_sum            'C28 H36 Cl2 Co N4'
+_chemical_formula_weight         558.4
+_chemical_name_common
+;
+Dichlorotetrakis(3,5-dimethylpyridine)cobalt(II)
+;
+_space_group_IT_number           48
+_space_group_name_Hall           '-P 2ab 2bc'
+_space_group_name_H-M_alt        'P n n n :2'
+_symmetry_cell_setting           orthorhombic
+_symmetry_Int_Tables_number      48
+_symmetry_space_group_name_Hall  '-P 2ab 2bc'
+_symmetry_space_group_name_H-M   'P n n n :2'
+_cell_angle_alpha                90.
+_cell_angle_beta                 90.
+_cell_angle_gamma                90.
+_cell_formula_units_Z            2
+_cell_length_a                   11.662(3)
+_cell_length_b                   11.664(3)
+_cell_length_c                   10.608(3)
+_cell_volume                     1443.0(7)
+_diffrn_ambient_temperature      293
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71069
+_exptl_absorpt_coefficient_mu    0.802
+_exptl_crystal_density_diffrn    1.285
+_exptl_crystal_F_000             586
+_refine_ls_goodness_of_fit_ref   4.36
+_refine_ls_number_parameters     85
+_refine_ls_number_reflns         931
+_refine_ls_R_factor_gt           0.0591
+_refine_ls_wR_factor_gt          0.0788
+_cod_data_source_file            Acta-Chem-Scand-1994-48-951-2.cif
+_cod_data_source_block           2
+_cod_original_sg_symbol_H-M      'P n n n'
+_cod_database_code               1558598
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 1/2-x,1/2-y,z
+3 x,1/2-y,1/2-z
+4 1/2-x,y,1/2-z
+5 -x,-y,-z
+6 1/2+x,1/2+y,-z
+7 -x,1/2+y,1/2+z
+8 1/2+x,-y,1/2+z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_thermal_displace_type
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Co Co Uiso 0.25000 0.25000 0.25000 1.000 0.0420(10) . . . .
+Cl Cl Uiso 0.25000 0.25000 0.4814(2) 1.000 0.0520(10) . . . .
+N1 N Uiso 0.3833(3) 0.3818(4) 0.2504(5) 1.000 0.0460(10) . . . .
+C2 C Uiso 0.4733(4) 0.3767(5) 0.1732(5) 1.000 0.047(2) . . . .
+C3 C Uiso 0.5606(4) 0.4567(5) 0.1711(5) 1.000 0.050(2) . . . .
+C4 C Uiso 0.5505(4) 0.5504(5) 0.2500(7) 1.000 0.054(2) . . . .
+C5 C Uiso 0.4569(5) 0.5608(5) 0.3291(5) 1.000 0.050(2) . . . .
+C6 C Uiso 0.3762(4) 0.4739(5) 0.3265(5) 1.000 0.049(2) . . . .
+C7 C Uiso 0.6617(5) 0.4424(6) 0.0843(7) 1.000 0.073(2) . . . .
+C8 C Uiso 0.4422(6) 0.6612(5) 0.4157(7) 1.000 0.072(2) . . . .
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C C 0.0033 0.0016 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Cl Cl 0.1484 0.1585 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Co Co 0.3494 0.9721 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+N N 0.0061 0.0033 ' International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+Cl Co N1 89.89(14) . . . yes
+Cl Co N1 89.89(14) . . 2_555 yes
+Cl Co Cl 180.00 . . 3_555 yes
+Cl Co N1 90.11(14) . . 3_555 yes
+Cl Co N1 90.11(14) . . 4_555 yes
+N1 Co N1 179.8(2) . . 2_555 yes
+Cl Co N1 90.11(14) 3_555 . . yes
+N1 Co N1 89.36(15) . . 3_555 yes
+N1 Co N1 90.64(15) . . 4_555 yes
+Cl Co N1 90.11(14) 3_555 . 2_555 yes
+N1 Co N1 90.64(15) 2_555 . 3_555 yes
+N1 Co N1 89.36(15) 2_555 . 4_555 yes
+Cl Co N1 89.89(14) 3_555 . 3_555 yes
+Cl Co N1 89.89(14) 3_555 . 4_555 yes
+N1 Co N1 179.8(2) 3_555 . 4_555 yes
+Co N1 C2 121.8(4) . . . yes
+Co N1 C6 121.2(3) . . . yes
+C2 N1 C6 116.9(4) . . . yes
+N1 C2 C3 124.1(5) . . . yes
+C2 C3 C4 117.5(5) . . . no
+C2 C3 C7 120.8(5) . . . no
+C4 C3 C7 121.7(5) . . . no
+C3 C4 C5 120.3(5) . . . no
+C4 C5 C6 117.4(5) . . . no
+C4 C5 C8 122.1(5) . . . no
+C6 C5 C8 120.5(5) . . . no
+N1 C6 C5 123.7(5) . . . yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Co Cl 2.455(2) . . yes
+Co N1 2.186(4) . . yes
+Co N1 2.186(4) . 2_555 yes
+Co Cl 2.455(2) . 3_555 yes
+Co N1 2.186(4) . 3_555 yes
+Co N1 2.186(4) . 4_555 yes
+N1 C2 1.333(7) . . yes
+N1 C6 1.346(7) . . yes
+C2 C3 1.381(7) . . no
+C3 C4 1.382(9) . . no
+C3 C7 1.505(8) . . no
+C4 C5 1.382(8) . . no
+C5 C6 1.383(8) . . no
+C5 C8 1.498(9) . . no
+loop_
+_geom_torsion_atom_site_label_1
+_geom_torsion_atom_site_label_2
+_geom_torsion_atom_site_label_3
+_geom_torsion_atom_site_label_4
+_geom_torsion
+_geom_torsion_site_symmetry_1
+_geom_torsion_site_symmetry_2
+_geom_torsion_site_symmetry_3
+_geom_torsion_site_symmetry_4
+_geom_torsion_publ_flag
+Cl Co N1 C2 136.4(4) . . . . no
+Cl Co N1 C6 -45.6(4) . . . . no
+Cl Co N1 C2 -43.6(4) 3_555 . . . no
+Cl Co N1 C6 134.4(4) 3_555 . . . no
+N1 Co N1 C2 46.3(4) 3_555 . . . no
+N1 Co N1 C6 -135.7(4) 3_555 . . . no
+N1 Co N1 C2 -133.5(4) 4_555 . . . no
+N1 Co N1 C6 44.5(4) 4_555 . . . no
+Co N1 C2 C3 -179.0(4) . . . . no
+C6 N1 C2 C3 3.0(8) . . . . no
+Co N1 C6 C5 -178.8(4) . . . . no
+C2 N1 C6 C5 -0.7(8) . . . . no
+N1 C2 C3 C4 -3.2(8) . . . . no
+N1 C2 C3 C7 177.7(5) . . . . no
+C2 C3 C4 C5 1.2(9) . . . . no
+C7 C3 C4 C5 -179.7(6) . . . . no
+C3 C4 C5 C6 0.7(9) . . . . no
+C3 C4 C5 C8 -179.7(6) . . . . no
+C4 C5 C6 N1 -1.0(8) . . . . no
+C8 C5 C6 N1 179.4(5) . . . . no

@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cr8H40C37Fl2SiCl16
-_symmetry_space_group_name_H-M   Pbca
+_symmetry_space_group_name_H-M  'P b c a'
 _cell_length_a   11.14400000
 _cell_length_b   9.85200000
 _cell_length_c   12.13900000

@@ -1,0 +1,695 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-26 18:13:32 +0200 (Sat, 26 Mar 2016) $
+#$Revision: 180417 $
+#$URL: svn://www.crystallography.net/cod/cif/7/20/86/7208643.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7208643
+loop_
+_publ_author_name
+'Yang, Yun'
+'Pan, Shilie'
+'Hou, Xueling'
+'Dong, Xiaoyu'
+'Su, Xin'
+'Yang, Zhihua'
+'Zhang, Min'
+'Zhao, Wenwu'
+'Chen, Zhaohui'
+_publ_section_title
+;
+ Li5Rb2B7O14: a new congruently melting compound with two kinds of B--O
+ one-dimensional chains and short UV absorption edge
+;
+_journal_issue                   20
+_journal_name_full               CrystEngComm
+_journal_page_first              6720
+_journal_paper_doi               10.1039/c2ce06742k
+_journal_volume                  14
+_journal_year                    2012
+_chemical_formula_sum            'B7 Li5 O14 Rb2'
+_chemical_formula_weight         505.31
+_chemical_name_systematic
+;
+?
+;
+_space_group_IT_number           40
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  'A 2 -2a'
+_symmetry_space_group_name_H-M   'A m a 2'
+_atom_sites_solution_hydrogens   none
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   20.376(2)
+_cell_length_b                   13.5114(13)
+_cell_length_c                   4.3900(4)
+_cell_measurement_temperature    296(2)
+_cell_measurement_theta_max      24.99
+_cell_measurement_theta_min      2.00
+_cell_volume                     1208.6(2)
+_computing_cell_refinement       'Bruker SMART'
+_computing_data_collection       'Bruker SMART'
+_computing_data_reduction        'Bruker SMART'
+_computing_molecular_graphics    'Bruker SHELXTL'
+_computing_publication_material  'Bruker SHELXTL'
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      296(2)
+_diffrn_measured_fraction_theta_full 0.994
+_diffrn_measured_fraction_theta_max 0.994
+_diffrn_measurement_device_type  'CCD area detector'
+_diffrn_measurement_method       'phi and omega scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0525
+_diffrn_reflns_av_sigmaI/netI    0.0362
+_diffrn_reflns_limit_h_max       24
+_diffrn_reflns_limit_h_min       -13
+_diffrn_reflns_limit_k_max       16
+_diffrn_reflns_limit_k_min       -13
+_diffrn_reflns_limit_l_max       5
+_diffrn_reflns_limit_l_min       -4
+_diffrn_reflns_number            2864
+_diffrn_reflns_theta_full        24.99
+_diffrn_reflns_theta_max         24.99
+_diffrn_reflns_theta_min         2.00
+_diffrn_standards_decay_%        0
+_diffrn_standards_interval_count 0
+_diffrn_standards_interval_time  0
+_diffrn_standards_number         0
+_exptl_absorpt_coefficient_mu    8.179
+_exptl_absorpt_correction_T_max  0.5607
+_exptl_absorpt_correction_T_min  0.1769
+_exptl_absorpt_correction_type   empirical
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    2.777
+_exptl_crystal_density_meas      ?
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       chip
+_exptl_crystal_F_000             944
+_exptl_crystal_size_max          0.32
+_exptl_crystal_size_mid          0.18
+_exptl_crystal_size_min          0.08
+_refine_diff_density_max         0.394
+_refine_diff_density_min         -0.466
+_refine_diff_density_rms         0.089
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   -0.014(13)
+_refine_ls_extinction_coef       0.0104(6)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.069
+_refine_ls_hydrogen_treatment    none
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     134
+_refine_ls_number_reflns         1024
+_refine_ls_number_restraints     1
+_refine_ls_restrained_S_all      1.068
+_refine_ls_R_factor_all          0.0265
+_refine_ls_R_factor_gt           0.0248
+_refine_ls_shift/su_max          0.000
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0396P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0588
+_refine_ls_wR_factor_ref         0.0592
+_reflns_number_gt                983
+_reflns_number_total             1024
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            c2ce06742k.txt
+_cod_data_source_block           4
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_exptl_absorpt_correction_type' value 'Empirical' changed to
+'empirical' according to
+/home/saulius/struct/CIF-dictionaries/cif_core.dic dictionary named
+'cif_core.dic' version 2.4.2 from 2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 1891 2012-01-12 08:04:46Z andrius 
+
+The following automatic conversions were performed:
+
+'_exptl_crystal_density_meas' value 'not measured' was changed to '?'
+- the value is perceived as not measured.
+
+Automatic conversion script
+Id: cif_fix_values 3008 2015-01-20 13:52:24Z robertas 
+;
+_cod_original_sg_symbol_H-M      Ama2
+_cod_database_code               7208643
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y, z'
+'x+1/2, -y, z'
+'-x+1/2, y, z'
+'x, y+1/2, z+1/2'
+'-x, -y+1/2, z+1/2'
+'x+1/2, -y+1/2, z+1/2'
+'-x+1/2, y+1/2, z+1/2'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Rb1 Rb 0.346185(15) 0.31283(2) 1.03281(18) 0.02044(17) Uani 1 1 d .
+O1 O 0.2500 0.3134(2) 0.5255(18) 0.0189(8) Uani 1 2 d S
+O2 O 0.30879(11) 0.46429(17) 0.5319(9) 0.0157(5) Uani 1 1 d .
+O3 O 0.49189(14) 0.2816(2) 0.8560(7) 0.0148(6) Uani 1 1 d .
+O4 O 0.2500 0.6187(3) 0.4408(8) 0.0096(8) Uani 1 2 d S
+O5 O 0.32541(13) 0.60877(19) 0.8525(6) 0.0110(6) Uani 1 1 d .
+O6 O 0.36764(13) 0.60309(19) 0.3494(6) 0.0113(6) Uani 1 1 d .
+O7 O 0.42679(11) 0.52316(18) 0.9557(5) 0.0120(6) Uani 1 1 d .
+O8 O 0.52495(14) 0.1132(2) 0.9425(5) 0.0195(7) Uani 1 1 d .
+B1 B 0.2500 0.4120(4) 0.533(2) 0.0144(11) Uani 1 2 d S
+B2 B 0.31087(18) 0.5740(3) 0.5403(16) 0.0096(7) Uani 1 1 d .
+B3 B 0.50873(18) 0.2004(3) 1.0386(19) 0.0121(8) Uani 1 1 d .
+B4 B 0.37414(18) 0.5758(3) 1.0446(16) 0.0092(8) Uani 1 1 d .
+Li1 Li 0.2500 0.1748(6) 0.527(4) 0.0148(17) Uani 1 2 d S
+Li2 Li 0.4315(4) 0.5097(5) 0.518(2) 0.0313(16) Uani 1 1 d .
+Li3 Li 0.5120(3) 0.0850(4) 0.519(2) 0.0153(12) Uani 1 1 d .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Rb1 0.0178(2) 0.0197(2) 0.0238(2) -0.0013(3) 0.0010(3) 0.00073(13)
+O1 0.0261(18) 0.0095(18) 0.0209(19) 0.000(2) 0.000 0.000
+O2 0.0162(12) 0.0103(12) 0.0207(12) 0.0022(19) -0.0014(19) 0.0020(9)
+O3 0.0266(15) 0.0070(13) 0.0106(14) -0.0014(12) 0.0001(12) 0.0013(12)
+O4 0.0104(16) 0.0098(18) 0.0085(19) 0.0009(14) 0.000 0.000
+O5 0.0105(12) 0.0141(15) 0.0084(13) -0.0019(12) -0.0010(12) 0.0033(11)
+O6 0.0073(13) 0.0172(16) 0.0093(13) -0.0013(12) -0.0011(11) -0.0003(11)
+O7 0.0099(11) 0.0138(13) 0.0123(15) -0.0008(11) -0.0003(11) 0.0030(10)
+O8 0.0285(15) 0.0171(15) 0.0129(17) -0.0037(11) -0.0031(12) 0.0111(12)
+B1 0.023(3) 0.012(3) 0.008(2) -0.003(4) 0.000 0.000
+B2 0.0096(17) 0.0133(19) 0.0060(16) -0.002(2) 0.004(3) -0.0001(13)
+B3 0.0113(17) 0.015(2) 0.0097(18) -0.005(3) 0.001(3) 0.0012(14)
+B4 0.0107(17) 0.0077(18) 0.0092(17) -0.001(3) 0.001(3) -0.0032(14)
+Li1 0.016(4) 0.011(4) 0.017(4) -0.006(6) 0.000 0.000
+Li2 0.040(4) 0.035(4) 0.019(3) -0.005(5) 0.002(5) 0.023(3)
+Li3 0.018(3) 0.011(3) 0.017(3) 0.001(4) 0.001(4) 0.004(2)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Li Li -0.0003 0.0001 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+B B 0.0013 0.0007 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.0060 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Rb Rb -0.9393 2.9676 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+O1 Rb1 O1 96.471(12) 1_556 .
+O1 Rb1 O6 107.55(8) 1_556 5_545
+O1 Rb1 O6 84.07(8) . 5_545
+O1 Rb1 O2 46.20(8) 1_556 1_556
+O1 Rb1 O2 111.54(10) . 1_556
+O6 Rb1 O2 148.99(8) 5_545 1_556
+O1 Rb1 O3 146.06(12) 1_556 .
+O1 Rb1 O3 116.45(12) . .
+O6 Rb1 O3 70.24(7) 5_545 .
+O2 Rb1 O3 120.25(7) 1_556 .
+O1 Rb1 O2 111.03(10) 1_556 .
+O1 Rb1 O2 45.82(8) . .
+O6 Rb1 O2 118.20(8) 5_545 .
+O2 Rb1 O2 90.30(6) 1_556 .
+O3 Rb1 O2 98.50(7) . .
+O1 Rb1 O5 65.06(8) 1_556 5_545
+O1 Rb1 O5 104.49(9) . 5_545
+O6 Rb1 O5 45.67(6) 5_545 5_545
+O2 Rb1 O5 103.44(8) 1_556 5_545
+O3 Rb1 O5 97.02(7) . 5_545
+O2 Rb1 O5 150.30(7) . 5_545
+O1 Rb1 Li3 128.2(2) 1_556 6_655
+O1 Rb1 Li3 125.5(2) . 6_655
+O6 Rb1 Li3 105.81(12) 5_545 6_655
+O2 Rb1 Li3 87.16(16) 1_556 6_655
+O3 Rb1 Li3 35.83(13) . 6_655
+O2 Rb1 Li3 85.66(16) . 6_655
+O5 Rb1 Li3 120.73(15) 5_545 6_655
+O1 Rb1 B1 24.34(12) 1_556 1_556
+O1 Rb1 B1 96.19(17) . 1_556
+O6 Rb1 B1 131.83(11) 5_545 1_556
+O2 Rb1 B1 25.27(9) 1_556 1_556
+O3 Rb1 B1 143.86(11) . 1_556
+O2 Rb1 B1 93.37(16) . 1_556
+O5 Rb1 B1 88.79(13) 5_545 1_556
+Li3 Rb1 B1 112.39(17) 6_655 1_556
+O1 Rb1 O4 72.18(9) 1_556 5_545
+O1 Rb1 O4 61.17(9) . 5_545
+O6 Rb1 O4 45.38(6) 5_545 5_545
+O2 Rb1 O4 117.80(7) 1_556 5_545
+O3 Rb1 O4 115.49(6) . 5_545
+O2 Rb1 O4 106.98(7) . 5_545
+O5 Rb1 O4 43.32(7) 5_545 5_545
+Li3 Rb1 O4 151.19(12) 6_655 5_545
+B1 Rb1 O4 93.02(9) 1_556 5_545
+O1 Rb1 O7 114.07(8) 1_556 .
+O1 Rb1 O7 104.45(8) . .
+O6 Rb1 O7 135.95(7) 5_545 .
+O2 Rb1 O7 68.01(6) 1_556 .
+O3 Rb1 O7 67.33(7) . .
+O2 Rb1 O7 58.73(6) . .
+O5 Rb1 O7 150.93(7) 5_545 .
+Li3 Rb1 O7 34.71(11) 6_655 .
+B1 Rb1 O7 90.82(10) 1_556 .
+O4 Rb1 O7 165.44(7) 5_545 .
+O1 Rb1 B2 81.33(11) 1_556 5_545
+O1 Rb1 B2 82.32(12) . 5_545
+O6 Rb1 B2 26.61(10) 5_545 5_545
+O2 Rb1 B2 125.81(12) 1_556 5_545
+O3 Rb1 B2 94.48(8) . 5_545
+O2 Rb1 B2 126.73(12) . 5_545
+O5 Rb1 B2 26.40(14) 5_545 5_545
+Li3 Rb1 B2 128.09(12) 6_655 5_545
+B1 Rb1 B2 105.43(14) 1_556 5_545
+O4 Rb1 B2 25.31(8) 5_545 5_545
+O7 Rb1 B2 161.78(8) . 5_545
+B1 O1 Li1 178.4(10) . .
+B1 O1 Rb1 91.1(5) . 4_554
+Li1 O1 Rb1 90.0(5) . 4_554
+B1 O1 Rb1 91.1(5) . 1_554
+Li1 O1 Rb1 90.0(5) . 1_554
+Rb1 O1 Rb1 84.4(2) 4_554 1_554
+B1 O1 Rb1 89.2(5) . .
+Li1 O1 Rb1 89.7(5) . .
+Rb1 O1 Rb1 179.1(2) 4_554 .
+Rb1 O1 Rb1 96.471(12) 1_554 .
+B1 O1 Rb1 89.2(5) . 4
+Li1 O1 Rb1 89.7(5) . 4
+Rb1 O1 Rb1 96.471(12) 4_554 4
+Rb1 O1 Rb1 179.1(2) 1_554 4
+Rb1 O1 Rb1 82.7(2) . 4
+B1 O2 B2 122.1(3) . .
+B1 O2 Li2 163.2(3) . .
+B2 O2 Li2 74.6(2) . .
+B1 O2 Rb1 83.0(4) . 1_554
+B2 O2 Rb1 132.2(4) . 1_554
+Li2 O2 Rb1 84.39(19) . 1_554
+B1 O2 Rb1 82.8(4) . .
+B2 O2 Rb1 129.4(4) . .
+Li2 O2 Rb1 86.3(2) . .
+Rb1 O2 Rb1 90.30(6) 1_554 .
+B3 O3 B3 134.5(4) . 6_654
+B3 O3 Li3 121.7(5) . 6_655
+B3 O3 Li3 101.7(4) 6_654 6_655
+B3 O3 Rb1 101.4(2) . .
+B3 O3 Rb1 102.4(2) 6_654 .
+Li3 O3 Rb1 75.1(2) 6_655 .
+B2 O4 B2 118.0(4) . 4
+B2 O4 Li1 116.1(3) . 5_554
+B2 O4 Li1 116.1(3) 4 5_554
+B2 O4 Rb1 77.64(18) . 5_554
+B2 O4 Rb1 143.5(3) 4 5_554
+Li1 O4 Rb1 78.9(2) 5_554 5_554
+B2 O4 Rb1 143.5(3) . 8_554
+B2 O4 Rb1 77.64(18) 4 8_554
+Li1 O4 Rb1 78.9(2) 5_554 8_554
+Rb1 O4 Rb1 72.88(7) 5_554 8_554
+B4 O5 B2 127.5(3) . .
+B4 O5 Li1 118.6(6) . 5
+B2 O5 Li1 110.8(5) . 5
+B4 O5 Rb1 117.6(2) . 5_554
+B2 O5 Rb1 83.8(2) . 5_554
+Li1 O5 Rb1 83.1(4) 5 5_554
+B4 O6 B2 123.1(3) 1_554 .
+B4 O6 Li2 97.5(3) 1_554 .
+B2 O6 Li2 97.6(3) . .
+B4 O6 Rb1 121.7(2) 1_554 5_554
+B2 O6 Rb1 89.16(19) . 5_554
+Li2 O6 Rb1 127.5(3) . 5_554
+B4 O7 Li2 112.2(4) . .
+B4 O7 Li3 150.3(4) . 6_655
+Li2 O7 Li3 92.3(4) . 6_655
+B4 O7 Li3 116.3(3) . 5
+Li2 O7 Li3 98.0(4) . 5
+Li3 O7 Li3 74.3(3) 6_655 5
+B4 O7 Li2 77.3(3) . 1_556
+Li2 O7 Li2 169.1(4) . 1_556
+Li3 O7 Li2 77.1(3) 6_655 1_556
+Li3 O7 Li2 81.6(4) 5 1_556
+B4 O7 Rb1 91.62(19) . .
+Li2 O7 Rb1 92.6(2) . .
+Li3 O7 Rb1 69.93(19) 6_655 .
+Li3 O7 Rb1 143.0(2) 5 .
+Li2 O7 Rb1 81.6(2) 1_556 .
+B3 O8 Li2 148.4(5) . 6_655
+B3 O8 Li3 117.5(4) . .
+Li2 O8 Li3 93.5(4) 6_655 .
+B3 O8 Li2 106.5(3) . 5_545
+Li2 O8 Li2 80.7(3) 6_655 5_545
+Li3 O8 Li2 84.8(3) . 5_545
+B3 O8 Li3 77.7(4) . 1_556
+Li2 O8 Li3 75.4(3) 6_655 1_556
+Li3 O8 Li3 155.6(3) . 1_556
+Li2 O8 Li3 72.2(3) 5_545 1_556
+B3 O8 Rb1 96.0(3) . 6_654
+Li2 O8 Rb1 89.3(3) 6_655 6_654
+Li3 O8 Rb1 69.2(2) . 6_654
+Li2 O8 Rb1 151.5(2) 5_545 6_654
+Li3 O8 Rb1 130.96(17) 1_556 6_654
+O1 B1 O2 120.5(2) . 4
+O1 B1 O2 120.5(2) . .
+O2 B1 O2 119.0(4) 4 .
+O1 B1 Rb1 64.5(4) . 4_554
+O2 B1 Rb1 71.7(3) 4 4_554
+O2 B1 Rb1 137.0(6) . 4_554
+O1 B1 Rb1 64.5(4) . 1_554
+O2 B1 Rb1 137.0(6) 4 1_554
+O2 B1 Rb1 71.7(3) . 1_554
+Rb1 B1 Rb1 74.6(2) 4_554 1_554
+O1 B1 Rb1 66.5(4) . 4
+O2 B1 Rb1 71.9(3) 4 4
+O2 B1 Rb1 137.2(6) . 4
+Rb1 B1 Rb1 85.50(8) 4_554 4
+Rb1 B1 Rb1 131.02(18) 1_554 4
+O4 B2 O5 108.6(3) . .
+O4 B2 O6 112.8(4) . .
+O5 B2 O6 106.4(3) . .
+O4 B2 O2 112.7(3) . .
+O5 B2 O2 110.3(5) . .
+O6 B2 O2 105.9(3) . .
+O4 B2 Li1 69.5(3) . 5
+O5 B2 Li1 39.9(3) . 5
+O6 B2 Li1 130.0(3) . 5
+O2 B2 Li1 119.2(4) . 5
+O4 B2 Rb1 77.06(19) . 5_554
+O5 B2 Rb1 69.83(17) . 5_554
+O6 B2 Rb1 64.23(17) . 5_554
+O2 B2 Rb1 168.9(2) . 5_554
+Li1 B2 Rb1 68.4(2) 5 5_554
+O8 B3 O3 126.1(7) . .
+O8 B3 O3 118.7(5) . 6_655
+O3 B3 O3 115.2(3) . 6_655
+O8 B3 Li3 73.5(4) . 1_556
+O3 B3 Li3 158.6(4) . 1_556
+O3 B3 Li3 46.4(3) 6_655 1_556
+O8 B3 Li3 37.9(3) . .
+O3 B3 Li3 88.6(4) . .
+O3 B3 Li3 155.6(3) 6_655 .
+Li3 B3 Li3 109.2(2) 1_556 .
+O8 B3 Rb1 127.5(3) . .
+O3 B3 Rb1 56.43(17) . .
+O3 B3 Rb1 85.8(2) 6_655 .
+Li3 B3 Rb1 106.0(2) 1_556 .
+Li3 B3 Rb1 104.5(2) . .
+O8 B3 Rb1 86.7(3) . 6_655
+O3 B3 Rb1 125.0(2) . 6_655
+O3 B3 Rb1 55.5(2) 6_655 6_655
+Li3 B3 Rb1 58.37(17) 1_556 6_655
+Li3 B3 Rb1 116.17(18) . 6_655
+Rb1 B3 Rb1 139.1(2) . 6_655
+O8 B3 Rb1 63.7(3) . 6_654
+O3 B3 Rb1 83.7(3) . 6_654
+O3 B3 Rb1 127.3(2) 6_655 6_654
+Li3 B3 Rb1 115.70(19) 1_556 6_654
+Li3 B3 Rb1 57.22(17) . 6_654
+Rb1 B3 Rb1 137.9(2) . 6_654
+Rb1 B3 Rb1 73.09(7) 6_655 6_654
+O7 B4 O5 124.6(5) . .
+O7 B4 O6 119.6(4) . 1_556
+O5 B4 O6 115.7(3) . 1_556
+O7 B4 Li2 71.7(3) . 1_556
+O5 B4 Li2 160.8(4) . 1_556
+O6 B4 Li2 49.7(3) 1_556 1_556
+O7 B4 Li2 40.8(3) . .
+O5 B4 Li2 84.0(4) . .
+O6 B4 Li2 159.5(3) 1_556 .
+Li2 B4 Li2 112.3(3) 1_556 .
+O7 B4 Li3 38.3(2) . 5
+O5 B4 Li3 132.9(5) . 5
+O6 B4 Li3 96.9(4) 1_556 5
+Li2 B4 Li3 65.8(3) 1_556 5
+Li2 B4 Li3 63.6(3) . 5
+O7 B4 Rb1 66.45(17) . .
+O5 B4 Rb1 101.4(2) . .
+O6 B4 Rb1 105.1(3) 1_556 .
+Li2 B4 Rb1 74.8(2) 1_556 .
+Li2 B4 Rb1 74.54(19) . .
+Li3 B4 Rb1 101.63(15) 5 .
+O1 Li1 O5 117.3(5) . 8_544
+O1 Li1 O5 117.3(5) . 5_544
+O5 Li1 O5 105.1(6) 8_544 5_544
+O1 Li1 O4 112.9(8) . 5_545
+O5 Li1 O4 100.9(5) 8_544 5_545
+O5 Li1 O4 100.9(5) 5_544 5_545
+O1 Li1 B2 118.7(7) . 8_544
+O5 Li1 B2 29.3(3) 8_544 8_544
+O5 Li1 B2 80.0(5) 5_544 8_544
+O4 Li1 B2 120.9(3) 5_545 8_544
+O1 Li1 B2 118.7(7) . 5_544
+O5 Li1 B2 80.0(5) 8_544 5_544
+O5 Li1 B2 29.3(3) 5_544 5_544
+O4 Li1 B2 120.9(3) 5_545 5_544
+B2 Li1 B2 52.1(3) 8_544 5_544
+O1 Li1 Rb1 57.3(4) . 4_554
+O5 Li1 Rb1 63.3(3) 8_544 4_554
+O5 Li1 Rb1 116.6(7) 5_544 4_554
+O4 Li1 Rb1 141.7(3) 5_545 4_554
+B2 Li1 Rb1 62.4(3) 8_544 4_554
+B2 Li1 Rb1 91.9(5) 5_544 4_554
+O1 Li1 Rb1 57.3(4) . 1_554
+O5 Li1 Rb1 116.6(7) 8_544 1_554
+O5 Li1 Rb1 63.3(3) 5_544 1_554
+O4 Li1 Rb1 141.7(3) 5_545 1_554
+B2 Li1 Rb1 91.9(5) 8_544 1_554
+B2 Li1 Rb1 62.4(3) 5_544 1_554
+Rb1 Li1 Rb1 68.8(3) 4_554 1_554
+O1 Li1 Rb1 58.0(4) . 4
+O5 Li1 Rb1 93.0(2) 8_544 4
+O5 Li1 Rb1 160.4(6) 5_544 4
+O4 Li1 Rb1 67.7(4) 5_545 4
+B2 Li1 Rb1 119.44(10) 8_544 4
+B2 Li1 Rb1 169.7(5) 5_544 4
+Rb1 Li1 Rb1 78.10(11) 4_554 4
+Rb1 Li1 Rb1 115.2(2) 1_554 4
+O8 Li2 O7 106.2(4) 6_654 .
+O8 Li2 O6 143.3(5) 6_654 .
+O7 Li2 O6 106.5(4) . .
+O8 Li2 O8 96.5(3) 6_654 5_554
+O7 Li2 O8 97.1(4) . 5_554
+O6 Li2 O8 95.7(3) . 5_554
+O8 Li2 O7 84.7(3) 6_654 1_554
+O7 Li2 O7 169.1(4) . 1_554
+O6 Li2 O7 63.2(3) . 1_554
+O8 Li2 O7 81.3(3) 5_554 1_554
+O8 Li2 B4 112.0(4) 6_654 1_554
+O7 Li2 B4 139.1(3) . 1_554
+O6 Li2 B4 32.9(2) . 1_554
+O8 Li2 B4 92.7(3) 5_554 1_554
+O7 Li2 B4 31.00(16) 1_554 1_554
+O8 Li2 O2 104.4(3) 6_654 .
+O7 Li2 O2 87.2(3) . .
+O6 Li2 O2 61.1(2) . .
+O8 Li2 O2 156.6(3) 5_554 .
+O7 Li2 O2 90.2(3) 1_554 .
+B4 Li2 O2 69.9(2) 1_554 .
+O8 Li2 B4 128.9(4) 6_654 .
+O7 Li2 B4 27.05(17) . .
+O6 Li2 B4 80.0(3) . .
+O8 Li2 B4 105.5(3) 5_554 .
+O7 Li2 B4 143.2(3) 1_554 .
+B4 Li2 B4 112.3(3) 1_554 .
+O2 Li2 B4 69.2(2) . .
+O8 Li2 Li3 43.3(2) 6_654 6_654
+O7 Li2 Li3 147.7(4) . 6_654
+O6 Li2 Li3 105.8(4) . 6_654
+O8 Li2 Li3 80.2(3) 5_554 6_654
+O7 Li2 Li3 42.8(2) 1_554 6_654
+B4 Li2 Li3 73.1(3) 1_554 6_654
+O2 Li2 Li3 108.1(3) . 6_654
+B4 Li2 Li3 171.6(4) . 6_654
+O8 Li2 Li3 63.1(3) 6_654 6_655
+O7 Li2 Li3 44.0(3) . 6_655
+O6 Li2 Li3 150.2(4) . 6_655
+O8 Li2 Li3 92.8(3) 5_554 6_655
+O7 Li2 Li3 146.5(3) 1_554 6_655
+B4 Li2 Li3 173.1(4) 1_554 6_655
+O2 Li2 Li3 105.9(3) . 6_655
+B4 Li2 Li3 70.2(3) . 6_655
+Li3 Li2 Li3 103.8(3) 6_654 6_655
+O8 Li2 Li2 57.1(2) 6_654 2_665
+O7 Li2 Li2 93.3(3) . 2_665
+O6 Li2 Li2 136.2(4) . 2_665
+O8 Li2 Li2 42.3(2) 5_554 2_665
+O7 Li2 Li2 92.6(2) 1_554 2_665
+B4 Li2 Li2 119.3(3) 1_554 2_665
+O2 Li2 Li2 160.8(4) . 2_665
+B4 Li2 Li2 117.1(2) . 2_665
+Li3 Li2 Li2 63.0(2) 6_654 2_665
+Li3 Li2 Li2 63.0(2) 6_655 2_665
+O8 Li2 Li3 84.9(3) 6_654 5_554
+O7 Li2 Li3 137.8(4) . 5_554
+O6 Li2 Li3 82.2(3) . 5_554
+O8 Li2 Li3 40.8(2) 5_554 5_554
+O7 Li2 Li3 41.3(2) 1_554 5_554
+B4 Li2 Li3 61.5(3) 1_554 5_554
+O2 Li2 Li3 130.2(4) . 5_554
+B4 Li2 Li3 139.4(3) . 5_554
+Li3 Li2 Li3 48.5(3) 6_654 5_554
+Li3 Li2 Li3 121.2(3) 6_655 5_554
+Li2 Li2 Li3 58.2(2) 2_665 5_554
+O8 Li3 O3 100.3(3) . 6_654
+O8 Li3 O7 101.6(4) . 6_654
+O3 Li3 O7 132.2(5) 6_654 6_654
+O8 Li3 O7 110.3(4) . 5_544
+O3 Li3 O7 108.0(3) 6_654 5_544
+O7 Li3 O7 103.2(3) 6_654 5_544
+O8 Li3 Li3 102.9(2) . 2_655
+O3 Li3 Li3 154.1(4) 6_654 2_655
+O7 Li3 Li3 52.9(2) 6_654 2_655
+O7 Li3 Li3 52.7(2) 5_544 2_655
+O8 Li3 O8 155.6(3) . 1_554
+O3 Li3 O8 60.2(3) 6_654 1_554
+O7 Li3 O8 84.5(3) 6_654 1_554
+O7 Li3 O8 90.8(4) 5_544 1_554
+Li3 Li3 O8 99.55(15) 2_655 1_554
+O8 Li3 B3 131.7(3) . 1_554
+O3 Li3 B3 31.9(2) 6_654 1_554
+O7 Li3 B3 110.3(4) 6_654 1_554
+O7 Li3 B3 96.7(3) 5_544 1_554
+Li3 Li3 B3 125.1(2) 2_655 1_554
+O8 Li3 B3 28.81(16) 1_554 1_554
+O8 Li3 B3 24.55(16) . .
+O3 Li3 B3 77.3(3) 6_654 .
+O7 Li3 B3 124.0(4) 6_654 .
+O7 Li3 B3 109.8(4) 5_544 .
+Li3 Li3 B3 123.2(2) 2_655 .
+O8 Li3 B3 137.0(3) 1_554 .
+B3 Li3 B3 109.2(2) 1_554 .
+O8 Li3 Li2 43.2(3) . 6_655
+O3 Li3 Li2 137.2(4) 6_654 6_655
+O7 Li3 Li2 60.1(3) 6_654 6_655
+O7 Li3 Li2 106.5(4) 5_544 6_655
+Li3 Li3 Li2 68.7(2) 2_655 6_655
+O8 Li3 Li2 143.0(3) 1_554 6_655
+B3 Li3 Li2 156.3(3) 1_554 6_655
+B3 Li3 Li2 67.7(3) . 6_655
+O8 Li3 Li2 142.9(3) . 6_654
+O3 Li3 Li2 98.7(4) 6_654 6_654
+O7 Li3 Li2 43.7(2) 6_654 6_654
+O7 Li3 Li2 93.3(4) 5_544 6_654
+Li3 Li3 Li2 68.7(2) 2_655 6_654
+O8 Li3 Li2 41.5(2) 1_554 6_654
+B3 Li3 Li2 69.5(3) 1_554 6_654
+B3 Li3 Li2 156.6(3) . 6_654
+Li2 Li3 Li2 103.8(3) 6_655 6_654
+O8 Li3 B4 96.2(4) . 5_544
+O3 Li3 B4 90.9(2) 6_654 5_544
+O7 Li3 B4 127.8(3) 6_654 5_544
+O7 Li3 B4 25.38(14) 5_544 5_544
+Li3 Li3 B4 75.5(3) 2_655 5_544
+O8 Li3 B4 98.5(3) 1_554 5_544
+B3 Li3 B4 91.9(3) 1_554 5_544
+B3 Li3 B4 88.2(3) . 5_544
+Li2 Li3 B4 111.2(4) 6_655 5_544
+Li2 Li3 B4 115.0(4) 6_654 5_544
+O8 Li3 Li2 54.5(3) . 5_545
+O3 Li3 Li2 125.3(3) 6_654 5_545
+O7 Li3 Li2 101.9(3) 6_654 5_545
+O7 Li3 Li2 57.1(3) 5_544 5_545
+Li3 Li3 Li2 62.8(2) 2_655 5_545
+O8 Li3 Li2 147.9(3) 1_554 5_545
+B3 Li3 Li2 142.8(3) 1_554 5_545
+B3 Li3 Li2 64.2(3) . 5_545
+Li2 Li3 Li2 58.8(4) 6_655 5_545
+Li2 Li3 Li2 131.5(2) 6_654 5_545
+B4 Li3 Li2 52.7(2) 5_544 5_545
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Rb1 O1 2.919(6) 1_556
+Rb1 O1 2.967(6) .
+Rb1 O6 2.978(3) 5_545
+Rb1 O2 3.093(3) 1_556
+Rb1 O3 3.097(3) .
+Rb1 O2 3.099(3) .
+Rb1 O5 3.123(3) 5_545
+Rb1 O4 3.299(3) 5_545
+Rb1 O7 3.300(2) .
+O1 B1 1.333(6) .
+O1 Li1 1.874(8) .
+O1 Rb1 2.919(6) 4_554
+O1 Rb1 2.919(6) 1_554
+O1 Rb1 2.967(6) 4
+O2 B1 1.390(4) .
+O2 B2 1.483(4) .
+O2 Li2 2.574(8) .
+O2 Rb1 3.093(3) 1_554
+O3 B3 1.402(6) .
+O3 B3 1.415(9) 6_654
+O3 Li3 1.941(7) 6_655
+O4 B2 1.447(4) .
+O4 B2 1.447(4) 4
+O4 Li1 1.967(18) 5_554
+O4 Rb1 3.299(3) 5_554
+O4 Rb1 3.299(3) 8_554
+O5 B4 1.377(6) .
+O5 B2 1.479(7) .
+O5 Li1 1.935(8) 5
+O5 Rb1 3.123(3) 5_554
+O6 B4 1.394(7) 1_554
+O6 B2 1.481(6) .
+O6 Li2 1.958(8) .
+O6 Rb1 2.978(3) 5_554
+O7 B4 1.345(5) .
+O7 Li2 1.930(10) .
+O7 Li3 1.942(6) 6_655
+O7 Li3 1.947(6) 5
+O7 Li2 2.479(10) 1_556
+O8 B3 1.294(5) .
+O8 Li2 1.912(7) 6_655
+O8 Li3 1.915(11) .
+O8 Li2 2.387(8) 5_545
+O8 Li3 2.574(11) 1_556
+O8 Rb1 3.336(3) 6_654
+B1 O2 1.390(4) 4
+B3 O3 1.415(9) 6_655
+B4 O6 1.394(7) 1_556
+Li1 O5 1.935(8) 8_544
+Li1 O5 1.935(8) 5_544
+Li1 O4 1.967(18) 5_545
+Li2 O8 1.912(7) 6_654
+Li2 O8 2.387(8) 5_554
+Li2 O7 2.479(10) 1_554
+Li3 O3 1.941(7) 6_654
+Li3 O7 1.942(6) 6_654
+Li3 O7 1.947(6) 5_544
+Li3 O8 2.574(11) 1_554

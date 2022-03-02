@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # pylint: disable=logging-fstring-interpolation, logging-not-lazy
+"""
+Command line interface.
+"""
 
 # information
 __author__ = "Genki Prayogo, and Kosuke Nakano"
@@ -13,7 +16,6 @@ __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
-"""Command line interface."""
 import argparse
 import datetime
 import fnmatch
@@ -22,12 +24,6 @@ import logging
 import tqdm
 
 from . import const
-
-# import sys
-
-
-# Disable detailed stack trace.
-# sys.excepthook = lambda t, e, _: print(f"{t.__name__}: {e}")
 
 
 class TqdmLoggingHandler(logging.Handler):
@@ -53,8 +49,6 @@ def print_header():
     now = datetime.datetime.now()
     tz = now.astimezone().tzname()
     time_string = now.strftime("%c ") + tz
-    bold = "\033[1m"
-    end = "\033[0m"
 
     # logger.setLevel(logging.INFO)
     handler = TqdmLoggingHandler()
@@ -62,8 +56,8 @@ def print_header():
     logging.basicConfig(format="%(message)s", level=logging.INFO, handlers=[handler])
     logging.info("********************************\n")
     logging.info(
-        f"SHRY: Suite for High-throughput generation of models"
-        f"with atomic substitutions implemented by Python"
+        "SHRY: Suite for High-throughput generation of models"
+        "with atomic substitutions implemented by Python"
     )
     logging.info("\n********************************")
     logging.info("Begin " + time_string)
@@ -161,14 +155,14 @@ def main():  # pylint: disable=missing-function-docstring
         help="Number of output CIFs written to each output directories.",
     )
     group.add_argument(
-        "--sample",
-        default=const.DEFAULT_SAMPLE,
-        help="Write only SAMPLE CIFs from all ordered structures (random sampling).",
-    )
-    group.add_argument(
         "--write-symm",
         action="store_true",
         help="Write symmetries for all output CIFs (slower).",
+    )
+    group.add_argument(
+        "--write-ewald",
+        action="store_true",
+        help="Write Ewald energy for all output CIFs.",
     )
     group.add_argument(
         "--symmetrize",
@@ -187,6 +181,12 @@ def main():  # pylint: disable=missing-function-docstring
         help="Symmetry search precision (simulation cell fraction).",
     )
     group.add_argument(
+        "--atol",
+        type=float,
+        default=const.DEFAULT_SYMPREC,
+        help="Discretization absolute tolerance (angstrom).",
+    )
+    group.add_argument(
         "--angle-tolerance",
         type=float,
         default=const.DEFAULT_ANGLE_TOLERANCE,
@@ -200,16 +200,18 @@ def main():  # pylint: disable=missing-function-docstring
     group.add_argument(
         "--no-dmat",
         action="store_true",
-        help="(devel/algo) Alternative algorithm without distance matrix (slower).",
+        # help="(devel/algo) Alternative algorithm without distance matrix (slower).",
+        help=argparse.SUPPRESS,
     )
     group.add_argument(
         "--t-kind",
         default="sum",
         choices=("sum", "plsum", "det"),
-        help=(
-            "(devel/algo) Type of T function applied to "
-            "distance matrix (sum, plsum, det)."
-        ),
+        # help=(
+        #     "(devel/algo) Type of T function applied to "
+        #     "distance matrix (sum, plsum, det)."
+        # ),
+        help=argparse.SUPPRESS,
     )
     args = parser.parse_args()
     const.DISABLE_PROGRESSBAR = args.disable_progressbar
@@ -243,11 +245,12 @@ def main():  # pylint: disable=missing-function-docstring
             to_species=to_species,
             scaling_matrix=scaling_matrix,
             symmetrize=args.symmetrize,
-            sample=args.sample,
             symprec=args.symprec,
+            atol=args.atol,
             angle_tolerance=args.angle_tolerance,
             dir_size=args.dir_size,
             write_symm=args.write_symm,
+            write_ewald=args.write_ewald,
             no_write=args.no_write,
             no_dmat=args.no_dmat,
             t_kind=args.t_kind,
@@ -257,6 +260,7 @@ def main():  # pylint: disable=missing-function-docstring
     if not args.count_only and not args.mod_only:
         helper.write()
     print_footer()
+
 
 if __name__ == "__main__":
     main()

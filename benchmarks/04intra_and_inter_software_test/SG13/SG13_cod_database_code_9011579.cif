@@ -1,0 +1,94 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/01/15/9011579.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9011579
+loop_
+_publ_author_name
+'Angel, R. J.'
+'Gasparik, T.'
+'Ross, N. L.'
+'Finger, L. W.'
+'Prewitt, C. T.'
+'Hazen, R. M.'
+_publ_section_title
+;
+ A silica-rich sodium pyroxene phase with six-coordinated silicon
+ Locality: synthetic
+;
+_journal_name_full               Nature
+_journal_page_first              156
+_journal_page_last               158
+_journal_paper_doi               10.1038/335156a0
+_journal_volume                  335
+_journal_year                    1988
+_chemical_formula_structural     Na(Mg0.5Si0.5)Si2O6
+_chemical_formula_sum            'Mg Na2 O12 Si5'
+_space_group_IT_number           13
+_symmetry_space_group_name_Hall  '-P 2yac'
+_symmetry_space_group_name_H-M   'P 1 2/n 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 108.13
+_cell_angle_gamma                90
+_cell_length_a                   9.418
+_cell_length_b                   8.647
+_cell_length_c                   5.274
+_cell_volume                     408.178
+_exptl_crystal_density_diffrn    3.277
+_cod_original_formula_sum        'Mg Si5 Na2 O12'
+_cod_database_code               9011579
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2-x,y,1/2-z
+1/2+x,-y,1/2+z
+-x,-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+MgM1 0.00690 0.00833 0.00522 0.00000 0.00114 0.00000
+SiM1(1) 0.00609 0.00492 0.00458 0.00000 0.00205 0.00000
+NaM2 0.01380 0.00871 0.00764 0.00000 0.00136 0.00000
+NaM2(1) 0.02273 0.00947 0.01158 0.00000 -0.00250 0.00000
+SiT1 0.00487 0.00530 0.00445 -0.00039 0.00136 -0.00044
+SiT2 0.00487 0.00606 0.00496 0.00000 0.00227 0.00022
+O1(1) 0.00487 0.00947 0.00484 -0.00039 0.00159 0.00044
+O1(2) 0.00487 0.00795 0.00382 0.00078 0.00023 -0.00022
+O2(1) 0.00812 0.00682 0.00675 -0.00196 0.00227 -0.00088
+O2(2) 0.00893 0.00720 0.00929 0.00196 0.00273 0.00022
+O3(1) 0.00609 0.00985 0.00636 -0.00039 0.00205 -0.00263
+O3(2) 0.00649 0.00947 0.00547 -0.00078 0.00136 0.00154
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+MgM1 0.75000 0.65490 0.25000 0.00709
+SiM1(1) 0.75000 0.84690 0.75000 0.00507
+NaM2 0.75000 0.05130 0.25000 0.01051
+NaM2(1) 0.75000 0.45670 0.75000 0.01646
+SiT1 0.04470 0.84860 0.22700 0.00494
+SiT2 0.03720 0.66520 0.73550 0.00507
+O1(1) 0.86200 0.84430 0.10170 0.00633
+O1(2) 0.85670 0.69340 0.65620 0.00583
+O2(1) 0.12340 0.01460 0.30770 0.00722
+O2(2) 0.09820 0.49500 0.79110 0.00861
+O3(1) 0.11280 0.76650 0.01190 0.00735
+O3(2) 0.09300 0.75270 0.50700 0.00722

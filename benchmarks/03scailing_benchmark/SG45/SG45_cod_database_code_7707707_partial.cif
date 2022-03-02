@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Na16V8P16H16O64.5Lv1.5Po2Te4
-_symmetry_space_group_name_H-M   Iba2
+_symmetry_space_group_name_H-M  'I b a 2'
 _cell_length_a   13.86852000
 _cell_length_b   13.79850000
 _cell_length_c   7.47677000

@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Nd12Bi20As2.33333333N3.0Mc2Sb0.66666667
-_symmetry_space_group_name_H-M   Immm
+_symmetry_space_group_name_H-M  'I m m m'
 _cell_length_a   4.29960000
 _cell_length_b   15.20000000
 _cell_length_c   19.12100000

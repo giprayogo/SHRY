@@ -1,0 +1,86 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/64/9006448.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9006448
+loop_
+_publ_author_name
+'Yang, H.'
+'Hazen, R. M.'
+'Downs, R. T.'
+'Finger, L. W.'
+_publ_section_title
+;
+ Structural change associated with the incommensurate-normal phase transition
+ in akermanite, Ca2MgSi2O7, at high pressure
+ Sample: P = 0.0 GPa
+;
+_journal_name_full               'Physics and Chemistry of Minerals'
+_journal_page_first              510
+_journal_page_last               519
+_journal_paper_doi               10.1007/s002690050066
+_journal_volume                  24
+_journal_year                    1997
+_chemical_formula_sum            'Ca2 Mg O7 Si2'
+_chemical_name_mineral           Akermanite
+_space_group_IT_number           113
+_symmetry_space_group_name_Hall  'P -4 2ab'
+_symmetry_space_group_name_H-M   'P -4 21 m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   7.8338
+_cell_length_b                   7.8338
+_cell_length_c                   5.0082
+_cell_volume                     307.345
+_diffrn_ambient_pressure         0
+_exptl_crystal_density_diffrn    2.946
+_cod_original_formula_sum        'Ca2 Mg Si2 O7'
+_cod_database_code               9006448
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2-y,1/2-x,z
+y,-x,-z
+1/2-x,1/2+y,-z
+-x,-y,z
+1/2+y,1/2+x,z
+-y,x,-z
+1/2+x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Ca 0.02518 0.02518 0.01792 0.01523 0.00159 0.00159
+Mg 0.01150 0.01150 0.02541 0.00000 0.00000 0.00000
+Si 0.00995 0.00995 0.01550 0.00155 0.00119 0.00119
+O1 0.03233 0.03233 0.01652 -0.02238 0.00000 0.00000
+O2 0.02798 0.02798 0.02503 0.01679 -0.00219 -0.00219
+O3 0.04726 0.01772 0.02084 -0.00373 0.00636 -0.00278
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Ca 0.33240 0.16760 0.50650 0.02280
+Mg 0.00000 0.00000 0.00000 0.01608
+Si 0.13960 0.36040 0.93580 0.01178
+O1 0.50000 0.00000 0.17990 0.02660
+O2 0.14070 0.35930 0.25290 0.02660
+O3 0.07980 0.18620 0.78560 0.02913

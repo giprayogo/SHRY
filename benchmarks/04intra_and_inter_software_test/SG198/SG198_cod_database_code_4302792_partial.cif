@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_Fr0.5Cs1.5K5.5Cd8H0.5S12O48
+_symmetry_space_group_name_H-M  'P 21 3'
+_cell_length_a   10.30300000
+_cell_length_b   10.30300000
+_cell_length_c   10.30300000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   198
+_chemical_formula_structural   Fr0.5Cs1.5K5.5Cd8H0.5S12O48
+_chemical_formula_sum   'Fr0.5 Cs1.5 K5.5 Cd8 H0.5 S12 O48'
+_cell_volume   1093.68208813
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+1/2, -y, z+1/2'
+  3  'x+1/2, -y+1/2, -z'
+  4  '-x, y+1/2, -z+1/2'
+  5  'z, x, y'
+  6  'z+1/2, -x+1/2, -y'
+  7  '-z, x+1/2, -y+1/2'
+  8  '-z+1/2, -x, y+1/2'
+  9  'y, z, x'
+  10  '-y, z+1/2, -x+1/2'
+  11  '-y+1/2, -z, x+1/2'
+  12  'y+1/2, -z+1/2, -x'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  4  0.19450000  0.69450000  0.80550000  1.0
+  Cs+  Cs1  4  0.06470000  0.06470000  0.06470000  0.375
+  K+  K2  4  0.06470000  0.06470000  0.06470000  0.375
+  Fr+  Fr3  4  0.06470000  0.06470000  0.06470000  0.125
+  H+  H4  4  0.06470000  0.06470000  0.06470000  0.125
+  Cd  Cd5  4  0.08081000  0.91919000  0.41919000  1.0
+  Cd  Cd6  4  0.16446000  0.33554000  0.66446000  1.0
+  S  S7  12  0.02100000  0.73860000  0.12540000  1.0
+  O  O8  12  0.00200000  0.10500000  0.33500000  1.0
+  O  O9  12  0.02300000  0.82400000  0.23200000  1.0
+  O  O10  12  0.03120000  0.93500000  0.78600000  1.0
+  O  O11  12  0.06700000  0.15270000  0.74500000  1.0

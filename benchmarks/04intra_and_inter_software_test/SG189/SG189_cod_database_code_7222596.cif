@@ -1,0 +1,80 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-09-27 07:13:35 +0300 (Thu, 27 Sep 2018) $
+#$Revision: 211196 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/7/22/25/7222596.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7222596
+loop_
+_publ_author_name
+'Mishra, R.'
+'Trill, H.'
+'Poettgen, R.'
+'Piotrowski, H.'
+'Mosel, B.D.'
+'Hoffmann, R.D.'
+'Zumdick, M.F.'
+_publ_section_title
+;
+ The stannides RE Rh Sn (RE= Ho-Yb) and Sc T Sn (T= Pd, Pt) - structure
+ refinements and 119Sn Moessbauer spectroscopy
+;
+_journal_name_full
+;
+Zeitschrift fuer Naturforschung, Teil B. Anorganische Chemie, Organische 
+Chemie (42,1987-)
+;
+_journal_page_first              589
+_journal_page_last               597
+_journal_volume                  56
+_journal_year                    2001
+_chemical_formula_sum            'Ho Rh Sn'
+_space_group_IT_number           189
+_symmetry_space_group_name_Hall  'P -6 -2'
+_symmetry_space_group_name_H-M   'P -6 2 m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   7.545
+_cell_length_b                   7.545
+_cell_length_c                   3.771
+_cell_volume                     185.911
+_citation_journal_id_ASTM        ZNBSEN
+_cod_data_source_file            Mishra_ZNBSEN_2001_185.cif
+_cod_data_source_block           Ho1Rh1Sn1
+_cod_original_cell_volume        185.9112
+_cod_original_formula_sum        'Ho1 Rh1 Sn1'
+_cod_database_code               7222596
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x+y,-x,-z
+-y,x-y,z
+x,y,-z
+-x+y,-x,z
+-y,x-y,-z
+y,x,z
+x-y,-y,-z
+-x,-x+y,z
+y,x,-z
+x-y,-y,z
+-x,-x+y,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Sn1 Sn 0.73784 0 0.5 1 0.0
+Rh2 Rh 0 0 0 1 0.0
+Ho1 Ho 0.40395 0 0 1 0.0
+Rh1 Rh 0.3333 0.6667 0.5 1 0.0

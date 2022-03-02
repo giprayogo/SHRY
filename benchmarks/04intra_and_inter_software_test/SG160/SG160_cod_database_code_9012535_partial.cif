@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Cu9Ag3Rg2CnZnHg10
+_symmetry_space_group_name_H-M  'R 3 m :R'
+_cell_length_a   9.40240000
+_cell_length_b   9.40240000
+_cell_length_c   9.40240000
+_cell_angle_alpha   90.42500000
+_cell_angle_beta   90.42500000
+_cell_angle_gamma   90.42500000
+_symmetry_Int_Tables_number   160
+_chemical_formula_structural   Cu9Ag3Rg2CnZnHg10
+_chemical_formula_sum   'Cu9 Ag3 Rg2.0 Cn1 Zn1 Hg10'
+_cell_volume   831.15141110
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'z, x, y'
+  3  'y, z, x'
+  4  'z, y, x'
+  5  'y, x, z'
+  6  'x, z, y'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu  Cu0  1  0.09700000  0.09700000  0.09700000  1
+  Ag+  Ag1  3  0.09700000  0.90300000  0.90300000
+  0.6666666666666666
+  Rg+  Rg2  3  0.09700000  0.90300000  0.90300000
+  0.3333333333333333
+  Cu  Cu3  3  0.06800000  0.29500000  0.29500000  1
+  Cu  Cu4  3  0.16300000  0.16300000  0.83700000  1
+  Cu  Cu5  1  0.83700000  0.83700000  0.83700000  1
+  Ag+  Ag6  3  0.00500000  0.00500000  0.34500000
+  0.3333333333333333
+  Rg+  Rg7  3  0.00500000  0.00500000  0.34500000
+  0.3333333333333333
+  Cu+  Cu8  3  0.00500000  0.00500000  0.34500000
+  0.3333333333333333
+  Cn+  Cn9  3  0.64800000  0.99700000  0.99700000
+  0.3333333333333333
+  Hg+  Hg10  3  0.64800000  0.99700000  0.99700000
+  0.3333333333333333
+  Zn+  Zn11  3  0.64800000  0.99700000  0.99700000
+  0.3333333333333333
+  Hg  Hg12  6  0.33700000  0.71600000  0.94000000  1
+  Hg  Hg13  3  0.04000000  0.69300000  0.69300000  1

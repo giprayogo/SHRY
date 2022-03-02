@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Rb4Po0.5P4Se0.5S14O1
-_symmetry_space_group_name_H-M   I-42d
+_symmetry_space_group_name_H-M  'I -4 2 d'
 _cell_length_a   7.61600000
 _cell_length_b   7.61600000
 _cell_length_c   7.29300000

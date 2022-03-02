@@ -1,0 +1,108 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-18 17:37:37 +0200 (Thu, 18 Feb 2016) $
+#$Revision: 176729 $
+#$URL: svn://www.crystallography.net/cod/cif/1/51/09/1510910.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1510910
+loop_
+_publ_author_name
+'de Mooij, D.B.'
+'Buschow, K.H.J.'
+_publ_section_title
+;
+ A novel ternary Nd-Fe-B compound
+;
+_journal_name_full               'Philips Journal of Research'
+_journal_page_first              400
+_journal_page_last               409
+_journal_volume                  41
+_journal_year                    1986
+_chemical_formula_sum            'B3 Fe23 Nd2'
+_chemical_name_systematic        'Nd2 Fe23 B3'
+_space_group_IT_number           220
+_symmetry_space_group_name_Hall  'I -4bd 2c 3'
+_symmetry_space_group_name_H-M   'I -4 3 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            8
+_cell_length_a                   14.19
+_cell_length_b                   14.19
+_cell_length_c                   14.19
+_cell_volume                     2857.243
+_citation_journal_id_ASTM        PHJRD9
+_cod_data_source_file            boron_438.cif
+_cod_data_source_block           B3Fe23Nd2
+_cod_database_code               1510910
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y+1/4,-x+3/4,-z+1/4
+-x,-y+1/2,z
+-y+3/4,x+3/4,-z+1/4
+x,-y,-z+1/2
+-y+1/4,-x+3/4,z+3/4
+-x,y+1/2,-z+1/2
+y+3/4,x+3/4,z+3/4
+z,x,y
+x+1/4,-z+3/4,-y+1/4
+-z,-x+1/2,y
+-x+3/4,z+3/4,-y+1/4
+z,-x,-y+1/2
+-x+1/4,-z+3/4,y+3/4
+-z,x+1/2,-y+1/2
+x+3/4,z+3/4,y+3/4
+y,z,x
+y,-z,-x+1/2
+-z+1/4,-y+3/4,x+3/4
+-y,z+1/2,-x+1/2
+z+1/4,y+1/4,x+1/4
+-y+1/2,-z,x+1/2
+-z+1/4,y+1/4,-x+3/4
+z+3/4,-y+1/4,-x+3/4
+x+1/2,y+1/2,z+1/2
+y+3/4,-x+5/4,-z+3/4
+-x+1/2,-y+1,z+1/2
+-y+5/4,x+5/4,-z+3/4
+x+1/2,-y+1/2,-z+1
+-y+3/4,-x+5/4,z+5/4
+-x+1/2,y+1,-z+1
+y+5/4,x+5/4,z+5/4
+z+1/2,x+1/2,y+1/2
+x+3/4,-z+5/4,-y+3/4
+-z+1/2,-x+1,y+1/2
+-x+5/4,z+5/4,-y+3/4
+z+1/2,-x+1/2,-y+1
+-x+3/4,-z+5/4,y+5/4
+-z+1/2,x+1,-y+1
+x+5/4,z+5/4,y+5/4
+y+1/2,z+1/2,x+1/2
+y+1/2,-z+1/2,-x+1
+-z+3/4,-y+5/4,x+5/4
+-y+1/2,z+1,-x+1
+z+3/4,y+3/4,x+3/4
+-y+1,-z+1/2,x+1
+-z+3/4,y+3/4,-x+5/4
+z+5/4,-y+3/4,-x+5/4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Fe5 Fe 0.727 0.534 0.397 1 0.0
+Fe2 Fe 0.171 0 0.25 1 0.0
+B1 B 0.812 0 0.25 1 0.0
+Fe3 Fe 0.563 0.515 0.341 1 0.0
+Fe1 Fe 0.185 0.185 0.185 1 0.0
+Nd1 Nd 0.056 0.056 0.056 1 0.0
+Fe4 Fe 0.625 0.681 0.375 1 0.0

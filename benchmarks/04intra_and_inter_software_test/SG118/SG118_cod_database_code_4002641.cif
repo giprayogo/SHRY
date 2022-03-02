@@ -1,0 +1,192 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-04 08:14:37 +0200 (Thu, 04 Feb 2016) $
+#$Revision: 175776 $
+#$URL: svn://www.crystallography.net/cod/cif/4/00/26/4002641.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4002641
+loop_
+_publ_author_name
+'Tumanov, Nikolay A.'
+'Roedern, Elsa'
+'\/Lodziana, Zbigniew'
+'Nielsen, Dorrit B.'
+'Jensen, Torben R.'
+'Talyzin, Alexandr V.'
+'\<Cern\'y, Radovan'
+'Chernyshov, Dmitry'
+'Dmitriev, Vladimir'
+'Palasyuk, Taras'
+'Filinchuk, Yaroslav'
+_publ_section_title
+;
+ High-Pressure Study of Mn(BH4)2Reveals a Stable Polymorph with High
+ Hydrogen Density
+;
+_journal_issue                   1
+_journal_name_full               'Chemistry of Materials'
+_journal_page_first              274
+_journal_paper_doi               10.1021/acs.chemmater.5b04102
+_journal_volume                  28
+_journal_year                    2016
+_chemical_formula_moiety         'Mn 2+, (BH4 1-)2'
+_chemical_formula_sum            'B2 H8 Mn'
+_chemical_formula_weight         84.62
+_chemical_name_common            '\d-manganese borohydride'
+_chemical_name_systematic
+; 
+manganese ditetrahydroborate
+;
+_space_group_IT_number           118
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  'P -4 -2n'
+_symmetry_space_group_name_H-M   'P -4 n 2'
+_cell_angle_alpha                90.00000
+_cell_angle_beta                 90.00000
+_cell_angle_gamma                90.00000
+_cell_formula_units_Z            2
+_cell_length_a                   5.55260(5)
+_cell_length_b                   5.55260(5)
+_cell_length_c                   6.07271(8)
+_cell_measurement_temperature    295
+_cell_volume                     187.230(3)
+_computing_structure_refinement  FULLPROF
+_diffrn_ambient_pressure         100
+_diffrn_ambient_temperature      295
+_diffrn_detector                 'Multi-analysing crystals (MAC) detector'
+_diffrn_detector_type            'Multi-analysing crystals (MAC) detector'
+_diffrn_measurement_device_type  BMI11
+_diffrn_radiation_type           synchrotron
+_diffrn_radiation_wavelength     0.825770
+_diffrn_source                   synchrotron
+_pd_char_colour                  colourless
+_pd_instr_location
+; 
+BMI11 at the Diamond Light Source, Didcot, UK
+;
+_pd_meas_2theta_range_inc        0.010001
+_pd_meas_2theta_range_max        150.00000
+_pd_meas_2theta_range_min        0.06000
+_pd_meas_number_of_points        14995
+_pd_meas_scan_method             step
+_pd_prep_pressure                1200000
+_pd_prep_temperature             295
+_pd_proc_2theta_range_inc        0.010001
+_pd_proc_2theta_range_max        150.0134
+_pd_proc_2theta_range_min        0.0734
+_pd_proc_ls_prof_R_factor        6.4706
+_pd_proc_ls_prof_wR_expected     2.1620
+_pd_proc_ls_prof_wR_factor       8.5705
+_pd_proc_wavelength              0.825770
+_pd_spec_mounting
+; 
+0.5 mm borosilicate glass capillary
+;
+_pd_spec_mount_mode              transmission
+_pd_spec_shape                   cylinder
+_refine_ls_goodness_of_fit_all   3.96
+_refine_ls_number_parameters     11
+_refine_ls_number_reflns         760
+_refine_ls_number_restraints     0
+_refine_ls_R_I_factor            5.2091
+_refine_ls_shift/su_max          0.01
+_cod_data_source_file            cm5b04102_si_002.cif
+_cod_data_source_block           Mn(BH4)2_in_P-4n2
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_symmetry_cell_setting' value 'Tetragonal' changed to 'tetragonal'
+according to
+/usr/data/users/saulius/crontab/automatic-downloads/rss-feeds/ACS/lib/dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 from 2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 4268 2015-11-12 08:31:59Z antanas 
+
+ Adding full bibliography for 4002641--4002643.cif.
+;
+_cod_database_code               4002641
+_pd_proc_ls_prof_cr_factor       17.6846
+_pd_proc_ls_prof_cwr_factor      16.6944
+_pd_proc_ls_prof_cwr_expected    4.2114
+_pd_proc_ls_prof_chi2            15.7144
+_pd_proc_ls_prof_echi2           16.0728
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,-x,-z
+-x,-y,z
+-y,x,-z
+-x+1/2,y+1/2,z+1/2
+-y+1/2,-x+1/2,-z+1/2
+x+1/2,-y+1/2,z+1/2
+y+1/2,x+1/2,-z+1/2
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_type_symbol
+Mn 0.00000 0.00000 0.50000 0.0236(6) 1.00000 Uiso MN
+B 0.252(2) 0.248(2) 0.25000 0.006(3) 1.00000 Uiso B
+H1 0.222(2) 0.038(2) 0.21200 0.006(3) 1.00000 Uiso H
+H2 0.360(2) 0.825(2) -0.08594 0.006(3) 1.00000 Uiso H
+loop_
+_atom_type_symbol
+_atom_type_scat_Cromer_Mann_a1
+_atom_type_scat_Cromer_Mann_b1
+_atom_type_scat_Cromer_Mann_a2
+_atom_type_scat_Cromer_Mann_b2
+_atom_type_scat_Cromer_Mann_a3
+_atom_type_scat_Cromer_Mann_b3
+_atom_type_scat_Cromer_Mann_a4
+_atom_type_scat_Cromer_Mann_b4
+_atom_type_scat_Cromer_Mann_c
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+mn 11.28190 5.34090 7.35730 0.34320 3.01930 17.86740 2.24410 83.75430 1.08960
+0.29500 0.72900
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+b 2.05450 23.21850 1.33260 1.02100 1.09790 60.34980 0.70680 0.14030 -0.19320
+0.00000 0.00100
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+h 0.49300 10.51090 0.32291 26.12570 0.14019 3.14236 0.04081 57.79970 0.00304
+0.00000 0.00000
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+H1 B H1 107.9(16) 1_555 6_555
+H1 B H2 106.4(14) 1_555 4_655
+H1 B H2 114.6(13) 1_555 5_545
+H1 B H2 114.6(13) 6_555 4_655
+H1 B H2 106.4(14) 6_555 5_545
+H2 B H2 107.2(6) 4_655 5_545
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Mn B 2.482(9) 1_555
+Mn B 2.482(9) 2_556
+Mn B 2.482(9) 3_555
+Mn B 2.482(9) 4_556
+B H1 1.200(15) 1_555
+B H1 1.200(15) 6_555
+B H2 1.250(9) 4_655
+B H2 1.250(9) 5_545

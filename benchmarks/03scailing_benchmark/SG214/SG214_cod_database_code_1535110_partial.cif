@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_La24Si4.33333333Pb3.66666667I24
-_symmetry_space_group_name_H-M   I4_132
+_symmetry_space_group_name_H-M  'I 41 3 2'
 _cell_length_a   12.60360000
 _cell_length_b   12.60360000
 _cell_length_c   12.60360000

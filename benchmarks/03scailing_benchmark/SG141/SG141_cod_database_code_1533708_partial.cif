@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Rb3.5Li0.5Ce1.5Sm1.5Eu0.5Er0.5O8
-_symmetry_space_group_name_H-M   I4_1/amd
+_symmetry_space_group_name_H-M  'I 41/a m d :1'
 _cell_length_a   4.66070000
 _cell_length_b   4.66070000
 _cell_length_c   10.51910000

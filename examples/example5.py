@@ -10,28 +10,28 @@ structure2 = structure.copy()
 structure3 = structure.copy()
 structure1.replace_species({'Fe1': 'Fe7Ti'})
 # Higher Ti concentraction
-structure2.replace_species({'Fe2': 'Fe3Ti'})
+structure2.replace_species({'Fe1': 'Fe3Ti'})
 # Reverse of above
-structure3.replace_species({'Fe2': 'FeTi3'})
+structure3.replace_species({'Fe1': 'FeTi3'})
 
 os.makedirs("output1", exist_ok=True)
 os.makedirs("output2", exist_ok=True)
 os.makedirs("output3", exist_ok=True)
 
 substitutor = Substitutor(structure1)
-substitutor.make_patterns()
+substitutor.get_ap()
 for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output1/{i}.cif"
     cifwriter.write_file(filename=output_filename)
 
 substitutor.structure = structure2
-substitutor.make_patterns()
+substitutor.get_ap()
 for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output2/{i}.cif"
     cifwriter.write_file(filename=output_filename)
 
 substitutor.structure = structure3
-substitutor.make_patterns()
+substitutor.get_ap()
 for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output3/{i}.cif"
     cifwriter.write_file(filename=output_filename)

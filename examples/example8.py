@@ -14,7 +14,7 @@ os.makedirs("output1", exist_ok=True)
 os.makedirs("output2", exist_ok=True)
 substitutor = Substitutor(structure)
 print(structure)
-substitutor.make_patterns()
+substitutor.get_ap()
 
 # Equivalent to Fe1 -> Fe7Ti, Fe2 -> Fe7Ti, Fe3 -> Fe7Ti
 for i, cifwriter in enumerate(substitutor.cifwriters()):
@@ -23,7 +23,7 @@ for i, cifwriter in enumerate(substitutor.cifwriters()):
 
 # Equivalent to Fe -> Fe7Ti
 substitutor.groupby = groupby
-substitutor.make_patterns()
+substitutor.get_ap()
 for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output2/{i}.cif"
     cifwriter.write_file(filename=output_filename)

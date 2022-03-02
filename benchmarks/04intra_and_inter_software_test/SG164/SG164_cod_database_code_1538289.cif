@@ -1,0 +1,69 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/1/53/82/1538289.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1538289
+loop_
+_publ_author_name
+'Hoschek, E.'
+_publ_section_title
+;
+ Vanadinselenide
+;
+_journal_name_full
+'Zeitschrift fuer Anorganische und Allgemeine Chemie'
+_journal_page_first              49
+_journal_page_last               49
+_journal_volume                  242
+_journal_year                    1939
+_chemical_formula_sum            'Se2 V'
+_chemical_name_systematic        'V Se2'
+_space_group_IT_number           164
+_symmetry_space_group_name_Hall  '-P 3 2"'
+_symmetry_space_group_name_H-M   'P -3 m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   3.355
+_cell_length_b                   3.355
+_cell_length_c                   6.134
+_cell_volume                     59.794
+_citation_journal_id_ASTM        ZAACAB
+_cod_data_source_file            Hoschek_ZAACAB_1939_1965.cif
+_cod_data_source_block           Se2V1
+_cod_original_cell_volume        59.79425
+_cod_original_formula_sum        'Se2 V1'
+_cod_database_code               1538289
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+y,x,-z
+-x,-x+y,-z
+x-y,-y,-z
+-x,-y,-z
+y,-x+y,-z
+x-y,x,-z
+-y,-x,z
+x,x-y,z
+-x+y,y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Se1 Se 0.3333 0.6667 0.25 1 0.0
+V1 V 0 0 0 1 0.0

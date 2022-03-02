@@ -1,0 +1,80 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/1/53/48/1534809.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1534809
+loop_
+_publ_author_name
+'Shehee, T.C.'
+'Pehler, S.F.'
+'Albrecht-Schmitt, T.E.'
+_publ_section_title
+;
+ Hydrothermal synthesis and structures of the homoleptic iodate complexes
+ [M (I O)6](2-) (M = Mo, Zr)
+;
+_journal_name_full               'Journal of Alloys Compd.'
+_journal_page_first              225
+_journal_page_last               229
+_journal_volume                  388
+_journal_year                    2005
+_chemical_formula_sum            'I6 Mo O18 Rb2'
+_chemical_name_systematic        'Rb2 (Mo (I O3)6)'
+_space_group_IT_number           148
+_symmetry_space_group_name_Hall  '-R 3'
+_symmetry_space_group_name_H-M   'R -3 :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   11.4048
+_cell_length_b                   11.4048
+_cell_length_c                   11.4062
+_cell_volume                     1284.834
+_citation_journal_id_ASTM        JALCEU
+_cod_data_source_file            Shehee_JALCEU_2005_1508.cif
+_cod_data_source_block           I6Mo1O18Rb2
+_cod_original_formula_sum        'I6 Mo1 O18 Rb2'
+_cod_database_code               1534809
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z
+-x+y,-x,z
+-x,-y,-z
+y,-x+y,-z
+x-y,x,-z
+x+2/3,y+1/3,z+1/3
+-y+2/3,x-y+1/3,z+1/3
+-x+y+2/3,-x+1/3,z+1/3
+-x+2/3,-y+1/3,-z+1/3
+y+2/3,-x+y+1/3,-z+1/3
+x-y+2/3,x+1/3,-z+1/3
+x+1/3,y+2/3,z+2/3
+-y+1/3,x-y+2/3,z+2/3
+-x+y+1/3,-x+2/3,z+2/3
+-x+1/3,-y+2/3,-z+2/3
+y+1/3,-x+y+2/3,-z+2/3
+x-y+1/3,x+2/3,-z+2/3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+I1 I+5 0.40747 0.02081 0.72453 1 0.0
+O1 O-2 0.5779 0.1775 0.7266 1 0.0
+O2 O-2 0.4591 -0.0644 0.6223 1 0.0
+O3 O-2 0.4295 -0.0441 0.8616 1 0.0
+Rb1 Rb+1 0 0 0.83307 1 0.0
+Mo1 Mo+4 0.6667 0.3333 0.8333 1 0.0

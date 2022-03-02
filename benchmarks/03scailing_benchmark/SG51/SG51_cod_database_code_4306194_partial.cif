@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Sr6Li12Nb4Po2.5O18Lv1S0.5
-_symmetry_space_group_name_H-M   Pmma
+_symmetry_space_group_name_H-M  'P m m a'
 _cell_length_a   10.58340000
 _cell_length_b   8.31030000
 _cell_length_c   5.82770000

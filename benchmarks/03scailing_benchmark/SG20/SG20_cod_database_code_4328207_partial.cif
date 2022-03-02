@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Na4Er4Po3.5Te2H48C48Se2S0.5O40
-_symmetry_space_group_name_H-M   C222_1
+_symmetry_space_group_name_H-M  'C 2 2 21'
 _cell_length_a   6.87810000
 _cell_length_b   30.38900000
 _cell_length_c   7.45930000

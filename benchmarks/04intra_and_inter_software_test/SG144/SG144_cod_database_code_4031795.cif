@@ -1,0 +1,83 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/4/03/17/4031795.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4031795
+loop_
+_publ_author_name
+'Manek, E.'
+'Meyer, G.'
+_publ_section_title
+;
+ Ternary rubidium rare-earth nitrates: Rb3 (M2 (N O3)9) (M= lanthanum,
+ praseodymium, samarium) and Rb2 (M (N O3)5) (M= europium, lutetium,
+ yttrium)
+;
+_journal_name_full
+'European Journal of Solid State Inorganic Chemistry'
+_journal_page_first              883
+_journal_page_last               894
+_journal_volume                  30
+_journal_year                    1993
+_chemical_formula_sum            'N5 O15 Rb2 Y'
+_chemical_name_systematic        'Rb2 Y (N O3)5'
+_space_group_IT_number           144
+_symmetry_space_group_name_Hall  'P 31'
+_symmetry_space_group_name_H-M   'P 31'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   11.239
+_cell_length_b                   11.239
+_cell_length_c                   9.419
+_cell_volume                     1030.364
+_citation_journal_id_ASTM        EJSCE5
+_cod_data_source_file            Manek_EJSCE5_1993_1546.cif
+_cod_data_source_block           N5O15Rb2Y1
+_cod_original_formula_sum        'N5 O15 Rb2 Y1'
+_cod_database_code               4031795
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x-y,z+1/3
+-x+y,-x,z+2/3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O1 O-2 0.4168 0.5503 0.7209 1 0.0
+O3 O-2 0.3316 0.6445 0.0428 1 0.0
+N1 N+5 0.2467 0.5829 0.393 1 0.0
+O8 O-2 0.3048 0.968 0.8748 1 0.0
+O10 O-2 0.0293 0.3277 0.7204 1 0.0
+O6 O-2 0.0018 0.9802 0.5515 1 0.0
+O7 O-2 0.3325 0.1601 0.9435 1 0.0
+O4 O-2 0.2 0.1136 0.2018 1 0.0
+N2 N+5 0.0843 1.0025 0.1954 1 0.0
+O14 O-2 0.5804 0.427 0.7243 1 0.0
+Rb2 Rb+1 0.66732 0.06215 0.79322 1 0.0
+O12 O-2 0.044 0.4801 0.8688 1 0.0
+Rb1 Rb+1 0.20487 0.33317 0.96013 1 0.0
+Y1 Y+3 0.34077 0.00752 0.1255 1 0.0
+O15 O-2 0.6942 0.3612 0.1383 1 0.0
+O5 O-2 0.0941 0.8988 0.1563 1 0.0
+N4 N+5 0.0255 0.4334 0.7481 1 0.0
+O2 O-2 0.2341 0.7653 0.0986 1 0.0
+O13 O-2 0.7601 0.2473 0.5352 1 0.0
+O11 O-2 0.9985 0.4931 0.6514 1 0.0
+O9 O-2 0.2931 0.1042 0.7201 1 0.0
+N5 N+5 0.5844 0.2533 0.1343 1 0.0
+N3 N+5 0.3075 0.076 0.8401 1 0.0

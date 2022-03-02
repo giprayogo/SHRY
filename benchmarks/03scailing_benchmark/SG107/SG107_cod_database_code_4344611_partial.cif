@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_La2Ga6Cu0.33333333Ag1Au0.33333333Rg0.33333333
-_symmetry_space_group_name_H-M   I4mm
+_symmetry_space_group_name_H-M  'I 4 m m'
 _cell_length_a   4.28370000
 _cell_length_b   4.28370000
 _cell_length_c   10.44820000

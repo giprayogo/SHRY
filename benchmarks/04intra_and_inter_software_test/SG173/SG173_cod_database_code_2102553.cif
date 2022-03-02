@@ -1,0 +1,190 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-10-11 15:27:09 +0300 (Wed, 11 Oct 2017) $
+#$Revision: 201912 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/2/10/25/2102553.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2102553
+loop_
+_publ_author_name
+'du Boulay, D.'
+'Ishizawa, N.'
+'Atake, T.'
+'Streltsov, V.'
+'Furuya, K.'
+'Munakata, F.'
+_publ_section_title
+;
+ Synchrotron X-ray and <i>ab initio</i> studies of \b-Si~3~N~4~
+;
+_journal_issue                   4
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              388
+_journal_page_last               405
+_journal_paper_doi               10.1107/S010876810401393X
+_journal_volume                  60
+_journal_year                    2004
+_chemical_formula_moiety         'N4 Si3'
+_chemical_formula_sum            'N4 Si3'
+_chemical_formula_weight         140.31
+_chemical_name_common            '\b silicon nitride'
+_space_group_crystal_system      hexagonal
+_space_group_IT_number           173
+_space_group_name_Hall           'P 6c'
+_space_group_name_H-M_alt        'P 63'
+_cell_angle_alpha                90.00000
+_cell_angle_beta                 90.00000
+_cell_angle_gamma                120.0000
+_cell_formula_units_Z            1.5
+_cell_length_a                   7.6015(3)
+_cell_length_b                   7.6015(3)
+_cell_length_c                   2.90610(10)
+_cell_measurement_reflns_used    12
+_cell_measurement_temperature    200
+_cell_measurement_theta_max      56.02
+_cell_measurement_theta_min      52.35
+_cell_volume                     145.425(13)
+_computing_cell_refinement       'xtal3.7 LATCON'
+_computing_data_collection       'Diff14A, Vaalsta & Hester 1997'
+_computing_data_reduction        'xtal DIFDAT SORTRF ABSORB ADDREF'
+_computing_molecular_graphics    xtal
+_computing_publication_material  'xtal BONDLA CIFIO'
+_computing_structure_refinement  'xtal CRYLSQ'
+_computing_structure_solution    'already known structure'
+_diffrn_ambient_temperature      295
+_diffrn_measured_fraction_theta_full 1.0
+_diffrn_measurement_device_type  PF-BL14A_Rigaku_4circle
+_diffrn_measurement_method       %w/2%q
+_diffrn_radiation_monochromator  'Double Si '
+_diffrn_radiation_source         Synchrotron
+_diffrn_radiation_type           'syn x'
+_diffrn_radiation_wavelength     .75037
+_diffrn_reflns_av_R_equivalents  .028
+_diffrn_reflns_av_sigmaI/netI    .009
+_diffrn_reflns_limit_h_max       18
+_diffrn_reflns_limit_h_min       -18
+_diffrn_reflns_limit_k_max       18
+_diffrn_reflns_limit_k_min       -18
+_diffrn_reflns_limit_l_max       7
+_diffrn_reflns_limit_l_min       -7
+_diffrn_reflns_number            12331
+_diffrn_reflns_reduction_process 'equatorial monochr Lp'
+_diffrn_reflns_theta_full        60
+_diffrn_reflns_theta_max         68.91
+_diffrn_reflns_theta_min         3.27
+_diffrn_standards_decay_%        0
+_diffrn_standards_interval_count 200
+_diffrn_standards_number         6
+_exptl_absorpt_coefficient_mu    1.535
+_exptl_absorpt_correction_T_max  .9719
+_exptl_absorpt_correction_T_min  .9319
+_exptl_absorpt_correction_type   analytical
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    3.204
+_exptl_crystal_description       irregular
+_exptl_crystal_F_000             140
+_exptl_crystal_size_max          .0352
+_exptl_crystal_size_mid          .0250
+_exptl_crystal_size_min          .0185
+_refine_diff_density_max         .375
+_refine_diff_density_min         -.34
+_refine_ls_abs_structure_details 'see text'
+_refine_ls_extinction_coef       1600.000
+_refine_ls_extinction_expression 'Eq22 p292 "Cryst. Comp." Munksgaard 1970'
+_refine_ls_extinction_method     Zachariasen
+_refine_ls_goodness_of_fit_all   1.7564
+_refine_ls_goodness_of_fit_ref   1.7564
+_refine_ls_matrix_type           full
+_refine_ls_number_constraints    0
+_refine_ls_number_parameters     21
+_refine_ls_number_reflns         866
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          .0129
+_refine_ls_R_factor_gt           .0129
+_refine_ls_shift/su_max          .00369
+_refine_ls_shift/su_mean         .00074
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_all         .0106
+_refine_ls_wR_factor_ref         .0106
+_reflns_number_gt                852
+_reflns_number_total             866
+_reflns_threshold_expression     'F    >  .00 sig(F   )'
+_cod_data_source_file            av5009.cif
+_cod_original_sg_symbol_Hall     p_6c
+_cod_original_sg_symbol_H-M      P_63
+_cod_database_code               2102553
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 +x,+y,+z
+2 -x,-y,1/2+z
+3 -y,+x-y,+z
+4 +y,-x+y,1/2+z
+5 -x+y,-x,+z
+6 +x-y,+x,1/2+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+Si .768482(9) .174583(9) .25000 .00272(2) Uani 1.00000
+N1 .03051(2) .33030(3) .2485(4) .00380(3) Uani 1.00000
+N2 .66666 .33333 .2469(9) .00366(6) Uani 1.00000
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Si .00298(2) .00279(2) .00230(2) .001377(14) .00009(11) .00006(11)
+N1 .00307(4) .00486(4) .00277(4) .00146(3) -.0001(2) -.0008(2)
+N2 .00324(4) .00324(4) .00449(9) .00162(2) .00000 .00000
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Si .079775 .078978 'IT Vol C. Table 6.1.1.4  Table 6.1.1.5'
+N .005011 .003704 'IT Vol C. Table 6.1.1.4  Table 6.1.1.5'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+N2 Si N1 . '6 655' 110.40(8)
+N2 Si N1 . '1 655' 106.599(9)
+N2 Si N1 . '6 654' 109.78(8)
+N1 Si N1 '6 655' '1 655' 108.19(4)
+N1 Si N1 '6 655' '6 654' 113.71(3)
+N1 Si N1 '1 655' '6 654' 107.87(4)
+Si N1 Si '4 564' '1 455' 123.25(6)
+Si N1 Si '4 564' '4 565' 113.710(9)
+Si N1 Si '1 455' '4 565' 122.82(6)
+Si N2 Si '5 665' . 119.999(5)
+Si N2 Si '5 665' '3 655' 119.998(4)
+Si N2 Si . '3 655' 119.995(5)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+Si N2 . 1.72897(8)
+Si N1 '6 655' 1.7319(10)
+Si N1 '1 655' 1.73517(18)
+Si N1 '6 654' 1.7390(10)

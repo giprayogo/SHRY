@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Ca6Si2H6SeO12
+_symmetry_space_group_name_H-M  'P 3'
+_cell_length_a   10.03500000
+_cell_length_b   10.03500000
+_cell_length_c   7.49900000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   143
+_chemical_formula_structural   Ca6Si2H6SeO12
+_chemical_formula_sum   'Ca12 Si4 H12 Se2 O24'
+_cell_volume   653.98643300
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  3  0.03970000  0.37380000  0.74310000  1
+  Ca  Ca1  3  0.04920000  0.38860000  0.24130000  1
+  Ca  Ca2  3  0.37610000  0.33350000  0.49870000  1
+  Ca  Ca3  3  0.37660000  0.33110000  0.98790000  1
+  Si  Si4  1  0.33333333  0.66666667  0.02460000  1
+  Si  Si5  1  0.33333333  0.66666667  0.46090000  1
+  Si  Si6  1  0.66666667  0.33333333  0.26580000  1
+  Si  Si7  1  0.66666667  0.33333333  0.71060000  1
+  H  H8  3  0.00600000  0.84800000  0.73300000  1
+  H  H9  3  0.01300000  0.85200000  0.23100000  1
+  H  H10  3  0.15800000  0.00400000  0.00300000  1
+  H  H11  3  0.16700000  0.01400000  0.50600000  1
+  Se+  Se12  3  0.27940000  0.07220000  0.49330000
+  0.6666666666666666
+  O+  O13  3  0.27940000  0.07220000  0.49330000  0.3333333333333333
+  O  O14  3  0.05940000  0.79130000  0.74200000  1
+  O  O15  3  0.07990000  0.77710000  0.25600000  1
+  O  O16  3  0.15640000  0.55940000  0.51900000  1
+  O  O17  3  0.15920000  0.55560000  0.97700000  1
+  O  O18  3  0.27840000  0.07220000  0.00300000  1
+  O  O19  3  0.55100000  0.40400000  0.22900000  1
+  O  O20  3  0.55650000  0.40900000  0.76500000  1
+  O  O21  1  0.33333333  0.66666667  0.25400000  1
+  O  O22  1  0.66666667  0.33333333  0.50000000  1

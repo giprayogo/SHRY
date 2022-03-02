@@ -1,0 +1,84 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/01/39/9013933.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9013933
+loop_
+_publ_author_name
+'Hull, S.'
+'Keen, D. A.'
+_publ_section_title
+;
+ High-pressure polymorphism of the copper(I) halides:
+ A neutron-diffraction study to ~10 GPa
+ Note: P = 5.08 GPa
+ Note: known as CuBr-V
+;
+_journal_name_full               'Physical Review B'
+_journal_page_first              5868
+_journal_page_last               5885
+_journal_paper_doi               10.1103/PhysRevB.50.5868
+_journal_volume                  50
+_journal_year                    1994
+_chemical_formula_structural     CuBr
+_chemical_formula_sum            'Br Cu'
+_space_group_IT_number           205
+_symmetry_space_group_name_Hall  '-P 2ac 2ab 3'
+_symmetry_space_group_name_H-M   'P a -3'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   6.7378
+_cell_length_b                   6.7378
+_cell_length_c                   6.7378
+_cell_volume                     305.882
+_diffrn_ambient_pressure         5.08e+06
+_exptl_crystal_density_diffrn    6.230
+_cod_original_sg_symbol_H-M      'P a 3'
+_cod_original_formula_sum        'Cu Br'
+_cod_database_code               9013933
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+z,x,1/2-y
+z,1/2-x,1/2+y
+1/2-z,1/2+x,y
+-z,-x,-y
+1/2+y,1/2-z,-x
+1/2-y,-z,1/2+x
+-y,1/2+z,1/2-x
+y,z,x
+x,1/2-y,1/2+z
+1/2-x,1/2+y,z
+1/2+x,y,1/2-z
+-x,-y,-z
+1/2-z,-x,1/2+y
+-z,1/2+x,1/2-y
+1/2+z,1/2-x,-y
+z,x,y
+1/2-y,1/2+z,x
+1/2+y,z,1/2-x
+y,1/2-z,1/2+x
+-y,-z,-x
+-x,1/2+y,1/2-z
+1/2+x,1/2-y,-z
+1/2-x,-y,1/2+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Cu 0.62910 0.62910 0.62910 0.02951
+Br 0.15250 0.15250 0.15250 0.01431

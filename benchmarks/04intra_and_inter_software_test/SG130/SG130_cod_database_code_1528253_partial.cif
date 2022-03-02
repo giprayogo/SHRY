@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_TbNdSmGd17AlTlGa8Nh2
+_symmetry_space_group_name_H-M  'P 4/n c c :1'
+_cell_length_a   7.71600000
+_cell_length_b   7.71600000
+_cell_length_c   14.22300000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   130
+_chemical_formula_structural   TbNdSmGd17AlTlGa8Nh2
+_chemical_formula_sum   'Tb1 Nd1 Sm1 Gd17 Al1 Tl1 Ga8 Nh2'
+_cell_volume   846.78985829
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z'
+  5  'x+1/2, -y+1/2, -z+1/2'
+  6  '-y, -x, -z+1/2'
+  7  '-x+1/2, y+1/2, -z+1/2'
+  8  'y, x, -z+1/2'
+  9  '-x+1/2, -y+1/2, -z'
+  10  'y, -x, -z'
+  11  'x+1/2, y+1/2, -z'
+  12  '-y, x, -z'
+  13  '-x, y, z+1/2'
+  14  'y+1/2, x+1/2, z+1/2'
+  15  'x, -y, z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb+  Tb0  4  0.00000000  0.50000000  0.26160000  0.25
+  Gd+  Gd1  4  0.00000000  0.50000000  0.26160000  0.25
+  Sm+  Sm2  4  0.00000000  0.50000000  0.26160000  0.25
+  Nd+  Nd3  4  0.00000000  0.50000000  0.26160000  0.25
+  Gd  Gd4  16  0.16260000  0.17530000  0.10184000  1.0
+  Ga  Ga5  8  0.12080000  0.12080000  0.75000000  1.0
+  Tl+  Tl6  4  0.00000000  0.50000000  0.49650000  0.25
+  Nh+  Nh7  4  0.00000000  0.50000000  0.49650000  0.5
+  Al+  Al8  4  0.00000000  0.50000000  0.49650000  0.25

@@ -1,0 +1,87 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/1/53/45/1534580.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1534580
+loop_
+_publ_author_name
+'Gieck, C.'
+'Cavet, S.'
+'Schreyer, M.'
+'Faessler, T.F.'
+'Claus, P.'
+_publ_section_title
+;
+ Synthesis, crystal structure, and catalytic properties of Mg Co6 Ge6
+;
+_journal_name_full               'Chemistry - A European Journal'
+_journal_page_first              1924
+_journal_page_last               1930
+_journal_volume                  12
+_journal_year                    2006
+_chemical_formula_sum            'Co6 Ge6 Mg'
+_chemical_name_systematic        'Mg Co6 Ge6'
+_space_group_IT_number           191
+_symmetry_space_group_name_Hall  '-P 6 2'
+_symmetry_space_group_name_H-M   'P 6/m m m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   5.0709
+_cell_length_b                   5.0709
+_cell_length_c                   7.7446
+_cell_volume                     172.465
+_citation_journal_id_ASTM        CEUJED
+_cod_data_source_file            Gieck_CEUJED_2006_1998.cif
+_cod_data_source_block           Co6Ge6Mg1
+_cod_original_cell_volume        172.4645
+_cod_original_formula_sum        'Co6 Ge6 Mg1'
+_cod_database_code               1534580
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x-y,x,z
+-y,x-y,z
+-x,-y,z
+-x+y,-x,z
+y,-x+y,z
+-y,-x,-z
+x-y,-y,-z
+x,x-y,-z
+y,x,-z
+-x+y,y,-z
+-x,-x+y,-z
+-x,-y,-z
+-x+y,-x,-z
+y,-x+y,-z
+x,y,-z
+x-y,x,-z
+-y,x-y,-z
+y,x,z
+-x+y,y,z
+-x,-x+y,z
+-y,-x,z
+x-y,-y,z
+x,x-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ge1 Ge 0.3333 0.6667 0 1 0.0
+Co1 Co 0 0.5 0.24961 1 0.0
+Ge3 Ge 0 0 0.33851 1 0.0
+Mg1 Mg 0 0 0 1 0.0
+Ge2 Ge 0.3333 0.6667 0.5 1 0.0

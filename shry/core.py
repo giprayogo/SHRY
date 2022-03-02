@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=unused-import, logging-fstring-interpolation, invalid-name, too-many-lines
+"""
+Core operations, pattern generation, etc.
+"""
 
 # information
 __author__ = "Genki Prayogo, and Kosuke Nakano"
@@ -12,9 +15,6 @@ __email__ = "g.prayogo@icloud.com"
 __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
-"""
-Core operations, pattern generation, etc.
-"""
 
 import collections
 import functools
@@ -22,7 +22,6 @@ import itertools
 import logging
 import math
 import sys
-from pprint import pprint
 from typing import OrderedDict, Tuple
 
 import numpy as np
@@ -30,14 +29,15 @@ import spglib
 import sympy
 import tqdm
 from monty.fractions import gcd_float
+from pymatgen.analysis.ewald import EwaldSummation
 from pymatgen.core.composition import Composition, reduce_formula
-from pymatgen.core.operations import SymmOp
-from pymatgen.io.cif import CifBlock, CifWriter
+from pymatgen.io.cif import CifBlock, CifParser, CifWriter
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer, SpacegroupOperations
 from pymatgen.symmetry.structure import SymmetrizedStructure
 from pymatgen.util.coord import find_in_coord_list_pbc
 from pymatgen.util.string import transformation_to_string
-from sympy.tensor.indexed import Indexed
+from scipy.special import comb
+from sympy.utilities.iterables import multiset_permutations
 from tabulate import tabulate
 
 from . import const
@@ -113,12 +113,12 @@ class PatchedSymmetrizedStructure(SymmetrizedStructure):
     def __str__(self):
         outs = [
             "SymmetrizedStructure",
-            "Full Formula ({s})".format(s=self.composition.formula),
-            "Reduced Formula: {}".format(self.composition.reduced_formula),
+            f"Full Formula ({self.composition.formula})",
+            f"Reduced Formula: {self.composition.reduced_formula}",
         ]
 
         def to_s(x):
-            return "%0.6f" % x
+            return f"{x:0.6f}"
 
         outs.append(
             "abc   : " + " ".join([to_s(i).rjust(10) for i in self.lattice.abc])
@@ -128,10 +128,10 @@ class PatchedSymmetrizedStructure(SymmetrizedStructure):
         )
         if self._charge:
             if self._charge >= 0:
-                outs.append("Overall Charge: +{}".format(self._charge))
+                outs.append(f"Overall Charge: +{self.charge}")
             else:
-                outs.append("Overall Charge: -{}".format(self._charge))
-        outs.append("Sites ({i})".format(i=len(self)))
+                outs.append(f"Overall Charge: -{self._charge}")
+        outs.append(f"Sites ({len(self)})")
         data = []
         props = self.site_properties  # This should be updated!
         keys = sorted(props.keys())
@@ -144,10 +144,7 @@ class PatchedSymmetrizedStructure(SymmetrizedStructure):
                 row.append(site.properties[k])  # This line
             data.append(row)
         outs.append(
-            tabulate(
-                data,
-                headers=["#", "SP", "a", "b", "c", "Wyckoff"] + keys,
-            )
+            tabulate(data, headers=["#", "SP", "a", "b", "c", "Wyckoff"] + keys,)
         )
         return "\n".join(outs)
 
@@ -205,7 +202,7 @@ class AltCifBlock(CifBlock):
         """
         Returns the cif string for the data block
         """
-        s = ["data_{}".format(self.header)]
+        s = [f"data_{self.header}"]
         keys = self.data.keys()
         written = []
         for k in keys:
@@ -231,7 +228,7 @@ class AltCifBlock(CifBlock):
                 else:
                     v = self.data[k]
                     if len(k) + len(v) + 3 < self.maxlen:
-                        s.append("{}   {}".format(k, v))
+                        s.append(f"{k}   {v}")
                     else:
                         s.extend([k, v])
         return "\n".join(s)
@@ -268,7 +265,7 @@ class AltCifBlock(CifBlock):
                 v = self.data[k]
                 s = []
                 if len(k) + len(v) + 3 < self.maxlen:
-                    s.append("{}   {}".format(k, v))
+                    s.append(f"{k}   {v}")
                 else:
                     s.extend([k, v])
                 self.string_cache[k] = s
@@ -293,6 +290,48 @@ class TooBigError(Exception):
     ...
 
 
+# Some numerical methods
+
+
+def rec_asc(a, n, m, k, length):
+    """
+    Recursive part of the thing below
+    """
+    x = m
+    while 2 * x <= n and k < length:
+        a[k - 1] = x
+        yield from rec_asc(a, n - x, x, k + 1, length)
+        x += 1
+    a[k - 1] = n
+    # Pad
+    b = a[:k]
+    b += [0] * (length - k)
+    # Permute
+    for z in multiset_permutations(b):
+        yield z
+
+
+@functools.lru_cache(None)
+def aR_array(n, length=None):
+    """
+    aR() cache.
+    """
+    a = [1] * n
+    if length is None:
+        length = n
+    return np.array(list(rec_asc(a, n, 1, 1, length)))
+
+
+@functools.lru_cache(None)
+def multinomial_coeff(a):
+    """
+    Get multinomial coefficient of (sum(a), (a_1, a_2, ...))
+    """
+    return functools.reduce(
+        lambda a, b: a * b, [comb(cx, x, exact=True) for cx, x in zip(np.cumsum(a), a)]
+    )
+
+
 class Substitutor:
     """
     Makes unique ordered Structure(s) for the given disorder Structure.
@@ -305,9 +344,9 @@ class Substitutor:
     from the same basic structure, among others.
 
     Args:
-        structure (pymatgen.Structure): Input structure containing disorder sites.
-            If all sites are ordered then the output structure is exactly the same.
-        symprec (float): Precision used for symmetry analysis.
+        structure (pymatgen.Structure): Input structure.
+        symprec (float): Symmetry precision.
+        angle_tolerance (float): Angle tolerance for symmetry search.
         groupby (function): Function to group disordered sites.
             Defaults to lambda x: x.properties["_atom_site_label"], with the x loops
             over all PeriodicSites within the Structure.
@@ -316,17 +355,25 @@ class Substitutor:
             a certain species or crystallographic orbit to be subsituted together?
 
             Fallback to crystallographic orbit when failed.
-        sample (int): Randomly choose some of the generated structures.
+        sample (int): Randomly sample the generated structures.
+        no_dmat (bool): Whether or not to use distance matrix as
+            permutation invariant (faster, default=True)
+        t_kind (): (to be written)
+        cache (bool or None): By default(=None), cache patterns when involving either
+            multiple orbits or multiple species, but otherwise don't.
+            Caching allows "reuse" of previously generated patterns,
+            at the cost of memory.
+            Set to False if memory is limited,
+            but note that pattern generation will be much slower.
     """
 
     __slots__ = (
         "_symprec",
         "_angle_tolerance",
         "_groupby",
+        "_atol",
         "_symmops",
-        "_patterns",
-        "_pattern_automorphisms",
-        "_pattern_makers",
+        "_pms",
         "_enumerator_collection",
         "disorder_groups",
         "_group_dmat",
@@ -336,9 +383,13 @@ class Substitutor:
         "_group_bit_perm",
         "_structure",
         "_sample",
+        "cache",
         "_no_dmat",
         "_t_kind",
-        "_made_patterns",
+        "_segmenter",
+        "_charset",
+        "_template_cifwriter",
+        "_template_structure",
     )
 
     def __init__(
@@ -346,22 +397,29 @@ class Substitutor:
         structure,
         symprec=const.DEFAULT_SYMPREC,
         angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
+        atol=const.DEFAULT_ATOL,
         groupby=None,
         sample=None,
         no_dmat=const.DEFAULT_NO_DMAT,
         t_kind=const.DEFAULT_T_KIND,
+        cache=None,  # "True", "False", "None" (default)
     ):
         self._symprec = symprec
         self._angle_tolerance = angle_tolerance
         self._no_dmat = no_dmat
         self._t_kind = t_kind
+        # TODO: These two are consequential to self._structure, so should be property
+        self._atol = atol
         if groupby is None:
             self._groupby = lambda x: x.properties["_atom_site_label"]
 
+        # Genki: sampling implementation need a rehaul
+        if sample is not None:
+            raise NotImplementedError("Sampling is temporarily disabled.")
+
+        self.cache = cache
         self._symmops = None
-        self._patterns = []
-        self._pattern_automorphisms = []
-        self._pattern_makers = dict()
+        self._pms = dict()
         self._enumerator_collection = PolyaCollection()
 
         self.disorder_groups = dict()
@@ -370,10 +428,11 @@ class Substitutor:
         self._group_indices = dict()
         self._group_bits = dict()
         self._group_bit_perm = dict()
+        # TODO: Decouple output-format specific attributes.
+        self._template_cifwriter = None
+        self._template_structure = None
 
         self.structure = structure
-        self.sampled_indices = sample
-        self._made_patterns = False
 
     @property
     def structure(self):
@@ -395,40 +454,22 @@ class Substitutor:
         # Reload division part
         self.structure = self.structure
 
-    @property
-    def sampled_indices(
-        self,
-    ):
-        """
-        Used when sampling the patterns
-        """
-        return self._sample
-
-    @sampled_indices.setter
-    def sampled_indices(self, sample):
-        try:
-            indices = np.arange(self.count())
-        except ValueError as e:
-            raise TooBigError(f"({self.count()} irreducible structures)") from e
-        if sample is None:
-            self._sample = indices
-        else:
-            logging.info(f"Sampling {sample} of {self.count()} structures.")
-            try:
-                self._sample = np.random.choice(indices, size=sample, replace=False)
-            except ValueError:
-                logging.warning(
-                    "WARNING: Selected sample size exceeded the number of patterns. Using all."
-                )
-                self._sample = indices
-
-        self.configurations.cache_clear()
-        self.weights.cache_clear()
-
     @structure.setter
-    def structure(self, structure, sample=None):
+    def structure(self, structure):
         logging.info("\nSetting Substitutor with Structure")
         logging.info(f"{structure}")
+
+        # TODO: Avoid these kinds of manual invocations.
+        self.disorder_groups.clear()
+        self._group_dmat.clear()
+        self._group_perms.clear()
+        self._group_indices.clear()
+        self._group_bits.clear()
+        self._group_bit_perm.clear()
+        self._template_cifwriter = None
+        self._template_structure = None
+
+        # Read.
         self._structure = structure.copy()
 
         sga = PatchedSpacegroupAnalyzer(
@@ -436,7 +477,10 @@ class Substitutor:
             symprec=self._symprec,
             angle_tolerance=self._angle_tolerance,
         )
-        self._symmops = sga.get_symmetry_operations()
+        try:
+            self._symmops = sga.get_symmetry_operations()
+        except TypeError as exc:
+            raise RuntimeError("Couldn't find symmetry.") from exc
 
         logging.info(f"Space group: {sga.get_hall()} ({sga.get_space_group_number()})")
         logging.info(f"Total {len(self._symmops)} symmetry operations")
@@ -452,14 +496,12 @@ class Substitutor:
             site.properties["equivalent_atoms"] = equivalent_atoms[i]
             if not site.is_ordered:
                 disorder_sites.append(site)
-                # Ad hoc fix: if occupancy is less than 1,
-                # Stop the program
-                # TODO: Automatic handling
+                # Ad hoc fix: if occupancy is less than 1, stop.
+                # TODO: Automatic vacancy handling
                 if not np.isclose(site.species.num_atoms, 1):
                     raise RuntimeError("Please fill vacancy sites with pseudo atoms")
         if not disorder_sites:
             logging.warning("No disorder sites found within the Structure.")
-            return
 
         try:
             disorder_sites.sort(key=self._groupby)
@@ -488,7 +530,7 @@ class Substitutor:
             indices = [x.properties["index"] for x in sites]
             self._group_indices[orbit] = indices
             group_dmat = self._structure.distance_matrix[np.ix_(indices, indices)]
-            self._group_dmat[orbit] = self.ordinalize(group_dmat)
+            self._group_dmat[orbit] = self.ordinalize(group_dmat, atol=self._atol)
 
             # PERM
             coords = [x.frac_coords for x in sites]
@@ -560,22 +602,31 @@ class Substitutor:
                 )
             self._group_bit_perm[orbit] = bit_perm
 
-        # Clear previous caches.
-        self.configurations.cache_clear()
-        self.weights.cache_clear()
-        self.count.cache_clear()
+        # If not explicitly set, turn on caching if there are multiple orbits/colors,
+        # and turn off otherwise
+        if self.cache is None:
+            da = list(self._disorder_amounts().values())
+            if not da:  # no disorder
+                pass
+            else:
+                if len(da) > 1 or len(da[0]) > 2:
+                    self.cache = True
+                else:
+                    self.cache = False
 
-        self._made_patterns = False
-        self.sampled_indices = sample
+        # Letter-related functions
+        self._segmenter = self._disorder_amounts().values()
+        n_segments = sum(len(x) for x in self._segmenter)
+        self._charset = [chr(97 + i) for i in range(n_segments)]
 
     @staticmethod
-    def ordinalize(array, atol=1e-8):
+    def ordinalize(array, atol=const.DEFAULT_ATOL):
         """
         Ordinalize array elements to the specified absolute tolerance.
 
         Args:
             array (np.array): The array to be ordinalized.
-            atol (float): Absolute tolerance. Defaults to 1e-8.
+            atol (float): Absolute tolerance. Defaults to 1e-5.
 
         Returns:
             np.array: The ordinalized array.
@@ -604,11 +655,11 @@ class Substitutor:
         """
         PatternMaker instances in key-value pairs with its label as key
         """
-        return self._pattern_makers
+        return self._pms
 
     @pattern_makers.setter
-    def pattern_makers(self, pattern_makers):
-        self._pattern_makers = pattern_makers
+    def pattern_makers(self, pms):
+        self._pms = pms
 
     def _sorted_compositions(self):
         """
@@ -629,7 +680,6 @@ class Substitutor:
             # Note: __init__ checks makes sure this has no remainder.
             fus = len(sites) // fu
 
-            # TODO: stricter ordering.
             orbit_compositions[orbit] = {
                 e: fus * int(a) for e, a in composition.items()
             }
@@ -652,10 +702,6 @@ class Substitutor:
         Returns:
             list: list of list of sites with a distinct species.
         """
-        if self._made_patterns is True:
-            return
-        self._made_patterns = True
-        logging.info("Making patterns.")
 
         def rscum(iterable):
             """Cumulative sum of an iterable, but skip the last element, and reverse."""
@@ -667,92 +713,153 @@ class Substitutor:
             for cum in cums[::-1]:
                 yield cum
 
-        in_stack = []
-        out_stack = []
+        def nocache_get_pm(subperm, dmat):
+            pm = PatternMaker(
+                subperm,
+                invar=dmat,
+                enumerator_collection=self._enumerator_collection,
+                t_kind=self._t_kind,
+            )
+            row_map = pm.get_row_map()
+            index_map = pm.get_index_map()
+            return pm, row_map, index_map
 
-        # Initial values
-        aut = np.arange(len(self._symmops))
+        def cached_get_pm(subperm, dmat):
+            label = PatternMaker.get_label(subperm)
+            if label in self._pms:
+                pm = self._pms[label]
+                row_map, index_map = pm.update_index(subperm)
+            else:
+                pm = PatternMaker(
+                    subperm,
+                    invar=dmat,
+                    enumerator_collection=self._enumerator_collection,
+                    t_kind=self._t_kind,
+                    cache=self.cache,
+                )
+                row_map = pm.get_row_map()
+                index_map = pm.get_index_map()
+                self._pms[label] = pm
+            return pm, row_map, index_map
 
-        # Structure: auts, pattern (growing list)
-        in_stack.append([aut, []])
-        ran = False
-        for orbit, sites in self.disorder_groups.items():
-            ran = True
-            logging.info(f"Making pattern for {orbit}")
-
-            # Reverse to minimize sub. amount.
-            chain = list(rscum(self._disorder_amounts()[orbit][::-1]))
-
-            # Feed the new orbit into the stack.
-            # (But read the aut from patterns from the previous orbit)
-            # x[1] is the pattern
-            indices = np.arange(len(sites))
-            for x in in_stack:
-                x[1].append(indices)
-
+        def maker_recurse_unit(aut, pattern, orbit, amount):
+            """PatternMaker aut/pattern generation recursion unit."""
             group_perms = self._group_perms[orbit]
             group_dmat = self._group_dmat[orbit]
 
-            # Intra-orbit chaining.
-            for amount in chain:
-                logging.info(f"Making pattern for {amount}/{chain}")
-                # Progress bar.
-                pbar = tqdm.tqdm(
-                    total=len(in_stack),
-                    desc="Progress",
-                    **const.TQDM_CONF,
-                    disable=const.DISABLE_PROGRESSBAR,
-                )
+            # TODO: Do pattern "plus" at the end.
+            subpattern = pattern[-1]
+            subperm = group_perms[np.ix_(aut, subpattern)]
+            if not self._no_dmat:
+                dmat = group_dmat[np.ix_(subpattern, subpattern)]
+            else:
+                dmat = None
 
-                for aut, pattern in in_stack:
-                    # Operate on the _last_ subpattern, except for the first one
-                    subpattern = pattern[-1]
-                    subperm = group_perms[np.ix_(aut, subpattern)]
-                    # Do we need?
-                    # subperm, index = np.unique(subperm, axis=0, return_index=True)
-                    if not self._no_dmat:
-                        dmat = group_dmat[np.ix_(subpattern, subpattern)]
-                    else:
-                        dmat = None
+            pm, row_map, index_map = get_pm(subperm, dmat)
+            for _aut, _subpattern in pm.ap(amount):
+                _aut = np.sort(row_map[_aut])
+                _subpattern = index_map[_subpattern]
+                yield [aut[_aut], pattern + [_subpattern]]
 
-                    label = PatternMaker.get_label(subperm)
-                    if label in self._pattern_makers:
-                        maker = self._pattern_makers[label]
-                        maker.update_index(subperm)
-                    else:
-                        maker = PatternMaker(
-                            subperm,
-                            invar=dmat,
-                            enumerator_collection=self._enumerator_collection,
-                            t_kind=self._t_kind,
-                        )
-                        self._pattern_makers[label] = maker
-                    patterns = maker.patterns(amount)
-                    auts = maker.auts(amount)
-                    for _aut, _subpattern in zip(auts, patterns):
+        def maker_recurse_c(aut, pattern, orbit, chain):
+            if len(chain) > 0:
+                amount = chain.pop()
+                for aut, pattern in maker_recurse_unit(aut, pattern, orbit, amount):
+                    _chain = chain.copy()
+                    yield from maker_recurse_c(aut, pattern, orbit, _chain)
+            else:
+                yield aut, pattern
 
-                        _pattern = pattern + [_subpattern]
-                        # out_stack.append([index[_aut], _pattern])
-                        out_stack.append([aut[_aut], _pattern])
-                    pbar.update()
-                pbar.close()
-                in_stack = out_stack
-                out_stack = []
-        if ran:
-            self._pattern_automorphisms = [x[0] for x in in_stack]
-            self._patterns = [x[1] for x in in_stack]
-            n_generated = len(in_stack)
-            n_expected = self.count()
-            if n_generated != n_expected:
-                raise RuntimeError(
-                    "Mismatch between generated and predicted "
-                    f"number of structures ({n_generated}/{n_expected})"
-                )
+        def maker_recurse_o(aut, pattern, ochain):
+            if len(ochain) > 0:
+                orbit, sites = ochain.pop()
 
-    @functools.lru_cache()
-    def configurations(self):
+                chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[::-1]
+                indices = np.arange(len(sites))
+
+                for aut, pattern in maker_recurse_c(
+                    aut, pattern + [indices], orbit, chain
+                ):
+                    # TODO: something cheaper?
+                    _ochain = ochain.copy()
+                    yield from maker_recurse_o(aut, pattern, _ochain)
+            else:
+                yield aut, pattern
+
+        logging.info("Making patterns.")
+        # Safety kill
+        count = self.count()
+        if count > const.MAX_IRREDUCIBLE:
+            raise TooBigError(f"({count} irreducible expected)")
+
+        # To make the branches shallow.
+        if self.cache:
+            get_pm = cached_get_pm
+        else:
+            get_pm = nocache_get_pm
+
+        for aut, pattern in maker_recurse_o(
+            np.arange(len(self._symmops)),
+            [],
+            # TODO: Temporary fix.
+            list(self.disorder_groups.items())[::-1],
+        ):
+            yield (aut, pattern)
+
+    def total_count(self):
         """
-        Return generic alphabetical letters for denoting the substitutions.
+        Total number of combinations.
+        """
+        ocount = (multinomial_coeff(x) for x in self._disorder_amounts().values())
+        return functools.reduce(lambda x, y: x * y, ocount, 1)
+
+    def count(self):
+        """
+        Final number of patterns.
+        """
+        logging.info(f"\nCounting unique patterns for {self.structure.formula}")
+
+        if len(self._symmops):
+            enumerator = self._enumerator_collection.get(
+                # orbit_symmetries,
+                list(self._group_perms.values()),
+                len(self._symmops),
+            )
+        else:  # No-permutations-supplied
+            enumerator = self._enumerator_collection.get([])
+        count = enumerator.count(tuple(self._disorder_amounts().values()))
+        return count
+
+    def quantities(self, q, symprec=None):
+        """
+        Mixed quantities generator.
+        Yield tuple of selected quantities.
+
+        Args:
+            q: (list) valid options: ("cifwriter", "weight", "letter", "ewald")
+                will return in this order.
+        """
+        is_c = "cifwriter" in q
+        is_w = "weight" in q
+        is_l = "letter" in q
+        is_e = "ewald" in q
+
+        packet = collections.defaultdict(lambda: None)
+        for a, p in self.make_patterns():
+            packet.clear()
+            if is_c:
+                packet["cifwriter"] = self._get_cifwriter(p, symprec)
+            if is_e:
+                packet["ewald"] = self._get_ewald(p, symprec)
+            if is_w:
+                packet["weight"] = self._get_weight(a)
+            if is_l:
+                packet["letter"] = self._get_letters(p)
+            yield packet
+
+    def letters(self):
+        """
+        Substitution alphabet representation generator.
 
         Return:
             dict: (tuple -> np.array) pairs of all pattern letters,
@@ -760,22 +867,34 @@ class Substitutor:
 
                 Each row of the array is a pattern for the key orbit.
         """
-        logging.info("\nBuilding configuration letters.")
+        for _, p in self.make_patterns():
+            yield self._get_letters(p)
 
-        # Use **amount** so that I can initialize the letters
-        # for each orbit
-        das = self._disorder_amounts().values()
-        n_segments = sum(len(x) for x in das)
-        letters = [chr(97 + i) for i in range(n_segments)]
+    def weights(self):
+        """
+        Pattern weights generator.
 
-        configs = []
-        for i in self.sampled_indices:
-            sentence = self._ll2il(das, self._patterns[i], letters)
-            configs.append("".join(sentence))
-        return configs
+        Return:
+            list: List of weights of all patterns.
+        """
+        for a, _ in self.make_patterns():
+            yield self._get_weight(a)
 
-    @staticmethod
-    def _ll2il(segmenter, pattern, symbols_list):
+    def cifwriters(self, symprec=None):
+        """
+        Cifwriters generator.
+        """
+        for _, p in self.make_patterns():
+            yield self._get_cifwriter(p, symprec)
+
+    def ewalds(self, symprec=None):
+        """
+        Ewald energy generator.
+        """
+        for _, p in self.make_patterns():
+            yield self._get_ewald(p, symprec)
+
+    def _get_letters(self, p):
         """
         (sub. data structure) turn list of list
         into list of some generic symbols from symbols_list.
@@ -790,10 +909,10 @@ class Substitutor:
         =
         [b, a, b, c, d]  # il
         """
-        si = iter(symbols_list)
-        pi = iter(pattern)
+        si = iter(self._charset)
+        pi = iter(p)
         il = []
-        for se in segmenter:
+        for se in self._segmenter:
             sei = iter(se)
             word = [next(si)] * sum(se)
             next(pi)
@@ -805,210 +924,188 @@ class Substitutor:
                 for j in next(pi):
                     word[j] = letter
             il.extend(word)
-        return il
+        return "".join(il)
 
-    @functools.lru_cache()
-    def weights(self):
+    def _get_weight(self, a):
+        return len(self._symmops) // a.size
+
+    def _get_cifwriter(self, p, symprec=None):
         """
-        Pattern weights.
+        Return cifwriter for the given pattern.
 
-        Return:
-            list: List of weights of all patterns.
+        Args:
+            p: Substitution pattern.
         """
-        logging.info("\nObtaining pattern weights.")
-        space_group_size = len(self._symmops)
-        weights = []
-        for i in self.sampled_indices:
-            weights.append(space_group_size // self._pattern_automorphisms[i].size)
-        return weights
-
-    @functools.lru_cache()
-    def count(self):
-        """
-        Final number of expected patterns
-        """
-        logging.info("\nCounting total unique patterns for Structure.")
-
-        if len(self._symmops):
-            enumerator = self._enumerator_collection.get(
-                # orbit_symmetries,
-                list(self._group_perms.values()),
-                len(self._symmops),
-            )
-        else:  # No-permutations-supplied
-            enumerator = self._enumerator_collection.get([])
-        count = enumerator.count(tuple(self._disorder_amounts().values()))
-
-        # Arbitrary safe limit
-        if count > const.MAX_IRREDUCIBLE:
-            raise TooBigError(f"({count} irreducible expected)")
-        return count
-
-    def cifwriters(self, symprec=None):
-        """
-        Generator for pymatgen.CifWriter of the final output.
-
-        Returns:
-            generator: A generator of pymatgen.CifWriter. Each iteration
-                returned a symmetrically unique CifWriter for the given
-                input disorder.
-        """
-        logging.info("\nCreating CifWriter instances.")
-        template_structure = self._structure.copy()
-        try:
-            template_pattern = self._patterns[self.sampled_indices[0]]
-        except IndexError:
-            raise RuntimeError("Patterns have not been generated.")
-
-        # Build template CifWriter
+        # TODO: Simplify or clarify.
         des = self._disorder_elements()
         orbits = des.keys()
         gis = self._group_indices
 
-        # TODO: This exact pattern has been copy+pasted twice...
-        pi = iter(template_pattern)
-        for orbit in orbits:
-            indices = gis[orbit]
-            de = des[orbit]
-            for e in de:
-                subpattern = next(pi)
-                for i in subpattern:
-                    template_structure.sites[indices[i]].species = e
+        # Build template CifWriter. First run only.
+        if self._template_cifwriter is None:
+            # In this template, all sites are ordered / single-occupied.
+            template_structure = self._structure.copy()
+            pi = iter(p)
+            for orbit in orbits:
+                indices = gis[orbit]
+                de = des[orbit]
+                for e in de:
+                    subpattern = next(pi)
+                    for i in subpattern:
+                        template_structure.sites[indices[i]].species = e
+            cifwriter = CifWriter(template_structure)
 
-        cifwriter = CifWriter(template_structure)
-        cfkey = cifwriter.ciffile.data.keys()
-        cfkey = list(cfkey)[0]
+            # Use faster CifBlock implementation
+            cfkey = cifwriter.ciffile.data.keys()
+            cfkey = list(cfkey)[0]
+            block = AltCifBlock.from_string(str(cifwriter.ciffile.data[cfkey]))
+            cifwriter.ciffile.data[cfkey] = block
 
-        # Use faster CifBlock implementation
-        block = AltCifBlock.from_string(str(cifwriter.ciffile.data[cfkey]))
-        cifwriter.ciffile.data[cfkey] = block
+            self._template_cifwriter = cifwriter
+            self._template_structure = template_structure
+        else:
+            cifwriter = self._template_cifwriter
+            template_structure = self._template_structure
+            cfkey = cifwriter.ciffile.data.keys()
+            cfkey = list(cfkey)[0]
+            block = cifwriter.ciffile.data[cfkey]
 
         if symprec is None:
-            template_type_symbol = block["_atom_site_type_symbol"]
-            template_label = block["_atom_site_label"]
+            type_symbol = block["_atom_site_type_symbol"].copy()
+            label = block["_atom_site_label"].copy()
 
             # These two blocks are always "1" in the final structure
-            block["_atom_site_symmetry_multiplicity"] = ["1"] * len(template_label)
-            block["_atom_site_occupancy"] = ["1.0"] * len(template_label)
+            block["_atom_site_symmetry_multiplicity"] = ["1"] * len(label)
+            block["_atom_site_occupancy"] = ["1.0"] * len(label)
 
-            for i in self.sampled_indices:
-                type_symbol = template_type_symbol.copy()
-                label = template_label.copy()
+            pi = iter(p)
+            for orbit in orbits:
+                indices = gis[orbit]
+                de = des[orbit]
+                for e in de:
+                    subpattern = next(pi)
+                    for s in subpattern:
+                        gi = indices[s]
+                        type_symbol[gi] = str(e)
+                        label[gi] = f"{e.symbol}{gi}"
 
-                pi = iter(self._patterns[i])
-                for orbit in orbits:
-                    indices = gis[orbit]
-                    de = des[orbit]
-                    for e in de:
-                        subpattern = next(pi)
-                        for s in subpattern:
-                            gi = indices[s]
-                            type_symbol[gi] = str(e)
-                            label[gi] = f"{e.symbol}{gi}"
-
-                block["_atom_site_type_symbol"] = type_symbol
-                block["_atom_site_label"] = label
-                yield cifwriter
+            block["_atom_site_type_symbol"] = type_symbol
+            block["_atom_site_label"] = label
         else:
-            format_str = "{:.%df}" % 8
+            format_str = "{:.8f}"
             latt = template_structure.lattice.matrix
             positions = template_structure.frac_coords
 
+            # this only actually
             cell_specie = list(set(x.species for x in template_structure))
             # Flattened list of species @ disorder sites
             specie = [y for x in des.values() for y in x]
             z_map = [
-                cell_specie.index(Composition({specie[j]: 1}))
-                for j in range(len(template_pattern))
+                cell_specie.index(Composition({specie[j]: 1})) for j in range(len(p))
             ]
-            template_zs = [cell_specie.index(x.species) for x in template_structure]
+            zs = [cell_specie.index(x.species) for x in template_structure]
 
-            for i in self.sampled_indices:
-                zs = template_zs.copy()
+            pi = iter(p)
+            zi = iter(z_map)
+            for orbit in orbits:
+                indices = gis[orbit]
+                de = des[orbit]
+                for e in de:
+                    subpattern = next(pi)
+                    z = next(zi)
+                    for s in subpattern:
+                        gi = indices[s]
+                        zs[gi] = z
 
-                pi = iter(self._patterns[i])
-                zi = iter(z_map)
-                for orbit in orbits:
-                    indices = gis[orbit]
-                    de = des[orbit]
-                    for e in de:
-                        subpattern = next(pi)
-                        z = next(zi)
-                        for s in subpattern:
-                            gi = indices[s]
-                            zs[gi] = z
+            space_group_data = spglib.get_symmetry_dataset(
+                (latt, positions, zs),
+                symprec=self._symprec,
+                angle_tolerance=self._angle_tolerance,
+            )
 
-                space_group_data = spglib.get_symmetry_dataset(
-                    (latt, positions, zs),
-                    symprec=self._symprec,
-                    angle_tolerance=self._angle_tolerance,
+            ops = [
+                transformation_to_string(rot, trans, delim=", ")
+                for rot, trans in zip(
+                    space_group_data["rotations"], space_group_data["translations"]
                 )
-
-                ops = [
-                    transformation_to_string(rot, trans, delim=", ")
-                    for rot, trans in zip(
-                        space_group_data["rotations"], space_group_data["translations"]
-                    )
-                ]
-                u, inv = np.unique(
-                    space_group_data["equivalent_atoms"], return_inverse=True
+            ]
+            u, inv = np.unique(
+                space_group_data["equivalent_atoms"], return_inverse=True
+            )
+            equivalent_indices = [[] for _ in range(len(u))]
+            for j, inv in enumerate(inv):
+                equivalent_indices[inv].append(j)
+            unique_indices = [
+                (
+                    sorted(
+                        j,
+                        key=lambda s: tuple(
+                            abs(x) for x in template_structure.sites[s].frac_coords
+                        ),
+                    )[0],
+                    len(j),
                 )
-                equivalent_indices = [[] for _ in range(len(u))]
-                for j, inv in enumerate(inv):
-                    equivalent_indices[inv].append(j)
-                unique_indices = [
-                    (
-                        sorted(
-                            j,
-                            key=lambda s: tuple(
-                                abs(x) for x in template_structure.sites[s].frac_coords
-                            ),
-                        )[0],
-                        len(j),
-                    )
-                    for j in equivalent_indices
-                ]
-                unique_indices = sorted(
-                    unique_indices,
-                    key=lambda t: (
-                        cell_specie[zs[t[0]]].average_electroneg,  # careful here
-                        -t[1],
-                        template_structure.sites[t[0]].a,
-                        template_structure.sites[t[0]].b,
-                        template_structure.sites[t[0]].c,
-                    ),
+                for j in equivalent_indices
+            ]
+            unique_indices = sorted(
+                unique_indices,
+                key=lambda t: (
+                    cell_specie[zs[t[0]]].average_electroneg,  # careful here
+                    -t[1],
+                    template_structure.sites[t[0]].a,
+                    template_structure.sites[t[0]].b,
+                    template_structure.sites[t[0]].c,
+                ),
+            )
+
+            block["_symmetry_space_group_name_H-M"] = space_group_data["international"]
+            block["_symmetry_Int_Tables_number"] = space_group_data["number"]
+            block["_symmetry_equiv_pos_site_id"] = [
+                str(i) for i in range(1, len(ops) + 1)
+            ]
+            block["_symmetry_equiv_pos_as_xyz"] = ops
+
+            block["_atom_site_type_symbol"] = []
+            block["_atom_site_label"] = []
+            block["_atom_site_symmetry_multiplicity"] = []
+            block["_atom_site_fract_x"] = []
+            block["_atom_site_fract_y"] = []
+            block["_atom_site_fract_z"] = []
+            block["_atom_site_occupancy"] = []
+            count = 0
+            for j, mult in unique_indices:
+                # Careful: The structure species itself is not updated
+                sp = cell_specie[zs[j]].elements[0]  # careful here
+                site = template_structure.sites[j]
+                block["_atom_site_type_symbol"].append(sp.__str__())
+                block["_atom_site_label"].append(f"{sp.symbol}{count}")
+                block["_atom_site_symmetry_multiplicity"].append(str(mult))
+                block["_atom_site_fract_x"].append(format_str.format(site.a))
+                block["_atom_site_fract_y"].append(format_str.format(site.b))
+                block["_atom_site_fract_z"].append(format_str.format(site.c))
+                block["_atom_site_occupancy"].append("1.0")
+                count += 1
+
+        return cifwriter
+
+    def _get_ewald(self, p, symprec):
+        """
+        Get ewald sums of the structures.
+        """
+        # TODO: less ad hoc implementation.
+        cifwriter = self._get_cifwriter(p, symprec)
+        cifparser = CifParser.from_string(str(cifwriter))
+        structure = cifparser.get_structures(primitive=False)[0]
+        try:
+            if not np.isclose(structure.charge, 0.0):
+                logging.warn(
+                    f"Unit cell is charged: (total charge = {structure.charge})."
                 )
-
-                block["_symmetry_space_group_name_H-M"] = space_group_data[
-                    "international"
-                ]
-                block["_symmetry_Int_Tables_number"] = space_group_data["number"]
-                block["_symmetry_equiv_pos_site_id"] = [
-                    str(i) for i in range(1, len(ops) + 1)
-                ]
-                block["_symmetry_equiv_pos_as_xyz"] = ops
-
-                block["_atom_site_type_symbol"] = []
-                block["_atom_site_label"] = []
-                block["_atom_site_symmetry_multiplicity"] = []
-                block["_atom_site_fract_x"] = []
-                block["_atom_site_fract_y"] = []
-                block["_atom_site_fract_z"] = []
-                block["_atom_site_occupancy"] = []
-                count = 0
-                for j, mult in unique_indices:
-                    # Careful: The structure species itself is not updated
-                    sp = cell_specie[zs[j]].elements[0]  # careful here
-                    site = template_structure.sites[j]
-                    block["_atom_site_type_symbol"].append(sp.__str__())
-                    block["_atom_site_label"].append("{}{}".format(sp.symbol, count))
-                    block["_atom_site_symmetry_multiplicity"].append(str(mult))
-                    block["_atom_site_fract_x"].append(format_str.format(site.a))
-                    block["_atom_site_fract_y"].append(format_str.format(site.b))
-                    block["_atom_site_fract_z"].append(format_str.format(site.c))
-                    block["_atom_site_occupancy"].append("1.0")
-                    count += 1
-                yield cifwriter
+            return EwaldSummation(structure).total_energy
+        except TypeError as exc:
+            raise ValueError(
+                "Ewald summation required CIFs with defined oxidation states."
+            ) from exc
 
 
 class PatternMaker:
@@ -1017,11 +1114,13 @@ class PatternMaker:
     """
 
     __slots__ = (
-        "search",
+        "_search",
+        "ap",
         "_enumerator_collection",
         "_patterns",
         "_auts",
         "_subobj_ts",
+        "_bs",
         "_get_subobj_ts",
         "_nix",
         "invar",
@@ -1032,10 +1131,8 @@ class PatternMaker:
         "_row_index",
         "_bits",
         "_bit_perm",
-        "_automorphisms",
-        "_cans",
-        "_rep_bitsums",
         "label",
+        "_cache",
         "_sieve",
         "_get_not_reject_mask",
         "_get_accept_mask",
@@ -1048,12 +1145,13 @@ class PatternMaker:
         invar=None,
         enumerator_collection=None,
         t_kind=const.DEFAULT_T_KIND,
+        cache=False,
     ):
         # Algo select bits
         if invar is None:
-            self.search = self._invarless_search
+            self._search = self._invarless_search
         else:
-            self.search = self._invar_search
+            self._search = self._invar_search
 
         if t_kind == "sum":
             self._get_subobj_ts = self._get_sum_subobj_ts
@@ -1083,6 +1181,12 @@ class PatternMaker:
         else:
             raise RuntimeError(f'Unrecognized T kind "{t_kind}"')
 
+        self._cache = cache
+        if cache:
+            self.ap = self.cached_ap
+        else:
+            self.ap = self.nocache_ap
+
         if enumerator_collection is None:
             self._enumerator_collection = PolyaCollection()
         else:
@@ -1100,7 +1204,6 @@ class PatternMaker:
         else:
             self.invar = invar
 
-        # Update values.
         self._nperm, self._nix = indexed_perm_list.shape
 
         # The confusing rotations;
@@ -1131,11 +1234,8 @@ class PatternMaker:
         self._auts[0] = np.ones((self._nperm,), dtype="bool")
         self._subobj_ts = collections.defaultdict(list)
         self._subobj_ts[0] = [np.array([0])]
-
-        # Memoizations.
-        self._automorphisms = dict()
-        self._cans = dict()
-        self._rep_bitsums = dict()
+        self._bs = collections.defaultdict(list)
+        self._bs[0] = [np.zeros(self._nix)]
 
         self.label = self._perms.tobytes()
 
@@ -1146,13 +1246,20 @@ class PatternMaker:
 
         # Column sort
         stab_map = perm_list == perm_list[0]
+        # TODO: column_index is not much used...
         column_index = np.lexsort(stab_map)
         perm_list = perm_list[:, column_index]
 
+        # TODO: More intuitive if we do this first, then the previous one.
         # Relabel to match column position
         relabel_index = perm_list[0]
         relabel_element = np.vectorize({s: i for i, s in enumerate(relabel_index)}.get)
-        perm_list = relabel_element(perm_list)
+        try:
+            perm_list = relabel_element(perm_list)
+        except TypeError as exc:
+            raise ValueError(
+                f"\n{perm_list}\n" "Rows must have same elements."
+            ) from exc
 
         # Row sort
         row_index = np.lexsort(perm_list.T)
@@ -1187,20 +1294,7 @@ class PatternMaker:
         self._column_index = column_index
         self._relabel_index = relabel_index
         self._row_index = row_index
-
-        # Clear caches.
-        self.auts.cache_clear()
-        self.patterns.cache_clear()
-
-    @property
-    def _genlevel(self):
-        """
-        Level at which patterns have been generated
-        """
-        try:
-            return max(self._patterns)
-        except ValueError:
-            return 0
+        return row_index, relabel_index
 
     @staticmethod
     def get_label(perm_list):
@@ -1211,68 +1305,74 @@ class PatternMaker:
         _, _, _, relabeled_perm_list = PatternMaker.reindex(perm_list)
         return relabeled_perm_list.tobytes()
 
-    @functools.lru_cache(None)
-    def patterns(self, n):
+    def get_row_map(self):
         """
-        Get patterns for the specified replacement amount
+        Map between internal order of permutation vs. input permutation
+        """
+        return self._row_index
+
+    def get_index_map(self):
+        """
+        Map between internal representation of elements vs. input
+        """
+        return self._relabel_index
+
+    # TODO: cleanup
+    def get_column_map(self):
+        """
+        Internal column shuffle.
+        """
+        return self._column_index
+
+    def cached_ap(self, n):
+        """
+        Get patterns and automorphisms for the specified replacement amount (cached)
         """
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
-        if _n > self._genlevel:
-            self.search(start=self._genlevel, stop=n)
-        if _n == n:
-            return [self._relabel_index[pattern] for pattern in self._patterns[n]]
-        # For "mirrors"
-        whole = np.arange(self._nix)
-        return [
-            self._relabel_index[np.setdiff1d(whole, pattern)]
-            for pattern in self._patterns[_n]
-        ]
+        # if not _n in self._patterns:
+        if not n in self._patterns:
+            if _n in self._patterns:
+                inverter = np.arange(self._nix)
+                self._auts[n] = self._auts[_n]
+                self._patterns[n] = [
+                    np.setdiff1d(inverter, p) for p in self._patterns[_n]
+                ]
+            else:
+                starts = [i for i in self._patterns.keys() if i < _n]
+                if not starts:
+                    start = 0
+                else:
+                    start = max(starts)
 
-    @functools.lru_cache(None)
-    def auts(self, n):
+                # "Mirror" patterns
+                if _n != n:
+                    inverter = np.arange(self._nix)
+                    ap = [
+                        (a, np.setdiff1d(inverter, p))
+                        for a, p in self._search(start=start, stop=_n)
+                    ]
+                else:
+                    ap = [(a, p) for a, p in self._search(start=start, stop=_n)]
+                self._auts[n], self._patterns[n] = zip(*ap)
+
+        for a, p in zip(self._auts[n], self._patterns[n]):
+            yield a, p
+
+    def nocache_ap(self, n):
         """
-        Get the automorphisms in terms of input permutation
+        Get patterns and automorphisms for the specified replacement amount
         """
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
-        if _n > self._genlevel:
-            self.search(start=self._genlevel, stop=n)
-        # Map to original permutation; put identity on 0
-        auts = [np.sort(self._row_index[aut]) for aut in self._auts[_n]]
-        return auts
-
-    def lexsort(self, pattern):
-        """
-        Lexicographical sorting on unordered array row.
-        """
-        bitsum = sum([self._bits[i] for i in pattern])
-        if bitsum in self._cans:
-            return self._cans[bitsum]
-        if bitsum in self._rep_bitsums:
-            o_bitsums = self._rep_bitsums[bitsum]
+        if _n != n:
+            inverter = np.arange(self._nix)
+            for a, p in self._search(stop=_n):
+                rp = np.setdiff1d(inverter, p)
+                yield a, rp
         else:
-            o_bitsums = sum([self._bit_perm[:, i] for i in pattern])
-            self._rep_bitsums[bitsum] = o_bitsums
-
-        can = np.argmin(o_bitsums)
-        self._cans[bitsum] = can
-        return can
-
-    def automorphisms(self, pattern):
-        """
-        Find permutations that fixes the pattern
-        """
-        bitsum = sum([self._bits[i] for i in pattern])
-        if bitsum in self._automorphisms:
-            return self._automorphisms[bitsum]
-        if bitsum in self._rep_bitsums:
-            o_bitsums = self._rep_bitsums[bitsum]
-        else:
-            o_bitsums = sum([self._bit_perm[:, i] for i in pattern])
-            self._rep_bitsums[bitsum] = o_bitsums
-        auts = np.flatnonzero(o_bitsums == bitsum)
-        return auts
+            for a, p in self._search(stop=_n):
+                yield a, p
 
     def _fill_sieve(self, n):
         """
@@ -1312,17 +1412,13 @@ class PatternMaker:
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        start = min(self._genlevel, start)
 
-        # Cross-check with exact enumeration.
         enumerator = self._enumerator_collection.get([self._perms])
-        counts = dict()
-        for i in range(start, stop + 1):
-            counts[i] = enumerator.count(((i, self._nix - i),))
+        n_pred = enumerator.count(((stop, self._nix - stop),))
 
         # Progress bar.
         pbar = tqdm.tqdm(
-            total=counts[stop],
+            total=n_pred,
             desc=f"Making patterns ({stop}/{self._nix})",
             **const.TQDM_CONF,
             disable=const.DISABLE_PROGRESSBAR,
@@ -1330,23 +1426,28 @@ class PatternMaker:
 
         stack = []
         if not start:
-            # Populate the first layer.
+            # Fill first stack
             noniso_orbits = np.unique(self._perms.min(axis=0))
-            for _pattern in noniso_orbits:
-                pattern = np.array([_pattern])
-                aut = self.automorphisms(pattern)
-                self._patterns[pattern.size].append(pattern)
-                self._auts[pattern.size].append(aut)
-                stack.append((pattern, aut))
+            for _i in noniso_orbits:
+                pattern = np.array([_i])
+                bitsum = self._bits[_i]
+                patch = np.zeros(self._nix, dtype=int)
+                patch[_i] = 1
+                bs = self._bit_perm.dot(patch)
+                o_bitsums = self._bit_perm.dot(patch)
+                aut = np.flatnonzero(o_bitsums == bitsum)
+                stack.append((pattern, aut, bs))
         else:
-            patterns = self._patterns[start].copy()
-            auts = self._auts[start].copy()
+            patterns = self._patterns[start]
+            auts = self._auts[start]
             for pattern, aut in zip(patterns, auts):
-                stack.append((pattern, aut))
+                bs = self._bit_perm[:, pattern].sum(axis=1)
+                stack.append((pattern, aut, bs))
 
         while stack:
-            pattern, aut = stack.pop()
+            pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
+                yield aut, pattern
                 pbar.update()
                 continue
             # Tree is expanded by adding un-added sites
@@ -1369,36 +1470,31 @@ class PatternMaker:
             for i in np.flatnonzero(uniq_mask):
                 x = leaf_array[i]
                 j = loci[i]
+                _pbs = self._bit_perm[:, x] + pbs
 
-                _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
-                _aut = self.automorphisms(_pattern)
+                _i = np.concatenate((pattern[:j], [x], pattern[j:]))
+                _aut = np.flatnonzero(_pbs == _pbs[-1])
 
                 # Compute canonical parent.
-                m = self.lexsort(_pattern)
-                can_pattern = self._perms[m, _pattern]
+                m = np.argmin(_pbs)
+                can_pattern = self._perms[m, _i]
                 discard_i = np.where(can_pattern == can_pattern.max())[0]
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_i:
-                    self._patterns[_pattern.size].append(_pattern)
-                    self._auts[_pattern.size].append(_aut)
-                    stack.append((_pattern, _aut))
+                    stack.append((_i, _aut, _pbs))
                 # Check if tree parent is related to canonical parent.
-                elif _pattern[discard_i] in self._perms[_aut, x]:
-                    self._patterns[_pattern.size].append(_pattern)
-                    self._auts[_pattern.size].append(_aut)
-                    stack.append((_pattern, _aut))
+                elif _i[discard_i] in self._perms[_aut, x]:
+                    stack.append((_i, _aut, _pbs))
         pbar.close()
 
-        # Check if generation matches predicted.
-        for size in range(start, stop + 1):
-            n_pred = counts[size]
-            n_gen = len(self._patterns[size])
-            if n_pred != n_gen:
-                raise RuntimeError(
-                    "Mismatch between predicted and generated number of structures.\n"
-                    f"(at {size}, {n_gen}/{n_pred} were generated)"
-                )
+        # TODO: Reimplement cross-check with enumeration.
+        # n_gen = len(self._patterns[stop])
+        # if n_pred != n_gen:
+        #     raise RuntimeError(
+        #         "Mismatch between predicted and generated number of structures.\n"
+        #         f"(at {stop}, {n_gen}/{n_pred} were generated)"
+        #     )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
 
     def _get_sum_subobj_ts(self, pattern, leaf_array, subobj_ts):
@@ -1433,7 +1529,7 @@ class PatternMaker:
 
     def _get_not_reject_mask_float(self, delta_t):
         # return np.ones(delta_t.shape[0], dtype=bool)
-        return ~((delta_t < 0.) & ~np.isclose(delta_t, 0.)).any(axis=1)
+        return ~((delta_t < 0.0) & ~np.isclose(delta_t, 0.0)).any(axis=1)
 
     @staticmethod
     def _get_accept_mask_int(delta_t):
@@ -1441,7 +1537,7 @@ class PatternMaker:
 
     def _get_accept_mask_float(self, delta_t):
         # return np.zeros(delta_t.shape[0], dtype=bool)
-        return ((delta_t > 0.) & ~np.isclose(delta_t, 0.)).all(axis=1)
+        return ((delta_t > 0.0) & ~np.isclose(delta_t, 0.0)).all(axis=1)
 
     @staticmethod
     def _get_mins_int(subobj_ts):
@@ -1462,17 +1558,13 @@ class PatternMaker:
         if stop is None:
             stop = self._nix // 2
         stop = min(stop, self._nix - stop)
-        start = min(self._genlevel, start)
 
-        # Cross-check with exact enumeration.
         enumerator = self._enumerator_collection.get([self._perms])
-        counts = dict()
-        for i in range(start, stop + 1):
-            counts[i] = enumerator.count(((i, self._nix - i),))
+        n_pred = enumerator.count(((stop, self._nix - stop),))
 
         # Progress bar.
         pbar = tqdm.tqdm(
-            total=counts[stop],
+            total=n_pred,
             desc=f"Making patterns ({stop}/{self._nix})",
             **const.TQDM_CONF,
             disable=const.DISABLE_PROGRESSBAR,
@@ -1482,28 +1574,33 @@ class PatternMaker:
         if not start:
             # Populate the first layer.
             noniso_orbits = np.unique(self._perms.min(axis=0))
-            for _pattern in noniso_orbits:
-                pattern = np.array([_pattern])
-                aut = self.automorphisms(pattern)
+            for _i in noniso_orbits:
+                pattern = np.array([_i])
+                # TODO: refine
+                bitsum = self._bits[_i]
+                patch = np.zeros(self._nix, dtype=int)
+                patch[_i] = 1
+                bs = self._bit_perm.dot(patch)
+                aut = np.flatnonzero(bs == bitsum)
                 subobj_ts = np.array([0])
-                self._patterns[pattern.size].append(pattern)
-                self._auts[pattern.size].append(aut)
-                self._subobj_ts[pattern.size].append(subobj_ts)
-                stack.append((subobj_ts, pattern, aut))
+                stack.append((subobj_ts, pattern, aut, bs))
         else:
-            patterns = self._patterns[start].copy()
-            auts = self._auts[start].copy()
-            sums = self._subobj_ts[start].copy()
-            for subobj_ts, pattern, aut in zip(sums, patterns, auts):
-                stack.append((subobj_ts, pattern, aut))
+            patterns = self._patterns[start]
+            auts = self._auts[start]
+            for pattern, aut in zip(patterns, auts):
+                bs = self._bit_perm[:, pattern].sum(axis=1)
+                subobj_ts = self.invar[np.ix_(pattern, pattern)].sum(axis=1)
+                stack.append((subobj_ts, pattern, aut, bs))
 
-        # break_count = 0
         while stack:
-            subobj_ts, pattern, aut = stack.pop()
+            subobj_ts, pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
+                # self._patterns[pattern.size].append(pattern)
+                # self._auts[pattern.size].append(aut)
+                yield aut, pattern
                 pbar.update()
                 continue
-            # Tree is expanded by adding un-added sites
+            # Invert index
             leaf_mask = np.ones(self._nix, dtype="bool")
             leaf_mask[pattern] = False
             leaf_array = np.flatnonzero(leaf_mask)
@@ -1527,81 +1624,61 @@ class PatternMaker:
             else:
                 uniq_mask = not_reject_mask
 
-            # Insertion location
+            # Insertion location TODO: without this possible?
             loci = pattern.searchsorted(leaf_array)
 
             accept_mask = self._get_accept_mask(delta_t)
             accept_mask &= uniq_mask
-            for i in np.flatnonzero(accept_mask):
+            accepts = leaf_array[accept_mask]
+            for i in np.flatnonzero(uniq_mask):
                 x = leaf_array[i]
                 j = loci[i]
+                _pbs = self._bit_perm[:, x] + pbs
 
                 _subobj_ts = leaf_subobj_ts[i]
                 _subobj_ts[j:] = np.concatenate((_subobj_ts[-1:], _subobj_ts[j:-1]))
 
-                _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
-                _aut = self.automorphisms(_pattern)
+                _i = np.concatenate((pattern[:j], [x], pattern[j:]))
+                # NOTE: just in case I fail to consistently sort perm
+                # bitsum = sum([self._bits[y] for y in _i])
+                # _aut = np.flatnonzero(_pbs == bitsum)
+                _aut = np.flatnonzero(_pbs == _pbs[-1])
 
-                self._subobj_ts[_pattern.size].append(_subobj_ts)
-                self._patterns[_pattern.size].append(_pattern)
-                self._auts[_pattern.size].append(_aut)
-                stack.append((_subobj_ts, _pattern, _aut))
-
-            # For the remaining, do full checks (more expensive).
-            check_mask = ~accept_mask & uniq_mask
-            if not check_mask.any():
-                continue
-            for i in np.flatnonzero(check_mask):
-                # break_count += 1
-                x = leaf_array[i]
-                j = loci[i]
-
-                _subobj_ts = leaf_subobj_ts[i]
-                _subobj_ts[j:] = np.concatenate((_subobj_ts[-1:], _subobj_ts[j:-1]))
-
-                _pattern = np.concatenate((pattern[:j], [x], pattern[j:]))
-                _aut = self.automorphisms(_pattern)
+                if x in accepts:
+                    stack.append((_subobj_ts, _i, _aut, _pbs))
+                    continue
 
                 # Compute canonical parent.
                 ts_min_i = self._get_mins(_subobj_ts)
-                _sub = _pattern[ts_min_i]
-                m = self.lexsort(_pattern)
+                _sub = _i[ts_min_i]
+                m = np.argmin(_pbs)
                 can_pattern = self._perms[m, _sub]
                 discard_i = ts_min_i[can_pattern == can_pattern.max()]
 
                 # If the new site is discarded then tree parent == canonical parent.
                 if j == discard_i:
-                    self._subobj_ts[_pattern.size].append(_subobj_ts)
-                    self._patterns[_pattern.size].append(_pattern)
-                    self._auts[_pattern.size].append(_aut)
-                    stack.append((_subobj_ts, _pattern, _aut))
+                    stack.append((_subobj_ts, _i, _aut, _pbs))
                 # Check if tree parent is related to canonical parent.
-                elif _pattern[discard_i] in self._perms[_aut, x]:
-                    self._subobj_ts[_pattern.size].append(_subobj_ts)
-                    self._patterns[_pattern.size].append(_pattern)
-                    self._auts[_pattern.size].append(_aut)
-                    stack.append((_subobj_ts, _pattern, _aut))
-
-        # print(break_count)
+                elif _i[discard_i] in self._perms[_aut, x]:
+                    stack.append((_subobj_ts, _i, _aut, _pbs))
         pbar.close()
 
-        # Check if generation matches predicted.
-        for size in range(start, stop + 1):
-            n_pred = counts[size]
-            n_gen = len(self._patterns[size])
-            if n_pred != n_gen:
-                raise RuntimeError(
-                    "Mismatch between predicted and generated number of structures.\n"
-                    f"(at {size}, {n_gen}/{n_pred} were generated)"
-                )
+        # TODO: Reimplement cross-check with enumeration.
+        # n_gen = len(self._patterns[stop])
+        # if n_pred != n_gen:
+        #     raise RuntimeError(
+        #         "Mismatch between predicted and generated number of structures.\n"
+        #         f"(at {stop}, {n_gen}/{n_pred} were generated)"
+        #     )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
+        # self._gen_flag[stop] = True
 
 
 class Polya:
     """
     Perform operations related (weighed) Polya Enumeration Theorem.
 
-    Includes enumeration (count) and calcuation of cycle index
+    Includes enumeration (count) and calculation of cycle index
     and configuration generation function.
 
     Args:
@@ -1616,9 +1693,7 @@ class Polya:
     """
 
     def __init__(
-        self,
-        perm_list,
-        group_size=None,
+        self, perm_list, group_size=None,
     ):
         # Used only for dividing the final weight
         if group_size is not None:
@@ -1635,30 +1710,20 @@ class Polya:
 
     def label(self):
         """Use ci as label"""
-        return sum(self.ci().values()) / self.group_size
+        return sum(self.sym_ci().values()) / self.group_size
 
     @functools.lru_cache(None)
     def ci(self):
         """
-        Returns the cycle index.
-
-        The terms are separated by each permutation (rows)
-        to ease further processing.
-        Uses sympy.IndexedBase to represent subscript.
-
-        Conventionally, each term is in the form of (x_n**m),
-        with (n) denoting cycle length and (m) number of
-        cycles with such length for a permutation.
+        Returns the cycle index (as Counters of cycle lengths per permutation).
 
         Returns:
             dict: Dictionary of cycle index with integer index
-                and sympy equations as a key-value pair.
+                and Counters as a key-value pair.
         """
         # Use indexed base.
-        cycle_index = dict()
-        for j, permutations in enumerate(self._perm_list):
-            # TODO: What is the correct behaviour, if one permutation is empty?
-            symbol = sympy.IndexedBase(chr(97 + j))
+        cycle_index = collections.defaultdict(list)
+        for permutations in self._perm_list:
             try:
                 index_map = {s: i for i, s in enumerate(permutations[0])}
             except IndexError as e:
@@ -1689,94 +1754,32 @@ class Polya:
                             logging.error(f"BP: {permutations}")
                             raise RuntimeError("Check permutation list.") from exc
                     cycles.append(cycle)
-
-                # Cast to (sympy.Expr)
                 counter = collections.Counter(len(cycle) for cycle in cycles)
-                cycle_index.setdefault(i, sympy.Integer(1))
-                for length, n in counter.items():
-                    cycle_index[i] *= symbol[length] ** n
+                cycle_index[i].append(counter)
         return cycle_index
 
-    @functools.lru_cache(None)
-    def cgf(self, len_tuple):
+    def sym_ci(self):
         """
-        Returns the configuration generation function.
+        Returns the symbolic cycle index.
+        Uses sympy.IndexedBase to represent subscript.
 
-        Basically, each x_n**m terms of the cycle index
-        will be substituted by (a**m + b**m +...), with
-        the number of terms corresponds to the final
-        number of color / species.
-
-        Terms coming from different orbit will be given
-        a distinct letter, but grouped together within
-        the same dictionary key.
-
-        Args:
-            len_list (tuple): Number of distinct species in the final
-            structure, for each separated orbit.
+        Conventionally, each term is in the form of (x_n**m),
+        with (n) denoting cycle length and (m) number of
+        cycles with such length for a permutation.
 
         Returns:
-            tuple (dict, list): Combined results of:
-                dict: CGF in similar format to the cycle index.
-                list: List of letters used in the CGF.
-                    Useful for example in the counting where
-                    we want to find a specific term.
+            dict: Dictionary of cycle index with integer index
+                and sympy equations as a key-value pair.
         """
-        len_tuple_string = ", ".join(map(str, len_tuple))
-        logging.info(f"Building CGF for {len_tuple_string}.")
-
-        def divide(iterable, sizes):
-            i = 0
-            for j in sizes:
-                yield iterable[i : i + j]
-                i += j
-
-        # Sanity check.
-        if len(len_tuple) != len(self._perm_list):
-            raise ValueError("Invalid sequences length.")
-
-        # Avoid variable name collisions. Start from "a".
-        ci_letters = [chr(97 + i) for i in range(len(self._perm_list))]
-        sub_letters = [chr(ord(ci_letters[-1]) + 1 + i) for i in range(sum(len_tuple))]
-        sub_letters = list(divide(sub_letters, len_tuple))
-        replacement_map = {
-            sympy.Symbol(l): sum(sympy.Symbol(e) for e in r)
-            for l, r in zip(ci_letters, sub_letters)
-        }
-
-        cgf = dict()
-        for i, expr in tqdm.tqdm(
-            self.ci().items(),
-            desc="Substituting terms",
-            **const.TQDM_CONF,
-            disable=const.DISABLE_PROGRESSBAR,
-        ):
-            indexed_symbols = [x for x in expr.free_symbols if isinstance(x, Indexed)]
-
-            replacements = []
-            for indexed_symbol in indexed_symbols:
-                label = indexed_symbol.base.label
-                index = indexed_symbol.indices[0]
-                replacement = replacement_map[label]
-
-                raised = []
-                for symbol in replacement.free_symbols:
-                    raised.append(symbol ** index)
-
-                raised_rep = replacement.xreplace(
-                    dict(zip(replacement.free_symbols, raised))
-                )
-                replacements.append(raised_rep)
-            expr = expr.xreplace(dict(zip(indexed_symbols, replacements)))
-
-            # TODO: consider symbol symmetry? and shared cache
-            if expr in self._expand_cache:
-                expanded = self._expand_cache[expr]
-            else:
-                expanded = expr.expand() / self.group_size
-                self._expand_cache[expr] = expanded
-            cgf[i] = expanded
-        return cgf, sub_letters
+        cycle_index = self.ci()
+        sym_cycle_index = dict()
+        for j, permutations in enumerate(self._perm_list):
+            symbol = sympy.IndexedBase(chr(97 + j))
+            for i, _ in enumerate(permutations):
+                sym_cycle_index.setdefault(i, sympy.Integer(1))
+                for length, n in cycle_index[i][j].items():
+                    sym_cycle_index[i] *= symbol[length] ** n
+        return sym_cycle_index
 
     @functools.lru_cache(None)
     def count(self, amt_tuple):
@@ -1797,25 +1800,75 @@ class Polya:
         Returns:
             int: Number of unique patterns for the given amount.
         """
+
+        def combine(a, b):
+            assert len(a.shape) == 2 and len(b.shape) == 2
+            ra, ca = a.shape
+            rb, cb = b.shape
+            assert ca == cb
+            return (a[:, None] + b[None, :]).reshape(ra * rb, ca)
+
+        # Should be cached too somehow
+        # @functools.lru_cache(None)
+        def exmul(arrays):
+            """
+            Calculate exponent coefficients "multiplied".
+            """
+            return functools.reduce(combine, arrays)
+
         logging.info(f"Counting unique patterns for {amt_tuple}.")
-        _sequences = [len(x) for x in amt_tuple]
-        cgf, sub_letters = self.cgf(tuple(_sequences))
 
-        term = sympy.Integer(1)
-        for letters, nums in zip(sub_letters, amt_tuple):
-            for letter, num in zip(letters, nums):
-                term *= sympy.Symbol(letter) ** num
+        # Padding
+        joint_coeffs = np.array(sum(amt_tuple, ()))
+        coeff_sums = [len(x) for x in amt_tuple]
+        pads = [
+            (sum(coeff_sums[:i]), sum(coeff_sums[i + 1 :]))
+            for i in range(len(amt_tuple))
+        ]
 
-        count = int(sum(c.coeff(term) for c in cgf.values()))
-        logging.info(count)
-        return count
+        o_counts = []
+        for o_cycles in self.ci().values():
+            o_parts = [
+                [aR_array(cnum, len(color)) for cnum in cycles.values()]
+                for cycles, color in zip(o_cycles, amt_tuple)
+            ]
+
+            # Exponent values of each variables
+            exps = [
+                np.pad(clen * partition, [(0, 0), pad])
+                for cycles, pad, partitions in zip(o_cycles, pads, o_parts)
+                for clen, partition in zip(cycles, partitions)
+            ]
+            config_shape = [x.shape[0] for x in exps]
+
+            mul_exps = exmul(exps)
+            # Find matching coefficient; if none then 0
+            match = np.flatnonzero((mul_exps == joint_coeffs).all(axis=1))
+            match_i = np.array(np.unravel_index(match, config_shape)).T
+
+            # TODO: Basically flatten; can be better written
+            f_parts = [part for parts in o_parts for part in parts]
+            counts = [
+                functools.reduce(
+                    lambda x, y: x * y,
+                    [multinomial_coeff(tuple(p[j])) for p, j in zip(f_parts, i)],
+                )
+                for i in match_i
+            ]
+            if not counts:
+                counts = [0]
+            o_counts.append(sum(counts))
+        # Special case: no cycles means 1 unique object
+        if not o_counts:
+            return 1
+        return int(sum(o_counts) / self.group_size)
 
 
-# TODO: shared expand cache
 class PolyaCollection:
     """
     Collection of Polya objects. This is useful because identical
     instances are often recreated, with heavy sympy.expand() operations.
+    TODO: No longer important so eventually remove.
     """
 
     def __init__(self):

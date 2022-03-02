@@ -1,0 +1,365 @@
+#------------------------------------------------------------------------------
+#$Date: 2019-11-23 19:01:24 +0200 (Sat, 23 Nov 2019) $
+#$Revision: 234556 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/7/12/51/7125149.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7125149
+loop_
+_publ_author_name
+'Lekin, Kristina'
+'Ogata, Kazuma'
+'Maclean, Adrian'
+'Mailman, Aaron'
+'Winter, Stephen M.'
+'Assoud, Abdeljalil'
+'Mito, Masaki'
+'Tse, John S.'
+'Desgreniers, Serge'
+'Hirao, Naohisa'
+'Dube, Paul A.'
+'Oakley, Richard T.'
+_publ_section_title
+;
+ Pushing T<sub>C</sub> to 27.5 K in a heavy atom radical ferromagnet.
+;
+_journal_issue                   96
+_journal_name_full
+'Chemical communications (Cambridge, England)'
+_journal_page_first              13877
+_journal_page_last               13880
+_journal_paper_doi               10.1039/c6cc07142b
+_journal_volume                  52
+_journal_year                    2016
+_chemical_formula_moiety         'C7 H5 I1 N3 Se4'
+_chemical_formula_sum            'C7 H5 I N3 Se4'
+_chemical_formula_weight         573.88
+_chemical_melting_point_gt       400
+_chemical_name_common            IBPSSEt
+_chemical_name_systematic
+; 
+8-iodo-4-ethyl-4H-bis[1,2,3]diselenazolo[4,5-b:5',4'-e]pyridin-2-yl
+;
+_space_group_IT_number           113
+_space_group_name_Hall           'P -4 2ab'
+_space_group_name_H-M_alt        'P -4 21 m'
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  'P -4 2ab'
+_symmetry_space_group_name_H-M   'P -4 21 m'
+_audit_creation_date             2016-08-29T13:34
+_audit_creation_method           'from EXP file using GSAS2CIF'
+_audit_update_record
+' 2016-08-29T13:34  Initial CIF as created by GSAS2CIF'
+_cell_angle_alpha                90.0
+_cell_angle_beta                 90.0
+_cell_angle_gamma                90.0
+_cell_formula_units_Z            4
+_cell_length_a                   15.9014(14)
+_cell_length_b                   15.9014
+_cell_length_c                   3.7840(24)
+_cell_measurement_temperature    293(2)
+_cell_volume                     956.8(6)
+_computing_structure_refinement  GSAS
+_diffrn_ambient_temperature      293(2)
+_diffrn_measurement_device_type  'SPring-8 BL10XU'
+_diffrn_radiation_polarisn_ratio 0.95
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           Synchrotron
+_diffrn_radiation_wavelength     0.41358
+_diffrn_source                   Synchrotron
+_exptl_absorpt_correction_T_max  1.00000
+_exptl_absorpt_correction_T_min  1.00000
+_exptl_absorpt_process_details
+;   GSAS Absorption/surface roughness correction: function number 0
+ No correction is applied.
+;
+_exptl_crystal_colour            black
+_exptl_crystal_density_diffrn    3.986
+_pd_block_id
+2016-08-29T13:34|IBPSSET_496GPA_DONE2|Oakley|SPring-8
+_pd_calc_method                  'Rietveld Refinement'
+_pd_instr_location               ' ?'
+_pd_phase_name
+'from C:/gsas/MyWork/IBPSSEt/4.96GPa/4.96 GPa_RT.cif'
+_pd_proc_info_datetime           2016-08-29T13:34:38
+_pd_proc_info_excluded_regions   ' ?'
+_pd_proc_ls_background_function
+;   GSAS Background function number 1 with  8 terms.
+ Shifted Chebyshev function of 1st kind
+      1:    2471.27     2:    1134.56     3:   -121.553     4:   -2.76500    
+      5:    59.7430     6:   -6.04778     7:   -22.1398     8:   0.735835    
+;
+_pd_proc_ls_peak_cutoff          0.00100
+_pd_proc_ls_profile_function
+;
+ CW Profile function number 2 with  18 terms
+ Profile coefficients for Simpson's rule integration of pseudovoigt function
+ C.J. Howard (1982). J. Appl. Cryst.,15,615-620.
+ P. Thompson, D.E. Cox & J.B. Hastings (1987). J. Appl. Cryst.,20,79-83.
+ #1(GU)   =  679.367 #2(GV)   =  -27.662 #3(GW)   =    0.881
+ #4(LX)   =    1.721 #5(LY)   =   64.195 #6(trns) =   -6.074
+ #7(asym) =  -0.0415 #8(shft) =  -0.1415 #9(GP)   =    0.345
+ #10(stec)=   331.89 #11(ptec)=     5.12 #12(sfec)=     0.00
+ #13(L11) =    0.000 #14(L22) =    0.000 #15(L33) =    0.000
+ #16(L12) =    0.000 #17(L13) =    0.012 #18(L23) =   -0.023
+ Peak tails are ignored  where the intensity is below 0.0010 times the peak
+   Aniso. broadening axis   0.0   0.0   1.0
+;
+_pd_proc_ls_prof_R_factor        0.0409
+_pd_proc_ls_prof_wR_expected     0.0183
+_pd_proc_ls_prof_wR_factor       0.0534
+_pd_spec_mounting                ' ?'
+_refine_ls_goodness_of_fit_all   2.91
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     1
+_refine_ls_number_restraints     0
+_refine_ls_R_Fsqd_factor         0.26072
+_refine_ls_shift/su_max          0.02
+_refine_ls_shift/su_mean         0.02
+_reflns_d_resolution_high        1.661
+_reflns_d_resolution_low         7.951
+_reflns_limit_h_max              13
+_reflns_limit_h_min              0
+_reflns_limit_k_max              9
+_reflns_limit_k_min              0
+_reflns_limit_l_max              3
+_reflns_limit_l_min              0
+_reflns_number_total             89
+_cod_data_source_file            c6cc07142b4.cif
+_cod_data_source_block           1c_5_0_GPa
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+data name '_chemical_melting_point' was changed to
+'_chemical_melting_point_gt' since the value was specified as 'more
+than' ('>') a certain temperature.
+
+data item '_geom_angle_publ_flag' value 'N' was changed to 'n' in
+accordance with the
+/home/saulius/struct/COD-crude-data/automatic-downloads/DataCite-retrospective/RSC/depositions/lib/dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 last updated on
+2011-04-26 (18 times).
+
+data item '_geom_bond_publ_flag' value 'N' was changed to 'n' in
+accordance with the
+/home/saulius/struct/COD-crude-data/automatic-downloads/DataCite-retrospective/RSC/depositions/lib/dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 last updated on
+2011-04-26 (13 times).
+
+Automatic conversion script
+Id: cif_fix_values 6909 2019-04-08 15:41:33Z antanas 
+;
+_cod_original_cell_volume        956.8(5)
+_cod_database_code               7125149
+_gsas_exptl_extinct_corr_t_min   1.00000
+_gsas_exptl_extinct_corr_t_max   1.00000
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 +x,+y,+z
+2 +y,-x,-z
+3 -x,-y,+z
+4 -y,+x,-z
+5 -x+1/2,+y+1/2,-z
+6 +y+1/2,+x+1/2,+z
+7 +x+1/2,-y+1/2,-z
+8 -y+1/2,-x+1/2,+z
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_thermal_displace_type
+_atom_site_U_iso_or_equiv
+_atom_site_symmetry_multiplicity
+I I1 -0.93068 -0.56933 -0.79162 1.0 Uiso 0.0777 4
+N N2 -0.7529 -0.74711 -1.51451 1.0 Uiso 0.0777 4
+C C3 -0.85159 -0.64842 -1.07661 1.0 Uiso 0.0777 4
+C C4 -0.70207 -0.79794 -1.75947 1.0 Uiso 0.0777 4
+C C5 -0.64225 -0.85776 -1.58279 1.0 Uiso 0.0777 4
+H H5A -0.61035 -0.88966 -1.75632 1.0 Uiso 0.1554 4
+Se Se1 -0.60248 -0.55201 -1.31133 1.0 Uiso 0.0777 8
+Se Se2 -0.7292 -0.51506 -1.02808 1.0 Uiso 0.0777 8
+N N1 -0.64148 -0.65113 -1.47672 1.0 Uiso 0.0777 8
+C C1 -0.71823 -0.6719 -1.38786 1.0 Uiso 0.0777 8
+C C2 -0.77219 -0.61944 -1.17496 1.0 Uiso 0.0777 8
+H H4A -0.66991 -0.75977 -1.90712 1.0 Uiso 0.1554 8
+H H5B -0.60466 -0.82532 -1.43474 1.0 Uiso 0.1554 8
+loop_
+_atom_type_symbol
+_atom_type_number_in_cell
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_Cromer_Mann_a1
+_atom_type_scat_Cromer_Mann_a2
+_atom_type_scat_Cromer_Mann_a3
+_atom_type_scat_Cromer_Mann_a4
+_atom_type_scat_Cromer_Mann_b1
+_atom_type_scat_Cromer_Mann_b2
+_atom_type_scat_Cromer_Mann_b3
+_atom_type_scat_Cromer_Mann_b4
+_atom_type_scat_Cromer_Mann_c
+_atom_type_scat_source
+I 4.0 0.000 0.000 20.1472 4.34700 18.9949 0.38140 7.51380 27.7660 2.27350
+66.8776 4.07120 International_Tables_Vol_C
+N 12.0 0.000 0.000 12.2126 0.00570 3.13220 9.89330 2.01250 28.9975 1.16630
+0.58260 -11.529 International_Tables_Vol_C
+C 28.0 0.000 0.000 2.31000 20.8439 1.02000 10.2075 1.58860 0.56870 0.86500
+51.6512 0.21560 International_Tables_Vol_C
+H 20.0 0.000 0.000 0.49300 10.5109 0.32291 26.1257 0.14019 3.14236 0.04081
+57.7997 0.00304 International_Tables_Vol_C
+Se 16.0 0.000 0.000 17.0006 2.40980 5.81960 0.27260 3.97310 15.2372 4.35430
+43.8163 2.84090 International_Tables_Vol_C
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+I1 I1 C3 148.770 3_345 1_555 n
+C4 N2 C1 117.907 1_555 1_555 n
+I1 C3 C2 119.075 1_555 1_555 n
+N2 C4 C5 114.534 1_555 1_555 n
+N2 C4 H4A 107.968 1_555 1_555 n
+C5 C4 H4A 108.574 1_555 1_555 n
+C4 C5 H5A 111.104 1_555 1_555 n
+C4 C5 H5B 108.126 1_555 1_555 n
+H5A C5 H5B 110.279 1_555 1_555 n
+Se2 Se1 N1 94.680 1_555 1_555 n
+Se1 Se2 C2 87.496 1_555 1_555 n
+Se1 N1 C1 116.850 1_555 1_555 n
+N2 C1 N1 119.638 1_555 1_555 n
+N2 C1 C2 116.774 1_555 1_555 n
+N1 C1 C2 123.5316 1_555 1_555 n
+C3 C2 Se2 122.839 1_555 1_555 n
+C3 C2 C1 119.763 1_555 1_555 n
+Se2 C2 C1 117.358 1_555 1_555 n
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+I1 C3 2.0800 1_555 n
+N2 C4 1.4717 1_555 n
+N2 C1 1.40139 1_555 n
+C4 C5 1.50220 1_555 n
+C4 H4A 0.97060 1_555 n
+C5 H5A 0.97252 1_555 n
+C5 H4A 2.0316 1_555 n
+Se1 Se2 2.35677 1_555 n
+Se1 N1 1.80569 1_555 n
+Se2 C2 1.87913 1_555 n
+N1 C1 1.30828 1_555 n
+C1 C2 1.44261 1_555 n
+C2 C3 1.39461 1_555 n
+loop_
+_refln_index_h
+_refln_index_k
+_refln_index_l
+_refln_observed_status
+_refln_F_squared_meas
+_refln_F_squared_calc
+_refln_phase_calc
+_refln_d_spacing
+_gsas_i100_meas
+0 0 1 o 0.000 11005.288 0.00 3.78400 0.00
+2 0 1 o 453.094 530.274 0.00 3.41677 1.34
+1 0 1 o 6731.940 7119.734 90.00 3.68121 12.12
+1 1 1 o 7891.716 8343.883 157.62 3.58636 8.79
+2 0 0 o 18761.965 20224.576 0.00 7.95070 39.21
+2 1 1 o 28779.402 28975.605 -107.46 3.34052 59.33
+3 0 1 o 623.938 631.430 -90.00 3.07973 0.77
+2 1 0 o 10020.685 10934.857 -180.00 7.11132 32.19
+2 2 1 o 86956.77 87332.69 135.97 3.13917 100.00
+3 1 1 o 518.296 567.820 120.37 3.02354 0.76
+2 2 0 o 735.457 1165.197 -180.00 5.62199 1.18
+4 0 1 o 32150.328 33801.953 0.00 2.74084 12.46
+3 2 1 o 856.671 1440.575 -49.02 2.87181 2.75
+3 1 0 o 2338.159 3358.815 180.00 5.02846 4.76
+4 1 1 o 3881.941 3592.522 -127.05 2.70101 2.08
+2 0 2 o 9034.287 11865.200 -180.00 1.84060 4.08
+3 3 1 o 10353.175 9386.534 -163.81 2.66287 21.27
+4 2 1 o 36811.35 36953.60 82.56 2.59120 52.12
+0 0 2 o 0.000 1309.186 180.00 1.89200 0.00
+3 2 0 o 2501.478 3394.345 0.00 4.41025 3.48
+5 0 1 o 23709.311 23433.539 -90.00 2.43461 6.89
+1 0 2 o 0.000 811.683 90.00 1.87875 0.00
+3 0 2 o 805.861 706.812 90.00 1.78188 0.63
+1 1 2 o 627.253 1023.036 -44.66 1.86577 0.04
+5 1 1 o 9303.935 10059.992 0.41 2.40657 4.37
+2 1 2 o 1618.393 1879.972 -61.23 1.82839 1.25
+4 3 1 o 218.776 214.969 -36.17 2.43461 0.42
+4 1 0 o 24000.766 26434.232 -180.00 3.85666 30.41
+4 0 0 o 1907.179 4141.903 0.00 3.97535 1.00
+2 2 2 o 27770.963 24551.553 -165.15 1.79318 7.76
+4 0 2 o 13014.797 13954.698 0.00 1.70838 9.66
+3 3 0 o 19966.664 16672.998 -180.00 3.74800 14.30
+4 1 2 o 4258.212 4682.075 61.57 1.69861 4.80
+3 1 2 o 1912.213 1700.921 -101.35 1.77080 2.24
+5 2 1 o 4872.728 7066.260 -69.15 2.32792 2.69
+3 2 2 o 4901.275 4883.272 150.00 1.73875 2.40
+4 2 0 o 6974.616 6109.012 -180.00 3.55566 5.61
+6 0 1 o 13.228 15.543 0.00 2.17077 0.00
+4 4 1 o 48239.80 50833.49 63.67 2.25650 15.64
+6 1 1 o 1622.082 2184.839 98.90 2.15082 1.29
+3 3 2 o 11616.089 13192.256 -91.94 1.68900 1.17
+5 3 1 o 2825.649 2582.751 -22.65 2.21239 1.14
+6 2 1 o 22376.717 17952.098 143.32 2.09412 17.74
+4 2 2 o 476.746 603.420 -3.09 1.67026 0.25
+4 3 0 o 27272.260 27177.975 -180.00 3.18028 22.80
+5 1 0 o 2477.891 2695.363 0.00 3.11852 2.01
+5 4 1 o 0.000 8390.263 -7.24 2.07619 0.00
+5 2 0 o 343.543 451.169 0.00 2.95282 0.22
+7 0 1 o 5662.309 9136.453 -90.00 1.94763 2.52
+7 1 1 o 61.560 109.799 151.46 1.93318 0.06
+4 4 0 o 13033.723 21069.105 0.00 2.81100 5.25
+6 3 1 o 4467.049 4509.873 -11.28 2.00883 1.77
+7 2 1 o 1548.553 3757.979 -68.61 1.89170 1.83
+5 3 0 o 124.997 102.265 180.00 2.72707 0.06
+5 5 1 o 0.000 8736.185 -54.34 1.93318 0.00
+6 0 0 o 39736.88 34300.063 -180.00 2.65023 9.24
+6 1 0 o 16788.998 14493.195 -180.00 2.61417 9.25
+6 4 1 o 0.000 1197.387 45.95 1.90523 0.00
+7 3 1 o 2455.124 2910.922 -157.44 1.82812 2.21
+6 2 0 o 78107.80 69969.89 180.00 2.51423 39.81
+5 4 0 o 11146.513 9470.881 0.00 2.48338 6.14
+8 0 1 o 2584.675 2302.836 0.00 1.75968 1.19
+8 1 1 o 21497.422 20617.617 99.71 1.74900 23.44
+7 4 1 o 2006.670 1925.993 -45.34 1.74900 0.31
+6 5 1 o 0.000 5665.672 -94.00 1.79292 0.00
+8 2 1 o 1002.590 1048.194 -134.04 1.71810 1.35
+6 3 0 o 15849.262 19857.646 -180.00 2.37044 5.67
+6 6 1 o 0.000 4978.727 -166.32 1.67934 0.00
+7 1 0 o 49.353 60.773 0.00 2.24880 0.02
+5 5 0 o 3286.127 4049.266 0.00 2.24880 0.85
+8 3 1 o 2137.109 2849.157 20.90 1.67005 2.71
+7 5 1 o 0.000 4529.959 -124.18 1.66092 0.00
+6 4 0 o 103.779 77.980 0.00 2.20513 0.04
+7 2 0 o 16192.527 16125.316 -180.00 2.18423 6.52
+7 3 0 o 2894.263 1967.885 180.00 2.08796 0.88
+6 5 0 o 12998.845 7486.490 -180.00 2.03597 5.02
+8 0 0 o 233.863 357.910 180.00 1.98767 0.03
+8 1 0 o 6538.598 7733.405 180.00 1.97233 1.93
+7 4 0 o 3248.081 3840.209 -180.00 1.97233 0.80
+8 2 0 o 3547.493 6595.548 -180.00 1.92833 1.13
+6 6 0 o 1260.482 3049.308 0.00 1.87400 0.23
+8 3 0 o 75.962 161.311 180.00 1.86112 0.02
+7 5 0 o 506.826 975.946 180.00 1.84850 0.14
+8 4 0 o 21538.732 14823.688 0.00 1.77783 4.34
+9 1 0 o 13694.866 13002.649 0.00 1.75602 3.14
+7 6 0 o 4822.737 4979.777 -180.00 1.72475 1.37
+9 2 0 o 5474.012 5652.356 -180.00 1.72475 1.38
+8 5 0 o 4607.015 4892.059 180.00 1.68554 0.88
+9 3 0 o 8855.020 10545.277 0.00 1.67615 2.01

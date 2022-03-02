@@ -1,0 +1,581 @@
+#------------------------------------------------------------------------------
+#$Date: 2021-04-23 11:01:47 +0300 (Fri, 23 Apr 2021) $
+#$Revision: 264451 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/56/20/1562016.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1562016
+loop_
+_publ_author_name
+'Kahlenberg, Volker'
+'Brunello, Emanuele'
+'Hejny, Clivia'
+'Kr\"uger, Hannes'
+'Schmidmair, Daniela'
+'Tribus, Martina'
+'T\"obbens, Daniel M.'
+_publ_section_title
+;
+ Li2Ca2Si2O7: Structural, spectroscopic and computational studies on a
+ sorosilicate
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              155
+_journal_page_last               167
+_journal_paper_doi               10.1016/j.jssc.2014.12.009
+_journal_volume                  225
+_journal_year                    2015
+_chemical_absolute_configuration ad
+_chemical_formula_moiety         'O7 Si2, 2(Ca), 2(Li)'
+_chemical_formula_sum            'Ca2 Li2 O7 Si2'
+_chemical_formula_weight         262.22
+_space_group_IT_number           178
+_space_group_name_Hall           'P 61 2 (0 0 5)'
+_space_group_name_H-M_alt        'P 61 2 2'
+_symmetry_cell_setting           hexagonal
+_symmetry_space_group_name_H-M   'P 61 2 2'
+_atom_sites_solution_hydrogens   ' '
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            6
+_cell_length_a                   5.09611(17)
+_cell_length_b                   5.09611(17)
+_cell_length_c                   41.2640(17)
+_cell_measurement_reflns_used    2633
+_cell_measurement_temperature    295(2)
+_cell_measurement_theta_max      28.6775
+_cell_measurement_theta_min      3.9506
+_cell_volume                     928.07(6)
+_computing_cell_refinement
+;
+        CrysAlisPro, Agilent Technologies,
+        Version 1.171.37.31 (release 14-01-2014 CrysAlis171 .NET)
+        (compiled Jan 14 2014,18:38:05)
+;
+_computing_data_collection
+;
+        CrysAlisPro, Agilent Technologies,
+        Version 1.171.37.31 (release 14-01-2014 CrysAlis171 .NET)
+        (compiled Jan 14 2014,18:38:05)
+;
+_computing_data_reduction
+;
+        CrysAlisPro, Agilent Technologies,
+        Version 1.171.37.31 (release 14-01-2014 CrysAlis171 .NET)
+        (compiled Jan 14 2014,18:38:05)
+;
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SIR2002 (Burla et al., 2003)'
+_diffrn_ambient_temperature      295(2)
+_diffrn_detector                 'CCD plate'
+_diffrn_detector_area_resol_mean 10.3575
+_diffrn_measured_fraction_theta_full 0.986
+_diffrn_measured_fraction_theta_max 0.986
+_diffrn_measurement_device       'four-circle diffractometer'
+_diffrn_measurement_device_type  'Xcalibur, Ruby, Gemini ultra'
+_diffrn_measurement_method       '\w scans'
+_diffrn_orient_matrix_UB_11      0.0980733
+_diffrn_orient_matrix_UB_12      -0.0327214
+_diffrn_orient_matrix_UB_13      -0.0091398
+_diffrn_orient_matrix_UB_21      0.118838
+_diffrn_orient_matrix_UB_22      0.0844725
+_diffrn_orient_matrix_UB_23      0.0111518
+_diffrn_orient_matrix_UB_31      -0.0458767
+_diffrn_orient_matrix_UB_32      -0.1327874
+_diffrn_orient_matrix_UB_33      0.0093434
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0327
+_diffrn_reflns_av_unetI/netI     0.0207
+_diffrn_reflns_limit_h_max       6
+_diffrn_reflns_limit_h_min       -6
+_diffrn_reflns_limit_k_max       5
+_diffrn_reflns_limit_k_min       -6
+_diffrn_reflns_limit_l_max       52
+_diffrn_reflns_limit_l_min       -37
+_diffrn_reflns_number            5494
+_diffrn_reflns_theta_full        28.68
+_diffrn_reflns_theta_max         28.68
+_diffrn_reflns_theta_min         4.62
+_diffrn_source                   'Enhance (Mo) X-ray Source'
+_exptl_absorpt_coefficient_mu    2.219
+_exptl_absorpt_correction_T_max  0.832
+_exptl_absorpt_correction_T_min  0.636
+_exptl_absorpt_correction_type   analytical
+_exptl_absorpt_process_details
+;
+        CrysAlisPro, Agilent Technologies,
+        Version 1.171.37.31 (release 14-01-2014 CrysAlis171 .NET)
+        (compiled Jan 14 2014,18:38:05)
+Analytical numeric absorption correction using a multifaceted crystal
+                        model based on expressions derived by R.C. Clark & J.S.
+        (Clark, R. C. & Reid, J. S. (1995). Acta Cryst. A51, 887-897)
+        Empirical absorption correction using spherical harmonics,
+ implemented in SCALE3 ABSPACK scaling algorithm.
+;
+_exptl_crystal_colour            colourless
+_exptl_crystal_density_diffrn    2.815
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       fragment
+_exptl_crystal_F_000             780
+_exptl_crystal_size_max          0.24
+_exptl_crystal_size_mid          0.2
+_exptl_crystal_size_min          0.1
+_refine_diff_density_max         0.297
+_refine_diff_density_min         -0.426
+_refine_diff_density_rms         0.093
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   0.04(13)
+_refine_ls_extinction_coef       0.0124(10)
+_refine_ls_extinction_expression Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^
+_refine_ls_extinction_method     SHELXL
+_refine_ls_goodness_of_fit_ref   1.38
+_refine_ls_hydrogen_treatment    noref
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     62
+_refine_ls_number_reflns         780
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.38
+_refine_ls_R_factor_all          0.0283
+_refine_ls_R_factor_gt           0.026
+_refine_ls_shift/su_max          0
+_refine_ls_shift/su_mean         0
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0208P)^2^+1.2051P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.069
+_refine_ls_wR_factor_ref         0.0697
+_reflns_number_gt                738
+_reflns_number_total             780
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            JSSC-2015-225-155.cif
+_cod_data_source_block           kristall_2_rt
+_cod_database_code               1562016
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'x-y, x, z+1/6'
+'-y, x-y, z+1/3'
+'-x, -y, z+1/2'
+'-x+y, -x, z+2/3'
+'y, -x+y, z+5/6'
+'-y, -x, -z+5/6'
+'x-y, -y, -z'
+'x, x-y, -z+1/6'
+'y, x, -z+1/3'
+'-x+y, y, -z+1/2'
+'-x, -x+y, -z+2/3'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Ca1 Ca 0.96079(15) 0 0.5 0.0084(2) Uani 1 2 d S . .
+Ca2 Ca 0.96416(9) 0.03584(9) 0.4167 0.0149(2) Uani 1 2 d S . .
+Li Li 0.6969(11) 0.4099(11) 0.47301(12) 0.0145(10) Uani 1 1 d . . .
+Si Si 0.35320(16) 0.72664(16) 0.454034(16) 0.00540(19) Uani 1 1 d . . .
+O1 O 0.3876(3) 0.6124(3) 0.4167 0.0112(6) Uani 1 2 d S . .
+O2 O 0.6643(5) 0.0466(5) 0.45883(5) 0.0091(4) Uani 1 1 d . . .
+O3 O 1.0581(5) 0.7654(5) 0.45520(5) 0.0084(4) Uani 1 1 d . . .
+O4 O 0.8679(5) 0.5221(5) 0.52151(5) 0.0108(5) Uani 1 1 d . . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Ca1 0.0096(3) 0.0095(4) 0.0060(4) 0.0001(3) 0.00004(14) 0.0048(2)
+Ca2 0.0203(4) 0.0203(4) 0.0117(4) 0.0086(3) 0.0086(3) 0.0159(4)
+Li 0.013(3) 0.014(2) 0.015(3) -0.0003(19) 0.0028(19) 0.005(2)
+Si 0.0058(4) 0.0062(4) 0.0045(3) -0.0004(2) -0.0005(3) 0.0032(3)
+O1 0.0162(12) 0.0162(12) 0.0067(13) -0.0031(10) -0.0031(10) 0.0121(13)
+O2 0.0081(10) 0.0086(10) 0.0104(10) -0.0016(8) -0.0001(8) 0.0040(8)
+O3 0.0083(10) 0.0111(11) 0.0076(10) 0.0021(8) 0.0009(8) 0.0062(9)
+O4 0.0090(10) 0.0124(11) 0.0098(10) 0.0053(8) 0.0022(8) 0.0044(8)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Ca Ca 0.2262 0.3064 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Li Li -0.0003 0.0001 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.006 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Si Si 0.0817 0.0704 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_exptl_crystal_face_index_h
+_exptl_crystal_face_index_k
+_exptl_crystal_face_index_l
+_exptl_crystal_face_perp_dist
+0 0 -1 0.0457
+-2 5 -44 0.1
+-1 6 -31 0.1246
+-5 0 36 0.1074
+1 -5 33 0.0968
+2 -6 27 0.0984
+-6 6 3 0.1228
+-7 2 -6 0.0902
+-6 5 -24 0.0997
+7 -3 13 0.0791
+4 -3 49 0.0351
+-4 -1 -40 0.0807
+-4 -3 -27 0.0835
+6 -2 -28 0.0731
+-6 1 23 0.1006
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+O2 Ca1 O2 92.80(10) 8_556 .
+O2 Ca1 O3 78.27(7) 8_556 8_666
+O2 Ca1 O3 146.71(8) . 8_666
+O2 Ca1 O3 146.71(8) 8_556 1_545
+O2 Ca1 O3 78.27(7) . 1_545
+O3 Ca1 O3 125.40(10) 8_666 1_545
+O2 Ca1 O4 82.64(7) 8_556 1_545
+O2 Ca1 O4 123.70(7) . 1_545
+O3 Ca1 O4 87.29(7) 8_666 1_545
+O3 Ca1 O4 76.32(7) 1_545 1_545
+O2 Ca1 O4 123.70(7) 8_556 8_666
+O2 Ca1 O4 82.64(7) . 8_666
+O3 Ca1 O4 76.32(7) 8_666 8_666
+O3 Ca1 O4 87.29(7) 1_545 8_666
+O4 Ca1 O4 143.96(10) 1_545 8_666
+O2 Ca1 Li 80.58(12) 8_556 8_666
+O2 Ca1 Li 103.94(11) . 8_666
+O3 Ca1 Li 43.23(11) 8_666 8_666
+O3 Ca1 Li 132.64(12) 1_545 8_666
+O4 Ca1 Li 129.98(11) 1_545 8_666
+O4 Ca1 Li 47.38(12) 8_666 8_666
+O2 Ca1 Li 103.94(11) 8_556 1_545
+O2 Ca1 Li 80.58(12) . 1_545
+O3 Ca1 Li 132.64(12) 8_666 1_545
+O3 Ca1 Li 43.23(12) 1_545 1_545
+O4 Ca1 Li 47.38(12) 1_545 1_545
+O4 Ca1 Li 129.98(11) 8_666 1_545
+Li Ca1 Li 173.6(2) 8_666 1_545
+O2 Ca1 O4 74.71(7) 8_556 8_556
+O2 Ca1 O4 56.64(6) . 8_556
+O3 Ca1 O4 145.36(6) 8_666 8_556
+O3 Ca1 O4 73.64(7) 1_545 8_556
+O4 Ca1 O4 68.23(4) 1_545 8_556
+O4 Ca1 O4 137.38(8) 8_666 8_556
+Li Ca1 O4 147.01(11) 8_666 8_556
+Li Ca1 O4 39.40(11) 1_545 8_556
+O2 Ca1 O4 56.64(6) 8_556 .
+O2 Ca1 O4 74.71(7) . .
+O3 Ca1 O4 73.64(7) 8_666 .
+O3 Ca1 O4 145.36(6) 1_545 .
+O4 Ca1 O4 137.38(8) 1_545 .
+O4 Ca1 O4 68.23(4) 8_666 .
+Li Ca1 O4 39.40(11) 8_666 .
+Li Ca1 O4 147.01(12) 1_545 .
+O4 Ca1 O4 107.71(8) 8_556 .
+O2 Ca1 Li 35.40(11) 8_556 8_556
+O2 Ca1 Li 77.55(11) . 8_556
+O3 Ca1 Li 108.56(10) 8_666 8_556
+O3 Ca1 Li 111.54(11) 1_545 8_556
+O4 Ca1 Li 66.84(10) 1_545 8_556
+O4 Ca1 Li 148.83(11) 8_666 8_556
+Li Ca1 Li 115.12(17) 8_666 8_556
+Li Ca1 Li 70.07(12) 1_545 8_556
+O4 Ca1 Li 40.00(10) 8_556 8_556
+O4 Ca1 Li 83.36(10) . 8_556
+O2 Ca1 Li 77.55(10) 8_556 .
+O2 Ca1 Li 35.40(10) . .
+O3 Ca1 Li 111.54(11) 8_666 .
+O3 Ca1 Li 108.56(10) 1_545 .
+O4 Ca1 Li 148.83(11) 1_545 .
+O4 Ca1 Li 66.84(10) 8_666 .
+Li Ca1 Li 70.07(12) 8_666 .
+Li Ca1 Li 115.12(17) 1_545 .
+O4 Ca1 Li 83.36(10) 8_556 .
+O4 Ca1 Li 40.00(10) . .
+Li Ca1 Li 83.28(18) 8_556 .
+O3 Ca2 O3 91.55(10) 1_545 7_765
+O3 Ca2 O2 80.45(7) 1_545 .
+O3 Ca2 O2 170.10(8) 7_765 .
+O3 Ca2 O2 170.10(8) 1_545 7_665
+O3 Ca2 O2 80.45(7) 7_765 7_665
+O2 Ca2 O2 108.08(11) . 7_665
+O3 Ca2 O1 89.45(7) 1_545 1_545
+O3 Ca2 O1 111.56(7) 7_765 1_545
+O2 Ca2 O1 62.90(6) . 1_545
+O2 Ca2 O1 98.88(7) 7_665 1_545
+O3 Ca2 O1 111.56(7) 1_545 1_655
+O3 Ca2 O1 89.45(7) 7_765 1_655
+O2 Ca2 O1 98.88(7) . 1_655
+O2 Ca2 O1 62.90(6) 7_665 1_655
+O1 Ca2 O1 150.28(12) 1_545 1_655
+O3 Ca2 Si 79.02(5) 1_545 1_545
+O3 Ca2 Si 142.05(6) 7_765 1_545
+O2 Ca2 Si 30.69(5) . 1_545
+O2 Ca2 Si 110.88(6) 7_665 1_545
+O1 Ca2 Si 32.91(3) 1_545 1_545
+O1 Ca2 Si 128.29(5) 1_655 1_545
+O3 Ca2 Si 142.05(6) 1_545 7_765
+O3 Ca2 Si 79.02(5) 7_765 7_765
+O2 Ca2 Si 110.88(6) . 7_765
+O2 Ca2 Si 30.69(5) 7_665 7_765
+O1 Ca2 Si 128.29(5) 1_545 7_765
+O1 Ca2 Si 32.91(3) 1_655 7_765
+Si Ca2 Si 129.22(4) 1_545 7_765
+O3 Ca2 Si 96.75(5) 1_545 1_655
+O3 Ca2 Si 115.16(6) 7_765 1_655
+O2 Ca2 Si 71.91(6) . 1_655
+O2 Ca2 Si 81.59(5) 7_665 1_655
+O1 Ca2 Si 132.61(5) 1_545 1_655
+O1 Ca2 Si 28.77(2) 1_655 1_655
+Si Ca2 Si 102.49(2) 1_545 1_655
+Si Ca2 Si 56.64(2) 7_765 1_655
+O3 Ca2 Si 115.16(6) 1_545 7_655
+O3 Ca2 Si 96.75(6) 7_765 7_655
+O2 Ca2 Si 81.59(5) . 7_655
+O2 Ca2 Si 71.91(5) 7_665 7_655
+O1 Ca2 Si 28.77(2) 1_545 7_655
+O1 Ca2 Si 132.61(5) 1_655 7_655
+Si Ca2 Si 56.64(2) 1_545 7_655
+Si Ca2 Si 102.49(2) 7_765 7_655
+Si Ca2 Si 134.22(4) 1_655 7_655
+O3 Ca2 Ca1 43.67(5) 1_545 .
+O3 Ca2 Ca1 131.70(6) 7_765 .
+O2 Ca2 Ca1 43.19(5) . .
+O2 Ca2 Ca1 141.08(6) 7_665 .
+O1 Ca2 Ca1 89.005(10) 1_545 .
+O1 Ca2 Ca1 92.219(5) 1_655 .
+Si Ca2 Ca1 60.012(17) 1_545 .
+Si Ca2 Ca1 122.379(16) 7_765 .
+Si Ca2 Ca1 65.778(12) 1_655 .
+Si Ca2 Ca1 116.274(18) 7_655 .
+O3 Ca2 Ca1 131.70(6) 1_545 6_664
+O3 Ca2 Ca1 43.67(5) 7_765 6_664
+O2 Ca2 Ca1 141.08(6) . 6_664
+O2 Ca2 Ca1 43.19(5) 7_665 6_664
+O1 Ca2 Ca1 92.219(5) 1_545 6_664
+O1 Ca2 Ca1 89.005(10) 1_655 6_664
+Si Ca2 Ca1 122.379(16) 1_545 6_664
+Si Ca2 Ca1 60.012(17) 7_765 6_664
+Si Ca2 Ca1 116.274(18) 1_655 6_664
+Si Ca2 Ca1 65.778(12) 7_655 6_664
+Ca1 Ca2 Ca1 175.23(4) . 6_664
+O2 Li O3 112.0(3) . .
+O2 Li O4 124.3(3) . 8_566
+O3 Li O4 112.9(3) . 8_566
+O2 Li O4 112.3(3) . .
+O3 Li O4 92.0(2) . .
+O4 Li O4 97.4(2) 8_566 .
+O2 Li Ca1 159.0(3) . 1_565
+O3 Li Ca1 56.05(14) . 1_565
+O4 Li Ca1 76.28(17) 8_566 1_565
+O4 Li Ca1 55.71(13) . 1_565
+O2 Li Si 88.52(19) . 1_655
+O3 Li Si 29.52(10) . 1_655
+O4 Li Si 142.2(2) 8_566 1_655
+O4 Li Si 84.55(17) . 1_655
+Ca1 Li Si 73.87(12) 1_565 1_655
+O2 Li Si 131.4(2) . .
+O3 Li Si 86.37(18) . .
+O4 Li Si 29.24(10) 8_566 .
+O4 Li Si 111.5(2) . .
+Ca1 Li Si 68.24(11) 1_565 .
+Si Li Si 115.68(16) 1_655 .
+O2 Li Si 98.0(2) . 8_666
+O3 Li Si 121.6(2) . 8_666
+O4 Li Si 85.14(17) 8_566 8_666
+O4 Li Si 29.62(9) . 8_666
+Ca1 Li Si 78.17(13) 1_565 8_666
+Si Li Si 110.49(16) 1_655 8_666
+Si Li Si 110.02(15) . 8_666
+O2 Li Si 24.77(10) . 1_545
+O3 Li Si 132.8(2) . 1_545
+O4 Li Si 99.82(19) 8_566 1_545
+O4 Li Si 117.3(2) . 1_545
+Ca1 Li Si 170.76(19) 1_565 1_545
+Si Li Si 112.84(16) 1_655 1_545
+Si Li Si 112.34(16) . 1_545
+Si Li Si 93.24(14) 8_666 1_545
+O2 Li Ca1 47.12(13) . .
+O3 Li Ca1 103.1(2) . .
+O4 Li Ca1 141.2(2) 8_566 .
+O4 Li Ca1 66.50(14) . .
+Ca1 Li Ca1 115.12(17) 1_565 .
+Si Li Ca1 73.89(11) 1_655 .
+Si Li Ca1 170.31(18) . .
+Si Li Ca1 63.25(10) 8_666 .
+Si Li Ca1 62.77(10) 1_545 .
+O2 Li Ca1 88.29(18) . 1_455
+O3 Li Ca1 156.0(2) . 1_455
+O4 Li Ca1 43.09(12) 8_566 1_455
+O4 Li Ca1 91.96(17) . 1_455
+Ca1 Li Ca1 108.15(15) 1_565 1_455
+Si Li Ca1 173.99(19) 1_655 1_455
+Si Li Ca1 70.17(10) . 1_455
+Si Li Ca1 64.96(9) 8_666 1_455
+Si Li Ca1 64.52(9) 1_545 1_455
+Ca1 Li Ca1 100.23(13) . 1_455
+O2 Li Li 95.67(19) . 8_666
+O3 Li Li 73.07(17) . 8_666
+O4 Li Li 127.8(3) 8_566 8_666
+O4 Li Li 31.63(17) . 8_666
+Ca1 Li Li 65.13(18) 1_565 8_666
+Si Li Li 56.01(8) 1_655 8_666
+Si Li Li 133.0(2) . 8_666
+Si Li Li 54.49(17) 8_666 8_666
+Si Li Li 112.6(2) 1_545 8_666
+Ca1 Li Li 50.10(10) . 8_666
+Ca1 Li Li 119.3(2) 1_455 8_666
+O4 Si O3 115.01(11) 8_566 1_455
+O4 Si O2 110.03(12) 8_566 1_565
+O3 Si O2 112.10(11) 1_455 1_565
+O4 Si O1 105.51(11) 8_566 .
+O3 Si O1 109.47(12) 1_455 .
+O2 Si O1 103.92(8) 1_565 .
+O4 Si Li 80.30(13) 8_566 1_455
+O3 Si Li 36.99(13) 1_455 1_455
+O2 Si Li 140.88(12) 1_565 1_455
+O1 Si Li 109.43(11) . 1_455
+O4 Si Li 37.42(12) 8_566 .
+O3 Si Li 152.10(13) 1_455 .
+O2 Si Li 88.22(13) 1_565 .
+O1 Si Li 82.22(13) . .
+Li Si Li 115.68(17) 1_455 .
+O4 Si Li 41.27(12) 8_566 8_566
+O3 Si Li 89.72(12) 1_455 8_566
+O2 Si Li 92.84(12) 1_565 8_566
+O1 Si Li 146.75(13) . 8_566
+Li Si Li 69.86(12) 1_455 8_566
+Li Si Li 69.63(12) . 8_566
+O4 Si Ca2 109.53(8) 8_566 1_565
+O3 Si Ca2 135.42(8) 1_455 1_565
+O2 Si Ca2 47.31(7) 1_565 1_565
+O1 Si Ca2 58.06(3) . 1_565
+Li Si Ca2 165.29(10) 1_455 1_565
+Li Si Ca2 72.40(10) . 1_565
+Li Si Ca2 124.78(10) 8_566 1_565
+O4 Si Li 120.17(13) 8_566 1_565
+O3 Si Li 83.87(13) 1_455 1_565
+O2 Si Li 28.88(12) 1_565 1_565
+O1 Si Li 121.18(11) . 1_565
+Li Si Li 112.84(16) 1_455 1_565
+Li Si Li 112.34(17) . 1_565
+Li Si Li 86.76(14) 8_566 1_565
+Ca2 Si Li 72.36(9) 1_565 1_565
+O4 Si Ca1 67.51(8) 8_566 1_565
+O3 Si Ca1 132.01(8) 1_455 1_565
+O2 Si Ca1 42.52(7) 1_565 1_565
+O1 Si Ca1 115.79(8) . 1_565
+Li Si Ca1 129.61(10) 1_455 1_565
+Li Si Ca1 53.25(10) . 1_565
+Li Si Ca1 60.26(10) 8_566 1_565
+Ca2 Si Ca1 65.085(17) 1_565 1_565
+Li Si Ca1 59.83(10) 1_565 1_565
+O4 Si Ca2 72.44(8) 8_566 1_455
+O3 Si Ca2 92.48(9) 1_455 1_455
+O2 Si Ca2 149.52(8) 1_565 1_455
+O1 Si Ca2 48.75(3) . 1_455
+Li Si Ca2 69.38(10) 1_455 1_455
+Li Si Ca2 76.09(10) . 1_455
+Li Si Ca2 105.49(10) 8_566 1_455
+Ca2 Si Ca2 102.49(2) 1_565 1_455
+Li Si Ca2 167.24(10) 1_565 1_455
+Ca1 Si Ca2 129.34(3) 1_565 1_455
+O4 Si Ca2 148.09(8) 8_566 1_465
+O3 Si Ca2 34.27(7) 1_455 1_465
+O2 Si Ca2 95.25(8) 1_565 1_465
+O1 Si Ca2 86.08(9) . 1_465
+Li Si Ca2 67.79(10) 1_455 1_465
+Li Si Ca2 168.28(10) . 1_465
+Li Si Ca2 121.22(10) 8_566 1_465
+Ca2 Si Ca2 101.86(2) 1_565 1_465
+Li Si Ca2 74.47(10) 1_565 1_465
+Ca1 Si Ca2 134.30(2) 1_565 1_465
+Ca2 Si Ca2 95.665(19) 1_455 1_465
+Si O1 Si 134.29(18) . 7_665
+Si O1 Ca2 102.48(3) . 1_455
+Si O1 Ca2 89.03(3) 7_665 1_455
+Si O1 Ca2 89.03(3) . 1_565
+Si O1 Ca2 102.48(3) 7_665 1_565
+Ca2 O1 Ca2 150.28(12) 1_455 1_565
+Si O2 Li 126.4(2) 1_545 .
+Si O2 Ca2 102.00(10) 1_545 .
+Li O2 Ca2 121.46(18) . .
+Si O2 Ca1 109.86(11) 1_545 .
+Li O2 Ca1 97.48(18) . .
+Ca2 O2 Ca1 94.28(8) . .
+Si O3 Li 113.49(19) 1_655 .
+Si O3 Ca2 122.54(11) 1_655 1_565
+Li O3 Ca2 115.43(18) . 1_565
+Si O3 Ca1 121.66(11) 1_655 1_565
+Li O3 Ca1 80.72(16) . 1_565
+Ca2 O3 Ca1 94.45(7) 1_565 1_565
+Si O4 Li 113.34(18) 8_666 8_666
+Si O4 Li 109.11(18) 8_666 .
+Li O4 Li 114.1(2) 8_666 .
+Si O4 Ca1 135.74(12) 8_666 1_565
+Li O4 Ca1 102.35(17) 8_666 1_565
+Li O4 Ca1 76.91(15) . 1_565
+Si O4 Ca1 83.47(9) 8_666 .
+Li O4 Ca1 64.32(15) 8_666 .
+Li O4 Ca1 73.50(15) . .
+Ca1 O4 Ca1 137.38(8) 1_565 .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Ca1 O2 2.363(2) 8_556
+Ca1 O2 2.363(2) .
+Ca1 O3 2.385(2) 8_666
+Ca1 O3 2.385(2) 1_545
+Ca1 O4 2.406(2) 1_545
+Ca1 O4 2.406(2) 8_666
+Ca2 O3 2.3056(19) 1_545
+Ca2 O3 2.3056(19) 7_765
+Ca2 O2 2.334(2) .
+Ca2 O2 2.334(2) 7_665
+Ca2 O1 2.6362(7) 1_545
+Ca2 O1 2.6362(7) 1_655
+Li O2 1.868(5) .
+Li O3 1.969(5) .
+Li O4 1.998(5) 8_566
+Li O4 2.143(6) .
+Si O4 1.606(2) 8_566
+Si O3 1.612(2) 1_455
+Si O2 1.621(2) 1_565
+Si O1 1.6878(13) .
+O1 Si 1.6878(13) 7_665
+O1 Ca2 2.6362(7) 1_455
+O1 Ca2 2.6362(7) 1_565
+O2 Si 1.621(2) 1_545
+O3 Si 1.612(2) 1_655
+O3 Ca2 2.3056(19) 1_565
+O3 Ca1 2.385(2) 1_565
+O4 Si 1.606(2) 8_666
+O4 Li 1.998(5) 8_666
+O4 Ca1 2.406(2) 1_565

@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Ti1Po0.5Ge0.66666667C0.16666667Fl0.16666667Se0.5O2
+_symmetry_space_group_name_H-M  'P 4 m m'
+_cell_length_a   3.89500000
+_cell_length_b   3.89500000
+_cell_length_c   4.17100000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   99
+_chemical_formula_structural
+Ti1Po0.5Ge0.66666667C0.16666667Fl0.16666667Se0.5O2
+_chemical_formula_sum
+'Ti1 Po0.5 Ge0.66666667 C0.16666667 Fl0.16666667 Se0.5 O2'
+_cell_volume   63.27834528
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z'
+  3  '-x, -y, z'
+  4  'y, -x, z'
+  5  '-x, y, z'
+  6  'y, x, z'
+  7  'x, -y, z'
+  8  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ti  Ti0  1  0.50000000  0.50000000  0.54000000  1
+  Ge+  Ge1  1  0.00000000  0.00000000  0.00000000
+  0.6666666666666666
+  C+  C2  1  0.00000000  0.00000000  0.00000000  0.16666666666666666
+  Fl+  Fl3  1  0.00000000  0.00000000  0.00000000
+  0.16666666666666666
+  Se+  Se4  1  0.50000000  0.50000000  0.11800000  0.5
+  Po+  Po5  1  0.50000000  0.50000000  0.11800000  0.5
+  O  O6  2  0.00000000  0.50000000  0.62100000  1

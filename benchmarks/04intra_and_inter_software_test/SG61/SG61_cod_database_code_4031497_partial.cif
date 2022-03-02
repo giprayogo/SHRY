@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Te5.5S18.5N16Cl8
+_symmetry_space_group_name_H-M  'P b c a'
+_cell_length_a   7.88000000
+_cell_length_b   14.46000000
+_cell_length_c   8.19000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   61
+_chemical_formula_structural   Te5.5S18.5N16Cl8
+_chemical_formula_sum   'Te5.5 S18.5 N16 Cl8'
+_cell_volume   933.20791200
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z'
+  6  '-x+1/2, y+1/2, z'
+  7  '-x, y+1/2, -z+1/2'
+  8  'x, -y+1/2, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Te0+  0.0
+  S0+  0.0
+  N0+  0.0
+  Cl0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Te0+  Te0  8  0.17390000  0.07840000  0.51930000  0.6875
+  S0+  S1  8  0.17390000  0.07840000  0.51930000  0.3125
+  S0+  S2  8  0.01360000  0.72230000  0.10500000  1.0
+  S0+  S3  8  0.04990000  0.04360000  0.29640000  1.0
+  N0+  N4  8  0.03980000  0.64460000  0.23430000  1.0
+  N0+  N5  8  0.11040000  0.18480000  0.52840000  1.0
+  Cl0+  Cl6  8  0.23050000  0.10030000  0.90220000  1.0

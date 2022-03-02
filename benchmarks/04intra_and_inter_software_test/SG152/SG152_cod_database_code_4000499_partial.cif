@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Na3Ce2TmPo3H6Se4O25Lv
+_symmetry_space_group_name_H-M  'P 31 2 1'
+_cell_length_a   7.05380000
+_cell_length_b   7.05380000
+_cell_length_c   12.96250000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   152
+_chemical_formula_structural   Na3Ce2TmPo3H6Se4O25Lv
+_chemical_formula_sum   'Na3 Ce2 Tm1 Po3 H6 Se4.0 O25 Lv1'
+_cell_volume   558.55466655
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z+1/3'
+  3  '-x+y, -x, z+2/3'
+  4  'y, x, -z'
+  5  'x-y, -y, -z+2/3'
+  6  '-x, -x+y, -z+1/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  3  0.00000000  0.47000000  0.16670000  1.0
+  Ce+  Ce1  3  0.00000000  0.43265000  0.66666667
+  0.6666666666666666
+  Tm+  Tm2  3  0.00000000  0.43265000  0.66666667
+  0.3333333333333333
+  H  H3  6  0.04900000  0.93000000  0.05600000  1.0
+  Se+  Se4  6  0.01260000  0.45260000  0.91334667
+  0.6666666666666666
+  Po+  Po5  6  0.01260000  0.45260000  0.91334667
+  0.3333333333333333
+  O  O6  6  0.11790000  0.61540000  0.34703333  1.0
+  O  O7  6  0.12970000  0.38910000  0.48506667  1.0
+  O  O8  6  0.13260000  0.63700000  0.84096667  1.0
+  O  O9  6  0.16370000  0.40900000  0.97380000  1.0
+  Po+  Po10  3  0.00000000  0.06980000  0.66666667
+  0.3333333333333333
+  O+  O11  3  0.00000000  0.06980000  0.66666667  0.3333333333333333
+  Lv+  Lv12  3  0.00000000  0.06980000  0.66666667
+  0.3333333333333333

@@ -1,0 +1,281 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-23 20:41:30 +0200 (Wed, 23 Mar 2016) $
+#$Revision: 179419 $
+#$URL: svn://www.crystallography.net/cod/cif/4/33/16/4331672.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4331672
+loop_
+_publ_author_name
+'Zhong-Zhen Luo'
+'Chen-Sheng Lin'
+'Wen-Dan Cheng'
+'Hao Zhang'
+'Wei-Long Zhang'
+'Zhang-Zhen He'
+_publ_section_title
+;
+ Syntheses, Characterization, and Optical Properties of Ternary Ba-Sn-S
+ System Compounds: Acentric Ba7Sn5S15, Centric BaSn2S5, and Centric
+ Ba6Sn7S20
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              273
+_journal_page_last               279
+_journal_paper_doi               10.1021/ic301804n
+_journal_volume                  52
+_journal_year                    2013
+_chemical_formula_sum            'Ba S5 Sn2'
+_chemical_formula_weight         535.10
+_chemical_name_systematic
+; 
+ ? 
+;
+_space_group_IT_number           56
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  '-P 2ab 2ac'
+_symmetry_space_group_name_H-M   'P c c n'
+_atom_sites_solution_hydrogens   none
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_creation_method           SHELXL-97
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   6.674(3)
+_cell_length_b                   10.607(5)
+_cell_length_c                   11.394(5)
+_cell_measurement_reflns_used    2600
+_cell_measurement_temperature    293(2)
+_cell_measurement_theta_max      27.4546
+_cell_measurement_theta_min      2.6226
+_cell_volume                     806.6(6)
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SHELXS-97 (Sheldrick, 1990)'
+_diffrn_ambient_temperature      293(2)
+_diffrn_detector_area_resol_mean 28.5714
+_diffrn_measured_fraction_theta_full 0.987
+_diffrn_measured_fraction_theta_max 0.987
+_diffrn_measurement_device_type  Saturn724+
+_diffrn_measurement_method       CCD_Profile_fitting
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_source         'fine-focus sealed tube'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0383
+_diffrn_reflns_av_sigmaI/netI    0.0256
+_diffrn_reflns_limit_h_max       8
+_diffrn_reflns_limit_h_min       -8
+_diffrn_reflns_limit_k_max       13
+_diffrn_reflns_limit_k_min       -13
+_diffrn_reflns_limit_l_max       14
+_diffrn_reflns_limit_l_min       -8
+_diffrn_reflns_number            6172
+_diffrn_reflns_theta_full        27.44
+_diffrn_reflns_theta_max         27.44
+_diffrn_reflns_theta_min         3.58
+_diffrn_standards_number         1102
+_exptl_absorpt_coefficient_mu    12.165
+_exptl_absorpt_correction_T_max  0.161
+_exptl_absorpt_correction_T_min  0.129
+_exptl_absorpt_correction_type   multi-scan
+_exptl_crystal_colour            yellow
+_exptl_crystal_density_diffrn    4.407
+_exptl_crystal_description       Prism
+_exptl_crystal_F_000             944.0
+_exptl_crystal_size_max          0.18
+_exptl_crystal_size_mid          0.16
+_exptl_crystal_size_min          0.15
+_refine_diff_density_max         1.475
+_refine_diff_density_min         -1.632
+_refine_diff_density_rms         0.444
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.044
+_refine_ls_hydrogen_treatment    none
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     38
+_refine_ls_number_reflns         916
+_refine_ls_number_restraints     0
+_refine_ls_restrained_S_all      1.044
+_refine_ls_R_factor_all          0.0305
+_refine_ls_R_factor_gt           0.0238
+_refine_ls_shift/su_max          0.001
+_refine_ls_shift/su_mean         0.000
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.1000P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0893
+_refine_ls_wR_factor_ref         0.1355
+_reflns_number_gt                815
+_reflns_number_total             928
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            ic301804n_si_002_2.cif
+_cod_data_source_block           compd2
+_cod_database_code               4331672
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x+1/2, -y+1/2, z'
+'-x, y+1/2, -z+1/2'
+'x+1/2, -y, -z+1/2'
+'-x, -y, -z'
+'x-1/2, y-1/2, -z'
+'x, -y-1/2, z-1/2'
+'-x-1/2, y, z-1/2'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+Ba1 Ba 0.2500 0.2500 0.30200(6) 0.0157(3) Uani 1 2 d S
+Sn1 Sn 0.24653(5) -0.05958(4) 0.02717(5) 0.0119(3) Uani 1 1 d .
+S1 S 0.0702(2) 0.36510(14) 0.06508(14) 0.0152(4) Uani 1 1 d .
+S2 S 0.0501(2) 0.52920(14) 0.35077(13) 0.0139(4) Uani 1 1 d .
+S3 S -0.2500 0.2500 0.3455(2) 0.0124(6) Uani 1 2 d S
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Ba1 0.0171(5) 0.0148(4) 0.0152(4) 0.000 0.000 0.00303(16)
+Sn1 0.0103(4) 0.0098(4) 0.0157(4) 0.00159(18) 0.00045(13) 0.00050(13)
+S1 0.0114(8) 0.0138(7) 0.0205(8) 0.0030(6) -0.0041(6) -0.0007(5)
+S2 0.0130(8) 0.0140(7) 0.0147(8) 0.0001(6) 0.0007(6) -0.0015(5)
+S3 0.0149(12) 0.0076(10) 0.0147(14) 0.000 0.000 0.0001(6)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+S S 0.1246 0.1234 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Sn Sn -0.6537 1.4246 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Sb Sb -0.5866 1.5461 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ba Ba -0.3244 2.2819 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+S1 Ba1 S1 64.76(6) . 2
+S1 Ba1 S2 69.34(4) . .
+S1 Ba1 S2 129.62(4) 2 .
+S1 Ba1 S2 129.62(4) . 2
+S1 Ba1 S2 69.34(4) 2 2
+S2 Ba1 S2 160.58(6) . 2
+S1 Ba1 S3 119.70(5) . 1_655
+S1 Ba1 S3 75.68(5) 2 1_655
+S2 Ba1 S3 112.06(3) . 1_655
+S2 Ba1 S3 64.84(3) 2 1_655
+S1 Ba1 S3 75.68(5) . .
+S1 Ba1 S3 119.70(5) 2 .
+S2 Ba1 S3 64.84(3) . .
+S2 Ba1 S3 112.06(3) 2 .
+S3 Ba1 S3 163.10(10) 1_655 .
+S1 Ba1 S1 136.78(5) . 8_656
+S1 Ba1 S1 137.55(5) 2 8_656
+S2 Ba1 S1 71.12(4) . 8_656
+S2 Ba1 S1 91.76(4) 2 8_656
+S3 Ba1 S1 61.87(5) 1_655 8_656
+S3 Ba1 S1 102.49(5) . 8_656
+S1 Ba1 S1 137.55(5) . 7_566
+S1 Ba1 S1 136.78(5) 2 7_566
+S2 Ba1 S1 91.76(4) . 7_566
+S2 Ba1 S1 71.12(4) 2 7_566
+S3 Ba1 S1 102.49(5) 1_655 7_566
+S3 Ba1 S1 61.87(5) . 7_566
+S1 Ba1 S1 59.46(6) 8_656 7_566
+S1 Ba1 S2 67.97(5) . 3_545
+S1 Ba1 S2 62.90(4) 2 3_545
+S2 Ba1 S2 116.65(3) . 3_545
+S2 Ba1 S2 73.58(4) 2 3_545
+S3 Ba1 S2 129.20(4) 1_655 3_545
+S3 Ba1 S2 60.82(4) . 3_545
+S1 Ba1 S2 149.07(4) 8_656 3_545
+S1 Ba1 S2 89.79(4) 7_566 3_545
+S1 Ba1 S2 62.90(4) . 4_565
+S1 Ba1 S2 67.97(5) 2 4_565
+S2 Ba1 S2 73.58(4) . 4_565
+S2 Ba1 S2 116.65(3) 2 4_565
+S3 Ba1 S2 60.82(4) 1_655 4_565
+S3 Ba1 S2 129.20(4) . 4_565
+S1 Ba1 S2 89.79(4) 8_656 4_565
+S1 Ba1 S2 149.07(4) 7_566 4_565
+S2 Ba1 S2 121.08(6) 3_545 4_565
+S2 Sn1 S1 107.83(6) 7_565 2
+S2 Sn1 S3 126.69(6) 7_565 3_545
+S1 Sn1 S3 125.41(6) 2 3_545
+S2 Sn1 S1 99.17(6) 7_565 6_655
+S1 Sn1 S1 84.98(6) 2 6_655
+S3 Sn1 S1 88.74(5) 3_545 6_655
+S2 Sn1 S2 89.06(6) 7_565 3_545
+S1 Sn1 S2 88.90(6) 2 3_545
+S3 Sn1 S2 89.38(6) 3_545 3_545
+S1 Sn1 S2 170.94(5) 6_655 3_545
+Sn1 S1 Sn1 95.02(6) 2 6_565
+Sn1 S1 Ba1 106.53(5) 2 .
+Sn1 S1 Ba1 142.32(6) 6_565 .
+Sn1 S1 Ba1 88.34(5) 2 7_565
+Sn1 S1 Ba1 92.73(5) 6_565 7_565
+Ba1 S1 Ba1 117.89(5) . 7_565
+Sn1 S2 Sn1 90.94(6) 7_566 3
+Sn1 S2 Ba1 92.32(5) 7_566 .
+Sn1 S2 Ba1 94.19(5) 3 .
+Sn1 S2 Ba1 128.80(6) 7_566 3
+Sn1 S2 Ba1 94.12(5) 3 3
+Ba1 S2 Ba1 137.80(5) . 3
+Sn1 S3 Sn1 108.63(12) 3 4_455
+Sn1 S3 Ba1 95.45(2) 3 1_455
+Sn1 S3 Ba1 94.39(2) 4_455 1_455
+Sn1 S3 Ba1 94.39(2) 3 .
+Sn1 S3 Ba1 95.45(2) 4_455 .
+Ba1 S3 Ba1 163.10(10) 1_455 .
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Ba1 S1 3.1964(19) .
+Ba1 S1 3.1964(19) 2
+Ba1 S2 3.2952(19) .
+Ba1 S2 3.2952(19) 2
+Ba1 S3 3.3735(16) 1_655
+Ba1 S3 3.3735(16) .
+Ba1 S1 3.452(2) 8_656
+Ba1 S1 3.452(2) 7_566
+Ba1 S2 3.5393(18) 3_545
+Ba1 S2 3.5393(18) 4_565
+Sn1 S2 2.4210(18) 7_565
+Sn1 S1 2.4368(17) 2
+Sn1 S3 2.4869(19) 3_545
+Sn1 S1 2.5316(17) 6_655
+Sn1 S2 2.5962(17) 3_545
+S1 Sn1 2.4368(17) 2
+S1 Sn1 2.5316(17) 6_565
+S1 Ba1 3.452(2) 7_565
+S2 Sn1 2.4210(18) 7_566
+S2 Sn1 2.5962(17) 3
+S2 Ba1 3.5393(18) 3
+S3 Sn1 2.4868(19) 3
+S3 Sn1 2.4868(19) 4_455
+S3 Ba1 3.3735(16) 1_455

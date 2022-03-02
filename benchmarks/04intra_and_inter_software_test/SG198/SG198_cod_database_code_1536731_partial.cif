@@ -1,0 +1,58 @@
+# generated using pymatgen
+data_Na8CrPo8Mo3Se4O13Lv3
+_symmetry_space_group_name_H-M  'P 21 3'
+_cell_length_a   8.37500000
+_cell_length_b   8.37500000
+_cell_length_c   8.37500000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   198
+_chemical_formula_structural   Na8CrPo8Mo3Se4O13Lv3
+_chemical_formula_sum   'Na8 Cr1 Po8 Mo3 Se4 O13 Lv3'
+_cell_volume   587.42773438
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+1/2, -y, z+1/2'
+  3  'x+1/2, -y+1/2, -z'
+  4  '-x, y+1/2, -z+1/2'
+  5  'z, x, y'
+  6  'z+1/2, -x+1/2, -y'
+  7  '-z, x+1/2, -y+1/2'
+  8  '-z+1/2, -x, y+1/2'
+  9  'y, z, x'
+  10  '-y, z+1/2, -x+1/2'
+  11  '-y+1/2, -z, x+1/2'
+  12  'y+1/2, -z+1/2, -x'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Na0+  0.0
+  Cr0+  0.0
+  Po0+  0.0
+  Mo0+  0.0
+  Se0+  0.0
+  O0+  0.0
+  Lv0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na0+  Na0  4  0.03200000  0.53200000  0.96800000  1.0
+  Na0+  Na1  4  0.24990000  0.74990000  0.75010000  1.0
+  Mo0+  Mo2  4  0.00730000  0.00730000  0.00730000  0.75
+  Cr0+  Cr3  4  0.00730000  0.00730000  0.00730000  0.25
+  Se0+  Se4  4  0.17270000  0.82730000  0.32730000  1.0
+  O0+  O5  12  0.00240000  0.25530000  0.09840000  1.0
+  Po0+  Po6  12  0.01470000  0.57590000  0.68940000
+  0.6666666666666666
+  O0+  O7  12  0.01470000  0.57590000  0.68940000
+  0.08333333333333333
+  Lv0+  Lv8  12  0.01470000  0.57590000  0.68940000  0.25

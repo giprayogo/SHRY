@@ -1,0 +1,62 @@
+#------------------------------------------------------------------------------
+#$Date: 2014-07-12 11:06:43 +0300 (Sat, 12 Jul 2014) $
+#$Revision: 120115 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/98/9009853.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009853
+loop_
+_publ_author_name
+'Heyding, R. D.'
+'Murray, R. M.'
+_publ_section_title
+;Crystal structures of Cu1.8Se, Cu3Se2, alpha- and gamma-CuSe, CuSe2, and
+ CuSe2II Note: low-pressure polymorph, marcasite structure
+;
+_journal_name_full               'Canadian Journal of Chemistry'
+_journal_page_first              841
+_journal_page_last               848
+_journal_volume                  54
+_journal_year                    1976
+_chemical_formula_structural     CuSe2
+_chemical_formula_sum            'Cu Se2'
+_space_group_IT_number           58
+_symmetry_space_group_name_Hall  '-P 2 2n'
+_symmetry_space_group_name_H-M   'P n n m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   5.005
+_cell_length_b                   6.182
+_cell_length_c                   3.740
+_cell_volume                     115.719
+_exptl_crystal_density_diffrn    6.356
+_cod_database_code               9009853
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+x,1/2-y,1/2+z
+1/2-x,1/2+y,1/2-z
+1/2-x,1/2+y,1/2+z
+1/2+x,1/2-y,1/2-z
+x,y,-z
+-x,-y,z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Cu 0.00000 0.00000 0.00000 0.03926
+Se 0.18400 0.38500 0.00000 0.02026
+_journal_paper_doi 10.1139/v76-122

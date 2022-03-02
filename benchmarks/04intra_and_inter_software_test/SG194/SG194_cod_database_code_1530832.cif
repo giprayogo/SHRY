@@ -1,0 +1,85 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-09-12 18:09:16 +0300 (Sat, 12 Sep 2015) $
+#$Revision: 156047 $
+#$URL: svn://www.crystallography.net/cod/cif/1/53/08/1530832.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1530832
+loop_
+_publ_author_name
+'Stranger, R.'
+'Grey, I.E.'
+'Madsen, I.C.'
+'Smith, P.W.'
+_publ_section_title
+;
+ Structure systematics in A3 Mo X9, X=Cl, Br, I, from Rietveld refinement
+ of X-ray powder data
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              162
+_journal_page_last               170
+_journal_volume                  69
+_journal_year                    1987
+_chemical_formula_sum            'Cs3 I9 Mo2'
+_chemical_name_systematic        'Cs3 Mo2 I9'
+_space_group_IT_number           194
+_symmetry_space_group_name_Hall  '-P 6c 2c'
+_symmetry_space_group_name_H-M   'P 63/m m c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            2
+_cell_length_a                   8.137
+_cell_length_b                   8.137
+_cell_length_c                   19.619
+_cell_volume                     1124.958
+_citation_journal_id_ASTM        JSSCBI
+_cod_data_source_file            Stranger_JSSCBI_1987_1424.cif
+_cod_data_source_block           Cs3I9Mo2
+_cod_database_code               1530832
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x-y,x,z+1/2
+-y,x-y,z
+-x,-y,z+1/2
+-x+y,-x,z
+y,-x+y,z+1/2
+-y,-x,-z+1/2
+x-y,-y,-z
+x,x-y,-z+1/2
+y,x,-z
+-x+y,y,-z+1/2
+-x,-x+y,-z
+-x,-y,-z
+-x+y,-x,-z-1/2
+y,-x+y,-z
+x,y,-z-1/2
+x-y,x,-z
+-y,x-y,-z-1/2
+y,x,z-1/2
+-x+y,y,z
+-x,-x+y,z-1/2
+-y,-x,z
+x-y,-y,z-1/2
+x,x-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Cs1 Cs+1 0 0 0.25 1 0.0
+Mo1 Mo+3 0.3333 0.6667 0.8283 1 0.0
+I2 I-1 0.8296 0.6592 0.0924 1 0.0
+I1 I-1 0.5053 0.0106 0.25 1 0.0
+Cs2 Cs+1 0.3333 0.6667 0.0767 1 0.0

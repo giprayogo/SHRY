@@ -1,0 +1,114 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/7/22/10/7221068.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7221068
+loop_
+_publ_author_name
+'Marosi, L.'
+'Otero Arean, C.'
+'Escalona Platero, E.'
+'Cifre, J.'
+_publ_section_title
+;
+ Thermal dehydration of H3+x P Vx M12-x O40 . y(H2 O) Keggin type
+ heteropolyacids; formation, thermal stability and structure of the
+ anhydrous acids H3 P M12 O40, of the corresponding anhydrides P M12 O38.5
+ and of a novel trihydrate H3 P W12 O40
+;
+_journal_name_full               'Journal of Materials Chemistry'
+_journal_page_first              1949
+_journal_page_last               1955
+_journal_volume                  10
+_journal_year                    2000
+_chemical_formula_sum            'H9 O43 P W12'
+_chemical_name_systematic        'H3 (P W12 O40) (H2 O)3'
+_space_group_IT_number           224
+_symmetry_space_group_name_Hall  '-P 4bc 2bc 3'
+_symmetry_space_group_name_H-M   'P n -3 m :2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   11.75
+_cell_length_b                   11.75
+_cell_length_c                   11.75
+_cell_volume                     1622.234
+_citation_journal_id_ASTM        JMACEP
+_cod_data_source_file            Marosi_JMACEP_2000_1546.cif
+_cod_data_source_block           H9O43P1W12
+_cod_original_formula_sum        'H9 O43 P1 W12'
+_cod_database_code               7221068
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y,x+1/2,z+1/2
+-x+1/2,-y+1/2,z
+y+1/2,-x,z+1/2
+x,-y+1/2,-z+1/2
+y+1/2,x+1/2,-z
+-x+1/2,y,-z+1/2
+-y,-x,-z
+z,x,y
+-x,z+1/2,y+1/2
+-z+1/2,-x+1/2,y
+x+1/2,-z,y+1/2
+z,-x+1/2,-y+1/2
+x+1/2,z+1/2,-y
+-z+1/2,x,-y+1/2
+-x,-z,-y
+y,z,x
+y,-z+1/2,-x+1/2
+z+1/2,y+1/2,-x
+-y+1/2,z,-x+1/2
+-z,-y,-x
+-y+1/2,-z+1/2,x
+z+1/2,-y,x+1/2
+-z,y+1/2,x+1/2
+-x,-y,-z
+y,-x-1/2,-z-1/2
+x-1/2,y-1/2,-z
+-y-1/2,x,-z-1/2
+-x,y-1/2,z-1/2
+-y-1/2,-x-1/2,z
+x-1/2,-y,z-1/2
+y,x,z
+-z,-x,-y
+x,-z-1/2,-y-1/2
+z-1/2,x-1/2,-y
+-x-1/2,z,-y-1/2
+-z,x-1/2,y-1/2
+-x-1/2,-z-1/2,y
+z-1/2,-x,y-1/2
+x,z,y
+-y,-z,-x
+-y,z-1/2,x-1/2
+-z-1/2,-y-1/2,x
+y-1/2,-z,x-1/2
+z,y,x
+y-1/2,z-1/2,-x
+-z-1/2,y,-x-1/2
+z,-y-1/2,-x-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+P1 P+5 0.75 0.75 0.75 1 0.0
+W1 W+6 0.7579 0.9636 0.9636 1 0.0
+O2 O-2 0.6463 0.8537 0.0133 1 0.0
+O1 O-2 0.8226 0.8226 0.8226 1 0.0
+O5 O-2 0.75 0.25 0.25 1 0.0
+O3 O-2 0.8687 0.8687 0.0462 1 0.0
+O4 O-2 0.7412 0.0629 0.0629 1 0.0

@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_Fr0.5K1.5Na1.5Li0.5Al4F16
+_symmetry_space_group_name_H-M  'C m c m'
+_cell_length_a   3.61240000
+_cell_length_b   14.94690000
+_cell_length_c   5.26170000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   63
+_chemical_formula_structural   Fr0.5K1.5Na1.5Li0.5Al4F16
+_chemical_formula_sum   'Fr0.5 K1.5 Na1.5 Li0.5 Al4 F16'
+_cell_volume   284.10118511
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z+1/2'
+  4  'x, y, -z+1/2'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z+1/2'
+  8  'x, -y, z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'x+1/2, y+1/2, -z+1/2'
+  13  'x+1/2, -y+1/2, -z'
+  14  '-x+1/2, y+1/2, z'
+  15  '-x+1/2, y+1/2, -z+1/2'
+  16  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K+  K0  4  0.00000000  0.19170000  0.75000000  0.375
+  Na+  Na1  4  0.00000000  0.19170000  0.75000000  0.375
+  Li+  Li2  4  0.00000000  0.19170000  0.75000000  0.125
+  Fr+  Fr3  4  0.00000000  0.19170000  0.75000000  0.125
+  Al  Al4  4  0.00000000  0.41640000  0.75000000  1.0
+  F  F5  8  0.00000000  0.33090000  0.51150000  1.0
+  F  F6  4  0.00000000  0.08200000  0.25000000  1.0
+  F  F7  4  0.00000000  0.50000000  0.00000000  1.0

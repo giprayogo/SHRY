@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Rb2C2SeLvO2
+_symmetry_space_group_name_H-M  'P b a m'
+_cell_length_a   11.28797000
+_cell_length_b   6.29475000
+_cell_length_c   3.62210200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   55
+_chemical_formula_structural   Rb2C2SeLvO2
+_chemical_formula_sum   'Rb4 C4 Se2 Lv2 O4'
+_cell_volume   257.36827345
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  '-x+1/2, y+1/2, -z'
+  6  'x+1/2, -y+1/2, z'
+  7  'x+1/2, -y+1/2, -z'
+  8  '-x+1/2, y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  4  0.15280000  0.09303000  0.50000000  1.0
+  C  C1  4  0.05978000  0.56320000  0.00000000  1.0
+  Se+  Se2  4  0.04832000  0.75840000  0.00000000  0.5
+  Lv+  Lv3  4  0.04832000  0.75840000  0.00000000  0.5
+  O  O4  4  0.15137000  0.47059000  0.00000000  1.0

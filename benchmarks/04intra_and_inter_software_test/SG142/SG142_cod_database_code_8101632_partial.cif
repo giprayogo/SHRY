@@ -1,0 +1,62 @@
+# generated using pymatgen
+data_Fr3Cs17(Sn8H3)4
+_symmetry_space_group_name_H-M  'I 41/a c d :2'
+_cell_length_a   12.12200000
+_cell_length_b   12.12200000
+_cell_length_c   19.82000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   142
+_chemical_formula_structural   Fr3Cs17(Sn8H3)4
+_chemical_formula_sum   'Fr3 Cs17 Sn32 H12'
+_cell_volume   2912.40796088
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/4, x+3/4, z+1/4'
+  3  '-x, -y+1/2, z'
+  4  'y+3/4, -x+3/4, z+1/4'
+  5  'x+1/2, -y+1/2, -z'
+  6  '-y+1/4, -x+1/4, -z+1/4'
+  7  '-x+1/2, y, -z'
+  8  'y+3/4, x+1/4, -z+1/4'
+  9  '-x, -y, -z'
+  10  'y+1/4, -x+3/4, -z+1/4'
+  11  'x, y+1/2, -z'
+  12  '-y+3/4, x+3/4, -z+1/4'
+  13  '-x+1/2, y+1/2, z'
+  14  'y+1/4, x+1/4, z+1/4'
+  15  'x+1/2, -y, z'
+  16  '-y+3/4, -x+1/4, z+1/4'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-y+3/4, x+1/4, z+3/4'
+  19  '-x+1/2, -y, z+1/2'
+  20  'y+1/4, -x+1/4, z+3/4'
+  21  'x, -y, -z+1/2'
+  22  '-y+3/4, -x+3/4, -z+3/4'
+  23  '-x, y+1/2, -z+1/2'
+  24  'y+1/4, x+3/4, -z+3/4'
+  25  '-x+1/2, -y+1/2, -z+1/2'
+  26  'y+3/4, -x+1/4, -z+3/4'
+  27  'x+1/2, y, -z+1/2'
+  28  '-y+1/4, x+1/4, -z+3/4'
+  29  '-x, y, z+1/2'
+  30  'y+3/4, x+3/4, z+3/4'
+  31  'x, -y+1/2, z+1/2'
+  32  '-y+1/4, -x+3/4, z+3/4'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  16  0.14430000  0.00000000  0.75000000  1.0
+  H+  H1  16  0.11840000  0.63160000  0.87500000  0.75
+  Fr+  Fr2  16  0.11840000  0.63160000  0.87500000  0.1875
+  Cs+  Cs3  16  0.11840000  0.63160000  0.87500000  0.0625
+  Sn  Sn4  32  0.06200000  0.14580000  0.92740000  1.0

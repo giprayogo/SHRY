@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Cu4Si2Sn14H32Pb0.5C40Fl1.5S0.5O17.5Lv2
-_symmetry_space_group_name_H-M   P4_2/mmc
+_symmetry_space_group_name_H-M  'P 42/m m c'
 _cell_length_a   12.37100000
 _cell_length_b   12.37100000
 _cell_length_c   24.06890000

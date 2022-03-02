@@ -1,0 +1,170 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-16 14:49:47 +0200 (Tue, 16 Feb 2016) $
+#$Revision: 176465 $
+#$URL: svn://www.crystallography.net/cod/cif/9/00/95/9009542.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009542
+loop_
+_publ_author_name
+'Malinovskii Yu, A.'
+'Baturin, S. V.'
+'Belov, N. V.'
+_publ_section_title
+;
+ The crystal structure of Fe-tychite
+;
+_journal_name_full               'Doklady Akademii Nauk SSSR'
+_journal_page_first              1365
+_journal_page_last               1368
+_journal_volume                  249
+_journal_year                    1979
+_chemical_formula_sum            'C4 Fe2 Na6 O16 S'
+_chemical_name_mineral           Ferrotychite
+_space_group_IT_number           203
+_symmetry_space_group_name_Hall  '-F 2uv 2vw 3'
+_symmetry_space_group_name_H-M   'F d -3 :2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   13.962
+_cell_length_b                   13.962
+_cell_length_c                   13.962
+_cell_volume                     2721.717
+_exptl_crystal_density_diffrn    2.859
+_cod_original_sg_symbol_H-M      'F d 3'
+_cod_original_formula_sum        'Na6 Fe2 S C4 O16'
+_cod_database_code               9009542
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x,1/2+y,1/2+z
+1/2+x,y,1/2+z
+1/2+x,1/2+y,z
+1/4+z,1/4+x,-y
+1/4+z,3/4+x,1/2-y
+3/4+z,1/4+x,1/2-y
+3/4+z,3/4+x,-y
+1/4+z,-x,1/4+y
+1/4+z,1/2-x,3/4+y
+3/4+z,-x,3/4+y
+3/4+z,1/2-x,1/4+y
+-z,1/4+x,1/4+y
+-z,3/4+x,3/4+y
+1/2-z,1/4+x,3/4+y
+1/2-z,3/4+x,1/4+y
+-z,-x,-y
+-z,1/2-x,1/2-y
+1/2-z,-x,1/2-y
+1/2-z,1/2-x,-y
+y,3/4-z,3/4-x
+y,1/4-z,1/4-x
+1/2+y,3/4-z,1/4-x
+1/2+y,1/4-z,3/4-x
+3/4-y,3/4-z,x
+3/4-y,1/4-z,1/2+x
+1/4-y,3/4-z,1/2+x
+1/4-y,1/4-z,x
+3/4-y,z,3/4-x
+3/4-y,1/2+z,1/4-x
+1/4-y,z,1/4-x
+1/4-y,1/2+z,3/4-x
+y,z,x
+y,1/2+z,1/2+x
+1/2+y,z,1/2+x
+1/2+y,1/2+z,x
+1/4+x,-y,1/4+z
+1/4+x,1/2-y,3/4+z
+3/4+x,-y,3/4+z
+3/4+x,1/2-y,1/4+z
+-x,1/4+y,1/4+z
+-x,3/4+y,3/4+z
+1/2-x,1/4+y,3/4+z
+1/2-x,3/4+y,1/4+z
+1/4+x,1/4+y,-z
+1/4+x,3/4+y,1/2-z
+3/4+x,1/4+y,1/2-z
+3/4+x,3/4+y,-z
+-x,-y,-z
+-x,1/2-y,1/2-z
+1/2-x,-y,1/2-z
+1/2-x,1/2-y,-z
+3/4-z,3/4-x,y
+3/4-z,1/4-x,1/2+y
+1/4-z,3/4-x,1/2+y
+1/4-z,1/4-x,y
+3/4-z,x,3/4-y
+3/4-z,1/2+x,1/4-y
+1/4-z,x,1/4-y
+1/4-z,1/2+x,3/4-y
+z,3/4-x,3/4-y
+z,1/4-x,1/4-y
+1/2+z,3/4-x,1/4-y
+1/2+z,1/4-x,3/4-y
+z,x,y
+z,1/2+x,1/2+y
+1/2+z,x,1/2+y
+1/2+z,1/2+x,y
+-y,1/4+z,1/4+x
+-y,3/4+z,3/4+x
+1/2-y,1/4+z,3/4+x
+1/2-y,3/4+z,1/4+x
+1/4+y,1/4+z,-x
+1/4+y,3/4+z,1/2-x
+3/4+y,1/4+z,1/2-x
+3/4+y,3/4+z,-x
+1/4+y,-z,1/4+x
+1/4+y,1/2-z,3/4+x
+3/4+y,-z,3/4+x
+3/4+y,1/2-z,1/4+x
+-y,-z,-x
+-y,1/2-z,1/2-x
+1/2-y,-z,1/2-x
+1/2-y,1/2-z,-x
+3/4-x,y,3/4-z
+3/4-x,1/2+y,1/4-z
+1/4-x,y,1/4-z
+1/4-x,1/2+y,3/4-z
+x,3/4-y,3/4-z
+x,1/4-y,1/4-z
+1/2+x,3/4-y,1/4-z
+1/2+x,1/4-y,3/4-z
+3/4-x,3/4-y,z
+3/4-x,1/4-y,1/2+z
+1/4-x,3/4-y,1/2+z
+1/4-x,1/4-y,z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Na 0.01216 0.02103 0.02216 0.00000 0.00000 0.00835
+Fe 0.00722 0.00722 0.00722 -0.00026 -0.00026 -0.00026
+S 0.01051 0.01051 0.01051 0.00000 0.00000 0.00000
+C 0.00835 0.00835 0.00835 0.00000 0.00000 0.00000
+O1 0.01786 0.01786 0.01786 -0.00329 -0.00329 -0.00329
+O2 0.01191 0.01570 0.00988 0.00000 0.00367 0.00215
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Na 0.90822 0.12500 0.12500 0.01798
+Fe 0.50000 0.50000 0.50000 0.00709
+S 0.12500 0.12500 0.12500 0.01077
+C 0.28077 0.28077 0.28077 0.00836
+O1 0.93631 0.93631 0.93631 0.01786
+O2 0.22233 0.26721 0.35078 0.01191

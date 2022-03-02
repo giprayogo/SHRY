@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Pr3Po0.66666667Ge3B3Se2.33333333O12
+_symmetry_space_group_name_H-M  'P 31'
+_cell_length_a   6.94360000
+_cell_length_b   6.94360000
+_cell_length_c   6.86880000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   144
+_chemical_formula_structural   Pr3Po0.66666667Ge3B3Se2.33333333O12
+_chemical_formula_sum   'Pr3 Po0.66666667 Ge3 B3 Se2.33333333 O12'
+_cell_volume   286.80115224
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z+1/3'
+  3  '-x+y, -x, z+2/3'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Pr0+  0.0
+  Po0+  0.0
+  Ge0+  0.0
+  B0+  0.0
+  Se0+  0.0
+  O0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr0+  Pr0  3  0.41220000  0.41210000  0.66666667  1.0
+  Ge0+  Ge1  3  0.00140000  0.57750000  0.83153333  1.0
+  B0+  B2  3  0.11070000  0.00480000  0.97570000  1.0
+  Se0+  Se3  3  0.16280000  0.55680000  0.65506667
+  0.7777777777777778
+  Po0+  Po4  3  0.16280000  0.55680000  0.65506667
+  0.2222222222222222
+  O0+  O5  3  0.05420000  0.04560000  0.78270000  1.0
+  O0+  O6  3  0.14690000  0.80810000  0.99086667  1.0
+  O0+  O7  3  0.34570000  0.19130000  0.02000000  1.0
+  O0+  O8  3  0.51480000  0.13410000  0.67343333  1.0

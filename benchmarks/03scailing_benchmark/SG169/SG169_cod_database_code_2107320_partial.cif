@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Fr4.0Ra0.5Sr3.5Li2.0Mg1.5Be0.5H6N12O30
-_symmetry_space_group_name_H-M   P6_1
+_symmetry_space_group_name_H-M  'P 61'
 _cell_length_a   7.07000000
 _cell_length_b   7.07000000
 _cell_length_c   17.88600000

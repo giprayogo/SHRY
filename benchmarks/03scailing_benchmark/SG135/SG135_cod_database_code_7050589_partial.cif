@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Bi13SbTe3AsH32C24Se4S8NO17
-_symmetry_space_group_name_H-M   P4_2/mbc
+_symmetry_space_group_name_H-M  'P 42/m b c'
 _cell_length_a   10.86300000
 _cell_length_b   10.86300000
 _cell_length_c   9.19470000

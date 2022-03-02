@@ -1,0 +1,73 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: svn://www.crystallography.net/cod/cif/4/03/14/4031495.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4031495
+loop_
+_publ_author_name
+'Sirotinkin, V.P.'
+'Sirotinkin, S.P.'
+'Trunov, V.K.'
+_publ_section_title
+;
+ The structure of Eu.33 Ta O3 crystals of two types
+;
+_journal_name_full
+;
+Russian Journal of Inorganic Chemistry (= Zhurnal Neorganicheskoi Khimii)
+;
+_journal_page_first              803
+_journal_page_last               805
+_journal_volume                  34
+_journal_year                    1989
+_chemical_formula_sum            'Eu0.5 O3 Ta'
+_chemical_name_systematic        'Eu0.5 Ta O3'
+_space_group_IT_number           47
+_symmetry_space_group_name_Hall  '-P 2 2'
+_symmetry_space_group_name_H-M   'P m m m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   3.8771
+_cell_length_b                   3.8771
+_cell_length_c                   7.796
+_cell_volume                     117.189
+_citation_journal_id_ASTM        RJICAQ
+_cod_data_source_file            Sirotinkin_RJICAQ_1989_1896.cif
+_cod_data_source_block           Eu0.5O3Ta1
+_cod_original_cell_volume        117.1887
+_cod_original_formula_sum        'Eu0.5 O3 Ta1'
+_cod_database_code               4031495
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,z
+x,-y,-z
+-x,y,-z
+-x,-y,-z
+x,y,-z
+-x,y,z
+x,-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O2 O-2 0 0.5 0.221 1 0.0
+O4 O-2 0.5 0.5 0.5 1 0.0
+O3 O-2 0.5 0.5 0 1 0.0
+Eu1 Eu+3 0 0 0 1 0.0
+O1 O-2 0.5 0 0.224 1 0.0
+Ta1 Ta+4 0.5 0.5 0.2595 1 0.0

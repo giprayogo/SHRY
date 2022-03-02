@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Si2Ge1.5H36Pb2C48Fl2.5N4O8
-_symmetry_space_group_name_H-M   Pbcn
+_symmetry_space_group_name_H-M  'P b c n'
 _cell_length_a   5.54800000
 _cell_length_b   23.80100000
 _cell_length_c   8.02500000

@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_KNa4Mo2At2HCl9F
+_symmetry_space_group_name_H-M  'P -3 1 c'
+_cell_length_a   6.87120000
+_cell_length_b   6.87120000
+_cell_length_c   12.25310000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   163
+_chemical_formula_structural   KNa4Mo2At2HCl9F
+_chemical_formula_sum   'K1 Na4 Mo2 H1 At2 Cl9 F1'
+_cell_volume   501.00468729
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  '-y, -x, -z+1/2'
+  8  'y, x, z+1/2'
+  9  '-x+y, y, -z+1/2'
+  10  'x-y, -y, z+1/2'
+  11  'x, x-y, -z+1/2'
+  12  '-x, -x+y, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  4  0.33333333  0.66666667  0.95740000  1.0
+  K+  K1  2  0.00000000  0.00000000  0.25000000  0.5
+  H+  H2  2  0.00000000  0.00000000  0.25000000  0.5
+  Mo  Mo3  2  0.33333333  0.66666667  0.25000000  1.0
+  Cl+  Cl4  12  0.05162000  0.37256000  0.36810000  0.75
+  At+  At5  12  0.05162000  0.37256000  0.36810000
+  0.16666666666666666
+  F+  F6  12  0.05162000  0.37256000  0.36810000
+  0.08333333333333333

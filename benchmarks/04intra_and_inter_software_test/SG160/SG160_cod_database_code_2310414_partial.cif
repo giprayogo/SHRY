@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Al3.33333333Nh0.5B0.16666667Pb0.33333333Fl0.66666667C2
+_symmetry_space_group_name_H-M  'R 3 m :R'
+_cell_length_a   8.52000000
+_cell_length_b   8.52000000
+_cell_length_c   8.52000000
+_cell_angle_alpha   22.54000000
+_cell_angle_beta   22.54000000
+_cell_angle_gamma   22.54000000
+_symmetry_Int_Tables_number   160
+_chemical_formula_structural
+Al3.33333333Nh0.5B0.16666667Pb0.33333333Fl0.66666667C2
+_chemical_formula_sum
+'Al3.33333333 Nh0.5 B0.16666667 Pb0.33333333 Fl0.66666667 C2'
+_cell_volume   79.71755042
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, z, x'
+  3  'z, x, y'
+  4  'z, y, x'
+  5  'x, z, y'
+  6  'y, x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al  Al0  1  0.12900000  0.12900000  0.12900000  1.0
+  Al  Al1  1  0.70500000  0.70500000  0.70500000  1.0
+  Nh+  Nh2  1  0.29600000  0.29600000  0.29600000  0.5
+  Al+  Al3  1  0.29600000  0.29600000  0.29600000
+  0.3333333333333333
+  B+  B4  1  0.29600000  0.29600000  0.29600000  0.16666666666666666
+  Al  Al5  1  0.86900000  0.86900000  0.86900000  1.0
+  Pb+  Pb6  1  0.78100000  0.78100000  0.78100000
+  0.3333333333333333
+  Fl+  Fl7  1  0.78100000  0.78100000  0.78100000
+  0.6666666666666666
+  C  C8  1  0.00000000  0.00000000  0.00000000  1.0
+  C  C9  1  0.21700000  0.21700000  0.21700000  1.0

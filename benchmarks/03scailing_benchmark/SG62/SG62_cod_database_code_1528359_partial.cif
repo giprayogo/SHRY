@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Gd4Fe4Te3.33333333O8.66666667
-_symmetry_space_group_name_H-M   Pnma
+_symmetry_space_group_name_H-M  'P b n m'
 _cell_length_a   5.34900000
 _cell_length_b   5.60890000
 _cell_length_c   7.66870000

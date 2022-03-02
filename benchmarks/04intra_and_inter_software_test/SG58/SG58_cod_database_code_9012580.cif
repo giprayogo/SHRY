@@ -1,0 +1,65 @@
+#------------------------------------------------------------------------------
+#$Date: 2013-05-05 17:21:46 +0300 (Sun, 05 May 2013) $
+#$Revision: 85285 $
+#$URL: svn://www.crystallography.net/cod/cif/9/01/25/9012580.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9012580
+loop_
+_publ_author_name
+'Kjekshus, A.'
+'Peterzens, P. G.'
+'Rakke, T.'
+'Andresen, A. F.'
+_publ_section_title
+;
+ Compounds with the marcasite type crystal structure. XIII. Structural and
+ magnetic properties of CrtFe1-tAs2, CrtFe1-tSb2, Fe1-tNitAs2 and Fe1-tNitSb2
+ Locality: synthetic
+ Sample: FeSb2
+;
+_journal_name_full               'Acta Chemica Scandinavica A'
+_journal_page_first              469
+_journal_page_last               480
+_journal_volume                  33
+_journal_year                    1979
+_chemical_formula_sum            'Fe Sb2'
+_chemical_name_mineral           Seinajokite
+_space_group_IT_number           58
+_symmetry_space_group_name_Hall  '-P 2 2n'
+_symmetry_space_group_name_H-M   'P n n m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   5.8328
+_cell_length_b                   6.7356
+_cell_length_c                   3.1973
+_cell_volume                     125.614
+_exptl_crystal_density_diffrn    7.914
+_cod_database_code               9012580
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+1/2+x,1/2-y,1/2+z
+1/2-x,1/2+y,1/2-z
+1/2-x,1/2+y,1/2+z
+1/2+x,1/2-y,1/2-z
+x,y,-z
+-x,-y,z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Fe 0.00000 0.00000 0.00000
+Sb 0.18850 0.35610 0.00000

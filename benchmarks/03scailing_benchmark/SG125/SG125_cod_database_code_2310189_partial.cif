@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_Pu2Nh1.25In2.5Ga8.25
-_symmetry_space_group_name_H-M   P4/nbm
+_symmetry_space_group_name_H-M  'P 4/n b m :1'
 _cell_length_a   5.94200000
 _cell_length_b   5.94200000
 _cell_length_c   7.61700000

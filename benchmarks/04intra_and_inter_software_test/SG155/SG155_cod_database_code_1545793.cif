@@ -1,0 +1,303 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-01-23 14:43:58 +0200 (Tue, 23 Jan 2018) $
+#$Revision: 205493 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/1/54/57/1545793.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1545793
+loop_
+_publ_author_name
+'V.V. Atuchin'
+'A.K. Subanakov'
+'A.S. Aleksandrovsky'
+'B.G. Bazarov'
+'J.G. Bazarova'
+'S.G. Dorzhieva'
+'T.A. Gavrilova'
+'A.S. Krylov'
+'M.S. Molokeev'
+'A.S. Oreshonkov'
+'A.M. Pugachev'
+'Yu.L. Tushinova'
+'A.P. Yelisseyev'
+_publ_section_title
+;
+ Exploration of structural, thermal, vibrational and spectroscopic
+ properties of new noncentrosymmetric double borate Rb3NdB6O12
+;
+_journal_issue                   5
+_journal_name_full               'Advanced Powder Technology'
+_journal_page_first              1309
+_journal_page_last               1315
+_journal_paper_doi               10.1016/j.apt.2017.02.019
+_journal_volume                  28
+_journal_year                    2017
+_chemical_formula_moiety         'B30 Nd5 O60, 15(Rb)'
+_chemical_formula_sum            'B30 Nd5 O60 Rb15'
+_chemical_formula_weight         3287.55
+_space_group_IT_number           155
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  'R 3 2"'
+_symmetry_space_group_name_H-M   'R 3 2 :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   13.52363(38)
+_cell_length_b                   13.52363(38)
+_cell_length_c                   31.1617(10)
+_cell_measurement_reflns_used    104
+_cell_measurement_temperature    300
+_cell_measurement_theta_max      50
+_cell_measurement_theta_min      3.4
+_cell_volume                     4935.6(3)
+_diffrn_ambient_temperature      300
+_diffrn_measurement_device_type
+;
+D8 ADVANCE Bruker
+;
+_diffrn_radiation_monochromator  none
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type
+;
+ Cu K\a~1~~2~
+;
+_exptl_absorpt_coefficient_mu    44.097
+_exptl_crystal_density_diffrn    3.318216
+_pd_char_colour
+;
+colourless
+;
+_pd_meas_2theta_range_inc        0.0207571
+_pd_meas_2theta_range_max        100.005247
+_pd_meas_2theta_range_min        6.8058677
+_pd_meas_scan_method             step
+_pd_proc_ls_pref_orient_corr
+;
+Anisotropic model of PO. Spherical harmonics 6 ordrer.
+ Jarvinen (1993). Application of symmetrized harmonics expansion to correction
+of the preferred orientation effect. - J. Appl. Cryst. 26 p525-531.
+;
+_pd_proc_ls_profile_function     PearsonVII
+_pd_proc_ls_prof_R_factor        3.091
+_pd_proc_ls_prof_wR_expected     0.964
+_pd_proc_ls_prof_wR_factor       4.579
+_pd_proc_number_of_points        4490
+_pd_spec_mount_mode              reflection
+_refine_ls_goodness_of_fit_all   4.750
+_refine_ls_R_I_factor            1.75
+_refine_ls_shift/su_max          0.01000
+_cod_data_source_file            Rb3NdB6O12.cif
+_cod_data_source_block           a
+_cod_original_cell_volume        4935.58(32)
+_cod_original_sg_symbol_Hall
+;
+R 3 2"
+;
+_cod_original_sg_symbol_H-M      'R 3 2'
+_cod_original_formula_sum
+;
+B30 Nd5 O60 Rb15
+;
+_cod_database_code               1545793
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -x+y, -z'
+'-x+1/3, -x+y-1/3, -z-1/3'
+'-x-1/3, -x+y+1/3, -z+1/3'
+'-x+y, -x, z'
+'-x+y+1/3, -x-1/3, z-1/3'
+'-x+y-1/3, -x+1/3, z+1/3'
+'-y, x-y, z'
+'-y+1/3, x-y-1/3, z-1/3'
+'-y-1/3, x-y+1/3, z+1/3'
+'y, x, -z'
+'y+1/3, x-1/3, -z-1/3'
+'y-1/3, x+1/3, -z+1/3'
+'x-y, -y, -z'
+'x-y+1/3, -y-1/3, -z-1/3'
+'x-y-1/3, -y+1/3, -z+1/3'
+'x+1/3, y-1/3, z-1/3'
+'x-1/3, y+1/3, z+1/3'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_B_iso_or_equiv
+Nd1 Nd 0.3333333 0.6666667 -0.21593(50) 1 0.90(55)
+Nd2 Nd 0.3333333 0.6666667 -0.71949(45) 1 0.50(49)
+Nd3 Nd 0.3333333 0.6666667 0.6666667 1 2.00(89)
+Rb1 Rb 0.1236(21) 0.3333333 0.8333333 1 2.0(10)
+Rb2 Rb 0.6666667 0.7951(22) 0.3333333 1 2.0(10)
+Rb3 Rb 0.1851(11) 0.8553(12) -0.41862(60) 1 2.00(44)
+Rb4 Rb 0.3333333 0.6666667 -0.57971(87) 1 1.90(53)
+Rb5 Rb 0.3333333 0.6666667 0.1666667 1 2.0(14)
+B1 B 0.187(23) 0.777(20) -0.2776(58) 1 2.0(11)
+B2 B 0.202(28) 0.767(26) -0.5148(52) 1 2.0(11)
+B3 B 0.463(29) 0.893(16) -0.6504(51) 1 2.0(11)
+B4 B 0.665(27) 1.079(15) -0.4187(74) 1 2.0(11)
+B5 B 0.473(25) 0.922(12) -0.8921(56) 1 2.0(11)
+O1 O 0.2697(97) 0.7738(88) -0.4828(21) 1 1.45(58)
+O2 O 0.1690(65) 0.5671(88) -0.6810(21) 1 1.45(58)
+O3 O 0.3895(68) 0.8078(46) -0.3888(17) 1 1.45(58)
+O4 O 0.2830(67) 0.7740(54) -0.7680(19) 1 1.45(58)
+O5 O 0.5172(68) 0.8568(77) -0.6199(31) 1 1.45(58)
+O6 O 0.5221(78) 0.8551(69) -0.5414(30) 1 1.45(58)
+O7 O 0.4951(63) 1.0090(59) -0.6471(20) 1 1.45(58)
+O8 O 0.6676(61) 0.8061(56) -0.5255(22) 1 1.45(58)
+O9 O 0.5936(71) 1.0377(97) -0.5799(27) 1 1.45(58)
+O10 O 0.0974(81) 0.7287(74) -0.7505(26) 1 1.45(58)
+loop_
+_diffrn_radiation_wavelength
+_diffrn_radiation_wavelength_wt
+1.5406 1.0000
+1.5443 0.5000
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+O1 Nd1 O1 101.9(35) 4_654 13_554
+O1 Nd1 O3 85.5(23) 4_654 4_654
+O1 Nd1 O3 100.7(25) 4_654 13_554
+O3 Nd1 O3 68.9(27) 4_654 13_554
+O2 Nd2 O2 94.9(30) 1_555 5_565
+O2 Nd2 O4 101.5(25) 1_555 1_555
+O2 Nd2 O4 80.2(28) 1_555 8_665
+O4 Nd2 O4 85.1(20) 1_555 5_565
+O3 Nd3 O3 100.8(21) 1_556 4_655
+O3 Nd3 O3 73.8(23) 1_556 5_566
+O3 Nd3 O3 112.4(27) 1_556 13_555
+O1 Rb1 O1 139(10) 16_665 18_546
+O1 Rb1 O6 76.3(30) 16_665 16_665
+O1 Rb1 O6 134.1(77) 16_665 18_546
+O1 Rb1 O8 44.9(72) 16_665 4_655
+O1 Rb1 O8 97.8(23) 16_665 10_656
+O1 Rb1 O9 118.4(48) 16_665 16_665
+O1 Rb1 O9 84.1(26) 16_665 18_546
+O6 Rb1 O6 97.8(25) 16_665 18_546
+O6 Rb1 O8 97.1(19) 16_665 4_655
+O6 Rb1 O9 50.1(61) 16_665 16_665
+O6 Rb1 O9 86.6(24) 16_665 18_546
+O8 Rb1 O8 69.2(25) 4_655 10_656
+O8 Rb1 O9 107.8(25) 4_655 16_665
+O8 Rb1 O9 124.9(43) 4_655 18_546
+O9 Rb1 O9 115.6(37) 16_665 18_546
+O2 Rb2 O2 139.2(67) 8_666 12_565
+O2 Rb2 O5 75.1(25) 8_666 1_556
+O2 Rb2 O5 134.2(77) 8_666 3_665
+O2 Rb2 O10 86.6(20) 8_666 5_566
+O2 Rb2 O10 115.8(40) 8_666 15_675
+O5 Rb2 O5 102.1(27) 1_556 3_665
+O5 Rb2 O10 89.7(22) 1_556 5_566
+O5 Rb2 O10 47.6(63) 1_556 15_675
+O10 Rb2 O10 114.8(39) 5_566 15_675
+O1 Rb3 O3 64.7(33) 1_555 1_555
+O1 Rb3 O4 120.2(41) 1_555 7_565
+O1 Rb3 O7 133.2(58) 1_555 7_565
+O1 Rb3 O9 72.1(37) 1_555 11_454
+O1 Rb3 O10 106.3(30) 1_555 10_665
+O2 Rb3 O3 112.7(25) 10_665 1_555
+O2 Rb3 O4 62.6(35) 10_665 7_565
+O2 Rb3 O7 43.8(60) 10_665 7_565
+O2 Rb3 O9 106.7(34) 10_665 11_454
+O2 Rb3 O10 74.2(26) 10_665 10_665
+O3 Rb3 O4 137.4(58) 1_555 7_565
+O3 Rb3 O7 72.1(22) 1_555 7_565
+O3 Rb3 O9 84.5(15) 1_555 11_454
+O3 Rb3 O10 129.5(49) 1_555 10_665
+O4 Rb3 O7 103.4(21) 7_565 7_565
+O4 Rb3 O9 138.1(89) 7_565 11_454
+O4 Rb3 O10 91.5(19) 7_565 10_665
+O7 Rb3 O9 87.4(21) 7_565 11_454
+O7 Rb3 O10 87.7(19) 7_565 10_665
+O9 Rb3 O10 48.1(76) 11_454 10_665
+O5 Rb4 O5 101.8(29) 1_555 5_565
+O5 Rb4 O6 128.1(60) 1_555 5_565
+O5 Rb4 O6 124.9(50) 1_555 8_665
+O6 Rb4 O6 103.3(28) 1_555 5_565
+O4 Rb5 O4 99.6(20) 1_556 4_654
+O4 Rb5 O4 72.1(23) 1_556 5_566
+O4 Rb5 O4 119.1(33) 1_556 16_664
+O3 B1 O7 116(12) 4_654 7_565
+O3 B1 O9 121(14) 4_654 7_565
+O5 B1 O7 59(15) 7_565 7_565
+O5 B1 O9 63(14) 7_565 7_565
+O7 B1 O9 123(15) 7_565 7_565
+O1 B2 O8 121 1_555 8_665
+O6 B2 O8 121 8_665 8_665
+O6 B2 O10 61(16) 8_665 12_464
+O8 B2 O10 58(18) 8_665 12_464
+O2 B3 O5 125(17) 5_565 1_555
+O2 B3 O7 121(16) 5_565 1_555
+O5 B3 O7 114(13) 1_555 1_555
+O5 B4 O6 108(12) 14_674 14_674
+O5 B4 O8 118(13) 14_674 14_674
+O5 B4 O10 112(14) 14_674 18_655
+O6 B4 O9 106 14_674 14_674
+O6 B4 O10 114 14_674 18_655
+O7 B4 O10 123(16) 14_674 18_655
+O8 B4 O9 134(21) 14_674 14_674
+O9 B4 B2 125(20) 14_674 11_564
+O9 B4 O10 109(12) 14_674 18_655
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Nd1 O1 2.255(97) 4_654
+Nd1 O3 2.549(57) 4_654
+Nd2 O2 2.280(94) .
+Nd2 O4 2.417(62) .
+Nd3 O3 2.399(56) 1_556
+Rb1 O1 2.883(99) 16_665
+Rb1 O6 2.830(78) 16_665
+Rb1 O8 3.183(66) 4_655
+Rb1 O9 2.989(75) 16_665
+Rb2 O2 2.960(99) 8_666
+Rb2 O5 2.931(93) 1_556
+Rb2 O10 3.140(83) 5_566
+Rb3 O1 2.790(75) .
+Rb3 O2 2.940(64) 10_665
+Rb3 O3 3.270(61) .
+Rb3 O4 2.885(63) 7_565
+Rb3 O7 3.274(65) 7_565
+Rb3 O9 3.07(11) 11_454
+Rb3 O10 2.922(87) 10_665
+Rb4 O5 2.823(86) .
+Rb4 O6 2.816(80) .
+Rb5 O4 2.775(61) 1_556
+B1 O3 1.42(24) 4_654
+B1 O5 2.76(24) 7_565
+B1 O7 1.43(21) 7_565
+B1 O9 1.32(20) 7_565
+B2 O1 1.33(19) .
+B2 O6 1.44(28) 8_665
+B2 O8 1.38(28) 8_665
+B2 O10 2.83(24) 12_464
+B3 O2 1.28(23) 5_565
+B3 O5 1.43(24) .
+B3 O7 1.41(21) .
+B3 O9 2.88(20) .
+B4 O5 1.50(24) 14_674
+B4 O6 1.52(24) 14_674
+B4 O7 2.93(25) 14_674
+B4 O8 2.89(24) 14_674
+B4 O9 1.53(22) 14_674
+B4 O10 1.47(27) 18_655
+B5 O4 1.28(26) 4_653
+B5 O6 2.88(26) 6_575
+B5 O8 1.48(19) 6_575
+B5 O10 1.36(23) 4_653

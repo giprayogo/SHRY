@@ -1,0 +1,148 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-01-27 21:58:39 +0200 (Tue, 27 Jan 2015) $
+#$Revision: 130149 $
+#$URL: svn://www.crystallography.net/cod/cif/7/10/05/7100514.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7100514
+loop_
+_publ_author_name
+'Ian Williams'
+'John A. Cha'
+'Stephen S.-Y. Chui'
+'Andy L.-F. Leung'
+'Herman H. Y. Sung'
+'Samadara Thushari'
+'Yu-Fong Yen.'
+_publ_section_title
+;
+Microporous chiral metal coordination polymers:
+hydrothermal synthesis, channel engineering and thermal stability of
+lanthanide tartrates
+;
+_journal_name_full               'Chemical Communications'
+_journal_paper_doi               10.1039/b508574h
+_journal_year                    2005
+_chemical_formula_sum            'C12 H16 Er2 O20'
+_chemical_formula_weight         814.77
+_space_group_IT_number           45
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  'I 2 -2c'
+_symmetry_space_group_name_H-M   'I b a 2'
+_cell_angle_alpha                90.00
+_cell_angle_beta                 90.00
+_cell_angle_gamma                90.00
+_cell_formula_units_Z            4
+_cell_length_a                   12.3605(19)
+_cell_length_b                   14.081(2)
+_cell_length_c                   10.4021(15)
+_cell_measurement_temperature    223(2)
+_cell_volume                     1810.4(5)
+_diffrn_ambient_temperature      223(2)
+_exptl_crystal_density_diffrn    2.989
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+'_symmetry_cell_setting' value 'Orthorhombic' changed to 'orthorhombic'
+according to '/home/saulius/struct/CIF-dictionaries/cif_core.dic'
+dictionary named 'cif_core.dic' version 2.4.1 from 2010-06-29.
+
+Automatic conversion script
+Id: cif_fix_enum 1527 2010-12-29 10:47:43Z saulius 
+;
+_cod_database_code               7100514
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-x, -y, z'
+'x+1/2, -y+1/2, z'
+'-x+1/2, y+1/2, z'
+'x+1/2, y+1/2, z+1/2'
+'-x+1/2, -y+1/2, z+1/2'
+'x+1, -y+1, z+1/2'
+'-x+1, y+1, z+1/2'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Er1 Er 0.36940(2) 0.24982(3) -0.5010(2) 0.01030(11) Uani 1 1 d . . .
+O1 O 0.3434(5) 0.1829(4) -0.3051(6) 0.0135(14) Uiso 1 1 d . . .
+H1W H 0.3687 0.2164 -0.2442 0.016 Uiso 1 1 d R . .
+H2W H 0.3670 0.1264 -0.3004 0.016 Uiso 1 1 d R . .
+O10 O 0.1914(5) 0.2746(4) -0.5495(6) 0.0110(13) Uiso 1 1 d . . .
+O11 O 0.0276(4) 0.3357(4) -0.5141(6) 0.0069(11) Uiso 1 1 d . . .
+O12 O 0.2843(4) 0.3765(4) -0.3779(5) 0.0054(12) Uiso 1 1 d . . .
+H12 H 0.3168 0.4278 -0.3973 0.007 Uiso 1 1 d R . .
+O13 O 0.1202(4) 0.2820(4) -0.2222(6) 0.0078(12) Uiso 1 1 d . . .
+H13 H 0.0756 0.2465 -0.2617 0.009 Uiso 1 1 d R . .
+O14 O 0.1867(5) 0.3982(4) -0.0530(5) 0.0093(13) Uiso 1 1 d . . .
+O15 O 0.1855(5) 0.5243(5) -0.1812(7) 0.0184(15) Uiso 1 1 d . . .
+O20 O 0.5001(5) 0.3326(4) -0.3819(6) 0.0118(13) Uiso 1 1 d . . .
+O21 O 0.6061(5) 0.4555(5) -0.3429(6) 0.0142(14) Uiso 1 1 d . . .
+O22 O 0.4359(5) 0.3876(5) -0.6013(6) 0.0156(14) Uiso 1 1 d . . .
+H22 H 0.3815 0.4233 -0.6139 0.019 Uiso 1 1 d R . .
+C11 C 0.1251(5) 0.3298(5) -0.4927(11) 0.0074(15) Uiso 1 1 d . . .
+C12 C 0.1718(7) 0.3942(6) -0.3907(8) 0.0088(18) Uiso 1 1 d . . .
+H12A H 0.1614 0.4610 -0.4179 0.011 Uiso 1 1 calc R . .
+C13 C 0.1150(7) 0.3794(6) -0.2624(8) 0.0104(19) Uiso 1 1 d . . .
+H13A H 0.0381 0.3983 -0.2711 0.012 Uiso 1 1 calc R . .
+C14 C 0.1677(6) 0.4391(6) -0.1559(8) 0.0074(17) Uiso 1 1 d . . .
+C21 C 0.5444(7) 0.4095(6) -0.4133(8) 0.0075(18) Uiso 1 1 d . . .
+C22 C 0.5183(7) 0.4477(6) -0.5468(8) 0.0128(19) Uiso 1 1 d . . .
+H22A H 0.5836 0.4418 -0.6013 0.015 Uiso 1 1 d R . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Er1 0.01143(16) 0.01067(17) 0.00881(16) -0.00057(18) -0.0008(4) -0.00122(17)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Er1 O14 2.262(6) 6_554 ?
+Er1 O1 2.268(6) . ?
+Er1 O10 2.285(6) . ?
+Er1 O11 2.300(5) 3 ?
+Er1 O20 2.346(6) . ?
+Er1 O13 2.347(6) 6_554 ?
+Er1 O22 2.351(7) . ?
+Er1 O12 2.435(6) . ?
+O10 C11 1.274(10) . ?
+O11 C11 1.229(8) . ?
+O11 Er1 2.300(5) 3_455 ?
+O12 C12 1.419(10) . ?
+O13 C13 1.436(11) . ?
+O13 Er1 2.347(6) 6 ?
+O14 C14 1.238(10) . ?
+O14 Er1 2.262(6) 6 ?
+O15 C14 1.248(11) . ?
+O20 C21 1.257(10) . ?
+O21 C21 1.240(10) . ?
+O22 C22 1.440(10) . ?
+C11 C12 1.511(12) . ?
+C12 C13 1.522(12) . ?
+C13 C14 1.536(12) . ?
+C21 C22 1.524(12) . ?
+C22 C22 1.541(17) 2_665 ?

@@ -1,0 +1,123 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-18 17:37:37 +0200 (Thu, 18 Feb 2016) $
+#$Revision: 176729 $
+#$URL: svn://www.crystallography.net/cod/cif/1/00/10/1001073.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1001073
+loop_
+_publ_author_name
+'Hubert, P H'
+'Michel, P'
+'Thozet, A'
+_publ_section_title
+;
+Structure du molybdite de neodyme Nd~5~ Mo~3~ O~16~
+;
+_journal_coden_ASTM              CHDCAQ
+_journal_name_full
+;
+Comptes Rendus Hebdomadaires des Seances de l'Academie des Sciences,
+Serie C, Sciences Chimiques (1966-)
+;
+_journal_page_first              1779
+_journal_page_last               1781
+_journal_volume                  276
+_journal_year                    1973
+_chemical_formula_structural     'Nd5 Mo3 O16'
+_chemical_formula_sum            'Mo3 Nd5 O16'
+_chemical_name_systematic        'Pentaneodymium 16-oxotrimolybdate'
+_space_group_IT_number           222
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_Hall  '-P 4a 2bc 3'
+_symmetry_space_group_name_H-M   'P n -3 n :2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   10.99(1)
+_cell_length_b                   10.99(1)
+_cell_length_c                   10.99(1)
+_cell_volume                     1327.4
+_exptl_crystal_density_meas      6.28(5)
+_refine_ls_R_factor_all          0.15
+_cod_original_sg_symbol_H-M      'P n -3 n Z'
+_cod_database_code               1001073
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x,1/2-y,1/2-z
+1/2-x,y,1/2-z
+1/2-x,1/2-y,z
+1/2+x,1/2+z,1/2+y
+1/2+x,-z,-y
+-x,1/2+z,-y
+-x,-z,1/2+y
+y,z,x
+1/2-y,1/2-z,x
+y,1/2-z,1/2-x
+1/2-y,z,1/2-x
+1/2+z,1/2+y,1/2+x
+-z,-y,1/2+x
+1/2+z,-y,-x
+-z,1/2+y,-x
+z,x,y
+1/2-z,x,1/2-y
+1/2-z,1/2-x,y
+z,1/2-x,1/2-y
+1/2+y,1/2+x,1/2+z
+-y,1/2+x,-z
+-y,-x,1/2+z
+1/2+y,-x,-z
+-x,-y,-z
+-x,1/2+y,1/2+z
+1/2+x,-y,1/2+z
+1/2+x,1/2+y,-z
+1/2-x,1/2-z,1/2-y
+1/2-x,z,y
+x,1/2-z,y
+x,z,1/2-y
+-y,-z,-x
+1/2+y,1/2+z,-x
+-y,1/2+z,1/2+x
+1/2+y,-z,1/2+x
+1/2-z,1/2-y,1/2-x
+z,y,1/2-x
+1/2-z,y,x
+z,1/2-y,x
+-z,-x,-y
+1/2+z,-x,1/2+y
+1/2+z,1/2+x,-y
+-z,1/2+x,1/2+y
+1/2-y,1/2-x,1/2-z
+y,1/2-x,z
+y,x,1/2-z
+1/2-y,x,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Nd1 Nd0 8 c 0. 0. 0. 1. 0 d
+Nd2 Nd0 12 e -0.02 0.25 0.25 1. 0 d
+Mo1 Mo0 12 d 0. 0.75 0.25 1. 0 d
+O1 O0 48 i 0.33 0.07 -0.13 1. 0 d
+O2 O0 16 f 0.128 0.128 0.128 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Nd0 0.000
+Mo0 0.000
+O0 0.000

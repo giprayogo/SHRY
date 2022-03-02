@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Ti2Al4At3I1.5Br9F2.5
+_symmetry_space_group_name_H-M  'P n n 2'
+_cell_length_a   6.27400000
+_cell_length_b   12.80100000
+_cell_length_c   8.67600000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   34
+_chemical_formula_structural   Ti2Al4At3I1.5Br9F2.5
+_chemical_formula_sum   'Ti2 Al4 At3 I1.5 Br9 F2.5'
+_cell_volume   696.79970042
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x+1/2, y+1/2, z+1/2'
+  4  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_type_symbol
+ _atom_type_oxidation_number
+  Ti0+  0.0
+  Al0+  0.0
+  At0+  0.0
+  I0+  0.0
+  Br0+  0.0
+  F0+  0.0
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ti0+  Ti0  2  0.00000000  0.00000000  0.00000000  1.0
+  Al0+  Al1  4  0.10500000  0.31350000  0.50100000  1.0
+  At0+  At2  4  0.24300000  0.40750000  0.69360000  0.75
+  I0+  I3  4  0.24300000  0.40750000  0.69360000  0.25
+  Br0+  Br4  4  0.21310000  0.14590000  0.48700000  1.0
+  Br0+  Br5  4  0.23490000  0.17960000  0.99100000  1.0
+  Br0+  Br6  4  0.23880000  0.40650000  0.28040000  0.25
+  I0+  I7  4  0.23880000  0.40650000  0.28040000  0.125
+  F0+  F8  4  0.23880000  0.40650000  0.28040000  0.625

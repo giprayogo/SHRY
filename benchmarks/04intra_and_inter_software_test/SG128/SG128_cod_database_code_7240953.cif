@@ -1,0 +1,337 @@
+#------------------------------------------------------------------------------
+#$Date: 2020-11-06 15:19:06 +0200 (Fri, 06 Nov 2020) $
+#$Revision: 258985 $
+#$URL: file:///home/coder/svn-repositories/cod/cif/7/24/09/7240953.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7240953
+loop_
+_publ_author_name
+'Richardson, Jonathan G.'
+'Benjamin, Helen'
+'Moggach, Stephen A.'
+'Warren, Lisette R.'
+'Warren, Mark R.'
+'Allan, David R.'
+'Saunders, Lucy K.'
+'Morrison, Carole A.'
+'Robertson, Neil'
+_publ_section_title
+;
+ Probing the structural and electronic response of Magnus green salt
+ compounds [Pt(NH<sub>2</sub>R)<sub>4</sub>][PtCl<sub>4</sub>] (R = H,
+ CH<sub>3</sub>) to pressure.
+;
+_journal_issue                   31
+_journal_name_full               'Physical chemistry chemical physics : PCCP'
+_journal_page_first              17668
+_journal_page_last               17676
+_journal_paper_doi               10.1039/d0cp03280h
+_journal_volume                  22
+_journal_year                    2020
+_chemical_formula_moiety         'C4 H20 N4 Pt, Cl4 Pt'
+_chemical_formula_sum            'C4 H20 Cl4 N4 Pt2'
+_chemical_formula_weight         656.22
+_space_group_IT_number           128
+_space_group_name_Hall           '-P 4 2n'
+_space_group_name_H-M_alt        'P 4/m n c'
+_symmetry_cell_setting           tetragonal
+_symmetry_space_group_name_Hall  '-P 4 2n'
+_symmetry_space_group_name_H-M   'P 4/m n c'
+_atom_sites_solution_hydrogens   difmap
+_atom_sites_solution_primary     direct
+_audit_creation_date             2020-06-11
+_audit_creation_method           CRYSTALS_ver_14.61_build_6999
+_audit_update_record
+;
+2020-06-15 deposited with the CCDC.	2020-07-24 downloaded from the CCDC.
+;
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   10.1964(7)
+_cell_length_b                   10.1964(7)
+_cell_length_c                   6.3876(9)
+_cell_measurement_reflns_used    668
+_cell_measurement_temperature    293
+_cell_measurement_theta_max      17
+_cell_measurement_theta_min      2
+_cell_volume                     664.10(11)
+_computing_cell_refinement       'USER DEFINED CELL REFINEMENT'
+_computing_data_collection       'USER DEFINED DATA COLLECTION'
+_computing_data_reduction
+; 
+ CrysAlisPro (Rigaku Oxford Diffraction, 2017) 
+;
+_computing_molecular_graphics    'CAMERON (Watkin et al., 1996)'
+_computing_publication_material  'CRYSTALS (Betteridge et al., 2003)'
+_computing_structure_refinement  'CRYSTALS (Betteridge et al., 2003)'
+_computing_structure_solution    'SIR92 (Altomare et al., 1994)'
+_diffrn_ambient_pressure         920000
+_diffrn_ambient_temperature      293
+_diffrn_detector                 'CCD plate'
+_diffrn_measured_fraction_theta_full 0.988
+_diffrn_measured_fraction_theta_max 0.978
+_diffrn_measurement_device       'abstract diffractometer'
+_diffrn_measurement_device_type
+'dectris-CrysAlisPro-abstract goniometer imported dectris images'
+_diffrn_measurement_method       \w
+_diffrn_radiation_monochromator  synchrotron
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           synchrotron
+_diffrn_radiation_wavelength     0.48590
+_diffrn_reflns_av_R_equivalents  0.042
+_diffrn_reflns_limit_h_max       12
+_diffrn_reflns_limit_h_min       -12
+_diffrn_reflns_limit_k_max       8
+_diffrn_reflns_limit_k_min       -8
+_diffrn_reflns_limit_l_max       7
+_diffrn_reflns_limit_l_min       -7
+_diffrn_reflns_number            2051
+_diffrn_reflns_theta_full        12.602
+_diffrn_reflns_theta_max         16.803
+_diffrn_reflns_theta_min         1.931
+_diffrn_source                   synchrotron
+_diffrn_standards_number         0
+_exptl_absorpt_coefficient_mu    8.080
+_exptl_absorpt_correction_T_max  0.90
+_exptl_absorpt_correction_T_min  0.68
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details   'DENZO/SCALEPACK (Otwinowski & Minor, 1997)'
+_exptl_crystal_colour            green
+_exptl_crystal_density_diffrn    3.282
+_exptl_crystal_density_meas      ?
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       needle
+_exptl_crystal_F_000             592
+_exptl_crystal_size_max          0.100
+_exptl_crystal_size_mid          0.010
+_exptl_crystal_size_min          0.005
+_refine_diff_density_max         2.08
+_refine_diff_density_min         -1.84
+_refine_ls_extinction_method     None
+_refine_ls_goodness_of_fit_ref   1.0234
+_refine_ls_hydrogen_treatment    constr
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     19
+_refine_ls_number_reflns         316
+_refine_ls_number_restraints     9
+_refine_ls_R_factor_all          0.0460
+_refine_ls_R_factor_gt           0.0317
+_refine_ls_shift/su_max          0.0003666
+_refine_ls_shift/su_mean         0.0000221
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+;
+ Method= Modified Sheldrick 
+ w=1/[\s^2^(F^2^) + ( 0.04P)^2^ +20.78P] 
+ ,where P=(max(Fo^2^,0) + 2Fc^2^)/3 
+;
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_all         0.0971
+_refine_ls_wR_factor_gt          0.0836
+_refine_ls_wR_factor_ref         0.0971
+_reflns_limit_h_max              8
+_reflns_limit_h_min              0
+_reflns_limit_k_max              12
+_reflns_limit_k_min              0
+_reflns_limit_l_max              7
+_reflns_limit_l_min              0
+_reflns_number_gt                207
+_reflns_number_total             319
+_reflns_threshold_expression     I>2.0\s(I)
+_oxford_diffrn_Wilson_B_factor   0.00
+_oxford_diffrn_Wilson_scale      0.00
+_oxford_refine_ls_r_factor_ref   0.0460
+_oxford_refine_ls_scale          0.07508(6)
+_oxford_reflns_number_all        316
+_iucr_refine_instructions_details
+;
+#
+# Punched on 11/06/20 at 14:11:55
+#
+#LIST     12                                                                    
+BLOCK 
+CONT SCALE 
+CONT PT   (     2 ,X'S,U'S)  UNTIL N    (     1 ) 
+CONT C    (     1 ,X'S,U'S) 
+RIDE N   (   1,X'S) H   (  13,X'S) 
+RIDE C   (   1,X'S) H   (  12,X'S) H   (  11,X'S) 
+END                                                                             
+#
+# Punched on 11/06/20 at 14:11:55
+#
+#LIST     16                                                                    
+DISTANCE 1.435000 , 0.050000 = N(1) TO C(1) 
+VIBRATION 0.0, 0.020000 = N(1) TO C(1) 
+U(IJ)'S  0.0, 0.010000 = N(1) TO C(1) 
+REM   HREST   START (DO NOT REMOVE THIS LINE) 
+REM   HREST   END (DO NOT REMOVE THIS LINE) 
+END                                                                             
+;
+_cod_data_source_file            d0cp03280h2.cif
+_cod_data_source_block           MagNMe_092GPa
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+data item '_exptl_crystal_density_meas' value 'not measured' was
+changed to '?' -- the value is perceived as not measured.
+
+Automatic conversion script
+Id: cif_fix_values 7556 2019-12-06 15:28:31Z antanas 
+
+ Adding full bibliography for 7240937--7240954.cif.
+;
+_cod_original_cell_volume        664.10(13)
+_cod_original_sg_symbol_Hall     '-P 4 2n '
+_cod_original_sg_symbol_H-M      'P 4/m n c '
+_cod_database_code               7240953
+_oxford_refine_reflns_threshold_expression_ref I>-3.0\s(I)
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,-y,-z
+-y,x,z
+y,-x,-z
+-x,-y,z
+x,y,-z
+y,-x,z
+-y,x,-z
+-x+1/2,y+1/2,z+1/2
+x+1/2,-y+1/2,-z+1/2
+y+1/2,x+1/2,z+1/2
+-y+1/2,-x+1/2,-z+1/2
+x+1/2,-y+1/2,z+1/2
+-x+1/2,y+1/2,-z+1/2
+-y+1/2,-x+1/2,z+1/2
+y+1/2,x+1/2,-z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_adp_type
+_atom_site_refinement_flags_posn
+_atom_site_refinement_flags_adp
+_atom_site_refinement_flags_occupancy
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+_atom_site_attached_hydrogens
+Pt2 Pt 0.5000 0.5000 0.5000 0.0239 1.0000 Uani S T . . . .
+Pt1 Pt 0.5000 0.5000 0.0000 0.0238 1.0000 Uani S T . . . .
+N1 N 0.6758(13) 0.6038(16) 0.0000 0.0361 1.0000 Uani DS TU . . . .
+Cl1 Cl 0.6036 0.7002 0.5000 0.0407 1.0000 Uani . . . . . .
+C1 C 0.8028(18) 0.5394(18) 0.0000 0.0396 1.0000 Uani DS TU . . . .
+H11 H 0.8682 0.6042 0.0000 0.0530 1.0000 Uiso RS . . . . .
+H12 H 0.8116 0.4870 0.1197 0.0530 1.0000 Uiso R . . . . .
+H13 H 0.6736 0.6535 0.1121 0.0394 1.0000 Uiso R . . . . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+Pt2 0.0236(5) 0.0236(5) 0.0246(7) 0.0000 0.0000 0.0000
+Pt1 0.0234(5) 0.0234(5) 0.0245(7) 0.0000 0.0000 0.0000
+N1 0.030(7) 0.036(7) 0.043(7) 0.0000 0.0000 0.007(6)
+Cl1 0.0430 0.0327 0.0462 0.0000 0.0000 -0.0093
+C1 0.032(8) 0.039(8) 0.048(8) 0.0000 0.0000 0.005(7)
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_Cromer_Mann_a1
+_atom_type_scat_Cromer_Mann_b1
+_atom_type_scat_Cromer_Mann_a2
+_atom_type_scat_Cromer_Mann_b2
+_atom_type_scat_Cromer_Mann_a3
+_atom_type_scat_Cromer_Mann_b3
+_atom_type_scat_Cromer_Mann_a4
+_atom_type_scat_Cromer_Mann_b4
+_atom_type_scat_Cromer_Mann_c
+_atom_type_scat_source
+C 0.0006 0.0007 2.3100 20.8439 1.0200 10.2075 1.5886 0.5687 0.8650 51.6512
+0.2156 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+H 0.0000 0.0000 0.4930 10.5109 0.3229 26.1257 0.1402 3.1424 0.0408 57.7998
+0.0030 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+N 0.0016 0.0014 12.2126 0.0057 3.1322 9.8933 2.0125 28.9975 1.1663 0.5826
+-11.5290 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+Cl 0.0774 0.0739 11.4604 0.0104 7.1964 1.1662 6.2556 18.5194 1.6455 47.7784
+-9.5574 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+Pt -0.4376 4.5215 27.0059 1.5129 17.7639 8.8117 15.7131 0.4246 5.7837 38.6103
+11.6883 'International Tables Vol C 4.2.6.8 and 6.1.1.4'
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_site_symmetry_1
+_geom_angle_atom_site_label_2
+_geom_angle_site_symmetry_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+Cl1 3_655 Pt2 . Cl1 4_566 180.00 yes
+Cl1 3_655 Pt2 . Cl1 2_666 90.00 yes
+Cl1 4_566 Pt2 . Cl1 2_666 90.000(8) yes
+Cl1 3_655 Pt2 . Cl1 . 90.000(8) yes
+Cl1 4_566 Pt2 . Cl1 . 90.00 yes
+Cl1 2_666 Pt2 . Cl1 . 180.00 yes
+N1 3_655 Pt1 . N1 4_565 179.99 yes
+N1 3_655 Pt1 . N1 2_665 90.000(8) yes
+N1 4_565 Pt1 . N1 2_665 90.00 yes
+N1 3_655 Pt1 . N1 . 90.000(8) yes
+N1 4_565 Pt1 . N1 . 90.00 yes
+N1 2_665 Pt1 . N1 . 179.99 yes
+H13 6_555 N1 . Pt1 . 105.8 no
+H13 6_555 N1 . C1 . 106.5 no
+Pt1 . N1 . C1 . 122.6(12) yes
+H13 6_555 N1 . H13 . 109.4 no
+Pt1 . N1 . H13 . 105.8 no
+C1 . N1 . H13 . 106.5 no
+N1 . C1 . H12 6_555 110.0 no
+N1 . C1 . H11 . 108.4 no
+H12 6_555 C1 . H11 . 109.5 no
+N1 . C1 . H12 . 110.0 no
+H12 6_555 C1 . H12 . 109.4 no
+H11 . C1 . H12 . 109.5 no
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_site_symmetry_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Pt2 . Cl1 3_655 2.29830(13) yes
+Pt2 . Cl1 4_566 2.29830(13) yes
+Pt2 . Cl1 2_666 2.29830(13) yes
+Pt2 . Cl1 . 2.29830(13) yes
+Pt1 . N1 3_655 2.082(15) yes
+Pt1 . N1 4_565 2.082(15) yes
+Pt1 . N1 2_665 2.082(15) yes
+Pt1 . N1 . 2.082(15) yes
+N1 . H13 6_555 0.878 no
+N1 . C1 . 1.45(2) yes
+N1 . H13 . 0.878 no
+C1 . H12 6_555 0.937 no
+C1 . H11 . 0.938 no
+C1 . H12 . 0.937 no
+loop_
+_oxford_refln_omitted_index_h
+_oxford_refln_omitted_index_k
+_oxford_refln_omitted_index_l
+_oxford_refln_omitted_flag
+_oxford_refln_omitted_details
+0 10 2 x .
+0 10 0 x .

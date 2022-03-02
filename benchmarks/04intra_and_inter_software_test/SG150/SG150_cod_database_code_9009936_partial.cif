@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Be2Al0.25In0.25Ga0.25Nh0.25Se1O3.75Lv0.25
+_symmetry_space_group_name_H-M  'P 3 2 1'
+_cell_length_a   4.43000000
+_cell_length_b   4.43000000
+_cell_length_c   5.34000000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   150
+_chemical_formula_structural
+Be2Al0.25In0.25Ga0.25Nh0.25Se1O3.75Lv0.25
+_chemical_formula_sum
+'Be2 Al0.25 In0.25 Ga0.25 Nh0.25 Se1 O3.75 Lv0.25'
+_cell_volume   90.75683480
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'y, x, -z'
+  5  'x-y, -y, -z'
+  6  '-x, -x+y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Be  Be0  2  0.33333333  0.66666667  0.90000000  1.0
+  Ga+  Ga1  1  0.00000000  0.00000000  0.00000000  0.25
+  In+  In2  1  0.00000000  0.00000000  0.00000000  0.25
+  Nh+  Nh3  1  0.00000000  0.00000000  0.00000000  0.25
+  Al+  Al4  1  0.00000000  0.00000000  0.00000000  0.25
+  O  O5  3  0.00000000  0.31000000  0.00000000  1.0
+  Se+  Se6  2  0.33333333  0.66666667  0.58700000  0.5
+  Lv+  Lv7  2  0.33333333  0.66666667  0.58700000  0.125
+  O+  O8  2  0.33333333  0.66666667  0.58700000  0.375

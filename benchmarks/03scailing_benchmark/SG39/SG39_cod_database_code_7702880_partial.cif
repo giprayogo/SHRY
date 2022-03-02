@@ -1,6 +1,6 @@
 # generated using pymatgen
 data_FrKRbLi5Si2Ge2H64PbAu4C63Fl4(N2Cl5)4
-_symmetry_space_group_name_H-M   Aem2
+_symmetry_space_group_name_H-M  'A e m 2'
 _cell_length_a   4.54980000
 _cell_length_b   26.31300000
 _cell_length_c   18.07180000

@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Ga3Mo12Se22.33333333Lv1.66666667
+_symmetry_space_group_name_H-M  'R 3 m :H'
+_cell_length_a   7.22055000
+_cell_length_b   7.22055000
+_cell_length_c   17.44069000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   160
+_chemical_formula_structural   Ga3Mo12Se22.33333333Lv1.66666667
+_chemical_formula_sum   'Ga3 Mo12 Se22.33333333 Lv1.66666667'
+_cell_volume   787.47151630
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  '-y, -x, z'
+  5  '-x+y, y, z'
+  6  'x, x-y, z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-y+2/3, x-y+1/3, z+1/3'
+  9  '-x+y+2/3, -x+1/3, z+1/3'
+  10  '-y+2/3, -x+1/3, z+1/3'
+  11  '-x+y+2/3, y+1/3, z+1/3'
+  12  'x+2/3, x-y+1/3, z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-y+1/3, x-y+2/3, z+2/3'
+  15  '-x+y+1/3, -x+2/3, z+2/3'
+  16  '-y+1/3, -x+2/3, z+2/3'
+  17  '-x+y+1/3, y+2/3, z+2/3'
+  18  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ga  Ga0  3  0.00000000  0.00000000  0.00000000  1.0
+  Mo  Mo1  9  0.19710000  0.80290000  0.20030000  1.0
+  Mo  Mo2  3  0.00000000  0.00000000  0.40180000  1.0
+  Se  Se3  9  0.18263333  0.36526667  0.95576667  1.0
+  Se  Se4  9  0.18286667  0.81713333  0.45613333  1.0
+  Se  Se5  3  0.00000000  0.00000000  0.63550000  1.0
+  Se+  Se6  3  0.00000000  0.00000000  0.13660000
+  0.4444444444444444
+  Lv+  Lv7  3  0.00000000  0.00000000  0.13660000
+  0.5555555555555556
