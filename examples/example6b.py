@@ -17,7 +17,6 @@ with open('pg.pkl', 'rb') as f:
 substitutor.pattern_makers = pattern_makers
 
 # Refresh Substitutor state
-substitutor.get_ap()
 
 # Substitute other structures
 for i, cifwriter in enumerate(substitutor.cifwriters()):

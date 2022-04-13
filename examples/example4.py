@@ -12,7 +12,6 @@ structure *= [[1, 0, 0], [0, 2, 0], [0, 0, 1]]
 # structure *= np.array([[1, 0, 0], [0, 2, 0], [0, 0, 1]])
 
 substitutor = Substitutor(structure, sample=50)
-substitutor.get_ap()
 os.makedirs("output", exist_ok=True)
 # A generator of Pymatgen's CifWriters
 for i, cifwriter in enumerate(substitutor.cifwriters()):

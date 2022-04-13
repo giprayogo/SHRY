@@ -19,19 +19,16 @@ os.makedirs("output2", exist_ok=True)
 os.makedirs("output3", exist_ok=True)
 
 substitutor = Substitutor(structure1)
-substitutor.get_ap()
 for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output1/{i}.cif"
     cifwriter.write_file(filename=output_filename)
 
 substitutor.structure = structure2
-substitutor.get_ap()
 for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output2/{i}.cif"
     cifwriter.write_file(filename=output_filename)
 
 substitutor.structure = structure3
-substitutor.get_ap()
 for i, cifwriter in enumerate(substitutor.cifwriters()):
     output_filename = f"output3/{i}.cif"
     cifwriter.write_file(filename=output_filename)
