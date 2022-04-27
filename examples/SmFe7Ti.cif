@@ -1,3 +1,4 @@
+data_SmFe12
 #------------------------------------------------------------------------------
 #$URL: file:///home/coder/svn-repositories/cod/cif/1/52/50/1525023.cif $
 #------------------------------------------------------------------------------
@@ -6,7 +7,6 @@
 # http://www.crystallography.net/
 #
 
-data_SmFe12
 
 loop_
 _chemical_formula_sum            'Fe12 Sm'
@@ -21,7 +21,7 @@ _cell_length_a                   8.59
 _cell_length_b                   8.59
 _cell_length_c                   4.804
 _cell_volume                     354.478
-_cod_data_source_block           Fe12 Sm1
+_cod_data_source_block           'Fe12 Sm1'
 _cod_original_formula_sum        'Fe12 Sm1'
 loop_
 _symmetry_equiv_pos_as_xyz

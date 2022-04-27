@@ -412,6 +412,8 @@ class Substitutor:
         self._atol = atol
         if groupby is None:
             self._groupby = lambda x: x.properties["_atom_site_label"]
+        else:
+            self._groupby = groupby
 
         # Genki: sampling implementation need a rehaul
         if sample is not None:
