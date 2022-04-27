@@ -230,6 +230,18 @@ def test_cifwriter2():
 
 
 @chdir("../examples")
+def test_structure():
+    """Test Structure generation."""
+    parent_structure = LabeledStructure.from_file("r3m.cif")
+    s = Substitutor(parent_structure)
+    structures = []
+    for structure in s.structure_writers():
+        structures.append(structure)
+    # TODO: Should properly check the content
+    assert len(structures) == s.count()
+
+
+@chdir("../examples")
 def test_ewald():
     """Test ewald energy calculation."""
 

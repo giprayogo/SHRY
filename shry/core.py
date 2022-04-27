@@ -887,6 +887,16 @@ class Substitutor:
         for _, p in self.make_patterns():
             yield self._get_cifwriter(p, symprec)
 
+    def structure_writers(self, symprec=None):
+        """
+        Pymatgen Structures generator.
+        """
+        # This one does not need symprec.
+        # Just to keep the signature the same.
+        del symprec
+        for _, p in self.make_patterns():
+            yield self._get_structure(p)
+
     def ewalds(self, symprec=None):
         """
         Ewald energy generator.
@@ -1087,6 +1097,25 @@ class Substitutor:
                 count += 1
 
         return cifwriter
+
+    def _get_structure(self, p):
+        """
+        Get Pymatgen structure for the given substitution pattern.
+        """
+        des = self._disorder_elements()
+        orbits = des.keys()
+        gis = self._group_indices
+
+        structure = self._structure.copy()
+        pi = iter(p)
+        for orbit in orbits:
+            indices = gis[orbit]
+            de = des[orbit]
+            for e in de:
+                subpattern = next(pi)
+                for i in subpattern:
+                    structure.sites[indices[i]].species = e
+        return structure
 
     def _get_ewald(self, p, symprec):
         """
