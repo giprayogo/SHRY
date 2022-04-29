@@ -33,4 +33,4 @@ Contents
 .. toctree::
 
     usage
-    scripting examples
+    scripting

@@ -838,13 +838,14 @@ class Substitutor:
         Yield tuple of selected quantities.
 
         Args:
-            q: (list) valid options: ("cifwriter", "weight", "letter", "ewald")
+            q: (list) valid options: ("cifwriter", "weight", "letter", "ewald", "structure")
                 will return in this order.
         """
         is_c = "cifwriter" in q
         is_w = "weight" in q
         is_l = "letter" in q
         is_e = "ewald" in q
+        is_s = "structure" in q
 
         packet = collections.defaultdict(lambda: None)
         for a, p in self.make_patterns():
@@ -857,6 +858,8 @@ class Substitutor:
                 packet["weight"] = self._get_weight(a)
             if is_l:
                 packet["letter"] = self._get_letters(p)
+            if is_s:
+                packet["structure"] = self._get_structure(p)
             yield packet
 
     def letters(self):

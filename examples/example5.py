@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# pylint: disable=invalid-name
+"""
+Cache SHRY instances for future run.
+"""
 import os
 
 from shry import LabeledStructure, Substitutor

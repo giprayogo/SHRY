@@ -1,17 +1,25 @@
+# -*- coding: utf-8 -*-
+# pylint: disable=invalid-name
+"""
+Basic use: read a CIF file and
+write the substituted CIFs with weight.
+"""
 import os
+from pymatgen.core import Structure
+from shry import Substitutor
 
-from shry import LabeledStructure, Substitutor
-
-cif_file = 'SmFe12.cif'
-structure = LabeledStructure.from_file(cif_file)
-structure.replace_species({'Fe1': 'Fe3Ti'})
-structure.replace_species({'Fe2': 'Fe3Ti', 'Fe3': 'Fe3Ti'})
+# Read a CIF file
+cif_file = 'SmFe7Ti.cif'
+structure = Structure.from_file(cif_file)
 
 substitutor = Substitutor(structure)
-os.makedirs("output", exist_ok=True)
-# A generator for Pymatgen's CifWriters
-for i, cifwriter in enumerate(substitutor.cifwriters()):
-    # Some naming logic.
-    output_filename = f"output/{i}.cif"
 
-    cifwriter.write_file(filename=output_filename)
+# Save CIF files
+output_dir = "output"
+os.makedirs(output_dir, exist_ok=True)
+for i, packet in enumerate(substitutor.quantities(("cifwriter", "weight"))):
+    cifwriter = packet["cifwriter"]
+    weight = packet["weight"]
+
+    filename = f"cif_i{i}w{weight}.cif"
+    cifwriter.write_file(filename=os.path.join(output_dir, filename))
