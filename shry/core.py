@@ -412,6 +412,8 @@ class Substitutor:
         self._atol = atol
         if groupby is None:
             self._groupby = lambda x: x.properties["_atom_site_label"]
+        else:
+            self._groupby = groupby
 
         # Genki: sampling implementation need a rehaul
         if sample is not None:
@@ -836,13 +838,14 @@ class Substitutor:
         Yield tuple of selected quantities.
 
         Args:
-            q: (list) valid options: ("cifwriter", "weight", "letter", "ewald")
+            q: (list) valid options: ("cifwriter", "weight", "letter", "ewald", "structure")
                 will return in this order.
         """
         is_c = "cifwriter" in q
         is_w = "weight" in q
         is_l = "letter" in q
         is_e = "ewald" in q
+        is_s = "structure" in q
 
         packet = collections.defaultdict(lambda: None)
         for a, p in self.make_patterns():
@@ -855,6 +858,8 @@ class Substitutor:
                 packet["weight"] = self._get_weight(a)
             if is_l:
                 packet["letter"] = self._get_letters(p)
+            if is_s:
+                packet["structure"] = self._get_structure(p)
             yield packet
 
     def letters(self):
@@ -886,6 +891,16 @@ class Substitutor:
         """
         for _, p in self.make_patterns():
             yield self._get_cifwriter(p, symprec)
+
+    def structure_writers(self, symprec=None):
+        """
+        Pymatgen Structures generator.
+        """
+        # This one does not need symprec.
+        # Just to keep the signature the same.
+        del symprec
+        for _, p in self.make_patterns():
+            yield self._get_structure(p)
 
     def ewalds(self, symprec=None):
         """
@@ -1087,6 +1102,25 @@ class Substitutor:
                 count += 1
 
         return cifwriter
+
+    def _get_structure(self, p):
+        """
+        Get Pymatgen structure for the given substitution pattern.
+        """
+        des = self._disorder_elements()
+        orbits = des.keys()
+        gis = self._group_indices
+
+        structure = self._structure.copy()
+        pi = iter(p)
+        for orbit in orbits:
+            indices = gis[orbit]
+            de = des[orbit]
+            for e in de:
+                subpattern = next(pi)
+                for i in subpattern:
+                    structure.sites[indices[i]].species = e
+        return structure
 
     def _get_ewald(self, p, symprec):
         """

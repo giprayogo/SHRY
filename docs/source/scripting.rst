@@ -1,186 +1,107 @@
-Scripting Examples
-==================
+Using SHRY as a Python module
+=============================
 
-(under development)
+See ``${SHRY_INSTALLDIR}/examples`` for examples.
 
-See ``SHRY_INSTALLDIR/examples`` for examples
-on how to use SHRY as a Python module.
-All examples use ```SmFe12.cif``` as the base CIF.
+--------------
+Basic function
+--------------
 
-------------------
-Site substitutions
-------------------
+(See ``example1.py`` for this section).
 
-The sample CIF has 4 Wyckoff positions.
-Suppose that we would like to replace
-the Fe sites, Fe1, Fe2, and Fe3, into Fe3Ti each.
-With the command line interface:
-
-.. code-block:: console
-
-    shry SmFe12.cif -f Fe1 Fe2 Fe3 -t Fe3Ti Fe3Ti Fe3Ti
-
-Or as a python script (``example1.py``)
+``Substitutor`` is the main interface for using
+functions implemented in SHRY.
+It uses Pymatgen's ``Structure`` as the
+structure representation.
 
 .. code-block:: python
 
-    import os
+    from pymatgen.core import Structure
+    from shry import Substitutor
 
-    from shry import LabeledStructure, Substitutor
+    ...
 
-    cif_file = 'SmFe12.cif'
-    structure = LabeledStructure.from_file(cif_file)
-    structure.replace_species({'Fe1': 'Fe3Ti'})
-    structure.replace_species({'Fe2': 'Fe3Ti', 'Fe3': 'Fe3Ti'})
-
+    structure = Structure.from_file(file_name)
     substitutor = Substitutor(structure)
-    substitutor.make_patterns()
-    os.makedirs("output", exist_ok=True)
-    # A generator for Pymatgen's CifWriters
-    for i, cifwriter in enumerate(substitutor.cifwriters()):
-        # Some naming logic.
-        output_filename = f"output/{i}.cif"
 
-        cifwriter.write_file(filename=output_filename)
+We recommend enumerating the unique structures
+using ``Substitutor.count()`` before generating them.
+It is an implementation of Polya enumeration,
+which is almost instant for most cases.
 
-``LabeledStructure`` is basically Pymatgen's ``Structure``,
-but adds ``_atom_site_label`` as ``site_properties``
-with ``replace_species`` modified accordingly.
-This allows for grouping the sites based on their label
-when using supercell that is not consistent with some symmetry.
-Otherwise, it is equivalent to ``pymatgen.Structure`` or ``pymatgen.Molecule``.
-See the last example for non-label-based grouping.
+The structures (either as CIF or ``Structure``), weights,
+configuration letters, etc. can then be obtained from
+``Substitutor.quantities(string_tuple)``.
+The ``string_tuple`` may contain any of these keywords:
 
-``Substitutor.make_patterns()`` is the one that generates
-the disordered structures.
+- ``cifwriter``. Pymatgen's ``CifWriter`` instances.
+- ``structure``. Pymatgen's ``Structure`` instances.
+  Use this for writing CIF files.
+- ``weight``. How many configurations
+- ``letter``. Configuration letter ('aaa', 'bab', etc.)
+  corresponding to the substitution.
+- ``ewald``. Ewald energy for the given structure.
 
------------------------------
-Merging two or more positions
------------------------------
-
-Here we would like to instead substitute all Fe sites into Fe3Ti.
-In addition to unique structures equivalent to the one
-given by the first example, this also includes cases
-where the individual positions can be FeTi, FeTi3, etc.,
-as long as the overall concentration adds up to Fe3Ti.
-By command line:
-
-.. code-block:: console
-
-    shry SmFe12.cif -f Fe -t Fe3Ti
-
-As a python script (``examples/example2.py``)
+``Substitutor.quantities(string_tuple)`` is a generator
+of a dictionary with the previous keywords as keys.
+For example, if you want to get the CIFs and weights, do
 
 .. code-block:: python
 
-    ...
+    for i, packet in enumerate(substitutor.quantities(("cifwriter", "weight"))):
+        cifwriter = packet["cifwriter"]
+        weight = packet["weight"]
 
-    cif_file = 'SmFe12.cif'
-    structure = LabeledStructure.from_file(cif_file)
-    structure.replace_species({'Fe': 'Fe3Ti'})
-    ...
+        filename=f"cif_i{i}w{weight}.cif"
+        cifwriter.write_file(filename=os.path.join(output_dir, filename))
 
-----------------
-Using supercells
-----------------
+There are also individual generators for each of the quantities:
 
-(Both are equivalent)
+- ``cifwriters()``
+- ``structure_writers()``
+- ``weights()``
+- ``letters()``
+- ``ewalds()``
 
-.. code-block:: console
+however these will invoke one full run for every call,
+so if more than one quantities is required,
+it will be slower.
 
-    shry SmFe12.cif -f Fe -t Fe7Ti -s 1 2 1
-    shry SmFe12.cif -f Fe -t Fe7Ti -s 1 0 0 0 2 0 0 0 1
+------------------
+Enumlib equivalent
+------------------
 
-The interface for making supercells of ``LabeledStructure``
-is the same as ``pymatgen.Structure`` (``examples/example4.py``)
+See ``example2.py`` for comparison with equivalent
+``enumlib`` functions through Pymatgen's ``EnumlibAdaptor``.
+At the moment, the implementation for finding
+unique supercell has not been completed.
 
-.. code-block:: python
+------------
+Advanced use
+------------
 
-    ...
-    structure *= [1, 2, 1]
-    # 9-digits case
-    # structure *= [[1, 0, 0], [0, 2, 0], [0, 0, 1]]
-    ...
+================
+LabeledStructure
+================
 
-------------------------------
-Multiple target concentrations
-------------------------------
+``LabeledStructure`` is a modified Pymatgen's ``Structure``,
+but it tracks the CIF's ``_atom_site_label``.
+This is useful if you want to group sites
+together regardless of supercell use,
+which can sometimes split the sites.
 
-It is preferable to reuse the same ``Substitutor``
-instance for all pattern generations.
-This is because the algorithm works by recursively generating
-substitution patterns for higher concentration from the lower ones.
-Moreover, if two distinct systems have identical set of
-permutations within the targeted sites, ``Subsitutor``
-can identify this and automatically re-arrange the site indices
-to create the new substitutions from the previously generated patterns.
+It also implements ``replace_species`` for substituting sites
+with a slightly more convenient syntax (see ``example3.py``).
 
-For example, consider substitution case of one of the Fe
-sites on SmFe12, into three concentrations: FeTi, Fe3Ti, and FeTi3.
-(``examples/example5.py``)
+===========================
+Saving substitutor instance
+===========================
 
-.. code-block:: python
+``Substitutor`` can automatically "remap" pattern
+generated in other structure if the structures are
+symmetrically similar.
+This can save a lot of time if you are dealing with
+multiple concentrations or a set of symmetrically similar sytems.
 
-    ...
-    structure1 = structure.copy()
-    structure2 = structure.copy()
-    structure3 = structure.copy()
-    structure1.replace_species({'Fe1': 'Fe7Ti'})
-    # Higher Ti concentration
-    structure2.replace_species({'Fe2': 'Fe3Ti'})
-    # Reverse of above
-    structure3.replace_species({'Fe2': 'FeTi3'})
-
-    os.makedirs("output1", exist_ok=True)
-    os.makedirs("output2", exist_ok=True)
-    os.makedirs("output3", exist_ok=True)
-
-    substitutor = Substitutor(structure1)
-    substitutor.make_patterns()
-    for i, cifwriter in enumerate(substitutor.cifwriters()):
-        output_filename = f"output1/{i}.cif"
-        cifwriter.write_file(filename=output_filename)
-
-    substitutor.structure = structure2
-    substitutor.make_patterns()
-    for i, cifwriter in enumerate(substitutor.cifwriters()):
-        output_filename = f"output2/{i}.cif"
-        cifwriter.write_file(filename=output_filename)
-
-    substitutor.structure = structure3
-    substitutor.make_patterns()
-    for i, cifwriter in enumerate(substitutor.cifwriters()):
-        ...
-
-For larger projects, it is perhaps useful to pickle
-``PatternMaker`` instances for later use.
-See ``examples/example6a.py`` (save) and ``examples/example6b.py`` (load).
-
----------------
-Custom grouping
----------------
-
-By default, SHRY groups sites by their labels within the CIF files
-(typically corresponding to their crystallographic orbit).
-Suppose that instead we would like to group them by their species label,
-we can define a custom ``groupby`` as in ``examples/example8.py``.
-
-.. code-block:: python
-
-    # Some other processing
-    ...
-    structure = ... # Structure, Molecule, or SiteCollection
-
-    # Loops over Structure.sites
-    def groupby(site):
-        return site.species
-
-    substitutor = Substitutor(structure, groupby=groupby)
-
-    ...
-
-``groupby`` loops over all sites within the ``Structure``-like object,
-meaning that ``Site``/\ ``PeriodicSite`` are the input,
-with group identifier (i.e. constant within the group but unique
-to the group) as the output.
-Anything hashable is valid as the identifier.
+See ``example4a.py`` for how to enable caching and pickle
+the ``Substitutor`` instance, and ``example4b.py`` for the later reloading.
