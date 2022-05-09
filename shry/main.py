@@ -190,6 +190,7 @@ class ScriptHelper:
         scaling_matrix=const.DEFAULT_SCALING_MATRIX,
         symmetrize=const.DEFAULT_SYMMETRIZE,
         sample=const.DEFAULT_SAMPLE,
+        seed=const.DEFAULT_SEED,
         symprec=const.DEFAULT_SYMPREC,
         atol=const.DEFAULT_ATOL,
         angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
@@ -207,6 +208,7 @@ class ScriptHelper:
         self.no_dmat = no_dmat
         self.t_kind = t_kind
         self.structure_file = structure_file
+        self._seed = seed
 
         if len(from_species) != len(to_species):
             raise RuntimeError("from_species and to_species must have the same length.")
@@ -254,7 +256,8 @@ class ScriptHelper:
             symprec=self.symprec,
             atol=self.atol,
             angle_tolerance=self.angle_tolerance,
-            sample=self.sample,
+            shuffle=self.sample is not None,
+            seed=seed,
             no_dmat=self.no_dmat,
             t_kind=self.t_kind,
             cache=cache,
@@ -402,12 +405,12 @@ class ScriptHelper:
         """
         Save the irreducible structures
         """
-        # TODO Reimplement sampling
-        # npatterns = self.substitutor.sampled_indices.size
         npatterns = self.substitutor.count()
         if not npatterns:
             logging.warning("No expected patterns.")
             return
+        if self.sample is not None:
+            npatterns = self.sample
 
         if self.no_write:
             # (for io-less benchmark)
@@ -492,8 +495,20 @@ class ScriptHelper:
         else:
             symprec = None
 
+        if self.sample is not None:
+            header += f" (seed={self._seed})"
+
+        quantities_generator = enumerate(
+            self.substitutor.quantities(quantities, symprec)
+        )
+        # Limit amount if sampled
+        if self.sample is not None:
+            quantities_generator = itertools.takewhile(
+                lambda x: x[0] < npatterns, quantities_generator,
+            )
+
         print(header, file=logio)
-        for i, packet in enumerate(self.substitutor.quantities(quantities, symprec)):
+        for i, packet in quantities_generator:
             cifwriter = packet["cifwriter"]
             ewald = packet["ewald"]
             weight = packet["weight"]
@@ -511,13 +526,23 @@ class ScriptHelper:
 
             try:
                 cifwriter.write_file(filename=filenames[i] + f"_{weight}.cif")
-            except IndexError as exc:
-                raise RuntimeError(
-                    "Mismatch between enumeration and expected structures, check `atol` value."
-                ) from exc
-            pbar.update()
+                pbar.update()
+            # Warn if too many structures are generated
+            except IndexError:
+                logging.warning(
+                    f"Too many structures generated (>{npatterns}). "
+                    "Check `atol` value."
+                )
+                break
         pbar.close()
         dump_log()
+
+        # Warn if too little structures are generated
+        if i < npatterns - 1:
+            logging.warning(
+                f"Too little structures generated ({i+1}/{npatterns}). "
+                "Check `atol` value."
+            )
 
     def count(self) -> None:
         """

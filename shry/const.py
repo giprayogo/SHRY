@@ -17,6 +17,7 @@ __date__ = "15. Nov. 2021"
 __status__ = "Production"
 
 import re
+import datetime
 
 # Default input arguments
 # TODO: Refactor together with ScriptHelper
@@ -55,3 +56,7 @@ MAX_IRREDUCIBLE = 1e9
 LINEWIDTH = 88
 HLINE = "-" * LINEWIDTH
 TQDM_CONF = {"ncols": LINEWIDTH}
+
+# Date and time, also used for (default) random seed
+NOW = datetime.datetime.now()
+DEFAULT_SEED = int(NOW.timestamp())
