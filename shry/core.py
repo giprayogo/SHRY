@@ -1154,7 +1154,6 @@ class PatternMaker:
         "_patterns",
         "_auts",
         "_subobj_ts",
-        "_bs",
         "_get_subobj_ts",
         "_nix",
         "invar",
@@ -1268,8 +1267,6 @@ class PatternMaker:
         self._auts[0] = np.ones((self._nperm,), dtype="bool")
         self._subobj_ts = collections.defaultdict(list)
         self._subobj_ts[0] = [np.array([0])]
-        self._bs = collections.defaultdict(list)
-        self._bs[0] = [np.zeros(self._nix)]
 
         self.label = self._perms.tobytes()
 
