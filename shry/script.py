@@ -46,9 +46,8 @@ def print_header():
     """
     Print header text
     """
-    now = datetime.datetime.now()
-    tz = now.astimezone().tzname()
-    time_string = now.strftime("%c ") + tz
+    tz = const.NOW.astimezone().tzname()
+    time_string = const.NOW.strftime("%c ") + tz
 
     # logger.setLevel(logging.INFO)
     handler = TqdmLoggingHandler()
@@ -60,7 +59,7 @@ def print_header():
         "with atomic substitutions implemented by Python"
     )
     logging.info("\n********************************")
-    logging.info("Begin " + time_string)
+    logging.info(f"Begin {time_string} (unixtime: {const.DEFAULT_SEED})")
 
 
 def print_footer():
@@ -193,6 +192,20 @@ def main():  # pylint: disable=missing-function-docstring
         help="Symmetry search angle tolerance (degrees).",
     )
     group.add_argument(
+        "--sample",
+        type=int,
+        default=const.DEFAULT_SAMPLE,
+        help="Sample N number of ordered structures.",
+    )
+    group.add_argument(
+        "--seed",
+        type=int,
+        default=const.DEFAULT_SEED,
+        help="Random seed for the random number generator."
+        " Used only when --sample is set."
+        " Defaults to the (integer rounded) unixtime.",
+    )
+    group.add_argument(
         "--disable-progressbar",
         action="store_true",
         help="Disable progress bar. May stabilize longer runs.",
@@ -245,6 +258,8 @@ def main():  # pylint: disable=missing-function-docstring
             to_species=to_species,
             scaling_matrix=scaling_matrix,
             symmetrize=args.symmetrize,
+            sample=args.sample,
+            seed=args.seed,
             symprec=args.symprec,
             atol=args.atol,
             angle_tolerance=args.angle_tolerance,

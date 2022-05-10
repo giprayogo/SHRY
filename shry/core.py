@@ -21,6 +21,7 @@ import functools
 import itertools
 import logging
 import math
+import random
 import sys
 from typing import OrderedDict, Tuple
 
@@ -371,6 +372,8 @@ class Substitutor:
         "_symprec",
         "_angle_tolerance",
         "_groupby",
+        "_shuffle",
+        "_seed",
         "_atol",
         "_symmops",
         "_pms",
@@ -390,6 +393,7 @@ class Substitutor:
         "_charset",
         "_template_cifwriter",
         "_template_structure",
+        "_rg",
     )
 
     def __init__(
@@ -399,7 +403,8 @@ class Substitutor:
         angle_tolerance=const.DEFAULT_ANGLE_TOLERANCE,
         atol=const.DEFAULT_ATOL,
         groupby=None,
-        sample=None,
+        shuffle=False,
+        seed=const.DEFAULT_SEED,
         no_dmat=const.DEFAULT_NO_DMAT,
         t_kind=const.DEFAULT_T_KIND,
         cache=None,  # "True", "False", "None" (default)
@@ -410,14 +415,19 @@ class Substitutor:
         self._t_kind = t_kind
         # TODO: These two are consequential to self._structure, so should be property
         self._atol = atol
+        self._shuffle = shuffle
+        self._seed = seed
         if groupby is None:
             self._groupby = lambda x: x.properties["_atom_site_label"]
         else:
             self._groupby = groupby
 
-        # Genki: sampling implementation need a rehaul
-        if sample is not None:
-            raise NotImplementedError("Sampling is temporarily disabled.")
+        # random.Random instance.
+        # The default RNG is used in many other modules,
+        # so setting seed does not make sense there.
+        rg = random.Random()
+        rg.seed(self._seed)
+        self._rg = rg
 
         self.cache = cache
         self._symmops = None
@@ -721,6 +731,8 @@ class Substitutor:
                 invar=dmat,
                 enumerator_collection=self._enumerator_collection,
                 t_kind=self._t_kind,
+                shuffle=self._shuffle,
+                rg=self._rg,
             )
             row_map = pm.get_row_map()
             index_map = pm.get_index_map()
@@ -738,6 +750,8 @@ class Substitutor:
                     enumerator_collection=self._enumerator_collection,
                     t_kind=self._t_kind,
                     cache=self.cache,
+                    shuffle=self._shuffle,
+                    rg=self._rg,
                 )
                 row_map = pm.get_row_map()
                 index_map = pm.get_index_map()
@@ -1154,7 +1168,6 @@ class PatternMaker:
         "_patterns",
         "_auts",
         "_subobj_ts",
-        "_bs",
         "_get_subobj_ts",
         "_nix",
         "invar",
@@ -1171,6 +1184,8 @@ class PatternMaker:
         "_get_not_reject_mask",
         "_get_accept_mask",
         "_get_mins",
+        "_iterate",
+        "_rg",
     )
 
     def __init__(
@@ -1180,6 +1195,8 @@ class PatternMaker:
         enumerator_collection=None,
         t_kind=const.DEFAULT_T_KIND,
         cache=False,
+        shuffle=False,
+        rg=None,
     ):
         # Algo select bits
         if invar is None:
@@ -1220,6 +1237,25 @@ class PatternMaker:
             self.ap = self.cached_ap
         else:
             self.ap = self.nocache_ap
+
+        # Optional random.Random instance.
+        if rg is None:
+            self._rg = random
+        else:
+            self._rg = rg
+
+        # This is to avoid an additional branch in the generator itself.
+        if shuffle:
+
+            def _iterate(x):
+                nonzeros = np.flatnonzero(x)
+                self._rg.shuffle(nonzeros)
+                for i in nonzeros:
+                    yield i
+
+            self._iterate = _iterate
+        else:
+            self._iterate = np.flatnonzero
 
         if enumerator_collection is None:
             self._enumerator_collection = PolyaCollection()
@@ -1268,8 +1304,6 @@ class PatternMaker:
         self._auts[0] = np.ones((self._nperm,), dtype="bool")
         self._subobj_ts = collections.defaultdict(list)
         self._subobj_ts[0] = [np.array([0])]
-        self._bs = collections.defaultdict(list)
-        self._bs[0] = [np.zeros(self._nix)]
 
         self.label = self._perms.tobytes()
 
@@ -1501,7 +1535,7 @@ class PatternMaker:
             # Insertion location
             loci = pattern.searchsorted(leaf_array)
 
-            for i in np.flatnonzero(uniq_mask):
+            for i in self._iterate(uniq_mask):
                 x = leaf_array[i]
                 j = loci[i]
                 _pbs = self._bit_perm[:, x] + pbs
@@ -1521,14 +1555,6 @@ class PatternMaker:
                 elif _i[discard_i] in self._perms[_aut, x]:
                     stack.append((_i, _aut, _pbs))
         pbar.close()
-
-        # TODO: Reimplement cross-check with enumeration.
-        # n_gen = len(self._patterns[stop])
-        # if n_pred != n_gen:
-        #     raise RuntimeError(
-        #         "Mismatch between predicted and generated number of structures.\n"
-        #         f"(at {stop}, {n_gen}/{n_pred} were generated)"
-        #     )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
 
     def _get_sum_subobj_ts(self, pattern, leaf_array, subobj_ts):
@@ -1629,8 +1655,6 @@ class PatternMaker:
         while stack:
             subobj_ts, pattern, aut, pbs = stack.pop()
             if pattern.size == stop:
-                # self._patterns[pattern.size].append(pattern)
-                # self._auts[pattern.size].append(aut)
                 yield aut, pattern
                 pbar.update()
                 continue
@@ -1664,7 +1688,8 @@ class PatternMaker:
             accept_mask = self._get_accept_mask(delta_t)
             accept_mask &= uniq_mask
             accepts = leaf_array[accept_mask]
-            for i in np.flatnonzero(uniq_mask):
+
+            for i in self._iterate(uniq_mask):
                 x = leaf_array[i]
                 j = loci[i]
                 _pbs = self._bit_perm[:, x] + pbs
@@ -1696,14 +1721,6 @@ class PatternMaker:
                 elif _i[discard_i] in self._perms[_aut, x]:
                     stack.append((_subobj_ts, _i, _aut, _pbs))
         pbar.close()
-
-        # TODO: Reimplement cross-check with enumeration.
-        # n_gen = len(self._patterns[stop])
-        # if n_pred != n_gen:
-        #     raise RuntimeError(
-        #         "Mismatch between predicted and generated number of structures.\n"
-        #         f"(at {stop}, {n_gen}/{n_pred} were generated)"
-        #     )
         tqdm.tqdm(disable=const.DISABLE_PROGRESSBAR).write("Done.")
         # self._gen_flag[stop] = True
 
