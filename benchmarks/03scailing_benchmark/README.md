@@ -62,3 +62,9 @@ You can combine the xsl files after you run the benchmark test independently.
 ```bash:
 python bench_combine_xsl.py  
 ```
+
+## Benchmark result
+The benchmark result is summerized in ``benchmark_result.csv``. 
+You can also plot the graphs in our paper by the jupyter notebook ``benchmark_plots.ipynb``.
+
+![Shry_Supercell_comparison](shry_supercell_absolute_timings.png) 

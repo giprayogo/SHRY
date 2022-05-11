@@ -1,0 +1,601 @@
+﻿Index,Compound,ID,LatticeType,PointGroup,SpaceGroup_No,SpaceGroup,Compositions,Wyckoffs,Supercell,Substitutions,Note,Checked,Equivalent Structures,File
+1,C26H26N2O3S,cod-7217822,triclinic,1,1,P1,Cs1Li3H152C156S6N12O18,H'A (1a) $\rightarrow$ Cs1Li3H2,3x2x1,60,autosub:success,FALSE,10,SG1/SG1_cod_database_code_7217822.cif
+2,CaH8O14P2V2,cod-9012519,triclinic,1,1,P1,Fr1Rb1K2Ca4V8Po1Te1P8H28Se1O53,"HB (1a) $\rightarrow$ Fr1Rb1K2, Ob (1a) $\rightarrow$ Po1Te1Se1O1",2x2x1,288,autosub:success,FALSE,72,SG1/SG1_cod_database_code_9012519.cif
+3,C14H18CoN2O5,cod-8000383,triclinic,1,1,P1,Co6Si2Sn3H108Pb1C78N12O30,C (1a) $\rightarrow$ Si2Sn3Pb1,1x3x2,60,autosub:success,FALSE,10,SG1/SG1_cod_database_code_8000383.cif
+4,C14H11NO4,cod-7151465,triclinic,-1,2,P-1,Si1H88C103Fl3Sn2Ge2Pb1N8O32,"C (2i) $\rightarrow$ Si1Sn1Pb1C1, C (2i) $\rightarrow$ Fl3Sn1, C (2i) $\rightarrow$ Ge1C1",1x2x1,576,autosub:success,FALSE,144,SG2/SG2_cod_database_code_7151465.cif
+5,H15O20P4Ru2,cod-7049930,triclinic,-1,2,P-1,Rb3Na1Li1P12H40Ru6O60,H (2i) $\rightarrow$ Rb3Na1Li1H1,3x1x1,120,autosub:success,FALSE,20,SG2/SG2_cod_database_code_7049930.cif
+6,C20H17BrN4O4S,cod-7154816,triclinic,-1,2,P-1,Li2Si2Sn1H66Pb2C73Fl2S4Br4N16O16,"C (2i) $\rightarrow$ Pb1Fl1Sn1C1, HC (2i) $\rightarrow$ Li1H1, C (2i) $\rightarrow$ Si2Pb1Fl1",1x2x1,1728,autosub:success,FALSE,432,SG2/SG2_cod_database_code_7154816.cif
+7,O2Si,cod-9006306,monoclinic,2,3,P2,Si8Po2Te1Se1S1O10Lv1,"O (1b) $\rightarrow$ Po1Te1, O (2e) $\rightarrow$ Po1Se1S1Lv1",2x1x1,48,autosub:success,FALSE,12,SG3/SG3_cod_database_code_9006306.cif
+8,C10N3O7.5S,cod-7215921,monoclinic,2,3,P2,Si1Sn1Po1Bi2Sb1As1Pb1C77S8N20O59,"C (2e) $\rightarrow$ Si1Sn1Pb1C1, N (2e) $\rightarrow$ Bi2Sb1As1, O (2e) $\rightarrow$ Po1O3",1x2x1,1152,autosub:success,FALSE,288,SG3/SG3_cod_database_code_7215921.cif
+9,Mo5O16U,cod-4030758,monoclinic,2,3,P2,U12Po3Mo60Se2O187,O (1c) $\rightarrow$ Po3Se2O7,3x2x2,7920,autosub:success,FALSE,344,SG3/SG3_cod_database_code_4030758.cif
+10,C4H9Cl3FMnN,cod-4127488,monoclinic,2,4,P2_1,Mn18H162At1C72I15N18Ts2Cl36F18,Cl (2a) $\rightarrow$ At1I15Ts2,1x3x3,2448,autosub:success,FALSE,136,SG4/SG4_cod_database_code_4127488.cif
+11,C13H11NO,cod-7206735,monoclinic,2,4,P2_1,Rb1Li2H30C39N3O3,H (2a) $\rightarrow$ Rb1Li2,2x3x1,495,autosub:success,FALSE,45,SG4/SG4_cod_database_code_7206735.cif
+12,C13H15NO,cod-7045778,monoclinic,2,4,P2_1,Cs8Rb4Sn1H168C155N12O12,"H (2a) $\rightarrow$ Cs2Rb1, C (2a) $\rightarrow$ Sn1C11",2x3x1,5940,autosub:success,FALSE,495,SG4/SG4_cod_database_code_7045778.cif
+13,C22H14O8Sm,cod-7202040,monoclinic,2,5,C2,Sm4H56C81Fl4Si1Sn1Pb1Se1S2O28Lv1,"C (4c) $\rightarrow$ Pb1Fl3, C (4c) $\rightarrow$ Fl1Si1Sn1C1, O (4c) $\rightarrow$ Se1Lv1S2",1x1x1,1152,autosub:success,FALSE,288,SG5/SG5_cod_database_code_7202040.cif
+14,C22H20O2,cod-7108565,monoclinic,2,5,C2,Sn1Ge5H160C168Fl1Pb1O16,C (4c) $\rightarrow$ Sn1Ge5Fl1Pb1,2x1x1,336,autosub:success,FALSE,42,SG5/SG5_cod_database_code_7108565.cif
+15,C10H17N5O7S,cod-7126561,monoclinic,2,5,C2,Sn1H34C18Fl1S2N10O14,C (4c) $\rightarrow$ Sn1Fl1,1x3x1,924,autosub:success,FALSE,84,SG5/SG5_cod_database_code_7126561.cif
+16,O2Si,cod-9006302,monoclinic,m,6,Pm,Si24Te2Se2O43Lv1,O (1a) $\rightarrow$ Te2Se2Lv1O1,2x3x1,180,autosub:success,FALSE,16,SG6/SG6_cod_database_code_9006302.cif
+17,C5Cl5N,cod-7221872,monoclinic,m,7,Pc,C15N3Cl12F1Ts2,Cl (2a) $\rightarrow$ F1Ts2,1x2x3,495,autosub:success,FALSE,45,SG7/SG7_cod_database_code_7221872.cif
+18,C12H10N6O2,cod-7111169,monoclinic,m,7,Pc,Cs3K1Na2Li1H73C96N48O16,"HW (2a) $\rightarrow$ Cs1K1Li1H1, H (2a) $\rightarrow$ Cs1Na1",1x2x1,144,autosub:success,FALSE,36,SG7/SG7_cod_database_code_7111169.cif
+19,C6H5ClN6,cod-7053722,monoclinic,m,7,Pc,Fr2Li1Bi1As2H17C20Fl2Pb2N20Mc1Cl4,"HB (2a) $\rightarrow$ Fr2Li1H1, N (2a) $\rightarrow$ Bi1As2Mc1, C (2a) $\rightarrow$ Fl1Pb1",2x1x1,864,autosub:success,FALSE,216,SG7/SG7_cod_database_code_7053722.cif
+20,C22H14F4I2N6,cod-7216660,monoclinic,m,8,Cm,Na5Li11H96C176I16N48F32,HN (4b) $\rightarrow$ Na5Li11,2x1x2,4368,autosub:success,FALSE,273,SG8/SG8_cod_database_code_7216660.cif
+21,C6H16F7N9O5TiZn3,cod-7705796,monoclinic,m,8,Cm,Fr2Cs1K1Na2Li2Ti2Zn6H24C12N18O10F14,"HWB (4b) $\rightarrow$ Cs1K1Na2, HWA (4b) $\rightarrow$ Fr1Li1",1x1x1,72,autosub:success,FALSE,18,SG8/SG8_cod_database_code_7705796.cif
+22,C24H32CoN2O8,cod-7224505,monoclinic,m,8,Cm,Fr2K1Co2Si1Sn3Ge2H61Pb1Fl1C40N4O16,"HA (4b) $\rightarrow$ Fr2K1H1, C (4b) $\rightarrow$ Si1Sn2Ge1, C (4b) $\rightarrow$ Sn1Ge1Pb1Fl1",1x1x1,3456,autosub:success,FALSE,864,SG8/SG8_cod_database_code_7224505.cif
+23,C8H22I10N4Pb3,cod-4127723,monoclinic,m,9,Cc,Cs1K1Li1Sn4Ge2H85Pb9C29I40N16,"C (4a) $\rightarrow$ Sn3Ge1, Hn (4a) $\rightarrow$ Cs1K1Li1H1, Pb (4a) $\rightarrow$ Sn1Ge1Pb1C1",1x1x1,2304,autosub:success,FALSE,576,SG9/SG9_cod_database_code_4127723.cif
+24,C15H13NO4,cod-3500024,monoclinic,m,9,Cc,Fr1Rb1K1H49Pb3C57Se1S1N4O13Lv1,"H (4a) $\rightarrow$ Fr1Rb1K1H1, O (4a) $\rightarrow$ S1Lv1Se1O1, C (4a) $\rightarrow$ Pb3C1",1x1x1,2304,autosub:success,FALSE,576,SG9/SG9_cod_database_code_3500024.cif
+25,C14H14N6O,cod-7050052,monoclinic,m,9,Cc,K4Bi1As1H52C56N22O4,"HA (4a) $\rightarrow$ K1H3, N (4a) $\rightarrow$ Bi1As1N2, H (4a) $\rightarrow$ K3H1",1x1x1,192,autosub:success,FALSE,48,SG9/SG9_cod_database_code_7050052.cif
+26,Se4TiZr,cod-1523424,monoclinic,2/m,10,P2/m,Dy1Zr6Mn3Po1C1Se24,Ti (1a) $\rightarrow$ Dy1Mn3Po1C1,2x1x3,120,autosub:success,FALSE,10,SG10/SG10_cod_database_code_1523424.cif
+27,C9H18IN2P,cod-7706109,monoclinic,2/m,11,P2_1/m,Fr2Cs2Na1Li1Ge1P2H30Pb1C15Fl1I2N4,"C (4f) $\rightarrow$ C1Fl1Ge1Pb1, H (2e) $\rightarrow$ Fr1Cs1, H (4f) $\rightarrow$ Fr1Cs1Na1Li1",1x1x1,1152,autosub:success,FALSE,288,SG11/SG11_cod_database_code_7706109.cif
+28,C15H20F3N4O3PS3,cod-7118621,monoclinic,2/m,11,P2_1/m,K2Na4P3H54C45S9N12O9F9,H (4f) $\rightarrow$ K1Na2,1x1x3,495,autosub:success,FALSE,50,SG11/SG11_cod_database_code_7118621.cif
+29,C11H11NO2,cod-4514248,monoclinic,2/m,11,P2_1/m,Te2H66C66Se1S1N6O8,O (2e) $\rightarrow$ Te2Se1S1O2,1x3x1,180,autosub:success,FALSE,16,SG11/SG11_cod_database_code_4514248.cif
+30,Ca2Mg5O24Si8,cod-9015250,monoclinic,2/m,12,C2/m,Ba2Sr1Ca24Mg56Be1Si96O288,Mg (2a) $\rightarrow$ Ba2Sr1Mg8Be1,2x1x3,5940,autosub:success,FALSE,250,SG12/SG12_cod_database_code_9015250.cif
+31,Lu2O7Si2,cod-8100597,monoclinic,2/m,12,C2/m,Lu8Ge4Pb1C3O28,Si (4i) $\rightarrow$ Ge4Pb1C3,1x1x2,280,autosub:success,FALSE,35,SG12/SG12_cod_database_code_8100597.cif
+32,Cu2H5NaO10S2,cod-9008379,monoclinic,2/m,12,C2/m,Na8Cu16Te3S16O77,O (8j) $\rightarrow$ Te3O29,2x2x1,4960,autosub:success,FALSE,155,SG12/SG12_cod_database_code_9008379.cif
+33,H8O13P2Zn4,cod-9009446,monoclinic,2/m,13,P2/c,Zn24Po5P12O73,O (4g) $\rightarrow$ Po5O7,1x1x3,792,autosub:success,FALSE,66,SG13/SG13_cod_database_code_9009446.cif
+34,C6H10ErNO8,cod-7707096,monoclinic,2/m,13,P2/c,Cs1Na9Li1Er12H109C72N12O96,H (4g) $\rightarrow$ Cs1Na9Li1H1,1x3x1,1320,autosub:success,FALSE,110,SG13/SG13_cod_database_code_7707096.cif
+35,MgNa2O12Si5,cod-9011579,monoclinic,2/m,13,P2/c,Na8Mg4Si20Se3O44Lv1,O() (4g) $\rightarrow$ Se3O4Lv1,1x1x2,280,autosub:success,FALSE,35,SG13/SG13_cod_database_code_9011579.cif
+36,C12H14O2S,cod-8101992,monoclinic,2/m,14,P2_1/c,Fr1Cs1Na1Si1Sn1Po2Te2H53Pb1C44Fl1S4O4,"C (4e) $\rightarrow$ Sn1Fl1Si1Pb1, HA (4e) $\rightarrow$ Fr1Cs1Na1H1, O (4e) $\rightarrow$ Po1Te1",1x1x1,3456,autosub:success,FALSE,864,SG14/SG14_cod_database_code_8101992.cif
+37,C24H18Cl4N4O4,cod-7117534,monoclinic,2/m,14,P2_1/c,Si1Sn1H36Pb1C45N8Cl8O8,C (4e) $\rightarrow$ Si1Sn1Pb1C1,1x2x1,2520,autosub:success,FALSE,330,SG14/SG14_cod_database_code_7117534.cif
+38,BaNaSbSe3,cod-7123275,monoclinic,2/m,14,P2_1/c,Ba4Na4Po2Bi1P1Mc2Se5S1O3Lv1,"Se (4e) $\rightarrow$ Se1Lv1S1O1, Se (4e) $\rightarrow$ Po1O1, Sb (4e) $\rightarrow$ Bi1P1Mc2",1x1x1,1728,autosub:success,FALSE,432,SG14/SG14_cod_database_code_7123275.cif
+39,C10H10Br6CuN2,cod-4511661,monoclinic,2/m,15,C2/c,Cu8Sn3H80Pb13C64Br48N16,C (8f) $\rightarrow$ Sn3Pb13,1x2x1,560,autosub:success,FALSE,35,SG15/SG15_cod_database_code_4511661.cif
+40,C16H24Ag4N12,cod-4500337,monoclinic,2/m,15,C2/c,Ag32Sn1Ge3H192C124N96,C (8f) $\rightarrow$ Sn1Ge3C12,1x1x2,7280,autosub:success,FALSE,455,SG15/SG15_cod_database_code_4500337.cif
+41,FeO3Si,cod-9001629,monoclinic,2/m,15,C2/c,Fe24Si24Se23S1O48,O (8f) $\rightarrow$ Se23S1,2x1x3,1128,autosub:success,FALSE,37,SG15/SG15_cod_database_code_9001629.cif
+42,C16H12Cd2N10S4,cod-7017725,orthorhombic,222,18,P2_12_12,K1Li3Cd8Si3Ge1H44C59Fl1S16N40,"C (4c) $\rightarrow$ Si3Ge1C3Fl1, H (2a) $\rightarrow$ K1Li3",2x1x1,4480,autosub:success,FALSE,560,SG18/SG18_cod_database_code_7017725.cif
+43,C18.12H29F6O6.08,cod-7203133,orthorhombic,222,18,P2_12_12,H48Pb3C29O12F12,C (4c) $\rightarrow$ Pb3C1,1x2x2,1820,autosub:success,FALSE,134,SG18/SG18_cod_database_code_7203133.cif
+44,C15H16N2O,cod-1519896,orthorhombic,222,18,P2_12_12,Li1H31C30N4O2,HN (4c) $\rightarrow$ Li1H3,1x3x1,220,autosub:success,FALSE,19,SG18/SG18_cod_database_code_1519896.cif
+45,C14H13NO2,cod-2229823,orthorhombic,222,19,P2_12_12_1,H52C49Fl3Si2Pb2S3N4Lv1O4,"C (4a) $\rightarrow$ Fl2Si1Pb1, O (4a) $\rightarrow$ S3Lv1, C (4a) $\rightarrow$ C1Fl1Si1Pb1",1x1x1,1152,autosub:success,FALSE,288,SG19/SG19_cod_database_code_2229823.cif
+46,C2H12Cl5FeN2O,cod-4320149,orthorhombic,222,19,P2_12_12_1,Fr6K1Rb7Na1Li1Fe8H80C16N16Cl40O8,"Ha (4a) $\rightarrow$ Fr6Na1Li1, Ha (4a) $\rightarrow$ K1Rb7",1x2x1,448,autosub:success,FALSE,56,SG19/SG19_cod_database_code_4320149.cif
+47,C2H2F3NO,cod-2002966,orthorhombic,222,19,P2_12_12_1,Sb1As4P2H16C16N1O8F24,N (4a) $\rightarrow$ Sb1As4P2N1,1x2x1,840,autosub:success,FALSE,105,SG19/SG19_cod_database_code_2002966.cif
+48,C5H9ErN2O8,cod-1562664,orthorhombic,222,20,C222_1,Er2Sn1H18C9S1N4O15,"O (8c) $\rightarrow$ S1O3, C (4b) $\rightarrow$ Sn1C1",1x1x1,168,autosub:success,FALSE,30,SG20/SG20_cod_database_code_1562664.cif
+49,BeO6P2,cod-8103591,orthorhombic,222,20,C222_1,Be16Bi10As1P19Mc2O96,"P (4b) $\rightarrow$ Bi7As1, P (4a) $\rightarrow$ Mc2Bi3P3",1x2x1,4480,autosub:success,FALSE,280,SG20/SG20_cod_database_code_8103591.cif
+50,C12H12ErNaO12,cod-4328207,orthorhombic,222,20,C222_1,Na12Er12Si1Sn9Ge1H144Pb1C132O144,C (4b) $\rightarrow$ Si1Sn9Ge1Pb1,3x1x1,1320,autosub:success,FALSE,58,SG20/SG20_cod_database_code_4328207.cif
+51,BiCo2O8.25Sr3,cod-2103256,orthorhombic,222,21,C222,Sr48Co32Po3Bi16Te3O112Lv2,O (8l) $\rightarrow$ Po3Te3Lv2,1x1x1,560,autosub:success,FALSE,70,SG21/SG21_cod_database_code_2103256.cif
+52,C22H20ClI4S12,cod-7210186,orthorhombic,222,21,C222,Rb3K4Li1H72C88S48I16Cl4,HB (8l) $\rightarrow$ Rb3K4Li1,1x1x1,280,autosub:success,FALSE,35,SG21/SG21_cod_database_code_7210186.cif
+53,C46H32Cl2CoN4,cod-7707338,orthorhombic,222,23,I222,Cs3K5Co2Sn2Ge1H56C84Fl5N8Cl4,"H (8k) $\rightarrow$ Cs3K5, C (8k) $\rightarrow$ Sn2Fl5Ge1",1x1x1,9408,autosub:success,FALSE,1176,SG23/SG23_cod_database_code_7707338.cif
+54,BPS4,cod-7209475,orthorhombic,222,23,I222,Bi1B6Sb1As3Mc1S24,P (2a) $\rightarrow$ Bi1Sb1As3Mc1,1x3x1,120,autosub:success,FALSE,10,SG23/SG23_cod_database_code_7209475.cif
+55,C7H11LaN10O6,cod-7212070,orthorhombic,222,24,I2_12_12_1,K1Rb5Li2La8As15P1H80C56N64O48,"HA (4b) $\rightarrow$ K1Rb5Li2, NA (8d) $\rightarrow$ As15P1",1x2x1,2688,autosub:success,FALSE,168,SG24/SG24_cod_database_code_7212070.cif
+56,O8PbSe2U,cod-4317667,orthorhombic,mm2,26,Pmc2_1,U24Si1Sn9Pb13Fl1Se48O192,Pb (2b) $\rightarrow$ Si1Pb1Fl1Sn9,2x1x3,1320,autosub:success,FALSE,110,SG26/SG26_cod_database_code_4317667.cif
+57,BaCeS6Sn2,cod-4337237,orthorhombic,mm2,26,Pmc2_1,Ba24Ce24Sn37Ge9Fl1C1S144,Sn (2a) $\rightarrow$ Ge9Fl1Sn1C1,1x3x2,1320,autosub:success,FALSE,110,SG26/SG26_cod_database_code_4337237.cif
+58,C6H2O4PbS,cod-1561314,orthorhombic,mm2,26,Pmc2_1,Sn1H24Pb12C60Fl11S12O48,C (4c) $\rightarrow$ Sn1Fl11,1x3x2,276,autosub:success,FALSE,13,SG26/SG26_cod_database_code_1561314.cif
+59,CaH11Na2O17.5P4,cod-1007179,orthorhombic,mm2,28,Pma2,Fr1K1Rb1Na4Li1Ca4Po2Te2P16S1O63Lv1Se1,"O (4d) $\rightarrow$ Te1Se1S1O1, O (4d) $\rightarrow$ Po2Te1Lv1, Na (4d) $\rightarrow$ Fr1K1Rb1Li1",1x1x1,6912,autosub:success,FALSE,1728,SG28/SG28_cod_database_code_1007179.cif
+60,H6Na2O18Si6Zr,cod-1542067,orthorhombic,mm2,28,Pma2,Na8Zr4Si24Po1Te4S4O62Lv1,"O (4d) $\rightarrow$ Te3S4O1, O (2c) $\rightarrow$ Lv1Po1Te1O1",1x1x2,6720,autosub:success,FALSE,840,SG28/SG28_cod_database_code_1542067.cif
+61,C6N10O8,cod-4126429,orthorhombic,mm2,29,Pca2_1,Sn4Ge1C40Fl3N80O64,C (4a) $\rightarrow$ Ge1Fl3Sn4,1x2x1,280,autosub:success,FALSE,35,SG29/SG29_cod_database_code_4126429.cif
+62,C5H5Br2N,cod-1516637,orthorhombic,mm2,29,Pca2_1,Fr1Cs1Rb2Na4H12C20Br8N4,"H (4a) $\rightarrow$ Rb1Na3, H (4a) $\rightarrow$ Fr1Cs1Rb1Na1",1x1x1,96,autosub:success,FALSE,24,SG29/SG29_cod_database_code_1516637.cif
+63,C14H9N3O,cod-7119143,orthorhombic,mm2,29,Pca2_1,Si5Sn1H72Pb1C105N24O8,C (4a) $\rightarrow$ Si5Sn1Pb1C1,1x2x1,336,autosub:success,FALSE,42,SG29/SG29_cod_database_code_7119143.cif
+64,Nb5O16Sr5,cod-2002350,orthorhombic,mm2,31,Pmn2_1,Sr30Nb30Po3Se5O87Lv1,"O (2a) $\rightarrow$ Se2O3Lv1, O (2a) $\rightarrow$ Po1Se1",1x1x3,1200,autosub:success,FALSE,200,SG31/SG31_cod_database_code_2002350.cif
+65,K6Lu2O18Si6,cod-1539721,orthorhombic,mm2,31,Pmn2_1,Fr6K18Lu8Si19Fl5O72,"K (4b) $\rightarrow$ Fr3K1, Si (4b) $\rightarrow$ Si3Fl5",1x2x1,1568,autosub:success,FALSE,196,SG31/SG31_cod_database_code_1539721.cif
+66,C6H20NNdO13S,cod-1562960,orthorhombic,mm2,32,Pba2,La1Tb1Nd4Ho2Te1H64C48Se1S8N8O101Lv1,"O (4c) $\rightarrow$ Te1Se1O5Lv1, Nd (2b) $\rightarrow$ La1Tb1Ho2",1x2x1,4032,autosub:success,FALSE,504,SG32/SG32_cod_database_code_1562960.cif
+67,C19H22N2O4,cod-2218423,orthorhombic,mm2,32,Pba2,Cs5K2Li1P1H80C76Mc6N1O16,"N (4c) $\rightarrow$ Mc6P1N1, H (4c) $\rightarrow$ Cs5K2Li1",1x1x2,9408,autosub:success,FALSE,1176,SG32/SG32_cod_database_code_2218423.cif
+68,C24H20S4Sn,cod-7204933,orthorhombic,mm2,32,Pba2,Fr1Rb1Na2Si1Sn2Ge1H36Pb2C44S8,"H (4c) $\rightarrow$ Fr1Rb1Na2, C (4c) $\rightarrow$ Si1Ge1Pb2",1x1x1,144,autosub:success,FALSE,36,SG32/SG32_cod_database_code_7204933.cif
+69,C7H14IN5S2,cod-4000694,orthorhombic,mm2,33,Pna2_1,Fr2Cs1Rb9H156C84S24I12N60,H (4a) $\rightarrow$ Fr2Cs1Rb9,1x3x1,660,autosub:success,FALSE,55,SG33/SG33_cod_database_code_4000694.cif
+70,C13H9ClN2O,cod-2237903,orthorhombic,mm2,33,Pna2_1,Fr13Cs2H129C208N32Cl16O16,HB (4a) $\rightarrow$ Fr13Cs2H1,1x2x2,1680,autosub:success,FALSE,105,SG33/SG33_cod_database_code_2237903.cif
+71,LiO4PPb,cod-8104289,orthorhombic,mm2,33,Pna2_1,K1Na2Li4Po1P8H1Pb7Fl1Se1S1O29,"Pb (4a) $\rightarrow$ Pb3Fl1, Li (4a) $\rightarrow$ K1Na2H1, O (4a) $\rightarrow$ Po1Se1S1O1",1x1x1,1152,autosub:success,FALSE,288,SG33/SG33_cod_database_code_8104289.cif
+72,B3H2O7.5Pb2,cod-4335617,orthorhombic,mm2,34,Pnn2,B16Nh4Al1Tl1In2H16Pb16O60,B (4c) $\rightarrow$ Nh4Al1Tl1In2,2x1x1,840,autosub:success,FALSE,105,SG34/SG34_cod_database_code_4335617.cif
+73,H4O10Si2Zn4,cod-1549523,orthorhombic,mm2,34,Pnn2,Zn8Cd2Si8Hg6H16Lv6Te1S1O32,"Zn (4c) $\rightarrow$ Cd1Hg3, O (4c) $\rightarrow$ Lv6Te1S1",1x1x2,1568,autosub:success,FALSE,196,SG34/SG34_cod_database_code_1549523.cif
+74,Al2Br8Ti,cod-1535640,orthorhombic,mm2,34,Pnn2,Ti4Al8At6I3Br18F5,"Br (4c) $\rightarrow$ At3I1, Br (4c) $\rightarrow$ I1Br2F5",1x2x1,4704,autosub:success,FALSE,588,SG34/SG34_cod_database_code_1535640.cif
+75,F11H12N3Sn3,cod-1518101,orthorhombic,mm2,35,Cmm2,Sn15Pb2C1N18F66,Sn (4e) $\rightarrow$ Pb2C1,1x3x1,495,autosub:success,FALSE,50,SG35/SG35_cod_database_code_1518101.cif
+76,C20H20CdN6O8,cod-1517037,orthorhombic,mm2,35,Cmm2,Cd2Si1Sn2Ge1H40Pb3C28Fl5S3N12Lv1O12,"O (4e) $\rightarrow$ Lv1S3, C (8f) $\rightarrow$ Fl5Si1Pb2, C (4e) $\rightarrow$ Sn2Ge1Pb1",1x1x1,8064,autosub:success,FALSE,1008,SG35/SG35_cod_database_code_1517037.cif
+77,C24H26O3,cod-2219761,orthorhombic,mm2,36,Cmc2_1,H52C44Fl2Si1Sn1O6,C (8b) $\rightarrow$ Fl2Si1Sn1,1x1x1,420,autosub:success,FALSE,63,SG36/SG36_cod_database_code_2219761.cif
+78,C11H21AuCl4N2,cod-7020779,orthorhombic,mm2,36,Cmc2_1,Sn1Ge1H168Pb1Au8Fl5C80N16Cl32,C (4a) $\rightarrow$ Ge1Fl5Sn1Pb1,1x1x2,336,autosub:success,FALSE,42,SG36/SG36_cod_database_code_7020779.cif
+79,BaF4Zn,cod-1000421,orthorhombic,mm2,36,Cmc2_1,Ba16Zn16F48Ts11At5,F (4a) $\rightarrow$ Ts11At5,2x1x2,4368,autosub:success,FALSE,157,SG36/SG36_cod_database_code_1000421.cif
+80,C11H11BFe0.5N3S2,cod-7700067,orthorhombic,mm2,37,Ccc2,Fe8Si13B16H176Pb3C160S32N48,C (8d) $\rightarrow$ Si13Pb3,2x1x1,560,autosub:success,FALSE,35,SG37/SG37_cod_database_code_7700067.cif
+81,C16H20MnN2O6,cod-7023295,orthorhombic,mm2,37,Ccc2,Mn8Si29Sn2H160C97N16O48,"C (8d) $\rightarrow$ Si15Sn1, C (8d) $\rightarrow$ Si14Sn1C1",1x2x1,3840,autosub:success,FALSE,240,SG37/SG37_cod_database_code_7023295.cif
+82,C12H8Br2O,cod-2102645,orthorhombic,mm2,37,Ccc2,Po9H96C144S1Br24O1Lv1,O (4c) $\rightarrow$ Po9S1O1Lv1,1x3x1,1320,autosub:success,FALSE,58,SG37/SG37_cod_database_code_2102645.cif
+83,C5H15Br3N2O0.5Rb,cod-2243036,orthorhombic,mm2,38,Amm2,Rb16Po5Te1H240C80S1Br48N32O1,O (2b) $\rightarrow$ Po5Te1S1O1,2x2x1,336,autosub:success,FALSE,24,SG38/SG38_cod_database_code_2243036.cif
+84,P7Pd9Zr5,cod-1526310,orthorhombic,mm2,38,Amm2,Zr20Bi1Sb1As8P17Mc1Pd33Pt1Ds2,"P (2a) $\rightarrow$ Sb1As1P1Mc1, P (4d) $\rightarrow$ Bi1As7, Pd (2b) $\rightarrow$ Pd1Pt1Ds2",2x1x1,2304,autosub:success,FALSE,144,SG38/SG38_cod_database_code_1526310.cif
+85,C2HoNi,cod-1540778,orthorhombic,mm2,38,Amm2,La2Nd2Dy1Er1Ni6C12,Ho (2a) $\rightarrow$ La2Nd2Dy1Er1,1x3x1,180,autosub:success,FALSE,16,SG38/SG38_cod_database_code_1540778.cif
+86,C18H18AuCl5N2,cod-7702880,orthorhombic,mm2,39,Aem2,Fr1Cs1K4Rb2H136Au8C144N16Cl40,H (4b) $\rightarrow$ Fr1Cs1K4Rb2,2x1x1,840,autosub:success,FALSE,105,SG39/SG39_cod_database_code_7702880.cif
+87,O8Se2VY,cod-4337088,orthorhombic,mm2,39,Aem2,Y2Lr6Ta1Nb5V1Db1Se16O64,"Y (4b) $\rightarrow$ Y1Lr3, V (4a) $\rightarrow$ Ta1Nb5V1Db1",1x1x2,9408,autosub:success,FALSE,1176,SG39/SG39_cod_database_code_4337088.cif
+88,Bi2O5Se,cod-8100904,orthorhombic,mm2,39,Aem2,Po1Bi16Se8S2O37,O (4c) $\rightarrow$ Po1S2O1,1x1x2,420,autosub:success,FALSE,57,SG39/SG39_cod_database_code_8100904.cif
+89,B7Li5O14Rb2,cod-7208643,orthorhombic,mm2,40,Ama2,Rb12K1Na1Li28B42O84,Li (4b) $\rightarrow$ K1Na1Li4,1x3x1,2970,autosub:success,FALSE,265,SG40/SG40_cod_database_code_7208643.cif
+90,C12H8O7W,cod-4089612,orthorhombic,mm2,40,Ama2,Fr1Cs1Na1Po5H29W4C48Se2O21,"HA (4b) $\rightarrow$ Fr1Cs1Na1H1, O (8c) $\rightarrow$ Po5Se2O1",1x1x1,4032,autosub:success,FALSE,504,SG40/SG40_cod_database_code_4089612.cif
+91,Cu2NaNbS4,cod-4030898,orthorhombic,mm2,40,Ama2,Cs1Li3Nb4Cu8S16,Na (4b) $\rightarrow$ Cs1Li3,3x1x1,220,autosub:success,FALSE,12,SG40/SG40_cod_database_code_4030898.cif
+92,C14H12Ag2N8S2,cod-7207331,orthorhombic,mm2,41,Aea2,K15Rb1Ag16H80C97Fl15S16N64,"HA (8b) $\rightarrow$ K15Rb1, C (8b) $\rightarrow$ C1Fl15",2x1x1,256,autosub:success,FALSE,16,SG41/SG41_cod_database_code_7207331.cif
+93,C16H24B2FeN6,cod-7036967,orthorhombic,mm2,41,Aea2,Na11Li5Fe8B16H176C128N48,HA (8b) $\rightarrow$ Na11Li5,2x1x1,4368,autosub:success,FALSE,273,SG41/SG41_cod_database_code_7036967.cif
+94,C3H22Ca2O22U,cod-9009613,orthorhombic,mm2,41,Aea2,Ca16U8Po2Te1C24O168Lv5,O (8b) $\rightarrow$ Po2Te1Lv5,1x1x1,168,autosub:success,FALSE,21,SG41/SG41_cod_database_code_9009613.cif
+95,C3H8ErN9O5,cod-7004544,orthorhombic,mm2,42,Fmm2,Er8As1H64C24N70Mc1O40,N (8c) $\rightarrow$ As1N14Mc1,1x1x2,240,autosub:success,FALSE,15,SG42/SG42_cod_database_code_7004544.cif
+96,EuS,cod-1520921,orthorhombic,mm2,42,Fmm2,Yb5Pr2Nd1Eu16Te2Lv6S16,"Eu (4a) $\rightarrow$ Yb5Pr2Nd1, S (4a) $\rightarrow$ Te1Lv3",1x2x1,4704,autosub:success,FALSE,588,SG42/SG42_cod_database_code_1520921.cif
+97,C3H10EuN9O5,cod-7004545,orthorhombic,mm2,42,Fmm2,Eu4H40C8Fl3Si1N36O20,C (4a) $\rightarrow$ Fl3Si1,1x2x2,1820,autosub:success,FALSE,79,SG42/SG42_cod_database_code_7004545.cif
+98,C22H26N2O6,cod-2228890,orthorhombic,mm2,43,Fdd2,Cs5H99C88N8O24,H (16b) $\rightarrow$ Cs5H3,1x1x1,8008,autosub:success,FALSE,525,SG43/SG43_cod_database_code_2228890.cif
+99,C14H8Cd3N10O2S6,cod-4511461,orthorhombic,mm2,43,Fdd2,Cd24H64C112S48N74Mc6Lv5Po3O8,"N (8a) $\rightarrow$ Mc3N1, O (8a) $\rightarrow$ Lv5Po3",1x1x1,1568,autosub:success,FALSE,110,SG43/SG43_cod_database_code_4511461.cif
+100,C2H7N7O3,cod-4331493,orthorhombic,mm2,43,Fdd2,K3Na1H108C32N112O48,HA (16b) $\rightarrow$ K3Na1H12,1x1x1,7280,autosub:success,FALSE,455,SG43/SG43_cod_database_code_4331493.cif
+101,O2Si,cod-4002433,orthorhombic,mm2,44,Imm2,Si58Ge3Pb2C1O128,Si (4d) $\rightarrow$ Si2Ge3Pb2C1,1x2x1,1680,autosub:success,FALSE,112,SG44/SG44_cod_database_code_4002433.cif
+102,Fe8In32S65,cod-7044830,orthorhombic,mm2,44,Imm2,Al14In113Fe32B1S260,In (8e) $\rightarrow$ Al14In1B1,1x1x2,240,autosub:success,FALSE,15,SG44/SG44_cod_database_code_7044830.cif
+103,CsNa3O16P4,cod-9015748,orthorhombic,mm2,44,Imm2,Cs3Rb3Na24Li1P32H1O128,Cs (2a) $\rightarrow$ Cs3Rb3Li1H1,2x2x1,1120,autosub:success,FALSE,44,SG44/SG44_cod_database_code_9015748.cif
+104,H8Na8O36P8V4,cod-7707707,orthorhombic,mm2,45,Iba2,Fr1Cs6Rb1Na8V8Po4P16H16S4O64,"Na (8c) $\rightarrow$ Fr1Cs6Rb1, O (8c) $\rightarrow$ Po1S1",1x1x1,3920,autosub:success,FALSE,490,SG45/SG45_cod_database_code_7707707.cif
+105,B5CuO10Tm,cod-7209484,orthorhombic,mm2,45,Iba2,Tm2Cu2Po1B10Te3O16,O (8c) $\rightarrow$ Po1Te3,2x1x1,1820,autosub:success,FALSE,134,SG45/SG45_cod_database_code_7209484.cif
+106,C12H16Er2O20,cod-7100514,orthorhombic,mm2,45,Iba2,Er8Si7H64C41O80,C (8c) $\rightarrow$ Si7C1,1x2x1,120,autosub:success,FALSE,13,SG45/SG45_cod_database_code_7100514.cif
+107,C2H8Br2N2Zn,cod-2012041,orthorhombic,mm2,46,Ima2,Zn8H64Pb7C9Br16N16,C (8c) $\rightarrow$ Pb7C1,1x3x1,2024,autosub:success,FALSE,85,SG46/SG46_cod_database_code_2012041.cif
+108,C6H8NNaO5,cod-7220791,orthorhombic,mm2,46,Ima2,Rb2Na2Si1Ge1H32Pb1C21N4O20,"C (4b) $\rightarrow$ Si1Ge1Pb1C1, Na (4b) $\rightarrow$ Rb1Na1",1x1x1,144,autosub:success,FALSE,36,SG46/SG46_cod_database_code_7220791.cif
+109,I3KO13V2,cod-4105915,orthorhombic,mm2,46,Ima2,K4V8Po1Te1S1I4Br7Cl1O49,"O (4b) $\rightarrow$ Po1Te1S1O1, I (8c) $\rightarrow$ Br7Cl1",1x1x1,192,autosub:success,FALSE,24,SG46/SG46_cod_database_code_4105915.cif
+110,Ba4Cu6O13Y2,cod-1534906,orthorhombic,mmm,47,Pmmm,Ba16Y8Cu20Ag1Au3O52,Cu (2q) $\rightarrow$ Cu4Ag1Au3,2x2x1,280,autosub:success,FALSE,35,SG47/SG47_cod_database_code_1534906.cif
+111,Ba2Cu3O7Y,cod-1008484,orthorhombic,mmm,47,Pmmm,Ba3Ra1Sr1Ca1Y3Cu9O21,Ba (2t) $\rightarrow$ Ba3Ra1Sr1Ca1,3x1x1,120,autosub:success,FALSE,10,SG47/SG47_cod_database_code_1008484.cif
+112,Eu0.5O3Ta,cod-4031495,orthorhombic,mmm,47,Pmmm,Eu6Ta12Te1Se3S1O31,O (1h) $\rightarrow$ Te1Se3S1O1,3x2x1,120,autosub:success,FALSE,10,SG47/SG47_cod_database_code_4031495.cif
+113,C28H36Cl2CoN4,cod-1558598,orthorhombic,mmm,48,Pnnn,Rh2Mt7Co3C336N48Cl24,Co (2a) $\rightarrow$ Rh2Mt7Co3,2x1x3,7920,autosub:success,FALSE,191,SG48/SG48_cod_database_code_1558598.cif
+114,O2Si,cod-4124070,orthorhombic,mmm,50,Pban,Si32O61Lv3,O (4j) $\rightarrow$ Lv3O13,2x2x1,560,autosub:success,FALSE,23,SG50/SG50_cod_database_code_4124070.cif
+115,O3TeTl2,cod-4306939,orthorhombic,mmm,50,Pban,Al2Tl24In1B21Te24O72,Tl (8m) $\rightarrow$ Al2In1B21,1x1x3,6072,autosub:success,FALSE,253,SG50/SG50_cod_database_code_4306939.cif
+116,AuITe2,cod-1510184,orthorhombic,mmm,51,Pmma,Te8Rg3Cu1Ts1At1Br1F1,"Au (2c) $\rightarrow$ Rg3Cu1, I (2e) $\rightarrow$ Ts1At1Br1F1",1x1x2,96,autosub:success,FALSE,12,SG51/SG51_cod_database_code_1510184.cif
+117,Au3Rb2Tl,cod-4302645,orthorhombic,mmm,51,Pmma,Cs1Rb4K2Ga1B3H1Au12,"Rb (2f) $\rightarrow$ Cs1K2H1, Tl (2f) $\rightarrow$ Ga1B3",1x2x1,48,autosub:success,FALSE,12,SG51/SG51_cod_database_code_4302645.cif
+118,IrW,cod-1523681,orthorhombic,mmm,51,Pmma,Ir1Mt3Mo1W1Sg1Cr1,"Ir (2f) $\rightarrow$ Ir1Mt3, W (2e) $\rightarrow$ Mo1W1Sg1Cr1",1x2x1,96,autosub:success,FALSE,12,SG51/SG51_cod_database_code_1523681.cif
+119,Li6Nb2O11Sr3,cod-4306194,orthorhombic,mmm,51,Pmma,Fr1K13Rb1Sr24Li33Nb16O88,Li (4k) $\rightarrow$ Fr1K13Rb1Li1,2x1x2,3360,autosub:success,FALSE,126,SG51/SG51_cod_database_code_4306194.cif
+120,CHClCuN1.5,cod-4350530,orthorhombic,mmm,52,Pnna,Cu7Ag1H8C8N12Cl8,Cu (4c) $\rightarrow$ Cu3Ag1,3x1x1,220,autosub:success,FALSE,12,SG52/SG52_cod_database_code_4350530.cif
+121,K2O5Zr2,cod-1528513,orthorhombic,mmm,52,Pnna,K8Zr4Ti2Rf2Po1O18Lv1,"O (4d) $\rightarrow$ Po1Lv1O2, Zr (8e) $\rightarrow$ Zr2Ti1Rf1",1x1x1,5040,autosub:success,FALSE,648,SG52/SG52_cod_database_code_1528513.cif
+122,BiO4Ta,cod-1532721,orthorhombic,mmm,52,Pnna,Ta8Po14Bi8S1Lv1O16,O (8e) $\rightarrow$ Po14S1Lv1,1x2x1,240,autosub:success,FALSE,15,SG52/SG52_cod_database_code_1532721.cif
+123,NdO14P5,cod-1560966,orthorhombic,mmm,53,Pmna,Ce1Pr2Er1Po2Te2P20S8O44,"O (4h) $\rightarrow$ Po1Te2S1, Nd (4h) $\rightarrow$ Ce1Pr2Er1, O (8i) $\rightarrow$ Po1S7",1x1x1,1152,autosub:success,FALSE,144,SG53/SG53_cod_database_code_1560966.cif
+124,C12H6F2FeN8Pt,cod-4349105,orthorhombic,mmm,53,Pmna,Hs1Fe1Ru3Os1H36Pt6C72N48F12,Fe (2c) $\rightarrow$ Hs1Fe1Ru3Os1,1x3x1,120,autosub:success,FALSE,10,SG53/SG53_cod_database_code_4349105.cif
+125,H4N4,cod-4031568,orthorhombic,mmm,53,Pmna,H32N28Mc2Sb1As1,N (4g) $\rightarrow$ N4Mc2Sb1As1,1x1x2,840,autosub:success,FALSE,57,SG53/SG53_cod_database_code_4031568.cif
+126,Au2Cd2Rb2S4,cod-1510376,orthorhombic,mmm,54,Pcca,Fr1Li1Cd4Ag1H2Rg1Au2S8,"Rb (4c) $\rightarrow$ Fr1Li1H2, Au (4e) $\rightarrow$ Ag1Rg1Au2",1x1x1,144,autosub:success,FALSE,18,SG54/SG54_cod_database_code_1510376.cif
+127,C11H14CdN4,cod-4513059,orthorhombic,mmm,54,Pcca,Fr5K3Cd4H48C44N16,H (8f) $\rightarrow$ Fr5K3,1x2x1,8008,autosub:success,FALSE,553,SG54/SG54_cod_database_code_4513059.cif
+128,O2Si,cod-4124082,orthorhombic,mmm,54,Pcca,Fl3Sn5Po3S1O10Lv2,"Si (8f) $\rightarrow$ Fl3Sn5, O (4b) $\rightarrow$ Po3O1, O (4d) $\rightarrow$ S1O1Lv2",1x1x1,2688,autosub:success,FALSE,336,SG54/SG54_cod_database_code_4124082.cif
+129,Ce4O4S3,cod-2106910,orthorhombic,mmm,55,Pbam,Tb1Pm7Ho4Er4S12O16,"Ce (4g) $\rightarrow$ Tb1Pm7, Ce (4h) $\rightarrow$ Ho1Er1",1x1x2,560,autosub:success,FALSE,38,SG55/SG55_cod_database_code_2106910.cif
+130,C2O4Rb2,cod-4313231,orthorhombic,mmm,55,Pbam,Rb2C2Se1Lv1O2,O (4g) $\rightarrow$ Se1Lv1,1x2x1,70,autosub:success,FALSE,13,SG55/SG55_cod_database_code_4313231.cif
+131,H20N4O2P4S8,cod-1528469,orthorhombic,mmm,55,Pbam,Cs3K2Rb15Na3Li1P16H56S32N16O8,"H (8i) $\rightarrow$ Rb15Li1, H (4g) $\rightarrow$ Cs3K2Na3",1x1x2,8960,autosub:success,FALSE,560,SG55/SG55_cod_database_code_1528469.cif
+132,BaS5Sn2,cod-4331672,orthorhombic,mmm,56,Pccn,Ba8Pb13Fl3S40,Sn (8e) $\rightarrow$ Pb13Fl3,2x1x1,560,autosub:success,FALSE,35,SG56/SG56_cod_database_code_4331672.cif
+133,C2H6N10O6Pb2,cod-7232085,orthorhombic,mmm,56,Pccn,As1H24Pb8C8N27Mc11P1O24,"N (8e) $\rightarrow$ N3Mc5, N (8e) $\rightarrow$ P1Mc6As1",1x1x1,3136,autosub:success,FALSE,392,SG56/SG56_cod_database_code_7232085.cif
+134,Li4Re6S11,cod-1008693,orthorhombic,mmm,56,Pccn,Li16Re24S39O1Lv3Te1,S (8e) $\rightarrow$ O1Lv3Te1S3,1x1x1,1120,autosub:success,FALSE,140,SG56/SG56_cod_database_code_1008693.cif
+135,CH4CuN3,cod-2310369,orthorhombic,mmm,57,Pbcm,Cu8C8N16Mc5Bi1Sb1As1,N (4d) $\rightarrow$ Mc5Bi1Sb1As1,1x2x1,336,autosub:success,FALSE,42,SG57/SG57_cod_database_code_2310369.cif
+136,C4H10F4O2S,cod-4349313,orthorhombic,mmm,57,Pbcm,Sn11Ge5H80C16S8O16F32,C (8e) $\rightarrow$ Sn11Ge5,1x1x2,4368,autosub:success,FALSE,273,SG57/SG57_cod_database_code_4349313.cif
+137,OPb,cod-9008960,orthorhombic,mmm,57,Pbcm,Fl5Si1Ge1Pb1O8,Pb (4d) $\rightarrow$ Fl5Si1Ge1Pb1,1x1x2,336,autosub:success,FALSE,42,SG57/SG57_cod_database_code_9008960.cif
+138,AuNa2O2Rb,cod-1510249,orthorhombic,mmm,58,Pnnm,Fr1K3Na16Li2H2Au8O16,Rb (2c) $\rightarrow$ Fr1K3Li2H2,2x1x2,1680,autosub:success,FALSE,63,SG58/SG58_cod_database_code_1510249.cif
+139,FeSb2,cod-9012580,orthorhombic,mmm,58,Pnnm,Hs1Sb6Os2,Fe (2a) $\rightarrow$ Hs1Os2,1x2x3,495,autosub:success,FALSE,21,SG58/SG58_cod_database_code_9012580.cif
+140,CuSe2,cod-9009853,orthorhombic,mmm,58,Pnnm,Rg9Cu1Au2Se24,Cu (2a) $\rightarrow$ Rg9Cu1Au2,1x3x2,660,autosub:success,FALSE,20,SG58/SG58_cod_database_code_9009853.cif
+141,AlLi5O4,cod-1528092,orthorhombic,mmm,59,Pmmn,Li30Al6Po11O13,O (4e) $\rightarrow$ Po11O1,1x3x3,7140,autosub:success,FALSE,116,SG59/SG59_cod_database_code_1528092.cif
+142,C6H16Br2N2O,cod-4501124,orthorhombic,mmm,59,Pmmn,Si2Sn1H64C21Br8N8O4,C (8g) $\rightarrow$ Si2Sn1C13,1x2x1,1680,autosub:success,FALSE,105,SG59/SG59_cod_database_code_4501124.cif
+143,H2In2O19P6,cod-8103789,orthorhombic,mmm,59,Pmmn,In16P48Se2O145Lv4S1,O (2a) $\rightarrow$ Lv4Se2S1O1,2x2x1,840,autosub:success,FALSE,33,SG59/SG59_cod_database_code_8103789.cif
+144,B2Eu2GeO8,cod-7025367,orthorhombic,mmm,60,Pbcn,Eu4Si1Sn1B4O16,Ge (4c) $\rightarrow$ Si1Sn1,1x1x3,924,autosub:success,FALSE,55,SG60/SG60_cod_database_code_7025367.cif
+145,O2Re,cod-9009092,orthorhombic,mmm,60,Pbcn,Tc9Re3Lv23Te1,"O (8d) $\rightarrow$ Lv23Te1, Re (4c) $\rightarrow$ Tc3Re1",1x3x1,5280,autosub:success,FALSE,220,SG60/SG60_cod_database_code_9009092.cif
+146,C14H9NO2,cod-2221069,orthorhombic,mmm,60,Pbcn,Ge1H18Pb1C26N2O4,C (4c) $\rightarrow$ Ge1Pb1,3x1x1,924,autosub:success,FALSE,55,SG60/SG60_cod_database_code_2221069.cif
+147,C10H10Cl4Cr2,cod-7009280,orthorhombic,mmm,61,Pbca,Na1Li14Cr16H65C80Cl32,H (8c) $\rightarrow$ Na1Li14H1,1x2x1,240,autosub:success,FALSE,15,SG61/SG61_cod_database_code_7009280.cif
+148,Cl2N4S6,cod-4031497,orthorhombic,mmm,61,Pbca,Te11S37N32Cl16,S (8c) $\rightarrow$ Te11S5,2x1x1,4368,autosub:success,FALSE,273,SG61/SG61_cod_database_code_4031497.cif
+149,B4CoO7,cod-1511654,orthorhombic,mmm,61,Pbca,Co8Po2B32Te4O49Lv1,"O (8c) $\rightarrow$ Te4O3Lv1, O (8c) $\rightarrow$ Po1O3",1x1x1,7840,autosub:success,FALSE,980,SG61/SG61_cod_database_code_1511654.cif
+150,CH0I3NPb,cod-7239521,orthorhombic,mmm,62,Pnma,Pb8C8Ts1At4I16Br2N8F1,I (4c) $\rightarrow$ Ts1At4Br2F1,2x1x1,840,autosub:success,FALSE,105,SG62/SG62_cod_database_code_7239521.cif
+151,Li2MnO12P4,cod-2239107,orthorhombic,mmm,62,Pnma,Li8Mn4Te2P16S1O45,O (8d) $\rightarrow$ Te2S1O5,1x1x1,168,autosub:success,FALSE,21,SG62/SG62_cod_database_code_2239107.cif
+152,FeGdO3,cod-1528359,orthorhombic,mmm,62,Pnma,Tb1Dy1Fe2O6,Gd (4c) $\rightarrow$ Tb1Dy1,2x1x1,70,autosub:success,FALSE,13,SG62/SG62_cod_database_code_1528359.cif
+153,Mn5Si3,cod-7222431,orthorhombic,mmm,63,Cmcm,Mn17Re2Tc1Ge1Fl1Si10,"Mn (8e) $\rightarrow$ Mn5Re2Tc1, Si (4c) $\rightarrow$ Ge1Fl1Si2",1x1x1,2016,autosub:success,FALSE,126,SG63/SG63_cod_database_code_7222431.cif
+154,C11H8CoN6O3,cod-7229238,orthorhombic,mmm,63,Cmcm,Co16Si11H128C165N96O48,C (8f) $\rightarrow$ Si11C5,1x1x2,4368,autosub:success,FALSE,273,SG63/SG63_cod_database_code_7229238.cif
+155,AlF4Na,cod-1544381,orthorhombic,mmm,63,Cmcm,Fr1K3Na3Li1Al8F32,Na (4c) $\rightarrow$ Fr1K3Na3Li1,1x2x1,1120,autosub:success,FALSE,140,SG63/SG63_cod_database_code_1544381.cif
+156,Ge4Na4S10,cod-1538474,orthorhombic,mmm,63,Cmcm,Cs2Rb1Na8Ge8H5Pb7C1S40,"Ge (8f) $\rightarrow$ Pb7C1, Na (8g) $\rightarrow$ Cs2Rb1H5",1x1x1,1344,autosub:success,FALSE,84,SG63/SG63_cod_database_code_1538474.cif
+157,Dy2Ni7Sn3,cod-2016598,orthorhombic,mmm,64,Cmce,Dy32Si13Ni112Sn35,Sn (8e) $\rightarrow$ Si13Sn3,1x2x1,560,autosub:success,FALSE,35,SG64/SG64_cod_database_code_2016598.cif
+158,I2,cod-9008595,orthorhombic,mmm,64,Cmce,Br5F1Ts1At1,I (8f) $\rightarrow$ Br5F1Ts1At1,1x1x1,336,autosub:success,FALSE,42,SG64/SG64_cod_database_code_9008595.cif
+159,As6K6Na4Sn2,cod-1008873,orthorhombic,mmm,64,Cmce,K96Na64Si3As96C29,Sn (8d) $\rightarrow$ Si3C29,2x1x2,4960,autosub:success,FALSE,99,SG64/SG64_cod_database_code_1008873.cif
+160,CdCl2N2,cod-9015814,orthorhombic,mmm,65,Cmmm,Zn1Hg1As1I2N3Cl1Ts1,"Cl (4h) $\rightarrow$ Cl1Ts1I2, N (4i) $\rightarrow$ As1N3, Cd (2a) $\rightarrow$ Zn1Hg1",1x1x1,96,autosub:success,FALSE,12,SG65/SG65_cod_database_code_9015814.cif
+161,C10H8CdI2N2,cod-7216336,orthorhombic,mmm,65,Cmmm,Cd2Si1Sn2H16At1C16Fl1N4Cl2Ts1,"I (4j) $\rightarrow$ Cl2Ts1At1, C (4g) $\rightarrow$ Si1Sn2Fl1",1x1x1,144,autosub:success,FALSE,18,SG65/SG65_cod_database_code_7216336.cif
+162,Co2La3Sn7,cod-1524263,orthorhombic,mmm,65,Cmmm,La24Co16Si3Sn48Pb4C1,Sn (2a) $\rightarrow$ Si3Pb4C1,1x2x2,280,autosub:success,FALSE,21,SG65/SG65_cod_database_code_1524263.cif
+163,Al4Mg2O18Si5,cod-9005804,orthorhombic,mmm,66,Cccm,Mg16Al32Si40Te29Se3O112,O (16m) $\rightarrow$ Te29Se3,1x1x2,4960,autosub:success,FALSE,155,SG66/SG66_cod_database_code_9005804.cif
+164,I3Th,cod-1008186,orthorhombic,mmm,66,Cccm,Pu1Md1Fm1Th12Np1Ts5I40Br1Cl1F1,"Th (4d) $\rightarrow$ Pu1Md1Fm1Np1, I (8k) $\rightarrow$ Ts5Br1Cl1F1",1x1x1,8064,autosub:success,FALSE,504,SG66/SG66_cod_database_code_1008186.cif
+165,BaIn2Te4,cod-1536658,orthorhombic,mmm,66,Cccm,Ba8Tl3B13Te32,In (8l) $\rightarrow$ Tl3B13,1x1x2,560,autosub:success,FALSE,23,SG66/SG66_cod_database_code_1536658.cif
+166,C,cod-9012231,orthorhombic,mmm,67,Cmme,Ge1Pb12C19,C (8m) $\rightarrow$ Ge1Pb12C3,1x1x2,7280,autosub:success,FALSE,455,SG67/SG67_cod_database_code_9012231.cif
+167,C14H24N4Ni2O8,cod-2201224,orthorhombic,mmm,67,Cmme,Ni8As7H96C56N9O32,N (8m) $\rightarrow$ As7N1,1x1x2,120,autosub:success,FALSE,15,SG67/SG67_cod_database_code_2201224.cif
+168,Pd4Sn16,cod-1536196,orthorhombic,mmm,68,Ccce,Ni5Sn32Ds1Pd1Pt1,Pd (4b) $\rightarrow$ Ni5Ds1Pd1Pt1,1x2x1,336,autosub:success,FALSE,24,SG68/SG68_cod_database_code_1536196.cif
+169,Cl2O4Sr,cod-2207380,orthorhombic,mmm,68,Ccce,Sr2Se3S5Cl4,O (16i) $\rightarrow$ Se3S5,1x1x1,8008,autosub:success,FALSE,553,SG68/SG68_cod_database_code_2207380.cif
+170,C4H4ClN2Zn0.5,cod-4350272,orthorhombic,mmm,68,Ccce,Cs3Zn1H5C8N4Cl2,H (16i) $\rightarrow$ Cs3H1,1x1x1,1820,autosub:success,FALSE,140,SG68/SG68_cod_database_code_4350272.cif
+171,P6Rb4,cod-1539581,orthorhombic,mmm,69,Fmmm,Fr3Rb4Na1P12,Rb (8h) $\rightarrow$ Fr3Na1,1x2x1,1820,autosub:success,FALSE,88,SG69/SG69_cod_database_code_1539581.cif
+172,Cs2Pt3Se6U,cod-4328807,orthorhombic,mmm,69,Fmmm,Cs8Rb7Li1U8Pt24Se48,Cs (8f) $\rightarrow$ Rb7Li1,1x1x2,120,autosub:success,FALSE,11,SG69/SG69_cod_database_code_4328807.cif
+173,Ag2Ca4Si6,cod-1509769,orthorhombic,mmm,69,Fmmm,Ra2Sr1Ca12Be1Si24Ag8,Ca (8f) $\rightarrow$ Ra2Sr1Ca4Be1,1x1x1,840,autosub:success,FALSE,105,SG69/SG69_cod_database_code_1509769.cif
+174,EuGeS4Zn,cod-7227463,orthorhombic,mmm,70,Fddd,Yb1Ce1Pm2Eu12Zn16Ge16S64,Eu (8a) $\rightarrow$ Yb1Ce1Pm2,1x1x1,420,autosub:success,FALSE,24,SG70/SG70_cod_database_code_7227463.cif
+175,C5H12NdO10,cod-7200149,orthorhombic,mmm,70,Fddd,Nd16Po1Te1H192C80O158,O (32h) $\rightarrow$ Po1Te1O30,1x1x1,992,autosub:success,FALSE,31,SG70/SG70_cod_database_code_7200149.cif
+176,B2GdIr2,cod-1510703,orthorhombic,mmm,70,Fddd,Gd12Co1B24Rh23,Ir (16g) $\rightarrow$ Co1Rh23,1x3x1,1128,autosub:success,FALSE,24,SG70/SG70_cod_database_code_1510703.cif
+177,B2Ce3N4,cod-1510979,orthorhombic,mmm,71,Immm,Ce6Bi5B4As3,N (8l) $\rightarrow$ Bi5As3,1x1x2,8008,autosub:success,FALSE,539,SG71/SG71_cod_database_code_1510979.cif
+178,Bi7Nd3,cod-7121799,orthorhombic,mmm,71,Immm,Nd48Bi105As5Mc1P1,Bi (2c) $\rightarrow$ Bi1As5Mc1P1,2x2x1,336,autosub:success,FALSE,15,SG71/SG71_cod_database_code_7121799.cif
+179,MoPt2,cod-1522847,orthorhombic,mmm,71,Immm,Cr4Mo2Ds9Ni2Pt1,"Mo (2a) $\rightarrow$ Cr2Mo1, Pt (4i) $\rightarrow$ Ds9Ni2Pt1",1x3x1,9900,autosub:success,FALSE,825,SG71/SG71_cod_database_code_1522847.cif
+180,As2Cs2Sn,cod-1008524,orthorhombic,mmm,72,Ibam,Cs8Sn4Sb3P5,As (8j) $\rightarrow$ Sb3P5,1x2x1,8008,autosub:success,FALSE,539,SG72/SG72_cod_database_code_1008524.cif
+181,Cs2MnS2,cod-1539893,orthorhombic,mmm,72,Ibam,Cs1Rb13K1Na1Mn8S16,Cs (8j) $\rightarrow$ Cs1Rb13K1Na1,1x2x1,3360,autosub:success,FALSE,210,SG72/SG72_cod_database_code_1539893.cif
+182,Al4H4Li2O20P4Sr,cod-9000452,orthorhombic,mmm,72,Ibam,Sr8Li16Al32Po1P32S13O146,O (8j) $\rightarrow$ Po1S13O2,1x2x1,1680,autosub:success,FALSE,105,SG72/SG72_cod_database_code_9000452.cif
+183,Mg2O4Si,cod-9015858,orthorhombic,mmm,74,Imma,Ba1Ra8Ca2Mg36Be1Si24O96,Mg (4a) $\rightarrow$ Ba1Ra8Ca2Be1,1x3x1,5940,autosub:success,FALSE,255,SG74/SG74_cod_database_code_9015858.cif
+184,C2CoF5N3V,cod-7042546,orthorhombic,mmm,74,Imma,V12Co12Sb7P2C24N27F60,N (4e) $\rightarrow$ Sb7P2N3,3x1x1,7920,autosub:success,FALSE,344,SG74/SG74_cod_database_code_7042546.cif
+185,C2H3F5Fe2N3,cod-7023703,orthorhombic,mmm,74,Imma,Fe11Ru3Os1Hs1H24C16N24F40,Fe (4a) $\rightarrow$ Fe3Ru3Os1Hs1,1x2x1,1120,autosub:success,FALSE,76,SG74/SG74_cod_database_code_7023703.cif
+186,CdClO15Rb4V5,cod-2002827,tetragonal,4,75,P4,Rb12Ta9Nb2V4Cd3Se2S1Cl3O42,"O (1b) $\rightarrow$ Se2S1, V (4d) $\rightarrow$ Ta9Nb2V1",1x1x3,1980,autosub:success,FALSE,165,SG75/SG75_cod_database_code_2002827.cif
+187,KNaO7P2,cod-9016451,tetragonal,4,76,P4_1,K8Na8Po1P16Se3Lv1S2O49,"O (4a) $\rightarrow$ Se1Lv1Po1S1, O (4a) $\rightarrow$ Se2S1O1",1x1x1,288,autosub:success,FALSE,72,SG76/SG76_cod_database_code_9016451.cif
+188,CH3LaO7S,cod-4331355,tetragonal,4,76,P4_1,K2Na2La4H8Fl1Sn3S4O28,"C (4a) $\rightarrow$ Fl1Sn3, HWB (4a) $\rightarrow$ K1Na1",1x1x2,1960,autosub:success,FALSE,248,SG76/SG76_cod_database_code_4331355.cif
+189,CH3EuO7S,cod-4331358,tetragonal,4,76,P4_1,Eu8H24C8S8Lv5Te3O48,O (4a) $\rightarrow$ Lv5Te3,1x2x1,56,autosub:success,FALSE,14,SG76/SG76_cod_database_code_4331358.cif
+190,B2H6MgO7,cod-9011070,tetragonal,4,77,P4_2,Ba3Ra1Po1B8O20Lv4Se1S2,"Mg (4d) $\rightarrow$ Ba3Ra1, O-H (4d) $\rightarrow$ Lv3S1, O-H (4d) $\rightarrow$ Lv1Po1Se1S1",1x1x1,384,autosub:success,FALSE,96,SG77/SG77_cod_database_code_9011070.cif
+191,C14H12N2,cod-8103283,tetragonal,4,78,P4_3,Fr1K5Li1H89C112N16,HB (4a) $\rightarrow$ Fr1K5Li1H1,1x2x1,336,autosub:success,FALSE,84,SG78/SG78_cod_database_code_8103283.cif
+192,C10H12N2O3,cod-8102707,tetragonal,4,78,P4_3,H36C27Fl1Ge2N6O9,C (4a) $\rightarrow$ Fl1Ge2,1x1x3,495,autosub:success,FALSE,43,SG78/SG78_cod_database_code_8102707.cif
+193,C8H9NO3S,cod-2226053,tetragonal,4,78,P4_3,Sn3H144C112Fl13S16N16O48,C (4a) $\rightarrow$ Sn3Fl13,2x1x2,560,autosub:success,FALSE,70,SG78/SG78_cod_database_code_2226053.cif
+194,C10H16N8O3,cod-2012950,tetragonal,4,80,I4_1,H64C40N26Mc3Sb3O12,N (8b) $\rightarrow$ Mc3Sb3N2,1x1x1,560,autosub:success,FALSE,70,SG80/SG80_cod_database_code_2012950.cif
+195,Ca11O24Re4,cod-7222666,tetragonal,4,80,I4_1,Ca44Re16Po2Te5Se1O88,O (8b) $\rightarrow$ Po2Te5Se1,1x1x1,168,autosub:success,FALSE,21,SG80/SG80_cod_database_code_7222666.cif
+196,C19H18CdN12O3,cod-2216290,tetragonal,4,80,I4_1,Fr5K3Cd4Sb1H64C76N41Mc6O12,"H (8b) $\rightarrow$ Fr5K3, N (8b) $\rightarrow$ Mc6Sb1N1",1x1x1,3136,autosub:success,FALSE,392,SG80/SG80_cod_database_code_2216290.cif
+197,C12H16CaCo2N4O16,cod-7203434,tetragonal,-4,81,P-4,Ca2Co4Si4Sn1H32C18Fl1N8O32,C (4h) $\rightarrow$ Si4Sn1Fl1C2,1x1x2,840,autosub:success,FALSE,105,SG81/SG81_cod_database_code_7203434.cif
+198,Ta,cod-2103918,tetragonal,-4,81,P-4,Ta26V3Db1,Taa (4h) $\rightarrow$ V3Db1,1x2x1,28,autosub:success,FALSE,10,SG81/SG81_cod_database_code_2103918.cif
+199,C12H16AgBF4N4O2,cod-4505055,tetragonal,-4,81,P-4,Rb1Li1Ag6B6H94C72N24O12F24,HA (4h) $\rightarrow$ Rb1Li1H22,2x3x1,552,autosub:success,FALSE,46,SG81/SG81_cod_database_code_4505055.cif
+200,C5H6N2,cod-2102095,tetragonal,-4,82,I-4,Fr13Na3H176C160N64,HB (8g) $\rightarrow$ Fr13Na3,1x1x2,560,autosub:success,FALSE,35,SG82/SG82_cod_database_code_2102095.cif
+201,AlBeClNa4O12Si4,cod-9003376,tetragonal,-4,82,I-4,Ba1Na24Sr1Be4Al6Si24Cl6O72,Be (2c) $\rightarrow$ Ba1Sr1Be4,2x1x3,2970,autosub:success,FALSE,143,SG82/SG82_cod_database_code_9003376.cif
+202,CdGa2S4,cod-1537372,tetragonal,-4,82,I-4,Al1Tl1Cd6Ga9B1S24,Ga (2c) $\rightarrow$ Al1Tl1Ga3B1,1x3x1,120,autosub:success,FALSE,10,SG82/SG82_cod_database_code_1537372.cif
+203,Ca7Ni4Sn13,cod-1528162,tetragonal,4/m,83,P4/m,Sr2Ca18Mg1Ni12Sn39,Ca (4j) $\rightarrow$ Sr2Ca9Mg1,3x1x1,660,autosub:success,FALSE,110,SG83/SG83_cod_database_code_1528162.cif
+204,CH3CuS,cod-1534886,tetragonal,4/m,84,P4_2/m,Si1Ag3Au9C11S12,"Cu (4j) $\rightarrow$ Ag1Au3, C (4j) $\rightarrow$ Si1C11",3x1x1,2640,autosub:success,FALSE,440,SG84/SG84_cod_database_code_1534886.cif
+205,PdS,cod-1538224,tetragonal,4/m,84,P4_2/m,Ni5Pd9Ds1Pt1S16,"Pd (4j) $\rightarrow$ Ni1Pd1, Pd (2c) $\rightarrow$ Ni1Ds1Pd1Pt1",1x2x1,1680,autosub:success,FALSE,420,SG84/SG84_cod_database_code_1538224.cif
+206,Cl6NaSb,cod-8103949,tetragonal,4/m,84,P4_2/m,Fr3Rb1As1N1Mc2Ts2Cl8F14,"Sb (2c) $\rightarrow$ As1N1Mc2, Cl (8k) $\rightarrow$ Ts1F7, Na (2e) $\rightarrow$ Fr3Rb1",1x2x1,5760,autosub:success,FALSE,728,SG84/SG84_cod_database_code_8103949.cif
+207,O2Si,cod-4124067,tetragonal,4/m,85,P4/n,Ge13Fl1Si16Pb1C1O64,Si (8g) $\rightarrow$ Ge13Fl1Pb1C1,1x1x2,3360,autosub:success,FALSE,210,SG85/SG85_cod_database_code_4124067.cif
+208,C24H20CdCl2N8O4,cod-7214553,tetragonal,4/m,85,P4/n,Cd8H160At1C192I3N64Cl8Ts1Br3O32,Cl (2b) $\rightarrow$ Ts1At1I3Br3,2x2x1,1120,autosub:success,FALSE,38,SG85/SG85_cod_database_code_7214553.cif
+209,MoO5V,cod-1535988,tetragonal,4/m,85,P4/n,Db7Ta4Nb1Mo12O60,V (2c) $\rightarrow$ Db7Ta4Nb1,1x2x3,3960,autosub:success,FALSE,184,SG85/SG85_cod_database_code_1535988.cif
+210,Br8N4P4,cod-2107246,tetragonal,4/m,86,P4_2/n,As5Mc1Sb1P1Br16N8,P (8g) $\rightarrow$ As5Mc1Sb1P1,1x1x1,336,autosub:success,FALSE,42,SG86/SG86_cod_database_code_2107246.cif
+211,C24H20N4O10Zr,cod-2231784,tetragonal,4/m,86,P4_2/n,Hf2Zr1Ti2Rf1H120C144N24O60,Zr (2b) $\rightarrow$ Hf2Zr1Ti2Rf1,1x1x3,180,autosub:success,FALSE,16,SG86/SG86_cod_database_code_2231784.cif
+212,Br3CsIn,cod-4003085,tetragonal,4/m,87,I4/m,Cs40Tl1In36Ga2B1Br120,In (2b) $\rightarrow$ Tl1Ga2B1,2x1x2,420,autosub:success,FALSE,24,SG87/SG87_cod_database_code_4003085.cif
+213,NiO6Sr2W,cod-1526460,tetragonal,4/m,87,I4/m,Sr8Ni4Mo2Sg1W1Se3O21,"W (2b) $\rightarrow$ Mo2Sg1W1, O (4e) $\rightarrow$ Se3O5",1x2x1,672,autosub:success,FALSE,45,SG87/SG87_cod_database_code_1526460.cif
+214,Ba2.67Cl6O8Pb8Sr0.33,cod-7700866,tetragonal,4/m,87,I4/m,Ba32Sr4Pb96Cl64Ts5Br1O96F2,Cl (4e) $\rightarrow$ Ts5Br1F2,1x1x2,168,autosub:success,FALSE,21,SG87/SG87_cod_database_code_7700866.cif
+215,C2H2F3I,cod-7122659,tetragonal,4/m,88,I4_1/a,H8At3C8Cl1F12,I (16f) $\rightarrow$ At3Cl1,1x1x1,1820,autosub:success,FALSE,128,SG88/SG88_cod_database_code_7122659.cif
+216,O4PbW,cod-9009813,tetragonal,4/m,88,I4_1/a,Cr7Si6Mo1Pb2O32,"Pb (4a) $\rightarrow$ Si3Pb1, W (4b) $\rightarrow$ Cr7Mo1",2x1x1,224,autosub:success,FALSE,18,SG88/SG88_cod_database_code_9009813.cif
+217,F7K3U,cod-2311030,tetragonal,4/m,88,I4_1/a,Fr8Cs5K32Na2U16H1F112,"K (4b) $\rightarrow$ Fr1Cs5Na2, K (4a) $\rightarrow$ Fr7H1",1x1x2,1344,autosub:success,FALSE,87,SG88/SG88_cod_database_code_2311030.cif
+218,O2Si,cod-9016249,tetragonal,422,92,P4_12_12,Si8Te14Lv1Se1,O (8b) $\rightarrow$ Te14Lv1Se1,1x1x2,240,autosub:success,FALSE,15,SG92/SG92_cod_database_code_9016249.cif
+219,C2H2O4Sr,cod-2104412,tetragonal,422,92,P4_12_12,Sr4Po1Te3H8C8Se2S2O8,O (8b) $\rightarrow$ Po1Te3Se2S2,1x1x1,1680,autosub:success,FALSE,210,SG92/SG92_cod_database_code_2104412.cif
+220,Ge2O7Y2,cod-1563641,tetragonal,422,92,P4_12_12,Y8Po8Ge8Te1S2O16Lv1,"O (8b) $\rightarrow$ Po5Te1S1Lv1, O (4a) $\rightarrow$ Po3S1",1x1x1,1344,autosub:success,FALSE,168,SG92/SG92_cod_database_code_1563641.cif
+221,C12H13GdNO8.5,cod-7206530,tetragonal,422,95,P4_322,Fr1K2Na1Gd4Te1H8C36Se6O20Lv1,"O (8d) $\rightarrow$ Te1Se6Lv1, H (4a) $\rightarrow$ Fr1K2Na1",1x1x1,672,autosub:success,FALSE,84,SG95/SG95_cod_database_code_7206530.cif
+222,C10H10FeO4P2Zn,cod-7048681,tetragonal,422,95,P4_322,Zn4Fe4P8H40C40Se3O13,O (8d) $\rightarrow$ Se3O5,1x2x1,8008,autosub:success,FALSE,1050,SG95/SG95_cod_database_code_7048681.cif
+223,Mn2O4Ti,cod-1008093,tetragonal,422,95,P4_322,Zr3Ti1Mn2Tc5Re1O16,"Mn (4c) $\rightarrow$ Mn1Tc3, Mn (4a) $\rightarrow$ Mn1Tc2Re1, Ti (4b) $\rightarrow$ Zr3Ti1",1x1x1,192,autosub:success,FALSE,24,SG95/SG95_cod_database_code_1008093.cif
+224,AlH8Na5O8,cod-8104097,tetragonal,422,96,P4_32_12,Cs15K1Na24Al8H64O64,Na (8b) $\rightarrow$ Cs15K1,2x2x1,496,autosub:success,FALSE,21,SG96/SG96_cod_database_code_8104097.cif
+225,H12NiO10S,cod-9011265,tetragonal,422,96,P4_32_12,Pd2Ds1S3O30,Ni (4a) $\rightarrow$ Pd2Ds1,1x1x3,495,autosub:success,FALSE,29,SG96/SG96_cod_database_code_9011265.cif
+226,C7H7N7,cod-4500027,tetragonal,422,96,P4_32_12,Bi3H56C56N50Mc3,N (4a) $\rightarrow$ Bi3N2Mc3,1x2x1,560,autosub:success,FALSE,70,SG96/SG96_cod_database_code_4500027.cif
+227,C44H68Cl2N8O4Re2,cod-4312052,tetragonal,422,97,I422,Re8H240At4C176I1N32O16F3,Cl (4e) $\rightarrow$ At4I1F3,2x1x1,280,autosub:success,FALSE,21,SG97/SG97_cod_database_code_4312052.cif
+228,C8H4O5V,cod-4135627,tetragonal,422,98,I4_122,V8Sn1Ge4H32Pb3C56O40,C (8c) $\rightarrow$ Sn1Ge4Pb3,1x1x1,280,autosub:success,FALSE,35,SG98/SG98_cod_database_code_4135627.cif
+229,O3PbTi,cod-2107524,tetragonal,4mm,99,P4mm,Ti6Si4Sn1Po1Pb1Lv2Se2O13,"O (1b) $\rightarrow$ Lv2Po1Se2O1, Pb (1a) $\rightarrow$ Si4Sn1Pb1",3x2x1,5400,autosub:success,FALSE,226,SG99/SG99_cod_database_code_2107524.cif
+230,Cl2CuH4O4Pb2,cod-9004395,tetragonal,4mm,99,P4mm,Au1Rg1Te4H8Pb4Se4Cl3F1,"Cu (1a) $\rightarrow$ Au1Rg1, Cl (1b) $\rightarrow$ Cl1F1, O (4d) $\rightarrow$ Te1Se1",2x1x1,280,autosub:success,FALSE,38,SG99/SG99_cod_database_code_9004395.cif
+231,O3PbTi,cod-9011190,tetragonal,4mm,99,P4mm,Ti6Po3Ge4C1Fl1Se3O12,"Pb (1a) $\rightarrow$ Ge4C1Fl1, O (1b) $\rightarrow$ Po1Se1",1x3x2,600,autosub:success,FALSE,52,SG99/SG99_cod_database_code_9011190.cif
+232,H6O10V3,cod-1526958,tetragonal,4mm,100,P4bm,V18Po4S1O54Lv1,O (2a) $\rightarrow$ Po4S1Lv1,3x1x2,2970,autosub:success,FALSE,147,SG100/SG100_cod_database_code_1526958.cif
+233,F6LiMnV,cod-4030185,tetragonal,4mm,102,P4_2nm,Li4Mn4V4I3F21,F (4c) $\rightarrow$ I3F5,1x2x2,8008,autosub:success,FALSE,525,SG102/SG102_cod_database_code_4030185.cif
+234,C10H4Cl8N2Zn,cod-7107904,tetragonal,4mm,102,P4_2nm,Cd2Hg3Cn7H48C120N24Cl96,ZN() (2a) $\rightarrow$ Cd2Hg3Cn7,2x1x3,7920,autosub:success,FALSE,358,SG102/SG102_cod_database_code_7107904.cif
+235,U,cod-2106190,tetragonal,4mm,102,P4_2nm,Pu1No1Md1Cf1Am1Th1Cm1Np2U20Pa1,"U (2a) $\rightarrow$ Pu1Cm1, U (4c) $\rightarrow$ Cf1Am1Th1Np1, U (4c) $\rightarrow$ No1Md1Np1Pa1",1x1x1,1152,autosub:success,FALSE,144,SG102/SG102_cod_database_code_2106190.cif
+236,C24H16Br2MnN8,cod-7231801,tetragonal,4mm,104,P4nc,Mn8H128C192Br13N64Cl1F2,Br (2a) $\rightarrow$ Br5Cl1F2,2x1x2,168,autosub:success,FALSE,13,SG104/SG104_cod_database_code_7231801.cif
+237,BaGe2P2,cod-7222662,tetragonal,4mm,105,P4_2mc,Ba2Sr1Mg1Si1Sn1Ge5As7P1Pb1,"Ba (2c) $\rightarrow$ Sr1Mg1, P (8f) $\rightarrow$ As7P1, Ge (4e) $\rightarrow$ Si1Sn1Ge1Pb1",1x1x1,384,autosub:success,FALSE,48,SG105/SG105_cod_database_code_7222662.cif
+238,CH15CrN8O7,cod-1534688,tetragonal,4mm,107,I4mm,Cr1Po2Te1Mo2W1C4N32O25,"O (2a) $\rightarrow$ Po2Te1O1, Cr (2a) $\rightarrow$ Cr1Mo2W1",1x1x2,144,autosub:success,FALSE,36,SG107/SG107_cod_database_code_1534688.cif
+239,FeGe3La,cod-2204979,tetragonal,4mm,107,I4mm,La12Fe12Ge12C21Fl1Pb2,Ge (4b) $\rightarrow$ C21Fl1Pb2,3x1x2,6072,autosub:success,FALSE,282,SG107/SG107_cod_database_code_2204979.cif
+240,CuGa3La,cod-4344611,tetragonal,4mm,107,I4mm,La4Al3Tl2In2Ga4Cu4B1,Ga (4b) $\rightarrow$ Al3Tl2In2B1,2x1x1,1680,autosub:success,FALSE,224,SG107/SG107_cod_database_code_4344611.cif
+241,Cr3F19Pb5,cod-2107206,tetragonal,4mm,108,I4cm,Cr12Mo2Pb60W21Sg1F228,Cr (8c) $\rightarrow$ Mo2W21Sg1,1x3x1,6072,autosub:success,FALSE,253,SG108/SG108_cod_database_code_2107206.cif
+242,C4H10Zn,cod-1543059,tetragonal,4mm,109,I4_1md,Fr3K3Li1Zn4H33C16,HA (8b) $\rightarrow$ Fr3K3Li1H1,1x1x1,1120,autosub:success,FALSE,76,SG109/SG109_cod_database_code_1543059.cif
+243,Ni2O8SrV2,cod-2002120,tetragonal,4mm,110,I4_1cd,Ca11Be5V32Ni32O128,Sr (8a) $\rightarrow$ Ca11Be5,2x1x1,4368,autosub:success,FALSE,314,SG110/SG110_cod_database_code_2002120.cif
+244,B2BeH8,cod-4343675,tetragonal,4mm,110,I4_1cd,Na3Li5Be8B16H56,H (16b) $\rightarrow$ Na3Li5,1x1x1,8008,autosub:success,FALSE,525,SG110/SG110_cod_database_code_4343675.cif
+245,C7H5IN3Se4,cod-7125149,tetragonal,-42m,113,P-42_1m,Si2H60C79Fl3Se48I12N36,C (4e) $\rightarrow$ Si2Fl3C7,1x1x3,7920,autosub:success,FALSE,358,SG113/SG113_cod_database_code_7125149.cif
+246,Ta,cod-2106748,tetragonal,-42m,113,P-42_1m,Ta27Nb1V1Db1,Ta (4e) $\rightarrow$ Ta1Nb1V1Db1,2x1x1,2520,autosub:success,FALSE,330,SG113/SG113_cod_database_code_2106748.cif
+247,Ca2MgO7Si2,cod-9006448,tetragonal,-42m,113,P-42_1m,Ba3Ra1Mg2Ge2Pb2O14,"Ca (4e) $\rightarrow$ Ba3Ra1, Si (4e) $\rightarrow$ Ge1Pb1",1x2x1,1960,autosub:success,FALSE,260,SG113/SG113_cod_database_code_9006448.cif
+248,C5H8N4O12,cod-5900023,tetragonal,-42m,114,P-42_1c,Fl7Pb4C49N48O144,C (2a) $\rightarrow$ Fl7Pb4C1,3x1x2,3960,autosub:success,FALSE,174,SG114/SG114_cod_database_code_5900023.cif
+249,Na3S4Sb,cod-4518779,tetragonal,-42m,114,P-42_1c,Cs1Na5Sb2S3Lv1Po4,"Na@ (4d) $\rightarrow$ Cs1Na3, S@ (8e) $\rightarrow$ S3Lv1Po4",1x1x1,1120,autosub:success,FALSE,140,SG114/SG114_cod_database_code_4518779.cif
+250,C28H16F6S4Ta,cod-4130198,tetragonal,-42m,114,P-42_1c,Ta2Po2H32C56S5O1F12,S (8e) $\rightarrow$ Po2S5O1,1x1x1,168,autosub:success,FALSE,21,SG114/SG114_cod_database_code_4130198.cif
+251,Ru2Sn3,cod-1522877,tetragonal,-42m,116,P-4c2,Sn48Ru25Hs2Fe4Os1,Ru (2c) $\rightarrow$ Ru1Hs2Fe4Os1,2x1x2,840,autosub:success,FALSE,105,SG116/SG116_cod_database_code_1522877.cif
+252,CuF6Sr2,cod-1539548,tetragonal,-42m,117,P-4b2,Ra1Sr5Ca1Be1Cu4Br4F19Ts1,"F (8i) $\rightarrow$ Br4F3Ts1, Sr (4f) $\rightarrow$ Ra1Sr1Ca1Be1",1x1x1,6720,autosub:success,FALSE,840,SG117/SG117_cod_database_code_1539548.cif
+253,Sb2Zn,cod-9015418,tetragonal,-42m,118,P-4n2,Zn13Cn5Sb36,Zn (2a) $\rightarrow$ Zn13Cn5,1x3x3,8568,autosub:success,FALSE,256,SG118/SG118_cod_database_code_9015418.cif
+254,B2H8Mn,cod-4002641,tetragonal,-42m,118,P-4n2,K5Rb1Na2Mn2In1Ga2B1H8,"H (8i) $\rightarrow$ K5Rb1Na2, B (4f) $\rightarrow$ In1Ga2B1",1x1x1,2016,autosub:success,FALSE,252,SG118/SG118_cod_database_code_4002641.cif
+255,Cs2In3,cod-1525490,tetragonal,-42m,119,I-4m2,Cs8Rb1Na1Li6In24,Cs (4e) $\rightarrow$ Rb1Na1Li6,1x2x1,56,autosub:success,FALSE,10,SG119/SG119_cod_database_code_1525490.cif
+256,Br3H2Li5O2,cod-8103749,tetragonal,-42m,119,I-4m2,K1Rb2Na9Li18At1I5Br12O12,"Li (4e) $\rightarrow$ K1Rb2Na9, Br (2a) $\rightarrow$ At1I5",3x1x1,3960,autosub:success,FALSE,344,SG119/SG119_cod_database_code_8103749.cif
+257,AgF10PXe2,cod-1509315,tetragonal,-42m,120,I-4c2,Cu3P16Au13Xe32F160,Ag (4a) $\rightarrow$ Cu3Au13,2x2x1,560,autosub:success,FALSE,17,SG120/SG120_cod_database_code_1509315.cif
+258,Al5F20Rb5,cod-9015064,tetragonal,-42m,120,I-4c2,Rb20Al20At1Br3F74Ts2,F (8g) $\rightarrow$ Br3F2Ts2At1,1x1x1,1680,autosub:success,FALSE,210,SG120/SG120_cod_database_code_9015064.cif
+259,CoCsF4,cod-1000491,tetragonal,-42m,120,I-4c2,Cs20Co18Ir1Rh1F80,Co (16i) $\rightarrow$ Co14Ir1Rh1,1x1x1,240,autosub:success,FALSE,15,SG120/SG120_cod_database_code_1000491.cif
+260,CrK3O8,cod-4320923,tetragonal,-42m,121,I-42m,K24Sg1W7O64,Cr (2a) $\rightarrow$ Sg1W7,2x3x2,2024,autosub:success,FALSE,33,SG121/SG121_cod_database_code_4320923.cif
+261,CrCsH8N2O8,cod-4118671,tetragonal,-42m,121,I-42m,Cs2Cr2H16N4Lv3Po2Te3O8,O (8i) $\rightarrow$ Lv3Po2Te3,1x1x1,560,autosub:success,FALSE,40,SG121/SG121_cod_database_code_4118671.cif
+262,CrCsH8N2O8,cod-4105794,tetragonal,-42m,121,I-42m,Cs4Cr4Bi2As1P4H32Mc1O32,N (4d) $\rightarrow$ Bi2As1P4Mc1,2x1x1,840,autosub:success,FALSE,57,SG121/SG121_cod_database_code_4105794.cif
+263,N2NaP,cod-1537232,tetragonal,-42m,122,I-42d,Rb1Li2Bi5Sb1P4H1N2,"N (8d) $\rightarrow$ Bi5Sb1N2, Na (4b) $\rightarrow$ Rb1Li2H1",1x1x1,2016,autosub:success,FALSE,126,SG122/SG122_cod_database_code_1537232.cif
+264,H2O4PRb,cod-1530664,tetragonal,-42m,122,I-42d,Fr2Cs1Rb2Na3P8O32,Rb (4b) $\rightarrow$ Fr2Cs1Rb2Na3,2x1x1,1680,autosub:success,FALSE,112,SG122/SG122_cod_database_code_1530664.cif
+265,CuGaS2,cod-9009928,tetragonal,-42m,122,I-42d,Al1Tl1In1Cu8B5S16,Ga (4b) $\rightarrow$ Al1Tl1In1B5,1x1x2,336,autosub:success,FALSE,21,SG122/SG122_cod_database_code_9009928.cif
+266,Bi2IO4Yb,cod-1526555,tetragonal,4/mmm,123,P4/mmm,Yb4Sb4As3P1I4O16,Bi (2h) $\rightarrow$ Sb4As3P1,1x2x2,280,autosub:success,FALSE,35,SG123/SG123_cod_database_code_1526555.cif
+267,CoNb4P,cod-1533943,tetragonal,4/mmm,124,P4/mcc,Nb48Ir11Mt1Sb1P2N9,"Co (2a) $\rightarrow$ Ir11Mt1, P (2c) $\rightarrow$ Sb1P2N9",2x3x1,7920,autosub:success,FALSE,172,SG124/SG124_cod_database_code_1533943.cif
+268,Au2CdF8,cod-1510373,tetragonal,4/mmm,124,P4/mcc,Zn1Cn1Au4I4Ts12,"F (16n) $\rightarrow$ I1Ts3, Cd (2a) $\rightarrow$ Zn1Cn1",1x1x1,3640,autosub:success,FALSE,246,SG124/SG124_cod_database_code_1510373.cif
+269,C8H9BCuF6N4,cod-7101571,tetragonal,4/mmm,125,P4/nbm,Cu3B3H27C24I4Br1N12Cl1F12,F (4g) $\rightarrow$ I4Br1Cl1,1x3x1,2970,autosub:success,FALSE,147,SG125/SG125_cod_database_code_7101571.cif
+270,Ga6Pu,cod-2310189,tetragonal,4/mmm,125,P4/nbm,No7Am4Cm1Ga72,Pu (2c) $\rightarrow$ No7Am4Cm1,1x2x3,3960,autosub:success,FALSE,99,SG125/SG125_cod_database_code_2310189.cif
+271,C8H9BCuF6N4,cod-4333233,tetragonal,4/mmm,125,P4/nbm,Al5Cu12B1Nh6H108C96N48F72,B (2c) $\rightarrow$ Al5B1Nh6,1x3x2,5544,autosub:success,FALSE,242,SG125/SG125_cod_database_code_4333233.cif
+272,F4K3Nb3O11Ti2,cod-2004310,tetragonal,4/mmm,127,P4/mbm,K6Po3Se5S10O20F2,OF (8i) $\rightarrow$ Po3Se5,1x2x1,8008,autosub:success,FALSE,1036,SG127/SG127_cod_database_code_2004310.cif
+273,CCl2O3Pb2,cod-9009573,tetragonal,4/mmm,127,P4/mbm,Si1Sn1Ge1Pb8Fl1Cl8O8Lv4,"C (4g) $\rightarrow$ Si1Sn1Ge1Fl1, O (8k) $\rightarrow$ O1Lv1",1x1x1,1680,autosub:success,FALSE,114,SG127/SG127_cod_database_code_9009573.cif
+274,Co4Sc5Si10,cod-2107392,tetragonal,4/mmm,127,P4/mbm,Y9Lu1Lr1Sc49Co48Si120,Sc (2a) $\rightarrow$ Y9Lu1Lr1Sc1,1x2x3,1320,autosub:success,FALSE,34,SG127/SG127_cod_database_code_2107392.cif
+275,Cl4H12N4Pt2,cod-7240938,tetragonal,4/mmm,128,P4/mnc,Ni1H72Pd3Pt7Ds1N24Cl24,Pt (2a) $\rightarrow$ Ni1Pd3Pt1Ds1,1x3x1,120,autosub:success,FALSE,10,SG128/SG128_cod_database_code_7240938.cif
+276,C4H20Cl4N4Pt2,cod-7240953,tetragonal,4/mmm,128,P4/mnc,H40Ds1Bi4Sb2As2Pt3C8Cl8,"N (8h) $\rightarrow$ Bi2Sb1As1, Pt (2a) $\rightarrow$ Ds1Pt1",1x1x1,840,autosub:success,FALSE,108,SG128/SG128_cod_database_code_7240953.cif
+277,C6F12FeO6Sb2,cod-4116488,tetragonal,4/mmm,128,P4/mnc,Fe2Ge15Ru1Hs1Sb8Pb1C8O24F48,"C (8h) $\rightarrow$ Ge15Pb1, Fe (2a) $\rightarrow$ Fe2Ru1Hs1",1x2x1,192,autosub:success,FALSE,24,SG128/SG128_cod_database_code_4116488.cif
+278,OTeU,cod-1535734,tetragonal,4/mmm,129,P4/nmm,No2Pa2Te2Se1S3Lv1O1,"O (2a) $\rightarrow$ Se1S1Lv1O1, Te (2c) $\rightarrow$ Te1S1, U (2c) $\rightarrow$ No1Pa1",1x2x1,864,autosub:success,FALSE,108,SG129/SG129_cod_database_code_1535734.cif
+279,LiRbS,cod-7223669,tetragonal,4/mmm,129,P4/nmm,Rb6Li6Te3S2Lv1,S (2c) $\rightarrow$ Te3S2Lv1,1x1x3,60,autosub:success,FALSE,10,SG129/SG129_cod_database_code_7223669.cif
+280,ClLaO,cod-9009170,tetragonal,4/mmm,129,P4/nmm,La6Te5At1I1Cl3O1F1,"O (2a) $\rightarrow$ Te5O1, Cl (2c) $\rightarrow$ At1I1Cl3F1",1x3x1,720,autosub:success,FALSE,60,SG129/SG129_cod_database_code_9009170.cif
+281,BaFeO10Si4,cod-9000879,tetragonal,4/mmm,130,P4/ncc,Ba7Sr5Fe12Si48O120,Ba (4b) $\rightarrow$ Ba7Sr5,1x1x3,792,autosub:success,FALSE,38,SG130/SG130_cod_database_code_9000879.cif
+282,C8H12Pt2S8,cod-4306371,tetragonal,4/mmm,130,P4/ncc,Cs23Li1H48Pt12C48S48,HB (16g) $\rightarrow$ Cs23Li1,3x1x1,1128,autosub:success,FALSE,62,SG130/SG130_cod_database_code_4306371.cif
+283,Ga3Gd5,cod-1528253,tetragonal,4/mmm,130,P4/ncc,Tb1Nd1Sm1Gd17Al1Tl1Ga8Nh2,"Ga (4c) $\rightarrow$ Tl1Nh2Al1, Gd (4c) $\rightarrow$ Tb1Nd1Sm1Gd1",1x1x1,288,autosub:success,FALSE,72,SG130/SG130_cod_database_code_1528253.cif
+284,Bi2CuO4,cod-1008474,tetragonal,4/mmm,130,P4/ncc,Cu4Bi3Sb1As4O16,Bi (8f) $\rightarrow$ Bi3Sb1As4,1x1x1,280,autosub:success,FALSE,21,SG130/SG130_cod_database_code_1008474.cif
+285,CaCrO10Si4,cod-9000935,tetragonal,4/mmm,130,P4/ncc,Ba1Ra1Mg8Be2Cr12Si48O120,Ca (4b) $\rightarrow$ Ba1Ra1Mg8Be2,1x1x3,5940,autosub:success,FALSE,255,SG130/SG130_cod_database_code_9000935.cif
+286,C9.5H16Cu0.25N1.5O2.75Si0.125,cod-4502023,tetragonal,4/mmm,131,P4_2/mmc,Cu4Si2Te15H32C56O5,O (16r) $\rightarrow$ Te15O1,1x2x1,496,autosub:success,FALSE,46,SG131/SG131_cod_database_code_4502023.cif
+287,Cs2Cu2Se4Ti,cod-4319683,tetragonal,4/mmm,132,P4_2/mcm,Cs12Ti1Rf2Hf2Zr1Cu12Se24,Ti (2d) $\rightarrow$ Ti1Rf2Hf2Zr1,1x1x3,180,autosub:success,FALSE,16,SG132/SG132_cod_database_code_4319683.cif
+288,MnO5Te2,cod-1528174,tetragonal,4/mmm,133,P4_2/nbc,Mn9Tc4Re2Bh1Te32O80,Mn (4c) $\rightarrow$ Tc4Re2Bh1Mn1,1x2x1,840,autosub:success,FALSE,57,SG133/SG133_cod_database_code_1528174.cif
+289,NiO4Sb2,cod-1534446,tetragonal,4/mmm,135,P4_2/mbc,Ni4Po3Sb8Lv5Se7O1,"O (8g) $\rightarrow$ Po3Lv5, O (8h) $\rightarrow$ Se7O1",1x1x1,448,autosub:success,FALSE,28,SG135/SG135_cod_database_code_1534446.cif
+290,Cl2Co6O12Te3,cod-1535058,tetragonal,4/mmm,135,P4_2/mbc,Co24Te12Cl8O40Lv1Se7,O (8h) $\rightarrow$ Lv1Se7,1x2x1,120,autosub:success,FALSE,20,SG135/SG135_cod_database_code_1535058.cif
+291,C3H4N2O3S,cod-7050589,tetragonal,4/mmm,135,P4_2/mbc,H32Fl4Sn4Po1C16Se7S8N16O16,"C (8h) $\rightarrow$ Fl1Sn1, O (8h) $\rightarrow$ Po1Se7",1x1x1,560,autosub:success,FALSE,70,SG135/SG135_cod_database_code_7050589.cif
+292,CoO6Sb2,cod-1530639,tetragonal,4/mmm,136,P4_2/mnm,Ir4Mt1Co2Sb16Rh1O48,Co (2a) $\rightarrow$ Ir4Mt1Co2Rh1,2x1x2,840,autosub:success,FALSE,33,SG136/SG136_cod_database_code_1530639.cif
+293,BFe14Gd2,cod-1511139,tetragonal,4/mmm,136,P4_2/mnm,Gd16Fe109Hs3B8,Fe (8j) $\rightarrow$ Fe13Hs3,2x1x1,560,autosub:success,FALSE,35,SG136/SG136_cod_database_code_1511139.cif
+294,Cl4CuN2O2,cod-9008016,tetragonal,4/mmm,136,P4_2/mnm,Cu4Po5Te1Se1N8Cl16O1,O (4e) $\rightarrow$ Po5Te1Se1O1,2x1x1,336,autosub:success,FALSE,24,SG136/SG136_cod_database_code_9008016.cif
+295,H16MgO10P2,cod-2202040,tetragonal,4/mmm,137,P4_2/nmc,Mg4Sb3As5H64O40,P (4d) $\rightarrow$ Sb3As5,2x2x1,8008,autosub:success,FALSE,190,SG137/SG137_cod_database_code_2202040.cif
+296,B4H16Np,cod-4124316,tetragonal,4/mmm,137,P4_2/nmc,Fr1K2Np4B16H61,H (8g) $\rightarrow$ Fr1K2H13,1x1x2,1680,autosub:success,FALSE,65,SG137/SG137_cod_database_code_4124316.cif
+297,B8H8N4Zn,cod-4331453,tetragonal,4/mmm,137,P4_2/nmc,Zn3Cd1B32H32N16,Zn (2a) $\rightarrow$ Zn3Cd1,2x1x3,220,autosub:success,FALSE,13,SG137/SG137_cod_database_code_4331453.cif
+298,F4K2Zn,cod-8103552,tetragonal,4/mmm,139,I4/mmm,K8Zn4Ts4I1Br2Cl1F8,F (4c) $\rightarrow$ Ts4I1Br2Cl1,2x1x1,840,autosub:success,FALSE,114,SG139/SG139_cod_database_code_8103552.cif
+299,Ni2PrSb2,cod-1538982,tetragonal,4/mmm,139,I4/mmm,Yb1Tb1Gd1Eu1Pd5Ds3Sb8,"Pr (2a) $\rightarrow$ Yb1Tb1Gd1Eu1, Ni (4d) $\rightarrow$ Pd5Ds3",1x1x2,1344,autosub:success,FALSE,84,SG139/SG139_cod_database_code_1538982.cif
+300,Ga3Ti,cod-1523053,tetragonal,4/mmm,139,I4/mmm,Ti12In7Ga24B5,Ga (2b) $\rightarrow$ In7B5,3x2x1,792,autosub:success,FALSE,25,SG139/SG139_cod_database_code_1523053.cif
+301,PdTl2,cod-1524515,tetragonal,4/mmm,140,I4/mcm,Tl32Ni13Pd1Ds1Pt1,Pd (4a) $\rightarrow$ Ni13Pd1Ds1Pt1,1x2x2,3360,autosub:success,FALSE,75,SG140/SG140_cod_database_code_1524515.cif
+302,Si3Sr5,cod-8101453,tetragonal,4/mmm,140,I4/mcm,Sr48Mg5Be7Si36,Sr (4c) $\rightarrow$ Mg5Be7,3x1x1,792,autosub:success,FALSE,38,SG140/SG140_cod_database_code_8101453.cif
+303,Be4Ca2N4,cod-1535033,tetragonal,4/mmm,140,I4/mcm,Ra1Mg3Be8Sb1As5N2,"N (8h) $\rightarrow$ Sb1As5N2, Ca (4a) $\rightarrow$ Ra1Mg3",1x1x1,672,autosub:success,FALSE,21,SG140/SG140_cod_database_code_1535033.cif
+304,Si2Th,cod-1539856,tetragonal,4/mmm,141,I4_1/amd,Pu7Fm1Si16,Th (4a) $\rightarrow$ Pu7Fm1,2x3x1,2024,autosub:success,FALSE,34,SG141/SG141_cod_database_code_1539856.cif
+305,GdNaO2,cod-1533708,tetragonal,4/mmm,141,I4_1/amd,Cs17K1Gd18O36,Na (4b) $\rightarrow$ Cs17K1,3x1x3,630,autosub:success,FALSE,19,SG141/SG141_cod_database_code_1533708.cif
+306,CrO4Sm,cod-1008664,tetragonal,4/mmm,141,I4_1/amd,Sm12Sg5Mo6W1O48,Cr (4b) $\rightarrow$ Sg5Mo6W1,1x1x3,5544,autosub:success,FALSE,236,SG141/SG141_cod_database_code_1008664.cif
+307,In5S9,cod-4113422,tetragonal,4/mmm,142,I4_1/acd,In80Te3Se29S112,S (32g) $\rightarrow$ Te3Se29,1x1x1,4960,autosub:success,FALSE,155,SG142/SG142_cod_database_code_4113422.cif
+308,BrCuH2I2O2Pb2,cod-7205491,tetragonal,4/mmm,142,I4_1/acd,Cu48H96At1Pb96I96O96F1Ts46,Br (16e) $\rightarrow$ At1F1Ts46,1x3x1,2256,autosub:success,FALSE,62,SG142/SG142_cod_database_code_7205491.cif
+309,Cs16Sn16,cod-8101632,tetragonal,4/mmm,142,I4_1/acd,Fr3Cs17Sn32H12,Cs (16f) $\rightarrow$ Fr3Cs1H12,1x1x1,7280,autosub:success,FALSE,237,SG142/SG142_cod_database_code_8101632.cif
+310,Ca6H6O13Si2,cod-9012620,hexagonal,3,143,P3,Ca12Si4H12Se2O24,O-h (3d) $\rightarrow$ Se2O1,2x2x1,495,autosub:success,FALSE,45,SG143/SG143_cod_database_code_9012620.cif
+311,BEu3O9W,cod-1511117,hexagonal,3,143,P3,Nd5Eu9Er4Cr1B6Mo1Sg1W3O54,"Eu (3d) $\rightarrow$ Nd5Er4, W (1b) $\rightarrow$ Cr1Mo1Sg1",3x1x1,756,autosub:success,FALSE,252,SG143/SG143_cod_database_code_1511117.cif
+312,C21H15CoHoN3O15,cod-7220294,hexagonal,3,143,P3,Ho4Co4H60C84Mc10Sb1N1O60,N (3d) $\rightarrow$ Mc10Sb1N1,2x1x2,132,autosub:success,FALSE,33,SG143/SG143_cod_database_code_7220294.cif
+313,BLaO5Si,cod-9016409,hexagonal,3,144,P3_1,Pr5Sm1Si6Po1B6Te1Se3S1O24,"O (3a) $\rightarrow$ Po1Te1Se3S1, La (3a) $\rightarrow$ Pr5Sm1",2x1x1,720,autosub:success,FALSE,360,SG144/SG144_cod_database_code_9016409.cif
+314,N5O15Rb2Y,cod-4031795,hexagonal,3,144,P3_1,Rb18Y9Po6Te9N45O119Lv1,"O (3a) $\rightarrow$ Te8O1, O (3a) $\rightarrow$ Po6Te1O1Lv1",3x1x1,4536,autosub:success,FALSE,1512,SG144/SG144_cod_database_code_4031795.cif
+315,C16H15IO2,cod-4028183,hexagonal,3,144,P3_1,Fr3Cs1Li8H168C192I12O24,H (3a) $\rightarrow$ Fr3Cs1Li8,1x2x2,1980,autosub:success,FALSE,495,SG144/SG144_cod_database_code_4028183.cif
+316,BLaO5Si,cod-1511206,hexagonal,3,144,P3_1,La6Si6Po5B6Te2Se2S2O19,"O (3a) $\rightarrow$ Po5O1, O (3a) $\rightarrow$ Te1Se1S1",1x1x2,540,autosub:success,FALSE,90,SG144/SG144_cod_database_code_1511206.cif
+317,C10H9BrO4,cod-4119842,hexagonal,3,144,P3_1,Na3Li1H50C60Br6O24,HC (3a) $\rightarrow$ Na3Li1H2,1x1x2,60,autosub:success,FALSE,10,SG144/SG144_cod_database_code_4119842.cif
+318,BGeO5Pr,cod-1511175,hexagonal,3,144,P3_1,Pr9Po2Ge9B9Se7O36,O (3a) $\rightarrow$ Po2Se7,3x1x1,36,autosub:success,FALSE,12,SG144/SG144_cod_database_code_1511175.cif
+319,C13H20O4,cod-4134877,hexagonal,3,144,P3_1,Fr2Rb3Li1H114C78O24,H (3a) $\rightarrow$ Fr2Rb3Li1,2x1x1,60,autosub:success,FALSE,30,SG144/SG144_cod_database_code_4134877.cif
+320,C2H5NO2,cod-4037662,hexagonal,3,144,P3_1,Fr1Cs4Rb1P2H24C12Mc4S1O6Lv5,"N (3a) $\rightarrow$ P1Mc2, HA (3a) $\rightarrow$ Fr1Cs4Rb1, O (3a) $\rightarrow$ Lv5S1",1x1x2,2700,autosub:success,FALSE,450,SG144/SG144_cod_database_code_4037662.cif
+321,C6H6IN,cod-2205631,hexagonal,3,145,P3_2,Fr1Cs1Na1H33C36I6N6,H (3a) $\rightarrow$ Fr1Cs1Na1H3,1x1x2,120,autosub:success,FALSE,20,SG145/SG145_cod_database_code_2205631.cif
+322,C16H15NO3,cod-1546109,hexagonal,3,145,P3_2,K2H88Pb1C90Fl5N6O18,"H (3a) $\rightarrow$ K1H2, C (3a) $\rightarrow$ Pb1Fl5",1x1x2,90,autosub:success,FALSE,15,SG145/SG145_cod_database_code_1546109.cif
+323,C14H19NO2,cod-4032986,hexagonal,3,145,P3_2,K1Rb2H225C168N12O24,H'C (3a) $\rightarrow$ K1Rb2H9,2x2x1,660,autosub:success,FALSE,55,SG145/SG145_cod_database_code_4032986.cif
+324,C12H18O3,cod-7215222,hexagonal,3,145,P3_2,Fr1K1Li1H159C108O27,H (3a) $\rightarrow$ Fr1K1Li1H6,1x3x1,504,autosub:success,FALSE,168,SG145/SG145_cod_database_code_7215222.cif
+325,C18H16N4S,cod-2225274,hexagonal,3,145,P3_2,Si7H192Pb3C204Fl2S12N48,C (3a) $\rightarrow$ Si7Fl2Pb3,1x2x2,7920,autosub:success,FALSE,1980,SG145/SG145_cod_database_code_2225274.cif
+326,C9HF9N2,cod-7054252,hexagonal,3,145,P3_2,Sn1H9C72Fl8At4N18F77,"CA (3a) $\rightarrow$ Sn1Fl8, F (3a) $\rightarrow$ At4F5",1x1x3,1134,autosub:success,FALSE,126,SG145/SG145_cod_database_code_7054252.cif
+327,Cs6S27Ti6,cod-4319306,rhombohedral,3,146,R3,Fr4Cs36Rb1Li12Ti54H1S243,"Cs (3a) $\rightarrow$ Li8H1, Cs (3a) $\rightarrow$ Fr4Rb1Li4",1x1x3,5670,autosub:success,FALSE,630,SG146/SG146_cod_database_code_4319306.cif
+328,As6Cu7Se13,cod-8103673,rhombohedral,3,146,R3,Cu17Rg1As18Au3Se39,Cu (9b) $\rightarrow$ Cu5Rg1Au3,1x1x1,504,autosub:success,FALSE,56,SG146/SG146_cod_database_code_8103673.cif
+329,C16H18O,cod-1554927,rhombohedral,3,146,R3,Si1Ge1H162Pb6C136O9,C (9b) $\rightarrow$ Si1Ge1Pb6C1,1x1x1,504,autosub:success,FALSE,56,SG146/SG146_cod_database_code_1554927.cif
+330,Cs3H19O47U12,cod-9004539,rhombohedral,3,146,R3,Cs18U72Te1Se15O265Lv1,O-H (9b) $\rightarrow$ Se15O1Lv1Te1,1x2x1,4896,autosub:success,FALSE,816,SG146/SG146_cod_database_code_9004539.cif
+331,C10H10O,cod-7155516,rhombohedral,3,146,R3,Fr5Rb1Li1H83C90O9,H (9b) $\rightarrow$ Fr5Rb1Li1H2,1x1x1,1512,autosub:success,FALSE,168,SG146/SG146_cod_database_code_7155516.cif
+332,Ba10O24P6S,cod-9016465,hexagonal,-3,147,P-3,Ba32Ra3Sr2Mg3P24S4O96,Ba (2d) $\rightarrow$ Ra3Sr2Mg3,1x2x2,560,autosub:success,FALSE,70,SG147/SG147_cod_database_code_9016465.cif
+333,C12H24ILiO3,cod-2240231,hexagonal,-3,147,P-3,Rb5Li7H288C144I12O36,Li (2d) $\rightarrow$ Rb5Li7,2x3x1,792,autosub:success,FALSE,66,SG147/SG147_cod_database_code_2240231.cif
+334,H2MgO2,cod-9003877,hexagonal,-3,147,P-3,Ra2Sr4Ca1Mg18Be2H54O54,Mg (1a) $\rightarrow$ Ra2Sr4Ca1Be2,3x3x1,3780,autosub:success,FALSE,72,SG147/SG147_cod_database_code_9003877.cif
+335,F18Sb3Tl,cod-7053682,hexagonal,-3,147,P-3,Tl2Sb6At3I1F30Ts1Cl1,F (6g) $\rightarrow$ At3I1Ts1Cl1,1x1x1,120,autosub:success,FALSE,20,SG147/SG147_cod_database_code_7053682.cif
+336,Au7In3,cod-1510587,hexagonal,-3,147,P-3,In36Cu1Ag1Au80Rg2,"Au (1b) $\rightarrow$ Rg1Au1, Au (2d) $\rightarrow$ Cu1Ag1Rg1Au1",2x1x1,48,autosub:success,FALSE,12,SG147/SG147_cod_database_code_1510587.cif
+337,CeK2N6O18,cod-2003540,hexagonal,-3,147,P-3,K3Na1Ce3H2Se3S1N18Lv1O49,"O (6g) $\rightarrow$ Se3Lv1S1O1, K (6g) $\rightarrow$ K3Na1H2",1x1x1,7200,autosub:success,FALSE,1200,SG147/SG147_cod_database_code_2003540.cif
+338,C12H24Br8Fe3N24,cod-7108064,hexagonal,-3,147,P-3,Fe6Ru5Os1H96C48Br32N96,Fe (2d) $\rightarrow$ Fe2Ru5Os1,1x2x2,168,autosub:success,FALSE,21,SG147/SG147_cod_database_code_7108064.cif
+339,H6KN3Sn,cod-1526587,hexagonal,-3,147,P-3,Cs1Rb1Sn2Sb1P1Mc3N1,"K (2d) $\rightarrow$ Cs1Rb1, N (6g) $\rightarrow$ Sb1P1Mc3N1",1x1x1,240,autosub:success,FALSE,40,SG147/SG147_cod_database_code_1526587.cif
+340,C24H48B2F8FeN24,cod-2105064,rhombohedral,-3,148,R-3,Fr2Rb16Fe3B6H126C72N72F24,HB (18f) $\rightarrow$ Fr1Rb8,1x1x1,153,autosub:success,FALSE,10,SG148/SG148_cod_database_code_2105064.cif
+341,Mo9Se11Tl2,cod-2227109,rhombohedral,-3,148,R-3,Tl12Cr1Mo37W15Sg1Se66,Mo (18f) $\rightarrow$ Cr1Mo1W15Sg1,1x1x1,4896,autosub:success,FALSE,272,SG148/SG148_cod_database_code_2227109.cif
+342,I6MoO18Rb2,cod-1534809,rhombohedral,-3,148,R-3,Rb18Po53Te1Mo9I54O108,O (18f) $\rightarrow$ Po53Te1,1x3x2,5778,autosub:success,FALSE,189,SG148/SG148_cod_database_code_1534809.cif
+343,CoH3O5P,cod-8104523,rhombohedral,-3,148,R-3,Co6P6H18O24Lv5Po1,O (18f) $\rightarrow$ Lv5Po1,1x1x1,816,autosub:success,FALSE,48,SG148/SG148_cod_database_code_8104523.cif
+344,CsF6Nb,cod-1535197,rhombohedral,-3,148,R-3,Cs6Db2Ta1Nb2V1F36,Nb (3b) $\rightarrow$ Db2Ta1Nb2V1,1x2x1,180,autosub:success,FALSE,16,SG148/SG148_cod_database_code_1535197.cif
+345,F6NiSn,cod-1537436,rhombohedral,-3,148,R-3,Ni9Sn4Pb5F54,Sn (3a) $\rightarrow$ Sn4Pb5,3x1x1,126,autosub:success,FALSE,10,SG148/SG148_cod_database_code_1537436.cif
+346,K4N6O12Ru,cod-1534780,rhombohedral,-3,148,R-3,K4Po1Ru1N6O6Lv3Te1S1,O (6f) $\rightarrow$ Lv3Po1Te1S1,1x1x1,120,autosub:success,FALSE,20,SG148/SG148_cod_database_code_1534780.cif
+347,C42H48Al6N6,cod-4317930,rhombohedral,-3,148,R-3,Al9H72C54Fl8Si1N9,C (18f) $\rightarrow$ Fl8Si1,1x1x1,153,autosub:success,FALSE,10,SG148/SG148_cod_database_code_4317930.cif
+348,C6Au3CdKN6,cod-4104126,hexagonal,32,149,P312,Na1Li1Cd3Cu1Ag1H1Rg6Au1C18N18,"Au (3k) $\rightarrow$ Ag1Rg6Cu1Au1, K (1c) $\rightarrow$ Na1Li1H1",1x1x3,3024,autosub:success,FALSE,168,SG149/SG149_cod_database_code_4104126.cif
+349,C6Ag3KMnN6,cod-4117622,hexagonal,32,149,P312,K2Mn1Re1Rg3Ag3C12N12,"Ag (3k) $\rightarrow$ Rg1Ag1, Mn (1a) $\rightarrow$ Mn1Re1",2x1x1,40,autosub:success,FALSE,12,SG149/SG149_cod_database_code_4117622.cif
+350,C6Ag3KMnN6,cod-4117623,hexagonal,32,149,P312,Cs1Tc1Ag6Bi8H1Bh1C12N4,"K (1c) $\rightarrow$ Cs1H1, N (6l) $\rightarrow$ Bi2N1, Mn (1a) $\rightarrow$ Tc1Bh1",2x1x1,1980,autosub:success,FALSE,510,SG149/SG149_cod_database_code_4117623.cif
+351,BBe2H5O5,cod-9009936,hexagonal,32,150,P321,Be8Al1In1Ga1Nh1Se4O15Lv1,"B (1a) $\rightarrow$ Al1In1Ga1Nh1, O-H (2d) $\rightarrow$ Se4Lv1O3",2x2x1,6720,autosub:success,FALSE,280,SG150/SG150_cod_database_code_9009936.cif
+352,AlCaF6Na,cod-1000417,hexagonal,32,150,P321,Na9Ca5Mg4Al9F54,Ca (3e) $\rightarrow$ Ca5Mg4,1x3x1,126,autosub:success,FALSE,24,SG150/SG150_cod_database_code_1000417.cif
+353,Ga5La3O14Sn,cod-1536463,hexagonal,32,150,P321,La9Al5Ga10C1Fl1Si1O42,"Ga (3f) $\rightarrow$ Al5Ga4, Sn (1a) $\rightarrow$ C1Fl1Si1",1x3x1,756,autosub:success,FALSE,126,SG150/SG150_cod_database_code_1536463.cif
+354,CaCl2H12O6,cod-9007715,hexagonal,32,150,P321,Ba1Ca3H48Ts4At4O24,"Ca (1a) $\rightarrow$ Ba1Ca3, Cl (2d) $\rightarrow$ Ts1At1",2x1x2,280,autosub:success,FALSE,38,SG150/SG150_cod_database_code_9007715.cif
+355,KO3S,cod-9016390,hexagonal,32,150,P321,K6Po3Te2S6Lv1O12,"S (2d) $\rightarrow$ Lv1S1, S (2c) $\rightarrow$ Te1S1, O (6g) $\rightarrow$ Po3Te1S2",1x1x1,240,autosub:success,FALSE,40,SG150/SG150_cod_database_code_9016390.cif
+356,Mn2P,cod-1537680,hexagonal,32,150,P321,Mn5Tc2Re2Bh3P6,"Mn (3e) $\rightarrow$ Mn1Tc1Re1, Mn (3f) $\rightarrow$ Bh1Mn1",2x1x1,1800,autosub:success,FALSE,456,SG150/SG150_cod_database_code_1537680.cif
+357,F6FeLiMn,cod-1000186,hexagonal,32,150,P321,Li9Mn9Fe7Hs2At1Br17F36,"F (6g) $\rightarrow$ At1Br17, Fe (2d) $\rightarrow$ Hs1Fe2",3x1x1,270,autosub:success,FALSE,45,SG150/SG150_cod_database_code_1000186.cif
+358,Ag2HO4P,cod-1008168,hexagonal,32,151,P3_112,Fr1Rb5Cu1Ag9P6Au1Rg1O24,"Ag (3a) $\rightarrow$ Cu1Ag3Au1Rg1, H (3b) $\rightarrow$ Fr1Rb5",1x1x2,720,autosub:success,FALSE,60,SG151/SG151_cod_database_code_1008168.cif
+359,Cl3Ti,cod-1538356,hexagonal,32,151,P3_112,Ti6Cl14Ts3F1,Cl (6c) $\rightarrow$ Cl2Ts3F1,1x1x1,60,autosub:success,FALSE,10,SG151/SG151_cod_database_code_1538356.cif
+360,Mn2O7Sb2,cod-8104321,hexagonal,32,152,P3_121,Mn15Bh2Re1Sb18O63,Mn (3b) $\rightarrow$ Bh4Mn3Re2,1x1x3,1260,autosub:success,FALSE,76,SG152/SG152_cod_database_code_8104321.cif
+361,AlB5Cs2O10,cod-7705960,hexagonal,32,152,P3_121,Cs18Nh3Tl2In1Ga3B45O90,Al (3a) $\rightarrow$ Nh3Tl2In1Ga3,1x1x3,5040,autosub:success,FALSE,280,SG152/SG152_cod_database_code_7705960.cif
+362,AsGaO4,cod-1009007,hexagonal,32,152,P3_121,Ga9As8N1O36,As (3b) $\rightarrow$ As8N1,1x3x2,153,autosub:success,FALSE,18,SG152/SG152_cod_database_code_1009007.cif
+363,AsGaO4,cod-1009006,hexagonal,32,152,P3_121,Ga9Po1As9Se17O18,O (6c) $\rightarrow$ Po1Se17,2x3x1,630,autosub:success,FALSE,108,SG152/SG152_cod_database_code_1009006.cif
+364,Se,cod-9011649,hexagonal,32,152,P3_121,Po2Se1S3,Se (3a) $\rightarrow$ Po2Se1S3,2x1x1,60,autosub:success,FALSE,16,SG152/SG152_cod_database_code_9011649.cif
+365,Se,cod-9011650,hexagonal,32,152,P3_121,Po4Te1Se1O3,Se (3a) $\rightarrow$ Po4Te1Se1O3,1x3x1,2520,autosub:success,FALSE,420,SG152/SG152_cod_database_code_9011650.cif
+366,H2LaNaO9S2,cod-4000499,hexagonal,32,152,P3_121,Na3Ce2Tm1Po3H6Se4O25Lv1,"La (3a) $\rightarrow$ Ce2Tm1, S (6c) $\rightarrow$ Po1Se2, O (3a) $\rightarrow$ Po1O1Lv1",1x1x1,270,autosub:success,FALSE,45,SG152/SG152_cod_database_code_4000499.cif
+367,O2Si,cod-9012602,hexagonal,32,152,P3_121,Si2Sn1Pb1C5O18,Si (3a) $\rightarrow$ Si2Sn1Pb1C5,1x1x3,1512,autosub:success,FALSE,84,SG152/SG152_cod_database_code_9012602.cif
+368,O2Si,cod-2100188,hexagonal,32,154,P3_221,Sn2Pb4Se2O9Lv1,"O (6c) $\rightarrow$ Se2O9Lv1, Si (3a) $\rightarrow$ Sn1Pb2",2x1x1,9900,autosub:success,FALSE,2475,SG154/SG154_cod_database_code_2100188.cif
+369,Cl3CuH13O18,cod-2202292,hexagonal,32,154,P3_221,Cu6H60At1I1Br3Cl12Ts1O108,Cl (3b) $\rightarrow$ Br3Ts1At1I1,1x1x2,120,autosub:success,FALSE,10,SG154/SG154_cod_database_code_2202292.cif
+370,O2Si,cod-1536409,hexagonal,32,154,P3_221,Sn5C4O18,Si (3a) $\rightarrow$ Sn5C4,3x1x1,126,autosub:success,FALSE,24,SG154/SG154_cod_database_code_1536409.cif
+371,HgO2Sr,cod-2002576,hexagonal,32,154,P3_221,Sr18Zn13Cd5O36,Hg (3a) $\rightarrow$ Zn13Cd5,2x3x1,8568,autosub:success,FALSE,1428,SG154/SG154_cod_database_code_2002576.cif
+372,H4N2O3W,cod-2108369,hexagonal,32,154,P3_221,Po7Te5H24W6N12O6,O (6c) $\rightarrow$ Po7Te5,1x1x2,792,autosub:success,FALSE,66,SG154/SG154_cod_database_code_2108369.cif
+373,BFeH2O6P,cod-4332751,hexagonal,32,154,P3_221,Fr2Cs2K1Rb1Fe6B6P6H6O34Lv2,"H (6c) $\rightarrow$ Fr2Cs2K1Rb1, O (6c) $\rightarrow$ Lv1O2",1x1x1,2700,autosub:success,FALSE,450,SG154/SG154_cod_database_code_4332751.cif
+374,C5H7Cd0.5N2,cod-7228676,hexagonal,32,154,P3_221,Fr1Cs9Rb2Cd6H72C60N24,HC (6c) $\rightarrow$ Fr1Cs9Rb2,1x2x1,660,autosub:success,FALSE,165,SG154/SG154_cod_database_code_7228676.cif
+375,HgMg3,cod-1523435,rhombohedral,32,155,R32,Mg54Hg10Cn2Zn5Cd1,Hg (9e) $\rightarrow$ Cn2Zn5Cd1Hg1,1x1x1,1512,autosub:success,FALSE,84,SG155/SG155_cod_database_code_1523435.cif
+376,F3Sc,cod-1010451,rhombohedral,32,155,R32,Y1Sc1Br3F2Ts1,"Sc (1a) $\rightarrow$ Y1Sc1, F (3e) $\rightarrow$ Br3F2Ts1",1x2x1,120,autosub:success,FALSE,30,SG155/SG155_cod_database_code_1010451.cif
+377,Ni3S2,cod-1011250,rhombohedral,32,155,R32,Ni1Po1Te1Pd3Pt1Ds1Se1S1,"Ni (3e) $\rightarrow$ Ni1Pd3Pt1Ds1, S (2c) $\rightarrow$ Po1Te1Se1S1",1x1x2,2880,autosub:success,FALSE,720,SG155/SG155_cod_database_code_1011250.cif
+378,C3Lu2N6,cod-4332821,rhombohedral,32,155,R32,Lu18Bi53Sb1C27,N (18f) $\rightarrow$ Bi53Sb1,2x1x3,5778,autosub:success,FALSE,189,SG155/SG155_cod_database_code_4332821.cif
+379,B15BaK7Lu2O30,cod-4126816,rhombohedral,32,155,R32,K63Ba5Ra3Ca1Lu18B135O270,Ba (3b) $\rightarrow$ Ba5Ra3Ca1,1x3x1,504,autosub:success,FALSE,28,SG155/SG155_cod_database_code_4126816.cif
+380,Ni3Se2,cod-1540091,rhombohedral,32,155,R32,Ni1Pd6Pt1Ds1Se2O4,"Ni (9d) $\rightarrow$ Ni1Pd6Pt1Ds1, Se (6c) $\rightarrow$ Se1O2",1x1x1,7560,autosub:success,FALSE,420,SG155/SG155_cod_database_code_1540091.cif
+381,B30Nd5O60Rb15,cod-1545793,rhombohedral,32,155,R32,Rb45La2Tb2Pm1Nd9Eu1B90O180,Nd (6c) $\rightarrow$ La2Tb2Pm1Eu1,1x1x1,180,autosub:success,FALSE,30,SG155/SG155_cod_database_code_1545793.cif
+382,CdI2,cod-2106916,hexagonal,3m,156,P3m1,Cd55Hg3Cn1Zn1I120,Cd (1c) $\rightarrow$ Hg3Cn1Zn1Cd1,2x3x1,120,autosub:success,FALSE,20,SG156/SG156_cod_database_code_2106916.cif
+383,I2Pb,cod-9009141,hexagonal,3m,156,P3m1,Pb36Fl5Sn13I108,Pb (1c) $\rightarrow$ Fl5Sn13,3x3x2,8568,autosub:success,FALSE,101,SG156/SG156_cod_database_code_9009141.cif
+384,CdI2,cod-8104379,hexagonal,3m,156,P3m1,Cd74Hg8Cn1Zn1I168,Cd (1b) $\rightarrow$ Zn1Cd2Hg8Cn1,3x2x2,5940,autosub:success,FALSE,495,SG156/SG156_cod_database_code_8104379.cif
+385,GaHSnSr,cod-4124022,hexagonal,3m,156,P3m1,Fr3Cs1K1Sr6Ga6Sn6H1,H (1c) $\rightarrow$ Fr3Cs1K1H1,1x2x3,120,autosub:success,FALSE,20,SG156/SG156_cod_database_code_4124022.cif
+386,O14Rb3V5,cod-4316137,hexagonal,3m,157,P31m,Rb6V7Db2Ta1Po3S2O22Lv1,"O (3c) $\rightarrow$ Po3S2Lv1, V (2b) $\rightarrow$ V1Db2Ta1",1x2x1,720,autosub:success,FALSE,180,SG157/SG157_cod_database_code_4316137.cif
+387,O14Rb3V5,cod-1563377,hexagonal,3m,157,P31m,Rb4Li2Ta1Nb1V7Db1Te5Se1O22,"O (3c) $\rightarrow$ Te5Se1, Rb (3c) $\rightarrow$ Rb2Li1, V (2b) $\rightarrow$ Nb1Db1Ta1V1",1x1x2,2160,autosub:success,FALSE,180,SG157/SG157_cod_database_code_1563377.cif
+388,N4Si3,cod-1001243,hexagonal,3m,159,P31c,Si24As11N21,N (6c) $\rightarrow$ As11N1,2x1x3,7140,autosub:success,FALSE,597,SG159/SG159_cod_database_code_1001243.cif
+389,HgI4K2,cod-1529984,hexagonal,3m,159,P31c,K7Na1Hg2Cn1Cd1I13F1Ts2,"Hg (2b) $\rightarrow$ Hg2Cn1Cd1, K (2a) $\rightarrow$ K3Na1, I (2b) $\rightarrow$ I1F1Ts2",2x1x1,576,autosub:success,FALSE,144,SG159/SG159_cod_database_code_1529984.cif
+390,C6H15SSb,cod-7032016,hexagonal,3m,159,P31c,As4Mc1Bi3H120C48S8,Sb (2b) $\rightarrow$ As4Mc1Bi3,2x2x1,280,autosub:success,FALSE,13,SG159/SG159_cod_database_code_7032016.cif
+391,N4Si3,cod-1001241,hexagonal,3m,159,P31c,Si12Sb1N15,N (2a) $\rightarrow$ Sb1N1,1x2x3,924,autosub:success,FALSE,84,SG159/SG159_cod_database_code_1001241.cif
+392,BaCs4O18P6,cod-1007248,hexagonal,3m,159,P31c,Cs37K10Ba12Li1P72O216,Cs (2b) $\rightarrow$ Cs1K10Li1,2x1x3,132,autosub:success,FALSE,11,SG159/SG159_cod_database_code_1007248.cif
+393,N4Si3,cod-1001239,hexagonal,3m,159,P31c,Si36Bi1Sb1N45Mc1,N (2b) $\rightarrow$ Bi1Sb1N3Mc1,1x1x3,120,autosub:success,FALSE,20,SG159/SG159_cod_database_code_1001239.cif
+394,CSi,cod-2310933,rhombohedral,3m,160,R3m,Si26Pb1Fl2Sn1Ge2C22,"C (3a) $\rightarrow$ Ge1Fl1Sn1, Si (3a) $\rightarrow$ Pb1Fl1Si1, C (3a) $\rightarrow$ Si1Ge1C1",1x1x1,216,autosub:success,FALSE,72,SG160/SG160_cod_database_code_2310933.cif
+395,C15H21Ni3P3,cod-2103389,rhombohedral,3m,160,R3m,Ds3Ni4P9Pt2C45,Ni (9b) $\rightarrow$ Ds3Ni4Pt2,1x1x1,1260,autosub:success,FALSE,75,SG160/SG160_cod_database_code_2103389.cif
+396,CrCuS2,cod-1525528,rhombohedral,3m,160,R3m,Cr6Cu6Te1S8Lv2O1,S (3a) $\rightarrow$ Te1Lv2S2O1,1x2x1,180,autosub:success,FALSE,30,SG160/SG160_cod_database_code_1525528.cif
+397,Cu7Hg6,cod-9012535,rhombohedral,3m,160,R3m,Cu9Ag3Rg2Cn1Zn1Hg10,"CuOH (3b) $\rightarrow$ Ag1Rg1Cu1, HgOH* (3b) $\rightarrow$ Cn1Zn1Hg1, CuIT (3b) $\rightarrow$ Ag2Rg1",1x1x1,108,autosub:success,FALSE,18,SG160/SG160_cod_database_code_9012535.cif
+398,C3Al4,cod-2310414,rhombohedral,3m,160,R3m,Al20Nh3B1Pb2Fl4C12,"Al (1a) $\rightarrow$ Nh3Al2B1, C (1a) $\rightarrow$ Pb1Fl2",2x1x3,900,autosub:success,FALSE,150,SG160/SG160_cod_database_code_2310414.cif
+399,GaMo4Se8,cod-4003991,rhombohedral,3m,160,R3m,Ga9Mo36Se67Lv5,Se (3a) $\rightarrow$ Se4Lv5,1x3x1,126,autosub:success,FALSE,14,SG160/SG160_cod_database_code_4003991.cif
+400,C30H43KO6Si2,cod-4326757,rhombohedral,3m,160,R3m,K1Na2Si6Ge6H129C81Fl3O18,"C (3b) $\rightarrow$ Ge2Fl1, K (1a) $\rightarrow$ K1Na2",3x1x1,252,autosub:success,FALSE,47,SG160/SG160_cod_database_code_4326757.cif
+401,BaO3Ti,cod-9014074,rhombohedral,3m,160,R3m,Ba2Hf1Rf1Po2Lv3Se1,"O (3b) $\rightarrow$ Po2Lv3Se1, Ti (1a) $\rightarrow$ Hf1Rf1",1x1x2,120,autosub:success,FALSE,32,SG160/SG160_cod_database_code_9014074.cif
+402,B2BaO4,cod-3000099,rhombohedral,3m,161,R3c,Sr1Ca17B36O72,Ba (18b) $\rightarrow$ Sr1Ca17,1x1x2,630,autosub:success,FALSE,18,SG161/SG161_cod_database_code_3000099.cif
+403,C6H12I6N4,cod-2003675,rhombohedral,3m,161,R3c,Fr3K3H18C12I12N8,HB (6b) $\rightarrow$ Fr1K1,2x1x1,924,autosub:success,FALSE,236,SG161/SG161_cod_database_code_2003675.cif
+404,BiFeO3,cod-4336776,rhombohedral,3m,161,R3c,Fe12Mc9Bi1As1P1O36,Bi (6a) $\rightarrow$ Mc9Bi1As1P1,1x1x2,1320,autosub:success,FALSE,110,SG161/SG161_cod_database_code_4336776.cif
+405,FeO3Ti,cod-9006335,rhombohedral,3m,161,R3c,Hf7Ti1Fe8O24,Ti (6a) $\rightarrow$ Hf7Ti1,2x1x2,2024,autosub:success,FALSE,85,SG161/SG161_cod_database_code_9006335.cif
+406,H12LiNa3O14S2,cod-2243894,rhombohedral,3m,161,R3c,Na9Li3Te2H36S4O42,S (6a) $\rightarrow$ Te2S1,2x1x1,495,autosub:success,FALSE,45,SG161/SG161_cod_database_code_2243894.cif
+407,LiNbO3,cod-1544665,rhombohedral,3m,161,R3c,Li27Ta26Nb1O81,Nb (6a) $\rightarrow$ Ta26Nb1,3x1x3,1431,autosub:success,FALSE,27,SG161/SG161_cod_database_code_1544665.cif
+408,C12H36BiCl6N3,cod-7219621,rhombohedral,3m,161,R3c,Si1Ge16Bi6H216Pb1C54N18Cl36,C (18b) $\rightarrow$ Si1Ge16Pb1,1x1x1,306,autosub:success,FALSE,17,SG161/SG161_cod_database_code_7219621.cif
+409,B2BaO4,cod-3000103,rhombohedral,3m,161,R3c,Ba12Al1B23O48,B (18b) $\rightarrow$ Al1B11,2x1x1,7140,autosub:success,FALSE,597,SG161/SG161_cod_database_code_3000103.cif
+410,Cr0.02K1.93Mg2.02O7Si2,cod-1544621,hexagonal,-3m,162,P-31m,K6Ba2Mg3Be1Si2Pb4O21,"Si (2e) $\rightarrow$ Si1Pb2, Mg (2c) $\rightarrow$ Ba2Mg3Be1",3x1x1,900,autosub:success,FALSE,90,SG162/SG162_cod_database_code_1544621.cif
+411,As2CdO6,cod-9007893,hexagonal,-3m,162,P-31m,Zn2Cd1Hg2Cn1As12O36,Cd (1a) $\rightarrow$ Zn2Cd1Hg2Cn1,1x3x2,180,autosub:success,FALSE,16,SG162/SG162_cod_database_code_9007893.cif
+412,AgGaP2Se6,cod-1509347,hexagonal,-3m,163,P-31c,Al1Tl1In1Ag4B1As5Se24N3,"P (4f) $\rightarrow$ As5N3, Ga (2a) $\rightarrow$ Al1Tl1In1B1",2x1x1,1344,autosub:success,FALSE,168,SG163/SG163_cod_database_code_1509347.cif
+413,Cl6MoNa3,cod-1508414,hexagonal,-3m,163,P-31c,K1Na4Mo2H1At2Cl9F1,"Na (2a) $\rightarrow$ K1H1, Cl (12i) $\rightarrow$ At2Cl9F1",1x1x1,1320,autosub:success,FALSE,110,SG163/SG163_cod_database_code_1508414.cif
+414,Ba5O15Ta4,cod-7039792,hexagonal,-3m,164,P-3m1,Ba5Ta3Nb1Po3O10Lv1S1,"Ta (2d) $\rightarrow$ Ta1Nb1, O (6i) $\rightarrow$ Po3S1O1Lv1",1x1x1,240,autosub:success,FALSE,20,SG164/SG164_cod_database_code_7039792.cif
+415,Ho2O2Se,cod-2310836,hexagonal,-3m,164,P-3m1,La4Nd1Tm7Se6O12,Ho (2d) $\rightarrow$ La4Nd1Tm7,3x1x2,3960,autosub:success,FALSE,330,SG164/SG164_cod_database_code_2310836.cif
+416,Au3RbSe2,cod-1510509,hexagonal,-3m,164,P-3m1,Li1H1Rg4Ag1Po1Te1Au1Lv1O1,"Se (2d) $\rightarrow$ Te1Lv1Po1O1, Au (3e) $\rightarrow$ Rg4Ag1Au1, Rb (1b) $\rightarrow$ Li1H1",1x2x1,1440,autosub:success,FALSE,192,SG164/SG164_cod_database_code_1510509.cif
+417,H2NiO2,cod-1548811,hexagonal,-3m,164,P-3m1,Ni9H18Se5S13,O (2d) $\rightarrow$ Se5S13,1x3x3,8568,autosub:success,FALSE,476,SG164/SG164_cod_database_code_1548811.cif
+418,Cl6Cs2U,cod-1530723,hexagonal,-3m,164,P-3m1,Cs18Pu1Fm1Th1Pa6Cl54,U (1a) $\rightarrow$ Pu1Fm1Th1Pa6,1x3x3,504,autosub:success,FALSE,28,SG164/SG164_cod_database_code_1530723.cif
+419,H2MnO2,cod-9009111,hexagonal,-3m,164,P-3m1,Mn3Lv1Po3Te1Se1,O-H (2d) $\rightarrow$ Lv1Po3Te1Se1,1x3x1,120,autosub:success,FALSE,20,SG164/SG164_cod_database_code_9009111.cif
+420,Cl2V,cod-1528165,hexagonal,-3m,164,P-3m1,Db1Nb1At1I1Br1Ts1,"Cl (2d) $\rightarrow$ At1I1Br1Ts1, V (1a) $\rightarrow$ Db1Nb1",1x1x2,48,autosub:success,FALSE,12,SG164/SG164_cod_database_code_1528165.cif
+421,Se2V,cod-1538289,hexagonal,-3m,164,P-3m1,Db2Ta2Nb1V1Se12,V (1a) $\rightarrow$ Db2Ta2Nb1V1,2x1x3,180,autosub:success,FALSE,16,SG164/SG164_cod_database_code_1538289.cif
+422,CrF30Na3U6,cod-4342343,hexagonal,-3m,165,P-3c1,Cs1Rb6K1Na4U24Mo1W1Sg2F120,"Cr (2a) $\rightarrow$ Mo1W1Sg2, Na (4d) $\rightarrow$ Cs1Rb6K1",1x2x1,672,autosub:success,FALSE,84,SG165/SG165_cod_database_code_4342343.cif
+423,GdH3,cod-1520968,hexagonal,-3m,165,P-3c1,Pr7Tm5H36,Gd (6f) $\rightarrow$ Pr7Tm5,2x1x1,792,autosub:success,FALSE,104,SG165/SG165_cod_database_code_1520968.cif
+424,Co4Nb2O9,cod-1008930,hexagonal,-3m,165,P-3c1,Ta1Db1Co2Rh1Mt1O9,"Nb (4c) $\rightarrow$ Ta1Db1, Co (4d) $\rightarrow$ Rh1Mt1",1x1x1,36,autosub:success,FALSE,12,SG165/SG165_cod_database_code_1008930.cif
+425,F3La,cod-9008114,hexagonal,-3m,165,P-3c1,La36At1Br2Cl21F84,F (4d) $\rightarrow$ At1Br2Cl21,1x2x3,6072,autosub:success,FALSE,253,SG165/SG165_cod_database_code_9008114.cif
+426,InKO8W2,cod-1524299,hexagonal,-3m,165,P-3c1,K1Na1Li1Ga1B3H1W8O32,"K (2a) $\rightarrow$ K1Na1Li1H1, In (2b) $\rightarrow$ Ga1B3",1x2x1,96,autosub:success,FALSE,12,SG165/SG165_cod_database_code_1524299.cif
+427,I2Pb,cod-9009142,rhombohedral,-3m,166,R-3m,Si4Sn1C1I12,Pb (3a) $\rightarrow$ Si4Sn1C1,2x1x2,2970,autosub:success,FALSE,147,SG166/SG166_cod_database_code_9009142.cif
+428,Ba2HN,cod-4030485,rhombohedral,-3m,166,R-3m,Fr1Rb1Ba2Sr1Mg3Bi1Sb1As1H1,"Ba (6c) $\rightarrow$ Ba2Sr1Mg3, N (3b) $\rightarrow$ Bi1Sb1As1, H (3a) $\rightarrow$ Fr1Rb1H1",1x1x1,2160,autosub:success,FALSE,360,SG166/SG166_cod_database_code_4030485.cif
+429,KSe2Yb,cod-8100307,rhombohedral,-3m,166,R-3m,K18Gd1Ho15Er2Se36,Yb (3a) $\rightarrow$ Gd1Ho15Er2,2x1x3,2448,autosub:success,FALSE,72,SG166/SG166_cod_database_code_8100307.cif
+430,CoLiO2,cod-4505482,rhombohedral,-3m,166,R-3m,Cs1Na2Co1Te2Ir1Rh1Lv1Se2O1,"Li (3a) $\rightarrow$ Cs1Na2, O (6c) $\rightarrow$ Lv1Te2Se2O1, Co (3b) $\rightarrow$ Co1Ir1Rh1",1x1x1,3240,autosub:success,FALSE,540,SG166/SG166_cod_database_code_4505482.cif
+431,Co17Nd2,cod-1524537,rhombohedral,-3m,166,R-3m,La4Nd1Gd1Co46Rh1Mt3Ir1,"Co (6c) $\rightarrow$ Rh1Mt3Co1Ir1, Nd (6c) $\rightarrow$ La4Nd1Gd1",1x1x1,3600,autosub:success,FALSE,600,SG166/SG166_cod_database_code_1524537.cif
+432,I2Ni,cod-9011538,rhombohedral,-3m,166,R-3m,Pd1Pt8Br1Cl16Ts1,"Ni (3a) $\rightarrow$ Pd1Pt8, I (6c) $\rightarrow$ Br1Cl16Ts1",1x3x1,2754,autosub:success,FALSE,153,SG166/SG166_cod_database_code_9011538.cif
+433,PtTe,cod-8104022,rhombohedral,-3m,166,R-3m,Te12Pd8Ds1Ni1Pt2,Pt (6c) $\rightarrow$ Pd8Ds1Ni1Pt2,1x2x1,5940,autosub:success,FALSE,495,SG166/SG166_cod_database_code_8104022.cif
+434,Al2O3,cod-9008081,rhombohedral,-3m,167,R-3c,Al2B4O9,Al (12c) $\rightarrow$ Al1B2,1x1x1,495,autosub:success,FALSE,50,SG167/SG167_cod_database_code_9008081.cif
+435,Cr2O3,cod-9015653,rhombohedral,-3m,167,R-3c,Sg1Mo53O81,Cr (12c) $\rightarrow$ Sg1Mo53,3x3x1,5778,autosub:success,FALSE,33,SG167/SG167_cod_database_code_9015653.cif
+436,F3Ga,cod-8100893,rhombohedral,-3m,167,R-3c,In11B1F36,Ga (6b) $\rightarrow$ In11B1,3x2x1,7140,autosub:success,FALSE,216,SG167/SG167_cod_database_code_8100893.cif
+437,CFeO3,cod-9015056,rhombohedral,-3m,167,R-3c,Fe2Hs1Ge5Ru3Pb1O18,"Fe (6b) $\rightarrow$ Fe2Hs1Ru3, C (6a) $\rightarrow$ Ge5Pb1",1x1x1,360,autosub:success,FALSE,30,SG167/SG167_cod_database_code_9015056.cif
+438,O3Ti2,cod-9008082,rhombohedral,-3m,167,R-3c,Ti4Po5S1,O (18e) $\rightarrow$ Po5S1,1x1x1,816,autosub:success,FALSE,28,SG167/SG167_cod_database_code_9008082.cif
+439,MnO11Rb2U3,cod-4343628,rhombohedral,-3m,167,R-3c,Rb36U54Bh15Mn1Re1Tc1O198,Mn (6b) $\rightarrow$ Bh15Mn1Re1Tc1,3x1x1,4896,autosub:success,FALSE,136,SG167/SG167_cod_database_code_4343628.cif
+440,CCaO,cod-1547356,rhombohedral,-3m,167,R-3c,Ca2Si1Sn1O6,C (6a) $\rightarrow$ Si1Sn1,1x2x1,924,autosub:success,FALSE,55,SG167/SG167_cod_database_code_1547356.cif
+441,IrLiO6Sr3,cod-1531254,rhombohedral,-3m,167,R-3c,K3Rb1Sr36Li8Ir12O72,Li (6a) $\rightarrow$ K3Rb1Li8,1x1x2,1980,autosub:success,FALSE,85,SG167/SG167_cod_database_code_1531254.cif
+442,BaH2N2O5,cod-2107320,hexagonal,6,169,P6_1,Ba6Po2Bi3Sb1Te4As1H12N7O24,"O (6a) $\rightarrow$ Po1Te2, N (6a) $\rightarrow$ Bi3Sb1As1N1",1x1x1,1800,autosub:success,FALSE,300,SG169/SG169_cod_database_code_2107320.cif
+443,O2Si,cod-4002432,hexagonal,6,171,P6_2,Si18Sn5C1O48,Si (6c) $\rightarrow$ Sn5C1,1x2x1,66,autosub:success,FALSE,21,SG171/SG171_cod_database_code_4002432.cif
+444,C12H10N4O4Zn,cod-7124295,hexagonal,6,171,P6_2,Li4Zn3Si3Sn1Ge4H26C28N12O12,"C (6c) $\rightarrow$ Si1Ge1, C (6c) $\rightarrow$ Sn1Ge1C4, H (6c) $\rightarrow$ Li2H1",1x1x1,9000,autosub:success,FALSE,1500,SG171/SG171_cod_database_code_7124295.cif
+445,C8H4F6N4Zn,cod-4002907,hexagonal,6,172,P6_4,Zn6Sb1P11H24C48N12F36,N (6c) $\rightarrow$ Sb1P11,2x2x1,276,autosub:success,FALSE,15,SG172/SG172_cod_database_code_4002907.cif
+446,N4Si3,cod-2102553,hexagonal,6,173,P6_3,Si18As5N19,N (6c) $\rightarrow$ As5N13,1x1x3,8568,autosub:success,FALSE,476,SG173/SG173_cod_database_code_2102553.cif
+447,Ba4ClGe3NaS10,cod-7233735,hexagonal,6,173,P6_3,Ba8Na2Fl2Sn1Pb1C2S20I1F1,"Ge (6c) $\rightarrow$ Fl2Sn1Pb1C2, Cl (2a) $\rightarrow$ I1F1",1x1x1,360,autosub:success,FALSE,60,SG173/SG173_cod_database_code_7233735.cif
+448,ILiO3,cod-2310421,hexagonal,6,173,P6_3,Li3Br1Cl2O9,I (2b) $\rightarrow$ Br1Cl2,3x1x2,495,autosub:success,FALSE,44,SG173/SG173_cod_database_code_2310421.cif
+449,C6H24Ag2I4N6Ni,cod-4304901,hexagonal,6,173,P6_3,Ni8Rg3Ag10H192Au3C48I32N48,Ag (2b) $\rightarrow$ Rg3Ag2Au3,1x2x2,560,autosub:success,FALSE,70,SG173/SG173_cod_database_code_4304901.cif
+450,C27H19BN9O3Re,cod-7008447,hexagonal,6,173,P6_3,Cs2Rb1Na2Li3Re2Sn1B2H30Pb2C48Fl3N18O6,"HA (2b) $\rightarrow$ Rb1Na1, H (6c) $\rightarrow$ Cs2Na1Li3, C (6c) $\rightarrow$ Sn1Pb2Fl3",1x1x1,7200,autosub:success,FALSE,1200,SG173/SG173_cod_database_code_7008447.cif
+451,C3H7MnNO6,cod-7035274,hexagonal,6,173,P6_3,K2Na3Li3Mn24H160C72N24O144,H (2b) $\rightarrow$ K2Na3Li3,2x1x2,560,autosub:success,FALSE,70,SG173/SG173_cod_database_code_7035274.cif
+452,CuGeLa3Se7,cod-1531982,hexagonal,6,173,P6_3,La12Cu4Ge4Se26Lv1Po1,Se (2b) $\rightarrow$ Lv1Po1Se2,2x2x1,420,autosub:success,FALSE,21,SG173/SG173_cod_database_code_1531982.cif
+453,FeGaGd3S7,cod-1562646,hexagonal,6,173,P6_3,Gd18B3Nh1In1Ga1Os5Ru1S42,"Ga (2b) $\rightarrow$ B3Nh1In1Ga1, Fe (2a) $\rightarrow$ Os5Ru1",1x3x1,720,autosub:success,FALSE,120,SG173/SG173_cod_database_code_1562646.cif
+454,As7K2Ni12,cod-8104516,hexagonal,-6,174,P-6,K2Na1Ni24Bi1Sb2As9H1Mc2,"K (1f) $\rightarrow$ Na1H1, As (3k) $\rightarrow$ Bi1Sb2As1Mc2",1x2x1,360,autosub:success,FALSE,180,SG174/SG174_cod_database_code_8104516.cif
+455,CHNdO4,cod-9012549,hexagonal,-6,174,P-6,Nd18Si1Sn2Po1Te3C15S2O64Lv2,"C (3j) $\rightarrow$ Si1Sn2, O (6l) $\rightarrow$ Te3S2Lv1, O (3j) $\rightarrow$ Po1Lv1O1",1x1x1,1080,autosub:success,FALSE,180,SG174/SG174_cod_database_code_9012549.cif
+456,GdIS,cod-1008318,hexagonal,-6,174,P-6,Gd9S9I1Cl1F6Ts1,I (3j) $\rightarrow$ I1Cl1F6Ts1,1x3x1,504,autosub:success,FALSE,168,SG174/SG174_cod_database_code_1008318.cif
+457,C7H6NO,cod-4118949,hexagonal,6/m,175,P6/m,H36C37Fl5N6O6,C (6j) $\rightarrow$ C1Fl5,1x3x1,816,autosub:success,FALSE,138,SG175/SG175_cod_database_code_4118949.cif
+458,HMgN,cod-4324382,hexagonal,6/m,175,P6/m,D8Sr3Mg5N8,Mg (6k) $\rightarrow$ Sr3Mg1,2x1x1,220,autosub:success,FALSE,55,SG175/SG175_cod_database_code_4324382.cif
+459,B2Ce3Cl3O6,cod-1510977,hexagonal,6/m,176,P6_3/m,Ce6Ga2B1Nh1Cl6O12,B (4f) $\rightarrow$ Ga2B1Nh1,1x1x2,420,autosub:success,FALSE,60,SG176/SG176_cod_database_code_1510977.cif
+460,K2O9Si3Zr,cod-9007382,hexagonal,6/m,176,P6_3/m,K1Li3Zr2Si1Ge3Pb1C1O18,"Si (6h) $\rightarrow$ Si1Ge3Pb1C1, KA (4f) $\rightarrow$ K1Li3",1x1x1,480,autosub:success,FALSE,40,SG176/SG176_cod_database_code_9007382.cif
+461,K2O9Si4,cod-9000877,hexagonal,6/m,176,P6_3/m,K7Si16H1O36,K (4f) $\rightarrow$ K7H1,1x3x2,2024,autosub:success,FALSE,85,SG176/SG176_cod_database_code_9000877.cif
+462,Ca2Li2O7Si2,cod-1562016,hexagonal,622,178,P6_122,Li2Ca2Si2O5Lv1Te1,O (12c) $\rightarrow$ Lv1Te1,1x1x1,924,autosub:success,FALSE,90,SG178/SG178_cod_database_code_1562016.cif
+463,Ir3Zr5,cod-2020032,hexagonal,622,178,P6_122,Zr25Rf3Hf2Co1Ir15Mt1Rh1,"Zr (6a) $\rightarrow$ Rf3Hf2Zr1, Ir (6a) $\rightarrow$ Ir3Mt1Co1Rh1",1x1x1,7200,autosub:success,FALSE,600,SG178/SG178_cod_database_code_2020032.cif
+464,Si2Ta,cod-1539274,hexagonal,622,180,P6_222,Ta1Fl1Si1,Si (6j) $\rightarrow$ Fl1Si1,1x2x1,924,autosub:success,FALSE,136,SG180/SG180_cod_database_code_1539274.cif
+465,O2Si,cod-9005032,hexagonal,622,180,P6_222,Si1Pb2Lv4Se2,"O (6j) $\rightarrow$ Lv2Se1, Si (3c) $\rightarrow$ Si1Pb2",2x1x1,7425,autosub:success,FALSE,981,SG180/SG180_cod_database_code_9005032.cif
+466,O2Si,cod-9005033,hexagonal,622,180,P6_222,Sn2Pb7O18,Si (3c) $\rightarrow$ Sn2Pb7,1x3x2,3060,autosub:success,FALSE,164,SG180/SG180_cod_database_code_9005033.cif
+467,Al2W,cod-1528542,hexagonal,622,181,P6_422,Al1Tl11Sg5Cr1,"W (3d) $\rightarrow$ Sg5Cr1, Al (6j) $\rightarrow$ Al1Tl11",2x1x1,72,autosub:success,FALSE,10,SG181/SG181_cod_database_code_1528542.cif
+468,Al2BaO4,cod-1008089,hexagonal,622,182,P6_322,Ba2Ga1Po3B3Te4S1,"O (2c) $\rightarrow$ Po1Te1, O (6g) $\rightarrow$ Po2Te3S1, Al (4f) $\rightarrow$ Ga1B3",1x1x1,480,autosub:success,FALSE,40,SG182/SG182_cod_database_code_1008089.cif
+469,CaO11Ta4,cod-1528602,hexagonal,622,182,P6_322,Sr7Ca3Ta48Be2O132,Ca (2d) $\rightarrow$ Sr7Ca3Be2,3x1x2,7920,autosub:success,FALSE,358,SG182/SG182_cod_database_code_1528602.cif
+470,O3Re,cod-1529828,hexagonal,622,182,P6_322,Bh1Mn2O9,Re (2c) $\rightarrow$ Bh1Mn2,1x3x2,495,autosub:success,FALSE,31,SG182/SG182_cod_database_code_1529828.cif
+471,C6H24N8NiO6,cod-2300361,hexagonal,622,182,P6_322,Ni2Po1Te10H48C12N16Lv1,O (12i) $\rightarrow$ Po1Te10Lv1,1x1x1,132,autosub:success,FALSE,11,SG182/SG182_cod_database_code_2300361.cif
+472,OZr3,cod-1521833,hexagonal,622,182,P6_322,Ti3Rf1Hf1Zr1O2,Zr (6g) $\rightarrow$ Ti3Rf1Hf1Zr1,1x1x1,120,autosub:success,FALSE,10,SG182/SG182_cod_database_code_1521833.cif
+473,ILiO3,cod-1529711,hexagonal,622,182,P6_322,K5Rb1I1Cl3Ts1O18F1,"I (2c) $\rightarrow$ I1Cl3Ts1F1, Li (2b) $\rightarrow$ K5Rb1",3x1x1,720,autosub:success,FALSE,120,SG182/SG182_cod_database_code_1529711.cif
+474,H4Mg3O9Si2,cod-9001091,hexagonal,6mm,185,P6_3cm,Mg24Si16Po13Te1H32Se2O56,O (4b) $\rightarrow$ Po13Te1Se2,1x2x2,1680,autosub:success,FALSE,105,SG185/SG185_cod_database_code_9001091.cif
+475,B3Ba3O9Yb,cod-1510878,hexagonal,6mm,185,P6_3cm,Ba37Ra15Sr1Yb18Mg1B54O162,Ba (6c) $\rightarrow$ Ba1Ra15Sr1Mg1,1x3x1,4896,autosub:success,FALSE,408,SG185/SG185_cod_database_code_1510878.cif
+476,MnO3Y,cod-1560626,hexagonal,6mm,185,P6_3cm,Y37Lu15Lr1Sc1Mn54O162,Y (2a) $\rightarrow$ Y1Lu15Lr1Sc1,3x3x1,4896,autosub:success,FALSE,62,SG185/SG185_cod_database_code_1560626.cif
+477,MnO3Yb,cod-9007905,hexagonal,6mm,185,P6_3cm,Yb4Ce3Sm3Eu2Mn12O36,Yb (4b) $\rightarrow$ Ce3Sm3Eu2,2x1x1,560,autosub:success,FALSE,70,SG185/SG185_cod_database_code_9007905.cif
+478,Ca3InNa3P4,cod-1560548,hexagonal,6mm,186,P6_3mc,Na24Ca24Nh4Al1In1Ga2P32,In (2b) $\rightarrow$ Nh4Al1In1Ga2,1x2x2,840,autosub:success,FALSE,105,SG186/SG186_cod_database_code_1560548.cif
+479,CdClHO,cod-9011542,hexagonal,6mm,186,P6_3mc,Zn1Cd1Hg1Cn1Ts2Cl2O2Lv2,"O-H (2a) $\rightarrow$ O1Lv1, Cl (2b) $\rightarrow$ Ts1Cl1, Cd (2b) $\rightarrow$ Zn1Cd1Hg1Cn1",1x1x2,864,autosub:success,FALSE,216,SG186/SG186_cod_database_code_9011542.cif
+480,Fe2Mo3O8,cod-9007714,hexagonal,6mm,186,P6_3mc,Fe3Os2Ru2Hs1Po1Te1Mo12O30,"Fe (2b) $\rightarrow$ Fe2Os1Ru1, Fe (2b) $\rightarrow$ Fe1Ru1Os1Hs1, O (2b) $\rightarrow$ Po1Te1O2",2x1x1,3456,autosub:success,FALSE,864,SG186/SG186_cod_database_code_9007714.cif
+481,F6K2Si,cod-9010636,hexagonal,6mm,186,P6_3mc,K2Li1Si2H1At1Br2F9,"F (6c) $\rightarrow$ At1Br2F3, K (2a) $\rightarrow$ Li1H1",1x1x1,120,autosub:success,FALSE,12,SG186/SG186_cod_database_code_9010636.cif
+482,OZn,cod-2300450,hexagonal,6mm,186,P6_3mc,Cn2Zn2Cd1Hg1Po2O4,"Zn (2b) $\rightarrow$ Cn2Zn2Cd1Hg1, O (2b) $\rightarrow$ Po1O2",1x1x3,2700,autosub:success,FALSE,450,SG186/SG186_cod_database_code_2300450.cif
+483,BaN7Si4Y,cod-7222392,hexagonal,6mm,186,P6_3mc,Ba4Y4Fl3Si12Ge1N28,Si (2a) $\rightarrow$ Fl3Ge1,1x2x3,220,autosub:success,FALSE,19,SG186/SG186_cod_database_code_7222392.cif
+484,GaSe,cod-2106698,hexagonal,6mm,186,P6_3mc,Ga48Po7Se36S5,Se (2a) $\rightarrow$ Po7S5,2x1x3,792,autosub:success,FALSE,66,SG186/SG186_cod_database_code_2106698.cif
+485,LiPd,cod-1523155,hexagonal,-6m2,187,P-6m2,Na2H7Pd9,Li (1a) $\rightarrow$ Na2H7,3x2x3,3060,autosub:success,FALSE,99,SG187/SG187_cod_database_code_1523155.cif
+486,CW,cod-1501540,hexagonal,-6m2,187,P-6m2,Sn5W12Fl7,C (1f) $\rightarrow$ Sn5Fl7,2x2x3,792,autosub:success,FALSE,13,SG187/SG187_cod_database_code_1501540.cif
+487,CW,cod-2102253,hexagonal,-6m2,187,P-6m2,Ge4Pb4W9C1,C (1f) $\rightarrow$ Ge4Pb4C1,1x3x3,630,autosub:success,FALSE,38,SG187/SG187_cod_database_code_2102253.cif
+488,NbSe2,cod-2310534,hexagonal,-6m2,187,P-6m2,Nb8Po4Se7S3O1Lv1,"Se (2i) $\rightarrow$ Po2Se1S1, Se (2h) $\rightarrow$ Po1Se1S1Lv1, Se (2i) $\rightarrow$ Po1Se1S1O1",1x2x1,6912,autosub:success,FALSE,1728,SG187/SG187_cod_database_code_2310534.cif
+489,CW,cod-1501521,hexagonal,-6m2,187,P-6m2,Cr2W1Sg2Mo1C6,W (1a) $\rightarrow$ Cr2W1Sg2Mo1,3x1x2,180,autosub:success,FALSE,30,SG187/SG187_cod_database_code_1501521.cif
+490,CW,cod-1501580,hexagonal,-6m2,187,P-6m2,Cr1Si1Mo1Pb5W3Sg1,"C (1f) $\rightarrow$ Si1Pb5, W (1a) $\rightarrow$ Cr1Mo1W3Sg1",1x3x2,720,autosub:success,FALSE,60,SG187/SG187_cod_database_code_1501580.cif
+491,NTa,cod-1538016,hexagonal,-6m2,187,P-6m2,Ta8V1Bi7N1Mc1,"N (1a) $\rightarrow$ Bi7N1Mc1, Ta (1d) $\rightarrow$ Ta8V1",1x3x3,648,autosub:success,FALSE,39,SG187/SG187_cod_database_code_1538016.cif
+492,CW,cod-2102292,hexagonal,-6m2,187,P-6m2,Cr1W6Sg1Mo1C9,W (1a) $\rightarrow$ Cr1W6Sg1Mo1,3x1x3,504,autosub:success,FALSE,29,SG187/SG187_cod_database_code_2102292.cif
+493,AlCsF4,cod-7221224,hexagonal,-6m2,189,P-62m,Cs36Al36At1I34F108Ts1,F (3g) $\rightarrow$ I34Ts1At1,3x2x2,1260,autosub:success,FALSE,105,SG189/SG189_cod_database_code_7221224.cif
+494,AuHoIn,cod-1510178,hexagonal,-6m2,189,P-62m,Tb3Pm1Sm5Nh8Al1Au9,"Ho (3g) $\rightarrow$ Tb3Pm1Sm5, In (3f) $\rightarrow$ Nh8Al1",1x3x1,4536,autosub:success,FALSE,756,SG189/SG189_cod_database_code_1510178.cif
+495,Co4P3Zr2,cod-1533945,hexagonal,-6m2,189,P-62m,Hf1Zr15Ti8Co48P36,Zr (3g) $\rightarrow$ Hf1Ti8,2x3x1,153,autosub:success,FALSE,27,SG189/SG189_cod_database_code_1533945.cif
+496,GdPdTl,cod-1523616,hexagonal,-6m2,189,P-62m,Gd6Al1In1B4Pd5Ds1,"Tl (3f) $\rightarrow$ Al1In1B4, Pd (1b) $\rightarrow$ Pd1Ds1",2x1x1,60,autosub:success,FALSE,16,SG189/SG189_cod_database_code_1523616.cif
+497,InMgSm,cod-7222788,hexagonal,-6m2,189,P-62m,Sr1Ca1Yb1Pm1Er1Mg1In1Ga1B1,"In (2d) $\rightarrow$ Ga1B1, Sm (3f) $\rightarrow$ Yb1Pm1Er1, Mg (3g) $\rightarrow$ Sr1Ca1Mg1",1x1x1,72,autosub:success,FALSE,12,SG189/SG189_cod_database_code_7222788.cif
+498,AuInSm,cod-1510196,hexagonal,-6m2,189,P-62m,Sm24In24Cu4Au17Rg3,Au (1b) $\rightarrow$ Cu4Au1Rg3,2x2x2,280,autosub:success,FALSE,10,SG189/SG189_cod_database_code_1510196.cif
+499,HoRhSn,cod-7222596,hexagonal,-6m2,189,P-62m,Pr9Pm3Co1Sn12Ir1Rh9Mt1,"Ho (3f) $\rightarrow$ Pr3Pm1, Rh (1a) $\rightarrow$ Co1Ir1Rh1Mt1",2x1x2,5280,autosub:success,FALSE,720,SG189/SG189_cod_database_code_7222596.cif
+500,HoPdTl,cod-1523617,hexagonal,-6m2,189,P-62m,Ho9Tl1Ga1Nh6Ni1B1Pd7Pt1,"Tl (3f) $\rightarrow$ Tl1Ga1Nh6B1, Pd (1b) $\rightarrow$ Ni1Pd1Pt1",1x1x3,3024,autosub:success,FALSE,87,SG189/SG189_cod_database_code_1523617.cif
+501,FeS,cod-9007652,hexagonal,-6m2,190,P-62c,Fe24Po2Se3S18O1,S (4f) $\rightarrow$ Po2Se3S2O1,2x1x1,1680,autosub:success,FALSE,210,SG190/SG190_cod_database_code_9007652.cif
+502,Ca3H12MnO17S2,cod-2230974,hexagonal,-6m2,190,P-62c,Ca6Mn2H24S4Lv1Te3O30,O (4f) $\rightarrow$ Lv1Te3,1x1x3,220,autosub:success,FALSE,19,SG190/SG190_cod_database_code_2230974.cif
+503,FeS,cod-9004036,hexagonal,-6m2,190,P-62c,Fe24Po3Te3O2Lv2S14,"S (4f) $\rightarrow$ Po3Lv2S2O1, S (2a) $\rightarrow$ Te3O1",1x1x2,6720,autosub:success,FALSE,840,SG190/SG190_cod_database_code_9004036.cif
+504,PtScSn,cod-7222598,hexagonal,-6m2,190,P-62c,Sc12Fl9Ge2Pt12Pb1,Sn (6g) $\rightarrow$ Fl9Ge2Pb1,2x1x1,660,autosub:success,FALSE,86,SG190/SG190_cod_database_code_7222598.cif
+505,Ti,cod-9012925,hexagonal,6/mmm,191,P6/mmm,Hf6Zr2Ti1,"Ti (1a) $\rightarrow$ Hf1Zr4Ti1, Ti (2d) $\rightarrow$ Hf11Ti1",3x1x2,360,autosub:success,FALSE,15,SG191/SG191_cod_database_code_9012925.cif
+506,Ga2Ho,cod-1522686,hexagonal,6/mmm,191,P6/mmm,Ho6Tl1Nh6Ga5,Ga (2d) $\rightarrow$ Tl1Nh6Ga5,2x1x3,5544,autosub:success,FALSE,242,SG191/SG191_cod_database_code_1522686.cif
+507,B2Co3Lu,cod-1510620,hexagonal,6/mmm,191,P6/mmm,Y3Lu1Lr1Sc1Co18B12,Lu (1a) $\rightarrow$ Y3Lu1Lr1Sc1,1x2x3,120,autosub:success,FALSE,10,SG191/SG191_cod_database_code_1510620.cif
+508,B2Nb,cod-1510778,hexagonal,6/mmm,191,P6/mmm,Ta2Nb1Al2Tl5V1Ga1,"B (2d) $\rightarrow$ Al2Tl5Ga1, Nb (1a) $\rightarrow$ Ta2Nb1V1",1x2x2,2016,autosub:success,FALSE,126,SG191/SG191_cod_database_code_1510778.cif
+509,Co6Ge6Mg,cod-1534580,hexagonal,6/mmm,191,P6/mmm,Ba1Sr1Mg1Be3Co36Ge36,Mg (1a) $\rightarrow$ Ba1Sr1Mg1Be3,3x1x2,120,autosub:success,FALSE,10,SG191/SG191_cod_database_code_1534580.cif
+510,HoSi2,cod-1538812,hexagonal,6/mmm,191,P6/mmm,Nd2Sm4Pb3C9,"Si (2d) $\rightarrow$ Pb1C3, Ho (1a) $\rightarrow$ Nd1Sm2",3x2x1,3300,autosub:success,FALSE,275,SG191/SG191_cod_database_code_1538812.cif
+511,Ga2La,cod-1523791,hexagonal,6/mmm,191,P6/mmm,Gd2Tm1In1Ga4Nh1,"La (1a) $\rightarrow$ Gd2Tm1, Ga (2d) $\rightarrow$ Ga4Nh1In1",1x3x1,90,autosub:success,FALSE,15,SG191/SG191_cod_database_code_1523791.cif
+512,LaMn3Ni2,cod-1531448,hexagonal,6/mmm,191,P6/mmm,La9Mn27Ds5Pt13,Ni (6l) $\rightarrow$ Ds5Pt13,3x1x1,8568,autosub:success,FALSE,732,SG191/SG191_cod_database_code_1531448.cif
+513,Ho5Sn3,cod-2310217,hexagonal,6/mmm,193,P6_3/mcm,Ho30Pb13C5,Sn (6g) $\rightarrow$ Pb13C5,1x3x1,8568,autosub:success,FALSE,728,SG193/SG193_cod_database_code_2310217.cif
+514,Tb5Tl3,cod-1527378,hexagonal,6/mmm,193,P6_3/mcm,Tb12Pm15Nd2Dy1Tl18,Tb (6g) $\rightarrow$ Pm15Nd2Dy1,3x1x1,2448,autosub:success,FALSE,208,SG193/SG193_cod_database_code_1527378.cif
+515,Bi5MnNd3,cod-4304075,hexagonal,6/mmm,193,P6_3/mcm,Yb4Tb2Mn2Bi4Sb2As3N1,"Nd (6g) $\rightarrow$ Yb2Tb1, Bi (6g) $\rightarrow$ Sb2As3N1",1x1x1,900,autosub:success,FALSE,78,SG193/SG193_cod_database_code_4304075.cif
+516,Sn3Th5,cod-1527242,hexagonal,6/mmm,193,P6_3/mcm,Pu52Th36Am1Cf1Sn54,Th (6g) $\rightarrow$ Pu52Am1Cf1,3x1x3,2862,autosub:success,FALSE,54,SG193/SG193_cod_database_code_1527242.cif
+517,Ca10Ge3Pt7,cod-4330961,hexagonal,6/mmm,193,P6_3/mcm,Ra1Sr10Ca49Ge18Pt42,Ca (4d) $\rightarrow$ Ra1Sr10Ca1,1x3x1,132,autosub:success,FALSE,11,SG193/SG193_cod_database_code_4330961.cif
+518,Fe5Si3,cod-9009219,hexagonal,6/mmm,193,P6_3/mcm,Fe10Si3Ge1Fl1Pb1,Si (6g) $\rightarrow$ Si3Ge1Fl1Pb1,1x1x1,120,autosub:success,FALSE,10,SG193/SG193_cod_database_code_9009219.cif
+519,I3Zr,cod-5910008,hexagonal,6/mmm,193,P6_3/mcm,Hf1Zr1Ti3Rf1I18,Zr (2b) $\rightarrow$ Hf1Zr1Ti3Rf1,1x3x1,120,autosub:success,FALSE,10,SG193/SG193_cod_database_code_5910008.cif
+520,CuS,cod-9000062,hexagonal,6/mmm,194,P6_3/mmc,Cu25Au2S27,Cu (2d) $\rightarrow$ Cu7Au2,3x3x1,3060,autosub:success,FALSE,46,SG194/SG194_cod_database_code_9000062.cif
+521,Be,cod-9012041,hexagonal,6/mmm,194,P6_3/mmc,Ba7Mg5,Be (2c) $\rightarrow$ Ba7Mg5,2x1x3,792,autosub:success,FALSE,38,SG194/SG194_cod_database_code_9012041.cif
+522,GaTi2,cod-1522382,hexagonal,6/mmm,194,P6_3/mmc,Hf8Zr1Ti13Rf2Ga12,Ti (2a) $\rightarrow$ Hf8Rf2Zr1Ti1,1x3x2,5940,autosub:success,FALSE,250,SG194/SG194_cod_database_code_1522382.cif
+523,CuS,cod-9008388,hexagonal,6/mmm,194,P6_3/mmc,Cu10Ag2Po1Te1S9O1,"S (2c) $\rightarrow$ Po1Te1S1O1, Cu (2d) $\rightarrow$ Cu1Ag1",1x2x1,144,autosub:success,FALSE,36,SG194/SG194_cod_database_code_9008388.cif
+524,AlK6Na3Sb4,cod-8103896,hexagonal,6/mmm,194,P6_3/mmc,K36Na18Al1Tl1Ga3Nh1Sb24,Al (2c) $\rightarrow$ Al1Tl1Ga3Nh1,1x3x1,120,autosub:success,FALSE,20,SG194/SG194_cod_database_code_8103896.cif
+525,Cs3I9Mo2,cod-1530832,hexagonal,6/mmm,194,P6_3/mmc,Fr2Cs1Rb2K1Cr1Mo1W1Sg1I18,"Cs (4f) $\rightarrow$ Fr1Cs1Rb1K1, Cs (2b) $\rightarrow$ Fr1Rb1, Mo (4f) $\rightarrow$ Cr1Mo1W1Sg1",1x1x1,1152,autosub:success,FALSE,288,SG194/SG194_cod_database_code_1530832.cif
+526,AuBiSr,cod-1510602,hexagonal,6/mmm,194,P6_3/mmc,Sr6Cu1Bi6Au4Rg1,Au (2a) $\rightarrow$ Cu1Au4Rg1,3x2x1,2970,autosub:success,FALSE,147,SG194/SG194_cod_database_code_1510602.cif
+527,TeZr,cod-1541223,hexagonal,6/mmm,194,P6_3/mmc,Hf2Rf1Ti1Po1Te1Lv1Se1,"Te (2a) $\rightarrow$ Po1Te1Lv1Se1, Zr (2c) $\rightarrow$ Hf2Rf1Ti1",1x1x2,288,autosub:success,FALSE,36,SG194/SG194_cod_database_code_1541223.cif
+528,C4H12O4Si,cod-5900021,cubic,23,195,P23,Si8Po1C32Se5S2O24,O (4e) $\rightarrow$ Po1Se5S2,1x1x2,168,autosub:success,FALSE,21,SG195/SG195_cod_database_code_5900021.cif
+529,C2HNO1.17Zn0.67,cod-4122711,cubic,23,196,F23,Zn32Po1Te3H48C96S1N48O49Lv2,"O (4c) $\rightarrow$ Po1Te1S1O1, O (4d) $\rightarrow$ Te1Lv1",1x1x1,144,autosub:success,FALSE,12,SG196/SG196_cod_database_code_4122711.cif
+530,C12H40N4O41U6,cod-4316567,cubic,23,197,I23,U48Te11C96Se5O240,O (8c) $\rightarrow$ Te11Se5,2x1x1,4368,autosub:success,FALSE,273,SG197/SG197_cod_database_code_4316567.cif
+531,Bi24O40Si2,cod-1010314,cubic,23,197,I23,Fl2Sn1Ge2Bi72C1O120,Si (2a) $\rightarrow$ Fl2Sn1Ge2C1,1x1x3,180,autosub:success,FALSE,16,SG197/SG197_cod_database_code_1010314.cif
+532,Li3NbO4,cod-1007081,cubic,23,197,I23,Fr2Rb1Na21Nb8O32,Li (24f) $\rightarrow$ Fr2Rb1Na21,1x1x1,6072,autosub:success,FALSE,253,SG197/SG197_cod_database_code_1007081.cif
+533,Cd2K2O12S3,cod-4302792,cubic,23,198,P2_13,Fr1Cs3K11Cd16H1S24O96,K (4a) $\rightarrow$ Fr1Cs3K3H1,2x1x1,1120,autosub:success,FALSE,140,SG198/SG198_cod_database_code_4302792.cif
+534,MoNa2O6Se,cod-1536731,cubic,23,198,P2_13,Na8Cr1Po8Mo3Se4O13Lv3,"Mo (4a) $\rightarrow$ Cr1Mo3, O (12b) $\rightarrow$ Po8O1Lv3",1x1x1,7920,autosub:success,FALSE,660,SG198/SG198_cod_database_code_1536731.cif
+535,MnSi,cod-9013994,cubic,23,198,P2_13,Mn1Tc10Bh1Si12,Mn (4a) $\rightarrow$ Mn1Tc10Bh1,1x1x3,132,autosub:success,FALSE,11,SG198/SG198_cod_database_code_9013994.cif
+536,O3Sm2,cod-5910020,cubic,23,199,I2_13,Sm61Eu3O96,Sm (8a) $\rightarrow$ Sm13Eu3,1x2x1,560,autosub:success,FALSE,35,SG199/SG199_cod_database_code_5910020.cif
+537,Br2Hg3Te2,cod-1538507,cubic,23,199,I2_13,Hg12Po2Te3S3Br8,Te (8a) $\rightarrow$ Po2Te3S3,1x1x1,560,autosub:success,FALSE,24,SG199/SG199_cod_database_code_1538507.cif
+538,F6H3OSb,cod-2107258,cubic,23,199,I2_13,Bi5Sb1P1H24N1O8F48,Sb (8a) $\rightarrow$ Bi5Sb1P1N1,1x1x1,336,autosub:success,FALSE,14,SG199/SG199_cod_database_code_2107258.cif
+539,CdN3O6Tl,cod-1010355,cubic,m-3,200,Pm-3,Tl3Cd3Bi1As5P2N1O18,N (3c) $\rightarrow$ Bi1As5P2N1,1x3x1,1512,autosub:success,FALSE,261,SG200/SG200_cod_database_code_1010355.cif
+540,I14Mo6Pb,cod-8103971,cubic,m-3,201,Pn-3,Si5Sn1Ge6Mo72I168,Pb (4b) $\rightarrow$ Si5Sn1Ge6,3x1x1,5544,autosub:success,FALSE,242,SG201/SG201_cod_database_code_8103971.cif
+541,Co2K5N12O24Y,cod-1537285,cubic,m-3,201,Pn-3,K20Y4Co1Rh1Mt3Ir3N48O96,Co (4b) $\rightarrow$ Co1Ir3Rh1Mt3,2x1x1,1120,autosub:success,FALSE,76,SG201/SG201_cod_database_code_1537285.cif
+542,Co2N12O24Tl5Y,cod-1537286,cubic,m-3,201,Pn-3,Y6Tl30Co2Ir7Mt3N72O144,Co (4b) $\rightarrow$ Co2Ir7Mt3,3x1x1,7920,autosub:success,FALSE,344,SG201/SG201_cod_database_code_1537286.cif
+543,CuK2N6O12Pb,cod-1010261,cubic,m-3,202,Fm-3,Cs13Na1Li2Cu8Pb8N48O96,K (8c) $\rightarrow$ Cs13Na1Li2,1x1x2,1680,autosub:success,FALSE,65,SG202/SG202_cod_database_code_1010261.cif
+544,C4Fe2Na6O16S,cod-9009542,cubic,m-3,203,Fd-3,Na48Fe16Po1Te2C32Lv4S1O128,S (8b) $\rightarrow$ Lv4Po1Te2S1,1x1x1,840,autosub:success,FALSE,11,SG203/SG203_cod_database_code_9009542.cif
+545,N2O4,cod-2104473,cubic,m-3,204,Im-3,As11P1O24,N (12d) $\rightarrow$ As11P1,1x2x1,276,autosub:success,FALSE,27,SG204/SG204_cod_database_code_2104473.cif
+546,C60Eu6,cod-1520985,cubic,m-3,204,Im-3,La2Sm9Ho1C120,Eu (12e) $\rightarrow$ La2Sm9Ho1,1x1x1,660,autosub:success,FALSE,27,SG204/SG204_cod_database_code_1520985.cif
+547,As3Ir,cod-9016517,cubic,m-3,204,Im-3,As72Rh1Mt2Co21,Ir (8c) $\rightarrow$ Rh1Mt2Co21,3x1x1,6072,autosub:success,FALSE,141,SG204/SG204_cod_database_code_9016517.cif
+548,BrCu,cod-9013933,cubic,m-3,205,Pa-3,Cu3Ag2Rg2Au1Br8,Cu (8c) $\rightarrow$ Cu3Ag2Rg2Au1,1x1x1,1680,autosub:success,FALSE,70,SG205/SG205_cod_database_code_9013933.cif
+549,CoS2,cod-9007682,cubic,m-3,205,Pa-3,Co6O11Lv1,S (8c) $\rightarrow$ O11Lv1,3x1x1,276,autosub:success,FALSE,19,SG205/SG205_cod_database_code_9007682.cif
+550,I4Si,cod-1525681,cubic,m-3,205,Pa-3,Si16At3I48Cl13,I (8c) $\rightarrow$ At3Cl13,1x2x1,560,autosub:success,FALSE,35,SG205/SG205_cod_database_code_1525681.cif
+551,Lu2O3,cod-1548517,cubic,m-3,206,Ia-3,Y3Lu48Sc13O96,Lu (8b) $\rightarrow$ Y3Sc13,2x1x1,560,autosub:success,FALSE,23,SG206/SG206_cod_database_code_1548517.cif
+552,B6Ba3O15Y2,cod-2018151,cubic,m-3,206,Ia-3,Ba48Y17Lu1Lr14B96O240,Y (8b) $\rightarrow$ Y1Lu1Lr14,2x1x1,240,autosub:success,FALSE,11,SG206/SG206_cod_database_code_2018151.cif
+553,Ho2O3,cod-2106880,cubic,m-3,206,Ia-3,Tb1Ce2Pr1Dy4Ho24O48,Ho (8b) $\rightarrow$ Tb1Ce2Pr1Dy4,1x1x1,840,autosub:success,FALSE,35,SG206/SG206_cod_database_code_2106880.cif
+554,Si2Sr,cod-2107402,cubic,432,212,P4_332,Sr8Fl14Si1C1,Si (8c) $\rightarrow$ Fl14Si1C1,2x1x1,240,autosub:success,FALSE,15,SG212/SG212_cod_database_code_2107402.cif
+555,Ga5LiO8,cod-1007185,cubic,432,212,P4_332,Rb4K3Ga40H1O64,Li (4b) $\rightarrow$ Rb4K3H1,1x1x2,280,autosub:success,FALSE,19,SG212/SG212_cod_database_code_1007185.cif
+556,Mg3Ru2,cod-4305398,cubic,432,213,P4_132,Mg36Hs22Fe1Os1,Ru (8c) $\rightarrow$ Hs22Fe1Os1,1x3x1,552,autosub:success,FALSE,23,SG213/SG213_cod_database_code_4305398.cif
+557,GeI3La3,cod-1535110,cubic,432,214,I4_132,Tb47Tm1Ge16I48,La (24g) $\rightarrow$ Tb47Tm1,2x2x1,4560,autosub:success,FALSE,93,SG214/SG214_cod_database_code_1535110.cif
+558,Ca3I3P,cod-1521110,cubic,432,214,I4_132,Ca24Sb3I24N2Mc3,P (8a) $\rightarrow$ Sb3N2Mc3,1x1x1,560,autosub:success,FALSE,17,SG214/SG214_cod_database_code_1521110.cif
+559,Pd17Se15,cod-9011052,cubic,-43m,215,P-43m,Ni3Pd65Se60,Pd (6f) $\rightarrow$ Ni1Pd3,2x1x1,220,autosub:success,FALSE,20,SG215/SG215_cod_database_code_9011052.cif
+560,C18H68B3F6N12O14P,cod-4100675,cubic,-43m,215,P-43m,Al1In1Nh1Sn1B3H120C24Fl7N24O24,"C (4e) $\rightarrow$ Sn1Fl7, B (3c) $\rightarrow$ Al1In1Nh1B3",1x2x1,960,autosub:success,FALSE,60,SG215/SG215_cod_database_code_4100675.cif
+561,Cu3S4V,cod-1011219,cubic,-43m,215,P-43m,Ta2Db1Nb2V1Cu18S24,V (1a) $\rightarrow$ Ta2Db1Nb2V1,1x3x2,180,autosub:success,FALSE,16,SG215/SG215_cod_database_code_1011219.cif
+562,SZn,cod-1100043,cubic,-43m,216,F-43m,Zn8Se1S2O3Lv2,S (4c) $\rightarrow$ Se1S2O3Lv2,2x1x1,1680,autosub:success,FALSE,63,SG216/SG216_cod_database_code_1100043.cif
+563,AsCsH12MgO10,cod-1537297,cubic,-43m,216,F-43m,Fr22Cs1Na1Mg24As24O240,Cs (4b) $\rightarrow$ Fr22Cs1Na1,2x3x1,552,autosub:success,FALSE,11,SG216/SG216_cod_database_code_1537297.cif
+564,HoNiSb,cod-1537832,cubic,-43m,216,F-43m,Ce2Sm6Pd2Ds1Ni5Sb8,"Ni (4c) $\rightarrow$ Pd2Ds1Ni5, Ho (4b) $\rightarrow$ Ce1Sm3",2x1x1,4704,autosub:success,FALSE,99,SG216/SG216_cod_database_code_1537832.cif
+565,Gd3O12Sb5,cod-1538724,cubic,-43m,217,I-43m,Gd36Bi23Sb36As1O144,Sb (8c) $\rightarrow$ Bi23As1,1x2x3,1128,autosub:success,FALSE,35,SG217/SG217_cod_database_code_1538724.cif
+566,B6O12SeZn4,cod-4517939,cubic,-43m,217,I-43m,Cd13Cn1Zn2B24Se4O48,Zn (8c) $\rightarrow$ Cd13Cn1Zn2,1x1x2,1680,autosub:success,FALSE,65,SG217/SG217_cod_database_code_4517939.cif
+567,Ag6Ge10P12,cod-4002838,cubic,-43m,217,I-43m,Si23Ag24Ge16Fl1P48,Ge (12d) $\rightarrow$ Si23Fl1,2x2x1,1128,autosub:success,FALSE,31,SG217/SG217_cod_database_code_4002838.cif
+568,Be3Fe4O12SSi3,cod-9000953,cubic,-43m,218,P-43n,Ba17Sr1Fe24Si18S6O72,Be (6d) $\rightarrow$ Ba17Sr1,1x3x2,630,autosub:success,FALSE,41,SG218/SG218_cod_database_code_9000953.cif
+569,Be6Fe8O24Si6Te2,cod-7222415,cubic,-43m,218,P-43n,Sr8Ca1Fe12Si9Te3O36,Be (6c) $\rightarrow$ Sr8Ca1,1x3x1,153,autosub:success,FALSE,11,SG218/SG218_cod_database_code_7222415.cif
+570,Al3ClNa4O12Si3,cod-9003326,cubic,-43m,218,P-43n,Na24Al1Tl15Ga2Si18Cl6O72,Al (6d) $\rightarrow$ Al1Tl15Ga2,3x1x1,2448,autosub:success,FALSE,111,SG218/SG218_cod_database_code_9003326.cif
+571,Be3Mn4O12SSi3,cod-9008376,cubic,-43m,218,P-43n,Mn16Be12Fl1Si8Pb3Se1Lv3O48,"Si (6d) $\rightarrow$ Fl1Si8Pb3, S (2a) $\rightarrow$ Se1Lv3",1x2x1,7920,autosub:success,FALSE,521,SG218/SG218_cod_database_code_9008376.cif
+572,C12H36F4Ga4K4,cod-2216109,cubic,-43m,219,F-43c,K16Na1Li47Ga16H96C48F16,HA (96h) $\rightarrow$ Na1Li47,1x1x1,4560,autosub:success,FALSE,61,SG219/SG219_cod_database_code_2216109.cif
+573,B7INi3O13,cod-1511678,cubic,-43m,219,F-43c,Ni48B112Te3I16Lv13O192,O (8a) $\rightarrow$ Te3Lv13,1x1x2,560,autosub:success,FALSE,23,SG219/SG219_cod_database_code_1511678.cif
+574,Bi4O12Si3,cod-9012894,cubic,-43m,220,I-43d,Fl23Si1Bi32O96,Si (12a) $\rightarrow$ Fl23Si1,2x2x1,1128,autosub:success,FALSE,27,SG220/SG220_cod_database_code_9012894.cif
+575,Gd4Mo9,cod-4031602,cubic,-43m,220,I-43d,Gd48Cr1Mo107,Mo (12b) $\rightarrow$ Cr1Mo11,1x2x1,276,autosub:success,FALSE,15,SG220/SG220_cod_database_code_4031602.cif
+576,Al14Ca12O32,cod-8104354,cubic,-43m,220,I-43d,Ca48Al56Te30Se1O97,O (16c) $\rightarrow$ Te30Se1O1,1x2x1,992,autosub:success,FALSE,31,SG220/SG220_cod_database_code_8104354.cif
+577,Pr3S4,cod-1537783,cubic,-43m,220,I-43d,Pr48Te1S62O1,S (16c) $\rightarrow$ Te1S62O1,2x1x2,4032,autosub:success,FALSE,63,SG220/SG220_cod_database_code_1537783.cif
+578,B3Fe23Nd2,cod-1510910,cubic,-43m,220,I-43d,La1Pr1Pm1Gd13Fe184B24,Nd (16c) $\rightarrow$ La1Pr1Pm1Gd13,1x1x1,3360,autosub:success,FALSE,74,SG220/SG220_cod_database_code_1510910.cif
+579,TbTl3,cod-1540875,cubic,m-3m,221,Pm-3m,Yb2Pm1In1B8,"Tb (1a) $\rightarrow$ Yb2Pm1, Tl (3c) $\rightarrow$ In1B8",1x2x3,2295,autosub:success,FALSE,138,SG221/SG221_cod_database_code_1540875.cif
+580,RuTi,cod-1537946,cubic,m-3m,221,Pm-3m,Zr7Ti5Ru12,Ti (1b) $\rightarrow$ Zr7Ti5,2x2x3,792,autosub:success,FALSE,25,SG221/SG221_cod_database_code_1537946.cif
+581,ErPd3,cod-1527346,cubic,m-3m,221,Pm-3m,Ce9Ho1Er1Tm1Pd36,Er (1a) $\rightarrow$ Ce9Ho1Er1Tm1,2x2x3,1320,autosub:success,FALSE,34,SG221/SG221_cod_database_code_1527346.cif
+582,Mo3Nd5O16,cod-1001073,cubic,m-3m,222,Pn-3n,Nd25Sm1Eu1Tm13Mo24O128,Nd (8c) $\rightarrow$ Nd1Sm1Eu1Tm13,1x1x2,3360,autosub:success,FALSE,126,SG222/SG222_cod_database_code_1001073.cif
+583,SbV3,cod-1538993,cubic,m-3m,223,Pm-3n,V18P2Mc1Bi1Sb2,Sb (2a) $\rightarrow$ P2Mc1Bi1Sb2,1x1x3,180,autosub:success,FALSE,16,SG223/SG223_cod_database_code_1538993.cif
+584,GaMo3,cod-4003990,cubic,m-3m,223,Pm-3n,Nh6Tl5In1Mo36,Ga (2a) $\rightarrow$ Nh6Tl5In1,3x2x1,5544,autosub:success,FALSE,270,SG223/SG223_cod_database_code_4003990.cif
+585,GeNb3,cod-4124630,cubic,m-3m,223,Pm-3n,Nb36Si1Sn1Ge1Pb9,Ge (2a) $\rightarrow$ Si1Sn1Ge1Pb9,2x3x1,1320,autosub:success,FALSE,68,SG223/SG223_cod_database_code_4124630.cif
+586,H9O43PW12,cod-7221068,cubic,m-3m,224,Pn-3m,Te1P2W24O81Lv4,O (8e) $\rightarrow$ Te1Lv4O3,1x1x1,280,autosub:success,FALSE,10,SG224/SG224_cod_database_code_7221068.cif
+587,Bi2O3,cod-1010311,cubic,m-3m,224,Pn-3m,As4Mc1P3O12,Bi (4c) $\rightarrow$ As4Mc1P3,1x1x2,280,autosub:success,FALSE,14,SG224/SG224_cod_database_code_1010311.cif
+588,Fe2SiV,cod-1539793,cubic,m-3m,225,Fm-3m,V12Fe24Fl1Si1Ge1C9,Si (4b) $\rightarrow$ Fl1Si1Ge1C9,1x1x3,1320,autosub:success,FALSE,34,SG225/SG225_cod_database_code_1539793.cif
+589,AuLi3,cod-1510223,cubic,m-3m,225,Fm-3m,Fr1K3Na2Li2H4Au4,"Li (4b) $\rightarrow$ Fr1Na2H1, Li (8c) $\rightarrow$ K3Li2H3",1x1x1,6720,autosub:success,FALSE,40,SG225/SG225_cod_database_code_1510223.cif
+590,ClK,cod-9003128,cubic,m-3m,225,Fm-3m,Cs1Na11Cl12,K (4a) $\rightarrow$ Cs1Na11,1x2x3,276,autosub:success,FALSE,11,SG225/SG225_cod_database_code_9003128.cif
+591,Cd13K,cod-1525175,cubic,m-3m,226,Fm-3c,K3Li5Cd104,K (8a) $\rightarrow$ K3Li5,1x2x1,8008,autosub:success,FALSE,186,SG226/SG226_cod_database_code_1525175.cif
+592,Cs2O12Te4,cod-4325436,cubic,m-3m,227,Fd-3m,Cs4Po1Te8Lv23,O (48f) $\rightarrow$ Po1Lv23,1x1x1,1128,autosub:success,FALSE,14,SG227/SG227_cod_database_code_4325436.cif
+593,CaLi2,cod-1536964,cubic,m-3m,227,Fd-3m,Rb1Li1Ca16H30,Li (16d) $\rightarrow$ Rb1Li1H30,1x2x1,992,autosub:success,FALSE,11,SG227/SG227_cod_database_code_1536964.cif
+594,W,cod-9006519,cubic,m-3m,229,Im-3m,Mo7Sg5,W (2a) $\rightarrow$ Mo7Sg5,3x1x2,792,autosub:success,FALSE,25,SG229/SG229_cod_database_code_9006519.cif
+595,Ta,cod-9008552,cubic,m-3m,229,Im-3m,Ta9Db1Nb1V1,Ta (2a) $\rightarrow$ Ta9Db1Nb1V1,1x3x2,1320,autosub:success,FALSE,34,SG229/SG229_cod_database_code_9008552.cif
+596,Se,cod-9013137,cubic,m-3m,229,Im-3m,Po1Se7S4,Se (2a) $\rightarrow$ Po1Se7S4,2x3x1,3960,autosub:success,FALSE,99,SG229/SG229_cod_database_code_9013137.cif
+597,Al5Er3O12,cod-2103616,cubic,m-3m,230,Ia-3d,Er24Al16Tl21Nh3O96,Al() (24d) $\rightarrow$ Tl7Nh1,1x1x1,2024,autosub:success,FALSE,27,SG230/SG230_cod_database_code_2103616.cif
+598,Ca3Fe2Ge3O12,cod-2009000,cubic,m-3m,230,Ia-3d,Ca6Fe3Hs1Ge6O24,Fe (16a) $\rightarrow$ Fe3Hs1,1x1x1,1820,autosub:success,FALSE,34,SG230/SG230_cod_database_code_2009000.cif
+599,F12Fe2Li3Na3,cod-1000212,cubic,m-3m,230,Ia-3d,Na24Li24Ru5Os11F96,Fe (16a) $\rightarrow$ Ru5Os11,1x1x1,4368,autosub:success,FALSE,55,SG230/SG230_cod_database_code_1000212.cif
+600,Al2Mg3O12Si3,cod-9016673,cubic,m-3m,230,Ia-3d,Mg6Tl1Nh3Si6O24,Al (16a) $\rightarrow$ Tl1Nh3,1x1x1,1820,autosub:success,FALSE,34,SG230/SG230_cod_database_code_9016673.cif
