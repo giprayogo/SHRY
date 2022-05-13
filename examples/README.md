@@ -69,8 +69,6 @@ it will be slower.
 
 See `example2.py` for comparison with equivalent
 `enumlib` functions through Pymatgen's `EnumlibAdaptor`.
-At the moment, we have not implemented
-the function for finding unique supercells.
 
 ## Advanced use
 
