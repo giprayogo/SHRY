@@ -28,7 +28,7 @@ installing Python from the Microsoft store
 following instructions on
 `this page`_.
 
-.. _`this page`: https://docs.microsoft.com/en-us/windows/python/beginners.
+.. _`this page`: https://docs.microsoft.com/en-us/windows/python/beginners
 
 Then install SHRY just like above
 within PowerShell or your favourite terminal.
