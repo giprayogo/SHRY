@@ -4,10 +4,32 @@ README
 .. image:: logo/logo.jpg
     :alt: logo
 
+|license| |release| |fork| |stars|
+
+.. |license| image:: https://img.shields.io/github/license/giprayogo/SHRY
+.. |release| image:: https://img.shields.io/github/release/giprayogo/SHRY/all.svg
+.. |fork| image:: https://img.shields.io/github/forks/giprayogo/SHRY?style=social
+.. |stars| image:: https://img.shields.io/github/stars/giprayogo/SHRY?style=social
+
 SHRY (\ **S**\ uite for \ **H**\ igh-th\ **r**\ oughput generation of models
 with atomic substitutions implemented by p\ **y**\ thon)
 is a tool for generating unique ordered structures
 corresponding to a given disordered structure.
+
+How to cite
+-------------
+When using our code please cite the following paper:
+
+`SHRY: Application of Canonical Augmentation to the Atomic Substitution Problem <https://doi.org/10.1021/acs.jcim.2c00389>`_, G.I. Prayogo*, A. Tirelli, K. Utimula, K. Hongo, R. Maezono, and K. Nakano*, *J. Chem. Inf. Model.*, *in press* (2022), `DOI:10.1021/acs.jcim.2c00389 <https://doi.org/10.1021/acs.jcim.2c00389>`_
+
+.. - |DOI|
+.. - |Paper|
+
+.. |DOI| image:: https://zenodo.org/badge/425687455.svg
+   :target: https://zenodo.org/badge/latestdoi/425687455
+
+.. |Paper| image:: https://img.shields.io/static/v1?label=arXiV&message=2111.13409&color=b31b1b
+   :target: https://arxiv.org/abs/2111.13409
 
 Installation
 ------------
@@ -128,20 +150,6 @@ Documentation
 -------------
 
 The documentation is available `here <https://shry.readthedocs.io/en/latest/>`_.
-
-How to cite
--------------
-
-When using our code please cite
-
-- |DOI|
-- |Paper|
-
-.. |DOI| image:: https://zenodo.org/badge/425687455.svg
-   :target: https://zenodo.org/badge/latestdoi/425687455
-
-.. |Paper| image:: https://img.shields.io/static/v1?label=arXiV&message=2111.13409&color=b31b1b
-   :target: https://arxiv.org/abs/2111.13409
 
 Contributing to the project
 ---------------------------
