@@ -12,7 +12,26 @@ corresponding to a given disordered structure.
 Installation
 ------------
 
-SHRY is available via PyPI (pending)
+SHRY can be obtained from PyPI
+
+.. code-block:: console
+
+    pip install shry
+
+For Windows Users
+^^^^^^^^^^^^^^^^^
+
+For Windows users,
+if you don't have Python already,
+you can try, for example,
+installing Python from the Microsoft store
+following instructions on
+`this page`_.
+
+.. _`this page`: https://docs.microsoft.com/en-us/windows/python/beginners.
+
+Then install SHRY just like above
+within PowerShell or your favourite terminal.
 
 .. code-block:: console
 
@@ -21,13 +40,14 @@ SHRY is available via PyPI (pending)
 Development
 ^^^^^^^^^^^
 
-Installing from source
+If you prefer to install from source,
+instead follow the procedures below.
 
 .. code-block:: console
 
     git clone https://github.com/giprayogo/SHRY.git
     cd SHRY
-    pip install .
+    pip install -e .
 
 Quick use
 ---------
