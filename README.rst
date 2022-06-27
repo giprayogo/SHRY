@@ -20,9 +20,9 @@ corresponding to a given disordered structure.
 
 How to cite
 -------------
-When using our code please cite the following paper:
+Please cite the following paper:
 
-`SHRY: Application of Canonical Augmentation to the Atomic Substitution Problem <https://doi.org/10.1021/acs.jcim.2c00389>`_, G.I. Prayogo*, A. Tirelli, K. Utimula, K. Hongo, R. Maezono, and K. Nakano*, *J. Chem. Inf. Model.*, *in press* (2022), `DOI:10.1021/acs.jcim.2c00389 <https://doi.org/10.1021/acs.jcim.2c00389>`_
+`SHRY: Application of Canonical Augmentation to the Atomic Substitution Problem <https://doi.org/10.1021/acs.jcim.2c00389>`_, G.I. Prayogo*, A. Tirelli, K. Utimula, K. Hongo, R. Maezono, and K. Nakano*, *J. Chem. Inf. Model.*, 62, 2909-2915 (2022), `DOI:10.1021/acs.jcim.2c00389 <https://doi.org/10.1021/acs.jcim.2c00389>`_
 
 .. - |DOI|
 .. - |Paper|

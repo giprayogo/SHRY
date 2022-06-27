@@ -58,6 +58,10 @@ def print_header():
         "SHRY: Suite for High-throughput generation of models"
         "with atomic substitutions implemented by Python"
     )
+    logging.info("")
+    logging.info("Please cite the following paper::\n")
+    logging.info("G.I. Prayogo, et al., J. Chem. Inf. Model. 62, 2909-2915 (2022)")
+    logging.info("https://doi.org/10.1021/acs.jcim.2c00389")
     logging.info("\n********************************")
     logging.info(f"Begin {time_string} (unixtime: {const.DEFAULT_SEED})")
 
