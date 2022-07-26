@@ -5,6 +5,8 @@
 import filecmp
 import glob
 import shutil
+import json
+import os
 
 import numpy as np
 import pytest
@@ -247,19 +249,36 @@ def test_ewald():
 
     def give_arbitrary_charge(filename):
         structure = LabeledStructure.from_file(filename)
+        # p.s. only work with examples/SmFe7Ti.cif
         structure.add_oxidation_state_by_element({"Sm": 1, "Fe": 2, "Ti": 3})
         return structure
 
     structure = give_arbitrary_charge("SmFe7Ti.cif")
     s = Substitutor(structure)
-    esums = list(s.ewalds())
-    assert len(set(esums)) == 16
+    esums = set(s.ewalds())
+    assert len(esums) == 16
 
+    # Test implementation change: compare with known results.
+    answer_file = "smfe7ti_ee.json"
+    if not os.path.exists(answer_file):
+        with open(answer_file, "w") as f:
+            json.dump(list(esums), f)    
+    
+    answers = None
+    with open(answer_file, "r") as f:
+        answers = set(json.load(f))
+    
+    assert esums == answers
+
+    # Should raise exception if oxidation states are not defined.
     structure = LabeledStructure.from_file("SmFe7Ti.cif")
     s = Substitutor(structure)
     with pytest.raises(ValueError) as excinfo:
         list(s.ewalds())
         assert "defined oxidation" in str(excinfo.value)
+
+    # Check for filtering structure by ewald
+
 
 
 @pytest.mark.skip(reason="Feature not implemented.")
