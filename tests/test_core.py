@@ -249,7 +249,6 @@ def test_ewald():
 
     def give_arbitrary_charge(filename):
         structure = LabeledStructure.from_file(filename)
-        # p.s. only work with examples/SmFe7Ti.cif
         structure.add_oxidation_state_by_element({"Sm": 1, "Fe": 2, "Ti": 3})
         return structure
 
@@ -258,16 +257,21 @@ def test_ewald():
     esums = set(s.ewalds())
     assert len(esums) == 16
 
+    # Save the charged SmFe7Ti.cif
+    chg_file = "SmFe7Ti_chg.cif"
+    if not os.path.exists(chg_file):
+        structure.to(filename=chg_file, symprec=1e-2)
+
     # Test implementation change: compare with known results.
     answer_file = "smfe7ti_ee.json"
     if not os.path.exists(answer_file):
         with open(answer_file, "w") as f:
-            json.dump(list(esums), f)    
-    
+            json.dump(list(esums), f)
+
     answers = None
     with open(answer_file, "r") as f:
         answers = set(json.load(f))
-    
+
     assert esums == answers
 
     # Should raise exception if oxidation states are not defined.
@@ -276,8 +280,6 @@ def test_ewald():
     with pytest.raises(ValueError) as excinfo:
         list(s.ewalds())
         assert "defined oxidation" in str(excinfo.value)
-
-    # Check for filtering structure by ewald
 
 
 

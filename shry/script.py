@@ -175,6 +175,11 @@ def main():  # pylint: disable=missing-function-docstring
             "By default, the label given within the CIF is used."
         ),
     )
+    group.add_argument(
+        "--max-ewald",
+        type=float,
+        help="Set maximum Ewald energy for the output CIFs",
+    )
 
     group = parser.add_argument_group("run configuration")
     group.add_argument(
@@ -270,6 +275,7 @@ def main():  # pylint: disable=missing-function-docstring
             dir_size=args.dir_size,
             write_symm=args.write_symm,
             write_ewald=args.write_ewald,
+            max_ewald=args.max_ewald,
             no_write=args.no_write,
             no_dmat=args.no_dmat,
             t_kind=args.t_kind,

@@ -197,6 +197,7 @@ class ScriptHelper:
         dir_size=const.DEFAULT_DIR_SIZE,
         write_symm=const.DEFAULT_WRITE_SYMM,
         write_ewald=const.DEFAULT_WRITE_EWALD,
+        max_ewald=const.DEFAULT_MAX_EWALD,
         no_write=const.DEFAULT_NO_WRITE,
         no_dmat=const.DEFAULT_NO_DMAT,
         no_cache=False,
@@ -229,6 +230,9 @@ class ScriptHelper:
         self.dir_size = dir_size
         self.write_symm = write_symm
         self.write_ewald = write_ewald
+        self.max_ewald = max_ewald
+        if self.max_ewald is not None:
+            self.write_ewald = True
 
         logging.info("\nRun configurations:")
         logging.info(const.HLINE)
@@ -316,6 +320,7 @@ class ScriptHelper:
         """
         Reads *.ini file containing command line arguments
         """
+        # TODO: simplify
         parser = configparser.ConfigParser(
             empty_lines_in_values=False, allow_no_value=False
         )
@@ -513,6 +518,9 @@ class ScriptHelper:
             ewald = packet["ewald"]
             weight = packet["weight"]
             letter = packet["letter"]
+
+            if self.max_ewald is not None and ewald > self.max_ewald:
+                continue
 
             line = f"{i} {weight} {letter}"
             if ewald is not None:
