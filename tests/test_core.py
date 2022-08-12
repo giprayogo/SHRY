@@ -2,24 +2,30 @@
 # pylint: disable=redefined-outer-name,missing-function-docstring,wrong-import-order,unused-import,invalid-name,protected-access
 """Test core operations."""
 
+#python modules
+import os
 import filecmp
 import glob
 import shutil
-import json
-import os
-
 import numpy as np
+import pandas as pd
 import pytest
-from pymatgen.analysis.ewald import EwaldSummation
-from pymatgen.core import Structure
-from shry.core import NeedSupercellError, PatternMaker, Polya, Substitutor, TooBigError
-from shry.main import LabeledStructure, ScriptHelper
 from sympy.tensor.indexed import IndexedBase
 
+#pymatgen
+from pymatgen.analysis.ewald import EwaldSummation
+from pymatgen.core import Structure
+
+#shry
+from shry.core import NeedSupercellError, PatternMaker, Polya, Substitutor, TooBigError
+from shry.main import LabeledStructure, ScriptHelper
 from helper import chdir
 
-# PatternMaker basic functions.
+# Tolerances
+SHRY_TOLERANCE=0.05      #angstrom
+SHRY_ANGLE_TOLERANCE=5.0 #degree
 
+# PatternMaker basic functions.
 
 def test_perm_label():
     """
@@ -254,33 +260,14 @@ def test_ewald():
 
     structure = give_arbitrary_charge("SmFe7Ti.cif")
     s = Substitutor(structure)
-    esums = set(s.ewalds())
-    assert len(esums) == 16
+    esums = list(s.ewalds())
+    assert len(set(esums)) == 16
 
-    # Save the charged SmFe7Ti.cif
-    chg_file = "SmFe7Ti_chg.cif"
-    if not os.path.exists(chg_file):
-        structure.to(filename=chg_file, symprec=1e-2)
-
-    # Test implementation change: compare with known results.
-    answer_file = "smfe7ti_ee.json"
-    if not os.path.exists(answer_file):
-        with open(answer_file, "w") as f:
-            json.dump(list(esums), f)
-
-    answers = None
-    with open(answer_file, "r") as f:
-        answers = set(json.load(f))
-
-    assert esums == answers
-
-    # Should raise exception if oxidation states are not defined.
     structure = LabeledStructure.from_file("SmFe7Ti.cif")
     s = Substitutor(structure)
     with pytest.raises(ValueError) as excinfo:
         list(s.ewalds())
         assert "defined oxidation" in str(excinfo.value)
-
 
 
 @pytest.mark.skip(reason="Feature not implemented.")
@@ -319,3 +306,33 @@ def test_ci(polya):
 def test_count(polya):
     """Test counting of pattern. One should be enough representative."""
     assert polya.count(((3, 1), (2, 1))) == 5
+
+
+# benchmark / the number of irr structures.
+@chdir("../benchmarks/03scailing_benchmark")
+def test_benchmark():
+    df = pd.read_excel("./benchmark_SG_all.xls")
+    for row, zipped in enumerate(
+        zip(
+            df["Supercell"],
+            df["File"],
+            df["Substitutions"],
+            df["Equivalent Structures"],
+            df["Checked"],
+        )
+    ):
+        supercell, filename, substitution, equivalent, checked = zipped
+
+        cif_basename = os.path.basename(filename).replace(".cif", "")
+        filename = filename.replace(".cif", "_partial.cif")
+        print(f"filename={filename}")
+        structure = LabeledStructure.from_file(filename)
+        supercell_size = list(map(int,supercell.split("x")))
+        print(supercell_size)
+        structure *= supercell_size
+        s = Substitutor(structure,symprec=SHRY_TOLERANCE,angle_tolerance=SHRY_ANGLE_TOLERANCE)
+        count_obtained=s.count()
+        count_ref=equivalent
+        print(f"count_obtained={count_obtained}")
+        print(f"count_ref={count_ref}")
+        assert count_obtained == count_ref
