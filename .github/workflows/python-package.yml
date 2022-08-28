@@ -5,9 +5,9 @@ name: Python package
 
 on:
   push:
-    branches: [ "develop-cicd" ]
+    branches: [ "devel-cicd" ]
   pull_request:
-    branches: [ "develop-cicd" ]
+    branches: [ "devel-cicd" ]
 
 jobs:
   build:
