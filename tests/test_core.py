@@ -111,7 +111,7 @@ def test_search(pm):
 )
 @chdir("../examples")
 def test_all(from_species, to_species):
-    """Integrated test with multi-color multi-orbit structure."""
+    """Integrated test with multi-color multi-orbit structure.."""
     if to_species == ("FeTiSnAu",):
         with pytest.raises(TooBigError):
             sh = ScriptHelper(
