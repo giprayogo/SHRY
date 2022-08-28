@@ -187,10 +187,10 @@ def test_no_disorder():
     assert list(substitutor.weights()) == [1]
     assert len(list(substitutor.cifwriters())) == 1
 
-""" commented out for the time-being for CI test.
+"""
 @chdir("../examples")
 def test_cifwriter():
-    """Test cifwriter implementation."""
+    #Test cifwriter implementation.
     sh = ScriptHelper("SmFe7Ti.cif")
     sh.write()
     cifs = glob.glob("shry-SmFe*/slice*/*.cif")
@@ -227,7 +227,7 @@ def test_cifwriter():
         shry_outdirs = glob.glob("shry-SmFe*")
         for outdir in shry_outdirs:
             shutil.rmtree(outdir)
-
+"""
 
 @chdir("../examples")
 def test_cifwriter2():
@@ -307,7 +307,7 @@ def test_count(polya):
     """Test counting of pattern. One should be enough representative."""
     assert polya.count(((3, 1), (2, 1))) == 5
 
-
+"""
 # benchmark / the number of irr structures.
 @chdir("../benchmarks/03scailing_benchmark")
 def test_benchmark():
