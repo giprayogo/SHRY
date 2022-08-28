@@ -187,7 +187,7 @@ def test_no_disorder():
     assert list(substitutor.weights()) == [1]
     assert len(list(substitutor.cifwriters())) == 1
 
-"""
+@pytest.mark.skip(reason="Bugs found. Being fixed.")
 @chdir("../examples")
 def test_cifwriter():
     #Test cifwriter implementation.
@@ -227,7 +227,6 @@ def test_cifwriter():
         shry_outdirs = glob.glob("shry-SmFe*")
         for outdir in shry_outdirs:
             shutil.rmtree(outdir)
-"""
 
 @chdir("../examples")
 def test_cifwriter2():
@@ -280,9 +279,6 @@ def test_matheval():
     assert sh.sample == 6666
 
 
-# Polya functions
-
-
 @pytest.fixture
 def polya():
     """Fixture returning a Polya instance."""
@@ -307,10 +303,11 @@ def test_count(polya):
     """Test counting of pattern. One should be enough representative."""
     assert polya.count(((3, 1), (2, 1))) == 5
 
-"""
-# benchmark / the number of irr structures.
+
+@pytest.mark.skip(reason="Comprehensive but time consuming. It will be activated later.")
 @chdir("../benchmarks/03scailing_benchmark")
 def test_benchmark():
+    """benchmark / the number of symmetry-inequivalent structures."""
     df = pd.read_excel("./benchmark_SG_all.xls")
     for row, zipped in enumerate(
         zip(
@@ -336,4 +333,3 @@ def test_benchmark():
         print(f"count_obtained={count_obtained}")
         print(f"count_ref={count_ref}")
         assert count_obtained == count_ref
-"""
