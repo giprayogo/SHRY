@@ -22,7 +22,7 @@ from shry.main import LabeledStructure, ScriptHelper
 from helper import chdir
 
 # Tolerances
-SHRY_TOLERANCE=0.05      #angstrom
+SHRY_TOLERANCE=0.01      #angstrom
 SHRY_ANGLE_TOLERANCE=5.0 #degree
 
 # PatternMaker basic functions.
