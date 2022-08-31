@@ -302,7 +302,7 @@ def test_count(polya):
     assert polya.count(((3, 1), (2, 1))) == 5
 
 
-@pytest.mark.skip(reason="Comprehensive but time consuming. It will be activated later.")
+#@pytest.mark.skip(reason="Comprehensive but time consuming. It will be activated later.")
 @chdir("../benchmarks/03scailing_benchmark")
 def test_benchmark():
     """benchmark / the number of symmetry-inequivalent structures."""
