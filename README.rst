@@ -12,8 +12,8 @@ README
 .. |Version| image:: https://img.shields.io/pypi/pyversions/SHRY
 .. |fork| image:: https://img.shields.io/github/forks/giprayogo/SHRY?style=social
 .. |stars| image:: https://img.shields.io/github/stars/giprayogo/SHRY?style=social
-.. |workflows| image:: https://github.com/giprayogo/SHRY/actions/workflows/python-package.yml/badge.svg
-?branch=devel-cicd?
+.. |workflows| image:: https://github.com/giprayogo/SHRY/actions/workflows/shry-pytest.yml/badge.svg
+
 SHRY (\ **S**\ uite for \ **H**\ igh-th\ **r**\ oughput generation of models
 with atomic substitutions implemented by p\ **y**\ thon)
 is a tool for generating unique ordered structures
