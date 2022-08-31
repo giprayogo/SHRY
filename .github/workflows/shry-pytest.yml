@@ -5,9 +5,9 @@ name: SHRY pytest
 
 on:
   push:
-    branches: [ "devel-cicd" ]
+    branches: [ "master", "devel" ]
   pull_request:
-    branches: [ "devel-cicd" ]
+    branches: [ "master", "devel" ]
 
 jobs:
   build:
