@@ -261,6 +261,8 @@ def main():  # pylint: disable=missing-function-docstring
             int(x)
             for x in const.FLEXIBLE_SEPARATOR.split(",".join(args.scaling_matrix))
         ]
+
+        # check the dimension of the scaling matrix
         if not len(scaling_matrix) in {1, 3, 9}:
             logging.warning("The scaling_matrix should be 1, 3, or 9 scalar values.")
             raise ValueError

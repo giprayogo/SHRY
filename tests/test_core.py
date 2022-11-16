@@ -177,7 +177,47 @@ def test_sequential():
     assert len(list(substitutor.weights())) == 147
 
 @chdir("../examples")
-def test_sequential_scailing_matrix_3_3_3_diagonal():
+def test_sequential_scaling_diagonal_one_scalar_value():
+    """
+    Test sequential use of Substitutor;
+    basically testing the setter of Substitutor.structure
+    """
+    structure = LabeledStructure.from_file("SmFe12.cif")
+    structure1 = structure.copy()
+    structure2 = structure.copy()
+    structure1.replace_species({"Fe1": "Fe7Ti"})
+    structure2.replace_species({"Fe2": "Fe6Ti2"})
+    structure1 *= [2]
+    structure2 *= [2]
+
+    substitutor = Substitutor(structure1)
+    assert substitutor.count() == 17324048
+    substitutor.structure = structure2
+    assert substitutor.count() == 1909076572380
+
+@chdir("../examples")
+def test_sequential_scaling_diagonal_three_scalar_values():
+    """
+    Test sequential use of Substitutor;
+    basically testing the setter of Substitutor.structure
+    """
+    structure = LabeledStructure.from_file("SmFe12.cif")
+    structure1 = structure.copy()
+    structure2 = structure.copy()
+    structure1.replace_species({"Fe1": "Fe7Ti"})
+    structure2.replace_species({"Fe2": "Fe6Ti2"})
+    structure1 *= [1, 2, 1]
+    structure2 *= [1, 2, 1]
+
+    substitutor = Substitutor(structure1)
+    assert substitutor.count() == 11
+    assert len(list(substitutor.weights())) == 11
+    substitutor.structure = structure2
+    assert substitutor.count() == 147
+    assert len(list(substitutor.weights())) == 147
+
+@chdir("../examples")
+def test_sequential_scaling_diagonal_matrix():
     """
     Test sequential use of Substitutor;
     basically testing the setter of Substitutor.structure
@@ -198,7 +238,7 @@ def test_sequential_scailing_matrix_3_3_3_diagonal():
     assert len(list(substitutor.weights())) == 147
 
 @chdir("../examples")
-def test_sequential_scailing_matrix_3_3_3_nondiagonal():
+def test_sequential_scaling_nondiagonal_matrix():
     """
     Test sequential use of Substitutor;
     basically testing the setter of Substitutor.structure
