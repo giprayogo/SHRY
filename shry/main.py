@@ -278,7 +278,7 @@ class ScriptHelper:
         string += print_format.format(
             "to_species", ", ".join(map(str, self.to_species))
         )
-        string += print_format.format("scaling_matrix", self.scaling_matrix)
+        string += print_format.format("scaling_matrix", np.array(self.scaling_matrix).flatten())
         string += print_format.format("symmetrize", self.symmetrize)
         string += print_format.format("sample", self.sample)
         string += print_format.format("symprec", self.symprec)
@@ -580,9 +580,13 @@ class LabeledStructure(Structure):
         The parent method returns Structure instance!
         Overwrite the offending line.
         """
+
         scale_matrix = np.array(scaling_matrix, np.int16)
+        #print(scale_matrix)
         if scale_matrix.shape != (3, 3):
             scale_matrix = np.array(scale_matrix * np.eye(3), np.int16)
+        #print(scale_matrix)
+        #sys.exit()
         new_lattice = Lattice(np.dot(scale_matrix, self._lattice.matrix))
 
         f_lat = lattice_points_in_supercell(scale_matrix)
