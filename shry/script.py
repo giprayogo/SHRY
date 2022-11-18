@@ -20,6 +20,8 @@ import argparse
 import datetime
 import fnmatch
 import logging
+import sys
+import numpy as np
 
 import tqdm
 
@@ -126,8 +128,9 @@ def main():  # pylint: disable=missing-function-docstring
         nargs="*",
         type=str,  # To allow flexible separator
         help=(
-            "Three or nine (for non-diagonal supercell) integers specifying "
-            "the scaling matrix for constructing a supercell."
+            "Three (for diagonal supercells) or nine (for non-diagonal supercells) integers specifying "
+            "the scaling matrix for constructing a supercell. One scalar value is also accepted, "
+            "which is converted to three scalar values (e.g., 1 -> 1 1 1)"
         ),
         default=const.DEFAULT_SCALING_MATRIX_STR,
     )
@@ -258,9 +261,21 @@ def main():  # pylint: disable=missing-function-docstring
             int(x)
             for x in const.FLEXIBLE_SEPARATOR.split(",".join(args.scaling_matrix))
         ]
+
+        # check the dimension of the scaling matrix
+        if not len(scaling_matrix) in {1, 3, 9}:
+            logging.warning("The scaling_matrix should be 1, 3, or 9 scalar values.")
+            raise ValueError
+        else:
+            if len(scaling_matrix) == 9:
+                scaling_matrix = np.array(scaling_matrix).reshape(3, 3)
+            else:
+                scaling_matrix = np.array(scaling_matrix)
+
         from_species = list(filter(None, from_species))
         to_species = list(filter(None, to_species))
-        scaling_matrix = list(filter(None, scaling_matrix))
+        #scaling_matrix = list(filter(None, scaling_matrix)) #here! the problem is that filter removes 0!
+
         helper = ScriptHelper(
             structure_file=args.input,
             from_species=from_species,
