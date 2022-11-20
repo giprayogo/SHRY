@@ -5,17 +5,7 @@
 Shared constants
 """
 
-# information
-__author__ = "Genki Prayogo, and Kosuke Nakano"
-__copyright__ = "Copyright (c) 2021-, The SHRY Project"
-__credits__ = ["Genki Prayogo", "Kosuke Nakano"]
-
-__license__ = "MIT"
-__maintainer__ = "Genki Prayogo"
-__email__ = "g.prayogo@icloud.com"
-__date__ = "15. Nov. 2021"
-__status__ = "Production"
-
+# python modules
 import re
 import datetime
 

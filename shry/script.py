@@ -5,28 +5,19 @@
 Command line interface.
 """
 
-# information
-__author__ = "Genki Prayogo, and Kosuke Nakano"
-__copyright__ = "Copyright (c) 2021-, The SHRY Project"
-__credits__ = ["Genki Prayogo", "Kosuke Nakano"]
-
-__license__ = "MIT"
-__maintainer__ = "Genki Prayogo"
-__email__ = "g.prayogo@icloud.com"
-__date__ = "15. Nov. 2021"
-__status__ = "Production"
-
+# python modules
 import argparse
 import datetime
 import fnmatch
 import logging
-import sys
-import numpy as np
 
+# python modules
 import tqdm
+import numpy as np
+import setuptools_scm
 
+# shry modules
 from . import const
-
 
 class TqdmLoggingHandler(logging.Handler):
     """
@@ -82,6 +73,7 @@ def print_footer():
 
 def main():  # pylint: disable=missing-function-docstring
     parser = argparse.ArgumentParser(
+        epilog=f"SHRY version {setuptools_scm.get_version()}",
         description="Quick use: `shry STRUCTURE_CIF`. See `shry -h` for more options.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )

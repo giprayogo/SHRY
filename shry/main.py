@@ -4,19 +4,7 @@
 Main task abstraction
 """
 
-# information
-__author__ = "Genki Prayogo, and Kosuke Nakano"
-__copyright__ = "Copyright (c) 2021-, The SHRY Project"
-__credits__ = ["Genki Prayogo", "Kosuke Nakano"]
-
-__license__ = "MIT"
-__version__ = "1.1.0"
-__maintainer__ = "Genki Prayogo"
-__email__ = "g.prayogo@icloud.com"
-__date__ = "15. Nov. 2021"
-__status__ = "Production"
-
-
+# python modules
 import ast
 import collections
 import configparser
@@ -33,6 +21,8 @@ import signal
 import sys
 from fnmatch import fnmatch
 
+# python modules
+import setuptools_scm
 import numpy as np
 import tqdm
 from pymatgen.core import Composition, PeriodicSite, Species, Structure
@@ -43,6 +33,7 @@ from pymatgen.io.vasp.inputs import Poscar
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer, SpacegroupOperations
 from pymatgen.util.coord import in_coord_list_pbc, lattice_points_in_supercell
 
+# shry modules
 from . import const
 from .core import Substitutor
 
@@ -270,7 +261,7 @@ class ScriptHelper:
     def __str__(self):
         string = ""
         print_format = "  * {} = {}\n"
-        string += print_format.format("SHRY version", __version__)
+        string += print_format.format("SHRY version", setuptools_scm.get_version())
         string += print_format.format("structure_file", self.structure_file)
         string += print_format.format(
             "from_species", ", ".join(map(str, self.from_species))

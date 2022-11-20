@@ -4,18 +4,7 @@
 Core operations, pattern generation, etc.
 """
 
-# information
-__author__ = "Genki Prayogo, and Kosuke Nakano"
-__copyright__ = "Copyright (c) 2021-, The SHRY Project"
-__credits__ = ["Genki Prayogo", "Kosuke Nakano"]
-
-__license__ = "MIT"
-__maintainer__ = "Genki Prayogo"
-__email__ = "g.prayogo@icloud.com"
-__date__ = "15. Nov. 2021"
-__status__ = "Production"
-
-
+# python modules
 import collections
 import functools
 import itertools
@@ -25,6 +14,7 @@ import random
 import sys
 from typing import OrderedDict, Tuple
 
+# python modules
 import numpy as np
 import spglib
 import sympy
@@ -41,6 +31,7 @@ from scipy.special import comb
 from sympy.utilities.iterables import multiset_permutations
 from tabulate import tabulate
 
+# shry modules
 from . import const
 
 np.seterr(all="raise")

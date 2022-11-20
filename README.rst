@@ -4,15 +4,16 @@ README
 .. image:: logo/logo.jpg
     :alt: logo
 
-|license| |release| |DL| |Version| |fork| |stars| |workflows|
+|license| |DL| |release| |PYPI_version| |Python_version| |workflows| |fork| |stars|
 
 .. |license| image:: https://img.shields.io/github/license/giprayogo/SHRY
 .. |release| image:: https://img.shields.io/github/release/giprayogo/SHRY/all.svg
 .. |DL| image:: https://img.shields.io/pypi/dm/SHRY
-.. |Version| image:: https://img.shields.io/pypi/pyversions/SHRY
+.. |Python_version| image:: https://img.shields.io/pypi/pyversions/SHRY
 .. |fork| image:: https://img.shields.io/github/forks/giprayogo/SHRY?style=social
 .. |stars| image:: https://img.shields.io/github/stars/giprayogo/SHRY?style=social
 .. |workflows| image:: https://github.com/giprayogo/SHRY/actions/workflows/shry-pytest.yml/badge.svg
+.. |PyPI_version| image:: https://badge.fury.io/py/SHRY.svg
 
 SHRY (\ **S**\ uite for \ **H**\ igh-th\ **r**\ oughput generation of models
 with atomic substitutions implemented by p\ **y**\ thon)
