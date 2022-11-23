@@ -155,6 +155,36 @@ Documentation
 
 The documentation is available `here <https://shry.readthedocs.io/en/latest/>`_.
 
+How to release
+--------------
+
+Merge devel to master
+
+.. code-block:: console
+
+    git checkout master
+    git merge devel
+
+Check the next-version version
+
+.. code-block:: console
+
+    # Confirm the version number via `setuptools-scm`
+    python -m setuptools_scm
+    e.g., 1.1.4.dev28+gceef293.d20221123 -> <next-version> = 1.1.5
+
+Add and push a new tag
+
+.. code-block:: console
+
+    # Push with tag
+    git tag <next-version>
+    git push origin master --tags
+
+An implemented Github action automatically uploads the package to testPyPI and PyPI (if the commit is tagged correctly, e.g., v1.1.0).
+
+Finally, do a new release with a release note on Github
+
 Contributing to the project
 ---------------------------
 
