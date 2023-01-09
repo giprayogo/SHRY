@@ -158,12 +158,11 @@ The documentation is available `here <https://shry.readthedocs.io/en/latest/>`_.
 How to release
 --------------
 
-Merge devel to master
+Work on the devel or a new branch
 
 .. code-block:: console
 
-    git checkout master
-    git merge devel
+    git checkout devel # or a new branch 
 
 Check the next-version version
 
@@ -179,11 +178,13 @@ Add and push a new tag
 
     # Push with tag
     git tag <next-version>  # e.g., git tag v1.1.4
-    git push origin master --tags
+    git push origin devel --tags  # or to the new branch
 
-An implemented Github action automatically uploads the package to testPyPI and PyPI (if the commit is tagged correctly, e.g., v1.1.0).
+Send a pull request to the master branch on GitHub
 
-Finally, do a new release with a release note on Github
+An implemented GitHub action automatically uploads the package to testPyPI and PyPI (if the commit is tagged correctly, e.g., v1.1.0).
+
+Finally, do a new release with a release note on GitHub
 
 Contributing to the project
 ---------------------------
