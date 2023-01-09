@@ -170,21 +170,19 @@ Check the next-version version
 
     # Confirm the version number via `setuptools-scm`
     python -m setuptools_scm
-    e.g., 1.1.4.dev28+gceef293.d20221123 -> <next-version> = v1.1.4
+    e.g., 1.1.4.dev28+gceef293.d20221123 -> <next-version> = v1.1.4 or v1.1.4-alpha(for pre-release)
 
-Add and push a new tag
+Add and push with the new tag
 
 .. code-block:: console
 
     # Push with tag
-    git tag <next-version>  # e.g., git tag v1.1.4
+    git tag <next-version>  # e.g., git tag v1.1.4  # Do not forget "v" before the version number!
     git push origin devel --tags  # or to the new branch
 
 Send a pull request to the master branch on GitHub
 
-An implemented GitHub action automatically uploads the package to testPyPI and PyPI (if the commit is tagged correctly, e.g., v1.1.0).
-
-Finally, do a new release with a release note on GitHub
+Finally, do a new release with a release note on GitHub. The new release trigggers an implemented GitHub Action that automatically uploads the package to testPyPI and PyPI (if the commit is tagged correctly, e.g., v1.1.0).
 
 Contributing to the project
 ---------------------------
