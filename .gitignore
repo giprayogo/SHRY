@@ -22,3 +22,6 @@ examples/structures*
 # IDE-related files
 .vscode
 .env
+
+# version control
+_version.py

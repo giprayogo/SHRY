@@ -19,6 +19,12 @@ import setuptools_scm
 # shry modules
 from . import const
 
+# shry version control
+try:
+    from ._version import version as shry_version
+except (ModuleNotFoundError, ImportError):
+    shry_version = setuptools_scm.get_version()
+
 class TqdmLoggingHandler(logging.Handler):
     """
     Prevent logging from overwriting tqdm
@@ -73,7 +79,7 @@ def print_footer():
 
 def main():  # pylint: disable=missing-function-docstring
     parser = argparse.ArgumentParser(
-        epilog=f"SHRY version {setuptools_scm.get_version()}",
+        epilog=f"SHRY version {shry_version}",
         description="Quick use: `shry STRUCTURE_CIF`. See `shry -h` for more options.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
