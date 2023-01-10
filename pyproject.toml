@@ -4,3 +4,4 @@ build-backend = "setuptools.build_meta"
 
 # pyproject.toml
 [tool.setuptools_scm]
+write_to = "shry/_version.py"

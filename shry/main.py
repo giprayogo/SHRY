@@ -37,9 +37,14 @@ from pymatgen.util.coord import in_coord_list_pbc, lattice_points_in_supercell
 from . import const
 from .core import Substitutor
 
+# shry version control
+try:
+    from ._version import version as shry_version
+except (ModuleNotFoundError, ImportError):
+    shry_version = setuptools_scm.get_version()
+
 # Runtime patches to pymatgen's Composition and Poscar.
 # We want some extra functions like separating different oxidation states, etc.
-
 
 def from_string(composition_string) -> Composition:
     """
@@ -261,7 +266,7 @@ class ScriptHelper:
     def __str__(self):
         string = ""
         print_format = "  * {} = {}\n"
-        string += print_format.format("SHRY version", setuptools_scm.get_version())
+        string += print_format.format("SHRY version", shry_version)
         string += print_format.format("structure_file", self.structure_file)
         string += print_format.format(
             "from_species", ", ".join(map(str, self.from_species))

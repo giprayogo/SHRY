@@ -13,6 +13,7 @@ import math
 import random
 import sys
 from typing import OrderedDict, Tuple
+import setuptools_scm
 
 # python modules
 import numpy as np
@@ -33,6 +34,12 @@ from tabulate import tabulate
 
 # shry modules
 from . import const
+
+# shry version control
+try:
+    from ._version import version as shry_version
+except (ModuleNotFoundError, ImportError):
+    shry_version = setuptools_scm.get_version()
 
 np.seterr(all="raise")
 np.set_printoptions(linewidth=const.LINEWIDTH, threshold=16)

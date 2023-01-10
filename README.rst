@@ -158,12 +158,12 @@ The documentation is available `here <https://shry.readthedocs.io/en/latest/>`_.
 How to release
 --------------
 
-Merge devel to master
+Work on the devel or on a new branch
 
 .. code-block:: console
-
-    git checkout master
-    git merge devel
+    
+    git merge <new branch> devel # if you work on a new branch.
+    git push origin devel # A GitHub Action triggers pytests.
 
 Check the next-version version
 
@@ -171,19 +171,19 @@ Check the next-version version
 
     # Confirm the version number via `setuptools-scm`
     python -m setuptools_scm
-    e.g., 1.1.4.dev28+gceef293.d20221123 -> <next-version> = 1.1.5
+    e.g., 1.1.4.dev28+gceef293.d20221123 -> <next-version> = v1.1.4 or v1.1.4-alpha(for pre-release)
 
-Add and push a new tag
+Add and push with the new tag
 
 .. code-block:: console
 
     # Push with tag
-    git tag <next-version>
-    git push origin master --tags
+    git tag <next-version>  # e.g., git tag v1.1.4  # Do not forget "v" before the version number!
+    git push origin devel --tags  # or to the new branch
 
-An implemented Github action automatically uploads the package to testPyPI and PyPI (if the commit is tagged correctly, e.g., v1.1.0).
+Send a pull request to the master branch on GitHub. After the pull request is approved and the devel branch is merged to the master, a GitHub Action checks if the automatic deploy works using test-pyPI (if the commit is tagged correctly, e.g., v1.1.0).
 
-Finally, do a new release with a release note on Github
+Finally, do a new release with a release note on GitHub. The new release trigggers an implemented GitHub Action that automatically uploads the package to PyPI (if the commit is tagged correctly, e.g., v1.1.0).
 
 Contributing to the project
 ---------------------------
