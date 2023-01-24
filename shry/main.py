@@ -1,5 +1,6 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=logging-fstring-interpolation
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 """
 Main task abstraction
 """
@@ -22,7 +23,6 @@ import sys
 from fnmatch import fnmatch
 
 # python modules
-import setuptools_scm
 import numpy as np
 import tqdm
 from pymatgen.core import Composition, PeriodicSite, Species, Structure
@@ -41,10 +41,11 @@ from .core import Substitutor
 try:
     from ._version import version as shry_version
 except (ModuleNotFoundError, ImportError):
-    shry_version = setuptools_scm.get_version()
+    shry_version = "unknown (not installed)"
 
 # Runtime patches to pymatgen's Composition and Poscar.
 # We want some extra functions like separating different oxidation states, etc.
+
 
 def from_string(composition_string) -> Composition:
     """
@@ -52,13 +53,18 @@ def from_string(composition_string) -> Composition:
     """
 
     def composition_builder():
-        components = re.findall(r"[A-z][a-z]*[0-9.\+\-]*[0-9.]*", composition_string)
+        components = re.findall(
+            r"[A-z][a-z]*[0-9.\+\-]*[0-9.]*", composition_string
+        )
         amount = re.compile(r"(?<=[\+\-A-Za-z])[0-9.]+(?![\+\-])")
         amount_part = [amount.findall(x) for x in components]
         amount_part = [x[0] if x else "1" for x in amount_part]
-        species_part = [x.strip(amount) for x, amount in zip(components, amount_part)]
         species_part = [
-            x + "0" if not re.search(r"[0-9\+\-]+", x) else x for x in species_part
+            x.strip(amount) for x, amount in zip(components, amount_part)
+        ]
+        species_part = [
+            x + "0" if not re.search(r"[0-9\+\-]+", x) else x
+            for x in species_part
         ]
         amount_part = [float(x) for x in amount_part]
 
@@ -158,7 +164,9 @@ def parse_oxi_states(data):
                     sign = ""
                 else:
                     sign = sign.group(0)
-                parsed_oxi_state = parsed_oxi_state.replace("+", "").replace("-", "")
+                parsed_oxi_state = parsed_oxi_state.replace("+", "").replace(
+                    "-", ""
+                )
                 parsed_oxi_state = str2float(sign + parsed_oxi_state)
                 oxi_states[ox_state_regex.sub("", symbol)] = parsed_oxi_state
         except (ValueError, KeyError):
@@ -208,7 +216,9 @@ class ScriptHelper:
         self._seed = seed
 
         if len(from_species) != len(to_species):
-            raise RuntimeError("from_species and to_species must have the same length.")
+            raise RuntimeError(
+                "from_species and to_species must have the same length."
+            )
         self.from_species = from_species
         self.to_species = to_species
         self.scaling_matrix = np.array(scaling_matrix)
@@ -242,7 +252,8 @@ class ScriptHelper:
         else:
             cache = None
         self.structure = LabeledStructure.from_file(
-            self.structure_file, symmetrize=symmetrize,
+            self.structure_file,
+            symmetrize=symmetrize,
         )
         self.modified_structure = self.structure.copy()
         # Note: since we don't limit the allowable scaling_matrix,
@@ -274,7 +285,9 @@ class ScriptHelper:
         string += print_format.format(
             "to_species", ", ".join(map(str, self.to_species))
         )
-        string += print_format.format("scaling_matrix", np.array(self.scaling_matrix).flatten())
+        string += print_format.format(
+            "scaling_matrix", np.array(self.scaling_matrix).flatten()
+        )
         string += print_format.format("symmetrize", self.symmetrize)
         string += print_format.format("sample", self.sample)
         string += print_format.format("symprec", self.symprec)
@@ -303,7 +316,9 @@ class ScriptHelper:
             if isinstance(node, ast.Num):
                 return node.n
             elif isinstance(node, ast.BinOp):
-                return operators[type(node.op)](_tracer(node.left), _tracer(node.right))
+                return operators[type(node.op)](
+                    _tracer(node.left), _tracer(node.right)
+                )
             elif isinstance(node, ast.UnaryOp):
                 return operators[type(node.op)](_tracer(node.operand))
             else:
@@ -321,7 +336,9 @@ class ScriptHelper:
             empty_lines_in_values=False, allow_no_value=False
         )
         encoding = getattr(io, "LOCALE_ENCODING", "utf8")
-        with open(input_file, "r", encoding=encoding, errors="surrogateescape") as f:
+        with open(
+            input_file, "r", encoding=encoding, errors="surrogateescape"
+        ) as f:
             parser.read_file(f)
 
         structure_file = parser.get("DEFAULT", "structure_file")
@@ -332,7 +349,9 @@ class ScriptHelper:
             "DEFAULT", "to_species", fallback=const.DEFAULT_TO_SPECIES
         )
         scaling_matrix = parser.get(
-            "DEFAULT", "scaling_matrix", fallback=const.DEFAULT_SCALING_MATRIX_STR
+            "DEFAULT",
+            "scaling_matrix",
+            fallback=const.DEFAULT_SCALING_MATRIX_STR,
         )
         # Allow ",", ";", and whiteline as separator (';' not allowed by *.ini)
         from_species = const.FLEXIBLE_SEPARATOR.split(from_species)
@@ -343,12 +362,20 @@ class ScriptHelper:
         symmetrize = parser.getboolean(
             "DEFAULT", "symmetrize", fallback=const.DEFAULT_SYMMETRIZE
         )
-        sample = parser.getint("DEFAULT", "sample", fallback=const.DEFAULT_SAMPLE)
-        symprec = parser.getfloat("DEFAULT", "symprec", fallback=const.DEFAULT_SYMPREC)
-        angle_tolerance = parser.getfloat(
-            "DEFAULT", "angle_tolerance", fallback=const.DEFAULT_ANGLE_TOLERANCE
+        sample = parser.getint(
+            "DEFAULT", "sample", fallback=const.DEFAULT_SAMPLE
         )
-        dir_size = parser.getint("DEFAULT", "dir_size", fallback=const.DEFAULT_DIR_SIZE)
+        symprec = parser.getfloat(
+            "DEFAULT", "symprec", fallback=const.DEFAULT_SYMPREC
+        )
+        angle_tolerance = parser.getfloat(
+            "DEFAULT",
+            "angle_tolerance",
+            fallback=const.DEFAULT_ANGLE_TOLERANCE,
+        )
+        dir_size = parser.getint(
+            "DEFAULT", "dir_size", fallback=const.DEFAULT_DIR_SIZE
+        )
         write_symm = parser.getboolean(
             "DEFAULT", "write_symm", fallback=const.DEFAULT_WRITE_SYMM
         )
@@ -359,7 +386,9 @@ class ScriptHelper:
         no_dmat = parser.getboolean(
             "DEFAULT", "no_dmat", fallback=const.DEFAULT_NO_DMAT
         )
-        t_kind = parser.getboolean("DEFAULT", "t_kind", fallback=const.DEFAULT_T_KIND)
+        t_kind = parser.getboolean(
+            "DEFAULT", "t_kind", fallback=const.DEFAULT_T_KIND
+        )
 
         return cls(
             structure_file=structure_file,
@@ -385,7 +414,9 @@ class ScriptHelper:
         Returns:
             str: Output directory name.
         """
-        structure_file_basename = os.path.basename(self.structure_file).split(".")[0]
+        structure_file_basename = os.path.basename(self.structure_file).split(
+            "."
+        )[0]
         return f"shry-{structure_file_basename}-{self._timestamp}"
 
     def save_modified_structure(self):
@@ -395,10 +426,15 @@ class ScriptHelper:
         if self.no_write:
             return
         os.makedirs(self._outdir, exist_ok=True)
-        structure_file_basename = os.path.basename(self.structure_file).split(".")[0]
-        scaling_matrix_string = "-".join(self.scaling_matrix.flatten().astype(str))
+        structure_file_basename = os.path.basename(self.structure_file).split(
+            "."
+        )[0]
+        scaling_matrix_string = "-".join(
+            self.scaling_matrix.flatten().astype(str)
+        )
         filename = os.path.join(
-            self._outdir, structure_file_basename + "-" + scaling_matrix_string + ".cif"
+            self._outdir,
+            structure_file_basename + "-" + scaling_matrix_string + ".cif",
         )
         self.modified_structure.to(filename=filename, symprec=self.symprec)
 
@@ -435,7 +471,9 @@ class ScriptHelper:
             """
             logfile = os.path.join(self._outdir, "sub.log")
             encoding = getattr(io, "LOCALE_ENCODING", "utf8")
-            with open(logfile, "w", encoding=encoding, errors="surrogateescape") as f:
+            with open(
+                logfile, "w", encoding=encoding, errors="surrogateescape"
+            ) as f:
                 logio.seek(0)
                 shutil.copyfileobj(logio, f)
 
@@ -505,7 +543,8 @@ class ScriptHelper:
         # Limit amount if sampled
         if self.sample is not None:
             quantities_generator = itertools.takewhile(
-                lambda x: x[0] < npatterns, quantities_generator,
+                lambda x: x[0] < npatterns,
+                quantities_generator,
             )
 
         print(header, file=logio)
@@ -580,8 +619,10 @@ class LabeledStructure(Structure):
         scale_matrix = np.array(scaling_matrix, np.int16)
 
         # check the shape of the scaling matrix
-        if not scale_matrix.shape in {(1,), (3,), (3, 3)}:
-            logging.warning("The scale_matrix.shape should be (1,), (3,), or (3, 3)")
+        if scale_matrix.shape not in {(1,), (3,), (3, 3)}:
+            logging.warning(
+                "The scale_matrix.shape should be (1,), (3,), or (3, 3)"
+            )
             raise ValueError
         else:
             if scale_matrix.shape != (3, 3):
@@ -609,14 +650,21 @@ class LabeledStructure(Structure):
                 new_sites.append(s)
 
         new_charge = (
-            self._charge * np.linalg.det(scale_matrix) if self._charge else None
+            self._charge * np.linalg.det(scale_matrix)
+            if self._charge
+            else None
         )
         # This line.
         return self.__class__.from_sites(new_sites, charge=new_charge)
 
     @classmethod
     def from_file(  # pylint: disable=arguments-differ
-        cls, filename, primitive=False, sort=False, merge_tol=0.0, symmetrize=False,
+        cls,
+        filename,
+        primitive=False,
+        sort=False,
+        merge_tol=0.0,
+        symmetrize=False,
     ):
         fname = os.path.basename(filename)
         if not fnmatch(fname.lower(), "*.cif*") and not fnmatch(
@@ -658,7 +706,9 @@ class LabeledStructure(Structure):
                     except ValueError:
                         site.species = to_composition.fractional_composition
                 # If failed, try to find matching Element
-                elif any(e.symbol == from_species for e in site.species.elements):
+                elif any(
+                    e.symbol == from_species for e in site.species.elements
+                ):
                     replace = True
                     # Since all sites are replaced, merge them under one label.
                     # But give a distinct ID in case two or more sites are
@@ -671,7 +721,9 @@ class LabeledStructure(Structure):
                         site.species = to_composition.fractional_composition
 
             if not replace:
-                raise RuntimeError(f"Can't find the specified site ({from_species}).")
+                raise RuntimeError(
+                    f"Can't find the specified site ({from_species})."
+                )
 
     def read_label(
         self,
@@ -704,7 +756,9 @@ class LabeledStructure(Structure):
                 return float(string.split("(")[0])
 
         encoding = getattr(io, "LOCALE_ENCODING", "utf8")
-        with open(cif_filename, "r", encoding=encoding, errors="surrogateescape") as f:
+        with open(
+            cif_filename, "r", encoding=encoding, errors="surrogateescape"
+        ) as f:
             parser = CifParser.from_string(f.read())
 
         # Since Structure only takes the first structure inside a CIF, do the same.
@@ -723,7 +777,10 @@ class LabeledStructure(Structure):
             labels = tuple(sorted({x[1] for x in zipgroup}))
             cif_sites.append(
                 PeriodicSite(
-                    "X", coord, self.lattice, properties={"_atom_site_label": labels},
+                    "X",
+                    coord,
+                    self.lattice,
+                    properties={"_atom_site_label": labels},
                 )
             )
 
@@ -742,7 +799,9 @@ class LabeledStructure(Structure):
         cif_coords = [x.frac_coords for x in cif_sites]
 
         # List of coordinates that are equivalent to this site
-        o_cif_coords = [symmop.operate_multi(cif_coords) for symmop in symm_ops]
+        o_cif_coords = [
+            symmop.operate_multi(cif_coords) for symmop in symm_ops
+        ]
         o_cif_coords = np.swapaxes(np.stack(o_cif_coords), 0, 1)
         o_cif_coords = [np.unique(np.mod(x, 1), axis=0) for x in o_cif_coords]
 
@@ -752,12 +811,14 @@ class LabeledStructure(Structure):
             **const.TQDM_CONF,
             disable=const.DISABLE_PROGRESSBAR,
         ):
-            equivalent = [in_coord_list_pbc(o, site.frac_coords) for o in o_cif_coords]
+            equivalent = [
+                in_coord_list_pbc(o, site.frac_coords) for o in o_cif_coords
+            ]
 
             try:
                 equivalent_site = cif_sites[equivalent.index(True)]
-                site.properties["_atom_site_label"] = equivalent_site.properties[
+                site.properties[
                     "_atom_site_label"
-                ]
+                ] = equivalent_site.properties["_atom_site_label"]
             except ValueError as exc:
                 raise RuntimeError("CIF-Structure mismatch.") from exc
