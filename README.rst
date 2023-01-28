@@ -1,11 +1,11 @@
 README
 ==========
 
-.. image:: logo/logo.jpg
-    :alt: logo
+|logo|
 
 |license| |DL| |release| |PYPI_version| |Python_version| |workflows| |fork| |stars|
 
+.. |logo| image:: https://github.com/giprayogo/SHRY/blob/master/logo/logo.jpg?raw=true
 .. |license| image:: https://img.shields.io/github/license/giprayogo/SHRY
 .. |release| image:: https://img.shields.io/github/release/giprayogo/SHRY/all.svg
 .. |DL| image:: https://img.shields.io/pypi/dm/SHRY
