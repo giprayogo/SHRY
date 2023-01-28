@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# pylint: disable=logging-fstring-interpolation, logging-not-lazy
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 """
 Shared constants
 """

@@ -1,5 +1,6 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=unused-import, logging-fstring-interpolation, invalid-name, too-many-lines
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 """
 Core operations, pattern generation, etc.
 """
@@ -13,7 +14,6 @@ import math
 import random
 import sys
 from typing import OrderedDict, Tuple
-import setuptools_scm
 
 # python modules
 import numpy as np
@@ -39,7 +39,7 @@ from . import const
 try:
     from ._version import version as shry_version
 except (ModuleNotFoundError, ImportError):
-    shry_version = setuptools_scm.get_version()
+    shry_version = "unknown"
 
 np.seterr(all="raise")
 np.set_printoptions(linewidth=const.LINEWIDTH, threshold=16)
@@ -120,10 +120,12 @@ class PatchedSymmetrizedStructure(SymmetrizedStructure):
             return f"{x:0.6f}"
 
         outs.append(
-            "abc   : " + " ".join([to_s(i).rjust(10) for i in self.lattice.abc])
+            "abc   : "
+            + " ".join([to_s(i).rjust(10) for i in self.lattice.abc])
         )
         outs.append(
-            "angles: " + " ".join([to_s(i).rjust(10) for i in self.lattice.angles])
+            "angles: "
+            + " ".join([to_s(i).rjust(10) for i in self.lattice.angles])
         )
         if self._charge:
             if self._charge >= 0:
@@ -143,7 +145,10 @@ class PatchedSymmetrizedStructure(SymmetrizedStructure):
                 row.append(site.properties[k])  # This line
             data.append(row)
         outs.append(
-            tabulate(data, headers=["#", "SP", "a", "b", "c", "Wyckoff"] + keys,)
+            tabulate(
+                data,
+                headers=["#", "SP", "a", "b", "c", "Wyckoff"] + keys,
+            )
         )
         return "\n".join(outs)
 
@@ -192,7 +197,8 @@ class AltCifBlock(CifBlock):
                 s.append(line)
             else:
                 sublines = [
-                    line[i : i + self.maxlen] for i in range(0, len(line), self.maxlen)
+                    line[i : i + self.maxlen]
+                    for i in range(0, len(line), self.maxlen)
                 ]
                 s.extend(sublines)
         return s
@@ -253,7 +259,9 @@ class AltCifBlock(CifBlock):
             for l in self.loops:
                 if k in l:
                     for _k in l:
-                        self.data[_k] = list(map(self._format_field, self.data[_k]))
+                        self.data[_k] = list(
+                            map(self._format_field, self.data[_k])
+                        )
                     loop_id = "loop_\n " + "\n ".join(l)
                     self.string_cache[loop_id] = self._loop_to_list(l)
                     formatted.extend(l)
@@ -327,7 +335,8 @@ def multinomial_coeff(a):
     Get multinomial coefficient of (sum(a), (a_1, a_2, ...))
     """
     return functools.reduce(
-        lambda a, b: a * b, [comb(cx, x, exact=True) for cx, x in zip(np.cumsum(a), a)]
+        lambda a, b: a * b,
+        [comb(cx, x, exact=True) for cx, x in zip(np.cumsum(a), a)],
     )
 
 
@@ -492,7 +501,9 @@ class Substitutor:
         except TypeError as exc:
             raise RuntimeError("Couldn't find symmetry.") from exc
 
-        logging.info(f"Space group: {sga.get_hall()} ({sga.get_space_group_number()})")
+        logging.info(
+            f"Space group: {sga.get_hall()} ({sga.get_space_group_number()})"
+        )
         logging.info(f"Total {len(self._symmops)} symmetry operations")
         logging.info(sga.get_symmetrized_structure())
         equivalent_atoms = sga.get_symmetry_dataset()["equivalent_atoms"]
@@ -509,7 +520,9 @@ class Substitutor:
                 # Ad hoc fix: if occupancy is less than 1, stop.
                 # TODO: Automatic vacancy handling
                 if not np.isclose(site.species.num_atoms, 1):
-                    raise RuntimeError("Please fill vacancy sites with pseudo atoms")
+                    raise RuntimeError(
+                        "Please fill vacancy sites with pseudo atoms"
+                    )
         if not disorder_sites:
             logging.warning("No disorder sites found within the Structure.")
 
@@ -520,11 +533,15 @@ class Substitutor:
             self._groupby = lambda x: x.properties["equivalent_atoms"]
             disorder_sites.sort(key=self._groupby)
 
-        for orbit, sites in itertools.groupby(disorder_sites, key=self._groupby):
+        for orbit, sites in itertools.groupby(
+            disorder_sites, key=self._groupby
+        ):
             # Can it fit?
             sites = tuple(sites)
             composition = sites[0].species.to_int_dict()
-            integer_formula = "".join(e + str(a) for e, a in composition.items())
+            integer_formula = "".join(
+                e + str(a) for e, a in composition.items()
+            )
             formula_unit_sum = sum(composition.values())
             if len(sites) % formula_unit_sum:
                 raise NeedSupercellError(
@@ -539,8 +556,12 @@ class Substitutor:
             # DMAT
             indices = [x.properties["index"] for x in sites]
             self._group_indices[orbit] = indices
-            group_dmat = self._structure.distance_matrix[np.ix_(indices, indices)]
-            self._group_dmat[orbit] = self.ordinalize(group_dmat, atol=self._atol)
+            group_dmat = self._structure.distance_matrix[
+                np.ix_(indices, indices)
+            ]
+            self._group_dmat[orbit] = self.ordinalize(
+                group_dmat, atol=self._atol
+            )
 
             # PERM
             coords = [x.frac_coords for x in sites]
@@ -599,16 +620,18 @@ class Substitutor:
             if not (row_members == row_members[0]).all():
                 raise RuntimeError("Invalid permutation(s) generated.")
 
-            bits = [2 ** i for i in range(group_perms.shape[1])]
+            bits = [2**i for i in range(group_perms.shape[1])]
             self._group_bits[orbit] = bits
 
             try:
                 bit_perm = np.array(
-                    [[2 ** int(i) for i in row] for row in group_perms], dtype=int
+                    [[2 ** int(i) for i in row] for row in group_perms],
+                    dtype=int,
                 )
             except OverflowError:
                 bit_perm = np.array(
-                    [[2 ** int(i) for i in row] for row in group_perms], dtype=object
+                    [[2 ** int(i) for i in row] for row in group_perms],
+                    dtype=object,
                 )
             self._group_bit_perm[orbit] = bit_perm
 
@@ -697,12 +720,14 @@ class Substitutor:
 
     def _disorder_elements(self):
         return {
-            orbit: tuple(x.keys()) for orbit, x in self._sorted_compositions().items()
+            orbit: tuple(x.keys())
+            for orbit, x in self._sorted_compositions().items()
         }
 
     def _disorder_amounts(self):
         return {
-            orbit: tuple(x.values()) for orbit, x in self._sorted_compositions().items()
+            orbit: tuple(x.values())
+            for orbit, x in self._sorted_compositions().items()
         }
 
     def make_patterns(self):
@@ -778,7 +803,9 @@ class Substitutor:
         def maker_recurse_c(aut, pattern, orbit, chain):
             if len(chain) > 0:
                 amount = chain.pop()
-                for aut, pattern in maker_recurse_unit(aut, pattern, orbit, amount):
+                for aut, pattern in maker_recurse_unit(
+                    aut, pattern, orbit, amount
+                ):
                     _chain = chain.copy()
                     yield from maker_recurse_c(aut, pattern, orbit, _chain)
             else:
@@ -788,7 +815,9 @@ class Substitutor:
             if len(ochain) > 0:
                 orbit, sites = ochain.pop()
 
-                chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[::-1]
+                chain = list(rscum(self._disorder_amounts()[orbit][::-1]))[
+                    ::-1
+                ]
                 indices = np.arange(len(sites))
 
                 for aut, pattern in maker_recurse_c(
@@ -824,14 +853,18 @@ class Substitutor:
         """
         Total number of combinations.
         """
-        ocount = (multinomial_coeff(x) for x in self._disorder_amounts().values())
+        ocount = (
+            multinomial_coeff(x) for x in self._disorder_amounts().values()
+        )
         return functools.reduce(lambda x, y: x * y, ocount, 1)
 
     def count(self):
         """
         Final number of patterns.
         """
-        logging.info(f"\nCounting unique patterns for {self.structure.formula}")
+        logging.info(
+            f"\nCounting unique patterns for {self.structure.formula}"
+        )
 
         if len(self._symmops):
             enumerator = self._enumerator_collection.get(
@@ -1030,7 +1063,8 @@ class Substitutor:
             # Flattened list of species @ disorder sites
             specie = [y for x in des.values() for y in x]
             z_map = [
-                cell_specie.index(Composition({specie[j]: 1})) for j in range(len(p))
+                cell_specie.index(Composition({specie[j]: 1}))
+                for j in range(len(p))
             ]
             zs = [cell_specie.index(x.species) for x in template_structure]
 
@@ -1055,7 +1089,8 @@ class Substitutor:
             ops = [
                 transformation_to_string(rot, trans, delim=", ")
                 for rot, trans in zip(
-                    space_group_data["rotations"], space_group_data["translations"]
+                    space_group_data["rotations"],
+                    space_group_data["translations"],
                 )
             ]
             u, inv = np.unique(
@@ -1069,7 +1104,8 @@ class Substitutor:
                     sorted(
                         j,
                         key=lambda s: tuple(
-                            abs(x) for x in template_structure.sites[s].frac_coords
+                            abs(x)
+                            for x in template_structure.sites[s].frac_coords
                         ),
                     )[0],
                     len(j),
@@ -1087,7 +1123,9 @@ class Substitutor:
                 ),
             )
 
-            block["_symmetry_space_group_name_H-M"] = space_group_data["international"]
+            block["_symmetry_space_group_name_H-M"] = space_group_data[
+                "international"
+            ]
             block["_symmetry_Int_Tables_number"] = space_group_data["number"]
             block["_symmetry_equiv_pos_site_id"] = [
                 str(i) for i in range(1, len(ops) + 1)
@@ -1284,17 +1322,19 @@ class PatternMaker:
 
         # Bits below is for set-like comparison upon arrays.
         # Use pure python's unbounded integer for unlimited array length.
-        self._bits = [2 ** i for i in range(self._nix)]
+        self._bits = [2**i for i in range(self._nix)]
         # Convert to list to avoid overflow
         # Will change type to object for very large integer
         # Careful: each are still numpy object type...
         try:
             self._bit_perm = np.array(
-                [[2 ** int(i) for i in row] for row in indexed_perm_list], dtype=int
+                [[2 ** int(i) for i in row] for row in indexed_perm_list],
+                dtype=int,
             )
         except OverflowError:
             self._bit_perm = np.array(
-                [[2 ** int(i) for i in row] for row in indexed_perm_list], dtype=object
+                [[2 ** int(i) for i in row] for row in indexed_perm_list],
+                dtype=object,
             )
 
         # Containers for search results.
@@ -1321,7 +1361,9 @@ class PatternMaker:
         # TODO: More intuitive if we do this first, then the previous one.
         # Relabel to match column position
         relabel_index = perm_list[0]
-        relabel_element = np.vectorize({s: i for i, s in enumerate(relabel_index)}.get)
+        relabel_element = np.vectorize(
+            {s: i for i, s in enumerate(relabel_index)}.get
+        )
         try:
             perm_list = relabel_element(perm_list)
         except TypeError as exc:
@@ -1399,7 +1441,7 @@ class PatternMaker:
         # Patterns are symmetrical
         _n = min(n, self._nix - n)
         # if not _n in self._patterns:
-        if not n in self._patterns:
+        if n not in self._patterns:
             if _n in self._patterns:
                 inverter = np.arange(self._nix)
                 self._auts[n] = self._auts[_n]
@@ -1421,7 +1463,9 @@ class PatternMaker:
                         for a, p in self._search(start=start, stop=_n)
                     ]
                 else:
-                    ap = [(a, p) for a, p in self._search(start=start, stop=_n)]
+                    ap = [
+                        (a, p) for a, p in self._search(start=start, stop=_n)
+                    ]
                 self._auts[n], self._patterns[n] = zip(*ap)
 
         for a, p in zip(self._auts[n], self._patterns[n]):
@@ -1664,7 +1708,9 @@ class PatternMaker:
             leaf_array = np.flatnonzero(leaf_mask)
 
             # Calculate subobject Ts for all leaves
-            leaf_subobj_ts = self._get_subobj_ts(pattern, leaf_array, subobj_ts)
+            leaf_subobj_ts = self._get_subobj_ts(
+                pattern, leaf_array, subobj_ts
+            )
 
             # Reject all leaves where any T is smaller than the new row's T
             delta_t = leaf_subobj_ts[:, :-1] - leaf_subobj_ts[:, -1:]
@@ -1675,7 +1721,9 @@ class PatternMaker:
             # Discard symmetry duplicates from the remaining leaves
             if aut.size > 1 and not_reject_mask.sum() > 1:
                 not_reject_leaf = leaf_array[not_reject_mask]
-                leaf_reps = self._perms[np.ix_(aut, not_reject_leaf)].min(axis=0)
+                leaf_reps = self._perms[np.ix_(aut, not_reject_leaf)].min(
+                    axis=0
+                )
                 leaf_indices = leaf_array.searchsorted(leaf_reps)
                 uniq_mask = np.zeros(leaf_array.shape, dtype="bool")
                 uniq_mask[leaf_indices] = True
@@ -1695,7 +1743,9 @@ class PatternMaker:
                 _pbs = self._bit_perm[:, x] + pbs
 
                 _subobj_ts = leaf_subobj_ts[i]
-                _subobj_ts[j:] = np.concatenate((_subobj_ts[-1:], _subobj_ts[j:-1]))
+                _subobj_ts[j:] = np.concatenate(
+                    (_subobj_ts[-1:], _subobj_ts[j:-1])
+                )
 
                 _i = np.concatenate((pattern[:j], [x], pattern[j:]))
                 # NOTE: just in case I fail to consistently sort perm
@@ -1744,7 +1794,9 @@ class Polya:
     """
 
     def __init__(
-        self, perm_list, group_size=None,
+        self,
+        perm_list,
+        group_size=None,
     ):
         # Used only for dividing the final weight
         if group_size is not None:
@@ -1803,7 +1855,9 @@ class Polya:
                             logging.error(f"IMAP: {index_map}")
                             logging.error(f"P: {permutation}")
                             logging.error(f"BP: {permutations}")
-                            raise RuntimeError("Check permutation list.") from exc
+                            raise RuntimeError(
+                                "Check permutation list."
+                            ) from exc
                     cycles.append(cycle)
                 counter = collections.Counter(len(cycle) for cycle in cycles)
                 cycle_index[i].append(counter)
@@ -1902,7 +1956,10 @@ class Polya:
             counts = [
                 functools.reduce(
                     lambda x, y: x * y,
-                    [multinomial_coeff(tuple(p[j])) for p, j in zip(f_parts, i)],
+                    [
+                        multinomial_coeff(tuple(p[j]))
+                        for p, j in zip(f_parts, i)
+                    ],
                 )
                 for i in match_i
             ]

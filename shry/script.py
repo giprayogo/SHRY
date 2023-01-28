@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# pylint: disable=logging-fstring-interpolation, logging-not-lazy
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 """
 Command line interface.
 """
@@ -14,7 +14,6 @@ import logging
 # python modules
 import tqdm
 import numpy as np
-import setuptools_scm
 
 # shry modules
 from . import const
@@ -23,7 +22,8 @@ from . import const
 try:
     from ._version import version as shry_version
 except (ModuleNotFoundError, ImportError):
-    shry_version = setuptools_scm.get_version()
+    shry_version = "unknown (not installed)"
+
 
 class TqdmLoggingHandler(logging.Handler):
     """
@@ -51,7 +51,9 @@ def print_header():
     # logger.setLevel(logging.INFO)
     handler = TqdmLoggingHandler()
     handler.setLevel(logging.INFO)
-    logging.basicConfig(format="%(message)s", level=logging.INFO, handlers=[handler])
+    logging.basicConfig(
+        format="%(message)s", level=logging.INFO, handlers=[handler]
+    )
     logging.info("********************************\n")
     logging.info(
         "SHRY: Suite for High-throughput generation of models"
@@ -59,7 +61,9 @@ def print_header():
     )
     logging.info("")
     logging.info("Please cite the following paper::\n")
-    logging.info("G.I. Prayogo, et al., J. Chem. Inf. Model. 62, 2909-2915 (2022)")
+    logging.info(
+        "G.I. Prayogo, et al., J. Chem. Inf. Model. 62, 2909-2915 (2022)"
+    )
     logging.info("https://doi.org/10.1021/acs.jcim.2c00389")
     logging.info("\n********************************")
     logging.info(f"Begin {time_string} (unixtime: {const.DEFAULT_SEED})")
@@ -253,16 +257,22 @@ def main():  # pylint: disable=missing-function-docstring
         helper = ScriptHelper.from_file(args.input)
     else:
         # Trick to allow ",", ";", and whiteline as separator
-        from_species = const.FLEXIBLE_SEPARATOR.split(",".join(args.from_species))
+        from_species = const.FLEXIBLE_SEPARATOR.split(
+            ",".join(args.from_species)
+        )
         to_species = const.FLEXIBLE_SEPARATOR.split(",".join(args.to_species))
         scaling_matrix = [
             int(x)
-            for x in const.FLEXIBLE_SEPARATOR.split(",".join(args.scaling_matrix))
+            for x in const.FLEXIBLE_SEPARATOR.split(
+                ",".join(args.scaling_matrix)
+            )
         ]
 
         # check the dimension of the scaling matrix
         if not len(scaling_matrix) in {1, 3, 9}:
-            logging.warning("The scaling_matrix should be 1, 3, or 9 scalar values.")
+            logging.warning(
+                "The scaling_matrix should be 1, 3, or 9 scalar values."
+            )
             raise ValueError
         else:
             if len(scaling_matrix) == 9:
@@ -272,7 +282,7 @@ def main():  # pylint: disable=missing-function-docstring
 
         from_species = list(filter(None, from_species))
         to_species = list(filter(None, to_species))
-        #scaling_matrix = list(filter(None, scaling_matrix)) #here! the problem is that filter removes 0!
+        # scaling_matrix = list(filter(None, scaling_matrix)) #here! the problem is that filter removes 0!
 
         helper = ScriptHelper(
             structure_file=args.input,
