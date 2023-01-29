@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-
+    if: github.repository == 'kousuke-nakano/SHRY'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
