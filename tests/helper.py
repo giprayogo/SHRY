@@ -1,4 +1,6 @@
-# -*- coding: utf-8 -*-
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 """Some helper functions related to testing."""
 
 import glob

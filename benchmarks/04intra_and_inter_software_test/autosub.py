@@ -1,7 +1,8 @@
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 """Random select substitution; save substituted structure and JSON info"""
 import warnings
-warnings.simplefilter('ignore')
-
 import errno
 import functools
 import glob
@@ -14,20 +15,25 @@ import sys
 
 import numpy as np
 import pandas as pd
-import pymatgen
-import shry
-from ase import Atoms
-from ase.io import read, write
+
 from ase.spacegroup import Spacegroup
 from pymatgen.core.composition import Composition
 from pymatgen.core.periodic_table import get_el_sp
 from pymatgen.io.cif import CifParser
 from pymatgen.util.string import formula_double_format
 
-shry.const.DISABLE_PROGRESSBAR = True
-from shry.core import (NeedSupercellError, PatchedSpacegroupAnalyzer,
-                       Substitutor, TooBigError)
+import shry
+
+from shry.core import (
+    NeedSupercellError,
+    PatchedSpacegroupAnalyzer,
+    Substitutor,
+    TooBigError,
+)
 from shry.main import LabeledStructure
+
+shry.const.DISABLE_PROGRESSBAR = True
+warnings.simplefilter("ignore")
 
 CONFIG_IRREDUCIBLE_MAX = 3e3
 CONFIG_IRREDUCIBLE_MIN = 1e1
@@ -40,11 +46,11 @@ CONFIG_CELLVEC_MIN = 1
 CONFIG_CELLVEC_MAX = 3
 CONFIG_RETRY_N = 500
 
-MAX_SUBBED_MIN=3      # default 3
-MAX_NSPIECIES_MIN=4   # default 4
+MAX_SUBBED_MIN = 3  # default 3
+MAX_NSPIECIES_MIN = 4  # default 4
 
-SHRY_TOLERANCE=0.01      #angstrom
-SHRY_ANGLE_TOLERANCE=5.0 #degree
+SHRY_TOLERANCE = 0.01  # angstrom
+SHRY_ANGLE_TOLERANCE = 5.0  # degree
 
 # "Manual" periodic table for searching element within the same group
 # (just so that it looks like make sense)
@@ -100,7 +106,9 @@ def timeout(seconds=CONFIG_TIMEOUT, error_message=os.strerror(errno.ETIME)):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
             signal.signal(signal.SIGALRM, _handle_timeout)
-            signal.setitimer(signal.ITIMER_REAL, seconds)  # used timer instead of alarm
+            signal.setitimer(
+                signal.ITIMER_REAL, seconds
+            )  # used timer instead of alarm
             try:
                 result = func(*args, **kwargs)
             finally:
@@ -156,8 +164,10 @@ def to_oxstate_string(number):
         return f"{number}+"
     return f"{abs(number)}-"
 
+
 def remove_label(string):
-    return re.sub(OXSTATE, '', string)
+    return re.sub(OXSTATE, "", string)
+
 
 def random_scale_and_substitute(cif_filename):
     """
@@ -169,16 +179,20 @@ def random_scale_and_substitute(cif_filename):
         substitutor = Substitutor(
             ct_structure,
             symprec=SHRY_TOLERANCE,
-            angle_tolerance=SHRY_ANGLE_TOLERANCE
-            )
+            angle_tolerance=SHRY_ANGLE_TOLERANCE,
+        )
         return substitutor.count()
 
     def beautiful_inted_formula(composition):
-        inted_element_composition = composition.inted_composition.element_composition
+        inted_element_composition = (
+            composition.inted_composition.element_composition
+        )
         # Because buggy formula!
         sym_amt = inted_element_composition.get_el_amt_dict()
         syms = sorted(sym_amt.keys(), key=lambda sym: get_el_sp(sym).X)
-        formula = [s + formula_double_format(int(sym_amt[s]), False) for s in syms]
+        formula = [
+            s + formula_double_format(int(sym_amt[s]), False) for s in syms
+        ]
         return "".join(formula)
         # return composition.inted_composition.element_composition.formula.replace(
         #     " ", ""
@@ -191,24 +205,23 @@ def random_scale_and_substitute(cif_filename):
     chem_formula = cif_dict["_chemical_formula_sum"].replace(" ", "")
 
     structure = LabeledStructure.from_file(cif_filename)
-    #print(structure)
-    sga = PatchedSpacegroupAnalyzer(structure,
-                symprec=SHRY_TOLERANCE,
-                angle_tolerance=SHRY_ANGLE_TOLERANCE
-            )
+    # print(structure)
+    sga = PatchedSpacegroupAnalyzer(
+        structure, symprec=SHRY_TOLERANCE, angle_tolerance=SHRY_ANGLE_TOLERANCE
+    )
     if "_space_group_IT_number" in cif_dict:
         cif_sg_number = cif_dict["_space_group_IT_number"]
     else:
         cif_sg_number = cif_dict["_symmetry_Int_Tables_number"]
     assert sga.get_space_group_number() == int(cif_sg_number)
-    
+
     lattice_type = sga.get_lattice_type()
     point_group = sga.get_point_group_symbol()
     space_group_num = sga.get_space_group_number()
     space_group = sga.get_space_group_symbol()
-    #structure_id = "icsd-" + cif_dict["_database_code_ICSD"]
+    # structure_id = "icsd-" + cif_dict["_database_code_ICSD"]
     structure_id = "cod-" + cif_dict["_cod_database_code"]
-    
+
     for attempt in range(CONFIG_RETRY_N):
         # Select random supercell, that fits below max
         # Brute force; not taking time anyway
@@ -216,8 +229,13 @@ def random_scale_and_substitute(cif_filename):
         natom = len(structure)
         if natom <= CONFIG_CELL_MAX:
             while True:
-                scaling_matrix = [random.randint(CONFIG_CELLVEC_MIN, CONFIG_CELLVEC_MAX) for i in range(3)]
-                enlargement = functools.reduce(lambda x, y: x * y, scaling_matrix)
+                scaling_matrix = [
+                    random.randint(CONFIG_CELLVEC_MIN, CONFIG_CELLVEC_MAX)
+                    for i in range(3)
+                ]
+                enlargement = functools.reduce(
+                    lambda x, y: x * y, scaling_matrix
+                )
                 if (enlargement * natom) <= CONFIG_CELL_MAX:
                     break
         else:
@@ -226,7 +244,7 @@ def random_scale_and_substitute(cif_filename):
 
         print(f"scaling_matrix={scaling_matrix}")
 
-        #print([x.is_ordered for x in structure])
+        # print([x.is_ordered for x in structure])
         fully_ordered = all(x.is_ordered for x in structure)
         if not fully_ordered:
             print("Partial occupancies in some of the sites.")
@@ -250,7 +268,7 @@ def random_scale_and_substitute(cif_filename):
                     f"({count} structures without substitution)"
                 )
                 continue
-            
+
             if count < CONFIG_IRREDUCIBLE_MIN:
                 print(
                     f"Scaling matrix {scaling_matrix} is not appropriate (probably too small)! "
@@ -260,10 +278,16 @@ def random_scale_and_substitute(cif_filename):
             """
 
         # Use SymmetrizedStructure to get some properties
-        sym_structure = PatchedSpacegroupAnalyzer(structure, symprec=SHRY_TOLERANCE, angle_tolerance=SHRY_ANGLE_TOLERANCE).get_symmetrized_structure()
+        sym_structure = PatchedSpacegroupAnalyzer(
+            structure,
+            symprec=SHRY_TOLERANCE,
+            angle_tolerance=SHRY_ANGLE_TOLERANCE,
+        ).get_symmetrized_structure()
         # Multiplicities of each equivalent sites
         multiplicities = [len(x) for x in sym_structure.equivalent_indices]
-        supercell_mul = [enlargement * len(x) for x in sym_structure.equivalent_indices]
+        supercell_mul = [
+            enlargement * len(x) for x in sym_structure.equivalent_indices
+        ]
         # Index of which sites has _more than one_ multiplicities
         mulsites = [i for i, m in enumerate(supercell_mul) if m > 1]
 
@@ -274,7 +298,7 @@ def random_scale_and_substitute(cif_filename):
         if not len(mulsites):
             continue
         max_subbed = min((len(mulsites), MAX_SUBBED_MIN))
-        #print(f"max_subbed={max_subbed}")
+        # print(f"max_subbed={max_subbed}")
         subbed = random.sample(mulsites, random.randint(1, max_subbed))
 
         partitions = []
@@ -282,15 +306,19 @@ def random_scale_and_substitute(cif_filename):
             # Substitute to random N amount of final species
             max_nspecies = min((supercell_mul[i], MAX_NSPIECIES_MIN))
             nspecies = random.randint(2, max_nspecies)  # limit to 4
-            #print(f"i={i}, nspecies={nspecies}")
+            # print(f"i={i}, nspecies={nspecies}")
 
             # Random select each amount of final species
             ranges = []
             left = 0  # Left part of the range
-            pad = nspecies - 2  # Padding to ensure valid range is always selected
+            pad = (
+                nspecies - 2
+            )  # Padding to ensure valid range is always selected
             for _ in range(nspecies - 1):  # select but the last
                 margin = supercell_mul[i] - pad
-                right = random.randrange(left + 1, margin)  # at least choose one
+                right = random.randrange(
+                    left + 1, margin
+                )  # at least choose one
                 ranges.append(range(left, right))
                 pad -= 1
                 left = right
@@ -337,14 +365,17 @@ def random_scale_and_substitute(cif_filename):
             # exclude_species |= set(sub_species)
 
             target_composition_dict = {
-                get_el_sp(s + oxstate_string): f for s, f in zip(sub_species, fraced[e])
+                get_el_sp(s + oxstate_string): f
+                for s, f in zip(sub_species, fraced[e])
             }
             # Use SHRY's patch to Composition
             target_composition = Composition(target_composition_dict)
 
             for i in sym_structure.equivalent_indices[s]:
                 sym_structure.replace(
-                    i, target_composition, properties=sym_structure[i].properties
+                    i,
+                    target_composition,
+                    properties=sym_structure[i].properties,
                 )
 
         combinations = []
@@ -363,18 +394,27 @@ def random_scale_and_substitute(cif_filename):
         substitutions = functools.reduce(lambda x, y: x * y, combinations)
 
         if substitutions >= TOTAL_SUBSTITUTION_MAX:
-            print(f"Total substitutions = {substitutions:.3e} is too large >= {TOTAL_SUBSTITUTION_MAX:.3e}: rejected!", flush=True)
+            print(
+                f"Total substitutions = {substitutions:.3e} is too large >= {TOTAL_SUBSTITUTION_MAX:.3e}: rejected!",
+                flush=True,
+            )
             print("============================================")
             # Instead return the substitution configuration
             continue
         elif substitutions <= TOTAL_SUBSTITUTION_MIN:
-            print(f"Total substitutions = {substitutions:.3e} is too small <= {TOTAL_SUBSTITUTION_MIN:.3e}: rejected!", flush=True)
+            print(
+                f"Total substitutions = {substitutions:.3e} is too small <= {TOTAL_SUBSTITUTION_MIN:.3e}: rejected!",
+                flush=True,
+            )
             print("============================================")
             # Instead return the substitution configuration
             continue
         else:
             print("TOTAL_SUBSTITUTION:")
-            print(f"{TOTAL_SUBSTITUTION_MIN:.3e} < {substitutions:.3e} < {TOTAL_SUBSTITUTION_MAX:.3e}", flush=True)
+            print(
+                f"{TOTAL_SUBSTITUTION_MIN:.3e} < {substitutions:.3e} < {TOTAL_SUBSTITUTION_MAX:.3e}",
+                flush=True,
+            )
 
         equivalent_labels = [
             list(x[0].properties["_atom_site_label"])[0]
@@ -406,24 +446,24 @@ def random_scale_and_substitute(cif_filename):
             "Supercell": "x".join(map(str, scaling_matrix)),
             "Substitutions": substitutions,
             "Note": "autosub:success",
-            "Checked": None
+            "Checked": None,
         }
 
         try:
             large_structure = sym_structure.copy()
             large_structure *= scaling_matrix
-            print(f"get_count starts...", flush=True)
+            print("get_count starts...", flush=True)
             count = get_count(large_structure)
-            #print(f"count = {count}")
+            # print(f"count = {count}")
             config["Equivalent Structures"] = count
         except (TimeoutError, TooBigError):
             # If too long, likely too big!
             print("TIMEOUT/ sub. was too long => likely too big")
-            #print("============================================")
+            # print("============================================")
             continue
         except MemoryError:
             print("MemoryError/ memory overflow => likely too big")
-            #print("============================================")
+            # print("============================================")
             continue
         except NeedSupercellError as e:
             print(config)
@@ -432,14 +472,16 @@ def random_scale_and_substitute(cif_filename):
             raise e
 
         if count <= CONFIG_IRREDUCIBLE_MAX and count >= CONFIG_IRREDUCIBLE_MIN:
-            print(f"Expected {count:.3e} structures with this substitution: approved!")
+            print(
+                f"Expected {count:.3e} structures with this substitution: approved!"
+            )
             print("============================================")
             # Instead return the substitution configuration
             return sym_structure, config
         print(
             f"Expected {count:.3e} structures with this substitution: try again! (attempt {attempt})"
         )
-        #print("============================================")
+        # print("============================================")
 
     # If all failed then return the default config: No supercell no substitution plain single structure
     config = {
@@ -455,56 +497,58 @@ def random_scale_and_substitute(cif_filename):
         "Substitutions": 1,
         "Equivalent Structures": 1,
         "Note": "autosub:failure",
-        "Checked": None
+        "Checked": None,
     }
     return sym_structure, config
+
 
 def remove_glob(pathname, recursive=True):
     for p in glob.glob(pathname, recursive=recursive):
         if os.path.isfile(p):
             os.remove(p)
-            
+
+
 def main():
     paths = sys.argv[1:]
-    #paths = [f"SG{i}" for i in range(1,231)]
-    #paths = [f"SG{i}" for i in range(10,11)]
+    # paths = [f"SG{i}" for i in range(1,231)]
+    # paths = [f"SG{i}" for i in range(10,11)]
     series = []
     try:
         for path in paths:
-            #print(os.path.join(os.getcwd(),path))
+            # print(os.path.join(os.getcwd(),path))
             if os.path.isdir(path):
                 root_dir = path
-                remove_glob(os.path.join(root_dir,'*_partial.cif'))
+                remove_glob(os.path.join(root_dir, "*_partial.cif"))
                 cifs = glob.glob(os.path.join(root_dir, "*.cif"))
             else:
                 continue
-                #root_dir = os.path.dirname(path)
-                #cifs = [path]
+                # root_dir = os.path.dirname(path)
+                # cifs = [path]
 
             sg = Spacegroup(int(root_dir.lstrip("SG").rstrip("/")))
             print("============================================")
             print(f"Space group: {sg.no} ({sg.symbol})")
             print("============================================")
-            
+
             for cif in cifs:
                 print(f"cif = {cif}")
                 cif_dir = os.path.dirname(cif)
                 cif_filename = os.path.basename(cif).rstrip(".cif")
                 out_cif = os.path.join(cif_dir, cif_filename + "_partial.cif")
 
-                #cif_instance = LabeledStructure.from_file(cif)
-                #reduced_str = pymatgen.symmetry.analyzer.SpacegroupAnalyzer(
+                # cif_instance = LabeledStructure.from_file(cif)
+                # reduced_str = pymatgen.symmetry.analyzer.SpacegroupAnalyzer(
                 #    cif_instance
-                #)
-                #print("------------------------------------------")
-                #print("This is the space group symmbol")
-                #print(f"Space group= {reduced_str.get_space_group_symbol()}")
-                #sym_str = reduced_str.get_symmetrized_structure()
-                #print("This is the symmetrized structure")
-                #print(sym_str)
-                #print(f"=========================================")
-                #print(f" ")
-                #print(f" ")
+                # )
+                # print("------------------------------------------")
+                # print("This is the space group symmbol")
+                # print(f"Space group= {reduced_str.get_space_group_symbol()}")
+                # sym_str = reduced_str.get_symmetrized_structure()
+                # print("This is the symmetrized structure")
+                # print(sym_str)
+                # print(f"=========================================")
+                # print(f" ")
+                # print(f" ")
 
                 sub_str, subconfig = random_scale_and_substitute(cif)
                 subconfig["File"] = cif

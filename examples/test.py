@@ -1,9 +1,12 @@
-#!/usr/bin/env python
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 
 def main():
-    print('x')
+    print("x")
     return
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
-    print('y')
+    print("y")

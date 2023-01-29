@@ -1,5 +1,6 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=invalid-name
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 """
 Save Substitutor instance for later use.
 """
@@ -8,11 +9,11 @@ import pickle
 
 from shry import LabeledStructure, Substitutor
 
-cif_file = 'SmFe12.cif'
+cif_file = "SmFe12.cif"
 structure = LabeledStructure.from_file(cif_file)
 
 # Replace Fe1 to Fe7Ti
-structure.replace_species({'Fe1': 'Fe7Ti'})
+structure.replace_species({"Fe1": "Fe7Ti"})
 
 # Enable caching
 substitutor = Substitutor(structure, cache=True)
@@ -27,5 +28,5 @@ for i, packet in enumerate(substitutor.quantities(("cifwriter", "weight"))):
     cifwriter.write_file(filename=os.path.join(output_dir, filename))
 
 # Save pattern makers for later use.
-with open('pg.pkl', 'wb') as f:
+with open("pg.pkl", "wb") as f:
     pickle.dump(substitutor.pattern_makers, f)

@@ -1,17 +1,18 @@
-import warnings
-warnings.simplefilter('ignore')
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
 
-import shutil
+
+import warnings
 import os
-import time
-import subprocess
-import sys
 import pandas as pd
 
+warnings.simplefilter("ignore")
+
+
 def main():
-    df_list=[]
-    sg_list=[f"SG{i}" for i in range(1,231)]
-    
+    df_list = []
+    sg_list = [f"SG{i}" for i in range(1, 231)]
+
     for sg in sg_list:
         if not os.path.exists(f"out_benchmark_{sg}.xls"):
             continue
@@ -19,15 +20,16 @@ def main():
 
     for i, df_pd in enumerate(df_list):
         if i == 0:
-            df_all= pd.DataFrame(columns=df_pd.columns)
+            df_all = pd.DataFrame(columns=df_pd.columns)
             for j in range(len(df_pd)):
-                df_all=df_all.append(df_pd.iloc[j], ignore_index=True)
+                df_all = df_all.append(df_pd.iloc[j], ignore_index=True)
         else:
             for j in range(len(df_pd)):
-                df_all=df_all.append(df_pd.iloc[j], ignore_index=True)
-    
-    #df_all=df_all.reset_index(drop=True)
-    df_all.to_excel(f"out_benchmark_SG_all.xls")
-    
+                df_all = df_all.append(df_pd.iloc[j], ignore_index=True)
+
+    # df_all=df_all.reset_index(drop=True)
+    df_all.to_excel("out_benchmark_SG_all.xls")
+
+
 if __name__ == "__main__":
     main()

@@ -1,10 +1,8 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=redefined-outer-name,missing-function-docstring,wrong-import-order,unused-import,invalid-name,protected-access
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
 """Test core operations."""
 
-#python modules
-import os
-import filecmp
+# python modules
 import glob
 import shutil
 import numpy as np
@@ -12,20 +10,27 @@ import pandas as pd
 import pytest
 from sympy.tensor.indexed import IndexedBase
 
-#pymatgen
+# pymatgen
 from pymatgen.analysis.ewald import EwaldSummation
 from pymatgen.core import Structure
 
-#shry
-from shry.core import NeedSupercellError, PatternMaker, Polya, Substitutor, TooBigError
+# shry
+from shry.core import (
+    NeedSupercellError,
+    PatternMaker,
+    Polya,
+    Substitutor,
+    TooBigError,
+)
 from shry.main import LabeledStructure, ScriptHelper
 from helper import chdir
 
 # Tolerances
-SHRY_TOLERANCE=0.01      #angstrom
-SHRY_ANGLE_TOLERANCE=5.0 #degree
+SHRY_TOLERANCE = 0.01  # angstrom
+SHRY_ANGLE_TOLERANCE = 5.0  # degree
 
 # PatternMaker basic functions.
+
 
 def test_perm_label():
     """
@@ -33,20 +38,59 @@ def test_perm_label():
     This allows reuse of patterns on multiple color/orbit.
     """
     # Invariance with row swaps.
-    perm_a = np.array([[8, 9, "a", 11], [9, "a", 8, 11], ["a", 8, 9, 11],])
-    perm_b = np.array([[8, 9, "a", 11], ["a", 8, 9, 11], [9, "a", 8, 11],])
+    perm_a = np.array(
+        [
+            [8, 9, "a", 11],
+            [9, "a", 8, 11],
+            ["a", 8, 9, 11],
+        ]
+    )
+    perm_b = np.array(
+        [
+            [8, 9, "a", 11],
+            ["a", 8, 9, 11],
+            [9, "a", 8, 11],
+        ]
+    )
 
     # Invariance with symbol change
-    perm_c = np.array([[9, 8, "a", 11], [8, "a", 9, 11], ["a", 9, 8, 11],])
-    perm_d = np.array([[21, "x", "a", 0], ["x", "a", 21, 0], ["a", 21, "x", 0],])
+    perm_c = np.array(
+        [
+            [9, 8, "a", 11],
+            [8, "a", 9, 11],
+            ["a", 9, 8, 11],
+        ]
+    )
+    perm_d = np.array(
+        [
+            [21, "x", "a", 0],
+            ["x", "a", 21, 0],
+            ["a", 21, "x", 0],
+        ]
+    )
 
     # Technically the same permutation though at different site.
     # (map needs to be more flexible)
-    perm_e = np.array([[11, 8, 9, "a"], [11, 9, "a", 8], [11, "a", 8, 9],])
+    perm_e = np.array(
+        [
+            [11, 8, 9, "a"],
+            [11, 9, "a", 8],
+            [11, "a", 8, 9],
+        ]
+    )
     # Symbol change + row change
-    perm_f = np.array([[8, "a", 9, 11], [9, 8, "a", 11], ["a", 9, 8, 11],])
+    perm_f = np.array(
+        [
+            [8, "a", 9, 11],
+            [9, 8, "a", 11],
+            ["a", 9, 8, 11],
+        ]
+    )
 
-    pgs = [PatternMaker(x) for x in (perm_a, perm_b, perm_c, perm_d, perm_e, perm_f)]
+    pgs = [
+        PatternMaker(x)
+        for x in (perm_a, perm_b, perm_c, perm_d, perm_e, perm_f)
+    ]
     assert all(pg.label == pgs[0].label for pg in pgs)
     assert all(
         pg.label == PatternMaker.get_label(x)
@@ -56,21 +100,45 @@ def test_perm_label():
 
 @pytest.fixture
 def pm():
-    perms = np.array([[8, 9, "a", 11], [9, "a", 8, 11], ["a", 8, 9, 11],])
+    perms = np.array(
+        [
+            [8, 9, "a", 11],
+            [9, "a", 8, 11],
+            ["a", 8, 9, 11],
+        ]
+    )
     return PatternMaker(perms)
 
 
 def test_perm_rep(pm):
     """In canon form."""
     p = pm._perms
-    assert (p == np.array([[1, 2, 0, 3], [2, 0, 1, 3], [0, 1, 2, 3],])).all()
+    assert (
+        p
+        == np.array(
+            [
+                [1, 2, 0, 3],
+                [2, 0, 1, 3],
+                [0, 1, 2, 3],
+            ]
+        )
+    ).all()
     assert p.dtype == "int64"
 
 
 def test_bit_perm_rep(pm):
     """In bit form."""
     bp = pm._bit_perm
-    assert (bp == np.array([[2, 4, 1, 8], [4, 1, 2, 8], [1, 2, 4, 8],])).all()
+    assert (
+        bp
+        == np.array(
+            [
+                [2, 4, 1, 8],
+                [4, 1, 2, 8],
+                [1, 2, 4, 8],
+            ]
+        )
+    ).all()
     assert bp.dtype == "int64"
 
 
@@ -137,7 +205,9 @@ def test_need_supercell():
     """
     with pytest.raises(NeedSupercellError):
         ScriptHelper(
-            structure_file="SmFe12.cif", from_species=("Fe1",), to_species=("Fe12Ti1",),
+            structure_file="SmFe12.cif",
+            from_species=("Fe1",),
+            to_species=("Fe12Ti1",),
         )
 
 
@@ -176,6 +246,7 @@ def test_sequential():
     assert substitutor.count() == 147
     assert len(list(substitutor.weights())) == 147
 
+
 @chdir("../examples")
 def test_sequential_scaling_diagonal_one_scalar_value():
     """
@@ -194,6 +265,7 @@ def test_sequential_scaling_diagonal_one_scalar_value():
     assert substitutor.count() == 17324048
     substitutor.structure = structure2
     assert substitutor.count() == 1909076572380
+
 
 @chdir("../examples")
 def test_sequential_scaling_diagonal_three_scalar_values():
@@ -216,6 +288,7 @@ def test_sequential_scaling_diagonal_three_scalar_values():
     assert substitutor.count() == 147
     assert len(list(substitutor.weights())) == 147
 
+
 @chdir("../examples")
 def test_sequential_scaling_diagonal_matrix():
     """
@@ -227,8 +300,8 @@ def test_sequential_scaling_diagonal_matrix():
     structure2 = structure.copy()
     structure1.replace_species({"Fe1": "Fe7Ti"})
     structure2.replace_species({"Fe2": "Fe6Ti2"})
-    structure1 *= [[1, 0, 0],[0, 2, 0],[0, 0, 1]]
-    structure2 *= [[1, 0, 0],[0, 2, 0],[0, 0, 1]]
+    structure1 *= [[1, 0, 0], [0, 2, 0], [0, 0, 1]]
+    structure2 *= [[1, 0, 0], [0, 2, 0], [0, 0, 1]]
 
     substitutor = Substitutor(structure1)
     assert substitutor.count() == 11
@@ -236,6 +309,7 @@ def test_sequential_scaling_diagonal_matrix():
     substitutor.structure = structure2
     assert substitutor.count() == 147
     assert len(list(substitutor.weights())) == 147
+
 
 @chdir("../examples")
 def test_sequential_scaling_nondiagonal_matrix():
@@ -248,8 +322,8 @@ def test_sequential_scaling_nondiagonal_matrix():
     structure2 = structure.copy()
     structure1.replace_species({"Fe1": "Fe7Ti"})
     structure2.replace_species({"Fe2": "Fe6Ti2"})
-    structure1 *= [[0, 1, 0],[2, 0, 0],[0, 0, 1]]
-    structure2 *= [[0, 1, 0],[2, 0, 0],[0, 0, 1]]
+    structure1 *= [[0, 1, 0], [2, 0, 0], [0, 0, 1]]
+    structure2 *= [[0, 1, 0], [2, 0, 0], [0, 0, 1]]
 
     substitutor = Substitutor(structure1)
     assert substitutor.count() == 11
@@ -257,6 +331,7 @@ def test_sequential_scaling_nondiagonal_matrix():
     substitutor.structure = structure2
     assert substitutor.count() == 147
     assert len(list(substitutor.weights())) == 147
+
 
 @chdir("../examples")
 def test_no_disorder():
@@ -268,9 +343,10 @@ def test_no_disorder():
     assert list(substitutor.weights()) == [1]
     assert len(list(substitutor.cifwriters())) == 1
 
+
 @chdir("../examples")
 def test_cifwriter():
-    #Test cifwriter implementation.
+    # Test cifwriter implementation.
     sh = ScriptHelper("SmFe7Ti.cif")
     sh.write()
     cifs = glob.glob("shry-SmFe*/slice*/*.cif")
@@ -282,9 +358,12 @@ def test_cifwriter():
         return structure
 
     try:
-        esums = [EwaldSummation(give_arbitrary_charge(x)).total_energy for x in cifs]
+        esums = [
+            EwaldSummation(give_arbitrary_charge(x)).total_energy for x in cifs
+        ]
         esums_ref = [
-            EwaldSummation(give_arbitrary_charge(x)).total_energy for x in ref_cifs
+            EwaldSummation(give_arbitrary_charge(x)).total_energy
+            for x in ref_cifs
         ]
         assert len(set(esums)) == 16
         assert set(esums) == set(esums_ref)
@@ -296,16 +375,25 @@ def test_cifwriter():
 
     sh = ScriptHelper("SmFeTi.cif", write_symm=True)
     sh.write()
-    structures = [Structure.from_file(x) for x in glob.glob("shry-SmFe*/slice*/*.cif")]
-    ref_structures = [Structure.from_file(x) for x in glob.glob("../tests/test_cifs/smfe7ti_sym/slice*/*.cif")]
+    structures = [
+        Structure.from_file(x) for x in glob.glob("shry-SmFe*/slice*/*.cif")
+    ]
+    ref_structures = [
+        Structure.from_file(x)
+        for x in glob.glob("../tests/test_cifs/smfe7ti_sym/slice*/*.cif")
+    ]
 
     try:
-        assert any(any(x==structure for x in ref_structures) for structure in structures)
+        assert any(
+            any(x == structure for x in ref_structures)
+            for structure in structures
+        )
     finally:
         # Cleanup
         shry_outdirs = glob.glob("shry-SmFe*")
         for outdir in shry_outdirs:
             shutil.rmtree(outdir)
+
 
 @chdir("../examples")
 def test_cifwriter2():
@@ -361,8 +449,20 @@ def test_matheval():
 @pytest.fixture
 def polya():
     """Fixture returning a Polya instance."""
-    perm_a = np.array([[8, 9, 10, 11], [9, 10, 8, 11], [10, 8, 9, 11],])
-    perm_b = np.array([[3, 4, 5], [5, 4, 3], [3, 4, 5],])
+    perm_a = np.array(
+        [
+            [8, 9, 10, 11],
+            [9, 10, 8, 11],
+            [10, 8, 9, 11],
+        ]
+    )
+    perm_b = np.array(
+        [
+            [3, 4, 5],
+            [5, 4, 3],
+            [3, 4, 5],
+        ]
+    )
     perms_list = [perm_a, perm_b]
     return Polya(perms_list)
 
@@ -383,7 +483,7 @@ def test_count(polya):
     assert polya.count(((3, 1), (2, 1))) == 5
 
 
-#@pytest.mark.skip(reason="Comprehensive but time consuming. It will be activated later.")
+# @pytest.mark.skip(reason="Comprehensive but time consuming. It will be activated later.")
 @chdir("../benchmarks/03scailing_benchmark")
 def test_benchmark():
     """benchmark / the number of symmetry-inequivalent structures."""
@@ -399,16 +499,20 @@ def test_benchmark():
     ):
         supercell, filename, substitution, equivalent, checked = zipped
 
-        cif_basename = os.path.basename(filename).replace(".cif", "")
+        # cif_basename = os.path.basename(filename).replace(".cif", "")
         filename = filename.replace(".cif", "_partial.cif")
         print(f"filename={filename}")
         structure = LabeledStructure.from_file(filename)
-        supercell_size = list(map(int,supercell.split("x")))
+        supercell_size = list(map(int, supercell.split("x")))
         print(supercell_size)
         structure *= supercell_size
-        s = Substitutor(structure,symprec=SHRY_TOLERANCE,angle_tolerance=SHRY_ANGLE_TOLERANCE)
-        count_obtained=s.count()
-        count_ref=equivalent
+        s = Substitutor(
+            structure,
+            symprec=SHRY_TOLERANCE,
+            angle_tolerance=SHRY_ANGLE_TOLERANCE,
+        )
+        count_obtained = s.count()
+        count_ref = equivalent
         print(f"count_obtained={count_obtained}")
         print(f"count_ref={count_ref}")
         assert count_obtained == count_ref

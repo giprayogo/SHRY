@@ -1,5 +1,6 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=invalid-name
+# Copyright (c) SHRY Development Team.
+# Distributed under the terms of the MIT License.
+
 """
 Equivalent enumlib operations in SHRY
 """
@@ -16,7 +17,7 @@ shry.const.DISABLE_PROGRESSBAR = True
 # structure = Structure.from_file(cif_file)
 
 # PbSnTe structure
-cif_file = 'PbSnTe.cif'
+cif_file = "PbSnTe.cif"
 structure = Structure.from_file(cif_file)
 structure *= (2, 2, 2)
 
@@ -33,10 +34,14 @@ s = Substitutor(structure)
 # Shry uses generator; below is to put the Structures into a list
 shry_structures = [x for x in s.structure_writers()]
 shry_num_structs = s.count()
-print(f"SHRY (group equivalent sites) resulted in {shry_num_structs} structures")
+print(
+    f"SHRY (group equivalent sites) resulted in {shry_num_structs} structures"
+)
 
 # 2) enumlib-like: group same species
 s = Substitutor(structure, groupby=lambda x: x.species)
 shry_enumlib_structures = [x for x in s.structure_writers()]
 shry_enumlib_num_structs = s.count()
-print(f"SHRY (group same species) resulted in {shry_enumlib_num_structs} structures")
+print(
+    f"SHRY (group same species) resulted in {shry_enumlib_num_structs} structures"
+)
