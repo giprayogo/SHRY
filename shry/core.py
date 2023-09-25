@@ -69,14 +69,18 @@ def to_int_dict(self):
     Returns:
         Dict with element symbol and integer amount
     """
-    _, factor = self.get_integer_formula_and_factor()
+    _, factor = self.get_integer_formula_and_factor(
+        max_denominator=int(1 / const.DEFAULT_ATOL)
+    )
     int_dict = {e: int(a) for e, a in (self / factor).as_dict().items()}
+
     # be safe: Composition groups together different ox states which is not ideal...
-    if not all(
-        np.isclose(x * factor, y)
-        for x, y in zip(int_dict.values(), self.as_dict().values())
-    ):
-        raise ValueError("Composition is not rational!")
+    for x, y in zip(int_dict.values(), self.as_dict().values()):
+        if not np.isclose(x * factor, y, atol=const.DEFAULT_ATOL):
+            raise ValueError(
+                "Composition (Occupancy) is not rational! Please try to increase significant digits."
+            )
+
     return int_dict
 
 
@@ -85,16 +89,20 @@ def inted_composition(self):
     """
     Return Composition instance with integer formula
     """
-    _, factor = self.get_integer_formula_and_factor()
+    _, factor = self.get_integer_formula_and_factor(
+        max_denominator=int(1 / const.DEFAULT_ATOL)
+    )
     int_comp = self / factor
 
     # be safe
     int_dict = {e: int(a) for e, a in int_comp.as_dict().items()}
     if not all(
-        np.isclose(x * factor, y)
+        np.isclose(x * factor, y, atol=const.DEFAULT_ATOL)
         for x, y in zip(int_dict.values(), self.as_dict().values())
     ):
-        raise ValueError("Composition is not rational!")
+        raise ValueError(
+            "Composition (Occupancy) is not rational! Please try to increase significant digits."
+        )
 
     return int_comp
 
@@ -519,9 +527,20 @@ class Substitutor:
                 disorder_sites.append(site)
                 # Ad hoc fix: if occupancy is less than 1, stop.
                 # TODO: Automatic vacancy handling
-                if not np.isclose(site.species.num_atoms, 1):
+                if not np.isclose(
+                    site.species.num_atoms, 1.0, atol=self._atol
+                ):
+                    logging.warning(
+                        f"The occupancy of the site {site.species} is {site.species.num_atoms}."
+                    )
+                    logging.warning(
+                        f"This should be 1 within the torelance, atol={self._atol}."
+                    )
+                    logging.warning(
+                        "If you want to consider vacancy sites, please add pseudo atoms."
+                    )
                     raise RuntimeError(
-                        "Please fill vacancy sites with pseudo atoms"
+                        "The sum of number of occupancies is not 1."
                     )
         if not disorder_sites:
             logging.warning("No disorder sites found within the Structure.")

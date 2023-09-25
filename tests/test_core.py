@@ -23,11 +23,13 @@ from shry.core import (
     TooBigError,
 )
 from shry.main import LabeledStructure, ScriptHelper
+from shry import const
 from helper import chdir
 
 # Tolerances
-SHRY_TOLERANCE = 0.01  # angstrom
-SHRY_ANGLE_TOLERANCE = 5.0  # degree
+SHRY_TOLERANCE = const.DEFAULT_SYMPREC
+SHRY_ANGLE_TOLERANCE = const.DEFAULT_ANGLE_TOLERANCE
+SHRY_ATOL = const.DEFAULT_ATOL
 
 # PatternMaker basic functions.
 
@@ -510,6 +512,7 @@ def test_benchmark():
             structure,
             symprec=SHRY_TOLERANCE,
             angle_tolerance=SHRY_ANGLE_TOLERANCE,
+            atol=SHRY_ATOL
         )
         count_obtained = s.count()
         count_ref = equivalent
