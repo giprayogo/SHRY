@@ -31,6 +31,7 @@ from pymatgen.util.string import transformation_to_string
 from scipy.special import comb
 from sympy.utilities.iterables import multiset_permutations
 from tabulate import tabulate
+from pymatgen.core.periodic_table import get_el_sp
 
 # shry modules
 from . import const
@@ -47,7 +48,7 @@ np.set_printoptions(linewidth=1000, threshold=sys.maxsize)
 
 
 def get_integer_formula_and_factor(
-    self, max_denominator: int = 10000, iupac_ordering: bool = False
+    self, max_denominator: int = int(1 / const.DEFAULT_SYMPREC), iupac_ordering: bool = False
 ) -> Tuple[str, float]:
     """
     The default Composition groups together different ox states which is not ideal...
@@ -70,13 +71,13 @@ def to_int_dict(self):
         Dict with element symbol and integer amount
     """
     _, factor = self.get_integer_formula_and_factor(
-        max_denominator=int(1 / const.DEFAULT_ATOL)
+        max_denominator=int(1 / const.DEFAULT_SYMPREC)
     )
     int_dict = {e: int(a) for e, a in (self / factor).as_dict().items()}
 
     # be safe: Composition groups together different ox states which is not ideal...
     for x, y in zip(int_dict.values(), self.as_dict().values()):
-        if not np.isclose(x * factor, y, atol=const.DEFAULT_ATOL):
+        if not np.isclose(x * factor, y, atol=const.DEFAULT_SYMPREC):
             raise ValueError(
                 "Composition (Occupancy) is not rational! Please try to increase significant digits."
             )
@@ -90,14 +91,14 @@ def inted_composition(self):
     Return Composition instance with integer formula
     """
     _, factor = self.get_integer_formula_and_factor(
-        max_denominator=int(1 / const.DEFAULT_ATOL)
+        max_denominator=int(1 / const.DEFAULT_SYMPREC)
     )
     int_comp = self / factor
 
     # be safe
     int_dict = {e: int(a) for e, a in int_comp.as_dict().items()}
     if not all(
-        np.isclose(x * factor, y, atol=const.DEFAULT_ATOL)
+        np.isclose(x * factor, y, atol=const.DEFAULT_SYMPREC)
         for x, y in zip(int_dict.values(), self.as_dict().values())
     ):
         raise ValueError(
@@ -107,9 +108,41 @@ def inted_composition(self):
     return int_comp
 
 
+def formula_double_format_tol(afloat, ignore_ones=True, tol: float = const.DEFAULT_SYMPREC):
+    """
+    This function is used to make pretty formulas by formatting the amounts.
+    Instead of Li1.0 Fe1.0 P1.0 O4.0, you get LiFePO4.
+
+    Args:
+        afloat (float): a float
+        ignore_ones (bool): if true, floats of 1 are ignored.
+        tol (float): Tolerance to round to nearest int. i.e. 2.0000000001 -> 2
+
+    Returns:
+        A string representation of the float for formulas.
+    """
+    if ignore_ones and afloat == 1:
+        return ""
+    if abs(afloat - round(afloat)) < tol:
+        return round(afloat)
+    return round(afloat, 8)
+
+@property
+def formula(self) -> str:
+    """
+    Returns a formula string, with elements sorted by electronegativity,
+    e.g., Li4 Fe4 P4 O16.
+    """
+    sym_amt = self.get_el_amt_dict()
+    syms = sorted(sym_amt, key=lambda sym: get_el_sp(sym).X)
+    formula = [f"{s}{formula_double_format_tol(sym_amt[s], False)}" for s in syms]
+    return " ".join(formula)
+
+
 Composition.to_int_dict = to_int_dict
 Composition.get_integer_formula_and_factor = get_integer_formula_and_factor
 Composition.inted_composition = inted_composition
+Composition.formula = formula
 
 
 class PatchedSymmetrizedStructure(SymmetrizedStructure):
