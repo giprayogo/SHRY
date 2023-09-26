@@ -48,7 +48,9 @@ np.set_printoptions(linewidth=1000, threshold=sys.maxsize)
 
 
 def get_integer_formula_and_factor(
-    self, max_denominator: int = int(1 / const.DEFAULT_SYMPREC), iupac_ordering: bool = False
+    self,
+    max_denominator: int = int(1 / const.DEFAULT_ATOL),
+    iupac_ordering: bool = False,
 ) -> Tuple[str, float]:
     """
     The default Composition groups together different ox states which is not ideal...
@@ -71,15 +73,16 @@ def to_int_dict(self):
         Dict with element symbol and integer amount
     """
     _, factor = self.get_integer_formula_and_factor(
-        max_denominator=int(1 / const.DEFAULT_SYMPREC)
+        max_denominator=int(1 / const.DEFAULT_ATOL)
     )
     int_dict = {e: int(a) for e, a in (self / factor).as_dict().items()}
 
     # be safe: Composition groups together different ox states which is not ideal...
     for x, y in zip(int_dict.values(), self.as_dict().values()):
-        if not np.isclose(x * factor, y, atol=const.DEFAULT_SYMPREC):
+        if not np.isclose(x * factor, y, atol=const.DEFAULT_ATOL):
             raise ValueError(
-                "Composition (Occupancy) is not rational! Please try to increase significant digits."
+                "Composition (Occupancy) is not rational! Please try to increase significant digits "
+                "e.g., 1/3 = 0.3333 -> 1/3 = 0.3333333333333."
             )
 
     return int_dict
@@ -91,24 +94,27 @@ def inted_composition(self):
     Return Composition instance with integer formula
     """
     _, factor = self.get_integer_formula_and_factor(
-        max_denominator=int(1 / const.DEFAULT_SYMPREC)
+        max_denominator=int(1 / const.DEFAULT_ATOL)
     )
     int_comp = self / factor
 
     # be safe
     int_dict = {e: int(a) for e, a in int_comp.as_dict().items()}
     if not all(
-        np.isclose(x * factor, y, atol=const.DEFAULT_SYMPREC)
+        np.isclose(x * factor, y, atol=const.DEFAULT_ATOL)
         for x, y in zip(int_dict.values(), self.as_dict().values())
     ):
         raise ValueError(
-            "Composition (Occupancy) is not rational! Please try to increase significant digits."
+            "Composition (Occupancy) is not rational! Please try to increase significant digits "
+            "e.g., 1/3 = 0.3333 -> 1/3 = 0.3333333333333."
         )
 
     return int_comp
 
 
-def formula_double_format_tol(afloat, ignore_ones=True, tol: float = const.DEFAULT_SYMPREC):
+def formula_double_format_tol(
+    afloat, ignore_ones=True, tol: float = const.DEFAULT_ATOL * 10
+):
     """
     This function is used to make pretty formulas by formatting the amounts.
     Instead of Li1.0 Fe1.0 P1.0 O4.0, you get LiFePO4.
@@ -127,6 +133,7 @@ def formula_double_format_tol(afloat, ignore_ones=True, tol: float = const.DEFAU
         return round(afloat)
     return round(afloat, 8)
 
+
 @property
 def formula(self) -> str:
     """
@@ -135,7 +142,9 @@ def formula(self) -> str:
     """
     sym_amt = self.get_el_amt_dict()
     syms = sorted(sym_amt, key=lambda sym: get_el_sp(sym).X)
-    formula = [f"{s}{formula_double_format_tol(sym_amt[s], False)}" for s in syms]
+    formula = [
+        f"{s}{formula_double_format_tol(sym_amt[s], False)}" for s in syms
+    ]
     return " ".join(formula)
 
 
@@ -600,7 +609,10 @@ class Substitutor:
                     (
                         f"Can't fit {integer_formula} "
                         f"within {len(sites)} sites "
-                        f"(enlarge by {formula_unit_sum/len(sites):.4f}x)."
+                        f"(enlarge by {formula_unit_sum/len(sites):.4f}x). "
+                        f"If the integer composition ({integer_formula}) is not what you expected, "
+                        "please try to increase the precision of the occupancy "
+                        "e.g., 1/3 = 0.3333 -> 1/3 = 0.3333333333333."
                     )
                 )
             self.disorder_groups[orbit] = sites
