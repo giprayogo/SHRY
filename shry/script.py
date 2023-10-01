@@ -196,7 +196,7 @@ def main():  # pylint: disable=missing-function-docstring
     group.add_argument(
         "--atol",
         type=float,
-        default=const.DEFAULT_SYMPREC,
+        default=const.DEFAULT_ATOL,
         help="Discretization absolute tolerance (angstrom).",
     )
     group.add_argument(
